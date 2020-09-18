@@ -1,0 +1,23 @@
+{
+  "name": "bierclub",
+  "version": "1.0.0",
+  "description": "pagina web de cerveza con suscripcion",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evaristodantur/BierClub.git"
+  },
+  "author": "Evaristo Dantur, Santiago Terejina, Diego Kippes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evaristodantur/BierClub/issues"
+  },
+  "homepage": "https://github.com/Evaristodantur/BierClub#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security"
+  }
+}
