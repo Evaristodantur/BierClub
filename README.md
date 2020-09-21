@@ -8,6 +8,7 @@ E-Commerce de cervezas artesanales
 ## Audiencia objetivo:
 - Gente mayor a 18 años
 - Ideal: 25-35 años
+- Residencia: Tucumán
 
 ## Listado de referentes:
 - https://tienda.bierful.com
