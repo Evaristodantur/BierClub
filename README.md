@@ -5,7 +5,7 @@ E-Commerce de cervezas artesanales
  - https://trello.com/b/Z7Sq24ef/bierclub
 
 ## Funcionalidad:
-- Comparar cerveza artesanal
+- Venta de cerveza artesanal (Latas y botellas chicas)
 - Suscripcion mensual (extra)
 
 ## Audiencia objetivo:
