@@ -1,5 +1,7 @@
 # BierClub
-E-Commerce de cervezas artesanales
+BierClub es un E-Commerce de cervezas artesanales. Este proyecto se basa en muchos tipos de cervezas al rededor de todo el país.
+
+Por el momento envios en la provincia de Tucumán, pero apuntamos a mejorar en un futuro para hacernos conocer en toda Argentina.
 
 ## Trello:
  - https://trello.com/b/Z7Sq24ef/bierclub
