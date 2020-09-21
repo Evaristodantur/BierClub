@@ -1,6 +1,9 @@
 # BierClub
 E-Commerce de cervezas artesanales
 
+## Trello:
+ - https://trello.com/b/Z7Sq24ef/bierclub
+
 ## Funcionalidad:
 - Comparar cerveza artesanal
 - Suscripcion mensual (extra)
