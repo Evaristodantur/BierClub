@@ -1,1 +1,46 @@
-<mxfile host="app.diagrams.net" modified="2020-09-22T00:13:42.559Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="LE585b6Pa_pGCwkJTMAb" version="13.7.3" type="github"><diagram id="nvdBFDoKT1455C5fFc9Z" name="Page-1">7Vpbb9s2FP41AraHBLJkycljLMdbu67IkAJrnwZaomWiFOlQVGz315c3Xcm0KRrXbic/yOTH+/nOOTok5YVJsf+Dge3mb5pB7AV+tvfChRcEkzgOxJ9EDhqZ1UDOUGYqtcA9+gQN6Bu0QhksexU5pZijbR9MKSEw5T0MMEZ3/WprivujbkEOLeA+BdhG/0UZ32j0Kpi1+J8Q5Zt65El8rUsKUFc2Kyk3IKO7DhTeemHCKOU6VewTiKXwarnodssnSpuJMUj4cxpQzvPXYLO8e1W+eUPIXxf/vf7nwvTyCHBlFmwmyw+1BBitSAZlJxMvnO82iMP7LUhl6U5wLrANL7ApNt1BxuH+yXlOmtULtYG0gJwdRBXTIPCNwIzGXJnsrhX/tMY2HdFHUwMCQ3nedN1KRSSMYL5BSFNLSG9psWJQqrV8VGUFGKJeEINCyoOsyq2ShT9CI3RyaJg/tX3Hfftu7L1j4GFdp2vgR7PvyLLvhBLOQAm9JPTmE3AOLI7QCJ0ldObuJazdxsncy8wRY8VYjDpfCzfTk1b8UNG64KJUwfCNqBBMt/u2UKRy+Z8wCFgv/MC6eKn71bUsQoRoeV/qDIqhwEpV8EUeVJzqwVUxwCgnIp0KBiATgOQHiRD5xhQUKMtk4/mWIsKV+KK5Fy3kQhDGCcVUNFsQSmSlkjP6EQ7AVkv8F1KDqK8Gk8BWg4lLDYJjqcGVpQZ3VNK3Bo/qH5EMPVQyniyrUoWWHGAMy8uRwT5bXQZdG4GjMXjtihPWiBXKDNMxZhihM4PO7F08dTjhH/suro+VejbMGBRvT/8Ww1R4NoLScSs/Qj8xdOZeIJid3As4jj2TwJsvP4jXts8RJOpYj8hcWollygQk4oGBWnqORFm4dIheheArVkffr4Q3QSo8KEWIpkKDkGjSVM3KGf6vQPoxVzRdpDrKkrsAlq9+C6JItU7krqCf/t3eITTzGQJm42E6X3Rbhr74rdd2Z+ChkvO/WVw+udNoYGtAgVUd7OQmcnZG+f+M6SPH5ry5+um6gvBoriD82u7caSRr9bONpLH35+3Fv8kVd1lTdjpbLpcWdd2SY4RwjuuYie9gLDoaY/ZxrSVXSLIbefkn7QODskRpX5Rwj/j7TvqDVPHLyOQWe6PxKnOoM2J7d3jfzehWs6jOt+1Urm6oZwcz66JxwIFYAa1YCp+hrRywHPIvVZy5We2wFn2BNAYx4OixP2EXk2aEO+liWqWJBmYeXg+UQS/UtOreWQ46igd3geEwJNCCsDpSitUs+zt0LbZ07Z101F/33k5/6vC7z3fjLu/w4g7aYi6yzX3qUJyjnblM7NPTOeWUKMcsn0jKDakTNH0ZSxqfLSalojrwqcIgoypgk7LQ0dyjjsvU9wpIum1adyFDNdn3r0rydEDy9Dqy38LBy7Assu0nDtos2w9FwtvP</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-09-22T00:15:38.173Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="cr4fRm6Il2fAWJ0VOuRy" version="13.7.3" type="github">
+  <diagram id="nvdBFDoKT1455C5fFc9Z" name="Page-1">
+    <mxGraphModel dx="1662" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ottgJahFPIsLLnnK-_JQ-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="80" width="480" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="ottgJahFPIsLLnnK-_JQ-4" value="Nombre de usuario&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="200" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ottgJahFPIsLLnnK-_JQ-5" value="Contraseña&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="340" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ottgJahFPIsLLnnK-_JQ-7" value="&lt;font style=&quot;font-size: 24px&quot;&gt;Crear usuario&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="250" y="120" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ottgJahFPIsLLnnK-_JQ-8" value="Por favor indique sus detalles." style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="250" y="160" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ottgJahFPIsLLnnK-_JQ-9" value="Confirmar contraseña&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="420" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ottgJahFPIsLLnnK-_JQ-10" value="Correo Electronico&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="270" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ottgJahFPIsLLnnK-_JQ-11" value="¿Ya tiene una cuenta en la pagina?&amp;nbsp;&lt;br&gt;Iniciar sesión &lt;u style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;b&gt;&lt;font color=&quot;#0000ff&quot;&gt;aquí.&lt;/font&gt;&lt;/b&gt;&lt;/u&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="250" y="540" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ottgJahFPIsLLnnK-_JQ-13" value="&lt;font color=&quot;#ffffff&quot;&gt;Iniciar&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#007FFF;strokeColor=#007FFF;" parent="1" vertex="1">
+          <mxGeometry x="260" y="480" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ottgJahFPIsLLnnK-_JQ-15" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="ottgJahFPIsLLnnK-_JQ-13" target="ottgJahFPIsLLnnK-_JQ-17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="390" as="sourcePoint" />
+            <mxPoint x="600" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ottgJahFPIsLLnnK-_JQ-17" value="Boton con interior de un color ¿azulado? para enviar el inicio de sesion" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="450" y="495" width="220" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
