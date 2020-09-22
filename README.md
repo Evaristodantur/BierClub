@@ -16,18 +16,12 @@ Por el momento envios en la provincia de Tucumán, pero apuntamos a mejorar en u
 - Residencia: Tucumán
 
 ## Listado de referentes:
-- https://tienda.bierful.com
-  - Servicios que ofrecen
-- https://www.craftsociety.com.ar
-  - Buen datallado de catalogo
-- https://www.cervezadosdingos.com/
-  - Estetica
-- https://sixpack.com.ar
-  - Estetica e innovacion
-- https://www.beercoffee.com.ar
-  - Funcionalidad
-- https://cibart.com.ar/
-  - Por el carrito y sus funciones
+- [Tienda Bierful](https://tienda.bierful.com): Servicios que ofrecen
+- [Craft Society](https://www.craftsociety.com.ar): Buen datallado de catalogo
+- [Dos Dingos](https://www.cervezadosdingos.com/): Estetica
+- [Six Pack](https://sixpack.com.ar): Estetica e innovacion
+- [Bear Coffee](https://www.beercoffee.com.ar): Funcionalidad
+- [Cibart](https://cibart.com.ar/): Por el carrito y sus funciones
 
 ## Developers:
 - Evaristo Dantur
