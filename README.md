@@ -26,4 +26,4 @@ Por el momento envios en la provincia de Tucumán, pero apuntamos a mejorar en u
 - Diego Kippes
 
 ## Trello:
- - https://trello.com/b/Z7Sq24ef/bierclub
+ - [**BierClub Trello**](https://trello.com/b/Z7Sq24ef/bierclub)
