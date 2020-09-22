@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-22T08:13:37.998Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="DIvNnKA5ifN8-CJzjG76" version="13.7.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-09-22T08:19:32.949Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="YVSYXaAOHNJEvzvLaYtY" version="13.7.3" type="github" pages="3">
   <diagram id="gn9tKPOoIWXeO0Pi3BGs" name="Page-1">
     <mxGraphModel dx="1640" dy="435" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -183,16 +183,16 @@
           <mxGeometry x="-309.33742738589217" y="650.0008333333334" width="10.622406639004147" height="19.791666666666668" as="geometry" />
         </mxCell>
         <mxCell id="PmWIVXRI8UOth7mFPXQt-8" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="PmWIVXRI8UOth7mFPXQt-1">
-          <mxGeometry x="-317.15999999999997" y="122.37" width="45.98" height="63.7" as="geometry" />
+          <mxGeometry x="-330" y="122.37" width="58.82" height="63.7" as="geometry" />
         </mxCell>
         <mxCell id="PmWIVXRI8UOth7mFPXQt-9" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="PmWIVXRI8UOth7mFPXQt-1">
           <mxGeometry x="-470" y="208.64583333333334" width="318.6721991701245" height="9.895833333333334" as="geometry" />
         </mxCell>
         <mxCell id="PmWIVXRI8UOth7mFPXQt-10" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="PmWIVXRI8UOth7mFPXQt-1">
-          <mxGeometry x="-188.50622406639008" y="114.63541666666667" width="31.86721991701245" height="79.16666666666667" as="geometry" />
+          <mxGeometry x="-230" y="114.64" width="73.36" height="79.17" as="geometry" />
         </mxCell>
         <mxCell id="PmWIVXRI8UOth7mFPXQt-11" value="Img Carrito" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="PmWIVXRI8UOth7mFPXQt-1">
-          <mxGeometry x="-177.8838174273859" y="144.32291666666669" width="10.622406639004147" height="19.791666666666668" as="geometry" />
+          <mxGeometry x="-198.6338174273859" y="144.33291666666668" width="10.622406639004147" height="19.791666666666668" as="geometry" />
         </mxCell>
         <mxCell id="PmWIVXRI8UOth7mFPXQt-12" value="&lt;h1&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; BierClub&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="PmWIVXRI8UOth7mFPXQt-1">
           <mxGeometry x="-470" y="759.89" width="318.6721991701245" height="118.75" as="geometry" />
@@ -222,7 +222,7 @@
           <mxGeometry x="-156.63900414937763" y="515.4166666666667" width="2.9211618257261405" height="59.375" as="geometry" />
         </mxCell>
         <mxCell id="PmWIVXRI8UOth7mFPXQt-22" value="logo" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" vertex="1" parent="PmWIVXRI8UOth7mFPXQt-1">
-          <mxGeometry x="-298.7097715147923" y="144.32291666666669" width="10.622406639004147" height="19.791666666666668" as="geometry" />
+          <mxGeometry x="-305.3497715147923" y="144.32291666666669" width="10.622406639004147" height="19.791666666666668" as="geometry" />
         </mxCell>
         <mxCell id="PmWIVXRI8UOth7mFPXQt-23" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="PmWIVXRI8UOth7mFPXQt-1">
           <mxGeometry x="-441.25328447486123" y="161.25285714285712" width="12.415799967667187" height="2.8571428571428568" as="geometry" />
