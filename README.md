@@ -25,5 +25,4 @@ Por el momento envios en la provincia de Tucumán, pero apuntamos a mejorar en u
 - Santiago Terejina
 - Diego Kippes
 
-## Trello:
- - [**BierClub Trello**](https://trello.com/b/Z7Sq24ef/bierclub)
+## Trello: [**BierClub Trello**](https://trello.com/b/Z7Sq24ef/bierclub)
