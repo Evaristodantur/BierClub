@@ -8,9 +8,9 @@ Por el momento envios en la provincia de Tucumán, pero apuntamos a mejorar en u
 - Suscripcion mensual (extra)
 
 ## Audiencia objetivo:
-- Gente mayor a 18 años
-- Ideal: 25-35 años
-- Residencia: Tucumán
+- *Publico*: Gente mayor a 18 años
+- *Ideal*: 25-35 años
+- *Residencia*: Tucumán
 
 ## Listado de referentes:
 - [**Tienda Bierful**](https://tienda.bierful.com): Servicios que ofrecen
