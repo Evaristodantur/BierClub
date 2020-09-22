@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-22T07:01:39.539Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="HppUXhpgZ75sEMVOwBoG" version="13.7.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-09-22T07:21:11.754Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="rJQql0zU0QhYJmYW5InA" version="13.7.3" type="github" pages="3">
   <diagram id="BG0jFZCEIFV9mwDypDCe" name="Page-1">
     <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -87,6 +87,9 @@
         </mxCell>
         <mxCell id="H1LemnDPPANKVg9SuSF7-2" value="&lt;font style=&quot;font-size: 11px&quot;&gt;Que estas buscando?&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="50" y="87.5" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="H1LemnDPPANKVg9SuSF7-3" value="" style="rounded=1;whiteSpace=wrap;html=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="470" y="480" width="90" height="10" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
