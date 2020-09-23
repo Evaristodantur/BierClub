@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-23T01:58:39.501Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="uqV_lFrVOrq8Ug3Alg1I" version="13.7.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-09-23T01:59:42.098Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="vCfwhu46zDAkQhl7OyzY" version="13.7.4" type="github" pages="3">
   <diagram id="xrS7gltXzSFi6mZl_fT-" name="Page-1">
     <mxGraphModel dx="1422" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -123,6 +123,24 @@
         <mxCell id="a5rGi2L_cX59DN1dMsW8-18" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="a5rGi2L_cX59DN1dMsW8-13">
           <mxGeometry y="332.1767796610169" width="202.16055595494845" height="29.991864406779655" as="geometry" />
         </mxCell>
+        <mxCell id="ankg5pDiMkZIKamLcLh3-0" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.616;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="ymCNYQDyMB-klaCXSs3q-1" target="ankg5pDiMkZIKamLcLh3-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="776.5133333333333" as="sourcePoint" />
+            <mxPoint x="1515" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ankg5pDiMkZIKamLcLh3-1" value="scroll para bajar de la nav-bar y llegar al footer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="ymCNYQDyMB-klaCXSs3q-1">
+          <mxGeometry x="595" y="700" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mVC5Z-OiUdOA_-Gcij_m-0" value="" style="endArrow=classic;html=1;entryX=0.055;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="ymCNYQDyMB-klaCXSs3q-1" target="mVC5Z-OiUdOA_-Gcij_m-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="347.33333333333326" y="1092.5" as="sourcePoint" />
+            <mxPoint x="1007" y="1155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mVC5Z-OiUdOA_-Gcij_m-1" value="Boton con interior de un color ¿azulado? para enviar el inicio de sesion" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ymCNYQDyMB-klaCXSs3q-1">
+          <mxGeometry x="570" y="1029.99" width="160" height="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -184,6 +202,24 @@
         </mxCell>
         <mxCell id="saMYRdfROj04oRsrC925-18" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Dn5ca9FiD09hpQaJwIn1-1">
           <mxGeometry x="177.83471074380165" y="700" width="277.68595041322317" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Sx7NSth8kkHbDzaDc0gJ-0" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.616;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="Dn5ca9FiD09hpQaJwIn1-1" target="Sx7NSth8kkHbDzaDc0gJ-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="546.5133333333333" as="sourcePoint" />
+            <mxPoint x="1455" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sx7NSth8kkHbDzaDc0gJ-1" value="scroll para bajar de la nav-bar y llegar al footer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="Dn5ca9FiD09hpQaJwIn1-1">
+          <mxGeometry x="535" y="470" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Km1rwGKNboe-drvA48iz-0" value="" style="endArrow=classic;html=1;entryX=0.055;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="Dn5ca9FiD09hpQaJwIn1-1" target="Km1rwGKNboe-drvA48iz-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="455.52333333333326" y="852.5" as="sourcePoint" />
+            <mxPoint x="1115.19" y="915" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Km1rwGKNboe-drvA48iz-1" value="Boton con interior de un color ¿azulado? para enviar el inicio de sesion" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Dn5ca9FiD09hpQaJwIn1-1">
+          <mxGeometry x="543.19" y="800" width="160" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
