@@ -3,11 +3,11 @@ BierClub es un E-Commerce de cervezas artesanales. Este proyecto se basa en much
 
 Por el momento envios en la provincia de Tucumán, pero apuntamos a mejorar en un futuro para hacernos conocer en toda Argentina.
 
-## Funcionalidad:
+## Funcionalidad 🧰:
 - Venta de cerveza artesanal (Latas y botellas chicas)
 - Suscripcion mensual (extra)
 
-## Audiencia objetivo 👥:
+## Audiencia objetivo 🗣️:
 - *Publico*: Gente mayor a 18 años
 - *Ideal*: 25-35 años
 - *Residencia*: Tucumán
