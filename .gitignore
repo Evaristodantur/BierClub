@@ -1,4 +1,4 @@
-# Ignora todo lo siguiente
+# Ignora todo lo siguiente, si desean usar las dependencias recuerden bajarlas con "npm install"
 # Código gitignore para evitar procesar los directorios de las dependencias
 node_modules/*
 # Archivos generados automaticamente
