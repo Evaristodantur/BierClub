@@ -1,4 +1,4 @@
-# BierClub
+# BierClub 🍻
 BierClub es un E-Commerce de cervezas artesanales. Este proyecto se basa en muchos tipos de cervezas al rededor de todo el país.
 
 Por el momento envios en la provincia de Tucumán, pero apuntamos a mejorar en un futuro para hacernos conocer en toda Argentina.
@@ -7,7 +7,7 @@ Por el momento envios en la provincia de Tucumán, pero apuntamos a mejorar en u
 - Venta de cerveza artesanal (Latas y botellas chicas)
 - Suscripcion mensual (extra)
 
-## Audiencia objetivo:
+## Audiencia objetivo 👥:
 - *Publico*: Gente mayor a 18 años
 - *Ideal*: 25-35 años
 - *Residencia*: Tucumán
@@ -20,7 +20,7 @@ Por el momento envios en la provincia de Tucumán, pero apuntamos a mejorar en u
 - [**Bear Coffee**](https://www.beercoffee.com.ar): Funcionalidad
 - [**Cibart**](https://cibart.com.ar/): Por el carrito y sus funciones
 
-## Developers:
+## Developers 👨‍💻:
 - Evaristo Dantur
 - Santiago Terejina
 - Diego Kippes
