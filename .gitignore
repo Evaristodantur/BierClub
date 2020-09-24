@@ -1,2 +1,5 @@
-node_modules/
+# Ignora todo lo siguiente
+# Código gitignore para evitar procesar los directorios de las dependencias
+node_modules/*
+# Archivos generados automaticamente
 .DS_Store
