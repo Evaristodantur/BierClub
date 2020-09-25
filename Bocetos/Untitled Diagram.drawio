@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-25T13:22:36.758Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15" etag="m8uf2bp_6JPYwqXBYoHJ" version="13.7.5" type="github" pages="12">
+<mxfile host="app.diagrams.net" modified="2020-09-25T13:34:16.518Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15" etag="-lI158iGFgMU--G2TcKc" version="13.7.5" type="github" pages="15">
   <diagram id="OhG8lLr3wyOGNPxtDcFM" name="Page-1">
     <mxGraphModel dx="1410" dy="1324" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -379,6 +379,102 @@
         </mxCell>
         <mxCell id="iTA-d0TNN7onYOGcVERS-7" value="&lt;font style=&quot;font-size: 25px&quot;&gt;Graduación alcohólica&amp;nbsp;&lt;br&gt;Características del producto&lt;br&gt;Como es el proceso de creación&amp;nbsp;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;" vertex="1" parent="omZX_kKI7qmTcR-oOgRF-1">
           <mxGeometry x="160" y="410" width="290" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="g9L1qqkDnFJC9Cpja5ib" name="Page-13">
+    <mxGraphModel dx="1014" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="SnYLSKHFYDfUq7419wax-0" />
+        <mxCell id="SnYLSKHFYDfUq7419wax-1" parent="SnYLSKHFYDfUq7419wax-0" />
+        <mxCell id="hzlQn8o5vGUYynHzHpEC-0" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="SnYLSKHFYDfUq7419wax-1">
+          <mxGeometry x="160" y="150" width="320" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="hzlQn8o5vGUYynHzHpEC-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="SnYLSKHFYDfUq7419wax-1">
+          <mxGeometry x="170" y="160" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="hzlQn8o5vGUYynHzHpEC-2" value="&lt;font style=&quot;font-size: 30px&quot;&gt;Imagen&amp;nbsp;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="SnYLSKHFYDfUq7419wax-1">
+          <mxGeometry x="180" y="205" width="100" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="hzlQn8o5vGUYynHzHpEC-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;producto y su&amp;nbsp;cantidad de litros&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="SnYLSKHFYDfUq7419wax-1">
+          <mxGeometry x="325" y="177.5" width="145" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hzlQn8o5vGUYynHzHpEC-4" value="&lt;font style=&quot;font-size: 25px&quot;&gt;$precio&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;" vertex="1" parent="SnYLSKHFYDfUq7419wax-1">
+          <mxGeometry x="340" y="310" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hzlQn8o5vGUYynHzHpEC-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;carrito&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;fillColor=#007FFF;" vertex="1" parent="SnYLSKHFYDfUq7419wax-1">
+          <mxGeometry x="167.5" y="410" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hzlQn8o5vGUYynHzHpEC-6" value="&lt;font style=&quot;font-size: 9px&quot;&gt;Graduación alcohólica&amp;nbsp;&lt;br&gt;Características del producto&lt;br&gt;Como es el proceso de creación&amp;nbsp;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;" vertex="1" parent="SnYLSKHFYDfUq7419wax-1">
+          <mxGeometry x="307.5" y="380" width="172.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RTHJOLbx1G52ZJ6QuSgu-0" value="&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;Comprar&amp;nbsp;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;strokeColor=#5E7BA6;fillColor=#007FFF;" vertex="1" parent="SnYLSKHFYDfUq7419wax-1">
+          <mxGeometry x="167.5" y="340" width="150" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="VL6USMAEMJG3S3J8NN-G" name="Page-14">
+    <mxGraphModel dx="1014" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="Uaxqvpg9Hh-c_8uBQrLI-0" />
+        <mxCell id="Uaxqvpg9Hh-c_8uBQrLI-1" parent="Uaxqvpg9Hh-c_8uBQrLI-0" />
+        <mxCell id="S5COOQyiML00URVepKim-0" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="Uaxqvpg9Hh-c_8uBQrLI-1">
+          <mxGeometry x="240" y="120" width="320" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="S5COOQyiML00URVepKim-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="Uaxqvpg9Hh-c_8uBQrLI-1">
+          <mxGeometry x="250" y="160" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="S5COOQyiML00URVepKim-2" value="&lt;font style=&quot;font-size: 20px&quot;&gt;Imagen&amp;nbsp;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Uaxqvpg9Hh-c_8uBQrLI-1">
+          <mxGeometry x="260" y="200" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S5COOQyiML00URVepKim-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 30px&quot;&gt;producto y su&amp;nbsp;cantidad de litros&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Uaxqvpg9Hh-c_8uBQrLI-1">
+          <mxGeometry x="400" y="130" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="S5COOQyiML00URVepKim-4" value="&lt;font style=&quot;font-size: 25px&quot;&gt;$precio&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;" vertex="1" parent="Uaxqvpg9Hh-c_8uBQrLI-1">
+          <mxGeometry x="250" y="110" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S5COOQyiML00URVepKim-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;Comprar&amp;nbsp;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;strokeColor=#5E7BA6;fillColor=#007FFF;" vertex="1" parent="Uaxqvpg9Hh-c_8uBQrLI-1">
+          <mxGeometry x="420" y="280" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S5COOQyiML00URVepKim-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;carrito&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;fillColor=#007FFF;" vertex="1" parent="Uaxqvpg9Hh-c_8uBQrLI-1">
+          <mxGeometry x="414" y="355" width="136" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S5COOQyiML00URVepKim-7" value="&lt;font style=&quot;font-size: 15px&quot;&gt;Graduación alcohólica&amp;nbsp;&lt;br&gt;Características del producto&lt;br&gt;Como es el proceso de creación&amp;nbsp;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;" vertex="1" parent="Uaxqvpg9Hh-c_8uBQrLI-1">
+          <mxGeometry x="238" y="295" width="176" height="145" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="KellfjkAMRxIKFSzCijw" name="Page-15">
+    <mxGraphModel dx="1014" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="xrvOzZac-odWaYN0mP-X-0" />
+        <mxCell id="xrvOzZac-odWaYN0mP-X-1" parent="xrvOzZac-odWaYN0mP-X-0" />
+        <mxCell id="WU_4qwXj6-JA6zNJDa-G-0" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="xrvOzZac-odWaYN0mP-X-1">
+          <mxGeometry x="160" y="120" width="320" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="WU_4qwXj6-JA6zNJDa-G-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="xrvOzZac-odWaYN0mP-X-1">
+          <mxGeometry x="340" y="130" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="WU_4qwXj6-JA6zNJDa-G-2" value="&lt;font style=&quot;font-size: 25px&quot;&gt;Imagen&lt;/font&gt;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xrvOzZac-odWaYN0mP-X-1">
+          <mxGeometry x="357.5" y="170" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WU_4qwXj6-JA6zNJDa-G-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;producto y su&amp;nbsp;cantidad de litros&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xrvOzZac-odWaYN0mP-X-1">
+          <mxGeometry x="130" y="130" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WU_4qwXj6-JA6zNJDa-G-4" value="&lt;font style=&quot;font-size: 25px&quot;&gt;$precio&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;" vertex="1" parent="xrvOzZac-odWaYN0mP-X-1">
+          <mxGeometry x="150" y="220" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WU_4qwXj6-JA6zNJDa-G-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;Comprar&amp;nbsp;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;strokeColor=#5E7BA6;fillColor=#007FFF;" vertex="1" parent="xrvOzZac-odWaYN0mP-X-1">
+          <mxGeometry x="170" y="290" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WU_4qwXj6-JA6zNJDa-G-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;carrito&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;fillColor=#007FFF;" vertex="1" parent="xrvOzZac-odWaYN0mP-X-1">
+          <mxGeometry x="320" y="290" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="WU_4qwXj6-JA6zNJDa-G-7" value="&lt;font style=&quot;font-size: 20px&quot;&gt;Graduación alcohólica&amp;nbsp;&lt;br&gt;Características del producto&lt;br&gt;Como es el proceso de creación&amp;nbsp;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;" vertex="1" parent="xrvOzZac-odWaYN0mP-X-1">
+          <mxGeometry x="150" y="350" width="330" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
