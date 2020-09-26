@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-26T04:21:43.178Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="J27c0USwBoQPr1SAJ9SX" version="13.7.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-09-26T04:40:56.172Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="NTOJb5cHuEM1zRemmWRk" version="13.7.5" type="github" pages="3">
   <diagram id="gOpUKdiFm8pxkeaIe91-" name="Page-1">
-    <mxGraphModel dx="3671" dy="1524" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3671" dy="1426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -59,7 +59,7 @@
           <mxGeometry x="-126.99869158878496" y="76.75" width="127.10280373831777" height="40" as="geometry" />
         </mxCell>
         <mxCell id="t53AHBDL_DGSvC8rnL_y-33" value="Envios" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=#6C767D;fontColor=#FFFFFF;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="-220.00000000000003" y="76.75" width="70.8" height="40" as="geometry" />
+          <mxGeometry x="-220" y="76.75" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="t53AHBDL_DGSvC8rnL_y-34" value="Promociones" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=#6C767D;fontColor=#FFFFFF;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="-380.98" y="76.75" width="140.98" height="40" as="geometry" />
@@ -164,7 +164,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="BdrQL4cdrKm6RFQFndbp" name="Page-2">
-    <mxGraphModel dx="3197" dy="1270" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3197" dy="1188" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="iuKd_Pp8GD_JtyTHeRY1-0" />
         <mxCell id="iuKd_Pp8GD_JtyTHeRY1-1" parent="iuKd_Pp8GD_JtyTHeRY1-0" />
@@ -313,7 +313,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ns_dMSV5i1QM9SWYl9xY" name="Page-3">
-    <mxGraphModel dx="3197" dy="2439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3197" dy="2357" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="ZGFLP-5x8rP5CcCoOaNy-0" />
         <mxCell id="ZGFLP-5x8rP5CcCoOaNy-1" parent="ZGFLP-5x8rP5CcCoOaNy-0" />
