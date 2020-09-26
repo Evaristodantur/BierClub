@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-26T03:49:51.704Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="v610YPsgYTcevUEkdJyb" version="13.7.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-09-26T03:50:43.014Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="OXbSUozM-3DPNxmDMtdG" version="13.7.5" type="github" pages="3">
   <diagram id="BG0jFZCEIFV9mwDypDCe" name="Page-1">
-    <mxGraphModel dx="4890" dy="2177" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4382" dy="1905" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -226,7 +226,7 @@
           <mxGeometry x="282" y="100" width="108" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8MLwgE1mx88ZhGkM00MM-0" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#1ba1e2;sketch=1;labelBackgroundColor=#ffffff;arcSize=0;" vertex="1" parent="V-jbAyR8-M4dBIKKFTTF-1">
-          <mxGeometry x="-669" y="500" width="1200" height="300" as="geometry" />
+          <mxGeometry x="-669" y="509" width="1200" height="300" as="geometry" />
         </mxCell>
         <mxCell id="a63qh-l829hwgs__Zu5n-0" value="Novedades" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=40;" vertex="1" parent="V-jbAyR8-M4dBIKKFTTF-1">
           <mxGeometry x="-298.75" y="240" width="507.5" height="20" as="geometry" />
@@ -316,7 +316,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="L94S5Pws6cRvEanTJl3l" name="Page-3">
-    <mxGraphModel dx="3197" dy="2439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4382" dy="3074" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="-IeSadfAtOniTE9cs8pw-0" />
         <mxCell id="-IeSadfAtOniTE9cs8pw-1" parent="-IeSadfAtOniTE9cs8pw-0" />
