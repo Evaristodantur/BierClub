@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-26T23:08:39.198Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="TFg-aLAD8HVvFFR3VRkj" version="13.7.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-09-26T23:16:46.765Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="IwwXYcWgaCIXJDJRTKOa" version="13.7.5" type="github" pages="3">
   <diagram id="eOl5N4ssWgzwHX0BcpxU" name="Page-1">
     <mxGraphModel dx="160" dy="83" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -310,7 +310,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="GGyWuvvStdZporriLlkE" name="Page-3">
-    <mxGraphModel dx="3253" dy="2434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2889" dy="2244" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="2qTk-As6XjV31w3zjH4T-0" />
         <mxCell id="2qTk-As6XjV31w3zjH4T-1" parent="2qTk-As6XjV31w3zjH4T-0" />
@@ -412,6 +412,12 @@
         </mxCell>
         <mxCell id="4nXmWAsNkCGzONvueVby-1" value="footer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="2qTk-As6XjV31w3zjH4T-1">
           <mxGeometry x="-300" y="790" width="770" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ODWguBlwPNuAlAXPwpmM-0" value="&lt;font color=&quot;#999999&quot;&gt;Cupon&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="2qTk-As6XjV31w3zjH4T-1">
+          <mxGeometry x="-230.00276073619634" y="441.28108832147336" width="93.12883435582823" height="38.71912934282128" as="geometry" />
+        </mxCell>
+        <mxCell id="ODWguBlwPNuAlAXPwpmM-1" value="&lt;font color=&quot;#ffffff&quot; style=&quot;background-color: rgb(255 , 128 , 0) ; font-size: 14px&quot; face=&quot;Poppins&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Poppins&quot;&gt;&lt;b&gt;APLICAR CUPON&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF8000;arcSize=15;" vertex="1" parent="2qTk-As6XjV31w3zjH4T-1">
+          <mxGeometry x="-116.62852760736196" y="441.28108832147336" width="153.86503067484665" height="38.71912934282128" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
