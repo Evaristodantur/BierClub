@@ -22,7 +22,7 @@ Por el momento envios en la provincia de Tucumán, pero apuntamos a mejorar en u
 
 ## Developers 👨‍💻:
 - [Evaristo Dantur](https://github.com/Evaristodantur)
-- [Santiago Terejina](https://github.com/santitejerina)
+- [Santiago Tejerina](https://github.com/santitejerina)
 - [Diego Kippes](https://github.com/dkippes)
 
 ## Trello: [**BierClub Trello**](https://trello.com/b/Z7Sq24ef/bierclub)
