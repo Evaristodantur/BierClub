@@ -2,72 +2,34 @@
 <html lang="es">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8431526c8f.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <title>navbar</title>
-    <style>
-        body{
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 300;
-        }
-        .container{
-            width : 80%;
-            margin : 0 auto;
-        }
-        header{
-            background: #FF8000;
-        }
-        .logo{
-            max-width: 65px;
-            padding: 7px 0;
-        }
-        nav{
-            width: 100%;
-            padding-bottom: 2px;
-
-        }
-        nav ul{
-            padding: 0;
-            list-style: none;
-        }
-        nav li{
-            display: inline-block;
-            margin: 0px 25px;
-            position: relative;
-        }
-        nav a{
-            text-decoration: none;
-            color: #fff;
-        }
-        nav a:hover{
-            color: #3D1F00;
-        }
-        hr{
-            opacity:10%
-        }
-    </style>
 </head>
 <body>
 <header>
     <div class ="container">
-        
-        <center>
-            <a href="/"><img src="/images/logo.jpeg" alt="BierClub" class="logo"></a>
-        </center>
-        <hr>
-        <nav>
+        <div class ="navbar">
             <center>
-            <ul>
-                <li><a href="/productos">Productos</a></li>
-                <li><a href="/promociones">Promociones</a></li>
-                <li><a href="/envios">Envio</a></li>
-                <li><a href="/quienes_somos">¿Quienes Somos?</a></li>
-            </ul>
+                <a href="/"><img src="/images/logo.jpeg" alt="BierClub" class="logo"></a>
+                <ul class="navlogin">
+                    <li><a href="/productos"><i class="fas fa-search"></i></a></li>
+                    <li><a href="/promociones"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                </ul>
+                <hr>
+                <nav>
+                <ul>
+                    <li><a href="/productos">Productos</a></li>
+                    <li><a href="/promociones">Promociones</a></li>
+                    <li><a href="/envios">Envio</a></li>
+                    <li><a href="/quienes_somos">¿Quienes Somos?</a></li>
+                </ul>
+                </nav>
             </center>
-        </nav>
+        </div>
     </div> 
 </header>
-
 
 </body>
 </html>

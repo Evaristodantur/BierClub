@@ -1,8 +1,47 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/*----------NAV BAR----------*/
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
+.container{
+  width : 80%;
+  margin : 0 auto;
+}
+header{
+  background: #FF8000;
+}
+.logo{
+  max-width: 65px;
+  padding: 7px 0;
+}
+nav{
+  width: 100%;
+  padding-bottom: 2px;
 
-a {
-  color: #00B7FF;
+}
+.navbar ul{
+  padding: 0;
+  list-style: none;
+}
+.navbar li{
+  display: inline-block;
+  margin: 0px 25px;
+  position: relative;
+}
+.navbar a{
+  text-decoration: none;
+  color: #fff;
+}
+.navbar a:hover{
+  color: #3D1F00;
+}
+hr{
+  opacity:10%
+}
+.navlogin{
+  float:right;
+  position:fixed;
+  right: 20%;
+  top: 10px;
 }
