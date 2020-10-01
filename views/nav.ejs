@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>navbar</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+        }
+        .container{
+            width : 80%;
+            margin : 0 auto;
+        }
+        header{
+            background: #FF8000;
+        }
+        header::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .logo{
+            max-width: 65px;
+            padding: 7px 0;
+        }
+        nav{
+            margin: 0px 25%;
+
+        }
+        nav ul{
+            padding: 0;
+            list-style: none;
+        }
+        nav li{
+            display: inline-block;
+            margin: 0px 25px;
+        }
+        nav a{
+            text-decoration: none;
+            color: #fff;
+        }
+        nav a:hover{
+            color: #3D1F00;
+        }
+        hr{
+            opacity:10%
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class ="container">
+        
+        <center>
+            <a href="/"><img src="/images/logo.jpeg" alt="BierClub" class="logo"></a>
+        </center>
+        <hr>
+        <nav>
+            <center>
+            <ul>
+                <li><a href="/productos">Productos</a></li>
+                <li><a href="/promociones">Promociones</a></li>
+                <li><a href="/envios">Envio</a></li>
+                <li><a href="/quienes_somos">¿Quienes Somos?</a></li>
+            </ul>
+            </center>
+        </nav>
+    </div> 
+</header>
+
+
+</body>
+</html>

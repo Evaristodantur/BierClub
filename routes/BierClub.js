@@ -36,6 +36,11 @@ router.get('/login', function(req, res, next) {
   res.render('login');
 });
 
+/* GET nav. */
+router.get('/nav', function(req, res, next) {
+  res.render('nav');
+});
+
 
 
 module.exports = router;
