@@ -9,16 +9,15 @@ body{
   margin : 0 auto;
 }
 header{
-  background: #FF8000;
+  background:#DAA520;
 }
 .logo{
   max-width: 65px;
-  padding: 7px 0;
+  padding: 10px 0px 2px 0px;
 }
 nav{
   width: 100%;
   padding-bottom: 2px;
-
 }
 .navbar ul{
   padding: 0;
@@ -34,14 +33,38 @@ nav{
   color: #fff;
 }
 .navbar a:hover{
-  color: #3D1F00;
+  color: red;
 }
 hr{
-  opacity:10%
+  opacity:20%
+}
+.navcarrito{
+  float:right;
+  position:fixed;
+  right: 20%;
+  top: 70px;
 }
 .navlogin{
   float:right;
   position:fixed;
   right: 20%;
-  top: 10px;
+  top: -6px;
+}
+.nav-arriba{
+  background: #8B4513!important;
+  padding-top: 50px;
+  width: 100%!important;
+}
+.nav-arriba a{
+  text-decoration: none;
+  color: #fff;
+}
+.nav-arriba ul{
+  padding: 0;
+  list-style: none;
+}
+.nav-arriba li{
+  display: inline-block;
+  margin: 0px 25px;
+  position: relative;
 }
