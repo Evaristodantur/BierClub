@@ -32,5 +32,4 @@ router.get('/nav', function(req, res, next) {
 });
 
 
-
 module.exports = router;
