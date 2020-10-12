@@ -1,16 +1,16 @@
-# Retrospectiva - primer sprint
+# Retrospectiva - 1 sprint
 
 ### Start Doing:
 
 ### More of:
 
-## Keep doing:
+### Keep doing:
 
-## Less of:
+### Less of:
 
-## Stop Doing:
+### Stop Doing:
 
-## Conclusiones:
+### Conclusiones:
 
 -------------------------
-# Retrospectiva - segundo sprint
+# Retrospectiva - 2 sprint
