@@ -7,28 +7,18 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET Productos page. */
-router.get('/productos', function(req, res, next) {
-  res.render('productos');
+router.get('/productDetail', function(req, res, next) {
+  res.render('productDetail');
 });
 
-/* GET Promociones page. */
-router.get('/promociones', function(req, res, next) {
-  res.render('promociones');
-});
-
-/* GET Envios page. */
-router.get('/envios', function(req, res, next) {
-  res.render('envios');
-});
-
-/* GET Quienes Somos page. */
-router.get('/quienes_somos', function(req, res, next) {
-  res.render('quienes_somos');
+/* GET formulario de carga de producto page. */
+router.get('/productAdd', function(req, res, next) {
+  res.render('productAdd');
 });
 
 /* GET Registro page. */
-router.get('/registro', function(req, res, next) {
-  res.render('registro');
+router.get('/register', function(req, res, next) {
+  res.render('register');
 });
 
 /* GET Login page. */
