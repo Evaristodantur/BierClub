@@ -16,6 +16,16 @@ router.get('/productAdd', function(req, res, next) {
   res.render('productAdd');
 });
 
+/* GET Carrito page. */
+router.get('/productCart', function(req, res, next) {
+  res.render('productCart');
+});
+
+/* GET Detalle del producto page. */
+router.get('/productDetail', function(req, res, next) {
+  res.render('productDetail');
+});
+
 /* GET Registro page. */
 router.get('/register', function(req, res, next) {
   res.render('register');
@@ -24,11 +34,6 @@ router.get('/register', function(req, res, next) {
 /* GET Login page. */
 router.get('/login', function(req, res, next) {
   res.render('login');
-});
-
-/* GET nav. */
-router.get('/nav', function(req, res, next) {
-  res.render('nav');
 });
 
 
