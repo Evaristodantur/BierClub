@@ -1,8 +1,8 @@
 # Retrospectiva - primer sprint
 
-## Start Doing:
+### Start Doing:
 
-## More of:
+### More of:
 
 ## Keep doing:
 
