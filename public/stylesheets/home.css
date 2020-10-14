@@ -12,17 +12,15 @@ body .container-home {
 }
 
 /*******************/
-input.buscar , input.newsletter {
+input.newsletter {
     margin: 0.5% 25%;
     width: 49%;
     border-radius: 20px;
     padding: 10px 2px;
     text-align: center;
 }
-input.buscar{
-    margin-top:152px;
-}
-input.buscar::placeholder , input.newsletter::placeholder {
+
+input.newsletter::placeholder {
     color: black;
     opacity: 1;
     font-size: medium;
