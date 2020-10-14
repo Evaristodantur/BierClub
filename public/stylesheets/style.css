@@ -4,7 +4,7 @@ body{
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
 }
-.container{
+.container-nav{
   width : 80%;
   margin : 0 auto;
 }
@@ -51,9 +51,9 @@ hr{
   top: -6px;
 }
 .nav-arriba{
-  background: #8B4513!important;
+  background: #8B4513;
   padding-top: 50px;
-  width: 100%!important;
+  width: 100%;
 }
 .nav-arriba a{
   text-decoration: none;

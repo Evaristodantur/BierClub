@@ -1,3 +1,105 @@
-body {
-    background-color: red;
+/******RESET********/
+body.container-home {
+    padding: 0px; 
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*******************/
+
+body .container-home {
+    background-color: rgb(228, 228, 228);
+}
+
+/*******************/
+
+input.buscar , input.newsletter {
+    margin: 0.5% 25%;
+    width: 49%;
+    border-radius: 20px;
+    padding: 10px 2px;
+    text-align: center;
+}
+
+input.buscar::placeholder , input.newsletter::placeholder {
+    color: black;
+    opacity: 1;
+    font-size: medium;
+}
+
+section.newsletter-background {
+    padding: 20px 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+/*******************/
+
+.banner img {
+    display: block;
+    width: 100%;
+}
+
+/*******************/
+
+.titulo {
+    text-align: center;
+}
+
+/*******************/
+
+.productos {
+    text-align: center;
+}
+
+.producto {
+    display: inline-block;
+    padding: 1% 1%;
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    border: black 1px solid;
+    padding: 10px;
+    margin: 0px 2%;
+    border-radius: 50%;
+    width: 25px;
+    bottom: 130px;
+}
+
+.button a {
+    bottom: 50px;
+}
+
+
+
+/*******************/
+
+ul.mejores-productos {
+    text-align: center;
+}
+
+ul.mejores-productos li a {
+    text-decoration: none;
+    background-color: #DAA520;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+ul.mejores-productos li a:hover {
+    background-color: #8B4513;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.mejores-productos li {
+    border: black;
+    display: inline-block;
+    padding-right: 2%;
 }

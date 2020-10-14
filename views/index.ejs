@@ -4,12 +4,83 @@
     <meta charset="utf-8">
     <title>BierClub 🍻</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
     <link rel='stylesheet' href='/stylesheets/home.css' />
   </head>
 
   <body>
-
     <%- include nav.ejs %>
+    
+
+    <div class="container-home">
+      
+      <section>
+        <input class="buscar" type="text" placeholder="¿Que estas buscando?"><br>
+        <div class="banner">
+          <img src="/images/home/banner.jpg" alt="banner">
+        </div>
+      </section>
+
+      <main>
+        <div class="titulo">
+          <h2>Novedades</h2>
+        </div>
+        
+        <section class="productos">
+          <div class="button">
+            <i class="fas fa-angle-left"></i>
+          </div>
+
+          <article class="producto"> <h4>Producto 1</h4><img src="/images/productos/producto-1.jpg" alt=""> </article>
+          <article class="producto"> <h4>Producto 2</h4><img src="/images/productos/producto-2.jpg" alt=""> </article>
+          <article class="producto"> <h4>Producto 3</h4><img src="/images/productos/producto-3.jpg" alt=""> </article>
+          <article class="producto"> <h4>Producto 4</h4><img src="/images/productos/producto-4.jpg" alt=""> </article>
+
+          <div class="button">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </section>
+
+        <div class="titulo">
+          <h2>Los mejores productos</h2>
+        </div>
+
+        <ul class="mejores-productos">
+          <li> <a href="#">Populares</a></li>
+          <li> <a href="#">Nuevos Productos</a> </li>
+          <li> <a href="#">Mas Vendidos</a> </li>
+          <li> <a href="#">Especiales</a> </li>
+        </ul>
+
+        <section class="productos">
+
+          <div class="button">
+            <a href="#"><i class="fas fa-angle-left"></i></a>
+          </div>
+          
+          <article class="producto"> <h4>Producto 1</h4><img src="/images/productos/producto-1.jpg" alt=""> </article>
+          <article class="producto"> <h4>Producto 2</h4><img src="/images/productos/producto-2.jpg" alt=""> </article>
+          <article class="producto"> <h4>Producto 3</h4><img src="/images/productos/producto-3.jpg" alt=""> </article>
+          <article class="producto"> <h4>Producto 4</h4><img src="/images/productos/producto-4.jpg" alt=""> </article>
+
+          <div class="button">
+            <a href="#"><i class="fas fa-angle-right"></i></a>
+          </div>
+          
+        </section>
+
+        <section class="newsletter-background">
+          <div>
+            <h3>Recibí todas las ofertas</h3>
+            <p>¿Quieres recibir nuestras ofertas? ¡Registrate ya mismo y comenzá a disfrutarlas!</p>
+            <input class="newsletter" type="email" placeholder="Email">
+          </div>
+        </section>
+
+
+      </main>
+
+    </div>
 
 
     
