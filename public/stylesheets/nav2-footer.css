@@ -10,6 +10,7 @@ body{
   width: 100%;
   transition: 0.4s;
   z-index: 9;
+  backdrop-filter: blur(1rem);
 }
 .container-nav{
   width : 80%;
@@ -37,12 +38,6 @@ nav{
 .navbar ul{
   padding: 0;
   list-style: none;
-}
-.nav-backgc{
-/*   background:#DAA520; */
-  height:140px;
-  position: fixed;
-  width: 100%;
 }
 .navbar li{
   display: inline-block;

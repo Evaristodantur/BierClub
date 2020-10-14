@@ -24,7 +24,17 @@ body .container-home {
 section.productos {
     width: 100%;
 }
-
+@media(min-width:1200px){
+    article.producto{
+        width: 350px;
+        height: 440px;
+    }
+    article.producto:hover{
+        width: 350px;
+        height: 540px;
+        transition: 0.5s;
+    }
+}
 article.producto {
     text-align: center;
     border: rgba(0, 0, 0, .2) 1px solid;
@@ -32,7 +42,6 @@ article.producto {
     background-clip: padding-box;
     display: inline-block;
     margin: 1% 1%;
-    width: 20%;
     box-shadow: 5px 5px rgba(163, 163, 163, 0.295);
 }
 
@@ -41,10 +50,12 @@ article.producto img {
     border-top-right-radius: 15px;
     width: 100%;
 }
-
-article.producto:hover {
-    transform: scale(1.1);
-    z-index: -1;
+.hoverproducto{
+    opacity: 0;
+}
+article.producto:hover .hoverproducto{
+    opacity: 1;
+    transition: 0.5s;
 }
 
 article button.btn-producto {
@@ -92,7 +103,6 @@ ul.mejores-productos li a:hover {
     color: white;
     padding: 5px 15px;
     border-radius: 5px;
-    z-index: -1;
 }
 
 .mejores-productos li {
