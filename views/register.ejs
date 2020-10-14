@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>BierClub 🍻</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel='stylesheet' href='/stylesheets/register.css' />
-  </head>
-  <%- include nav.ejs %> <br> <br> <br> <br> <br> <br>
-  <body>
-<div class ="container-register"> 
-<p> <label for="Nombre"> Nombre*</label> <br>
-<input class="input-registro" type="text", id="nombre"> </p><br>
+<head>
+	<meta charset="utf-8">
+	<title>BierClub 🍻</title>
+	<link rel='stylesheet' href='/stylesheets/nav2-footer.css' />
+	<link rel='stylesheet' href='/stylesheets/register.css' />
+</head>
 
-<p> <label for="Nombre de usuario"> Nombre de usuario*</label><br>
-  <input class="input-registro" type="text", id="usuario"></p><br>
+<body>
+	<%- include nav2.ejs %>
+		<div class="container-register">
+			<p> <label for="Nombre"> Nombre*</label> <br>
+				<input class="input-registro" type="text" , id="nombre"> </p><br>
 
-<p> <label for= "Email">Email*</label> <br>
- <input class="input-registro" type="email", id="Email"> </p> <br>
+			<p> <label for="Nombre de usuario"> Nombre de usuario*</label><br>
+				<input class="input-registro" type="text" , id="usuario"></p><br>
+			<p> <label for="Email">Email*</label> <br>
+				<input class="input-registro" type="email" , id="Email"> </p> <br>
 
- <p> <label for= "Contraseña">Contraseña*</label><br>
-<input class="input-registro" type="password", id="Contraseña"> </p><br>
+			<p> <label for="Contraseña">Contraseña*</label><br>
+				<input class="input-registro" type="password" , id="Contraseña"> </p><br>
 
-<p> <label for= " Confirmar Contraseña">Confirmar contraseña* </label> <br>
-  <input class="input-registro" type="password", id=" Confirmar Contraseña"> </p><br>
-<center> 
-  <button class="input-button"  type="submit", id="registrar", value="registrar"> Registrar 
+			<p> <label for=" Confirmar Contraseña">Confirmar contraseña* </label> <br>
+				<input class="input-registro" type="password" , id=" Confirmar Contraseña"> </p><br>
+			<center>
+				<button class="input-button" type="submit" , id="registrar" , value="registrar"> Registrar 
   </center>
 </div>
 <%- include footer.ejs %> 
