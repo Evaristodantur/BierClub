@@ -4,11 +4,17 @@ body{
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
 }
+.nav-backgc{
+  background:#DAA520;
+  height:140px;
+  position: fixed;
+  width: 100%;
+  transition: 0.4s;
+}
 .container-nav{
   width : 80%;
-  margin : 0 auto;
-}
-header{
+  margin-left:10%;
+  position:fixed;
   background:#DAA520;
 }
 .logo{
@@ -40,13 +46,13 @@ hr{
 }
 .navcarrito{
   float:right;
-  position:fixed;
+  position: fixed;
   right: 20%;
   top: 70px;
 }
 .navlogin{
   float:right;
-  position:fixed;
+  position:absolute;
   right: 20%;
   top: -6px;
 }
