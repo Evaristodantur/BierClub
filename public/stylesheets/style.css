@@ -93,12 +93,15 @@ hr{
   color: white;
 }
 
-.other {
-  top: 10%;
+iframe.mapa {
+  width: 94%;
 }
 
+iframe.mapa:hover {
+  transform: scale(1.1);
+}
 
-.hrline {
+hr.hrline {
   color: white;
   border: none;
   height: 2px;
@@ -112,7 +115,7 @@ hr{
   text-align: center;
 }
 
-.copyright h4 {
+.copyright h3 {
   margin: 0;
   padding-bottom: 5px;
 }

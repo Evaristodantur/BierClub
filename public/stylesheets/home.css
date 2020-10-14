@@ -1,59 +1,32 @@
 /******RESET********/
-body.container-home {
+body .container-home {
+    background-color: rgb(228, 228, 228);
     padding: 0px; 
     margin: 0px;
     box-sizing: border-box;
 }
 
-/*******************/
-
-body .container-home {
-    background-color: rgb(228, 228, 228);
-}
-
-/*******************/
-input.newsletter {
-    margin: 0.5% 25%;
-    width: 49%;
-    border-radius: 20px;
-    padding: 10px 2px;
-    text-align: center;
-}
-
-input.newsletter::placeholder {
-    color: black;
-    opacity: 1;
-    font-size: medium;
-}
-
-section.newsletter-background {
-    padding: 20px 0px;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-
-/*******************/
+/********BANNER-CARRUSEL***********/
 
 .banner img {
     display: block;
     width: 100%;
 }
 
-/*******************/
+/*********TITULOS**********/
 
-.titulo {
+.titulos {
     text-align: center;
 }
 
-/*******************/
+/*********PRODUCTOS**********/
 
-.productos {
-    text-align: center;
+section.productos {
+    width: 100%;
 }
 
-.producto {
+article.producto {
+    text-align: center;
     border: rgba(0, 0, 0, .2) 1px solid;
     border-radius: 15px;
     background-clip: padding-box;
@@ -63,17 +36,17 @@ section.newsletter-background {
     box-shadow: 5px 5px rgba(163, 163, 163, 0.295);
 }
 
-.producto img {
+article.producto img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 100%;
 }
 
-.producto:hover {
+article.producto:hover {
     transform: scale(1.1);
 }
 
-.btn-producto {
+article button.btn-producto {
     background-color: black;
     color: white;
     border: rgba(0, 0, 0, .2) 1px solid;
@@ -83,21 +56,23 @@ section.newsletter-background {
     margin-bottom: 2px;
 }
 
-.button {
+a .button-pass {
     display: inline-block;
     position: relative;
     background-color: white;
     border: black 1px solid;
-    padding: 10px;
-    margin: 0px 0%;
     border-radius: 50%;
-    width: 25px; 
+    width: 2.5%;
+    margin: 0% 1%;
     bottom: 150px;
 }
 
+a i.fas {
+    padding: 0% 0% 0% 25%;
+    font-size: 35px;
+}
 
-
-/*******************/
+/********MEJORES PRODUCTOS NAV********/
 
 ul.mejores-productos {
     text-align: center;
@@ -123,3 +98,27 @@ ul.mejores-productos li a:hover {
     display: inline-block;
     padding-right: 2%;
 }
+
+/*********NEWSLETTER**********/
+section.newsletter-background {
+    margin-top: 1%;
+    padding: 20px 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+input.newsletter {
+    margin: 0.5% 25%;
+    width: 49%;
+    border-radius: 20px;
+    padding: 10px 2px;
+    text-align: center;
+}
+
+input.newsletter::placeholder {
+    color: black;
+    opacity: 1;
+    font-size: medium;
+}
+
