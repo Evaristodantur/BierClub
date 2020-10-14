@@ -60,11 +60,14 @@ section.newsletter-background {
     background-clip: padding-box;
     display: inline-block;
     margin: 1% 1%;
+    width: 20%;
+    box-shadow: 5px 5px rgba(163, 163, 163, 0.295);
 }
 
 .producto img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    width: 100%;
 }
 
 .producto:hover {
@@ -87,14 +90,10 @@ section.newsletter-background {
     background-color: white;
     border: black 1px solid;
     padding: 10px;
-    margin: 0px 2%;
+    margin: 0px 0%;
     border-radius: 50%;
-    width: 25px;
-    bottom: 130px;
-}
-
-.button a {
-    bottom: 50px;
+    width: 25px; 
+    bottom: 150px;
 }
 
 
