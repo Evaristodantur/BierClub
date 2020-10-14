@@ -44,6 +44,7 @@ article.producto img {
 
 article.producto:hover {
     transform: scale(1.1);
+    z-index: -1;
 }
 
 article button.btn-producto {
@@ -91,6 +92,7 @@ ul.mejores-productos li a:hover {
     color: white;
     padding: 5px 15px;
     border-radius: 5px;
+    z-index: -1;
 }
 
 .mejores-productos li {

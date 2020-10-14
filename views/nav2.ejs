@@ -2,19 +2,13 @@
 <html lang="es">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="/stylesheets/style.css" rel="stylesheet">
+    <link href="/stylesheets/nav2-footer.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8431526c8f.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <title>navbar</title>
 </head>
 <body>
 <header>
-    <div class="nav-arriba">
-        <ul class="navlogin">
-            <li><a href="#login"><i class="fas fa-sign-in-alt"></i> Iniciar sesion</a></li>
-            <li><a href="#micuenta"><i class="far fa-user"></i> Cuenta</a></li>
-        </ul>    
-    </div>
     <div id="navbar" class="nav-backgc">
     <div class ="container-nav">
         <div class ="navbar">
@@ -22,16 +16,19 @@
                 <a href="/"><img src="/images/logo2.png" alt="BierClub" class="logo"></a>
                 <ul id ="navcarrito"class="navcarrito">
                     <li><a href="/productos"><i class="fas fa-search"></i></a></li>
-                    <li><a href="/promociones"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                    <li><a href="/promociones"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
-                <hr>
+                <ul id ="navlogin" class="navlogin">
+                    <li><a href="#login"><i class="fas fa-sign-in-alt"></i> Iniciar sesion</a></li>
+                </ul> 
+                <hr><a href="/"><img src="/images/logo2.png" alt="BierClub" class="logonav" id="logonav"></a>
                 <nav>
-                <ul>
+                <ul class="barra"><strong>
                     <li><a href="/productos">Productos</a></li>
                     <li><a href="/promociones">Promociones</a></li>
                     <li><a href="/envios">Envio</a></li>
                     <li><a href="/quienes_somos">¿Quienes Somos?</a></li>
-                </ul>
+                </ul></strong>
                 </nav>
             </center>
         </div>
@@ -39,16 +36,21 @@
     </div>
 </header>
 <script>
-    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
     window.onscroll = function() {scrollFunction()};
-    
+
     function scrollFunction() {
-      if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-        document.getElementById("navbar").style.margin = "-50px 0px 0px 0px";
-        document.getElementById("navcarrito").style.margin = "-35px 0px 0px 0px";
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("navbar").style.margin = "-72px 0px 0px 0px";
+        document.getElementById("navbar").style.background = "#DAA520";
+        document.getElementById("logonav").style.display = "inline-block";
+        document.getElementById("navcarrito").style.margin = "32px 0px 0px 0px";
+        document.getElementById("navlogin").style.margin = "32px 0px 0px 0px";
       } else {
         document.getElementById("navbar").style.margin = "0px 0px 0px 0px";
-        document.getElementById("navcarrito").style.margin = "-29px 0px 0px 0px";
+        document.getElementById("navbar").style.background = "none";
+        document.getElementById("logonav").style.display = "none";
+        document.getElementById("navcarrito").style.margin = "-35px 0px 0px 0px";
+        document.getElementById("navlogin").style.margin = "-35px 0px 0px 0px";
       }
     }
     </script>

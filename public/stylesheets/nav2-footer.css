@@ -1,0 +1,140 @@
+/*----------NAV BAR----------*/
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+.nav-backgc{
+  height:140px;
+  position: fixed;
+  width: 100%;
+  transition: 0.4s;
+  z-index: 9;
+}
+.container-nav{
+  width : 80%;
+  margin-left:10%;
+  position:fixed;
+  z-index:inherit 9;
+}
+.logonav{
+  max-width: 65px;
+  padding: 10px 0px 2px 0px;
+  position: relative;
+  float:left;
+  margin-top: -5px;
+  display:none;
+  transition: 0.3s;
+}
+.logo{
+  max-width: 65px;
+  padding: 10px 0px 2px 0px;
+}
+nav{
+  width: 100%;
+  padding-bottom: 2px;
+}
+.navbar ul{
+  padding: 0;
+  list-style: none;
+}
+.nav-backgc{
+/*   background:#DAA520; */
+  height:140px;
+  position: fixed;
+  width: 100%;
+}
+.navbar li{
+  display: inline-block;
+  margin: 0px 25px;
+  position: relative;
+}
+.navbar a{
+  text-decoration: none;
+  color: #fff;
+}
+.navbar a{
+  color: #fff;
+}
+.barra{
+  margin-top: 27px;
+}
+hr{
+  opacity:20%
+}
+.navcarrito{
+  float:right;
+  position: fixed;
+  right: 20%;
+  margin-top: -35px;
+  transition: 0.3s;
+}
+.navlogin{
+  float:right;
+  position:fixed;
+  right: 1.5%;
+  margin-top: -35px;
+  transition: 0.3s;
+}
+.nav-arriba{
+  padding-top: 50px;
+  width: 100%;
+}
+.nav-arriba a{
+  text-decoration: none;
+
+}
+.nav-arriba ul{
+  padding: 0;
+  list-style: none;
+}
+.nav-arriba li{
+  display: inline-block;
+  margin: 0px 25px;
+  position: relative;
+}
+/*----------FOOTER----------*/
+
+.container-footer {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+
+.art-footer {
+  margin-top: 1%;
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  vertical-align: top;
+  color: white;
+}
+
+iframe.mapa {
+  width: 94%;
+}
+
+iframe.mapa:hover {
+  transform: scale(1.1);
+}
+
+hr.hrline {
+  color: white;
+  border: none;
+  height: 2px;
+  background-color: white;
+  opacity: 1;
+}
+
+.copyright {
+  padding: 10px 0px;
+  color: white;
+  text-align: center;
+}
+
+.copyright h3 {
+  margin: 0;
+  padding-bottom: 5px;
+}

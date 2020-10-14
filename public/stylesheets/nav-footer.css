@@ -16,6 +16,7 @@ body{
   margin-left:10%;
   position:fixed;
   background:#DAA520;
+  z-index:inherit 9;
 }
 .logo{
   max-width: 65px;
@@ -48,7 +49,7 @@ hr{
   float:right;
   position: fixed;
   right: 20%;
-  top: 70px;
+  margin-top: -29px;
 }
 .navlogin{
   float:right;
