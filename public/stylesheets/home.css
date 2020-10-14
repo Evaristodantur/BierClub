@@ -67,7 +67,7 @@ a .button-pass {
     bottom: 150px;
 }
 
-a i.fas {
+a i.fas.fa-angle-left , .fa-angle-right{
     padding: 0% 0% 0% 25%;
     font-size: 35px;
 }
