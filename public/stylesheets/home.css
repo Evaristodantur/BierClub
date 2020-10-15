@@ -27,7 +27,7 @@ section.productos {
 @media(min-width:1200px){
     article.producto{
         width: 350px;
-        height: 440px;
+        height: 460px;
         transition: 0.5s;
     }
     article.producto:hover{
@@ -55,7 +55,7 @@ article.producto img {
 }
 article.producto .hoverproducto{
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 article button.btn-producto {
