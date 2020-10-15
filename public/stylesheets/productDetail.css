@@ -1,0 +1,13 @@
+h2{text-align:right; 
+    
+}
+h4{ text-align:right; 
+
+}
+.container-product-detail{
+    background-color: rgb(228, 228, 228);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    padding-top: 10rem;
+}
