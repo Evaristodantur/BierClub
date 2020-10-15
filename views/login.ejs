@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>BierClub 🍻</title>
-    <link rel='stylesheet' href='/stylesheets/nav-footer.css' />
-    <link rel='stylesheet' href='/stylesheets/login.css' />
-  </head>
-<header> <%- include nav.ejs %>  </header>
-  <body>
-    <div class="container-register"></div> <br> <br> <br> <br> <br>
-    <p> <label for="Nombre de usuario"> Nombre de usuario*</label><br>
-      <input class="input-login" type="text" , id="usuario"></p><br>
+<head>
+	<meta charset="utf-8">
+	<title>BierClub 🍻</title>
+	<link rel='stylesheet' href='/stylesheets/nav-footer.css' />
+	<link rel='stylesheet' href='/stylesheets/register-login.css' />
+</head>
 
-      <p> <label for="Contraseña">Contraseña*</label><br>
-        <input class="input-login" type="password" , id="Contraseña"> </p><br>
-        
-        <center>
-          <button class="input-button-login" type="submit" , id="Iniciar sesión" , value="Iniciar sesion"> Iniciar sesion 
-    </center>
-        <center><br> <br>
-    <a href="http://localhost:3000/register"> <button class="input-button-login" type="submit" , id="registrar" , value="registrar"> Registrar </a>
-    </center>
+<body>
+	<header>
+		<%- include nav.ejs %>
+	</header>
+	
+		<div class="container-register">
+
+			<h1>Ingresa a tu cuenta</h1>
+			<center>
+		
+			<form action="">
+				
+			<div class="campo-input">
+				<center>
+				<input class="input-registro" type="email" , id="Email" placeholder="Email">
+				</center>
+			</div>
+
+			<div class="campo-input">
+				<center>
+				<input class="input-registro" type="password" , id="Contraseña" placeholder="Contraseña"> 
+				</center>
+			</div>
+			
+			<button class="input-button" type="submit" , id="ingresar" , value="ingresar"> Ingresar 
+			</form>
+			</center>
+			</form>
+		</div>
+		</div>
+		<center>
+		<a href="http://localhost:3000/register" <button class="input-button" type="submit" , id="registro" , value="registro"> Registro 
+		</form>
+		</center>
+		</form>
+	</div>
+
+		<footer>
+			<%- include footer.ejs %> 
+		</footer>
+
   </body>
 </html>

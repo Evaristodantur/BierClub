@@ -19,8 +19,17 @@ body .container-register{
 div { 
     text-align:center;
 }
-.input-button {
+.input-button{
     background-color: black;
+    border: 0px solid black;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    width: 36%;
+    margin: 0 0 2% 0;
+    font-size: large;
+}
+.input-button-registro{ background-color: black;
     border: 0px solid black;
     border-radius: 5px;
     color: white;
