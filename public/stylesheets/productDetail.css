@@ -1,7 +1,8 @@
 h2{text-align:right; 
     
 }
-h4{ text-align:right; 
+h4{ text-align:right;
+     
 
 }
 .container-product-detail{
@@ -11,8 +12,10 @@ h4{ text-align:right;
     box-sizing: border-box;
     padding-top: 10rem;
 }
-img{ width: 60%;
-    text-align:left
+img{ width: 49%;
+    text-align:left; 
+    display:inline-block; 
+    
 }
 .input-button-detail {
     background-color: black;
