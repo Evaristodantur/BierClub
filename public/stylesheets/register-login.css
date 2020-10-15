@@ -5,6 +5,7 @@ body .container-register{
     margin: 0px;
     box-sizing: border-box;
     padding-top: 10rem;
+    padding-bottom: 1%;
 }
 
 .input-registro{
@@ -22,10 +23,14 @@ div {
 .input-button{
     background-color: black;
     border: 0px solid black;
+    display: block;
     border-radius: 5px;
     color: white;
     height: 40px;
     width: 36%;
-    margin: 0 0 2% 0;
+    margin: 1% 0% 0% 0;
     font-size: large;
 }
+
+
+
