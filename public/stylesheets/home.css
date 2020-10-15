@@ -1,10 +1,12 @@
 /******RESET********/
 body .container-home {
     background-color: rgb(228, 228, 228);
-    padding: 0px; 
+    padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
+
+
 
 /********BANNER-CARRUSEL***********/
 
@@ -24,6 +26,7 @@ body .container-home {
 section.productos {
     width: 100%;
 }
+
 @media(min-width:1200px){
     article.producto{
         width: 350px;
@@ -35,6 +38,7 @@ section.productos {
         height: 530px;
     }
 }
+
 article.producto {
     text-align: center;
     border: rgba(0, 0, 0, .2) 1px solid;
@@ -44,17 +48,21 @@ article.producto {
     margin: 1% 1%;
     box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
 }
+
 article.producto:hover{
     box-shadow: 6px 6px rgba(163, 163, 163, 0.295);
 }
+
 article.producto img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 100%;
 }
+
 .producto:hover .hoverproducto{
     opacity: 1;
 }
+
 article.producto .hoverproducto{
     opacity: 0;
     transition: 0.3s;

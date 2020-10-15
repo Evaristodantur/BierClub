@@ -4,6 +4,7 @@ body{
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
 }
+
 .nav-backgc{
   height:140px;
   position: fixed;
@@ -13,12 +14,14 @@ body{
   backdrop-filter: blur(1rem);
   background-color: #DAA520;
 }
+
 .container-nav{
   width : 80%;
   margin-left:10%;
   position:fixed;
   z-index:inherit 9;
 }
+
 .logonav{
   max-width: 65px;
   padding: 10px 0px 2px 0px;
@@ -27,36 +30,45 @@ body{
   margin-top: -5px;
   display:none;
 }
+
 .logo{
   max-width: 65px;
   padding: 10px 0px 2px 0px;
 }
+
 nav{
   width: 100%;
   padding-bottom: 2px;
 }
+
 .navbar ul{
   padding: 0;
   list-style: none;
 }
+
 .navbar li{
   display: inline-block;
   margin: 0px 25px;
   position: relative;
 }
+
 .navbar a{
   text-decoration: none;
   color: #fff;
 }
+
 .navbar a{
   color: #fff;
 }
+
 .barra{
   margin-top: 27px;
 }
+
 hr{
   opacity:20%
 }
+
 .navcarrito{
   float:right;
   position: fixed;
@@ -64,6 +76,7 @@ hr{
   margin-top: -35px;
   transition: 0.3s;
 }
+
 .navlogin{
   float:right;
   position:fixed;

@@ -1,0 +1,36 @@
+/******RESET********/
+body .container-register{
+    background-color: rgb(228, 228, 228);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    padding-top: 10rem;
+    padding-bottom: 1%;
+}
+
+.input-registro{
+    display: block;
+    margin: 0 0 1% 0;
+    padding-left: 1%;
+    border-radius: 5px;
+    border: 0px solid black;
+    height: 40px;
+    width: 35%; 
+}
+div { 
+    text-align:center;
+}
+.input-button{
+    background-color: black;
+    border: 0px solid black;
+    display: block;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    width: 36%;
+    margin: 1% 0% 0% 0;
+    font-size: large;
+}
+
+
+
