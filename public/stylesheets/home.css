@@ -32,7 +32,7 @@ section.productos {
     }
     article.producto:hover{
         width: 350px;
-        height: 540px;
+        height: 530px;
     }
 }
 article.producto {
@@ -42,9 +42,11 @@ article.producto {
     background-clip: padding-box;
     display: inline-block;
     margin: 1% 1%;
-    box-shadow: 5px 5px rgba(163, 163, 163, 0.295);
+    box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
 }
-
+article.producto:hover{
+    box-shadow: 6px 6px rgba(163, 163, 163, 0.295);
+}
 article.producto img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
