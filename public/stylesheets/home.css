@@ -28,11 +28,11 @@ section.productos {
     article.producto{
         width: 350px;
         height: 440px;
+        transition: 0.5s;
     }
     article.producto:hover{
         width: 350px;
         height: 540px;
-        transition: 0.5s;
     }
 }
 article.producto {
@@ -50,11 +50,11 @@ article.producto img {
     border-top-right-radius: 15px;
     width: 100%;
 }
-.hoverproducto{
-    opacity: 0;
-}
-article.producto:hover .hoverproducto{
+.producto:hover .hoverproducto{
     opacity: 1;
+}
+article.producto .hoverproducto{
+    opacity: 0;
     transition: 0.5s;
 }
 
