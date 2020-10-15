@@ -8,6 +8,10 @@ body .container-register{
     padding-bottom: 1%;
 }
 
+h1 {
+    text-align: center;
+}
+
 .input-registro{
     display: block;
     margin: 0 0 1% 0;
@@ -17,10 +21,20 @@ body .container-register{
     height: 40px;
     width: 35%; 
 }
-div { 
-    text-align:center;
+
+.terminos {
+    width: 100%;
+    font-size: small;
 }
+
+#terminos-condiciones {
+    background-color: black;
+    color: white;
+}
+
 .input-button{
+    cursor: not-allowed;
+    opacity: 0.3;
     background-color: black;
     border: 0px solid black;
     display: block;
@@ -32,14 +46,14 @@ div {
     font-size: large;
 }
 
+.contraseña-olvidada , .registrate-usuario , .iniciar-sesion{
+    text-align: center;
+}
 
+.registrate-usuario a, .iniciar-sesion a{
+    color: #cf9500;
+}
 
-.input-button-registro{ background-color: black;
-    border: 0px solid black;
-    border-radius: 5px;
-    color: white;
-    height: 40px;
-    width: 36%;
-    margin: 0 0 2% 0;
-    font-size: large;
+.contraseña-olvidada a {
+    color: black;
 }
