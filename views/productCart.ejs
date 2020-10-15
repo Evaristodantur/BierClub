@@ -3,13 +3,85 @@
   <head>
     <meta charset="utf-8">
     <title>BierClub 🍻 - Carrito</title>
-    <link rel='stylesheet' href='/stylesheets/nav2-footer.css' />
+    <link rel='stylesheet' href='/stylesheets/nav-footer.css'/>
+    <link rel='stylesheet' href='/stylesheets/productCart.css'/>
   </head>
-
+  <header>
+    <%- include nav.ejs %>
+    <br>
+  </header>
   <body>
-
-    <%- include nav2.ejs %>
-
-    
+    <div class="container-carrito">
+      <h1 class="titulo">Carrito</h1>
+        <div class="producto-carrito">
+          <h4 class="eliminar-producto">X</h4>
+          <img class="producto-imagen-carrito" src="/images/productos/producto-3.jpg" alt="">
+          <div>
+          <h4 class="nombre-producto">Nombre del producto</h4>
+          <h4 class="propiedad-producto">$150</h4>
+          <h4 class="propiedad-producto">- 2 +</h4>
+          <h4 class="propiedad-producto">$300</h4>
+          </div>
+        </div>
+          <hr class="hr-carrito">
+          <div class="producto-carrito">
+            <h4 class="eliminar-producto">X</h4>
+            <img class="producto-imagen-carrito" src="/images/productos/producto-3.jpg" alt="">
+            <div>
+            <h4 class="nombre-producto">Nombre del producto</h4>
+            <h4 class="propiedad-producto">$150</h4>
+            <h4 class="propiedad-producto">- 2 +</h4>
+            <h4 class="propiedad-producto">$300</h4>
+            </div>
+          </div>
+          <hr class="hr-carrito">
+          <div class="producto-carrito">
+            <h4 class="eliminar-producto">X</h4>
+            <img class="producto-imagen-carrito" src="/images/productos/producto-3.jpg" alt="">
+            <div>
+            <h4 class="nombre-producto">Nombre del producto</h4>
+            <h4 class="propiedad-producto">$150</h4>
+            <h4 class="propiedad-producto">- 2 +</h4>
+            <h4 class="propiedad-producto">$300</h4>
+            </div>
+          </div>
+          <hr class="hr-carrito">
+          <div class="producto-carrito">
+            <h4 class="eliminar-producto">X</h4>
+            <img class="producto-imagen-carrito" src="/images/productos/producto-3.jpg" alt="">
+            <div>
+            <h4 class="nombre-producto">Nombre del producto</h4>
+            <h4 class="propiedad-producto">$150</h4>
+            <h4 class="propiedad-producto">- 2 +</h4>
+            <h4 class="propiedad-producto">$300</h4>
+            </div>
+          </div>
+          
+          <div class="recuadro-total">
+            <div class="recuadro-total-chico">
+            <h3>Total a pagar</h3>
+            <hr class="hr-recuadro">
+            <div>
+            <h4 class="izquierda-recuadro">SUBTOTAL</h4>
+            <h4 class="derecha-recuadro">$1200</h4>
+            </div>
+            <div>
+            <h4 class="izquierda-recuadro envio-recuadro">ENVIO</h4>
+              <div class="derecha-recuadro">
+            <p><input type="radio" name="enviar" value="Envio">Envio a domicilio</p>
+            <p><input type="radio" name="enviar" value="Retiro">Retiro en local</p>
+            <h4>Bascary 440</h4>
+            <a href=""><h4 class="color">Cambiar direccion</h4></a>
+            </div>
+          </div>
+          <hr class="hr-recuadro">
+          <div>
+            <h4 class="izquierda-recuadro">TOTAL</h4>
+            <h4 class="derecha-recuadro">$1300</h4>
+          </div>
+          <a href=""><h4 class="boton-pagar">PROCEDER AL PAGO</h4></a>
+          </div>
+        </div>
+        <%- include footer.ejs %>
   </body>
 </html>

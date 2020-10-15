@@ -1,0 +1,84 @@
+body .container-carrito{
+    background-color: rgb(228, 228, 228);
+    padding: 0px; 
+    margin: 0px;
+    box-sizing: border-box;
+    padding-top:1rem;
+}
+h1.titulo{
+    margin-top: 110px;
+    text-align: center;
+}
+/* PRODUCTOS */
+.producto-carrito{
+    margin-left: 8%;
+    width: 46%;
+    display: inline-block;
+}
+.producto-imagen-carrito{
+    border-radius: 15px;
+    width: 15%;
+    display:inline-block;
+}
+.nombre-producto{
+    display: inline-block;
+    margin-left: 20%;
+}
+.propiedad-producto{
+    display: inline-block;
+    margin-left: 15%;
+}
+.hr-carrito{
+    margin-left: 8%;
+    width: 46%;
+    border: solid 1px black;
+}
+.eliminar-producto{
+    display: inline-block;
+}
+/* RECUADRO DEL TOTAL */
+
+.recuadro-total{
+    width: 400px;
+    height: 500px;
+    position:fixed;
+    display:inline-block;
+    top: 350px;
+    margin-left: 80px;
+    border:solid 1px black;
+    z-index: inherit -1;
+}
+.recuadro-total-chico{
+    margin: 10%;
+}
+.hr-recuadro{
+    border: 1px solid black;
+}
+.derecha-recuadro{
+    width:49%;
+    display:inline-block;
+}
+.izquierda-recuadro{
+    width:49%;
+    display:inline-block;
+    float: left;
+}
+.envio-retiro{
+    margin-left:50%;
+}
+.envio-recuadro{
+    top: 10px;
+}
+.color{
+    color: #DAA520
+}
+a{
+    text-decoration: none;
+}
+.boton-pagar{
+    width: 100%;
+    color: white;
+    background-color: #DAA520;
+    text-align: center;
+    border-radius: 6px;
+}
