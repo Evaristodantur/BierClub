@@ -11,3 +11,16 @@ h4{ text-align:right;
     box-sizing: border-box;
     padding-top: 10rem;
 }
+img{ width: 60%;
+    text-align:left
+}
+.input-button-detail {
+    background-color: black;
+    border: 0px solid black;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    width: 36%;
+    margin: 0 0 2% 0;
+    font-size: large;
+}
