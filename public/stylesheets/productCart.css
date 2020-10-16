@@ -57,6 +57,7 @@ h1.titulo{
 }
 /* RECUADRO DEL TOTAL */
 .recuadro-total{
+    transition: 1s;
     width: 400px;
     height: 500px;
     position:fixed;

@@ -55,7 +55,7 @@
             <a href=""><strong><p>APLICAR CUPON</p></strong></a>
           </div>
 
-          <div class="recuadro-total">
+          <div id="recuadro" class="recuadro-total">
             <div class="recuadro-total-chico">
             <h3>Total a pagar</h3>
             <hr class="hr-recuadro">
@@ -79,6 +79,19 @@
           </div>
           <a href=""><h4 class="boton-pagar">PROCEDER AL PAGO</h4></a>
           </div>
+
+<!--           <script>
+            window.onscroll = function() {scrollFunction()};
+        
+            function scrollFunction() {
+              if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                document.getElementById("recuadro").style.position = "absolute";
+              } else {
+                document.getElementById("recuadro").style.position = "fixed";
+              }
+            }
+        </script> -->
+
         </div>
         <%- include footer.ejs %>
   </body>
