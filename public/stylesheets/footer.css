@@ -32,6 +32,10 @@
     font-size: 35px;
   }
 
+  .contacto i:hover {
+    opacity: 0.8;
+  }
+
   i.fa-instagram {
     color: #F56040;
   }
