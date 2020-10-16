@@ -19,6 +19,11 @@ body .container-home {
 
 .titulos {
     text-align: center;
+    margin-top: 20px;
+}
+.titulos-abajo-producto{
+    text-align: center;
+    margin-top: 60px;
 }
 
 /*********PRODUCTOS**********/
@@ -36,6 +41,7 @@ section.productos {
     article.producto:hover{
         width: 350px;
         height: 530px;
+        margin-bottom: -60px;
     }
 }
 
@@ -123,7 +129,7 @@ ul.mejores-productos li a:hover {
 
 /*********NEWSLETTER**********/
 section.newsletter-background {
-    margin-top: 1%;
+    margin-top: 100px;
     padding: 20px 0px;
     background-color: black;
     color: white;
@@ -143,4 +149,3 @@ input.newsletter::placeholder {
     opacity: 1;
     font-size: medium;
 }
-
