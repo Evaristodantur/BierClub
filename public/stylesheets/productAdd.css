@@ -1,0 +1,63 @@
+/******RESET********/
+body {
+    background-color: rgb(228, 228, 228);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    padding-bottom: 5%;
+}
+
+.container-productAdd {
+    display: block;
+    border: 1px solid rgba(119, 119, 119, 0.4);
+    margin: 0% 10% 2% 10%;
+    border-radius: 8px;
+    padding: 2%;
+}
+
+.container-productAdd h1 {
+    text-align: center;
+}
+
+#nombreProducto , #precio , #cantidad {
+    display: block;
+    margin: 0 0 1% 0;
+    padding-left: 1%;
+    border-radius: 5px;
+    border: 0px solid black;
+    height: 40px;
+    width: 35%;
+}
+
+#imagen , #categoria {
+    display: inline-block;
+    width: 10%;
+    margin: 0 3% 1% 0;
+}
+
+#imagen {
+    width: 30%;
+}
+
+.btn-publicar {
+    cursor: not-allowed;
+    opacity: 0.3;
+    background-color: rgb(68, 68, 255);
+    border: 0px solid black;
+    margin: 1% 2% 0 0;
+    display: inline-block;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    width: 25%;
+    font-size: large;
+}
+
+.btn-reset {
+    cursor: auto;
+    opacity: 1;
+    background-color: rgb(201, 51, 51);
+}

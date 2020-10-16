@@ -3,13 +3,60 @@
   <head>
     <meta charset="utf-8">
     <title>BierClub 🍻 - Carga de producto</title>
-    <link rel='stylesheet' href='/stylesheets/nav2-footer.css' />
+    <link rel='stylesheet' href='/stylesheets/nav-footer.css' />
+    <link rel='stylesheet' href='/stylesheets/productAdd.css' />
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({selector:'textarea'});</script>
   </head>
 
   <body>
 
-    <%- include nav2.ejs %>
+    <header>
+      <%- include nav.ejs %>
+    </header>
 
+    <div class="container-productAdd">
+
+      <h1>Agrege su producto</h1>
+
+      <form action="" method="">
+
+        <div class="productoAgregar">
+          <label for="nombreProducto">Nombre del producto:</label>
+          <input id="nombreProducto" type="text" placeholder="Nombre">
+        </div>
+        
+        <label for="precio">Precio:</label>
+        <input id="precio" type="text" placeholder="Precio">
+        
+        
+        <label for="cantidad">Cantidad:</label>
+        <input id="cantidad" type="text" placeholder="Cantidad">
+
+        <label for="categoria">Categoria:</label>
+        <select name="categoria" id="categoria">
+          <option value="cerveza">Cerveza</option>
+          <option value="vino">Vino</option>
+          <option value="licor">Licor</option>
+          <option value="awa">Awa</option>
+          <option value="pcGaymer">PC Gaymer</option>
+        </select>
+        
+        <input id="imagen" type="file">
+
+        <textarea placeholder="Descripción del articulo" name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+
+        <center>
+        <button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar
+        <button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar y Agregar otro producto
+        <button class="btn-publicar btn-reset" type="reset" , id="reset" , value="reset"> Borrar Todo
+        </center>
+      </form>
+    </div>
+
+    <footer>
+      <%- include footer.ejs %>
+    </footer>
 
     
   </body>
