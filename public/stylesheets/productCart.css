@@ -31,6 +31,30 @@ h1.titulo{
 .estilo-letras-producto{
     margin-top:7%;
 }
+.cupones{
+    display: flex;
+    margin-left:8%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cupones input{
+    height:40px;
+    border-radius: 8px;
+}
+.cupones a{
+    margin-left: 20px;
+    height:46px;
+    color:black;
+}
+.cupones a p{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cupones a:hover{
+    color:white;
+    background-color: #DAA520;
+    border-radius: 8px;
+}
 /* RECUADRO DEL TOTAL */
 .recuadro-total{
     width: 400px;
