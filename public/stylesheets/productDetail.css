@@ -1,7 +1,11 @@
-h2{text-align:right; 
+h2{text-align: right; 
+    display: inline-block;
+    
     
 }
-h4{ text-align:right;
+h4{ 
+    text-align: right;
+    display: inline-block
      
 
 }
@@ -17,13 +21,18 @@ img{ width: 49%;
     display:inline-block; 
     
 }
+.container-button{text-aling:right; 
+    display: inline-block; 
+    width: 50%
+}
 .input-button-detail {
     background-color: black;
     border: 0px solid black;
     border-radius: 5px;
     color: white;
     height: 40px;
-    width: 36%;
+    width: 70%;
     margin: 0 0 2% 0;
     font-size: large;
+   
 }
