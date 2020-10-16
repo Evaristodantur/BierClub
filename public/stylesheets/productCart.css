@@ -57,15 +57,14 @@ h1.titulo{
 }
 /* RECUADRO DEL TOTAL */
 .recuadro-total{
-    transition: 1s;
     width: 400px;
     height: 500px;
     position:fixed;
     display:inline-block;
-    top: 350px;
+    top: 300px;
     margin-left: 65%;
     border:solid 1px black;
-    z-index: inherit -1;
+    z-index: 1;
 }
 .recuadro-total-chico{
     margin: 10%;
