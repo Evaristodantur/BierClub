@@ -13,38 +13,32 @@ h1.titulo{
 .producto-carrito{
     margin-left: 8%;
     width: 46%;
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
 }
 .producto-imagen-carrito{
     border-radius: 15px;
     width: 15%;
     display:inline-block;
 }
-.nombre-producto{
-    display: inline-block;
-    margin-left: 20%;
-}
-.propiedad-producto{
-    display: inline-block;
-    margin-left: 15%;
-}
 .hr-carrito{
     margin-left: 8%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 46%;
     border: solid 1px black;
 }
-.eliminar-producto{
-    display: inline-block;
+.estilo-letras-producto{
+    margin-top:7%;
 }
 /* RECUADRO DEL TOTAL */
-
 .recuadro-total{
     width: 400px;
     height: 500px;
     position:fixed;
     display:inline-block;
     top: 350px;
-    margin-left: 80px;
+    margin-left: 65%;
     border:solid 1px black;
     z-index: inherit -1;
 }
