@@ -37,7 +37,7 @@
     font-size: 35px;
   }
 
-  .contacto i:hover , a:hover{
+  .contacto i:hover , .icono:hover{
     opacity: 0.8;
   }
 
