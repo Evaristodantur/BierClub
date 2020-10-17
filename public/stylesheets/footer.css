@@ -27,32 +27,46 @@
     flex-direction: column;
   }
 
+  .contacto div {
+    text-align: justify;
+    margin-left: 15%;
+  }
+
   .contacto i {
     margin-top: 3%;
     font-size: 35px;
   }
 
-  .contacto i:hover {
+  .contacto i:hover , a:hover{
     opacity: 0.8;
   }
-  i.fa-instagram {
+
+  i.fa-instagram , .ig {
     color: #F56040;
   }
 
-  i.fa-whatsapp {
+  i.fa-whatsapp , .wpp{
     color: #25D366;
   }
 
-  i.fa-facebook-square {
+  i.fa-facebook-square , .fb{
     color: #3b5998;
   }
 
-  i.fa-facebook-messenger {
+  i.fa-facebook-messenger , .fb-msg{
     color: #0078FF;
   }
 
-  i.fa-envelope {
+  i.fa-envelope , .gmail{
     color:#fce4b4a9;
+  }
+
+  .icono {
+    text-decoration: none;
+  }
+
+  .icono p {
+    display: inline-block;
   }
 
   iframe.mapa {

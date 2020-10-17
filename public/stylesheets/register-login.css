@@ -10,6 +10,8 @@ body .container-register{
 
 h1 {
     text-align: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 
 .input-registro{
@@ -48,6 +50,10 @@ h1 {
 
 .contraseña-olvidada , .registrate-usuario , .iniciar-sesion{
     text-align: center;
+}
+
+.registrate-usuario , .iniciar-sesion{
+    margin-bottom: 5%;
 }
 
 .registrate-usuario a, .iniciar-sesion a{

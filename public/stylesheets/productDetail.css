@@ -1,14 +1,12 @@
 h2{text-align: right; 
     display: inline-block;
-    
-    
 }
+
 h4{ 
     text-align: right;
     display: inline-block
-     
-
 }
+
 .container-product-detail{
     background-color: rgb(228, 228, 228);
     padding: 0px;
@@ -16,15 +14,17 @@ h4{
     box-sizing: border-box;
     padding-top: 10rem;
 }
+
 img{ width: 49%;
     text-align:left; 
     display:inline-block; 
-    
 }
+
 .container-button{text-aling:right; 
     display: inline-block; 
     width: 50%
 }
+
 .input-button-detail {
     background-color: black;
     border: 0px solid black;
@@ -33,8 +33,7 @@ img{ width: 49%;
     height: 40px;
     width: 70%;
     margin: 0 0 2% 0;
-    font-size: large;
-   
+    font-size: large; 
 }
 
 
