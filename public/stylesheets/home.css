@@ -101,12 +101,12 @@ article button.btn-producto {
 @media(min-width:1200px){
     article.producto{
         width: 350px;
-        height: 430px;
+        height: 450px;
         transition: 0.5s;
     }
     article.producto:hover{
         width: 350px;
-        height: 490px;
+        height: 530px;
         margin-bottom: -60px;
     }
 }
