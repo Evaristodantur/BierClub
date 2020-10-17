@@ -4,8 +4,7 @@
     background-color: black;
     margin-top: 2px;
     margin-bottom: 0px;
-    position:relative;
-    z-index: 9;
+    z-index: inherit 9;
   }
 
   .cont-nosotros {
@@ -36,7 +35,6 @@
   .contacto i:hover {
     opacity: 0.8;
   }
-
   i.fa-instagram {
     color: #F56040;
   }
@@ -57,8 +55,6 @@
     color:#fce4b4a9;
   }
 
-
-
   iframe.mapa {
     width: 93%;
   }
@@ -66,19 +62,6 @@
   iframe.mapa:hover {
     transform: scale(1.1);
   }
-
-  /*
-  
-  .art-footer {
-    margin-top: 1%;
-    display: inline-block;
-    width: 33%;
-    text-align: center;
-    vertical-align: top;
-    color: white;
-  }*/
-  
-  
   
   hr.hrline {
     color: white;
@@ -99,3 +82,27 @@
     padding-bottom: 5px;
   }
   
+  /*****RESOLUCION 1200*****/
+@media (min-width:1200px) {
+
+}
+
+/*****RESOLUCION 1024*****/
+@media (min-width:1024px) {
+
+}
+
+/*****RESOLUCION 768*****/
+@media (min-width:768px) {
+
+}
+
+/*****RESOLUCION 480*****/
+@media (min-width:480px) {
+
+}
+
+/*****RESOLUCION 320*****/
+@media (min-width:320px) {
+
+}

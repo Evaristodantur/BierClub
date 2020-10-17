@@ -86,15 +86,19 @@
             function scrollFunction() {
               if (document.body.scrollTop > 210 || document.documentElement.scrollTop > 210) {
                 document.getElementById("recuadro").style.position = "absolute";
-                document.getElementById("recuadro").style.top = "550px";
+                document.getElementById("recuadro").style.top = "500px";
               } else {
                 document.getElementById("recuadro").style.position = "fixed";
-                document.getElementById("recuadro").style.top = "350px";
+                document.getElementById("recuadro").style.top = "200px";
               }
             }
         </script>
 
         </div>
-        <%- include footer.ejs %>
+
+        <footer>
+          <%- include footer.ejs %>
+        </footer>
+        
   </body>
 </html>

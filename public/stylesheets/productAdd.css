@@ -64,11 +64,26 @@ header {
 
 
 /*****RESOLUCION 1200*****/
+@media (min-width:1200px) {
+
+}
 
 /*****RESOLUCION 1024*****/
+@media (min-width:1024px) {
+
+}
 
 /*****RESOLUCION 768*****/
+@media (min-width:768px) {
+
+}
 
 /*****RESOLUCION 480*****/
+@media (min-width:480px) {
+
+}
 
 /*****RESOLUCION 320*****/
+@media (min-width:320px) {
+
+}
