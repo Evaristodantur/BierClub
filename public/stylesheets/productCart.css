@@ -61,7 +61,7 @@ h1.titulo{
     height: 500px;
     position:fixed;
     display:inline-block;
-    top: 300px;
+    top: 250px;
     margin-left: 65%;
     border:solid 1px black;
     z-index: 1;
