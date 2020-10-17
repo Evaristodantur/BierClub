@@ -1,4 +1,4 @@
-/******RESET********/
+/* RESET */
 body .container-home {
     background-color: rgb(228, 228, 228);
     padding: 0px;
@@ -6,14 +6,14 @@ body .container-home {
     box-sizing: border-box;
 }
 
-/********BANNER-CARRUSEL***********/
+/* BANNER-CARRUSEL */
 
 .banner img {
     display: block;
     width: 100%;
 }
 
-/*********TITULOS**********/
+/* TITULOS */
 
 .titulos {
     text-align: center;
@@ -24,7 +24,7 @@ body .container-home {
     margin-top: 60px;
 }
 
-/*********PRODUCTOS**********/
+/* PRODUCTOS */
 
 section.productos{
     width: 100%;
@@ -99,77 +99,20 @@ article button.btn-producto {
     color: #ffd56cd7;
 }
 
-/*
 @media(min-width:1200px){
     article.producto{
         width: 350px;
-        height: 460px;
+        height: 430px;
         transition: 0.5s;
     }
     article.producto:hover{
         width: 350px;
-        height: 530px;
+        height: 490px;
         margin-bottom: -60px;
     }
 }
-
-article.producto {
-    text-align: center;
-    border: rgba(0, 0, 0, .2) 1px solid;
-    border-radius: 15px;
-    background-clip: padding-box;
-    display: inline-block;
-    margin: 1% 1%;
-    box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
-}
-
-article.producto:hover{
-    box-shadow: 6px 6px rgba(163, 163, 163, 0.295);
-}
-
-
-article.producto img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    width: 100%;
-}
-
-.producto:hover .hoverproducto{
-    opacity: 1;
-}
-
-article.producto .hoverproducto{
-    opacity: 0;
-    transition: 0.3s;
-}
-
-article button.btn-producto {
-    background-color: black;
-    color: white;
-    border: rgba(0, 0, 0, .2) 1px solid;
-    border-radius: 10px;
-    padding: 10px;
-    width: 80%;
-    margin-bottom: 2px;
-}
-
-a .button-pass {
-    display: inline-block;
-    position: relative;
-    background-color: white;
-    border: black 1px solid;
-    border-radius: 50%;
-    width: 2.5%;
-    margin: 0% 1%;
-    bottom: 150px;
-}
-
-a i.fas.fa-angle-left , .fa-angle-right{
-    padding: 0% 0% 0% 25%;
-    font-size: 35px;
-}
 */
-/********MEJORES PRODUCTOS NAV********/
+/* MEJORES PRODUCTOS NAV */
 
 ul.mejores-productos {
     text-align: center;
@@ -196,7 +139,7 @@ ul.mejores-productos li a:hover {
     padding-right: 2%;
 }
 
-/*********NEWSLETTER**********/
+/* NEWSLETTER */
 section.newsletter-background {
     margin-top: 100px;
     padding: 20px 0px;
@@ -223,11 +166,26 @@ input.newsletter::placeholder {
 
 
 /*****RESOLUCION 1200*****/
+@media (min-width:1200px) {
+
+}
 
 /*****RESOLUCION 1024*****/
+@media (min-width:1024px) {
+
+}
 
 /*****RESOLUCION 768*****/
+@media (min-width:768px) {
+
+}
 
 /*****RESOLUCION 480*****/
+@media (min-width:480px) {
+
+}
 
 /*****RESOLUCION 320*****/
+@media (min-width:320px) {
+
+}
