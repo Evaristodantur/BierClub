@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BierClub 🍻 - Login</title>
 	<link rel="icon" href="/images/faviconLogo.ico"/>
+	<script type="text/javascript" src="/js/speak.js"></script>
 	<link rel='stylesheet' href='/stylesheets/nav.css'/>
 	<link rel='stylesheet' href='/stylesheets/register-login.css'/>
 	<link rel='stylesheet' href='/stylesheets/footer.css'/>
@@ -44,6 +45,15 @@
 			<p class="registrate-usuario">¿Aun no tenes usuario? <a href="/register">Registrate!</a></p>
 			
 		</div>
+
+		<script>
+			let texto = "Hola, soy tu amigo el hombre araña y has guardado el archivo ;)"
+
+			  const hablar = (texto) => speechSynthesis.
+			  speak(new SpeechSynthesisUtterance(texto));
+	  
+			  hablar(texto);
+		  </script>
 
 	<footer>
 		<%- include footer.ejs %> 
