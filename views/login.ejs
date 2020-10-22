@@ -19,41 +19,30 @@
 		<div class="container-register">
 
 			<h1>Ingresa a tu cuenta</h1>
-			<center>
 		
-			<form action="" method="">
+			<form class="formulario" action="" method="">
 				
 			<div class="campo-input">
-				<center>
 				<input class="input-registro" type="email" , id="email" placeholder="Email o Usuario">
-				</center>
 			</div>
 
 			<div class="campo-input">
-				<center>
+				
 				<input class="input-registro" type="password" , id="contraseña" placeholder="Contraseña"> 
-				</center>
+				
 			</div>
 			
 			<p class="contraseña-olvidada"><a href="#">¿Olvidaste tu contraseña?</a></p>
-
-			<button class="input-button" type="submit" , id="ingresar" , value="ingresar"> Ingresar 
 			
+			<div class="campo-input">
+				<button class="input-button" type="submit" , id="ingresar" , value="ingresar"> Ingresar</button>
+			</div>
 			</form>
-			</center>
+			
 	
 			<p class="registrate-usuario">¿Aun no tenes usuario? <a href="/register">Registrate!</a></p>
 			
 		</div>
-
-		<script>
-			let texto = "Hola, soy tu amigo el hombre araña y has guardado el archivo ;)"
-
-			  const hablar = (texto) => speechSynthesis.
-			  speak(new SpeechSynthesisUtterance(texto));
-	  
-			  hablar(texto);
-		  </script>
 
 	<footer>
 		<%- include footer.ejs %> 
