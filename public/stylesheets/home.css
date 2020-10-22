@@ -73,8 +73,13 @@ article.producto {
 }
 
 article.producto .hoverproducto{
+    margin: 0;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.4s;
+}
+
+h4.etiqueta-precio {
+    margin-bottom: 0;
 }
 
 article button.btn-producto {
@@ -99,17 +104,12 @@ article button.btn-producto {
     color: #ffd56cd7;
 }
 
-@media(min-width:1200px){
-    article.producto{
-        width: 350px;
-        height: 450px;
-        transition: 0.5s;
-    }
-    article.producto:hover{
-        width: 350px;
-        height: 530px;
-        margin-bottom: -60px;
-    }
+article.producto{
+        transition: 0.3s;
+}
+
+article.producto:hover{
+        margin-bottom: 3px;
 }
 
 /* MEJORES PRODUCTOS NAV */
@@ -164,7 +164,21 @@ input.newsletter::placeholder {
     font-size: medium;
 }
 
+/*****RESOLUCION 1400*****/
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .producto.resolucionMenorA1200 {
+        display: none;
+    }
 
+    article.producto {
+        margin: 1% 5px;
+    }
+
+    input.newsletter {
+        width: 70%;
+    }
+  
+  }
 
 /*****RESOLUCION 1024*****/
 @media (min-width: 1024px) and (max-width: 1200px) {
@@ -210,7 +224,15 @@ input.newsletter::placeholder {
     }
 
     article.producto {
-        margin: 1% 5px;
+        margin: 0% 5px;
+    }
+
+    article.producto:hover{
+        margin-bottom: 0px;
+    }
+
+    .producto button.btn-producto {
+        margin-bottom: 2%;
     }
 
     .producto {
@@ -224,6 +246,7 @@ input.newsletter::placeholder {
         flex-wrap: wrap;
         align-items: center;
         padding: 0;
+        padding-top: 15px;
     }
 
     .mejores-productos li{
@@ -248,8 +271,17 @@ input.newsletter::placeholder {
     }
 
     article.producto {
-        margin: 1% 5px;
+        margin: 0% 5px;
     }
+
+    article.producto:hover{
+        margin-bottom: 0px;
+    }
+
+    .producto button.btn-producto {
+        margin-bottom: 2%;
+    }
+
 
     .producto {
         width: 75%;
@@ -286,7 +318,15 @@ input.newsletter::placeholder {
     }
 
     article.producto {
-        margin: 1% 5px;
+        margin: 0% 5px;
+    }
+
+    article.producto:hover{
+        margin-bottom: 0px;
+    }
+
+    .producto button.btn-producto {
+        margin-bottom: 2%;
     }
 
     .producto {
