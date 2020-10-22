@@ -5,7 +5,19 @@ body .container-register{
     margin: 0px;
     box-sizing: border-box;
     padding-top: 10rem;
-    padding-bottom: 1%;
+    padding-bottom: 3%;
+}
+
+.container-register {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.campo-input {
+    width: 100%;
 }
 
 h1 {
@@ -15,19 +27,19 @@ h1 {
 }
 
 .input-registro{
-    display: block;
-    margin: 0 0 1% 0;
-    padding-left: 1%;
+    margin: 0 0 2% 0;
+    padding-left: 2%;
     border-radius: 5px;
     border: 0px solid black;
     height: 40px;
-    width: 35%;
+    width: 550px;
 }
 
 .terminos {
     width: 100%;
     font-size: small;
 }
+
 
 #terminos-condiciones {
     background-color: black;
@@ -39,12 +51,12 @@ h1 {
     opacity: 0.3;
     background-color: black;
     border: 0px solid black;
+    padding: 10px;
     display: block;
     border-radius: 5px;
     color: white;
     height: 40px;
-    width: 36%;
-    margin: 1% 0% 0% 0;
+    width: 563px;
     font-size: large;
 }
 
@@ -52,8 +64,13 @@ h1 {
     text-align: center;
 }
 
-.registrate-usuario , .iniciar-sesion{
-    margin-bottom: 5%;
+.iniciar-sesion{
+    margin-bottom: 15px;
+}
+
+p.iniciar-sesion {
+    color: black;
+    margin-bottom: 15px;
 }
 
 .registrate-usuario a, .iniciar-sesion a{
@@ -64,28 +81,46 @@ h1 {
     color: black;
 }
 
-
-/*****RESOLUCION 1200*****/
-@media (min-width:1200px) {
-
-}
-
-/*****RESOLUCION 1024*****/
-@media (min-width:1024px) {
-
-}
-
 /*****RESOLUCION 768*****/
-@media (min-width:768px) {
-
+@media (min-width: 768px) and (max-width: 1023px) {
+    
 }
-
+  
 /*****RESOLUCION 480*****/
-@media (min-width:480px) {
+@media (min-width: 480px) and (max-width: 768px) {
+    .input-registro {
+        width: 100%;
+    } 
 
+    .input-button {
+        width: 100%;
+    }
 }
-
+  
 /*****RESOLUCION 320*****/
-@media (min-width:320px) {
+@media (min-width: 320px) and (max-width: 480px) {
+    .input-registro {
+        width: 90%;
+    } 
 
+    .input-button {
+        width: 90%;
+    }
+}
+  
+/*****RESOLUCION MENOS DE 320*****/
+@media (max-width: 320px) {
+    .campo-input {
+
+    }
+
+    .input-registro {
+        display: block;
+        width: 80%;
+    } 
+
+    .input-button {
+        display: block;
+        width: 80%;
+    }
 }
