@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
 }
 
-.container-home {
+.home {
     background-color: rgb(228, 228, 228);
 }
 
@@ -15,7 +15,7 @@ body {
    BANNER - CARRUSEL - SLICE
    ========================================================================== */
 
-.container-home section div.banner img {
+.home section div.banner img {
     display: block;
     width: 100%;
 }
@@ -24,7 +24,7 @@ body {
    TITULO - NOVEDADES
    ========================================================================== */
 
-.container-home main div.titulos {
+.home main div.titulos {
     text-align: center;
     margin-top: 20px;
 }
@@ -33,14 +33,14 @@ body {
    BLOQUE - PRODUCTOS
    ========================================================================== */
 
-.container-home main section.productos{
+.home main section.productos{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.container-home main section.productos article.producto {
+.home main section.productos article.producto {
     width: 22%;
     background-color: white;
     text-align: center;
@@ -51,43 +51,43 @@ body {
     transition: 0.3s;
 }
 
-.container-home main section.productos div.btnAnt {
+.home main section.productos div.btnAnt {
     align-self: center;
     margin-left: 1%;
     display: inline-block;
 }
 
-.container-home main section.productos div.btnSig {
+.home main section.productos div.btnSig {
     align-self: center;
     margin-right: 1%;
     display: inline-block;
 }
 
-.container-home main section.productos article.producto img {
+.home main section.productos article.producto img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 100%;
 }
 
-.container-home main section.productos article.producto button.hoverproducto{
+.home main section.productos article.producto button.hoverproducto{
     margin: 0;
     opacity: 0;
     transition: 0.4s;
 }
 
-.container-home main section.productos article.producto:hover button.hoverproducto{
+.home main section.productos article.producto:hover button.hoverproducto{
     opacity: 1;
 }
 
-.container-home main section.productos article.producto:hover{
+.home main section.productos article.producto:hover{
     margin-bottom: 3px;
 }
 
-.container-home main section.productos article.producto h4.etiqueta-precio {
+.home main section.productos article.producto h4.etiqueta-precio {
     margin-bottom: 0;
 }
 
-.container-home main section.productos article.producto button.btn-producto {
+.home main section.productos article.producto button.btn-producto {
     background-color: black;
     color: white;
     border: rgba(0, 0, 0, .2) 1px solid;
@@ -97,16 +97,16 @@ body {
     margin-bottom: 2px;
 }
 
-.container-home main section.productos div.btnAnt i.fa-chevron-circle-left , 
-.container-home main section.productos div.btnSig i.fa-chevron-circle-right {
+.home main section.productos div.btnAnt i.fa-chevron-circle-left , 
+.home main section.productos div.btnSig i.fa-chevron-circle-right {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 50%;
     color: #DAA520;
     font-size: 45px;
 }
 
-.container-home main section.productos div.btnAnt i.fa-chevron-circle-left:hover ,
-.container-home main section.productos div.btnSig i.fa-chevron-circle-right:hover {
+.home main section.productos div.btnAnt i.fa-chevron-circle-left:hover ,
+.home main section.productos div.btnSig i.fa-chevron-circle-right:hover {
     background-color: black;    
     color: #ffd56cd7;
 }
@@ -117,16 +117,16 @@ body {
    NAV- MEJORES PRODUCTOS
    ========================================================================== */
 
-.container-home main div.titulo-mejores-productos{
+.home main div.titulo-mejores-productos{
     text-align: center;
     margin-top: 60px;
 }
 
-.container-home main ul.mejores-productos {
+.home main ul.mejores-productos {
     text-align: center;
 }
 
-.container-home main ul.mejores-productos li a {
+.home main ul.mejores-productos li a {
     text-decoration: none;
     background-color: #DAA520;
     color: black;
@@ -135,12 +135,12 @@ body {
     display: block;
 }
 
-.container-home main ul.mejores-productos li a:hover {
+.home main ul.mejores-productos li a:hover {
     background-color: #8B4513;
     color: white;
 }
 
-.container-home main ul.mejores-productos li {
+.home main ul.mejores-productos li {
     border: black;
     display: inline-block;
     padding-right: 1%;
@@ -150,7 +150,7 @@ body {
 /* ==========================================================================
    NEWSLETTER
    ========================================================================== */
-.container-home main section.newsletter-background {
+.home main section.newsletter-background {
     margin-top: 100px;
     padding: 20px 0px;
     background-color: black;
@@ -158,7 +158,7 @@ body {
     text-align: center;
 }
 
-.container-home main section.newsletter-background input.newsletter {
+.home main section.newsletter-background input.newsletter {
     margin: 0.5% 0;
     width: 49%;
     border: 0;
@@ -167,7 +167,7 @@ body {
     text-align: center;
 }
 
-.container-home main section.newsletter-background input.newsletter::placeholder {
+.home main section.newsletter-background input.newsletter::placeholder {
     color: black;
     opacity: 1;
     font-size: medium;
@@ -181,17 +181,17 @@ body {
    RESOLUCION: 1200 a 1400
    ========================================================================== */
 @media (min-width: 1200px) and (max-width: 1400px) {
-    .container-home main section.productos article.producto.resolucionMenorA1200 {
+    .home main section.productos article.producto.resolucionMenorA1200 {
         display: none;
         margin: 1% 5px;
     }
 
-    .container-home main ul.mejores-productos li {
+    .home main ul.mejores-productos li {
         padding-right: 1%;
         width: 16%;
     }
 
-    .container-home main section.newsletter-background input.newsletter {
+    .home main section.newsletter-background input.newsletter {
         width: 70%;
     }
   
@@ -202,17 +202,17 @@ body {
    RESOLUCION: 1024 a 1200
    ========================================================================== */
 @media (min-width: 1024px) and (max-width: 1200px) {
-    .container-home main section.productos article.producto.resolucionMenorA1200 {
+    .home main section.productos article.producto.resolucionMenorA1200 {
         display: none;
         margin: 1% 5px;
     }
 
-    .container-home main ul.mejores-productos li {
+    .home main ul.mejores-productos li {
         padding-left: 0;
         width: 20%;
     }
 
-    .container-home main section.newsletter-background input.newsletter {
+    .home main section.newsletter-background input.newsletter {
         width: 70%;
     }
   
@@ -223,18 +223,18 @@ body {
    RESOLUCION: 768 a 1023
    ========================================================================== */
   @media (min-width: 768px) and (max-width: 1023px) {
-    .container-home main section.productos article.producto.resolucionMenorA1200, 
-    .container-home main section.productos article.producto.resolucionMenorA1024 {
+    .home main section.productos article.producto.resolucionMenorA1200, 
+    .home main section.productos article.producto.resolucionMenorA1024 {
         display: none;
     }
 
-    .container-home main section.productos article.producto {
+    .home main section.productos article.producto {
         width: 30%;
         margin: 1% 5px;
         display: inline-block;
     }
 
-    .container-home main ul.mejores-productos {
+    .home main ul.mejores-productos {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
@@ -243,12 +243,12 @@ body {
         padding-left: 0;
     }
 
-    .container-home main ul.mejores-productos li {
+    .home main ul.mejores-productos li {
         width: 40%;
         margin-top: 2%;
     }
 
-    .container-home main section.newsletter-background input.newsletter {
+    .home main section.newsletter-background input.newsletter {
         width: 70%;
     }
   }
@@ -257,19 +257,19 @@ body {
    RESOLUCION: 480 a 768
    ========================================================================== */
   @media (min-width: 480px) and (max-width: 768px) {
-    .container-home main section.productos article.producto.resolucionMenorA1200, 
-    .container-home main section.productos article.producto.resolucionMenorA1024,
-    .container-home main section.productos article.producto.resolucionMenorA768 {
+    .home main section.productos article.producto.resolucionMenorA1200, 
+    .home main section.productos article.producto.resolucionMenorA1024,
+    .home main section.productos article.producto.resolucionMenorA768 {
         display: none;
     }
 
-    .container-home main section.productos article.producto {
+    .home main section.productos article.producto {
         margin: 0% 5px;
         width: 45%;
         display: inline-block;
     }
 
-    .container-home main section.productos article.producto:hover{
+    .home main section.productos article.producto:hover{
         margin-bottom: 0px;
     }
 
@@ -277,7 +277,7 @@ body {
         margin-bottom: 2%;
     }
 
-    .container-home main ul.mejores-productos {
+    .home main ul.mejores-productos {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -286,17 +286,17 @@ body {
         padding-top: 15px;
     }
 
-    .container-home main ul.mejores-productos li{
+    .home main ul.mejores-productos li{
         width: 75%;
         margin-top: 3%;
         padding: 0;
     }
 
-    .container-home main ul.mejores-productos a {
+    .home main ul.mejores-productos a {
         display:block;
     }
 
-    .container-home main section.newsletter-background input.newsletter {
+    .home main section.newsletter-background input.newsletter {
         width: 70%;
     }
   }
@@ -306,28 +306,28 @@ body {
    RESOLUCION: 480 hacia abajo
    ========================================================================== */
   @media (max-width: 480px) {
-    .container-home main section.productos article.producto.resolucionMenorA1200, 
-    .container-home main section.productos article.producto.resolucionMenorA1024,
-    .container-home main section.productos article.producto.resolucionMenorA768,
-    .container-home main section.productos article.producto.resolucionMenorA320 {
+    .home main section.productos article.producto.resolucionMenorA1200, 
+    .home main section.productos article.producto.resolucionMenorA1024,
+    .home main section.productos article.producto.resolucionMenorA768,
+    .home main section.productos article.producto.resolucionMenorA320 {
         display: none;
     }
 
-    .container-home main section.productos article.producto {
+    .home main section.productos article.producto {
         margin: 0% 5px;
         width: 75%;
         display: inline-block;
     }
 
-    .container-home main section.productos article.producto:hover{
+    .home main section.productos article.producto:hover{
         margin-bottom: 0px;
     }
 
-    .container-home main section.productos article.producto button.btn-producto {
+    .home main section.productos article.producto button.btn-producto {
         margin-bottom: 2%;
     }
 
-    .container-home main ul.mejores-productos {
+    .home main ul.mejores-productos {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -335,17 +335,17 @@ body {
         padding: 0;
     }
 
-    .container-home main ul.mejores-productos li{
+    .home main ul.mejores-productos li{
         width: 75%;
         margin-top: 3%;
         padding: 0;
     }
 
-    .container-home main ul.mejores-productos a {
+    .home main ul.mejores-productos a {
         display:block;
     }
 
-    .container-home main section.newsletter-background input.newsletter {
+    .home main section.newsletter-background input.newsletter {
         width: 80%;
     }
   }

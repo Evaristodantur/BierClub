@@ -1,0 +1,223 @@
+/* ==========================================================================
+   GENERAL -FOOTER
+   ========================================================================== */
+.footer {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    z-index: inherit 9;
+}
+
+/* ==========================================================================
+   CONT-NOSOTROS
+   ========================================================================== */
+.footer section.cont-nosotros {
+    display: flex;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   ART-FOOTER - CONTACTOS
+   ========================================================================== */
+.footer section.cont-nosotros div.art-footer {
+    margin-top: 1%;
+    width: 33%;
+    text-align: center;
+    vertical-align: top;
+    color: white;
+}
+
+.footer section.cont-nosotros div.art-footer .contacto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer section.cont-nosotros div.art-footer .contacto div {
+    text-align: justify;
+    margin-left: 15%;
+}
+
+.footer section.cont-nosotros div.art-footer .contacto i {
+    margin-top: 3%;
+    font-size: 35px;
+}
+
+.footer section.cont-nosotros div.art-footer .contacto i:hover ,
+.footer section.cont-nosotros div.art-footer .contacto .icono:hover{
+    opacity: 0.8;
+}
+
+.footer section.cont-nosotros div.art-footer .contacto .icono i.fa-instagram ,
+.footer section.cont-nosotros div.art-footer .contacto p.ig {
+    color: #F56040;
+}
+
+.footer section.cont-nosotros div.art-footer .contacto .icono i.fa-whatsapp , 
+.footer section.cont-nosotros div.art-footer .contacto p.wpp{
+    color: #25D366;
+}
+
+.footer section.cont-nosotros div.art-footer .contacto .icono i.fa-facebook-square , 
+.footer section.cont-nosotros div.art-footer .contacto p.fb{
+    color: #3b5998;
+}
+
+.footer section.cont-nosotros div.art-footer .contacto .icono i.fa-facebook-messenger , 
+.footer section.cont-nosotros div.art-footer .contacto p.fb-msg{
+    color: #0078FF;
+}
+
+.footer section.cont-nosotros div.art-footer .contacto .icono i.fa-envelope , 
+.footer section.cont-nosotros div.art-footer .contacto p.gmail {
+    color:#fce4b4a9;
+}
+
+.footer section.cont-nosotros div.art-footer .contacto .icono {
+    text-decoration: none;
+}
+
+.footer section.cont-nosotros div.art-footer .contacto .icono p {
+    display: inline-block;
+}
+
+/* ==========================================================================
+   ART-FOOTER MAPA - DONDE ESTAMOS
+   ========================================================================== */
+.footer section div.art-footer.ubi iframe.mapa {
+    width: 93%;
+}
+  
+.footer section div.art-footer.ubi iframe.mapa:hover {
+    transform: scale(1.1);
+}
+  
+.footer hr.hrline {
+    color: white;
+    border: none;
+    height: 2px;
+    background-color: white;
+    opacity: 1;
+}
+  
+/* ==========================================================================
+   COPYRIGHT
+   ========================================================================== */
+.footer div.copyright {
+    padding: 10px 0px;
+    color: white;
+    text-align: center;
+}
+  
+.footer div.copyright h3 {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+
+
+/* ==========================================================================
+   RESOLUCION: 1024 a 1200
+   ========================================================================== */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .footer section.cont-nosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer section.cont-nosotros div.art-footer {
+    width: 50%;
+  }
+
+  .footer section.cont-nosotros div.art-footer div.contacto div {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .footer section.cont-nosotros div.art-footer.nosotros {
+    padding: inherit 1%;
+  }
+
+  .footer section div.art-footer.nosotros , 
+  .footer section div.art-footer.contactos {
+    border-bottom: 1px solid white;
+  }
+
+  .footer section div.art-footer.ubi {
+    width: 97%;
+    order: 1;
+  }
+
+}
+
+/* ==========================================================================
+   RESOLUCION: 480 a 1024
+   ========================================================================== */
+@media (min-width: 480px) and (max-width: 1024px) {
+  .footer section.cont-nosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer section.cont-nosotros div.art-footer {
+    width: 50%;
+  }
+
+  .footer section.cont-nosotros div.art-footer div.contacto div {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .footer section.cont-nosotros div.art-footer.nosotros {
+    padding: inherit 1%;
+  }
+
+  .footer section div.art-footer.nosotros , 
+  .footer section div.art-footer.contactos {
+    border-bottom: 1px solid white;
+  }
+
+  .footer section div.art-footer.ubi {
+    width: 97%;
+    order: 1;
+  }
+}
+
+/* ==========================================================================
+   RESOLUCION: 480 hacia abajo
+   ========================================================================== */
+@media (max-width: 480px) {
+  .footer section.cont-nosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .footer section.cont-nosotros div.art-footer {
+    width: 97%;
+  }
+
+  .footer section.cont-nosotros div.art-footer div.contacto div {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .footer section.cont-nosotros div.art-footer.nosotros {
+    padding: inherit 1%;
+  }
+
+  .footer section div.art-footer.nosotros , 
+  .footer section div.art-footer.contactos {
+    border-bottom: 1px solid white;
+  }
+
+  .footer section div.art-footer.ubi {
+    width: 97%;
+    order: 1;
+  }
+}
