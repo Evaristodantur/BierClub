@@ -10,7 +10,11 @@ header {
     padding-bottom: 5%;
 }
 
-.container-productAdd {
+/* ==========================================================================
+   GENERAL - PRODUCTADD
+   ========================================================================== */
+.productAdd {
+    background: rgb(175, 174, 174);
     display: block;
     border: 1px solid rgba(119, 119, 119, 0.4);
     margin: 0% 10% 2% 10%;
@@ -18,72 +22,300 @@ header {
     padding: 2%;
 }
 
-.container-productAdd h1 {
+/* ==========================================================================
+   TITULO
+   ========================================================================== */
+.productAdd h1 {
     text-align: center;
 }
 
-#nombreProducto , #precio , #cantidad {
+/* ==========================================================================
+   BLOQUE NOMBRE-PRECIO-CANTIDAD-IMAGEN PREVISUALIZADA
+   ========================================================================== */
+.productAdd form.formulario-carga div.flex-imgPrev-detalle {
+    display: flex;
+    width: 100%;
+}
+
+.productAdd form.formulario-carga div.flex-imgPrev-detalle div.campo-nombre-precio-cantidad {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.campo-nombre-precio-cantidad .nombre input#nombreProducto , 
+div.campo-nombre-precio-cantidad .precio input#precio , 
+div.campo-nombre-precio-cantidad .cantidad input#cantidad {
     display: block;
     margin: 0 0 1% 0;
     padding-left: 1%;
     border-radius: 5px;
     border: 0px solid black;
     height: 40px;
-    width: 35%;
+    width: 70%;
 }
 
-#imagen , #categoria {
+.productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img{
+    position: relative;
+    right: 50px;
     display: inline-block;
-    width: 10%;
-    margin: 0 3% 1% 0;
-}
-
-#imagen {
-    width: 30%;
-}
-
-.btn-publicar {
-    cursor: not-allowed;
-    opacity: 0.3;
-    background-color: rgb(68, 68, 255);
-    border: 0px solid black;
-    margin: 1% 2% 0 0;
-    display: inline-block;
+    width: 100%;
+    border: 2px solid black;
     border-radius: 5px;
-    color: white;
-    height: 40px;
-    width: 25%;
-    font-size: large;
+    box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
 }
 
-.btn-reset {
-    cursor: auto;
-    opacity: 1;
-    background-color: rgb(201, 51, 51);
+/* ==========================================================================
+   BLOQUE IMGFILE - CATEGORIA
+   ========================================================================== */
+
+.productAdd div.flex-categoria-imgFile {
+    display: flex;
 }
+
+.flex-categoria-imgFile div.categoria, 
+.flex-categoria-imgFile div.imgFile {
+    width: 50%;
+}
+
+.flex-categoria-imgFile div.categoria select.select-categoria {
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px solid black;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 1%;
+}
+
+
+.flex-categoria-imgFile div.imgFile input#imagen ,
+.flex-categoria-imgFile div.categoria select#categoria {
+    display: inline-block;
+    width: 50%;
+    margin: 0 0% 1% 0;
+}
+
+.flex-categoria-imgFile div.imgFile input#imagen {
+    position: relative;
+    left: 250px;
+}
+
+/* ==========================================================================
+   BLOQUE BOTONES PUBLICAR
+   ========================================================================== */
+
+.productAdd div.flex-botones-publicar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-botones-publicar button.btn-publicar {
+    width: 25%;
+    margin: 1% 2% 0 0;
+    color: white;
+    border-radius: 5px;
+    font-size: large;
+    padding-top: 1%;
+    border: 0 solid black;
+    padding-bottom: 1%;
+    background-color: rgb(102, 102, 255);
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+}
+
+.flex-botones-publicar button.btn-publicar:hover {
+    background-color: rgb(61, 61, 255);
+}
+
+.flex-botones-publicar button.btn-reset {
+    background-color: rgb(255, 68, 68);
+}
+
+.flex-botones-publicar button.btn-reset:hover {
+    background-color: rgb(199, 23, 23);
+}
+
+/* ==========================================================================
+   RESOLUCION: 1024 a 1200
+   ========================================================================== */
 
 
 /*****RESOLUCION 1200*****/
-@media (min-width:1200px) {
-
+@media (min-width:1200px) and (max-width: 1400px) {
+    .flex-categoria-imgFile div.imgFile input#imagen {
+        left: 150px;
+    }
 }
 
 /*****RESOLUCION 1024*****/
-@media (min-width:1024px) {
-
+@media (min-width:1024px) and (max-width: 1200px) {
+    .flex-categoria-imgFile div.imgFile input#imagen {
+        left: 100px;
+    }
 }
 
 /*****RESOLUCION 768*****/
-@media (min-width:768px) {
+@media (min-width:768px) and (max-width: 1024px) {
+    .flex-categoria-imgFile div.imgFile input#imagen {
+        left: 55px;
+    }
 
+    .productAdd form.formulario-carga div.flex-imgPrev-detalle {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productAdd form.formulario-carga div.flex-imgPrev-detalle div.campo-nombre-precio-cantidad {
+        width: 100%;
+        margin: 0;
+    }
+
+    .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
+        position: relative;
+        right: 0px;
+        width: 100%;  
+    }
+
+    .flex-categoria-imgFile div.imgFile {
+        width: 100%;
+    }
+
+    .flex-categoria-imgFile div.imgFile input#imagen, 
+    .flex-categoria-imgFile div.categoria select#categoria {
+        width: 100%;
+    }
+
+    .nombre , .precio , .cantidad{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /*****RESOLUCION 480*****/
-@media (min-width:480px) {
+@media (min-width:480px) and (max-width: 768px) {
+    .flex-categoria-imgFile div.imgFile input#imagen {
+        left: 55px;
+    }
 
+    .productAdd form.formulario-carga div.flex-imgPrev-detalle {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productAdd form.formulario-carga div.flex-imgPrev-detalle div.campo-nombre-precio-cantidad {
+        width: 100%;
+        margin: 0;
+    }
+
+    .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
+        position: relative;
+        right: 0px;
+        width: 100%;  
+    }
+
+    .nombre , .precio , .cantidad{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-categoria-imgFile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-categoria-imgFile div.imgFile input#imagen, 
+    .flex-categoria-imgFile div.categoria select#categoria {
+        width: 100%;
+    }
+
+    .flex-categoria-imgFile div.imgFile {
+        width: 100%;
+    }
+
+    .flex-botones-publicar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #publicar , #reset{
+        width: 70%;
+    }
 }
 
 /*****RESOLUCION 320*****/
-@media (min-width:320px) {
+@media (max-width: 480px){
+    .flex-categoria-imgFile div.imgFile input#imagen {
+        left: 25px;
+    }
 
+    .productAdd form.formulario-carga div.flex-imgPrev-detalle {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productAdd form.formulario-carga div.flex-imgPrev-detalle div.campo-nombre-precio-cantidad {
+        width: 100%;
+        margin: 0;
+    }
+
+    div.campo-nombre-precio-cantidad .nombre input#nombreProducto, 
+    div.campo-nombre-precio-cantidad .precio input#precio, 
+    div.campo-nombre-precio-cantidad .cantidad input#cantidad {
+        width: 100%;
+    }
+
+    .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
+        position: relative;
+        right: 0px;
+        width: 100%;  
+    }
+
+    .nombre , .precio , .cantidad{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-categoria-imgFile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-categoria-imgFile div.imgFile input#imagen, 
+    .flex-categoria-imgFile div.categoria select#categoria {
+        width: 100%;
+    }
+
+    .flex-categoria-imgFile div.imgFile {
+        width: 100%;
+    }
+
+    .flex-botones-publicar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #publicar , #reset{
+        width: 90%;
+    }
 }

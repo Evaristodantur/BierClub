@@ -18,42 +18,71 @@
       <%- include nav.ejs %>
     </header>
 
-    <div class="container-productAdd">
+    <div class="productAdd">
 
       <h1>Agrege su producto</h1>
 
-      <form action="" method="">
+      <form class="formulario-carga" action="" method="">
 
-        <div class="productoAgregar">
-          <label for="nombreProducto">Nombre del producto:</label>
-          <input id="nombreProducto" type="text" placeholder="Nombre">
+        <div class="flex-imgPrev-detalle">
+          <div class="campo-nombre-precio-cantidad">
+
+            <div class="nombre">
+              <label for="nombreProducto">Nombre del producto:</label>
+              <input id="nombreProducto" type="text" placeholder="Nombre">
+            </div>
+            
+            <div class="precio">
+              <label for="precio">Precio:</label>
+              <input id="precio" type="text" placeholder="Precio">
+            </div>
+            
+            <div class="cantidad">
+              <label for="cantidad">Cantidad:</label>
+              <input id="cantidad" type="text" placeholder="Cantidad">
+            </div>
+  
+          </div>
+
+          <div class="imagenPrev">
+            <img src="/images/productos/producto-1.jpg" alt="muestra de producto">
+          </div>
         </div>
-        
-        <label for="precio">Precio:</label>
-        <input id="precio" type="text" placeholder="Precio">
-        
-        
-        <label for="cantidad">Cantidad:</label>
-        <input id="cantidad" type="text" placeholder="Cantidad">
 
-        <label for="categoria">Categoria:</label>
-        <select name="categoria" id="categoria">
-          <option value="cerveza">Cerveza</option>
-          <option value="vino">Vino</option>
-          <option value="licor">Licor</option>
-          <option value="awa">Awa</option>
-          <option value="pcGaymer">PC Gaymer</option>
-        </select>
         
-        <input id="imagen" type="file">
+
+        
+
+        
+        <div class="flex-categoria-imgFile">
+
+          <div class="categoria">
+            <label for="categoria">Categoria:</label>
+            <select class="select-categoria" name="categoria" id="categoria">
+              <option value="cerveza">Cerveza</option>
+              <option value="vino">Vino</option>
+              <option value="licor">Licor</option>
+              <option value="awa">Awa</option>
+              <option value="pcGaymer">PC Gaymer</option>
+            </select>
+          </div>
+
+          
+
+        <div class="imgFile">
+          <input id="imagen" type="file" size="60">
+        </div>
+
+        </div>
 
         <textarea placeholder="Descripción del articulo" name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
 
-        <center>
-        <button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar
-        <button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar y Agregar otro producto
-        <button class="btn-publicar btn-reset" type="reset" , id="reset" , value="reset"> Borrar Todo
-        </center>
+          <div class="flex-botones-publicar">
+              <button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar
+              <button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar y Agregar otro producto
+              <button class="btn-publicar btn-reset" type="reset" , id="reset" , value="reset"> Borrar Todo
+          </div>
+        
       </form>
     </div>
    
