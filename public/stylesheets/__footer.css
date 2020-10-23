@@ -2,12 +2,15 @@
    GENERAL -FOOTER
    ========================================================================== */
 .footer {
+    /* Display & Box Model */
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    z-index: inherit 9;
     margin-top: 2px;
     margin-bottom: 0px;
-    z-index: inherit 9;
+
+    /* Otras */
+    background-color: black;
 }
 
 /* ==========================================================================
@@ -22,10 +25,13 @@
    ART-FOOTER - CONTACTOS
    ========================================================================== */
 .footer section.cont-nosotros div.art-footer {
+    /* Display & Box Model */
     margin-top: 1%;
     width: 33%;
     text-align: center;
     vertical-align: top;
+
+    /* Otras */
     color: white;
 }
 
@@ -37,12 +43,18 @@
 }
 
 .footer section.cont-nosotros div.art-footer .contacto div {
-    text-align: justify;
+    /* Display & Box Model */
     margin-left: 15%;
+
+    /* Otras */
+    text-align: justify;
 }
 
 .footer section.cont-nosotros div.art-footer .contacto i {
+    /* Display & Box Model */
     margin-top: 3%;
+
+    /* Otras */
     font-size: 35px;
 }
 
@@ -96,9 +108,12 @@
 }
   
 .footer hr.hrline {
+    /* Display & Box Model */
+    height: 2px;
+
+    /* Otras */
     color: white;
     border: none;
-    height: 2px;
     background-color: white;
     opacity: 1;
 }
@@ -107,7 +122,10 @@
    COPYRIGHT
    ========================================================================== */
 .footer div.copyright {
+    /* Display & Box Model */
     padding: 10px 0px;
+
+    /* Otras */
     color: white;
     text-align: center;
 }
@@ -169,8 +187,11 @@
   }
 
   .footer section.cont-nosotros div.art-footer div.contacto div {
-    text-align: center;
+    /* Display & Box Model */
     margin-left: 0;
+
+    /* Otras */
+    text-align: center;
   }
 
   .footer section.cont-nosotros div.art-footer.nosotros {
@@ -203,8 +224,11 @@
   }
 
   .footer section.cont-nosotros div.art-footer div.contacto div {
-    text-align: center;
+    /* Display & Box Model */
     margin-left: 0;
+
+    /* Otras */
+    text-align: center;
   }
 
   .footer section.cont-nosotros div.art-footer.nosotros {

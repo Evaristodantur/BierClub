@@ -34,6 +34,7 @@ body {
    ========================================================================== */
 
 .home main section.productos{
+    /* Display & Box Model */
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -41,13 +42,16 @@ body {
 }
 
 .home main section.productos article.producto {
+    /* Display & Box Model */
     width: 22%;
+    margin: 1% 0.5%;
+
+    /* Otras */
     background-color: white;
     text-align: center;
     border: rgba(0, 0, 0, .2) 1px solid;
     border-radius: 15px;
     box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
-    margin: 1% 0.5%;
     transition: 0.3s;
 }
 
@@ -88,13 +92,16 @@ body {
 }
 
 .home main section.productos article.producto button.btn-producto {
+    /* Display & Box Model */
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 2px;
+
+    /* Otras */
     background-color: black;
     color: white;
     border: rgba(0, 0, 0, .2) 1px solid;
     border-radius: 10px;
-    padding: 10px;
-    width: 80%;
-    margin-bottom: 2px;
 }
 
 .home main section.productos div.btnAnt i.fa-chevron-circle-left , 
@@ -127,12 +134,15 @@ body {
 }
 
 .home main ul.mejores-productos li a {
+    /* Display & Box Model */
+    padding: 5px 15px;
+    display: block;
+
+    /* Otras */
     text-decoration: none;
     background-color: #DAA520;
     color: black;
-    padding: 5px 15px;
     border-radius: 5px;
-    display: block;
 }
 
 .home main ul.mejores-productos li a:hover {
@@ -141,7 +151,7 @@ body {
 }
 
 .home main ul.mejores-productos li {
-    border: black;
+    /* Display & Box Model */
     display: inline-block;
     padding-right: 1%;
     width: 13%;
@@ -151,19 +161,25 @@ body {
    NEWSLETTER
    ========================================================================== */
 .home main section.newsletter-background {
+    /* Display & Box Model */
     margin-top: 100px;
     padding: 20px 0px;
+
+    /* Otras */
     background-color: black;
     color: white;
     text-align: center;
 }
 
 .home main section.newsletter-background input.newsletter {
+    /* Display & Box Model */
     margin: 0.5% 0;
     width: 49%;
+    padding: 10px 2px;
+
+    /* Otras */
     border: 0;
     border-radius: 20px;
-    padding: 10px 2px;
     text-align: center;
 }
 
@@ -194,8 +210,9 @@ body {
     .home main section.newsletter-background input.newsletter {
         width: 70%;
     }
-  
   }
+
+
 
 
 /* ==========================================================================
@@ -215,8 +232,9 @@ body {
     .home main section.newsletter-background input.newsletter {
         width: 70%;
     }
-  
   }
+
+
 
   
 /* ==========================================================================
@@ -252,6 +270,9 @@ body {
         width: 70%;
     }
   }
+
+
+
   
 /* ==========================================================================
    RESOLUCION: 480 a 768
@@ -300,6 +321,8 @@ body {
         width: 70%;
     }
   }
+  
+
   
 
 /* ==========================================================================
