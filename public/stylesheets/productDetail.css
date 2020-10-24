@@ -11,7 +11,7 @@ body .container-productDetail {
 .producto {
     margin-top: 2%;
     width: 100%;
-    display: flex;
+   
     justify-content: center;
 }
 
@@ -153,8 +153,8 @@ article button.btn-producto , .carrito .btn-producto , .cp .btn-producto {
         transition: 0.5s;
     }
     article.producto:hover{
-        width: 40%;
-        height: 40%;
+        width: 250px;
+        height: 350px;
         margin-bottom: -60px;
     }
 }
@@ -220,6 +220,12 @@ article.producto:hover{
     margin-bottom: -40px;
 
 }
+.carrito{
+    width:80%;
+}
+.boton-cp{
+    width: 80%;
+}
 .resolucionMenorA768,
 .resolucionMenorA1024,
 .resolucionMenorA1200{
@@ -240,6 +246,12 @@ article.producto:hover{
     width: 20vh;
     height: 20vw;
     margin-bottom: -40px;
+}
+.carrito{
+    width:100%;
+}
+.botoncp{
+    width: 100%;
 }
 .resolucionMenorA320,
 .resolucionMenorA768,
