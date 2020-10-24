@@ -45,13 +45,14 @@ nav{
   padding: 0;
   list-style: none;
 }
-
 .navbar li{
   display: inline-block;
   margin: 0px 25px;
   position: relative;
 }
-
+.navcarrito span{
+  display: none;
+}
 .navbar a{
   text-decoration: none;
   color: #fff;
@@ -68,15 +69,25 @@ nav{
 hr{
   opacity:20%
 }
-
+.navcarrito.login-carrito{
+  display: none;
+}
 .navcarrito{
+  display: flex;
   float:right;
   position: fixed;
   right: 20%;
   margin-top: -35px;
   transition: 0.3s;
 }
-
+.navlogin{
+  float:right;
+  display:flex;
+  position:fixed;
+  right: 1.5%;
+  margin-top: -35px;
+  transition: 0.3s;
+}
 .navlogin{
   float:right;
   position:fixed;
@@ -135,8 +146,16 @@ hr{
   /* ==========================================================================
    RESOLUCION 1700 HACIA ARRIBA
    ========================================================================== */
-@media (min-width:1200px) {
-
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .navlogin li a{
+    display:none;
+  }
+  .navcarrito span{
+    display: inline-block;
+  }
+  .navcarrito{
+    right: 6%;
+  }
 }
 
 /*****RESOLUCION 1024*****/
