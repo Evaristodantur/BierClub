@@ -10,7 +10,7 @@
 ### More of:
   - Mas cantidad de reuniones
   - Mejor organización de los tiempos en cuanto a la semana
-  - Practicar sobre un código que ya este hecho, y tomarlo como base
+  - Practicar sobre un código que ya hecho por algun compañero, tomarlo como base y practicar individualmente si es necesario
 
 ### Keep doing:
   - Seguir el ritmo individual con que cada compañero codea, ya que es muy bueno
