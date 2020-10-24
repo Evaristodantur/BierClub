@@ -10,7 +10,9 @@ h1.titulo{
     text-align: center;
     margin-bottom: 50px;
 }
-/* PRODUCTOS */
+/* ==========================================================================
+   PRODUCTOS AGREGADOS
+   ========================================================================== */
 .productos{
     width:60vw;
 }
@@ -37,6 +39,13 @@ h1.titulo{
 .estilo-letras-producto{
     margin-top:7%;
 }
+.mobile-letras-producto{
+    display: none;
+}
+
+/* ==========================================================================
+   CUPON -- INPUT Y BOTON
+   ========================================================================== */
 .cupones{
     display: flex;
     align-items: center;
@@ -74,8 +83,8 @@ h1.titulo{
     height: 500px;
     position:relative;
 /*      position:fixed;
-    margin-left: 65%; */
-/*     border:solid 1px black; */
+    margin-left: 65%;
+    border:solid 1px black; */
     z-index: 1;
 }
 .recuadro-total-chico{
@@ -106,9 +115,6 @@ a{
     background-color: #DAA520;
     text-align: center;
     border-radius: 6px;
-}
-.mobile-letras-producto{
-    display: none;
 }
 
 
