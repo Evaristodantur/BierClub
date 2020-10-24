@@ -82,7 +82,7 @@ h1.titulo{
     width: 18%;
     height: 500px;
     position:relative;
-/*      position:fixed;
+/*  position:fixed;
     margin-left: 65%;
     border:solid 1px black; */
     z-index: 1;
