@@ -102,8 +102,23 @@ hr{
   position: relative;
 }
 
+.dropdownMenu{
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  transition: 0.25s;
+  width: 500px;
+  height: 250px;
+  background-color: red;
+  border-radius: 7px;
+}
+.dropdownBoton:hover > .dropdownMenu{
+  opacity: 1;
+}
 
-/*****RESOLUCION 1200*****/
+  /* ==========================================================================
+   RESOLUCION 1700 HACIA ARRIBA
+   ========================================================================== */
 @media (min-width:1200px) {
 
 }
