@@ -66,7 +66,9 @@ h1.titulo{
     background-color: #DAA520;
     border-radius: 8px;
 }
-/* RECUADRO DEL TOTAL */
+/* ==========================================================================
+   RECUADRO DEL TOTAL
+   ========================================================================== */
 .recuadro-total{
     width: 18%;
     height: 500px;
@@ -118,20 +120,21 @@ a{
     }
 }
 
+/*****RESOLUCION 1200-1400*****/
 @media (min-width: 1200px) and (max-width: 1449px) {
     .productos-carrito .recuadro-total{
         width: 30%;
     }
 }
 
-/*****RESOLUCION 1024*****/
+/*****RESOLUCION 1024-1200*****/
 @media (min-width: 1024px) and (max-width: 1199px){
     .productos-carrito .recuadro-total{
         width: 30%;
     }
 }
 
-/*****RESOLUCION 768*****/
+/*****RESOLUCION 768-1024*****/
 @media (min-width: 768px) and (max-width: 1023px){
     .productos-carrito{
         flex-direction: column;
@@ -149,8 +152,8 @@ a{
     }
 }
 
-/*****RESOLUCION 480*****/
-@media (min-width: 480px) and (max-width: 768px) {
+/*****RESOLUCION 480-768*****/
+@media (min-width: 480px) and (max-width: 767px) {
     .productos-carrito{
         flex-direction: column;
         justify-content: center;
