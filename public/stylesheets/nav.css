@@ -104,16 +104,28 @@ hr{
 
 .dropdownMenu{
   position: absolute;
-  opacity: 0;
-  display: flex;
-  transition: 0.25s;
+  display: none;
   width: 500px;
-  height: 250px;
-  background-color: red;
+  background-color: #fff;
   border-radius: 7px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .dropdownBoton:hover > .dropdownMenu{
-  opacity: 1;
+  display:flex;
+}
+.dropdownMenu a{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  color: black;
+  border-radius: 5px;
+  margin-block-start: 0.5em;
+  height: 100px;
+}
+.dropdownMenu a h3{
+  margin-block-start: 16px;
+  margin-block-end: -9.5px;
 }
 
   /* ==========================================================================
