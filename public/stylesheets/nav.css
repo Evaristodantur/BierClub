@@ -71,6 +71,7 @@ hr{
 }
 .navcarrito.login-carrito{
   display: none;
+  font-size: 18px;
 }
 .navcarrito{
   display: flex;
@@ -144,9 +145,9 @@ hr{
 }
 
   /* ==========================================================================
-   RESOLUCION 1700 HACIA ARRIBA
+   RESOLUCION 1200-1600
    ========================================================================== */
-@media (min-width: 1200px) and (max-width: 1600px) {
+@media (min-width: 1024px) and (max-width: 1600px) {
   .navlogin li a{
     display:none;
   }
@@ -155,6 +156,11 @@ hr{
   }
   .navcarrito{
     right: 6%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .navcarrito li{
+    margin: 0px 15px;
   }
 }
 
