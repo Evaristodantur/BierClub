@@ -1,12 +1,6 @@
 /* ==========================================================================
    RESET - GENERAL
    ========================================================================== */
-body {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
 .home {
     background-color: rgb(228, 228, 228);
 }
@@ -15,7 +9,7 @@ body {
    BANNER - CARRUSEL - SLICE
    ========================================================================== */
 
-.banner {
+.home section div.banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,27 +77,24 @@ body {
    PRODUCTO - PRECIO -STOCK
    ========================================================================== */
 
-h2.producto-titulo {
+.home main section.productos article.producto h2.producto-titulo {
     font-size: large;
     margin-right: 3%;
     margin-left: 3%;
 }
 
-.precio-stock {
+.home main section.productos article.producto div.precio-stock {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
 }
 
-.etiqueta-precio {
+.home main section.productos article.producto div.precio-stock div h4.etiqueta-precio {
     float: left;
 }
 
-.etiqueta-stock {
+.home main section.productos article.producto div.precio-stock div h5.etiqueta-stock {
     float: right;
-}
-
-.etiqueta-stock {
     color: green;
 }
 
@@ -161,13 +152,13 @@ h2.producto-titulo {
    BANNER - NOVEDADES
    ========================================================================== */
 
-.home div.banner-novedades {
+.home section div.banner-novedades {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-img.img-banner {
+.home section div.banner-novedades img.img-banner {
     margin-top: 2%;
     width: 90%;
 }
