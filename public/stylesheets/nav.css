@@ -230,7 +230,7 @@ MENU HAMBURGUESA MOBILE
 }
 .dropdown-mobile{
   color: black;
-  display:flex;
+  display:none;
   flex-direction: column;
   margin-left: 15px;
   margin-bottom: 20px;
