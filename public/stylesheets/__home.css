@@ -38,8 +38,7 @@ body {
 /* ==========================================================================
    BLOQUE - PRODUCTOS
    ========================================================================== */
-
-.home main section.productos{
+section.productos{
     /* Display & Box Model */
     width: 100%;
     display: flex;
@@ -47,7 +46,7 @@ body {
     justify-content: space-between;
 }
 
-.home main section.productos article.producto {
+section.productos article.producto {
     /* Display & Box Model */
     width: 22%;
     margin: 1% 0.5%;
@@ -61,19 +60,18 @@ body {
     transition: 0.3s;
 }
 
-.home main section.productos div.btnAnt {
+section.productos div.btnAnt {
     align-self: center;
     margin-left: 1%;
     display: inline-block;
 }
 
-.home main section.productos div.btnSig {
+section.productos div.btnSig {
     align-self: center;
     margin-right: 1%;
     display: inline-block;
 }
-
-.home main section.productos article.producto img {
+section.productos article.producto img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 100%;
@@ -110,26 +108,25 @@ h2.producto-titulo {
 /* ==========================================================================
    BUTTON - PRODUCTO
    ========================================================================== */
-
-.home main section.productos article.producto button.hoverproducto{
+section.productos article.producto button.hoverproducto{
     margin: 0;
     opacity: 0;
     transition: 0.4s;
 }
 
-.home main section.productos article.producto:hover button.hoverproducto{
+section.productos article.producto:hover button.hoverproducto{
     opacity: 1;
 }
 
-.home main section.productos article.producto:hover{
+section.productos article.producto:hover{
     margin-bottom: 3px;
 }
 
-.home main section.productos article.producto h4.etiqueta-precio {
+section.productos article.producto h4.etiqueta-precio {
     margin-bottom: 0;
 }
 
-.home main section.productos article.producto button.btn-producto {
+section.productos article.producto button.btn-producto {
     /* Display & Box Model */
     padding: 10px;
     width: 80%;
@@ -142,16 +139,16 @@ h2.producto-titulo {
     border-radius: 10px;
 }
 
-.home main section.productos div.btnAnt i.fa-chevron-circle-left , 
-.home main section.productos div.btnSig i.fa-chevron-circle-right {
+section.productos div.btnAnt i.fa-chevron-circle-left , 
+section.productos div.btnSig i.fa-chevron-circle-right {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 50%;
     color: #DAA520;
     font-size: 45px;
 }
 
-.home main section.productos div.btnAnt i.fa-chevron-circle-left:hover ,
-.home main section.productos div.btnSig i.fa-chevron-circle-right:hover {
+section.productos div.btnAnt i.fa-chevron-circle-left:hover ,
+section.productos div.btnSig i.fa-chevron-circle-right:hover {
     background-color: black;    
     color: #ffd56cd7;
 }

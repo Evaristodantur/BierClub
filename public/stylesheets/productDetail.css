@@ -8,10 +8,11 @@ body .container-productDetail {
     padding-bottom: 1%;
 }
 
+
 .producto {
+    display: flex; 
     margin-top: 2%;
     width: 100%;
-   
     justify-content: center;
 }
 
@@ -74,77 +75,125 @@ div.cp .btn-producto {
     text-align: center;
     margin-top: 5%;
 }
-
-section.productos{
+/* ==========================================================================
+   BLOQUE - PRODUCTOS
+   ========================================================================== */
+   section.productos{
+    /* Display & Box Model */
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5%;
 }
 
-.productos .producto {
-    width: 20%;
+section.productos article.producto {
+    /* Display & Box Model */
+    width: 22%;
+    margin: 1% 0.5%;
+
+    /* Otras */
+    background-color: white;
+    text-align: center;
+    border: rgba(0, 0, 0, .2) 1px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
+    transition: 0.3s;
 }
 
-.btnAnt {
+section.productos div.btnAnt {
     align-self: center;
     margin-left: 1%;
     display: inline-block;
 }
 
-.btnSig {
+section.productos div.btnSig {
     align-self: center;
     margin-right: 1%;
     display: inline-block;
 }
-
-article.producto img {
+section.productos article.producto img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 100%;
 }
 
-article.producto {
-    text-align: center;
-    border: rgba(0, 0, 0, .2) 1px solid;
-    border-radius: 15px;
-    background-clip: padding-box;
-    background-color: white;
-    margin: 1% 1%;
-    box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
+/* ==========================================================================
+   PRODUCTO - PRECIO -STOCK
+   ========================================================================== */
+
+h2.producto-titulo {
+    font-size: large;
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
-.productos .producto:hover .hoverproducto{
+.precio-stock {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.etiqueta-precio {
+    float: left;
+}
+
+.etiqueta-stock {
+    float: right;
+}
+
+.etiqueta-stock {
+    color: green;
+}
+
+/* ==========================================================================
+   BUTTON - PRODUCTO
+   ========================================================================== */
+section.productos article.producto button.hoverproducto{
+    margin: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+section.productos article.producto:hover button.hoverproducto{
     opacity: 1;
 }
 
-article.producto .hoverproducto{
-    opacity: 0;
-    transition: 0.3s;
+section.productos article.producto:hover{
+    margin-bottom: 3px;
 }
 
-article button.btn-producto , .carrito .btn-producto , .cp .btn-producto {
+section.productos article.producto h4.etiqueta-precio {
+    margin-bottom: 0;
+}
+
+section.productos article.producto button.btn-producto {
+    /* Display & Box Model */
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 2px;
+
+    /* Otras */
     background-color: black;
     color: white;
     border: rgba(0, 0, 0, .2) 1px solid;
     border-radius: 10px;
-    padding: 10px;
-    width: 80%;
-    margin-bottom: 2px;
 }
 
-.fa-chevron-circle-left , .fa-chevron-circle-right {
+section.productos div.btnAnt i.fa-chevron-circle-left , 
+section.productos div.btnSig i.fa-chevron-circle-right {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 50%;
     color: #DAA520;
     font-size: 45px;
 }
 
-.fa-chevron-circle-left:hover , .fa-chevron-circle-right:hover {
+section.productos div.btnAnt i.fa-chevron-circle-left:hover ,
+section.productos div.btnSig i.fa-chevron-circle-right:hover {
     background-color: black;    
     color: #ffd56cd7;
 }
+
+
 
 @media(min-width:1200px){
     article.producto{
