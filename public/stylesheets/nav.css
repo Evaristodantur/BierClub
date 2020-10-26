@@ -125,7 +125,7 @@ hr {
   position: relative;
 }
 
-.btn-hamburguesa{
+.hamburguesa-icono{
   display: none;
   color: white;
 }
@@ -194,13 +194,13 @@ MENU HAMBURGUESA MOBILE
 .mobile-hamburguesa-menu{
   position: absolute;
   height: 96vh;
-  width: 96vw;
+  width: 350px;
   background-color: white;
   border-radius: 15px;
   top: 80px;
-  left: 1vw;
+  left: -350px;
   z-index: 9;
-  display:none;
+  transition: 0.4s;
 }
 .hamburguesa-margin{
   margin:2%;
@@ -232,10 +232,9 @@ MENU HAMBURGUESA MOBILE
   color: black;
   display:flex;
   flex-direction: column;
-  margin-left: 2%;
+  margin-left: 15px;
   margin-bottom: 20px;
 }
-
 
 /* ==========================================================================
 RESOLUCION 1200-1300
@@ -272,10 +271,10 @@ RESOLUCION 1024-1600
 
 
 /* ==========================================================================
-RESOLUCION 768-1024
+RESOLUCION 768-950
 ========================================================================== */
 
-@media (min-width:768px) and (max-width: 1024px) {
+@media (min-width:768px) and (max-width: 950px) {
   /* SCRIPT DE NAV BAR DESACTIVADO */
 
   .barra{
@@ -311,10 +310,17 @@ RESOLUCION 768-1024
     display: inline-block;
   }
 
-  .btn-hamburguesa{
+  .hamburguesa-icono{
     display: inline-block;
   }
-  
+
+  /* HAMBURGUESA */
+  .logo{
+    padding: 10px 0px 2px 15px;
+  }
+  .hamburguesa-icono:hover>.mobile-hamburguesa-menu{
+    left: 10px;
+  }
 }
 
 /*****RESOLUCION 480*****/
@@ -341,7 +347,7 @@ RESOLUCION 768-1024
 }
 
 /*****RESOLUCION 320*****/
-@media (min-width:320px) {
+@media (min-width:320px) and (max-width: 479px) {
   .barra{
     display: none;
   }
