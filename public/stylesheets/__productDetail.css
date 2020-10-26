@@ -4,12 +4,20 @@ body .container-productDetail {
     padding-bottom: 1%;
 }
 
+/* ==========================================================================
+   BLOQUE - IMAGEN + DETALLE PRODUCTO
+   ========================================================================== */
+
 .container-productDetail section.detalle-producto {
     display: flex; 
     margin-top: 2%;
     width: 100%;
     justify-content: center;
 }
+
+/* ==========================================================================
+   IMAGEN
+   ========================================================================== */
 
 .container-productDetail section.detalle-producto div.imagen {
     width: 30%;
@@ -20,11 +28,23 @@ body .container-productDetail {
     border-radius: 8px;
 }
 
+
+
+/* ==========================================================================
+   DETALLE
+   ========================================================================== */
+
 .container-productDetail section.detalle-producto section.detalle {
     margin-left: 5%;
     display: inline-block;
     width: 30%;
+    border: 1px solid black;
+    border-radius: 8px;
 }
+
+/* ==========================================================================
+   DETALLE - CANTIDAD
+   ========================================================================== */
 
 .container-productDetail section.detalle-producto section.detalle div.cantidad {
     width: 100%;
@@ -41,11 +61,27 @@ body .container-productDetail {
     margin-bottom: 2%;
 }
 
+/* ==========================================================================
+   DETALLE - CARRITO
+   ========================================================================== */
+
 .container-productDetail section.detalle-producto section.detalle div.carrito {
     width: 45%;
     display: inline-block;
-    
 }
+
+.container-productDetail section.detalle-producto section.detalle div.carrito button.btn-producto {
+    color: white;
+    background-color: black;
+    border: 0;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+/* ==========================================================================
+   DETALLE - CODIGO POSTAL
+   ========================================================================== */
 
 .container-productDetail section.detalle-producto section.detalle div.boton-cp {
     width: 100%;
@@ -59,10 +95,25 @@ body .container-productDetail {
     margin-left: 3%;
 }
 
-.container-productDetail section.detalle-producto section.detalle div.boton-cp .btn-producto {
+.container-productDetail section.detalle-producto section.detalle div.boton-cp button.btn-producto {
     display: inline-block;
     width: 35%;
+    color: white;
+    background-color: black;
+    border: 0;
+    border-radius: 8px;
+    padding: 5px;
 }
+
+/* HOVER BUTTON CARRITO + CAMBIAR CP */
+.container-productDetail section.detalle-producto section.detalle div.carrito button.btn-producto:hover, 
+.container-productDetail section.detalle-producto section.detalle div.boton-cp button.btn-producto:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+
 
 /* ==========================================================================
    BLOQUE - PRODUCTOS
