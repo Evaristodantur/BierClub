@@ -15,6 +15,12 @@ body {
    BANNER - CARRUSEL - SLICE
    ========================================================================== */
 
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .home section div.banner img {
     display: block;
     width: 100%;
@@ -73,6 +79,38 @@ body {
     width: 100%;
 }
 
+/* ==========================================================================
+   PRODUCTO - PRECIO -STOCK
+   ========================================================================== */
+
+h2.producto-titulo {
+    font-size: large;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.precio-stock {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.etiqueta-precio {
+    float: left;
+}
+
+.etiqueta-stock {
+    float: right;
+}
+
+.etiqueta-stock {
+    color: green;
+}
+
+/* ==========================================================================
+   BUTTON - PRODUCTO
+   ========================================================================== */
+
 .home main section.productos article.producto button.hoverproducto{
     margin: 0;
     opacity: 0;
@@ -119,6 +157,20 @@ body {
 }
 
 
+/* ==========================================================================
+   BANNER - NOVEDADES
+   ========================================================================== */
+
+div.banner-novedades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.img-banner {
+    margin-top: 2%;
+    width: 90%;
+}
 
 /* ==========================================================================
    NAV- MEJORES PRODUCTOS
