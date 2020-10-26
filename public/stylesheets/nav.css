@@ -125,6 +125,10 @@ hr {
   position: relative;
 }
 
+.btn-hamburguesa{
+  display: none;
+  color: white;
+}
 /* ==========================================================================
 BUSCADOR
 ========================================================================== */
@@ -182,9 +186,42 @@ DROPDOWN MENU
   margin-block-end: -9.5px;
 }
 
+
+
 /* ==========================================================================
-RESOLUCION 1200-1600
+MENU HAMBURGUESA MOBILE
 ========================================================================== */
+.mobile-hamburguesa-menu{
+  display: flex;
+  position: absolute;
+  height: 96vh;
+  width: 96vw;
+  background-color: white;
+  border-radius: 15px;
+  top: 80px;
+  left: 1vw;
+  justify-content: space-between;
+}
+
+
+
+/* ==========================================================================
+RESOLUCION 1200-1300
+========================================================================== */
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .navcarrito li {
+      margin: 0px 15px;
+  }
+}
+
+
+
+
+/* ==========================================================================
+RESOLUCION 1024-1600
+========================================================================== */
+
 @media (min-width: 1024px) and (max-width: 1600px) {
   .navlogin li a {
       display: none;
@@ -199,17 +236,54 @@ RESOLUCION 1200-1600
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .navcarrito li {
-      margin: 0px 15px;
+
+
+
+/* ==========================================================================
+RESOLUCION 768-1024
+========================================================================== */
+
+@media (min-width:768px) and (max-width: 1024px) {
+  /* SCRIPT DE NAV BAR DESACTIVADO */
+
+  .barra{
+    display: none;
   }
+
+  .nav-backgc{
+    margin: -72px 0px 0px 0px;
+  }
+
+  .logonav{
+    display: inline-block;
+  }
+
+  .navcarrito{
+    margin: 32px 0px 0px 0px;
+  }
+
+  .navlogin{
+    margin: 32px 0px 0px 0px;
+  }
+
+  /* ICONOS DE LA DERECHA (NAV BAR)*/
+  .navlogin li a {
+    display: none;
+  }
+
+  .navcarrito{
+    right: -2%;
+  }
+
+  .navcarrito span {
+    display: inline-block;
+  }
+
+  .btn-hamburguesa{
+    display: inline-block;
+  }
+  
 }
-
-/*****RESOLUCION 1024*****/
-@media (min-width:1024px) {}
-
-/*****RESOLUCION 768*****/
-@media (min-width:768px) {}
 
 /*****RESOLUCION 480*****/
 @media (min-width:480px) {}
