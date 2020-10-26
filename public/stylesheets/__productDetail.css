@@ -1,5 +1,10 @@
 /* RESET */
-body .container-productDetail {
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body .container-productDetail {    
     padding-top: 10rem;
     padding-bottom: 1%;
 }
@@ -62,11 +67,11 @@ body .container-productDetail {
 }
 
 /* ==========================================================================
-   DETALLE - CARRITO
+   DETALLE - AGREGAR AL CARRITO
    ========================================================================== */
 
 .container-productDetail section.detalle-producto section.detalle div.carrito {
-    width: 45%;
+    width: 100%;
     display: inline-block;
 }
 
@@ -80,7 +85,7 @@ body .container-productDetail {
 
 
 /* ==========================================================================
-   DETALLE - CODIGO POSTAL
+   DETALLE - COMPRAR AHORA
    ========================================================================== */
 
 .container-productDetail section.detalle-producto section.detalle div.boton-cp {
@@ -88,14 +93,7 @@ body .container-productDetail {
     display: inline-block;
 }
 
-.container-productDetail section.detalle-producto section.detalle div.boton-cp p {
-    display: inline-block;
-    font-size: medium;
-    width: 55%;
-    margin-left: 3%;
-}
-
-.container-productDetail section.detalle-producto section.detalle div.boton-cp button.btn-producto {
+.container-productDetail section.detalle-producto section.detalle div.comprarAhora button.btn-comprarAhora {
     display: inline-block;
     width: 35%;
     color: white;
@@ -107,7 +105,7 @@ body .container-productDetail {
 
 /* HOVER BUTTON CARRITO + CAMBIAR CP */
 .container-productDetail section.detalle-producto section.detalle div.carrito button.btn-producto:hover, 
-.container-productDetail section.detalle-producto section.detalle div.boton-cp button.btn-producto:hover {
+.container-productDetail section.detalle-producto section.detalle div.comprarAhora button.btn-comprarAhora:hover {
     background-color: white;
     border: 2px solid black;
     color: black;
