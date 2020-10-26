@@ -23,8 +23,8 @@ Por el momento envios en la provincia de Tucumán, pero apuntamos a mejorar en u
 - [**Cibart**](https://cibart.com.ar/): Por el carrito y sus funciones
 
 ## Developers 👨‍💻:
-- [Evaristo Dantur](https://github.com/Evaristodantur)
-- [Santiago Tejerina](https://github.com/santitejerina)
-- [Diego Kippes](https://github.com/dkippes)
+- [Evaristo Dantur](https://github.com/Evaristodantur), 19 años
+- [Santiago Tejerina](https://github.com/santitejerina), 19 años
+- [Diego Kippes](https://github.com/dkippes), 23 años
 
 ## Trello: [**BierClub Trello**](https://trello.com/b/Z7Sq24ef/bierclub)
