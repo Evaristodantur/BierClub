@@ -8,35 +8,34 @@ body .container-productDetail {
     padding-bottom: 1%;
 }
 
-
-.producto {
+.container-productDetail section.detalle-producto {
     display: flex; 
     margin-top: 2%;
     width: 100%;
     justify-content: center;
 }
 
-.imagen {
+.container-productDetail section.detalle-producto div.imagen {
     width: 30%;
 }
 
-.imagen img {
+.container-productDetail section.detalle-producto div.imagen img {
     width: 100%;
     border-radius: 8px;
 }
 
-.detalle {
+.container-productDetail section.detalle-producto section.detalle {
     margin-left: 5%;
     display: inline-block;
     width: 30%;
 }
 
-.cantidad {
+.container-productDetail section.detalle-producto section.detalle div.cantidad {
     width: 100%;
     display: inline;
 }
 
-.cantidad input{
+.container-productDetail section.detalle-producto section.detalle div.cantidad input{
     width: 15%;
     border: 1px solid rgb(145, 144, 144);
     border-radius: 8px;
@@ -46,39 +45,40 @@ body .container-productDetail {
     margin-bottom: 2%;
 }
 
-.carrito {
+.container-productDetail section.detalle-producto section.detalle div.carrito {
     width: 45%;
     display: inline-block;
     
 }
 
-.cp {
+.container-productDetail section.detalle-producto section.detalle div.boton-cp {
     width: 100%;
     display: inline-block;
 }
 
-.cp p {
+.container-productDetail section.detalle-producto section.detalle div.boton-cp p {
     display: inline-block;
     font-size: medium;
     width: 55%;
     margin-left: 3%;
 }
 
-div.cp .btn-producto {
+.container-productDetail section.detalle-producto section.detalle div.boton-cp .btn-producto {
     display: inline-block;
     width: 35%;
 }
 
+/* ==========================================================================
+   BLOQUE - PRODUCTOS
+   ========================================================================== */
 
 /* PRODUCTOS RELACIONADOS */
 .product-relacionado {
     text-align: center;
     margin-top: 5%;
 }
-/* ==========================================================================
-   BLOQUE - PRODUCTOS
-   ========================================================================== */
-   section.productos{
+
+section.productos{
     /* Display & Box Model */
     width: 100%;
     display: flex;
