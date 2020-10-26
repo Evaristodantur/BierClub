@@ -10,5 +10,5 @@
 ### 24/10/20
 
 - Actualizamos e hicimos responsive el home, login, register, agregar producto y el carrito.
-- Tuvimos problemas con el nav, se esta buscando una solucion.
+- Tuvimos problemas con el nav, se está buscando una solución.
 - Tuvimos problemas con el detalle de producto. Hay que arreglar el estilo del mismo.
