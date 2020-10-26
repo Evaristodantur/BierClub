@@ -6,6 +6,8 @@
 
 - Agregamos disponibilidad de productos en el home.
 - Solucionamos parte del nav.
+- Comenzamos el desarrollo del menu hamburguesa para las resoluciones menores.
+- Todavia hay que arreglar detalle de producto y parte del nav.
 
 ### 24/10/20
 
