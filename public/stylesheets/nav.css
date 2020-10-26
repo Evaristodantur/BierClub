@@ -1,12 +1,12 @@
 /*----------NAV BAR----------*/
-body{
+body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
 }
 
-.nav-backgc{
-  height:140px;
+.nav-backgc {
+  height: 140px;
   position: fixed;
   width: 100%;
   transition: 0.4s;
@@ -15,109 +15,144 @@ body{
   background-color: #DAA520;
 }
 
-.container-nav{
-  width : 80%;
-  margin-left:10%;
-  position:fixed;
-  z-index:inherit 9;
+.container-nav {
+  width: 80%;
+  margin-left: 10%;
+  position: fixed;
+  z-index: inherit 9;
 }
 
-.logonav{
+.logonav {
   max-width: 65px;
   padding: 10px 0px 2px 0px;
   position: relative;
-  float:left;
+  float: left;
   margin-top: -5px;
-  display:none;
+  display: none;
 }
 
-.logo{
+.logo {
   max-width: 65px;
   padding: 10px 0px 2px 0px;
 }
 
-nav{
+nav {
   width: 100%;
   padding-bottom: 2px;
 }
 
-.navbar ul{
+.navbar ul {
   padding: 0;
   list-style: none;
 }
-.navbar li{
+
+.navbar li {
   display: inline-block;
   margin: 0px 25px;
   position: relative;
 }
-.navcarrito span{
+
+.navcarrito span {
   display: none;
 }
-.navbar a{
+
+.navbar a {
   text-decoration: none;
   color: #fff;
 }
 
-.navbar a{
+.navbar a {
   color: #fff;
 }
 
-.barra{
+.barra {
   margin-top: 27px;
 }
 
-hr{
-  opacity:20%
+hr {
+  opacity: 20%
 }
-.navcarrito.login-carrito{
+
+.navcarrito.login-carrito {
   display: none;
   font-size: 18px;
 }
-.navcarrito{
+
+.navcarrito {
   display: flex;
-  float:right;
+  float: right;
   position: fixed;
   right: 20%;
   margin-top: -35px;
   transition: 0.3s;
 }
-.navlogin{
-  float:right;
-  display:flex;
-  position:fixed;
+
+.navlogin {
+  float: right;
+  display: flex;
+  position: fixed;
   right: 1.5%;
   margin-top: -35px;
   transition: 0.3s;
 }
-.navlogin{
-  float:right;
-  position:fixed;
+
+.navlogin {
+  float: right;
+  position: fixed;
   right: 1.5%;
   margin-top: -35px;
   transition: 0.3s;
 }
-.nav-arriba{
+
+.nav-arriba {
   padding-top: 50px;
   width: 100%;
 }
-.nav-arriba a{
+
+.nav-arriba a {
   text-decoration: none;
 
 }
-.nav-arriba ul{
+
+.nav-arriba ul {
   padding: 0;
   list-style: none;
 }
-.nav-arriba li{
+
+.nav-arriba li {
   display: inline-block;
   margin: 0px 25px;
   position: relative;
 }
 
-  /* ==========================================================================
-   DROPDOWN MENU
-   ========================================================================== */
-.dropdownMenu{
+/* ==========================================================================
+BUSCADOR
+========================================================================== */
+.search {
+  transition: 0.3s;
+}
+
+/* .search:hover {
+  margin-right: 100px;
+} */
+
+.searchBuscador {
+  display: none;
+  position: absolute;
+}
+
+input:focus:hover {
+  margin-right: 100px;
+}
+
+.search:hover~.searchBuscador {
+  display: inline-block;
+}
+
+/* ==========================================================================
+DROPDOWN MENU
+========================================================================== */
+.dropdownMenu {
   position: absolute;
   display: none;
   width: 500px;
@@ -127,10 +162,12 @@ hr{
   flex-wrap: wrap;
   box-shadow: 2px 2px rgba(163, 163, 163, 0.295);
 }
-.dropdownBoton:hover > .dropdownMenu{
-  display:flex;
+
+.dropdownBoton:hover>.dropdownMenu {
+  display: flex;
 }
-.dropdownMenu a{
+
+.dropdownMenu a {
   display: flex;
   flex-direction: column;
   width: 35%;
@@ -139,47 +176,43 @@ hr{
   margin-block-start: 0.5em;
   height: 100px;
 }
-.dropdownMenu a h3{
+
+.dropdownMenu a h3 {
   margin-block-start: 16px;
   margin-block-end: -9.5px;
 }
 
-  /* ==========================================================================
-   RESOLUCION 1200-1600
-   ========================================================================== */
+/* ==========================================================================
+RESOLUCION 1200-1600
+========================================================================== */
 @media (min-width: 1024px) and (max-width: 1600px) {
-  .navlogin li a{
-    display:none;
+  .navlogin li a {
+      display: none;
   }
-  .navcarrito span{
-    display: inline-block;
+
+  .navcarrito span {
+      display: inline-block;
   }
-  .navcarrito{
-    right: 6%;
+
+  .navcarrito {
+      right: 6%;
   }
 }
+
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .navcarrito li{
-    margin: 0px 15px;
+  .navcarrito li {
+      margin: 0px 15px;
   }
 }
 
 /*****RESOLUCION 1024*****/
-@media (min-width:1024px) {
-
-}
+@media (min-width:1024px) {}
 
 /*****RESOLUCION 768*****/
-@media (min-width:768px) {
-
-}
+@media (min-width:768px) {}
 
 /*****RESOLUCION 480*****/
-@media (min-width:480px) {
-
-}
+@media (min-width:480px) {}
 
 /*****RESOLUCION 320*****/
-@media (min-width:320px) {
-
-}
+@media (min-width:320px) {}
