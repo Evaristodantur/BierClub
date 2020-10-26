@@ -3,12 +3,9 @@
    ========================================================================== */
 .footer {
     /* Display & Box Model */
-    margin: 0px;
-    padding: 0px;
     z-index: inherit 9;
     margin-top: 2px;
-    margin-bottom: 0px;
-
+    
     /* Otras */
     background-color: black;
 }
