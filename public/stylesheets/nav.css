@@ -227,14 +227,21 @@ MENU HAMBURGUESA MOBILE
 .fa-angle-down{
   margin-top: 2px;
 }
+
 .dropdown-mobile{
   color: black;
-  display:none;
+  display:flex;
   flex-direction: column;
   margin-left: 15px;
   margin-bottom: 20px;
 }
+.hamburguesa-dropdown-mobile{
+  display:none;
+}
 
+.showProductos {
+  display: inline-block;
+}
 /* ==========================================================================
 RESOLUCION 1200-1300
 ========================================================================== */
@@ -270,10 +277,9 @@ RESOLUCION 1024-1600
 
 
 /* ==========================================================================
-RESOLUCION 768-950
+RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA) 
 ========================================================================== */
-
-@media (min-width:768px) and (max-width: 950px) {
+@media(max-width: 950px){
   /* SCRIPT DE NAV BAR DESACTIVADO */
 
   .barra{
@@ -322,48 +328,20 @@ RESOLUCION 768-950
   }
 }
 
-/*****RESOLUCION 480*****/
+
+
+
+/* ==========================================================================
+RESOLUCION 480-768
+========================================================================== */
 @media (min-width: 480px) and (max-width: 767px){
-  .barra{
-    display: none;
-  }
-
-  .nav-backgc{
-    margin: -72px 0px 0px 0px;
-  }
-
-  .logonav{
-    display: inline-block;
-  }
-
-  .navcarrito{
-    margin: 32px 0px 0px 0px;
-  }
-
-  .navlogin{
-    margin: 32px 0px 0px 0px;
-  }
 }
 
-/*****RESOLUCION 320*****/
+
+
+
+/* ==========================================================================
+RESOLUCION 320-480
+========================================================================== */
 @media (min-width:320px) and (max-width: 479px) {
-  .barra{
-    display: none;
-  }
-
-  .nav-backgc{
-    margin: -72px 0px 0px 0px;
-  }
-
-  .logonav{
-    display: inline-block;
-  }
-
-  .navcarrito{
-    margin: 32px 0px 0px 0px;
-  }
-
-  .navlogin{
-    margin: 32px 0px 0px 0px;
-  }
 }

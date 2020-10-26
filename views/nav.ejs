@@ -24,10 +24,10 @@
                 </div>
                 </div><strong>
                 <div class="hamburguesa-items">
-                    <a href="#" class="hamburguesa-item" onclick="hamburguesaCerrar()">Productos &nbsp<i class="fas fa-angle-down"></i></a>
-                    <div>
-                        <a href="#" class="dropdown-mobile" id="hamburguesa-dropdown">No lupuladas<small>Estas cervezas son menos amargas.</small></a>
-                        <a href="#" class="dropdown-mobile" id="hamburguesa-dropdown">Lupuladas<small>Estas cervezas son mas amargas.</small></a>
+                    <a href="#" class="hamburguesa-item" onclick="hamburguesaDropdown()">Productos &nbsp<i class="fas fa-angle-down"></i></a>
+                    <div id="hamburguesa-dropdown" class="hamburguesa-dropdown-mobile">
+                        <a href="#" class="dropdown-mobile">No lupuladas<small>Estas cervezas son menos amargas.</small></a>
+                        <a href="#" class="dropdown-mobile">Lupuladas<small>Estas cervezas son mas amargas.</small></a>
                     </div>
                     <a href="#" class="hamburguesa-item">Promociones</a>
                     <a href="#" class="hamburguesa-item">Suscribete</a>
@@ -36,7 +36,7 @@
                 </div></strong>
              </div>
         </div>
-
+        
         <!-- PC -->
     <div class ="container-nav">
         <div class ="navbar">
@@ -60,7 +60,10 @@
                 <a href="/"><img src="/images/logo2.png" alt="BierClub" class="logonav" id="logonav"></a>
                 <nav>
                     <ul class="barra"><strong>
-                        <li class="dropdownBoton"><a href="/productos">Productos</a>
+                        <li class="dropdownBoton"><a href="/productos">Productos &nbsp<i class="fas fa-angle-down"></i></a>
+
+
+
                             <div class="dropdownMenu">
                                 <a href="#">
                                     <h3>Lupuladas</h3>
@@ -71,6 +74,9 @@
                                     <h6>Lorem ipsum dolor sit amet consectetur.</h6>
                                 </a>
                             </div>
+
+
+
                         </li>
                         <li><a href="/promociones">Promociones</a></li>
                         <li><a href="/promociones">Suscribete</a></li>
@@ -83,24 +89,5 @@
     </div>
     </div>
 </header>
-
-<script>
-/*     window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("navbar").style.margin = "-72px 0px 0px 0px";
-        document.getElementById("logonav").style.display = "inline-block";
-        document.getElementById("navcarrito").style.margin = "32px 0px 0px 0px";
-        document.getElementById("navlogin").style.margin = "32px 0px 0px 0px";
-      } else {
-        document.getElementById("navbar").style.margin = "0px 0px 0px 0px";
-        document.getElementById("logonav").style.display = "none";
-        document.getElementById("navcarrito").style.margin = "-35px 0px 0px 0px";
-        document.getElementById("navlogin").style.margin = "-35px 0px 0px 0px";
-      }
-    } */
-</script>
-
 </body>
 </html>
