@@ -3,14 +3,8 @@
    ========================================================================== */
 body .login-register{
     /* Display & Box Model */
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
     padding-top: 10rem;
     padding-bottom: 3%;
-
-    /* Otras */
-    background-color: rgb(228, 228, 228);
 }
 
 /* ==========================================================================

@@ -1,21 +1,8 @@
 /* ==========================================================================
-   RESET - GENERAL
-   ========================================================================== */
-body {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
-.home {
-    background-color: rgb(228, 228, 228);
-}
-
-/* ==========================================================================
    BANNER - CARRUSEL - SLICE
    ========================================================================== */
 
-.banner {
+.home section div.banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,27 +70,24 @@ body {
    PRODUCTO - PRECIO -STOCK
    ========================================================================== */
 
-h2.producto-titulo {
+.home main section.productos article.producto h2.producto-titulo {
     font-size: large;
     margin-right: 3%;
     margin-left: 3%;
 }
 
-.precio-stock {
+.home main section.productos article.producto div.precio-stock {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
 }
 
-.etiqueta-precio {
+.home main section.productos article.producto div.precio-stock div h4.etiqueta-precio {
     float: left;
 }
 
-.etiqueta-stock {
+.home main section.productos article.producto div.precio-stock div h5.etiqueta-stock {
     float: right;
-}
-
-.etiqueta-stock {
     color: green;
 }
 
@@ -161,13 +145,13 @@ h2.producto-titulo {
    BANNER - NOVEDADES
    ========================================================================== */
 
-div.banner-novedades {
+.home section div.banner-novedades {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-img.img-banner {
+.home section div.banner-novedades img.img-banner {
     margin-top: 2%;
     width: 90%;
 }
@@ -176,16 +160,16 @@ img.img-banner {
    NAV- MEJORES PRODUCTOS
    ========================================================================== */
 
-.home main div.titulo-mejores-productos{
+.home section.nav-MejoresProductos div.titulo-mejores-productos{
     text-align: center;
     margin-top: 60px;
 }
 
-.home main ul.mejores-productos {
+.home section.nav-MejoresProductos ul.mejores-productos {
     text-align: center;
 }
 
-.home main ul.mejores-productos li a {
+.home section.nav-MejoresProductos ul.mejores-productos li a {
     /* Display & Box Model */
     padding: 5px 15px;
     display: block;
@@ -197,27 +181,22 @@ img.img-banner {
     border-radius: 5px;
 }
 
-.home main ul.mejores-productos li a:hover {
+.home section.nav-MejoresProductos ul.mejores-productos li a:hover {
     background-color: #8B4513;
     color: white;
 }
 
-.home main ul.mejores-productos li {
+.home section.nav-MejoresProductos ul.mejores-productos li {
     /* Display & Box Model */
     display: inline-block;
     padding-right: 1%;
     width: 13%;
 }
-    /* Posicionamiento */
-    
-    /* Display & Box Model */
-
-    /* Otras */
 
 /* ==========================================================================
    NEWSLETTER
    ========================================================================== */
-.home main section.newsletter-background {
+.home section.newsletter-background {
     /* Display & Box Model */
     margin-top: 100px;
     padding: 20px 0px;
@@ -228,7 +207,7 @@ img.img-banner {
     text-align: center;
 }
 
-.home main section.newsletter-background input.newsletter {
+.home section.newsletter-background input.newsletter {
     /* Display & Box Model */
     margin: 0.5% 0;
     width: 49%;
@@ -240,7 +219,7 @@ img.img-banner {
     text-align: center;
 }
 
-.home main section.newsletter-background input.newsletter::placeholder {
+.home section.newsletter-background input.newsletter::placeholder {
     color: black;
     opacity: 1;
     font-size: medium;
@@ -259,12 +238,12 @@ img.img-banner {
         margin: 1% 5px;
     }
 
-    .home main ul.mejores-productos li {
+    .home section.nav-MejoresProductos ul.mejores-productos li {
         padding-right: 1%;
         width: 16%;
     }
 
-    .home main section.newsletter-background input.newsletter {
+    .home section.newsletter-background input.newsletter {
         width: 70%;
     }
   }
@@ -281,12 +260,12 @@ img.img-banner {
         margin: 1% 5px;
     }
 
-    .home main ul.mejores-productos li {
+    .home section.nav-MejoresProductos ul.mejores-productos li {
         padding-left: 0;
         width: 20%;
     }
 
-    .home main section.newsletter-background input.newsletter {
+    .home section.newsletter-background input.newsletter {
         width: 70%;
     }
   }
@@ -309,7 +288,7 @@ img.img-banner {
         display: inline-block;
     }
 
-    .home main ul.mejores-productos {
+    .home section.nav-MejoresProductos ul.mejores-productos {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
@@ -318,12 +297,12 @@ img.img-banner {
         padding-left: 0;
     }
 
-    .home main ul.mejores-productos li {
+    .home section.nav-MejoresProductos ul.mejores-productos li {
         width: 40%;
         margin-top: 2%;
     }
 
-    .home main section.newsletter-background input.newsletter {
+    .home section.newsletter-background input.newsletter {
         width: 70%;
     }
   }
@@ -355,7 +334,7 @@ img.img-banner {
         margin-bottom: 2%;
     }
 
-    .home main ul.mejores-productos {
+    .home section.nav-MejoresProductos ul.mejores-productos {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -364,17 +343,17 @@ img.img-banner {
         padding-top: 15px;
     }
 
-    .home main ul.mejores-productos li{
+    .home section.nav-MejoresProductos ul.mejores-productos li{
         width: 75%;
         margin-top: 3%;
         padding: 0;
     }
 
-    .home main ul.mejores-productos a {
+    .home section.nav-MejoresProductos ul.mejores-productos a {
         display:block;
     }
 
-    .home main section.newsletter-background input.newsletter {
+    .home section.newsletter-background input.newsletter {
         width: 70%;
     }
   }
@@ -407,7 +386,7 @@ img.img-banner {
         margin-bottom: 2%;
     }
 
-    .home main ul.mejores-productos {
+    .home section.nav-MejoresProductos ul.mejores-productos {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -415,17 +394,17 @@ img.img-banner {
         padding: 0;
     }
 
-    .home main ul.mejores-productos li{
+    .home section.nav-MejoresProductos ul.mejores-productos li{
         width: 75%;
         margin-top: 3%;
         padding: 0;
     }
 
-    .home main ul.mejores-productos a {
+    .home section.nav-MejoresProductos ul.mejores-productos a {
         display:block;
     }
 
-    .home main section.newsletter-background input.newsletter {
+    .home section.newsletter-background input.newsletter {
         width: 80%;
     }
   }

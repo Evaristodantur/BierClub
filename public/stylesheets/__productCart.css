@@ -1,10 +1,7 @@
 body .container-carrito{
-    background-color: rgb(228, 228, 228);
-    padding: 0px; 
-    margin: 0px;
-    box-sizing: border-box;
     padding-top:1rem;
 }
+
 h1.titulo{
     margin-top: 110px;
     text-align: center;

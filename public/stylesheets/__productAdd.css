@@ -1,10 +1,3 @@
-/******RESET********/
-body {
-    background-color: rgb(228, 228, 228);
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
 
 .productAddtop{
     padding-top: 200px;
@@ -317,6 +310,12 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
    RESOLUCION: 480 hacia abajo
    ========================================================================== */
 @media (max-width: 480px){
+    .productAdd {
+        width: 88%;
+        margin-left: 4%;
+        margin-right: 0;
+    }
+    
     .flex-categoria-imgFile div.imgFile input#imagen {
         /* Posicionamiento */
         left: 25px;
