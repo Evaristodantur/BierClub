@@ -38,6 +38,10 @@ body {
 /* ==========================================================================
    BLOQUE - PRODUCTOS
    ========================================================================== */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8da9dd12953ad2fc93f6f4b3e9b861f841b600ff
 section.productos{
     /* Display & Box Model */
     width: 100%;
@@ -71,6 +75,10 @@ section.productos div.btnSig {
     margin-right: 1%;
     display: inline-block;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8da9dd12953ad2fc93f6f4b3e9b861f841b600ff
 section.productos article.producto img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -108,6 +116,10 @@ h2.producto-titulo {
 /* ==========================================================================
    BUTTON - PRODUCTO
    ========================================================================== */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8da9dd12953ad2fc93f6f4b3e9b861f841b600ff
 section.productos article.producto button.hoverproducto{
     margin: 0;
     opacity: 0;

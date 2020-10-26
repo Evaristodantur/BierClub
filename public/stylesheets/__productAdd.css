@@ -317,6 +317,12 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
    RESOLUCION: 480 hacia abajo
    ========================================================================== */
 @media (max-width: 480px){
+    .productAdd {
+        width: 88%;
+        margin-left: 4%;
+        margin-right: 0;
+    }
+    
     .flex-categoria-imgFile div.imgFile input#imagen {
         /* Posicionamiento */
         left: 25px;
