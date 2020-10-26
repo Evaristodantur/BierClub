@@ -15,6 +15,8 @@
 
 ### Keep doing:
   - Seguir el ritmo individual con que cada compañero codea, ya que es muy bueno
+  - Seguir con la misma confianza para dar consejos y seguir planteando los problemas que tenemos
+  - Concluir la deadline antes de tiempo
   
 ### Less of:
   - Dejar de codear solos, sin haberse reunido anteriormente
@@ -29,3 +31,16 @@ Todos los participantes trabajamos de forma muy autónoma, pero no dejamos de la
 
 -------------------------
 # Retrospectiva - 2 sprint
+
+### Start Doing:
+  
+### More of:
+
+### Keep doing:
+  
+### Less of:
+
+### Stop Doing:
+
+### Conclusiones:
+
