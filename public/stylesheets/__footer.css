@@ -11,17 +11,17 @@
 }
 
 /* ==========================================================================
-   CONT-NOSOTROS
+   SECCION - CONTACTO-NOSOTROS-UBICACION
    ========================================================================== */
-.footer section.cont-nosotros {
+.footer section.contacto-nosotros-ubicacion {
     display: flex;
     justify-content: center;
 }
 
 /* ==========================================================================
-   ART-FOOTER - CONTACTOS
+   ART-FOOTER - GENERAL
    ========================================================================== */
-.footer section.cont-nosotros div.art-footer {
+.footer section.contacto-nosotros-ubicacion div.art-footer {
     /* Display & Box Model */
     margin-top: 1%;
     width: 33%;
@@ -32,14 +32,17 @@
     color: white;
 }
 
-.footer section.cont-nosotros div.art-footer .contacto {
+/* ==========================================================================
+   ART-FOOTER - CONTACTOS
+   ========================================================================== */
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.footer section.cont-nosotros div.art-footer .contacto div {
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto div {
     /* Display & Box Model */
     margin-left: 15%;
 
@@ -47,7 +50,7 @@
     text-align: justify;
 }
 
-.footer section.cont-nosotros div.art-footer .contacto i {
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto i {
     /* Display & Box Model */
     margin-top: 3%;
 
@@ -55,41 +58,41 @@
     font-size: 35px;
 }
 
-.footer section.cont-nosotros div.art-footer .contacto i:hover ,
-.footer section.cont-nosotros div.art-footer .contacto .icono:hover{
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto i:hover ,
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono:hover{
     opacity: 0.8;
 }
 
-.footer section.cont-nosotros div.art-footer .contacto .icono i.fa-instagram ,
-.footer section.cont-nosotros div.art-footer .contacto p.ig {
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono i.fa-instagram ,
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto p.ig {
     color: #F56040;
 }
 
-.footer section.cont-nosotros div.art-footer .contacto .icono i.fa-whatsapp , 
-.footer section.cont-nosotros div.art-footer .contacto p.wpp{
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono i.fa-whatsapp , 
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto p.wpp{
     color: #25D366;
 }
 
-.footer section.cont-nosotros div.art-footer .contacto .icono i.fa-facebook-square , 
-.footer section.cont-nosotros div.art-footer .contacto p.fb{
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono i.fa-facebook-square , 
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto p.fb{
     color: #3b5998;
 }
 
-.footer section.cont-nosotros div.art-footer .contacto .icono i.fa-facebook-messenger , 
-.footer section.cont-nosotros div.art-footer .contacto p.fb-msg{
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono i.fa-facebook-messenger , 
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto p.fb-msg{
     color: #0078FF;
 }
 
-.footer section.cont-nosotros div.art-footer .contacto .icono i.fa-envelope , 
-.footer section.cont-nosotros div.art-footer .contacto p.gmail {
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono i.fa-envelope , 
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto p.gmail {
     color:#fce4b4a9;
 }
 
-.footer section.cont-nosotros div.art-footer .contacto .icono {
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono {
     text-decoration: none;
 }
 
-.footer section.cont-nosotros div.art-footer .contacto .icono p {
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono p {
     display: inline-block;
 }
 
@@ -136,6 +139,7 @@
    RESOLUCION: 950 hacia arriba - HOVER, ANIMACIONES
    ========================================================================== */
 @media (min-width: 950px) {
+  /*ART-FOOTER MAPA - DONDE ESTAMOS*/
   .footer section div.art-footer.ubi iframe.mapa:hover {
       transform: scale(1.1);
   }
@@ -148,22 +152,26 @@
    RESOLUCION: 1024 a 1200
    ========================================================================== */
 @media (min-width: 1024px) and (max-width: 1200px) {
-  .footer section.cont-nosotros {
+  /*SECCION - CONTACTO-NOSOTROS-UBICACION*/
+  .footer section.contacto-nosotros-ubicacion {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .footer section.cont-nosotros div.art-footer {
+  /*ART-FOOTER*/
+  .footer section.contacto-nosotros-ubicacion div.art-footer {
     width: 50%;
   }
 
-  .footer section.cont-nosotros div.art-footer div.contacto div {
+  /*ART-FOOTER - CONTACTOS*/
+  .footer section.contacto-nosotros-ubicacion div.art-footer div.contacto div {
     text-align: center;
     margin-left: 0;
   }
 
-  .footer section.cont-nosotros div.art-footer.nosotros {
+  /*ART-FOOTER - NOSOTROS*/
+  .footer section.contacto-nosotros-ubicacion div.art-footer.nosotros {
     padding: inherit 1%;
   }
 
@@ -172,6 +180,7 @@
     border-bottom: 1px solid white;
   }
 
+  /*ART-FOOTER - UBICACION*/
   .footer section div.art-footer.ubi {
     width: 97%;
     order: 1;
@@ -187,17 +196,20 @@
    RESOLUCION: 480 a 1024
    ========================================================================== */
 @media (min-width: 480px) and (max-width: 1024px) {
-  .footer section.cont-nosotros {
+  /*SECCION - CONTACTO-NOSOTROS-UBICACION*/
+  .footer section.contacto-nosotros-ubicacion {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .footer section.cont-nosotros div.art-footer {
+  /*ART-FOOTER*/
+  .footer section.contacto-nosotros-ubicacion div.art-footer {
     width: 50%;
   }
 
-  .footer section.cont-nosotros div.art-footer div.contacto div {
+  /*ART-FOOTER - CONTACTOS*/
+  .footer section.contacto-nosotros-ubicacion div.art-footer div.contacto div {
     /* Display & Box Model */
     margin-left: 0;
 
@@ -205,7 +217,8 @@
     text-align: center;
   }
 
-  .footer section.cont-nosotros div.art-footer.nosotros {
+  /*ART-FOOTER - NOSOTROS*/
+  .footer section.contacto-nosotros-ubicacion div.art-footer.nosotros {
     padding: inherit 1%;
   }
 
@@ -214,6 +227,7 @@
     border-bottom: 1px solid white;
   }
 
+  /*ART-FOOTER - UBICACION*/
   .footer section div.art-footer.ubi {
     width: 97%;
     order: 1;
@@ -228,17 +242,20 @@
    RESOLUCION: 480 hacia abajo
    ========================================================================== */
 @media (max-width: 480px) {
-  .footer section.cont-nosotros {
+  /*SECCION - CONTACTO-NOSOTROS-UBICACION*/
+  .footer section.contacto-nosotros-ubicacion {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 
-  .footer section.cont-nosotros div.art-footer {
+  /*ART-FOOTER*/
+  .footer section.contacto-nosotros-ubicacion div.art-footer {
     width: 97%;
   }
 
-  .footer section.cont-nosotros div.art-footer div.contacto div {
+  /*ART-FOOTER - CONTACTOS*/
+  .footer section.contacto-nosotros-ubicacion div.art-footer div.contacto div {
     /* Display & Box Model */
     margin-left: 0;
 
@@ -246,7 +263,8 @@
     text-align: center;
   }
 
-  .footer section.cont-nosotros div.art-footer.nosotros {
+  /*ART-FOOTER - NOSOTROS*/
+  .footer section.contacto-nosotros-ubicacion div.art-footer.nosotros {
     padding: inherit 1%;
   }
 
@@ -255,6 +273,7 @@
     border-bottom: 1px solid white;
   }
 
+  /*ART-FOOTER - UBICACION*/
   .footer section div.art-footer.ubi {
     width: 97%;
     order: 1;
