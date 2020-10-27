@@ -2,6 +2,13 @@
 
 ## Sprint 2
 
+### 27/10/20
+
+- Menu hamburguesa del nav1 y nav2 completado
+- Nav1 y nav2 hechos responsive por completo
+- Cambios en el Home para hacerlo un poco mas estetico
+- Seguimos con problemas en el productDetail. Tenemos que solucionar eso hoy.
+
 ### 26/10/20
 
 - Menu hamburguesa en el nav casi completado.
