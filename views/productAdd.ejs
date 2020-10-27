@@ -14,28 +14,38 @@
   <body>
 
     <header>
+      <!-- NAV -->
       <%- include nav.ejs %>
     </header>
+    <!-- ESPACIADO DESDE EL TOP DE LA PAGINA-->
     <div class="productAddtop"></div>
+
+    <!-- CONTAINER PRODUCTADD -->
     <div class="productAdd">
 
+      <!-- TITULO -->
       <h1>Agregue su producto</h1>
 
+      <!-- FORMULARIO -->
       <form class="formulario-carga" action="" method="">
 
+        <!-- BLOQUE DE IMAGEN, NOMBRE, PRECIO Y CANTIDAD -->
         <div class="flex-imgPrev-detalle">
           <div class="campo-nombre-precio-cantidad">
 
+            <!-- NOMBRE -->
             <div class="nombre">
               <label for="nombreProducto">Nombre del producto:</label>
               <input id="nombreProducto" type="text" placeholder="Nombre">
             </div>
             
+            <!-- PRECIO -->
             <div class="precio">
               <label for="precio">Precio:</label>
               <input id="precio" type="text" placeholder="Precio">
             </div>
             
+            <!-- CANTIDAD -->
             <div class="cantidad">
               <label for="cantidad">Cantidad:</label>
               <input id="cantidad" type="text" placeholder="Cantidad">
@@ -43,6 +53,7 @@
   
           </div>
 
+          <!-- IMAGEN -->
           <div class="imagenPrev">
             <img src="/images/productos/producto-1.jpg" alt="muestra de producto">
           </div>
@@ -52,7 +63,7 @@
 
         
 
-        
+        <!-- CATEGORIA -->
         <div class="flex-categoria-imgFile">
 
           <div class="categoria">
@@ -67,15 +78,15 @@
           </div>
 
           
-
+        <!-- SUBIR IMAGEN -->
         <div class="imgFile">
           <input id="imagen" type="file" size="60">
         </div>
 
         </div>
 
+        <!-- DESCRIPCION -->
         <textarea placeholder="Descripción del articulo" name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
-
           <div class="flex-botones-publicar">
               <button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar
               <button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar y Agregar otro producto
