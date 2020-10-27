@@ -11,6 +11,10 @@
 - Hay que arreglar animación del footer
 - Mejorar botones de agregar al carrito (Home)
 - Agregar comentarios en el Home para hacerlo mas facil de entender
+- Documentar el footer
+- Documentar register y  login
+- Documentar productAdd
+- Documentar productDetail
 
 ### 26/10/20
 
