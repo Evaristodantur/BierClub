@@ -81,7 +81,7 @@ hr {
   display: flex;
   float: right;
   position: fixed;
-  right: 20%;
+  right: 6%;
   margin-top: -35px;
   transition: 0.3s;
 }
@@ -250,6 +250,10 @@ MENU HAMBURGUESA MOBILE
 .pointer{
   cursor: pointer;
 }
+
+
+
+
 /* ==========================================================================
 RESOLUCION 1200-1300
 ========================================================================== */
@@ -264,10 +268,10 @@ RESOLUCION 1200-1300
 
 
 /* ==========================================================================
-RESOLUCION 1024-1600
+RESOLUCION 950-1600
 ========================================================================== */
 
-@media (min-width: 1024px) and (max-width: 1600px) {
+@media (min-width: 950px) and (max-width: 1600px) {
   .navlogin li a {
       display: none;
   }
@@ -277,7 +281,7 @@ RESOLUCION 1024-1600
   }
 
   .navcarrito {
-      right: 6%;
+      right: -3%;
   }
 }
 
@@ -287,7 +291,7 @@ RESOLUCION 1024-1600
 /* ==========================================================================
 RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA) 
 ========================================================================== */
-@media(max-width: 950px){
+@media(max-width: 949px){
   /* SCRIPT DE NAV BAR DESACTIVADO */
 
   .barra{
@@ -304,6 +308,7 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
 
   .navcarrito{
     margin: 32px 0px 0px 0px;
+    right: -5%;
   }
 
   .navlogin{
@@ -313,10 +318,6 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
   /* ICONOS DE LA DERECHA (NAV BAR)*/
   .navlogin li a {
     display: none;
-  }
-
-  .navcarrito{
-    right: -2%;
   }
 
   .navcarrito span {
@@ -348,6 +349,9 @@ RESOLUCION 480-768
   }
 }
 
+
+
+
 /* ==========================================================================
 RESOLUCION 320-480
 ========================================================================== */
@@ -355,13 +359,9 @@ RESOLUCION 320-480
   .mobile-hamburguesa-menu{
     width: 200px;
 /*     border-radius: 0px;
-    top: 70px;
     height: 100vh; */
   }
   .navbar .nav-items{
     display:none;
-  }
-  .navcarrito{
-    right: -10%;
   }
 }
