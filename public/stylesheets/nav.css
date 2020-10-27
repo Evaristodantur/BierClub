@@ -90,59 +90,22 @@ div.container-nav div.navbar center strong ul.navlogin {
   transition: 0.3s;
 }
 
-.nav-arriba {
-  padding-top: 50px;
-  width: 100%;
-}
-
-.nav-arriba a {
-  text-decoration: none;
-
-}
-
-.nav-arriba ul {
-  padding: 0;
-  list-style: none;
-}
-
-.nav-arriba li {
-  display: inline-block;
-  margin: 0px 25px;
-  position: relative;
-}
-
-.hamburguesa-icono{
+div.container-nav div.navbar center ul.navcarrito li.btn-hamburguesa a.hamburguesa-icono{
   display: none;
   color: white;
 }
+
 /* ==========================================================================
 BUSCADOR
 ========================================================================== */
-.search {
+div.container-nav div.navbar center ul.navcarrito li.search {
   transition: 0.3s;
-}
-
-/* .search:hover {
-  margin-right: 100px;
-} */
-
-.searchBuscador {
-  display: none;
-  position: absolute;
-}
-
-input:focus:hover {
-  margin-right: 100px;
-}
-
-.search:hover~.searchBuscador {
-  display: inline-block;
 }
 
 /* ==========================================================================
 DROPDOWN MENU
 ========================================================================== */
-.dropdownMenu {
+div.container-nav div.navbar center nav ul.barra li.dropdownBoton div.dropdownMenu {
   position: absolute;
   display: none;
   width: 500px;
@@ -153,11 +116,11 @@ DROPDOWN MENU
   box-shadow: 2px 2px rgba(163, 163, 163, 0.295);
 }
 
-.dropdownBoton:hover>.dropdownMenu {
+div.container-nav div.navbar center nav ul.barra li.dropdownBoton:hover>div.container-nav div.navbar center nav ul.barra li.dropdownBoton div.dropdownMenu {
   display: flex;
 }
 
-nav ul.barra li div.dropdownMenu a {
+div.container-nav div.navbar center nav ul.barra li div.dropdownMenu a {
   display: flex;
   flex-direction: column;
   width: 35%;
@@ -167,17 +130,15 @@ nav ul.barra li div.dropdownMenu a {
   height: 100px;
 }
 
-nav ul.barra li div.dropdownMenu a h3 {
+div.container-nav div.navbar center nav ul.barra li div.dropdownMenu a h3 {
   margin-block-start: 16px;
   margin-block-end: -9.5px;
 }
 
-
-
 /* ==========================================================================
 MENU HAMBURGUESA MOBILE
 ========================================================================== */
-.mobile-hamburguesa-menu{
+div.nav-backgc div.mobile-hamburguesa-menu{
   position: absolute;
   height: 96vh;
   width: 350px;
@@ -189,44 +150,44 @@ MENU HAMBURGUESA MOBILE
   transition: 0.4s;
 }
 
-.hamburguesa-menu{
+div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-top div.hamburguesa-menu{
   margin: 6px;
 }
-.hamburguesa-margin{
+div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin{
   margin:2%;
 }
-.hamburguesa-top{
+div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-top{
   display:flex;
   justify-content: space-between;
 }
-.hamburguesa-items{
+div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-items{
   display:flex;
   flex-direction: column;
   margin-top: 3%;
   margin-left: 4%;
 }
-.hamburguesa-item{
+div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-items div.hamburguesa-item{
   color:#DAA520;
   display: inline-block;
   margin-bottom: 7px;
   transition: 0.4s;
 }
-.fa-times-circle{
+div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-top a i.fa-times-circle{
   font-size: 25px;
   color: #DAA520;
 }
-.fa-angle-down{
+div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-items a i.fa-angle-down{
   margin-top: 2px;
 }
 
-.dropdown-mobile{
+div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-items div.hamburguesa-dropdown-mobile a.dropdown-mobile{
   color: black;
   display:flex;
   flex-direction: column;
   margin-left: 15px;
   margin-bottom: 20px;
 }
-.hamburguesa-dropdown-mobile{
+div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-items div.hamburguesa-dropdown-mobile{
   display:none;
 }
 
