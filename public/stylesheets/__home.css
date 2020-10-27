@@ -100,7 +100,7 @@
 }
 
 /* ==========================================================================
-   BUTTON AÑADIR AL CARRITO - PRODUCTO
+   PRODUCTO - BUTTON AÑADIR AL CARRITO
    ========================================================================== */
 
 .home main section.productos article.producto button.btn-producto {
@@ -131,7 +131,7 @@
 }
 
 /* ==========================================================================
-   BUTTON SIGUIENTE/PREVIO - PRODUCTO
+   PRODUCTO - BUTTON SIGUIENTE/PREVIO
    ========================================================================== */
 
 .home main section.productos article.producto button.btn-producto i.fa-plus {
@@ -245,6 +245,7 @@
    RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
    ========================================================================== */
 @media (max-width: 950px) {
+    /*BUTTON - AÑADIR AL CARRITO*/
     .home main section.productos article.producto button.hoverproducto{
         opacity: 1;
     }
@@ -258,16 +259,19 @@
    RESOLUCION: 1200 a 1400
    ========================================================================== */
 @media (min-width: 1200px) and (max-width: 1400px) {
+    /*1 PRODUCTO SACADO*/
     .home main section.productos article.producto.resolucionMenorA1200 {
         display: none;
         margin: 1% 5px;
     }
 
+    /*NAV - MEJORES PRODUCTOS*/
     .home section.nav-MejoresProductos ul.mejores-productos li {
         padding-right: 1%;
         width: 16%;
     }
 
+    /*NEWSLETTER*/
     .home section.newsletter-background input.newsletter {
         width: 70%;
     }
@@ -281,16 +285,19 @@
    RESOLUCION: 1024 a 1200
    ========================================================================== */
 @media (min-width: 1024px) and (max-width: 1200px) {
+    /*1 PRODUCTO SACADO*/
     .home main section.productos article.producto.resolucionMenorA1200 {
         display: none;
         margin: 1% 5px;
     }
 
+    /*NAV - MEJORES PRODUCTOS*/
     .home section.nav-MejoresProductos ul.mejores-productos li {
         padding-left: 0;
         width: 20%;
     }
 
+    /*NEWSLETTER*/
     .home section.newsletter-background input.newsletter {
         width: 70%;
     }
@@ -305,20 +312,24 @@
    RESOLUCION: 768 a 1023
    ========================================================================== */
   @media (min-width: 768px) and (max-width: 1023px) {
+    /*2 PRODUCTOS SACADOS*/
     .home main section.productos article.producto.resolucionMenorA1200, 
     .home main section.productos article.producto.resolucionMenorA1024 {
         display: none;
     }
 
+    /*PRODUCTO*/
     .home main section.productos article.producto {
         width: 30%;
         margin: 1% 5px;
     }
 
+    /*BANNER - NOVEDADES*/
     .home section div.banner-novedades img.img-banner {
         width: 95%;
     }
 
+    /*NAV - MEJORES PRODUCTOS*/
     .home section.nav-MejoresProductos ul.mejores-productos {
         display: flex;
         width: 100%;
@@ -333,6 +344,7 @@
         margin-top: 2%;
     }
 
+    /*NEWSLETTER*/
     .home section.newsletter-background input.newsletter {
         width: 70%;
     }
@@ -346,12 +358,14 @@
    RESOLUCION: 480 a 768
    ========================================================================== */
   @media (min-width: 480px) and (max-width: 768px) {
+    /*3 PRODUCTOS SACADOS*/
     .home main section.productos article.producto.resolucionMenorA1200, 
     .home main section.productos article.producto.resolucionMenorA1024,
     .home main section.productos article.producto.resolucionMenorA768 {
         display: none;
     }
 
+    /*PRODUCTO*/
     .home main section.productos article.producto {
         margin: 0% 5px;
         width: 45%;
@@ -365,10 +379,12 @@
         margin-bottom: 2%;
     }
 
+    /*BANNER - NOVEDADES*/
     .home section div.banner-novedades img.img-banner {
         width: 95%;
     }
 
+    /*NAV - MEJORES PRODUCTOS*/
     .home section.nav-MejoresProductos ul.mejores-productos {
         display: flex;
         flex-direction: column;
@@ -388,6 +404,7 @@
         display:block;
     }
 
+    /*NEWSLETTER*/
     .home section.newsletter-background input.newsletter {
         width: 70%;
     }
@@ -401,6 +418,7 @@
    RESOLUCION: 480 hacia abajo
    ========================================================================== */
   @media (max-width: 480px) {
+    /*4 PRODUCTOS SACADOS*/
     .home main section.productos article.producto.resolucionMenorA1200, 
     .home main section.productos article.producto.resolucionMenorA1024,
     .home main section.productos article.producto.resolucionMenorA768,
@@ -408,6 +426,7 @@
         display: none;
     }
 
+    /*PRODUCTO*/
     .home main section.productos article.producto {
         margin: 0% 5px;
         width: 75%;
@@ -421,10 +440,12 @@
         margin-bottom: 2%;
     }
 
+    /*BANNER - NOVEDADES*/
     .home section div.banner-novedades img.img-banner {
         width: 98%;
     }
 
+    /*NAV - MEJORES PRODUCTOS*/
     .home section.nav-MejoresProductos ul.mejores-productos {
         display: flex;
         flex-direction: column;
@@ -443,6 +464,7 @@
         display:block;
     }
 
+    /*NEWSLETTER*/
     .home section.newsletter-background input.newsletter {
         width: 80%;
     }
