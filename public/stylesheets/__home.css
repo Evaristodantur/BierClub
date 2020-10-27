@@ -38,6 +38,10 @@
     /* Display & Box Model */
     width: 22%;
     margin: 1% 0.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
 
     /* Otras */
     background-color: white;
@@ -84,32 +88,54 @@
 
 .home main section.productos article.producto div.precio-stock div h4.etiqueta-precio {
     float: left;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .home main section.productos article.producto div.precio-stock div h5.etiqueta-stock {
     float: right;
-    color: green;
+    color: rgb(1, 122, 1);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* ==========================================================================
-   BUTTON - PRODUCTO
+   BUTTON AÑADIR AL CARRITO - PRODUCTO
    ========================================================================== */
-
-.home main section.productos article.producto h4.etiqueta-precio {
-    margin-bottom: 0;
-}
 
 .home main section.productos article.producto button.btn-producto {
     /* Display & Box Model */
     padding: 10px;
     width: 80%;
-    margin-bottom: 2px;
+    margin-bottom: 3%;
 
     /* Otras */
     background-color: black;
     color: white;
     border: rgba(0, 0, 0, .2) 1px solid;
     border-radius: 10px;
+}
+
+.home main section.productos article.producto button.hoverproducto{
+    opacity: 0;
+    margin: 0;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    align-self: center;
+    transition: 0.2s;
+}
+
+.home main section.productos article.producto:hover button.hoverproducto{
+    opacity: 1;
+    margin-bottom: 4%;
+}
+
+/* ==========================================================================
+   BUTTON SIGUIENTE/PREVIO - PRODUCTO
+   ========================================================================== */
+
+.home main section.productos article.producto button.btn-producto i.fa-plus {
+    color: #DAA520;
 }
 
 .home main section.productos div.btnAnt i.fa-chevron-circle-left , 
@@ -122,7 +148,7 @@
 
 .home main section.productos div.btnAnt i.fa-chevron-circle-left:hover ,
 .home main section.productos div.btnSig i.fa-chevron-circle-right:hover {
-    background-color: black;    
+    background-color: rgb(0, 0, 0);    
     color: #ffd56cd7;
 }
 
@@ -216,6 +242,19 @@
 
 
 /* ==========================================================================
+   RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
+   ========================================================================== */
+@media (max-width: 950px) {
+    .home main section.productos article.producto button.hoverproducto{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
    RESOLUCION: 1200 a 1400
    ========================================================================== */
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -232,29 +271,10 @@
     .home section.newsletter-background input.newsletter {
         width: 70%;
     }
-  }
-
-
-
-
-/* ==========================================================================
-   RESOLUCION: 950 hacia arriba - HOVER, ANIMACIONES
-   ========================================================================== */
-@media (min-width: 950px) {
-    .home main section.productos article.producto button.hoverproducto{
-        margin: 0;
-        opacity: 0;
-        transition: 0.4s;
-    }
-    
-    .home main section.productos article.producto:hover button.hoverproducto{
-        opacity: 1;
-    }
-    
-    .home main section.productos article.producto:hover{
-        margin-bottom: 3px;
-    }
 }
+
+
+
 
 
 /* ==========================================================================
@@ -274,7 +294,9 @@
     .home section.newsletter-background input.newsletter {
         width: 70%;
     }
-  }
+
+}
+
 
 
 
@@ -291,7 +313,10 @@
     .home main section.productos article.producto {
         width: 30%;
         margin: 1% 5px;
-        display: inline-block;
+    }
+
+    .home section div.banner-novedades img.img-banner {
+        width: 95%;
     }
 
     .home section.nav-MejoresProductos ul.mejores-productos {
@@ -315,6 +340,7 @@
 
 
 
+
   
 /* ==========================================================================
    RESOLUCION: 480 a 768
@@ -329,7 +355,6 @@
     .home main section.productos article.producto {
         margin: 0% 5px;
         width: 45%;
-        display: inline-block;
     }
 
     .home main section.productos article.producto:hover{
@@ -338,6 +363,10 @@
 
     .producto button.btn-producto {
         margin-bottom: 2%;
+    }
+
+    .home section div.banner-novedades img.img-banner {
+        width: 95%;
     }
 
     .home section.nav-MejoresProductos ul.mejores-productos {
@@ -367,6 +396,7 @@
 
   
 
+
 /* ==========================================================================
    RESOLUCION: 480 hacia abajo
    ========================================================================== */
@@ -381,7 +411,6 @@
     .home main section.productos article.producto {
         margin: 0% 5px;
         width: 75%;
-        display: inline-block;
     }
 
     .home main section.productos article.producto:hover{
@@ -390,6 +419,10 @@
 
     .home main section.productos article.producto button.btn-producto {
         margin-bottom: 2%;
+    }
+
+    .home section div.banner-novedades img.img-banner {
+        width: 98%;
     }
 
     .home section.nav-MejoresProductos ul.mejores-productos {

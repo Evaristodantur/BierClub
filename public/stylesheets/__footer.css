@@ -100,10 +100,6 @@
     width: 93%;
 }
   
-.footer section div.art-footer.ubi iframe.mapa:hover {
-    transform: scale(1.1);
-}
-  
 .footer hr.hrline {
     /* Display & Box Model */
     height: 2px;
@@ -131,6 +127,20 @@
     margin: 0;
     padding-bottom: 5px;
 }
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 950 hacia arriba - HOVER, ANIMACIONES
+   ========================================================================== */
+@media (min-width: 950px) {
+  .footer section div.art-footer.ubi iframe.mapa:hover {
+      transform: scale(1.1);
+  }
+}
+
 
 
 
@@ -169,6 +179,10 @@
 
 }
 
+
+
+
+
 /* ==========================================================================
    RESOLUCION: 480 a 1024
    ========================================================================== */
@@ -205,6 +219,10 @@
     order: 1;
   }
 }
+
+
+
+
 
 /* ==========================================================================
    RESOLUCION: 480 hacia abajo
