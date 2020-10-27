@@ -25,7 +25,7 @@ function hamburguesa(){
 NAV BAR FUNCTION SCROLL TO TOP
 ========================================================================== */
 
-/*       window.onscroll = function() {scrollFunction()};
+      window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
       if (window.innerWidth > 1200) {
@@ -41,5 +41,5 @@ NAV BAR FUNCTION SCROLL TO TOP
           document.getElementById("navlogin").style.margin = "-35px 0px 0px 0px";
         }
       }
-    } */
+    }
 

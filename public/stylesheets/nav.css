@@ -4,7 +4,7 @@ body {
   font-weight: 300;
 }
 
-header div.nav-backgc {
+.nav-backgc {
   height: 140px;
   position: fixed;
   width: 100%;
@@ -14,25 +14,30 @@ header div.nav-backgc {
   background-color: #DAA520;
 }
 
-header div.container-nav {
+.container-nav {
   width: 80%;
   margin-left: 10%;
   position: fixed;
   z-index: inherit 9;
 }
 
-div.container-nav div.navbar center a img.logo {
-  max-width: 65px;
-  padding: 10px 0px 2px 0px;
-}
-
-div.container-nav div.navbar center a img.logonav {
+.logonav {
   max-width: 65px;
   padding: 10px 0px 2px 0px;
   position: relative;
   float: left;
   margin-top: -5px;
   display: none;
+}
+
+.logo {
+  max-width: 65px;
+  padding: 10px 0px 2px 0px;
+}
+
+nav {
+  width: 100%;
+  padding-bottom: 2px;
 }
 
 .navbar ul {
@@ -46,33 +51,33 @@ div.container-nav div.navbar center a img.logonav {
   position: relative;
 }
 
-div.container-nav div.navbar center ul.navcarrito span {
+.navcarrito span {
   display: none;
 }
 
-div.container-nav div.navbar a {
+.navbar a {
   text-decoration: none;
   color: #fff;
 }
 
-div.container-nav div.navbar a {
+.navbar a {
   color: #fff;
 }
 
-div.container-nav div.navbar center nav ul.barra {
+.barra {
   margin-top: 27px;
 }
 
-div.container-nav div.navbar center hr {
+hr {
   opacity: 20%
 }
 
-div.container-nav div.navbar center ul.navcarrito .login-carrito {
+.navcarrito.login-carrito {
   display: none;
   font-size: 18px;
 }
 
-div.container-nav div.navbar center ul.navcarrito {
+.navcarrito {
   display: flex;
   float: right;
   position: fixed;
@@ -81,7 +86,7 @@ div.container-nav div.navbar center ul.navcarrito {
   transition: 0.3s;
 }
 
-div.container-nav div.navbar center strong ul.navlogin {
+.navlogin {
   float: right;
   display: flex;
   position: fixed;
@@ -90,22 +95,23 @@ div.container-nav div.navbar center strong ul.navlogin {
   transition: 0.3s;
 }
 
-div.container-nav div.navbar center ul.navcarrito li.btn-hamburguesa a.hamburguesa-icono{
+.navlogin {
+  float: right;
+  position: fixed;
+  right: 1.5%;
+  margin-top: -35px;
+  transition: 0.3s;
+}
+
+.hamburguesa-icono{
   display: none;
   color: white;
 }
 
 /* ==========================================================================
-BUSCADOR
-========================================================================== */
-div.container-nav div.navbar center ul.navcarrito li.search {
-  transition: 0.3s;
-}
-
-/* ==========================================================================
 DROPDOWN MENU
 ========================================================================== */
-div.container-nav div.navbar center nav ul.barra li.dropdownBoton div.dropdownMenu {
+.dropdownMenu {
   position: absolute;
   display: none;
   width: 500px;
@@ -116,11 +122,11 @@ div.container-nav div.navbar center nav ul.barra li.dropdownBoton div.dropdownMe
   box-shadow: 2px 2px rgba(163, 163, 163, 0.295);
 }
 
-div.container-nav div.navbar center nav ul.barra li.dropdownBoton:hover>div.container-nav div.navbar center nav ul.barra li.dropdownBoton div.dropdownMenu {
+.dropdownBoton:hover>.dropdownMenu {
   display: flex;
 }
 
-div.container-nav div.navbar center nav ul.barra li div.dropdownMenu a {
+.dropdownMenu a {
   display: flex;
   flex-direction: column;
   width: 35%;
@@ -130,15 +136,17 @@ div.container-nav div.navbar center nav ul.barra li div.dropdownMenu a {
   height: 100px;
 }
 
-div.container-nav div.navbar center nav ul.barra li div.dropdownMenu a h3 {
+.dropdownMenu a h3 {
   margin-block-start: 16px;
   margin-block-end: -9.5px;
 }
 
+
+
 /* ==========================================================================
 MENU HAMBURGUESA MOBILE
 ========================================================================== */
-div.nav-backgc div.mobile-hamburguesa-menu{
+.mobile-hamburguesa-menu{
   position: absolute;
   height: 96vh;
   width: 350px;
@@ -150,44 +158,44 @@ div.nav-backgc div.mobile-hamburguesa-menu{
   transition: 0.4s;
 }
 
-div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-top div.hamburguesa-menu{
+.hamburguesa-menu{
   margin: 6px;
 }
-div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin{
+.hamburguesa-margin{
   margin:2%;
 }
-div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-top{
+.hamburguesa-top{
   display:flex;
   justify-content: space-between;
 }
-div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-items{
+.hamburguesa-items{
   display:flex;
   flex-direction: column;
   margin-top: 3%;
   margin-left: 4%;
 }
-div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-items div.hamburguesa-item{
+.hamburguesa-item{
   color:#DAA520;
   display: inline-block;
   margin-bottom: 7px;
   transition: 0.4s;
 }
-div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-top a i.fa-times-circle{
+.fa-times-circle{
   font-size: 25px;
   color: #DAA520;
 }
-div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-items a i.fa-angle-down{
+.fa-angle-down{
   margin-top: 2px;
 }
 
-div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-items div.hamburguesa-dropdown-mobile a.dropdown-mobile{
+.dropdown-mobile{
   color: black;
   display:flex;
   flex-direction: column;
   margin-left: 15px;
   margin-bottom: 20px;
 }
-div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburguesa-items div.hamburguesa-dropdown-mobile{
+.hamburguesa-dropdown-mobile{
   display:none;
 }
 
@@ -197,6 +205,9 @@ div.nav-backgc div.mobile-hamburguesa-menu div.hamburguesa-margin div.hamburgues
 
 .pointer{
   cursor: pointer;
+}
+.hamburguesa-items-none{
+  display: none;
 }
 
 
@@ -301,7 +312,7 @@ RESOLUCION 480-768
 
 
 /* ==========================================================================
-RESOLUCION 320-480
+RESOLUCION 0-480
 ========================================================================== */
 @media(max-width: 479px) {
   .mobile-hamburguesa-menu{
@@ -311,5 +322,9 @@ RESOLUCION 320-480
   }
   .navbar .nav-items{
     display:none;
+  }
+  .hamburguesa-items-none{
+    display:flex;
+    flex-direction: column;
   }
 }
