@@ -183,9 +183,16 @@ MENU HAMBURGUESA MOBILE
   font-size: 25px;
   color: #DAA520;
 }
+
 .fa-angle-down{
   margin-top: 2px;
+  transition: 0.3s;
 }
+
+.dropdownBoton:hover .fa-angle-down {
+  transform: rotate(180deg);
+}
+
 
 .dropdown-mobile{
   color: black;
@@ -202,9 +209,14 @@ MENU HAMBURGUESA MOBILE
   display: inline-block;
 }
 
+.transform{
+  transform: rotate(180deg);
+}
+
 .pointer{
   cursor: pointer;
 }
+
 .hamburguesa-items-none{
   display: none;
 }

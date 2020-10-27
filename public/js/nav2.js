@@ -18,6 +18,9 @@ function hamburguesa(){
     document.getElementById("hamburguesa-dropdown").classList.toggle("showProductos");
   }
 
+  function transform() {
+    document.getElementById("transform").classList.toggle("transform");
+  }
 
 
 
@@ -42,12 +45,11 @@ function scrollFunction() {
         document.getElementById("navcarrito").style.margin = "-35px 0px 0px 0px";
         document.getElementById("navlogin").style.margin = "-35px 0px 0px 0px";
         }
-    }
-}
-function scrollFunction() {
-if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("navbar").style.background = "#DAA520";
-    } else {
-    document.getElementById("navbar").style.background = "transparent";
+    }else{
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("navbar").style.background = "#DAA520";
+        } else {
+        document.getElementById("navbar").style.background = "transparent";
+        }
     }
 }

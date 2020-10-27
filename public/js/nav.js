@@ -17,6 +17,9 @@ function hamburguesa(){
   function hamburguesaDropdown() {
     document.getElementById("hamburguesa-dropdown").classList.toggle("showProductos");
   }
+  function transform() {
+    document.getElementById("transform").classList.toggle("transform");
+  }
 
 
 
