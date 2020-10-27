@@ -38,6 +38,10 @@
     /* Display & Box Model */
     width: 22%;
     margin: 1% 0.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
 
     /* Otras */
     background-color: white;
@@ -84,32 +88,54 @@
 
 .home main section.productos article.producto div.precio-stock div h4.etiqueta-precio {
     float: left;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .home main section.productos article.producto div.precio-stock div h5.etiqueta-stock {
     float: right;
-    color: green;
+    color: rgb(1, 122, 1);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* ==========================================================================
-   BUTTON - PRODUCTO
+   PRODUCTO - BUTTON AÑADIR AL CARRITO
    ========================================================================== */
-
-.home main section.productos article.producto h4.etiqueta-precio {
-    margin-bottom: 0;
-}
 
 .home main section.productos article.producto button.btn-producto {
     /* Display & Box Model */
     padding: 10px;
     width: 80%;
-    margin-bottom: 2px;
+    margin-bottom: 3%;
 
     /* Otras */
     background-color: black;
     color: white;
     border: rgba(0, 0, 0, .2) 1px solid;
     border-radius: 10px;
+}
+
+.home main section.productos article.producto button.hoverproducto{
+    opacity: 0;
+    margin: 0;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    align-self: center;
+    transition: 0.2s;
+}
+
+.home main section.productos article.producto:hover button.hoverproducto{
+    opacity: 1;
+    margin-bottom: 4%;
+}
+
+/* ==========================================================================
+   PRODUCTO - BUTTON SIGUIENTE/PREVIO
+   ========================================================================== */
+
+.home main section.productos article.producto button.btn-producto i.fa-plus {
+    color: #DAA520;
 }
 
 .home main section.productos div.btnAnt i.fa-chevron-circle-left , 
@@ -122,7 +148,7 @@
 
 .home main section.productos div.btnAnt i.fa-chevron-circle-left:hover ,
 .home main section.productos div.btnSig i.fa-chevron-circle-right:hover {
-    background-color: black;    
+    background-color: rgb(0, 0, 0);    
     color: #ffd56cd7;
 }
 
@@ -216,65 +242,68 @@
 
 
 /* ==========================================================================
-   RESOLUCION: 1200 a 1400
+   RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
    ========================================================================== */
-@media (min-width: 1200px) and (max-width: 1400px) {
-    .home main section.productos article.producto.resolucionMenorA1200 {
-        display: none;
-        margin: 1% 5px;
+@media (max-width: 950px) {
+    /*BUTTON - AÑADIR AL CARRITO*/
+    .home main section.productos article.producto button.hoverproducto{
+        opacity: 1;
     }
+}
 
-    .home section.nav-MejoresProductos ul.mejores-productos li {
-        padding-right: 1%;
-        width: 16%;
-    }
-
-    .home section.newsletter-background input.newsletter {
-        width: 70%;
-    }
-  }
 
 
 
 
 /* ==========================================================================
-   RESOLUCION: 950 hacia arriba - HOVER, ANIMACIONES
+   RESOLUCION: 1200 a 1400
    ========================================================================== */
-@media (min-width: 950px) {
-    .home main section.productos article.producto button.hoverproducto{
-        margin: 0;
-        opacity: 0;
-        transition: 0.4s;
+@media (min-width: 1200px) and (max-width: 1400px) {
+    /*1 PRODUCTO SACADO*/
+    .home main section.productos article.producto.resolucionMenorA1200 {
+        display: none;
+        margin: 1% 5px;
     }
-    
-    .home main section.productos article.producto:hover button.hoverproducto{
-        opacity: 1;
+
+    /*NAV - MEJORES PRODUCTOS*/
+    .home section.nav-MejoresProductos ul.mejores-productos li {
+        padding-right: 1%;
+        width: 16%;
     }
-    
-    .home main section.productos article.producto:hover{
-        margin-bottom: 3px;
+
+    /*NEWSLETTER*/
+    .home section.newsletter-background input.newsletter {
+        width: 70%;
     }
 }
+
+
+
 
 
 /* ==========================================================================
    RESOLUCION: 1024 a 1200
    ========================================================================== */
 @media (min-width: 1024px) and (max-width: 1200px) {
+    /*1 PRODUCTO SACADO*/
     .home main section.productos article.producto.resolucionMenorA1200 {
         display: none;
         margin: 1% 5px;
     }
 
+    /*NAV - MEJORES PRODUCTOS*/
     .home section.nav-MejoresProductos ul.mejores-productos li {
         padding-left: 0;
         width: 20%;
     }
 
+    /*NEWSLETTER*/
     .home section.newsletter-background input.newsletter {
         width: 70%;
     }
-  }
+
+}
+
 
 
 
@@ -283,17 +312,24 @@
    RESOLUCION: 768 a 1023
    ========================================================================== */
   @media (min-width: 768px) and (max-width: 1023px) {
+    /*2 PRODUCTOS SACADOS*/
     .home main section.productos article.producto.resolucionMenorA1200, 
     .home main section.productos article.producto.resolucionMenorA1024 {
         display: none;
     }
 
+    /*PRODUCTO*/
     .home main section.productos article.producto {
         width: 30%;
         margin: 1% 5px;
-        display: inline-block;
     }
 
+    /*BANNER - NOVEDADES*/
+    .home section div.banner-novedades img.img-banner {
+        width: 95%;
+    }
+
+    /*NAV - MEJORES PRODUCTOS*/
     .home section.nav-MejoresProductos ul.mejores-productos {
         display: flex;
         width: 100%;
@@ -308,10 +344,12 @@
         margin-top: 2%;
     }
 
+    /*NEWSLETTER*/
     .home section.newsletter-background input.newsletter {
         width: 70%;
     }
   }
+
 
 
 
@@ -320,16 +358,17 @@
    RESOLUCION: 480 a 768
    ========================================================================== */
   @media (min-width: 480px) and (max-width: 768px) {
+    /*3 PRODUCTOS SACADOS*/
     .home main section.productos article.producto.resolucionMenorA1200, 
     .home main section.productos article.producto.resolucionMenorA1024,
     .home main section.productos article.producto.resolucionMenorA768 {
         display: none;
     }
 
+    /*PRODUCTO*/
     .home main section.productos article.producto {
         margin: 0% 5px;
         width: 45%;
-        display: inline-block;
     }
 
     .home main section.productos article.producto:hover{
@@ -340,6 +379,12 @@
         margin-bottom: 2%;
     }
 
+    /*BANNER - NOVEDADES*/
+    .home section div.banner-novedades img.img-banner {
+        width: 95%;
+    }
+
+    /*NAV - MEJORES PRODUCTOS*/
     .home section.nav-MejoresProductos ul.mejores-productos {
         display: flex;
         flex-direction: column;
@@ -359,6 +404,7 @@
         display:block;
     }
 
+    /*NEWSLETTER*/
     .home section.newsletter-background input.newsletter {
         width: 70%;
     }
@@ -367,10 +413,12 @@
 
   
 
+
 /* ==========================================================================
    RESOLUCION: 480 hacia abajo
    ========================================================================== */
   @media (max-width: 480px) {
+    /*4 PRODUCTOS SACADOS*/
     .home main section.productos article.producto.resolucionMenorA1200, 
     .home main section.productos article.producto.resolucionMenorA1024,
     .home main section.productos article.producto.resolucionMenorA768,
@@ -378,10 +426,10 @@
         display: none;
     }
 
+    /*PRODUCTO*/
     .home main section.productos article.producto {
         margin: 0% 5px;
         width: 75%;
-        display: inline-block;
     }
 
     .home main section.productos article.producto:hover{
@@ -392,6 +440,12 @@
         margin-bottom: 2%;
     }
 
+    /*BANNER - NOVEDADES*/
+    .home section div.banner-novedades img.img-banner {
+        width: 98%;
+    }
+
+    /*NAV - MEJORES PRODUCTOS*/
     .home section.nav-MejoresProductos ul.mejores-productos {
         display: flex;
         flex-direction: column;
@@ -410,6 +464,7 @@
         display:block;
     }
 
+    /*NEWSLETTER*/
     .home section.newsletter-background input.newsletter {
         width: 80%;
     }
