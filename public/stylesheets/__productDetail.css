@@ -41,20 +41,87 @@ body .container-productDetail {
 
 .container-productDetail section.detalle-producto section.detalle {
     margin-left: 5%;
-    display: inline-block;
-    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 35%;
     border: 1px solid black;
     border-radius: 8px;
+}
+
+.titulo, 
+.descripcion, 
+.precio,
+.descuento, 
+.cantidad, 
+.carrito, 
+.comprarAhora {
+    width: 95%;
+}
+
+/* ==========================================================================
+   DETALLE - TITULO, DESCRIPCION
+   ========================================================================== */
+
+.titulo, .descripcion {
+    text-align: center;
+}
+
+.titulo h1 {
+    color: rgb(255, 101, 101);
+    margin-bottom: 0;
+}
+
+.descripcion p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* ==========================================================================
+   DETALLE - PRECIO
+   ========================================================================== */
+
+.precio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border-bottom: 1px solid black;
+    position: relative;
+    top: -50px;
+}
+
+.precio div {
+    width: 50%;
+}
+
+.precioNormal-ConDescuento {
+    display: flex;
+}
+.precioNormal {
+    color: #DAA520;
+}
+
+.precioNormal-ConDescuento h4 {
+    width: 50%;
+}
+
+.precio h4.precio-descontado {
+    text-decoration-line: line-through;
+    color: rgb(77, 168, 68);
+}
+
+.precio h4, .precio p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* ==========================================================================
    DETALLE - CANTIDAD
    ========================================================================== */
-
-.container-productDetail section.detalle-producto section.detalle div.cantidad {
-    width: 100%;
-    display: inline;
-}
 
 .container-productDetail section.detalle-producto section.detalle div.cantidad input{
     width: 15%;
@@ -69,11 +136,6 @@ body .container-productDetail {
 /* ==========================================================================
    DETALLE - AGREGAR AL CARRITO
    ========================================================================== */
-
-.container-productDetail section.detalle-producto section.detalle div.carrito {
-    width: 100%;
-    display: inline-block;
-}
 
 .container-productDetail section.detalle-producto section.detalle div.carrito button.btn-producto {
     color: white;
