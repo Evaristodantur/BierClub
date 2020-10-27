@@ -7,7 +7,10 @@
 - Menu hamburguesa del nav1 y nav2 completado
 - Nav1 y nav2 hechos responsive por completo
 - Cambios en el Home para hacerlo un poco mas estetico
-- Seguimos con problemas en el productDetail. Tenemos que solucionar eso hoy.
+- Seguimos con problemas en el productDetail, tenemos que solucionar eso hoy
+- Hay que arreglar animación del footer
+- Mejorar botones de agregar al carrito (Home)
+- Agregar comentarios en el Home para hacerlo mas facil de entender
 
 ### 26/10/20
 
