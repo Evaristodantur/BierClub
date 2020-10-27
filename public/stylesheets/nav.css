@@ -4,7 +4,7 @@ body {
   font-weight: 300;
 }
 
-.nav-backgc {
+header div.nav-backgc {
   height: 140px;
   position: fixed;
   width: 100%;
@@ -14,30 +14,25 @@ body {
   background-color: #DAA520;
 }
 
-.container-nav {
+header div.container-nav {
   width: 80%;
   margin-left: 10%;
   position: fixed;
   z-index: inherit 9;
 }
 
-.logonav {
+div.container-nav div.navbar center a img.logo {
+  max-width: 65px;
+  padding: 10px 0px 2px 0px;
+}
+
+div.container-nav div.navbar center a img.logonav {
   max-width: 65px;
   padding: 10px 0px 2px 0px;
   position: relative;
   float: left;
   margin-top: -5px;
   display: none;
-}
-
-.logo {
-  max-width: 65px;
-  padding: 10px 0px 2px 0px;
-}
-
-nav {
-  width: 100%;
-  padding-bottom: 2px;
 }
 
 .navbar ul {
@@ -51,33 +46,33 @@ nav {
   position: relative;
 }
 
-.navcarrito span {
+div.container-nav div.navbar center ul.navcarrito span {
   display: none;
 }
 
-.navbar a {
+div.container-nav div.navbar a {
   text-decoration: none;
   color: #fff;
 }
 
-.navbar a {
+div.container-nav div.navbar a {
   color: #fff;
 }
 
-.barra {
+div.container-nav div.navbar center nav ul.barra {
   margin-top: 27px;
 }
 
-hr {
+div.container-nav div.navbar center hr {
   opacity: 20%
 }
 
-.navcarrito.login-carrito {
+div.container-nav div.navbar center ul.navcarrito .login-carrito {
   display: none;
   font-size: 18px;
 }
 
-.navcarrito {
+div.container-nav div.navbar center ul.navcarrito {
   display: flex;
   float: right;
   position: fixed;
@@ -86,17 +81,9 @@ hr {
   transition: 0.3s;
 }
 
-.navlogin {
+div.container-nav div.navbar center strong ul.navlogin {
   float: right;
   display: flex;
-  position: fixed;
-  right: 1.5%;
-  margin-top: -35px;
-  transition: 0.3s;
-}
-
-.navlogin {
-  float: right;
   position: fixed;
   right: 1.5%;
   margin-top: -35px;
@@ -170,7 +157,7 @@ DROPDOWN MENU
   display: flex;
 }
 
-.dropdownMenu a {
+nav ul.barra li div.dropdownMenu a {
   display: flex;
   flex-direction: column;
   width: 35%;
@@ -180,7 +167,7 @@ DROPDOWN MENU
   height: 100px;
 }
 
-.dropdownMenu a h3 {
+nav ul.barra li div.dropdownMenu a h3 {
   margin-block-start: 16px;
   margin-block-end: -9.5px;
 }
