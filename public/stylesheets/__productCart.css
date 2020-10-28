@@ -1,79 +1,63 @@
+/* ==========================================================================
+   GENERAL
+   ========================================================================== */
 body .container-carrito{
     padding-top:1rem;
 }
 
+/* ==========================================================================
+   TITULO
+   ========================================================================== */
 h1.titulo{
     margin-top: 110px;
     text-align: center;
     margin-bottom: 50px;
 }
+
 /* ==========================================================================
-   PRODUCTOS AGREGADOS
+   SECCION PRODUCTOS DEL CARRITO Y RECUADRO
    ========================================================================== */
-.productos{
-    width:60vw;
-}
 .productos-carrito{
     display:flex;
     justify-content: space-around;
 }
+
 .producto-carrito{
     margin-left: 8%;
     display: flex;
     justify-content: space-around;
 }
+
+/* ==========================================================================
+   SECCION PRODUCTOS FILAS
+   ========================================================================== */
+.productos{
+    width:60vw;
+}
+
 .producto-imagen-carrito{
     border-radius: 15px;
     width: 15%;
     display:inline-block;
 }
+
 .hr-carrito{
     margin-left: 8%;
     margin-top: 20px;
     margin-bottom: 20px;
     border: solid 1px black;
 }
+
 .estilo-letras-producto{
     margin-top:7%;
 }
+
 .mobile-letras-producto{
     display: none;
 }
 
 /* ==========================================================================
-   CUPON -- INPUT Y BOTON
-   ========================================================================== */
-.cupones{
-    display: flex;
-    align-items: center;
-    margin-left:8%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.cupones input{
-    height:40px;
-    border-radius: 8px;
-}
-.cupones a{
-    margin-left: 20px;
-    color:black;
-}
-.cupones a p{
-    padding:10px;
-    margin-left: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    display: block;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-}
-.cupones p:hover{
-    color:white;
-    background-color: #DAA520;
-    border-radius: 8px;
-}
-/* ==========================================================================
-   RECUADRO DEL TOTAL
+   SECCION RECUADRO DE TOTAL
    ========================================================================== */
 .recuadro-total{
     width: 18%;
@@ -84,28 +68,36 @@ h1.titulo{
     border:solid 1px black; */
     z-index: 1;
 }
+
 .recuadro-total-chico{
     margin: 10%;
 }
+
 .recuadro-carrito{
     display:flex;
     justify-content: space-between;
 }
+
 .hr-recuadro{
     border: 1px solid black;
 }
+
 .envio-retiro{
     margin-left:50%;
 }
+
 .envio-recuadro{
     top: 10px;
 }
+
 .color{
     color: #DAA520
 }
-a{
+
+.recuadro-total-chico a{
     text-decoration: none;
 }
+
 .boton-pagar{
     width: 100%;
     color: white;
@@ -114,6 +106,42 @@ a{
     border-radius: 6px;
 }
 
+/* ==========================================================================
+   SECCION CUPON
+   ========================================================================== */
+.cupones{
+    display: flex;
+    align-items: center;
+    margin-left:8%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cupones input{
+    height:40px;
+    border-radius: 8px;
+}
+
+.cupones a{
+    margin-left: 20px;
+    color:black;
+}
+
+.cupones a p{
+    padding:10px;
+    margin-left: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.cupones p:hover{
+    color:white;
+    background-color: #DAA520;
+    border-radius: 8px;
+}
 
 /* ==========================================================================
    PRODUCTOS RELACIONADOS
@@ -250,6 +278,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     background-color: rgb(0, 0, 0);    
     color: #ffd56cd7;
 }
+
 
 
 
