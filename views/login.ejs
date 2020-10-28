@@ -10,38 +10,46 @@
 </head>
 
 <body>
+
+	<!-- NAV -->
 	<header>
 		<%- include nav.ejs %>
 	</header>
 	
+		<!-- CONTAINER LOGIN -->
 		<div class="login-register">
 
+			<!-- TITULO -->
 			<h1>Ingresa a tu cuenta</h1>
 		
+			<!-- FORMULARIO -->
 			<form class="formulario" action="" method="">
 				
+			<!-- EMAIL -->
 			<div class="campo-input">
 				<input class="input-registro" type="email" , id="email" placeholder="Email o Usuario">
 			</div>
 
+			<!-- CONTRASEÑA -->
 			<div class="campo-input">
-				
 				<input class="input-registro" type="password" , id="contraseña" placeholder="Contraseña"> 
-				
 			</div>
 			
+			<!-- CONTRASEÑA OLVIDADA -->
 			<p class="contraseña-olvidada"><a href="#">¿Olvidaste tu contraseña?</a></p>
 			
+			<!-- BOTON INGRESAR -->
 			<div class="campo-input">
 				<button class="input-button" type="submit" , id="ingresar" , value="ingresar"> Ingresar</button>
 			</div>
 			</form>
 			
-	
+			<!-- REGISTRARSE -->
 			<p class="registrate-usuario">¿Aun no tenes usuario? <a href="/register">Registrate!</a></p>
 			
 		</div>
 
+	<!-- FOOTER -->
 	<footer>
 		<%- include footer.ejs %> 
 	</footer>

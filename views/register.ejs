@@ -10,51 +10,53 @@
 </head>
 
 <body>
+	<!-- NAV -->
 	<header>
 		<%- include nav.ejs %>
 	</header>
 	
+		<!-- CONTAINER REGISTER -->
 		<div class="login-register">
 
+			<!-- TITULO -->
 			<h1>Registrate con tu dirección mail</h1>
 			
 		
+			<!-- FORMULARIO -->
 			<form class="formulario" action="" method="">
 				
+			<!-- NOMBRE -->
 			<div class="campo-input">
-				
 				<input class="input-registro" type="text" , id="nombre" placeholder="Nombre"> 
-				
 			</div>
 
+			<!-- NOMBRE DE USUARIO -->
 			<div class="campo-input">
-				
 				<input class="input-registro" type="text" , id="usuario" placeholder="Nombre de usuario">
-				
 			</div>
 
+			<!-- MAIL -->
 			<div class="campo-input">
 				<input class="input-registro" type="email" , id="email" placeholder="Email">
-				
 			</div>
 
+			<!-- CONTRASEÑA -->
 			<div class="campo-input">
-				
 				<input class="input-registro" type="password" , id="Contraseña" placeholder="Contraseña"> 
-				
 			</div>
 
+			<!-- CONFIRMAR CONTRASEÑA -->
 			<div class="campo-input">
-				
 				<input class="input-registro" type="password" , id=" confirmarContraseña" placeholder="Confirmar contraseña"> 
-				
 			</div>
 
+			<!-- TERMINOS Y CONDICIONES -->
 			<div class="terminos">
 				<input type="checkbox" id="terminos-condiciones" name="termino-condiciones" value="terminos">
 				<label for="terminos-condiciones">Acepto los <a href="#">Términos y Condiciones</a> de BierClub </label>
 			</div>
 
+			<!-- BOTON REGISTRARSE -->
 			<div class="campo-input">
 				<button class="input-button" type="submit" , id="registrar" , value="registrar"> Registrarse </button>
 			</div>
@@ -62,13 +64,12 @@
 			
 			</form>
 			
-			
+			<!-- INICIAR SESION -->
 			<p class="iniciar-sesion">¿Ya sos cliente? <a href="/login">Inicia Sesión</a></p>
-			
-			
 			
 		</div>
 
+	<!-- FOOTER -->
 	<footer>
 		<%- include footer.ejs %> 
 	</footer>
