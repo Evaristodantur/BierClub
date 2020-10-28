@@ -178,6 +178,7 @@ a{
     .productos-carrito .recuadro-total{
         width: 100vw;
     }
+
     .cupones {
         margin-top: 80px;
         margin-left: 9.5%;
@@ -201,11 +202,18 @@ a{
     .productos-carrito .recuadro-total{
         width: 100vw;
     }
+
     .producto-imagen-carrito{
-        width: 70%;
+        width: 50%;
         align-self: center;
         margin-bottom: 25px;
     }
+
+    div.mobile-letras-producto h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .producto-carrito{
         flex-direction: column;
     }
@@ -241,10 +249,16 @@ a{
         width: 100vw;
     }
     .producto-imagen-carrito{
-        width: 85%;
+        width: 50%;
         align-self: center;
         margin-bottom: 25px;
     }
+
+    div.mobile-letras-producto h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .producto-carrito{
         flex-direction: column;
     }

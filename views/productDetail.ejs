@@ -6,33 +6,43 @@
     <title>BierClub 🍻 - Detalle del producto</title>
     <link rel="icon" href="/images/faviconLogo.ico"/>
     <link rel='stylesheet' href='/stylesheets/nav.css'/>
-    <link rel='stylesheet' href='/stylesheets/__ProductDetail.css' />
+    <link rel='stylesheet' href='/stylesheets/ProductDetail.css' />
   </head>
   
 
   <body>
 
+    <!-- NAV -->
     <header>
       <%- include nav.ejs %>
     </header>
 
-    <div class="container-productDetail">
-      <section class="detalle-producto">
+    <!-- CONTAINER PRODUCTDETAIL -->
+    <div class="productDetail">
+
+      <!-- SECCION DETALLE DEL PRODUCTO/IMAGEN -->
+      <section class="seccion-producto">
   
-        <div class="imagen">
+        <!-- IMAGEN -->
+        <div class="imagen-producto">
           <img src="/images/productos/detalle.jpg" alt="">
         </div>
   
-        <section class="detalle">
-          <div class="titulo">
+        <!-- DETALLE -->
+        <section class="detalle-producto">
+
+          <!-- TITULO -->
+          <div class="titulo-producto">
             <h1>Saison de Triomphe - Hoppy Saison (ABV 5.6% - 12x355ml)</h1>
           </div>
   
-          <div class="descripcion">
+          <!-- DESCRIPCION -->
+          <div class="descripcion-producto">
             <p>Saison de Triomphe rescata el placer del momento. Una cerveza pensada para aquellas personas que valoran su tiempo libre, para quienes disfrutan de los pequeños momentos de la vida. La opción ideal para quienes quieren mimarse.</p>
             <p>La Saison de Triomphe tiene un estilo Honey Beer.</p>
           </div>
   
+          <!-- PRECIO NORMAL, DESCONTADO Y DESCUENTO -->
           <div class="precio">
             <div class="precioNormal-ConDescuento">
               <h4 class="precioNormal">$2.650</h4>
@@ -43,20 +53,21 @@
             </div>
           </div>
 
-          <div>
-            
-          </div>
-
+          
+          
+          <!-- CANTIDAD -->
           <div class="cantidad">
             <a href=""><span><i class="fas fa-minus"></i></span></a>
             <input type="text" placeholder="1">
             <a href=""><span><i class="fas fa-plus"></i></span></a>
           </div>
   
-          <div class="carrito">
+          <!-- AGREGAR AL CARRITO -->
+          <div class="agregarAlcarrito">
             <button class="btn-producto" type="button"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
           </div>
 
+          <!-- COMPRAR AHORA -->
           <div class="comprarAhora">
             <button class="btn-comprarAhora" type="button"><i class="fab fa-cc-visa"></i></i>Comprar Ahora</button>
           </div>
@@ -64,118 +75,16 @@
         </section>
   
       </section>
+
     </div>
   
 
-    <!--
-      <div class="product-relacionado">
-        <h2>Productos Relacionados</h2>
-      </div>
-
-      <section class="productos">
-
-        <div class="btnAnt">
-          <a href="#">
-            <div class="button-pass">
-              <i class="fas fa-chevron-circle-left"></i>
-            </div>
-          </a>
-        </div>
-      
-        <article class="producto">
-          <a href="/productDetail">
-            <img src="/images/productos/producto-1.jpg" alt="">
-          </a>
-          <h2 class="producto-titulo">Super Refreshing IPA - Hybrid IPA - 7% ABV x12</h2>
-          <div class="precio-stock">
-            <div>
-              <h4 class="etiqueta-precio">$135</h4>
-            </div>
-            <div>
-              <h5 class="etiqueta-stock">Stock Disponible</h5>
-            </div>
-          </div>
-          <button class="btn-producto hoverproducto" type="button">Añadir al Carrito</button>
-        </article>
-
-        <article class="producto resolucionMenorA320">
-          <a href="/productDetail">
-            <img src="/images/productos/producto-2.jpg" alt="">
-          </a>
-          <h2 class="producto-titulo">Saison de Triomphe - Hoppy Saison (ABV 5.6% - 12x355ml)</h2>
-          <div class="precio-stock">
-            <div>
-              <h4 class="etiqueta-precio">$160</h4>
-            </div>
-            <div>
-              <h5 class="etiqueta-stock">Stock Disponible</h5>
-            </div>
-          </div>
-          <button class="btn-producto hoverproducto" type="button">Añadir al Carrito</button>
-        </article>
-
-        <article class="producto resolucionMenorA768">
-          <a href="/productDetail">
-            <img src="/images/productos/producto-3.jpg" alt="">
-          </a>
-          <h2 class="producto-titulo">Septic Tank - West Coast IPA (12x355ml)</h2>
-          <div class="precio-stock">
-            <div>
-              <h4 class="etiqueta-precio">$149.99</h4>
-            </div>
-            <div>
-              <h5 class="etiqueta-stock">Stock Disponible</h5>
-            </div>
-          </div>
-          <button class="btn-producto hoverproducto" type="button">Añadir al Carrito</button>
-        </article>
-
-        <article class="producto resolucionMenorA1024">
-          <a href="/productDetail">
-            <img src="/images/productos/producto-4.jpg" alt="">
-          </a>
-          <h2 class="producto-titulo">Rippa Sippa (TDH Imperial Aussie IPA) - 8.5 % ABV x12</h2>
-          <div class="precio-stock">
-            <div>
-              <h4 class="etiqueta-precio">$85</h4>
-            </div>
-            <div>
-              <h5 class="etiqueta-stock">Stock Disponible</h5>
-            </div>
-          </div>
-          <button class="btn-producto hoverproducto" type="button">Añadir al Carrito</button>
-        </article>
-
-        <article class="producto resolucionMenorA1200">
-          <a href="/productDetail">
-            <img src="/images/productos/producto-5.jpg" alt="">
-          </a>
-          <h2 class="producto-titulo">Cachorros Inflados (Hazy Session IPA) - 4.5 % ABV x12</h2>
-          <div class="precio-stock">
-            <div>
-              <h4 class="etiqueta-precio">$99.99</h4>
-            </div>
-            <div>
-              <h5 class="etiqueta-stock">Stock Disponible</h5>
-            </div>
-          </div>
-          <button class="btn-producto hoverproducto" type="button">Añadir al Carrito</button>
-        </article>
-      
-        <div class="btnSig">
-          <a href="#">
-            <div class="button-pass">
-              <i class="fas fa-chevron-circle-right"></i>
-            </div>
-          </a>
-        </div>
-      
-      </section>
+    
   
   
-  
+    <!-- FOOTER -->
     <footer>
       <%- include footer.ejs %>
-    </footer>-->
+    </footer>
   </body>
 </html>
