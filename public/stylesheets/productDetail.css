@@ -20,9 +20,28 @@ body div.productDetail {
     display: flex;
     justify-content: center;
 }
-
+.descripcion{
+    width:30%;
+    margin-left: 21%;
+}
 .imagen-producto, .detalle-producto {
     width: 30%;
+}
+
+.imagen-producto-previews{
+    display:flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.imagen-previews{
+    width:90px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.imagen-previews:hover{
+    cursor: pointer;
 }
 
 /* ==========================================================================
@@ -55,15 +74,36 @@ body div.productDetail {
 /* ==========================================================================
    PRECIO NORMAL, DESCONTADO Y DESCUENTO
    ========================================================================== */
-.fila-precio {
-    /* Display & Box Model */
+/* .fila-precio {
+     Display & Box Model 
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
 
-    /* Otras */
+     Otras 
     border-bottom: 2px solid rgb(80, 80, 80);
+} */
+
+.fila-precio{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 150px;
+}
+h5.precio-item , h5.texto-descuento , h5.texto-invisible{
+    margin: 0px 0px 0px 0px;
+}
+.texto-descuento{
+    color: green;
+}
+.texto-invisible{
+    opacity: 0;
+}
+.precio-flex{
+    display: flex;
+    justify-content: space-between;
 }
 
 .precio-normal, .precio-descontado {
@@ -206,6 +246,41 @@ i.fa-whatsapp {
 /* ==========================================================================
    RESOLUCION: 
    ========================================================================== */
-@media (max-width: 1200px) {
+@media (min-width: 850px) and (max-width: 1200px) {
+    .imagen-producto, .detalle-producto {
+        width: 40%;
+    }
+}
 
+@media (min-width: 500px) and (max-width: 850px) {
+    .imagen-producto-previews{
+        width: 90px;
+    }
+    .imagen-producto{
+        width: 60%;
+    }
+    .seccion-producto{
+        flex-wrap: wrap;
+    }
+    .imagen-previews{
+        margin-bottom: 45px;
+    }
+    .seccion-producto{
+        top: 30px;
+    }
+    .imagen-producto img{
+        width:100%;
+    }
+    .descripcion-producto{
+        display:none;
+    }
+    .detalle-producto{
+        width: 70%;
+        margin-left: 0px;
+    }
+    body div.productDetail {
+        background-color: rgb(228, 228, 228);
+        padding-top: 5rem;
+        padding-bottom: 1%;
+    }
 }
