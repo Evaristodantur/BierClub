@@ -114,31 +114,39 @@ body .login-register{
 
 
 
-
 /* ==========================================================================
    RESOLUCION: 768 a 1200
    ========================================================================== */
 @media (min-width: 768px) and (max-width: 1200px) {
+    /*INPUT FORMULARIO y BUTTON - REGISTER,LOGIN*/
     .login-register form.formulario div.campo-input input.input-registro, 
     .login-register form.formulario div.campo-input button.input-button {
         width: 50%;
     }
 }
+
+
+
   
 /* ==========================================================================
    RESOLUCION: 480 a 768
    ========================================================================== */
 @media (min-width: 480px) and (max-width: 768px) {
+    /*INPUT FORMULARIO y BUTTON - REGISTER,LOGIN*/
     .login-register form.formulario div.campo-input input.input-registro, 
     .login-register form.formulario div.campo-input button.input-button {
         width: 75%;
     }
 }
 
+
+
+
 /* ==========================================================================
    RESOLUCION: 480 hacia abajo
    ========================================================================== */
 @media (max-width: 480px) {
+    /*INPUT FORMULARIO y BUTTON - REGISTER,LOGIN*/
     .login-register form.formulario div.campo-input input.input-registro, 
     .login-register form.formulario div.campo-input button.input-button {
         width: 90%;
