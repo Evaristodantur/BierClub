@@ -325,6 +325,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 
 
 
+
     .productos-carrito .recuadro-total{
         width: 30%;
     }
@@ -365,9 +366,12 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     .productos{
         width: 90vw;
     }
-    .productos-carrito .recuadro-total{
-        width: 100vw;
+    
+    .recuadro-total{
+        width: 100%;
     }
+
+
 
     .cupones {
         margin-top: 80px;
@@ -381,7 +385,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 /* ==========================================================================
    RESOLUCION 480-768
    ========================================================================== */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 525px) and (max-width: 767px) {
     /*3 PRODUCTOS SACADOS*/
     section.productos article.producto.resolucionMenorA1200, 
     section.productos article.producto.resolucionMenorA1024,
@@ -399,6 +403,12 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     section.productos article.producto {
         margin: 0% 5px;
         width: 45%;
+    }
+
+    /*PRODUCTO - BUTTON SIGUIENTE/PREVIO*/
+    section.productos div.btnAnt i.fa-chevron-circle-left , 
+    section.productos div.btnSig i.fa-chevron-circle-right {
+        font-size: 35px;
     }
 
     section.productos article.producto:hover{
@@ -419,7 +429,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
         width: 90vw;
     }
     .productos-carrito .recuadro-total{
-        width: 100vw;
+        width: 100%;
     }
 
     .producto-imagen-carrito{
@@ -462,7 +472,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 /* ==========================================================================
    RESOLUCION 0-479
    ========================================================================== */
-@media (max-width: 479px){
+@media (max-width: 524px){
     /*4 PRODUCTOS SACADOS*/
     section.productos article.producto.resolucionMenorA1200, 
     section.productos article.producto.resolucionMenorA1024,
@@ -473,6 +483,9 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 
     /*SECCION - PRODUCTOS*/
     section.productos {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
         margin-top: 5%;
         margin-bottom: 5%;
     }
@@ -480,12 +493,21 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     /*PRODUCTO*/
     section.productos article.producto {
         margin: 0% 5px;
-        width: 75%;
+        width: 70%;
     }
 
     section.productos article.producto button.btn-producto {
         margin-bottom: 4%;
     }
+
+    /*PRODUCTO - BUTTON SIGUIENTE/PREVIO*/
+    section.productos div.btnAnt i.fa-chevron-circle-left , 
+    section.productos div.btnSig i.fa-chevron-circle-right {
+        font-size: 35px;
+    }
+
+
+
 
     
     .productos-carrito{
@@ -496,7 +518,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
         width: 90vw;
     }
     .productos-carrito .recuadro-total{
-        width: 100vw;
+        width: 100%;
     }
     .producto-imagen-carrito{
         width: 50%;
