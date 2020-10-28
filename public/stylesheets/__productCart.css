@@ -9,9 +9,12 @@ body .container-carrito{
    TITULO
    ========================================================================== */
 h1.titulo{
+    /* Display & Box Model */
     margin-top: 110px;
-    text-align: center;
     margin-bottom: 50px;
+
+    /* Otras */
+    text-align: center;
 }
 
 /* ==========================================================================
@@ -36,15 +39,21 @@ h1.titulo{
 }
 
 .producto-imagen-carrito{
-    border-radius: 15px;
+    /* Display & Box Model */
     width: 15%;
     display:inline-block;
+
+    /* Otras */
+    border-radius: 15px;
 }
 
 .hr-carrito{
+    /* Display & Box Model */
     margin-left: 8%;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    /* Otras */
     border: solid 1px black;
 }
 
@@ -99,7 +108,10 @@ h1.titulo{
 }
 
 .boton-pagar{
+    /* Display & Box Model */
     width: 100%;
+
+    /* Otras */
     color: white;
     background-color: #DAA520;
     text-align: center;
@@ -147,8 +159,11 @@ h1.titulo{
    PRODUCTOS RELACIONADOS
    ========================================================================== */
 .titulo-productosRelacionado {
-    text-align: center;
+    /* Display & Box Model */
     margin-top: 20px;
+
+    /* Otras */
+    text-align: center;
 }
 
 /* ==========================================================================
