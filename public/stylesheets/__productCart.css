@@ -229,6 +229,12 @@ a{
         width: 70%;
         align-self: center;
     }
+    .texto-centrado-producto {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 
@@ -269,5 +275,11 @@ a{
     .mobile-letras-producto{
         display: flex;
         justify-content: space-between;
+    }
+    .texto-centrado-producto {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 }
