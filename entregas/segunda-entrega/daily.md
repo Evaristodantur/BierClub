@@ -2,6 +2,20 @@
 
 ## Sprint 2
 
+### 28/10/20
+
+Terminado:
+  - Agregamos "Productos relacionados" en el carrito y mejoramos estetica del titulo del producto en resoluciones bajas
+  - ProductDetail - Responsive: Mejorado hasta 800PX, mejorar la versión mobile
+  - ProductDetail - Mejoramos estetica (imagenes en la izquierda agregadas)
+  - Cambiamos las imagenes de todos los productos por imagenes reales, de productos reales
+  - ProductDetail documentado (falta documentar mobile)
+  
+Para hacer hoy:
+  - Corregir faltas de ortografía
+  - Cambiar la seccion "Los mejores productos" en -520PX
+  - Eliminar :Hover en resoluciones mobile
+
 ### 27/10/20
 
 - Menu hamburguesa del nav1 y nav2 completado
