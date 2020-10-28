@@ -263,9 +263,6 @@ a{
     .producto-carrito{
         flex-direction: column;
     }
-    .mobile-letras-producto{
-        display: inline-block;
-    }
     .estilo-letras-producto{
         display: none;
     }
