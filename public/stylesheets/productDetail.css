@@ -19,7 +19,6 @@ body div.productDetail {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .imagen-producto, .detalle-producto {
@@ -46,42 +45,88 @@ body div.productDetail {
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 5%;  
+    margin-left: 5%;
 }
 
 
 /* ==========================================================================
-   PRECIO
+   PRECIO NORMAL, DESCONTADO Y DESCUENTO
    ========================================================================== */
-.precio div h4{
-    color: red; 
-    font-weight: 500;
+.fila-precio {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(80, 80, 80);
 }
+
+.precio-normal, .precio-descontado {
+    width: 20%;
+}
+
+.descuentos {
+    text-align: right;
+    width: 60%;
+}
+
+.fila-precio h4, 
+.fila-precio p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4.precio-descontado, h4.precio-normal {
+    font-size: x-large;
+}
+
+h4.precio-descontado {
+    color: rgb(189, 61, 61);
+}
+
+h4.precio-normal{
+    color: rgb(48, 47, 47);
+    text-decoration-line: line-through;
+}
+
+p.descuentos {
+    color: rgb(31, 100, 31);
+}
+
 
 /* ==========================================================================
    CANTIDAD
    ========================================================================== */
 .cantidad {
+    margin-top: 2%;
+    display: flex;
     width:100%;
-    display: inline;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cantidad-label, .cantidad-input {
+    width: 50%;
+    text-align: center;
+}
+
+.cantidad-label label {
+    font-size: large;
 }
 
 .cantidad input{
-    width: 15%;
-    border: 1px solid rgb(145, 144, 144);
+    width: 25%;
+    border: 2px solid rgb(145, 144, 144);
     border-radius: 8px;
-    padding: 8px;
+    padding: 4px;
     text-align: center;
-    font-size: medium;
-    margin-bottom: 2%;
+    font-size: small;
 }
 
 /* ==========================================================================
    AGREGAR AL CARRITO
    ========================================================================== */
 .agregarAlcarrito {
-    width: 45%;
-    display: inline-block;
+    width: 100%;
 }
 
 
