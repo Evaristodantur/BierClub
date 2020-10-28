@@ -361,7 +361,7 @@
 /* ==========================================================================
    RESOLUCION: 480 a 768
    ========================================================================== */
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 525px) and (max-width: 768px) {
     /*3 PRODUCTOS SACADOS*/
     .home main section.productos article.producto.resolucionMenorA1200, 
     .home main section.productos article.producto.resolucionMenorA1024,
@@ -427,7 +427,7 @@
 /* ==========================================================================
    RESOLUCION: 480 hacia abajo
    ========================================================================== */
-@media (max-width: 480px) {
+@media (max-width: 524px) {
     /*4 PRODUCTOS SACADOS*/
     .home main section.productos article.producto.resolucionMenorA1200, 
     .home main section.productos article.producto.resolucionMenorA1024,
