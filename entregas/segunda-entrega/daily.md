@@ -13,8 +13,10 @@ Terminado:
   
 Para hacer hoy:
   - Corregir faltas de ortografía
-  - Cambiar la seccion "Los mejores productos" en -520PX
-  - Eliminar :Hover en resoluciones mobile
+  - Cambiar la seccion "Productos" en -520PX
+  - Eliminar hover en resoluciones mobile de productDetail
+  - Carrito: Agregar <a> a los botones, arreglar cambio de direccion, documentar el codigo y especificarlo
+  - Poner productDetail en styles.css, comentar el codigo, especificar la ruta y agregar productos relacionados
 
 ### 27/10/20
 
