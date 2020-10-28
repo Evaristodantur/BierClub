@@ -336,8 +336,8 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 
 
 /* ==========================================================================
-   RESOLUCION 1200-1400
-   ========================================================================== */
+   RESOLUCION 1200-1450
+========================================================================== */
 @media (min-width: 1200px) and (max-width: 1449px) {
     section.productos article.producto.resolucionMenorA1200 {
         display: none;

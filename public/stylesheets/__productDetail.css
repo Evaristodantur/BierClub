@@ -212,6 +212,10 @@ a i.fa-plus {
     font-weight: 600;
 }
 
+.btn-agregarAlCarrito:hover , .btn-comprarAhora:hover , .btn-pedirElProducto:hover {
+    cursor: pointer;
+}
+
 .btn-agregarAlCarrito {
     background-color: rgb(32, 32, 32);
 }
@@ -222,21 +226,6 @@ a i.fa-plus {
 
 .btn-pedirElProducto {
     background-color: rgb(74, 156, 74);
-}
-
-.btn-agregarAlCarrito:hover {
-    cursor: pointer;
-    background-color: black;
-}
-
-.btn-comprarAhora:hover {
-    cursor: pointer;
-    background-color: #b88504;
-}
-
-.btn-pedirElProducto:hover {
-    cursor: pointer;
-    background-color: rgb(36, 121, 36);
 }
 
 i.fa-whatsapp {
@@ -251,10 +240,21 @@ i.fa-whatsapp {
    RESOLUCION 950 HACIA ABAJO
    ========================================================================== */
    
-@media (max-width: 950px) {
+@media (min-width: 950px) {
     /*BUTTON - AÑADIR AL CARRITO*/
-    .home main section.productos article.producto button.hoverproducto{
-        opacity: 1;
+    .btn-agregarAlCarrito:hover {
+        cursor: pointer;
+        background-color: black;
+    }
+    
+    .btn-comprarAhora:hover {
+        cursor: pointer;
+        background-color: #b88504;
+    }
+    
+    .btn-pedirElProducto:hover {
+        cursor: pointer;
+        background-color: rgb(36, 121, 36);
     }
 }
 
