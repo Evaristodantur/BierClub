@@ -238,6 +238,7 @@ a{
    RESOLUCION 0-479
    ========================================================================== */
 @media (max-width: 479px){
+    
     .productos-carrito{
         flex-direction: column;
         justify-content: center;
