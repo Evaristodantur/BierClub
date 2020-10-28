@@ -255,7 +255,6 @@
     /*1 PRODUCTO SACADO*/
     .home main section.productos article.producto.resolucionMenorA1200 {
         display: none;
-        margin: 1% 5px;
     }
 
     /*NAV - MEJORES PRODUCTOS*/
@@ -281,7 +280,6 @@
     /*1 PRODUCTO SACADO*/
     .home main section.productos article.producto.resolucionMenorA1200 {
         display: none;
-        margin: 1% 5px;
     }
 
     /*SECCION - PRODUCTOS*/
