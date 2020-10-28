@@ -1,142 +1,49 @@
 /* RESET */
-body {
-    padding: 0;
-    margin: 0;
-}
-
-body .container-productDetail {    
+body .container-productDetail {
+    background-color: rgb(228, 228, 228);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
     padding-top: 10rem;
     padding-bottom: 1%;
 }
 
-/* ==========================================================================
-   BLOQUE - IMAGEN + DETALLE PRODUCTO
-   ========================================================================== */
 
-.container-productDetail section.detalle-producto {
+.producto {
     display: flex; 
     margin-top: 2%;
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap
 }
 
-/* ==========================================================================
-   IMAGEN
-   ========================================================================== */
-
-.container-productDetail section.detalle-producto div.imagen {
+.imagen {
     width: 30%;
 }
 
-.container-productDetail section.detalle-producto div.imagen img {
+.imagen img {
+    display: flex; 
+    align-content: center;
+    align-items: center;
     width: 100%;
     border-radius: 8px;
 }
 
-
-
-/* ==========================================================================
-   DETALLE
-   ========================================================================== */
-
-.container-productDetail section.detalle-producto section.detalle {
+.detalle {
     margin-left: 5%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 35%;
-    border: 1px solid black;
-    border-radius: 8px;
+    display: inline-block;
+    width: 30%;
 }
 
-.titulo{
-    display: flex;
-    padding: 5%
+.cantidad {
+    width:100%;
+    display: inline;
 }
-.descripcion{
-    display: flex;
-    padding: 10%;
-} 
-.precio{
-    display: flex;
-    padding: 5%
-}
-.descuento{
-    padding:10%;
-    display: flex;
-} 
-.cantidad, 
-.carrito, 
-.comprarAhora {
-    width: 95%;
+.precio div h4{
+    color: red; 
+    font-weight: 500;
 }
 
-/* ==========================================================================
-   DETALLE - TITULO, DESCRIPCION
-   ========================================================================== */
-
-.titulo, .descripcion {
-    text-align: center;
-}
-
-.titulo h1 {
-    color: rgb(255, 101, 101);
-    margin-bottom: 0;
-}
-
-.descripcion p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-
-/* ==========================================================================
-   DETALLE - PRECIO
-   ========================================================================== */
-
-.precio {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    border-bottom: 1px solid black;
-    position: relative;
-    top: -50px;
-}
-
-.precio div {
-    width: 50%;
-}
-
-.precioNormal-ConDescuento {
-    display: flex;
-}
-.precioNormal {
-    color: #DAA520;
-}
-
-.precioNormal-ConDescuento h4 {
-    width: 50%;
-}
-
-.precio h4.precio-descontado {
-    text-decoration-line: line-through;
-    color: rgb(77, 168, 68);
-}
-
-.precio h4, .precio p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* ==========================================================================
-   DETALLE - CANTIDAD
-   ========================================================================== */
-
-.container-productDetail section.detalle-producto section.detalle div.cantidad input{
+.cantidad input{
     width: 15%;
     border: 1px solid rgb(145, 144, 144);
     border-radius: 8px;
@@ -146,59 +53,46 @@ body .container-productDetail {
     margin-bottom: 2%;
 }
 
-/* ==========================================================================
-   DETALLE - AGREGAR AL CARRITO
-   ========================================================================== */
-
-.container-productDetail section.detalle-producto section.detalle div.carrito button.btn-producto {
-    color: white;
-    background-color: black;
-    border: 0;
-    border-radius: 8px;
-    padding: 5px;
+.carrito {
+    width: 45%;
+    display: inline-block;
+    
+}
+.detalle{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-
-/* ==========================================================================
-   DETALLE - COMPRAR AHORA
-   ========================================================================== */
-
-.container-productDetail section.detalle-producto section.detalle div.boton-cp {
+.cp {
     width: 100%;
     display: inline-block;
 }
 
-.container-productDetail section.detalle-producto section.detalle div.comprarAhora button.btn-comprarAhora {
+.cp p {
+    display: inline-block;
+    font-size: medium;
+    width: 55%;
+    margin-left: 3%;
+}
+
+div.cp .btn-producto {
     display: inline-block;
     width: 35%;
-    color: white;
-    background-color: black;
-    border: 0;
-    border-radius: 8px;
-    padding: 5px;
 }
 
-/* HOVER BUTTON CARRITO + CAMBIAR CP */
-.container-productDetail section.detalle-producto section.detalle div.carrito button.btn-producto:hover, 
-.container-productDetail section.detalle-producto section.detalle div.comprarAhora button.btn-comprarAhora:hover {
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-}
-
-
-
-/* ==========================================================================
-   BLOQUE - PRODUCTOS
-   ========================================================================== */
 
 /* PRODUCTOS RELACIONADOS */
 .product-relacionado {
     text-align: center;
     margin-top: 5%;
 }
-
-section.productos{
+/* ==========================================================================
+   BLOQUE - PRODUCTOS
+   ========================================================================== */
+   section.productos{
     /* Display & Box Model */
     width: 100%;
     display: flex;
@@ -370,27 +264,24 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     transition: 0.5s;
     
 }}
-.detalle-producto{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.container-productDetail section.detalle-producto div.imagen{
-    width: 80%
-}
+
 
 /*****RESOLUCION 480*****/
-@media (min-width: 480px) and (max-width: 767px) { 
-.detalle-producto{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+@media (min-width: 480px) and (max-width: 767px) {
+        article.producto{
+    justify-content: center;
     align-items: center;
+    align-content: center; 
+    height: 50vh;
+    transition: 0.5s;
+    margin: 0% 5px;
+    width: 75%; 
 }
+article.producto:hover{
+    width: 20vh;
+    height: 20vw;
+    margin-bottom: -40px;
 
-.container-productDetail section.detalle-producto div.imagen{
-    width: 80%
 }
 .carrito{
     width:80%;
@@ -414,18 +305,6 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
         flex-direction: column;
         transition: 0.5s;
 }
-.detalle{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-   align-items: center;
-}
-.container-productDetail section.detalle-producto div.imagen{
-    width: 80%
-}
-.detalle-producto{
-    width: 100%;}
-
 article.producto:hover{
     width: 20vh;
     height: 20vw;
