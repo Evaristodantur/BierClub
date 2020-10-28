@@ -255,6 +255,20 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 
 
 /* ==========================================================================
+   RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
+   ========================================================================== */
+@media (max-width: 950px) {
+    /*BUTTON - AÑADIR AL CARRITO*/
+    section.productos article.producto button.hoverproducto{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
    RESOLUCION 1700 HACIA ARRIBA
    ========================================================================== */
 @media (min-width: 1700px) {
@@ -281,6 +295,10 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION 1200-1400
    ========================================================================== */
 @media (min-width: 1200px) and (max-width: 1449px) {
+    section.productos article.producto.resolucionMenorA1200 {
+        display: none;
+    }
+    
     .productos-carrito .recuadro-total{
         width: 30%;
     }
@@ -293,6 +311,20 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION 1024-1200
    ========================================================================== */
 @media (min-width: 1024px) and (max-width: 1199px){
+    /*1 PRODUCTO SACADO*/
+    .home main section.productos article.producto.resolucionMenorA1200 {
+        display: none;
+    }
+
+    /*SECCION - PRODUCTOS*/
+    .home main section.productos {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+
+
+
     .productos-carrito .recuadro-total{
         width: 30%;
     }
@@ -305,6 +337,27 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION 768-1024
    ========================================================================== */
 @media (min-width: 768px) and (max-width: 1023px){
+    /*2 PRODUCTOS SACADOS*/
+    section.productos article.producto.resolucionMenorA1200, 
+    section.productos article.producto.resolucionMenorA1024 {
+        display: none;
+    }
+
+    /*SECCION - PRODUCTOS*/
+    section.productos {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    /*PRODUCTO*/
+    section.productos article.producto {
+        width: 30%;
+        margin: 1% 5px;
+        margin-bottom: 3%;
+    }
+
+
+
     .productos-carrito{
         flex-direction: column;
         justify-content: center;
@@ -329,6 +382,35 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION 480-768
    ========================================================================== */
 @media (min-width: 480px) and (max-width: 767px) {
+    /*3 PRODUCTOS SACADOS*/
+    section.productos article.producto.resolucionMenorA1200, 
+    section.productos article.producto.resolucionMenorA1024,
+    section.productos article.producto.resolucionMenorA768 {
+        display: none;
+    }
+
+    /*SECCION - PRODUCTOS*/
+    section.productos {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    /*PRODUCTO*/
+    section.productos article.producto {
+        margin: 0% 5px;
+        width: 45%;
+    }
+
+    section.productos article.producto:hover{
+        margin-bottom: 0px;
+    }
+
+    .producto button.btn-producto {
+        margin-bottom: 2%;
+    }
+
+
+
     .productos-carrito{
         flex-direction: column;
         justify-content: center;
@@ -381,6 +463,30 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION 0-479
    ========================================================================== */
 @media (max-width: 479px){
+    /*4 PRODUCTOS SACADOS*/
+    section.productos article.producto.resolucionMenorA1200, 
+    section.productos article.producto.resolucionMenorA1024,
+    section.productos article.producto.resolucionMenorA768,
+    section.productos article.producto.resolucionMenorA320 {
+        display: none;
+    }
+
+    /*SECCION - PRODUCTOS*/
+    section.productos {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    /*PRODUCTO*/
+    section.productos article.producto {
+        margin: 0% 5px;
+        width: 75%;
+    }
+
+    section.productos article.producto button.btn-producto {
+        margin-bottom: 4%;
+    }
+
     
     .productos-carrito{
         flex-direction: column;
