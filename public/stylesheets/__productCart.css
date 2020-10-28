@@ -1,79 +1,72 @@
+/* ==========================================================================
+   GENERAL
+   ========================================================================== */
 body .container-carrito{
     padding-top:1rem;
 }
 
-h1.titulo{
-    margin-top: 110px;
-    text-align: center;
-    margin-bottom: 50px;
-}
 /* ==========================================================================
-   PRODUCTOS AGREGADOS
+   TITULO
    ========================================================================== */
-.productos{
-    width:60vw;
+h1.titulo{
+    /* Display & Box Model */
+    margin-top: 110px;
+    margin-bottom: 50px;
+
+    /* Otras */
+    text-align: center;
 }
+
+/* ==========================================================================
+   SECCION PRODUCTOS DEL CARRITO Y RECUADRO
+   ========================================================================== */
 .productos-carrito{
     display:flex;
     justify-content: space-around;
 }
+
 .producto-carrito{
     margin-left: 8%;
     display: flex;
     justify-content: space-around;
 }
+
+/* ==========================================================================
+   SECCION PRODUCTOS FILAS
+   ========================================================================== */
+.productos{
+    width:60vw;
+}
+
 .producto-imagen-carrito{
-    border-radius: 15px;
+    /* Display & Box Model */
     width: 15%;
     display:inline-block;
+
+    /* Otras */
+    border-radius: 15px;
 }
+
 .hr-carrito{
+    /* Display & Box Model */
     margin-left: 8%;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    /* Otras */
     border: solid 1px black;
 }
+
 .estilo-letras-producto{
     margin-top:7%;
 }
+
 .mobile-letras-producto{
     display: none;
 }
 
 /* ==========================================================================
-   CUPON -- INPUT Y BOTON
-   ========================================================================== */
-.cupones{
-    display: flex;
-    align-items: center;
-    margin-left:8%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.cupones input{
-    height:40px;
-    border-radius: 8px;
-}
-.cupones a{
-    margin-left: 20px;
-    color:black;
-}
-.cupones a p{
-    padding:10px;
-    margin-left: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    display: block;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-}
-.cupones p:hover{
-    color:white;
-    background-color: #DAA520;
-    border-radius: 8px;
-}
-/* ==========================================================================
-   RECUADRO DEL TOTAL
+   SECCION RECUADRO DE TOTAL
    ========================================================================== */
 .recuadro-total{
     width: 18%;
@@ -84,43 +77,93 @@ h1.titulo{
     border:solid 1px black; */
     z-index: 1;
 }
+
 .recuadro-total-chico{
     margin: 10%;
 }
+
 .recuadro-carrito{
     display:flex;
     justify-content: space-between;
 }
+
 .hr-recuadro{
     border: 1px solid black;
 }
+
 .envio-retiro{
     margin-left:50%;
 }
+
 .envio-recuadro{
     top: 10px;
 }
+
 .color{
     color: #DAA520
 }
-a{
+
+.recuadro-total-chico a{
     text-decoration: none;
 }
+
 .boton-pagar{
+    /* Display & Box Model */
     width: 100%;
+
+    /* Otras */
     color: white;
     background-color: #DAA520;
     text-align: center;
     border-radius: 6px;
 }
 
+/* ==========================================================================
+   SECCION CUPON
+   ========================================================================== */
+.cupones{
+    display: flex;
+    align-items: center;
+    margin-left:8%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cupones input{
+    height:40px;
+    border-radius: 8px;
+}
+
+.cupones a{
+    margin-left: 20px;
+    color:black;
+}
+
+.cupones a p{
+    padding:10px;
+    margin-left: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.cupones p:hover{
+    color:white;
+    background-color: #DAA520;
+    border-radius: 8px;
+}
 
 /* ==========================================================================
    PRODUCTOS RELACIONADOS
    ========================================================================== */
 .titulo-productosRelacionado {
-    text-align: center;
+    /* Display & Box Model */
     margin-top: 20px;
+
+    /* Otras */
+    text-align: center;
 }
 
 /* ==========================================================================
@@ -254,6 +297,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 
 
 
+
 /* ==========================================================================
    RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
    ========================================================================== */
@@ -325,6 +369,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 
 
 
+
     .productos-carrito .recuadro-total{
         width: 30%;
     }
@@ -365,9 +410,12 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     .productos{
         width: 90vw;
     }
-    .productos-carrito .recuadro-total{
-        width: 100vw;
+    
+    .recuadro-total{
+        width: 100%;
     }
+
+
 
     .cupones {
         margin-top: 80px;
@@ -381,7 +429,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 /* ==========================================================================
    RESOLUCION 480-768
    ========================================================================== */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 525px) and (max-width: 767px) {
     /*3 PRODUCTOS SACADOS*/
     section.productos article.producto.resolucionMenorA1200, 
     section.productos article.producto.resolucionMenorA1024,
@@ -399,6 +447,12 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     section.productos article.producto {
         margin: 0% 5px;
         width: 45%;
+    }
+
+    /*PRODUCTO - BUTTON SIGUIENTE/PREVIO*/
+    section.productos div.btnAnt i.fa-chevron-circle-left , 
+    section.productos div.btnSig i.fa-chevron-circle-right {
+        font-size: 35px;
     }
 
     section.productos article.producto:hover{
@@ -419,7 +473,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
         width: 90vw;
     }
     .productos-carrito .recuadro-total{
-        width: 100vw;
+        width: 100%;
     }
 
     .producto-imagen-carrito{
@@ -462,7 +516,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 /* ==========================================================================
    RESOLUCION 0-479
    ========================================================================== */
-@media (max-width: 479px){
+@media (max-width: 524px){
     /*4 PRODUCTOS SACADOS*/
     section.productos article.producto.resolucionMenorA1200, 
     section.productos article.producto.resolucionMenorA1024,
@@ -473,6 +527,9 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 
     /*SECCION - PRODUCTOS*/
     section.productos {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
         margin-top: 5%;
         margin-bottom: 5%;
     }
@@ -480,12 +537,21 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     /*PRODUCTO*/
     section.productos article.producto {
         margin: 0% 5px;
-        width: 75%;
+        width: 70%;
     }
 
     section.productos article.producto button.btn-producto {
         margin-bottom: 4%;
     }
+
+    /*PRODUCTO - BUTTON SIGUIENTE/PREVIO*/
+    section.productos div.btnAnt i.fa-chevron-circle-left , 
+    section.productos div.btnSig i.fa-chevron-circle-right {
+        font-size: 35px;
+    }
+
+
+
 
     
     .productos-carrito{
@@ -496,7 +562,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
         width: 90vw;
     }
     .productos-carrito .recuadro-total{
-        width: 100vw;
+        width: 100%;
     }
     .producto-imagen-carrito{
         width: 50%;
