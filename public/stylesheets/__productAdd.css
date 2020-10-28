@@ -64,7 +64,7 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
     
     /* Display & Box Model */
     display: inline-block;
-    width: 100%;
+    width: 320px;
 
     /* Otras */    
     border: 2px solid black;
