@@ -120,6 +120,7 @@ DROPDOWN MENU
   justify-content: space-evenly;
   flex-wrap: wrap;
   box-shadow: 2px 2px rgba(163, 163, 163, 0.295);
+  cursor: default;
 }
 
 .dropdownBoton:hover>.dropdownMenu {
