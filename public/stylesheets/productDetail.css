@@ -85,6 +85,10 @@ body div.productDetail {
     border-bottom: 2px solid rgb(80, 80, 80);
 } */
 
+.texto-descuento-mobile , .texto-invisible-mobile{
+    display:none;
+}
+
 .fila-precio{
     display:flex;
     flex-direction: column;
@@ -92,13 +96,13 @@ body div.productDetail {
     justify-content: space-evenly;
     height: 150px;
 }
-h5.precio-item , h5.texto-descuento , h5.texto-invisible{
+h5.precio-item , h5.texto-descuento , h5.texto-invisible , h5.texto-descuento-mobile , h5.texto-invisible-mobile{
     margin: 0px 0px 0px 0px;
 }
-.texto-descuento{
+.texto-descuento , .texto-descuento-mobile{
     color: green;
 }
-.texto-invisible{
+.texto-invisible , .texto-invisible-mobile{
     opacity: 0;
 }
 .precio-flex{
@@ -244,15 +248,34 @@ i.fa-whatsapp {
 
 
 /* ==========================================================================
-   RESOLUCION: 
+   RESOLUCION 950 HACIA ABAJO
    ========================================================================== */
+   
+@media (max-width: 950px) {
+    /*BUTTON - AÑADIR AL CARRITO*/
+    .home main section.productos article.producto button.hoverproducto{
+        opacity: 1;
+    }
+}
+
+
+/* ==========================================================================
+   RESOLUCION 850PX-1200PX
+   ========================================================================== */
+
 @media (min-width: 850px) and (max-width: 1200px) {
     .imagen-producto, .detalle-producto {
         width: 40%;
     }
 }
 
-@media (min-width: 500px) and (max-width: 850px) {
+
+
+/* ==========================================================================
+   RESOLUCION 570PX-850PX
+   ========================================================================== */
+
+@media (min-width: 570px) and (max-width: 850px) {
     .imagen-producto-previews{
         width: 90px;
     }
@@ -282,5 +305,89 @@ i.fa-whatsapp {
         background-color: rgb(228, 228, 228);
         padding-top: 5rem;
         padding-bottom: 1%;
+    }
+}
+
+
+
+
+/* ==========================================================================
+   RESOLUCION 480PX-570PX
+   ========================================================================== */
+
+@media (min-width: 480px) and (max-width: 569px) {
+    .imagen-producto-previews{
+        width: 70px;
+    }
+    .imagen-producto{
+        width: 60%;
+    }
+    .seccion-producto{
+        flex-wrap: wrap;
+    }
+    .imagen-previews{
+        margin-bottom: 30px;
+        width: 70px;
+    }
+    .seccion-producto{
+        top: 30px;
+    }
+    .imagen-producto img{
+        width:100%;
+    }
+    .descripcion-producto{
+        display:none;
+    }
+    .detalle-producto{
+        width: 70%;
+        margin-left: 0px;
+    }
+    body div.productDetail {
+        background-color: rgb(228, 228, 228);
+        padding-top: 5rem;
+        padding-bottom: 1%;
+    }
+}
+
+
+
+
+/* ==========================================================================
+   RESOLUCION 480PX-570PX
+   ========================================================================== */
+
+   @media (min-width: 0px) and (max-width: 479px) {
+    .imagen-producto-previews{
+        display: none;
+    }
+    .seccion-producto{
+        flex-wrap: wrap;
+    }
+    .seccion-producto{
+        top: 30px;
+    }
+    .imagen-producto{
+        width:80%;
+    }
+    .imagen-producto img{
+        width:100%;
+    }
+    .descripcion-producto{
+        display:none;
+    }
+    .detalle-producto{
+        width: 80%;
+        margin-left: 0px;
+    }
+    body div.productDetail {
+        background-color: rgb(228, 228, 228);
+        padding-top: 5rem;
+        padding-bottom: 1%;
+    }
+    .texto-descuento-mobile , .texto-invisible-mobile{
+        display:inline-block;
+    }
+    .texto-descuento , .texto-invisible{
+        display:none;
     }
 }
