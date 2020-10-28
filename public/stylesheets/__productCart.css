@@ -115,6 +115,143 @@ a{
 }
 
 
+/* ==========================================================================
+   PRODUCTOS RELACIONADOS
+   ========================================================================== */
+.titulo-productosRelacionado {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ==========================================================================
+   BLOQUE - PRODUCTOS
+   ========================================================================== */
+section.productos{
+    /* Display & Box Model */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.productos article.producto {
+    /* Display & Box Model */
+    width: 22%;
+    margin: 1% 0.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+
+    /* Otras */
+    background-color: white;
+    text-align: center;
+    border: rgba(0, 0, 0, .2) 1px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
+    transition: 0.3s;
+}
+
+section.productos div.btnAnt {
+    align-self: center;
+    margin-left: 1%;
+    display: inline-block;
+}
+
+section.productos div.btnSig {
+    align-self: center;
+    margin-right: 1%;
+    display: inline-block;
+}
+
+section.productos article.producto img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+
+
+/* ==========================================================================
+   PRODUCTO - PRECIO -STOCK
+   ========================================================================== */
+section.productos article.producto h2.producto-titulo {
+    font-size: large;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+section.productos article.producto div.precio-stock {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+section.productos article.producto div.precio-stock div h4.etiqueta-precio {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section.productos article.producto div.precio-stock div h5.etiqueta-stock {
+    float: right;
+    color: rgb(1, 122, 1);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   PRODUCTO - BUTTON AÑADIR AL CARRITO
+   ========================================================================== */
+section.productos article.producto button.btn-producto {
+    /* Display & Box Model */
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 3%;
+
+    /* Otras */
+    background-color: black;
+    color: white;
+    border: rgba(0, 0, 0, .2) 1px solid;
+    border-radius: 10px;
+}
+
+section.productos article.producto button.hoverproducto{
+    opacity: 0;
+    margin: 0;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    align-self: center;
+    transition: 0.2s;
+}
+
+section.productos article.producto:hover button.hoverproducto{
+    opacity: 1;
+    margin-bottom: 4%;
+}
+
+/* ==========================================================================
+   PRODUCTO - BUTTON SIGUIENTE/PREVIO
+   ========================================================================== */
+
+section.productos article.producto button.btn-producto i.fa-plus {
+    color: #DAA520;
+}
+
+section.productos div.btnAnt i.fa-chevron-circle-left , 
+section.productos div.btnSig i.fa-chevron-circle-right {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    color: #DAA520;
+    font-size: 45px;
+}
+
+section.productos div.btnAnt i.fa-chevron-circle-left:hover ,
+section.productos div.btnSig i.fa-chevron-circle-right:hover {
+    background-color: rgb(0, 0, 0);    
+    color: #ffd56cd7;
+}
+
+
 
 
 /* ==========================================================================
