@@ -1,14 +1,14 @@
 /* ==========================================================================
    GENERAL
    ========================================================================== */
-body .container-carrito{
+body div.container-carrito{
     padding-top:1rem;
 }
 
 /* ==========================================================================
    TITULO
    ========================================================================== */
-h1.titulo{
+.container-carrito h1.titulo{
     /* Display & Box Model */
     margin-top: 110px;
     margin-bottom: 50px;
@@ -20,12 +20,12 @@ h1.titulo{
 /* ==========================================================================
    SECCION PRODUCTOS DEL CARRITO Y RECUADRO
    ========================================================================== */
-.productos-carrito{
+.container-carrito div.productos-carrito{
     display:flex;
     justify-content: space-around;
 }
 
-.producto-carrito{
+.container-carrito div.productos-carrito div.productos div.producto-carrito{
     margin-left: 8%;
     display: flex;
     justify-content: space-around;
@@ -34,11 +34,11 @@ h1.titulo{
 /* ==========================================================================
    SECCION PRODUCTOS FILAS
    ========================================================================== */
-.productos{
+.container-carrito .productos-carrito div.productos{
     width:60vw;
 }
 
-.producto-imagen-carrito{
+.container-carrito div.productos-carrito div.productos div.producto-carrito img.producto-imagen-carrito{
     /* Display & Box Model */
     width: 15%;
     display:inline-block;
@@ -47,7 +47,7 @@ h1.titulo{
     border-radius: 15px;
 }
 
-.hr-carrito{
+.container-carrito .productos-carrito .productos hr.hr-carrito{
     /* Display & Box Model */
     margin-left: 8%;
     margin-top: 20px;
@@ -57,18 +57,18 @@ h1.titulo{
     border: solid 1px black;
 }
 
-.estilo-letras-producto{
+.container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto{
     margin-top:7%;
 }
 
-.mobile-letras-producto{
+.container-carrito .productos-carrito .productos .producto-carrito .mobile-letras-producto{
     display: none;
 }
 
 /* ==========================================================================
    SECCION RECUADRO DE TOTAL
    ========================================================================== */
-.recuadro-total{
+.container-carrito .productos-carrito .recuadro-total{
     width: 18%;
     height: 500px;
     position:relative;
@@ -78,37 +78,29 @@ h1.titulo{
     z-index: 1;
 }
 
-.recuadro-total-chico{
+.container-carrito .productos-carrito .recuadro-total .recuadro-total-chico{
     margin: 10%;
 }
 
-.recuadro-carrito{
+.container-carrito .productos-carrito .recuadro-total .recuadro-total-chico .recuadro-carrito{
     display:flex;
     justify-content: space-between;
     flex-wrap:wrap;
 }
 
-.hr-recuadro{
+.container-carrito .productos-carrito .recuadro-total .recuadro-total-chico .hr-recuadro{
     border: 1px solid black;
 }
 
-.envio-retiro{
-    margin-left:50%;
-}
-
-.envio-recuadro{
-    top: 10px;
-}
-
-.color{
+.container-carrito .productos-carrito .recuadro-total .recuadro-total-chico .recuadro-carrito h4.btn-cambiar-direccion{
     color: #DAA520
 }
 
-.recuadro-total-chico a{
+.container-carrito .productos-carrito .recuadro-total .recuadro-total-chico a{
     text-decoration: none;
 }
 
-.boton-pagar{
+.container-carrito .productos-carrito .recuadro-total .recuadro-total-chico a h4.boton-pagar{
     /* Display & Box Model */
     width: 100%;
 
@@ -122,7 +114,7 @@ h1.titulo{
 /* ==========================================================================
    SECCION CUPON
    ========================================================================== */
-.cupones{
+.container-carrito .cupones{
     display: flex;
     align-items: center;
     margin-left:8%;
@@ -130,17 +122,17 @@ h1.titulo{
     margin-bottom: 50px;
 }
 
-.cupones input{
+.container-carrito .cupones input{
     height:40px;
     border-radius: 8px;
 }
 
-.cupones a{
+.container-carrito .cupones a{
     margin-left: 20px;
     color:black;
 }
 
-.cupones a p{
+.container-carrito .cupones a p{
     padding:10px;
     margin-left: 20px;
     margin-left: 5px;
@@ -150,7 +142,7 @@ h1.titulo{
     margin-block-end: 0em;
 }
 
-.cupones p:hover{
+.container-carrito .cupones p:hover{
     color:white;
     background-color: #DAA520;
     border-radius: 8px;
@@ -306,7 +298,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
    ========================================================================== */
 @media (max-width: 950px) {
-    /*BUTTON - AÑADIR AL CARRITO*/
+    /*BUTTON - AÑADIR AL CARRITO - PRODUCTOS RELACIONADOS*/
     section.productos article.producto button.hoverproducto{
         opacity: 1;
     }
@@ -333,7 +325,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    ========================================================================== */
 @media (min-width: 1450px) and (max-width: 1699px) {
     /*RECUADRO TOTAL*/
-    .productos-carrito .recuadro-total{
+    .container-carrito .productos-carrito .recuadro-total{
         width: 25%;
     }
 }
@@ -346,7 +338,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 ========================================================================== */
 @media (min-width: 1200px) and (max-width: 1449px) {
     /*RECUADRO TOTAL*/
-    .productos-carrito .recuadro-total{
+    .container-carrito .productos-carrito .recuadro-total{
         width: 30%;
     }
 
@@ -364,17 +356,17 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    ========================================================================== */
 @media (min-width: 1024px) and (max-width: 1199px){
    /*RECUADRO TOTAL*/
-    .productos-carrito .recuadro-total{
+    .container-carrito .productos-carrito .recuadro-total{
         width: 30%;
     }
 
      /*1 PRODUCTO RELACIONADOS SACADO*/
-     .home main section.productos article.producto.resolucionMenorA1200 {
+    section.productos article.producto.resolucionMenorA1200 {
         display: none;
     }
 
     /*SECCION - PRODUCTOS*/
-    .home main section.productos {
+    section.productos {
         margin-top: 5%;
         margin-bottom: 5%;
     }
@@ -388,24 +380,24 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    ========================================================================== */
 @media (min-width: 768px) and (max-width: 1023px){
     /*SECCION PRODUCTOS FILA*/
-    .productos-carrito{
+    .container-carrito div.productos-carrito{
         flex-direction: column;
         justify-content: center;
     }
 
     /*SECCION PRODUCTOS CARRITO*/
-    .productos{
+    .container-carrito .productos-carrito div.productos{
         width: 90vw;
     }
 
     /*RECUADRO TOTAL*/
-    .recuadro-total{
+    .container-carrito .productos-carrito .recuadro-total{
         width: 100%;
     }
     
 
     /*SECCION CUPONES*/
-    .cupones {
+    .container-carrito .cupones {
         margin-top: 80px;
         margin-left: 9.5%;
     }
@@ -438,57 +430,62 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    ========================================================================== */
 @media (min-width: 525px) and (max-width: 767px) {
     /*SECCION PRODUCTOS FILA*/
-    .productos-carrito{
+    .container-carrito div.productos-carrito{
         flex-direction: column;
         justify-content: center;
     }
 
     /*SECCION PRODUCTOS CARRITO*/
-    .productos{
+    .container-carrito .productos-carrito div.productos{
         width: 90vw;
     }
 
     /*RECUADRO TOTAL*/
-    .productos-carrito .recuadro-total{
+    .container-carrito .productos-carrito .recuadro-total{
         width: 100%;
     }
 
     /*SECCION PRODUCTOS FILA*/
-    .producto-carrito{
+    .container-carrito div.productos-carrito div.productos div.producto-carrito{
         flex-direction: column;
     }
 
-    .producto-imagen-carrito{
+    .container-carrito div.productos-carrito div.productos div.producto-carrito img.producto-imagen-carrito{
         width: 50%;
         align-self: center;
         margin-bottom: 25px;
     }
 
-    div.mobile-letras-producto h4 {
+    .container-carrito .productos-carrito .productos .producto-carrito .mobile-letras-producto h4 {
         margin-top: 0;
         margin-bottom: 0;
     }
 
-    .mobile-letras-producto{
+    .container-carrito .productos-carrito .productos .producto-carrito .mobile-letras-producto{
         display: inline-block;
     }
 
-    .estilo-letras-producto{
+    .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto{
         display: none;
     }
 
-    .mobile-letras-producto{
+    .container-carrito .productos-carrito .productos .producto-carrito .mobile-letras-producto{
         display: flex;
         justify-content: space-between;
         width: 70%;
         align-self: center;
     }
 
-    .texto-centrado-producto {
+    .container-carrito .productos-carrito .productos .producto-carrito .texto-centrado-producto {
         display: flex;
         justify-content: center;
         text-align: center;
         align-items: center;
+    }
+
+    /*SECCION CUPONES*/
+    .container-carrito .cupones{
+        margin-top: 15px;
     }
 
     /*3 PRODUCTOS RELACIONADOS SACADOS*/
@@ -533,33 +530,33 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    ========================================================================== */
 @media (max-width: 524px){
     /*SECCION PRODUCTOS FILA*/
-    .productos-carrito{
+    .container-carrito .productos-carrito{
         flex-direction: column;
         justify-content: center;
     }
 
-    .producto-imagen-carrito{
+    .container-carrito div.productos-carrito div.productos div.producto-carrito img.producto-imagen-carrito{
         width: 50%;
         align-self: center;
         margin-bottom: 25px;
     }
 
-    div.mobile-letras-producto h4 {
+    .container-carrito .productos-carrito .productos .producto-carrito .mobile-letras-producto h4 {
         margin-top: 0;
         margin-bottom: 0;
     }
 
-    .producto-carrito{
+    .container-carrito .productos-carrito .productos .producto-carrito{
         flex-direction: column;
     }
-    .estilo-letras-producto{
+    .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto{
         display: none;
     }
-    .mobile-letras-producto{
+    .container-carrito .productos-carrito .productos .producto-carrito .mobile-letras-producto{
         display: flex;
         justify-content: space-between;
     }
-    .texto-centrado-producto {
+    .container-carrito .productos-carrito .productos .producto-carrito .texto-centrado-producto{
         display: flex;
         justify-content: center;
         text-align: center;
@@ -567,15 +564,25 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     }
 
     /*SECCION PRODUCTOS CARRITO*/
-    .productos{
+    .container-carrito .productos-carrito div.productos{
         width: 90vw;
     }
 
     /*RECUADRO TOTAL*/
-    .productos-carrito .recuadro-total{
+    .container-carrito .productos-carrito .recuadro-total{
         width: 100%;
     }
 
+    /*DIRECCION DEL RECUADRO*/
+    .container-carrito .productos-carrito .recuadro-total .recuadro-total-chico .recuadro-carrito h4.direccion-margin{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    /*SECCION CUPONES*/
+    .container-carrito .cupones{
+        margin-top: 0px;
+    }
     /*4 PRODUCTOS RELACIONADOS SACADOS*/
     section.productos article.producto.resolucionMenorA1200, 
     section.productos article.producto.resolucionMenorA1024,
