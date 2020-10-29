@@ -61,16 +61,6 @@ h1.titulo{
     margin-top:7%;
 }
 
-.cantidad-input{
-    /* Display & Box Model */
-    width: 15%;
-    padding: 4px;
-
-    /* Otras */
-    text-align: center;
-    font-size: small;
-}
-
 .mobile-letras-producto{
     display: none;
 }
