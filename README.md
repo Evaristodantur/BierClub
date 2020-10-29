@@ -3,7 +3,7 @@ BierClub es un E-Commerce de cervezas artesanales. Este proyecto se basa en much
 
 Por el momento envios en la provincia de Tucumán, pero apuntamos a mejorar en un futuro para hacernos conocer en toda Argentina.
 
-## [**Restrospectivas**](https://github.com/Evaristodantur/BierClub/blob/master/entregas/segunda-entrega/retro.md) y [**Dailies**](https://github.com/Evaristodantur/BierClub/blob/master/entregas/segunda-entrega/daily.md)
+## [**Restrospectivas**](https://github.com/Evaristodantur/BierClub/blob/master/entregas%20-%20sprints/2do-sprint/retro.md) y [**Dailies**](https://github.com/Evaristodantur/BierClub/blob/master/entregas%20-%20sprints/2do-sprint/daily.md)
 
 ## Funcionalidad 🧰:
 - Venta de cerveza artesanal (Latas y botellas chicas)
