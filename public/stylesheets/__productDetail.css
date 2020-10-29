@@ -237,7 +237,7 @@ i.fa-whatsapp {
 
 
 /* ==========================================================================
-   RESOLUCION 950 HACIA ABAJO
+   RESOLUCION 950 HACIA ABAJO - ANIMACIONES
    ========================================================================== */
    
 @media (min-width: 950px) {
@@ -255,6 +255,18 @@ i.fa-whatsapp {
     .btn-pedirElProducto:hover {
         cursor: pointer;
         background-color: rgb(36, 121, 36);
+    }
+
+    .btn-agregarAlCarrito:hover {
+        background-color: rgb(32, 32, 32);
+    }
+    
+    .btn-comprarAhora:hover {
+        background-color: #997312;
+    }
+    
+    .btn-pedirElProducto:hover {
+        background-color: rgb(74, 156, 74);
     }
 }
 
