@@ -248,13 +248,25 @@ i.fa-whatsapp {
 
 
 /* ==========================================================================
-   RESOLUCION 950 HACIA ABAJO
+   RESOLUCION 950 HACIA ABAJO - ANIMACIONES
    ========================================================================== */
    
 @media (max-width: 950px) {
     /*BUTTON - AÑADIR AL CARRITO*/
     .home main section.productos article.producto button.hoverproducto{
         opacity: 1;
+    }
+
+    .btn-agregarAlCarrito:hover {
+        background-color: rgb(32, 32, 32);
+    }
+    
+    .btn-comprarAhora:hover {
+        background-color: #997312;
+    }
+    
+    .btn-pedirElProducto:hover {
+        background-color: rgb(74, 156, 74);
     }
 }
 

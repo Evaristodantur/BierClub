@@ -1,6 +1,7 @@
 @import '__general.css';
 @import '__home.css';
+@import '__productCart.css';
+@import 'productDetail.css';
 @import '__register-login.css';
 @import '__productAdd.css';
-@import '__productCart.css';
 @import '__footer.css';
