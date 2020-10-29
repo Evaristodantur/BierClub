@@ -168,6 +168,7 @@ section.productos{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 .sumar-restar-cantidad{
     text-decoration: none;
