@@ -85,6 +85,7 @@ h1.titulo{
 .recuadro-carrito{
     display:flex;
     justify-content: space-between;
+    flex-wrap:wrap;
 }
 
 .hr-recuadro{
@@ -176,7 +177,10 @@ section.productos{
     flex-direction: row;
     justify-content: space-between;
 }
-
+.sumar-restar-cantidad{
+    text-decoration: none;
+    color: #DAA520;
+}
 section.productos article.producto {
     /* Display & Box Model */
     width: 22%;
@@ -398,6 +402,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     .recuadro-total{
         width: 100%;
     }
+    
 
     /*SECCION CUPONES*/
     .cupones {
