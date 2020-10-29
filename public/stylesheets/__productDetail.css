@@ -15,39 +15,44 @@ body div.productDetail {
 /* ==========================================================================
    SECCION DETALLE DEL PRODUCTO/IMAGEN
    ========================================================================== */
-.seccion-producto {
+.productDetail section.seccion-producto {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.descripcion{
+
+.productDetail .seccion-producto .imagen-producto div.descripcion{
     width:30%;
     margin-left: 21%;
 }
-.imagen-producto, .detalle-producto {
+
+.productDetail .seccion-producto div.imagen-producto,
+.productDetail .seccion-producto section.detalle-producto {
     width: 30%;
 }
 
-.imagen-producto-previews{
+.productDetail .seccion-producto div.imagen-producto-previews{
     display:flex;
     flex-direction: column;
     margin-right: 20px;
 }
 
-.imagen-previews{
+.productDetail .seccion-producto .imagen-producto-previews img.imagen-previews{
     width:90px;
     margin-bottom: 30px;
     border-radius: 8px;
 }
 
-.imagen-previews:hover{
+.productDetail .seccion-producto .imagen-producto-previews img.imagen-previews:hover{
     cursor: pointer;
 }
 
+
+
 /* ==========================================================================
-   IMAGEN
-   ========================================================================== */
-.imagen-producto img {
+IMAGEN
+========================================================================== */
+.productDetail .seccion-producto .imagen-producto img {
     /* Display & Box Model */
     display: flex; 
     align-content: center;
@@ -58,10 +63,12 @@ body div.productDetail {
     border-radius: 8px;
 }
 
+
+
 /* ==========================================================================
    DETALLE DEL PRODUCTO
    ========================================================================== */
-.detalle-producto {
+.productDetail .seccion-producto .detalle-producto {
     display: flex;
     align-items: center;
     align-content: center;
@@ -74,81 +81,51 @@ body div.productDetail {
 /* ==========================================================================
    PRECIO NORMAL, DESCONTADO Y DESCUENTO
    ========================================================================== */
-/* .fila-precio {
-     Display & Box Model 
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
 
-     Otras 
-    border-bottom: 2px solid rgb(80, 80, 80);
-} */
-
-.texto-descuento-mobile , .texto-invisible-mobile{
+.productDetail .seccion-producto .detalle-producto .fila-precio .precio-flex h5.texto-descuento-mobile,
+.productDetail .seccion-producto .detalle-producto .fila-precio .precio-flex h5.texto-invisible-mobile{
     display:none;
 }
 
-.fila-precio{
+.productDetail .seccion-producto .detalle-producto .fila-precio{
     display:flex;
     flex-direction: column;
     width: 100%;
     justify-content: space-evenly;
     height: 150px;
 }
-h5.precio-item , h5.texto-descuento , h5.texto-invisible , h5.texto-descuento-mobile , h5.texto-invisible-mobile{
+.productDetail .seccion-producto .detalle-producto .fila-precio .precio-flex h5.precio-item,
+.productDetail .seccion-producto .detalle-producto .fila-precio .precio-flex h5.texto-descuento,
+.productDetail .seccion-producto .detalle-producto .fila-precio .precio-flex h5.texto-invisible,
+.productDetail .seccion-producto .detalle-producto .fila-precio .precio-flex h5.texto-descuento-mobile,
+.productDetail .seccion-producto .detalle-producto .fila-precio .precio-flex h5.texto-invisible-mobile{
     margin: 0px 0px 0px 0px;
 }
-.texto-descuento , .texto-descuento-mobile{
+.productDetail .seccion-producto .detalle-producto .fila-precio .precio-flex h5.texto-descuento,
+.productDetail .seccion-producto .detalle-producto .fila-precio .precio-flex h5.texto-descuento-mobile{
     color: green;
 }
-.texto-invisible , .texto-invisible-mobile{
+.productDetail .seccion-producto .detalle-producto .fila-precio .precio-flex h5.texto-invisible,
+.productDetail .seccion-producto .detalle-producto .fila-precio .precio-flex h5.texto-invisible-mobile{
     opacity: 0;
 }
-.precio-flex{
+.productDetail .seccion-producto .detalle-producto .fila-precio .precio-flex{
     display: flex;
     justify-content: space-between;
 }
 
-.precio-normal, .precio-descontado {
-    width: 20%;
-}
-
-.descuentos {
-    /* Display & Box Model */
-    width: 60%;
-
-    /* Otras */
-    text-align: right;
-}
-
-.fila-precio h4, 
-.fila-precio p {
+.productDetail .seccion-producto .detalle-producto .fila-precio h4, 
+.productDetail .seccion-producto .detalle-producto .fila-precio p {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-h4.precio-descontado, h4.precio-normal {
-    font-size: x-large;
-}
 
-h4.precio-descontado {
-    color: rgb(189, 61, 61);
-}
-
-h4.precio-normal{
-    color: rgb(48, 47, 47);
-    text-decoration-line: line-through;
-}
-
-p.descuentos {
-    color: rgb(31, 100, 31);
-}
 
 /* ==========================================================================
    CANTIDAD
    ========================================================================== */
-.cantidad {
+.productDetail .seccion-producto .detalle-producto div.cantidad {
     margin-top: 2%;
     display: flex;
     width:100%;
@@ -156,7 +133,8 @@ p.descuentos {
     align-items: center;
 }
 
-.cantidad-label, .cantidad-input {
+.productDetail .seccion-producto .detalle-producto .cantidad .cantidad-label,
+.productDetail .seccion-producto .detalle-producto .cantidad .cantidad-input {
     /* Display & Box Model */
     width: 50%;
 
@@ -164,11 +142,11 @@ p.descuentos {
     text-align: center;
 }
 
-.cantidad-label label {
+.productDetail .seccion-producto .detalle-producto .cantidad .cantidad-label label {
     font-size: large;
 }
 
-.cantidad input{
+.productDetail .seccion-producto .detalle-producto .cantidad input{
     /* Display & Box Model */
     width: 25%;
     padding: 4px;
@@ -180,26 +158,28 @@ p.descuentos {
     font-size: small;
 }
 
-a i.fa-minus,
-a i.fa-plus {
+.productDetail .seccion-producto .detalle-producto .cantidad .cantidad-input i.fa-minus,
+.productDetail .seccion-producto .detalle-producto .cantidad .cantidad-input i.fa-plus{
     color: #DAA520;
 }
+
+
 
 /* ==========================================================================
    AGREGAR AL CARRITO / COMPRAR AHORA / PEDIR PRODUCTO
    ========================================================================== */
-.agregarAlcarrito,  
-.comprarAhora,
-.pedirElProducto {
+.productDetail .seccion-producto .detalle-producto div.agregarAlcarrito,  
+.productDetail .seccion-producto .detalle-producto div.comprarAhora,
+.productDetail .seccion-producto .detalle-producto div.pedirElProducto {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 2%;
 }
 
-.btn-agregarAlCarrito,
-.btn-comprarAhora,
-.btn-pedirElProducto {
+.productDetail .seccion-producto .detalle-producto .agregarAlcarrito button.btn-agregarAlCarrito,
+.productDetail .seccion-producto .detalle-producto .comprarAhora button.btn-comprarAhora,
+.productDetail .seccion-producto .detalle-producto .pedirElProducto button.btn-pedirElProducto {
     /* Display & Box Model */
     width: 100%;
     padding: 15px;
@@ -212,23 +192,25 @@ a i.fa-plus {
     font-weight: 600;
 }
 
-.btn-agregarAlCarrito:hover , .btn-comprarAhora:hover , .btn-pedirElProducto:hover {
+.productDetail .seccion-producto .detalle-producto .agregarAlcarrito button.btn-agregarAlCarrito:hover,
+.productDetail .seccion-producto .detalle-producto .comprarAhora button.btn-comprarAhora:hover,
+.productDetail .seccion-producto .detalle-producto .pedirElProducto button.btn-pedirElProducto:hover{
     cursor: pointer;
 }
 
-.btn-agregarAlCarrito {
+.productDetail .seccion-producto .detalle-producto .agregarAlcarrito button.btn-agregarAlCarrito {
     background-color: rgb(32, 32, 32);
 }
 
-.btn-comprarAhora {
+.productDetail .seccion-producto .detalle-producto .comprarAhora button.btn-comprarAhora {
     background-color: #997312;
 }
 
-.btn-pedirElProducto {
+.productDetail .seccion-producto .detalle-producto .pedirElProducto button.btn-pedirElProducto {
     background-color: rgb(74, 156, 74);
 }
 
-i.fa-whatsapp {
+.productDetail .seccion-producto .detalle-producto .pedirElProducto button.btn-pedirElProducto i.fa-whatsapp {
     font-size: 25px;
     color: white;
 }
@@ -291,28 +273,36 @@ i.fa-whatsapp {
     .imagen-producto-previews{
         width: 90px;
     }
+
     .imagen-producto{
         width: 60%;
     }
+
     .seccion-producto{
         flex-wrap: wrap;
     }
+
     .imagen-previews{
         margin-bottom: 45px;
     }
+
     .seccion-producto{
         top: 30px;
     }
+
     .imagen-producto img{
         width:100%;
     }
+
     .descripcion-producto{
         display:none;
     }
+
     .detalle-producto{
         width: 70%;
         margin-left: 0px;
     }
+
     body div.productDetail {
         background-color: rgb(228, 228, 228);
         padding-top: 5rem;
@@ -331,29 +321,37 @@ i.fa-whatsapp {
     .imagen-producto-previews{
         width: 70px;
     }
+
     .imagen-producto{
         width: 60%;
     }
+
     .seccion-producto{
         flex-wrap: wrap;
     }
+
     .imagen-previews{
         margin-bottom: 30px;
         width: 70px;
     }
+
     .seccion-producto{
         top: 30px;
     }
+
     .imagen-producto img{
         width:100%;
     }
+
     .descripcion-producto{
         display:none;
     }
+
     .detalle-producto{
         width: 70%;
         margin-left: 0px;
     }
+
     body div.productDetail {
         background-color: rgb(228, 228, 228);
         padding-top: 5rem;
@@ -372,33 +370,42 @@ i.fa-whatsapp {
     .imagen-producto-previews{
         display: none;
     }
+
     .seccion-producto{
         flex-wrap: wrap;
     }
+
     .seccion-producto{
         top: 30px;
     }
+
     .imagen-producto{
         width:80%;
     }
+
     .imagen-producto img{
         width:100%;
     }
+
     .descripcion-producto{
         display:none;
     }
+
     .detalle-producto{
         width: 80%;
         margin-left: 0px;
     }
+
     body div.productDetail {
         background-color: rgb(228, 228, 228);
         padding-top: 5rem;
         padding-bottom: 1%;
     }
+
     .texto-descuento-mobile , .texto-invisible-mobile{
         display:inline-block;
     }
+
     .texto-descuento , .texto-invisible{
         display:none;
     }
