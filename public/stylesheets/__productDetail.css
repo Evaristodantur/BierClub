@@ -26,6 +26,10 @@ body div.productDetail {
     margin-left: 21%;
 }
 
+.productDetail .seccion-producto div.descripcion-producto-mobile{
+    display: none;
+}
+
 .productDetail .seccion-producto div.imagen-producto,
 .productDetail .seccion-producto section.detalle-producto {
     width: 30%;
@@ -265,6 +269,12 @@ IMAGEN
         width: 90px;
     }
 
+    .productDetail .seccion-producto div.descripcion-producto-mobile{
+        display: inline-block;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
     .productDetail .seccion-producto div.imagen-producto{
         width: 60%;
     }
@@ -310,6 +320,12 @@ IMAGEN
         width: 70px;
     }
 
+    .productDetail .seccion-producto div.descripcion-producto-mobile{
+        display: inline-block;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
     .productDetail .seccion-producto div.imagen-producto{
         width: 60%;
     }
@@ -351,7 +367,7 @@ IMAGEN
 
 
 /* ==========================================================================
-   RESOLUCION 480PX-570PX
+   RESOLUCION 0PX-480PX
    ========================================================================== */
 
    @media (min-width: 0px) and (max-width: 479px) {
@@ -362,6 +378,12 @@ IMAGEN
     .productDetail .seccion-producto{
         top: 30px;
         flex-wrap: wrap;
+    }
+
+    .productDetail .seccion-producto div.descripcion-producto-mobile{
+        display: inline-block;
+        margin-left: 10%;
+        margin-right: 13%;
     }
 
     .productDetail .seccion-producto div.imagen-producto{
