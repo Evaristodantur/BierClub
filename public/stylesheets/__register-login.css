@@ -132,6 +132,10 @@ body .login-register{
    RESOLUCION: 480 a 768
    ========================================================================== */
 @media (min-width: 480px) and (max-width: 768px) {
+    .login-register {
+        margin-bottom: 5%;
+    }
+
     /*INPUT FORMULARIO y BUTTON - REGISTER,LOGIN*/
     .login-register form.formulario div.campo-input input.input-registro, 
     .login-register form.formulario div.campo-input button.input-button {
@@ -146,6 +150,10 @@ body .login-register{
    RESOLUCION: 480 hacia abajo
    ========================================================================== */
 @media (max-width: 480px) {
+    .login-register {
+        margin-bottom: 5%;
+    }
+
     /*INPUT FORMULARIO y BUTTON - REGISTER,LOGIN*/
     .login-register form.formulario div.campo-input input.input-registro, 
     .login-register form.formulario div.campo-input button.input-button {

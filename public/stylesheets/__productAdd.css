@@ -231,13 +231,18 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
         align-items: center;
     }
 
+    .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev {
+        display: flex;
+        justify-content: center;
+    }
+
     .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
         /* Posicionamiento */
         position: relative;
         right: 0px;
 
         /* Display & Box Model */
-        width: 100%;  
+        width: 45%;  
     }
 
     /*BLOQUE IMGFILE - CATEGORIA*/
@@ -277,13 +282,18 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
         margin: 0;
     }
 
+    .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev {
+        display: flex;
+        justify-content: center;
+    }
+
     .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
         /* Posicionamiento */
         position: relative;
         right: 0px;
 
         /* Display & Box Model */
-        width: 100%;  
+        width: 65%;  
     }
 
     .productAdd form.formulario-carga div.flex-imgPrev-detalle .nombre ,
