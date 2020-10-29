@@ -316,6 +316,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION 1700 HACIA ARRIBA
    ========================================================================== */
 @media (min-width: 1700px) {
+    /*RECUADRO TOTAL*/
     .productos-carrito .recuadro-total{
         width: 18%;
     }
@@ -327,6 +328,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION 1450-1700
    ========================================================================== */
 @media (min-width: 1450px) and (max-width: 1699px) {
+    /*RECUADRO TOTAL*/
     .productos-carrito .recuadro-total{
         width: 25%;
     }
@@ -339,12 +341,14 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION 1200-1400
    ========================================================================== */
 @media (min-width: 1200px) and (max-width: 1449px) {
-    section.productos article.producto.resolucionMenorA1200 {
-        display: none;
-    }
-    
+    /*RECUADRO TOTAL*/
     .productos-carrito .recuadro-total{
         width: 30%;
+    }
+
+    /*1 PRODUCTO RELACIONADOS SACADO*/
+    section.productos article.producto.resolucionMenorA1200 {
+        display: none;
     }
 }
 
@@ -355,8 +359,13 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION 1024-1200
    ========================================================================== */
 @media (min-width: 1024px) and (max-width: 1199px){
-    /*1 PRODUCTO SACADO*/
-    .home main section.productos article.producto.resolucionMenorA1200 {
+   /*RECUADRO TOTAL*/
+    .productos-carrito .recuadro-total{
+        width: 30%;
+    }
+
+     /*1 PRODUCTO RELACIONADOS SACADO*/
+     .home main section.productos article.producto.resolucionMenorA1200 {
         display: none;
     }
 
@@ -364,14 +373,6 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     .home main section.productos {
         margin-top: 5%;
         margin-bottom: 5%;
-    }
-
-
-
-
-
-    .productos-carrito .recuadro-total{
-        width: 30%;
     }
 }
 
@@ -382,7 +383,29 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION 768-1024
    ========================================================================== */
 @media (min-width: 768px) and (max-width: 1023px){
-    /*2 PRODUCTOS SACADOS*/
+    /*SECCION PRODUCTOS FILA*/
+    .productos-carrito{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*SECCION PRODUCTOS CARRITO*/
+    .productos{
+        width: 90vw;
+    }
+
+    /*RECUADRO TOTAL*/
+    .recuadro-total{
+        width: 100%;
+    }
+
+    /*SECCION CUPONES*/
+    .cupones {
+        margin-top: 80px;
+        margin-left: 9.5%;
+    }
+
+    /*2 PRODUCTOS RELACIONADOS SACADOS*/
     section.productos article.producto.resolucionMenorA1200, 
     section.productos article.producto.resolucionMenorA1024 {
         display: none;
@@ -400,27 +423,6 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
         margin: 1% 5px;
         margin-bottom: 3%;
     }
-
-
-
-    .productos-carrito{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .productos{
-        width: 90vw;
-    }
-    
-    .recuadro-total{
-        width: 100%;
-    }
-
-
-
-    .cupones {
-        margin-top: 80px;
-        margin-left: 9.5%;
-    }
 }
 
 
@@ -430,7 +432,61 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION 480-768
    ========================================================================== */
 @media (min-width: 525px) and (max-width: 767px) {
-    /*3 PRODUCTOS SACADOS*/
+    /*SECCION PRODUCTOS FILA*/
+    .productos-carrito{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*SECCION PRODUCTOS CARRITO*/
+    .productos{
+        width: 90vw;
+    }
+
+    /*RECUADRO TOTAL*/
+    .productos-carrito .recuadro-total{
+        width: 100%;
+    }
+
+    /*SECCION PRODUCTOS FILA*/
+    .producto-carrito{
+        flex-direction: column;
+    }
+
+    .producto-imagen-carrito{
+        width: 50%;
+        align-self: center;
+        margin-bottom: 25px;
+    }
+
+    div.mobile-letras-producto h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .mobile-letras-producto{
+        display: inline-block;
+    }
+
+    .estilo-letras-producto{
+        display: none;
+    }
+
+    .mobile-letras-producto{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        align-self: center;
+    }
+
+    .texto-centrado-producto {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    /*3 PRODUCTOS RELACIONADOS SACADOS*/
     section.productos article.producto.resolucionMenorA1200, 
     section.productos article.producto.resolucionMenorA1024,
     section.productos article.producto.resolucionMenorA768 {
@@ -462,18 +518,19 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     .producto button.btn-producto {
         margin-bottom: 2%;
     }
+}
 
 
 
+
+/* ==========================================================================
+   RESOLUCION 0-479
+   ========================================================================== */
+@media (max-width: 524px){
+    /*SECCION PRODUCTOS FILA*/
     .productos-carrito{
         flex-direction: column;
         justify-content: center;
-    }
-    .productos{
-        width: 90vw;
-    }
-    .productos-carrito .recuadro-total{
-        width: 100%;
     }
 
     .producto-imagen-carrito{
@@ -490,17 +547,12 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     .producto-carrito{
         flex-direction: column;
     }
-    .mobile-letras-producto{
-        display: inline-block;
-    }
     .estilo-letras-producto{
         display: none;
     }
     .mobile-letras-producto{
         display: flex;
         justify-content: space-between;
-        width: 70%;
-        align-self: center;
     }
     .texto-centrado-producto {
         display: flex;
@@ -508,16 +560,18 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
         text-align: center;
         align-items: center;
     }
-}
 
+    /*SECCION PRODUCTOS CARRITO*/
+    .productos{
+        width: 90vw;
+    }
 
+    /*RECUADRO TOTAL*/
+    .productos-carrito .recuadro-total{
+        width: 100%;
+    }
 
-
-/* ==========================================================================
-   RESOLUCION 0-479
-   ========================================================================== */
-@media (max-width: 524px){
-    /*4 PRODUCTOS SACADOS*/
+    /*4 PRODUCTOS RELACIONADOS SACADOS*/
     section.productos article.producto.resolucionMenorA1200, 
     section.productos article.producto.resolucionMenorA1024,
     section.productos article.producto.resolucionMenorA768,
@@ -548,47 +602,5 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     section.productos div.btnAnt i.fa-chevron-circle-left , 
     section.productos div.btnSig i.fa-chevron-circle-right {
         font-size: 35px;
-    }
-
-
-
-
-    
-    .productos-carrito{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .productos{
-        width: 90vw;
-    }
-    .productos-carrito .recuadro-total{
-        width: 100%;
-    }
-    .producto-imagen-carrito{
-        width: 50%;
-        align-self: center;
-        margin-bottom: 25px;
-    }
-
-    div.mobile-letras-producto h4 {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .producto-carrito{
-        flex-direction: column;
-    }
-    .estilo-letras-producto{
-        display: none;
-    }
-    .mobile-letras-producto{
-        display: flex;
-        justify-content: space-between;
-    }
-    .texto-centrado-producto {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
     }
 }
