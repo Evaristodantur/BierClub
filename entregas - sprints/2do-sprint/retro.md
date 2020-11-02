@@ -1,4 +1,4 @@
-# Retrospectiva - 1 sprint
+# Retrospectiva - 1er sprint
 
 ### Start Doing:
   - Buscar un horario en el cual podamos reunirnos en la semana
@@ -30,7 +30,7 @@ El equipo va con un buen ritmo, sin prisa, pero sin pausa. Aun así, creemos que
 Todos los participantes trabajamos de forma muy autónoma, pero no dejamos de lado la opinión de ningún compañero del grupo.
 
 -------------------------
-# Retrospectiva - 2 sprint
+# Retrospectiva - 2do sprint
 
 ### Start Doing:
   
