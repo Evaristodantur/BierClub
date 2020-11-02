@@ -1,5 +1,19 @@
 # Dailies
 
+## Sprint 3
+
+### 2/11/20
+
+Terminado:
+  - Testeo general de las views, maquetado listo para la entrega del Sprint 2
+  
+Para hacer hoy:
+  - Retrospectiva del Sprint 2
+  - Actualizar Trello conforme al incio del Sprint 3
+  - Organizar un horario para juntarnos (no necesariamente todos los dias)
+  
+--------------------------------------
+
 ## Sprint 2
 
 ### 29/10/20
