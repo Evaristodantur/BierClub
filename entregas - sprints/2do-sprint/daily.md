@@ -2,6 +2,18 @@
 
 ## Sprint 3
 
+### 3/11/20
+
+Terminado:
+  - Organización del Sprint 3 en Trello
+  - Retrospectiva del Sprint 2
+  - Horario de reunión diaria establecido: Martes, Miércoles y Jueves de 15:00 a 17:00 (Fines de semana a conveniencia)
+  
+Para hacer hoy:
+  - Separar las rutas de las vistas
+  - Crear controladores para main, product y user
+  - Creación de la carpeta "Partials"
+
 ### 2/11/20
 
 Terminado:
