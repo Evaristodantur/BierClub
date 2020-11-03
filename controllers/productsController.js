@@ -1,4 +1,7 @@
 let productsController = {
+    index : (req, res, next) => {
+        res.render('products/products');
+    },
     productDetail : (req, res, next) => {
         res.render('products/productDetail');
     },
