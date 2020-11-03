@@ -8,6 +8,7 @@ Terminado:
   - Organización del Sprint 3 en Trello
   - Retrospectiva del Sprint 2
   - Horario de reunión diaria establecido: Martes, Miércoles y Jueves de 15:00 a 17:00 (Fines de semana a conveniencia)
+  - Console.log del server.listen aclarando el puerto utilizado
   
 Para hacer hoy:
   - Separar las rutas de las vistas
