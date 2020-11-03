@@ -10,4 +10,7 @@ router.get('/register', usersController.register);
 /* GET Login page. */
 router.get('/login', usersController.login);
 
+/* GET Perfil page. */
+router.get('/perfil', usersController.perfil);
+
 module.exports = router;
