@@ -5,6 +5,9 @@ let router = express.Router();
 let productsController = require('../controllers/productsController');
 
 /* GET Productos page. */
+router.get('/', productsController.index);
+
+/* GET Productos page. */
 router.get('/productDetail', productsController.productDetail);
   
 /* GET formulario de carga de producto page. */
