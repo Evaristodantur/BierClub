@@ -5,20 +5,16 @@ var router = express.Router();
 let mainController = require('../controllers/mainController');
 
 /* GET home page. */
+<<<<<<< HEAD
 router.get('/', mainController.index);
-
-/* GET Registro page. */
-router.get('/register', function(req, res, next) {
-  res.render('users/register');
+=======
+router.get('/', (req, res, next) => {
+  res.render('index');
 });
-
-/* GET Login page. */
-router.get('/login', function(req, res, next) {
-  res.render('users/login');
-});
+>>>>>>> 94714df394fe61b34d376c93c040485d6adcb791
 
 /* GET About us page. */
-router.get('/about-us', function(req, res, next) {
+router.get('/about-us', (req, res, next) => {
   res.render('aboutUs');
 });
 
