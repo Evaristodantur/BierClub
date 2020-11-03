@@ -6,21 +6,6 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-/* GET Productos page. */
-router.get('/productDetail', function(req, res, next) {
-  res.render('products/productDetail');
-});
-
-/* GET formulario de carga de producto page. */
-router.get('/productAdd', function(req, res, next) {
-  res.render('products/productAdd');
-});
-
-/* GET Carrito page. */
-router.get('/productCart', function(req, res, next) {
-  res.render('products/productCart');
-});
-
 /* GET Registro page. */
 router.get('/register', function(req, res, next) {
   res.render('users/register');
