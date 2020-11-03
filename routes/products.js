@@ -1,7 +1,7 @@
 let express = require('express');
 let router = express.Router();
 
-//Controladores
+//Controller
 let productsController = require('../controllers/productsController');
 
 /* GET Productos page. */
