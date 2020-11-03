@@ -1,10 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
+//Controladores
+let mainController = require('../controllers/mainController');
+
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index');
-});
+router.get('/', mainController.index);
 
 /* GET Registro page. */
 router.get('/register', function(req, res, next) {

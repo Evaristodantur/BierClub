@@ -5,18 +5,14 @@ let router = express.Router();
 let productsController = require('../controllers/productsController');
 
 /* GET Productos page. */
-router.get('/productDetail', function(req, res, next) {
-  res.render('products/productDetail');
-});
+router.get('/productDetail', productsController.productDetail);
   
 /* GET formulario de carga de producto page. */
-router.get('/productAdd', function(req, res, next) {
-  res.render('products/productAdd');
-});
+router.get('/productAdd', productsController.productAdd);
   
 /* GET Carrito page. */
-router.get('/productCart', function(req, res, next) {
-  res.render('products/productCart');
-});
+router.get('/productCart', productsController.productCart);
 
+
+/* Exportar variable de rutas*/
 module.exports = router;
