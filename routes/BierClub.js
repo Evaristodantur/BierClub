@@ -13,33 +13,23 @@ router.get('/productDetail', function(req, res, next) {
 
 /* GET formulario de carga de producto page. */
 router.get('/productAdd', function(req, res, next) {
-  res.render('productAdd');
+  res.render('products/productAdd');
 });
 
 /* GET Carrito page. */
 router.get('/productCart', function(req, res, next) {
-  res.render('productCart');
-});
-
-/* GET Detalle del producto page. */
-router.get('/productDetail', function(req, res, next) {
-  res.render('productDetail');
+  res.render('products/productCart');
 });
 
 /* GET Registro page. */
 router.get('/register', function(req, res, next) {
-  res.render('register');
+  res.render('users/register');
 });
 
 /* GET Login page. */
 router.get('/login', function(req, res, next) {
-  res.render('login');
+  res.render('users/login');
 });
-router.get('/nav', function(req, res, next) {
-  res.render('nav');
-});
-router.get('/nav2', function(req, res, next) {
-  res.render('nav2');
-});
+
 
 module.exports = router;
