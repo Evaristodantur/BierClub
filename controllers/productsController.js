@@ -13,6 +13,9 @@ let productsController = {
     },
     productEdit : (req, res, next) => {
         res.render('products/productEdit');
+    },
+    productAdmin : (req, res, next) => {
+        res.render('products/productAdmin');
     }
 }
 

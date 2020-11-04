@@ -20,6 +20,9 @@ router.get('/productAdd', productsController.productAdd);
 /* GET formulario de carga de producto page. */
 router.get('/productEdit', productsController.productEdit);
 
+/* GET formulario de carga de producto page. */
+router.get('/productAdmin', productsController.productAdmin);
+
 
 /* Exportar variable de rutas*/
 module.exports = router;
