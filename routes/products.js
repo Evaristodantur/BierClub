@@ -9,12 +9,16 @@ router.get('/', productsController.index);
 
 /* GET Productos page. */
 router.get('/productDetail', productsController.productDetail);
+
+/* GET Carrito page. */
+router.get('/productCart', productsController.productCart);
+
   
 /* GET formulario de carga de producto page. */
 router.get('/productAdd', productsController.productAdd);
-  
-/* GET Carrito page. */
-router.get('/productCart', productsController.productCart);
+
+/* GET formulario de carga de producto page. */
+router.get('/productEdit', productsController.productEdit);
 
 
 /* Exportar variable de rutas*/

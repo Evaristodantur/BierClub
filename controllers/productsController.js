@@ -10,6 +10,9 @@ let productsController = {
     },
     productCart : (req, res, next) => {
         res.render('products/productCart');
+    },
+    productEdit : (req, res, next) => {
+        res.render('products/productEdit');
     }
 }
 
