@@ -6,7 +6,8 @@
     <title>BierClub - Sobre nosotros</title>
 	<link rel="icon" href="/images/faviconLogo.ico"/>
 	<link rel='stylesheet' href='/stylesheets/nav.css'/>
-	<link rel='stylesheet' href='/stylesheets/footer.css'/>
+	<link rel='stylesheet' href='/stylesheets/__products.css'/>
+	<link rel='stylesheet' href='/stylesheets/__footer.css'/>
 </head>
 
 <body>
@@ -14,7 +15,33 @@
 		<%- include('../partials/nav.ejs') %>
 	</header>
 	
-		Hola man
+		<div class="products-catalogo">
+			
+			<section>
+				<label for="ordenar">Ordenar:</label>
+            	<select class="select-ordenar" name="ordenar" id="ordenar">
+              		<option value="nuevos-productos">Nuevos Productos</option>
+              		<option value="mas-vendidos">Mas Vendidos</option>
+              		<option value="populares">Populares</option>
+              		<option value="especiales">Especiales</option>
+            	</select>
+			</section>
+			
+			<main class="seccion-filtro-muestra-productos">
+				<section class="columna-filtro">
+					
+						<p>Columna izq para filtrar productos</p>
+					
+				</section>
+
+				<section class="columna-productos">
+					
+						<p>Columna der para mostrar productos</p>
+					
+				</section>
+			</main>
+
+		</div>
 
 	<footer>
 		<%- include('../partials/footer.ejs') %>
