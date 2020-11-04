@@ -10,5 +10,10 @@ router.get('/', mainController.index);
 /* GET About us page. */
 router.get('/about-us', mainController.aboutUs);
 
+/* GET Carrito page. */
+router.get('/promociones', mainController.promociones);
+
+/* GET Carrito page. */
+router.get('/suscripcion', mainController.suscripcion);
 
 module.exports = router;
