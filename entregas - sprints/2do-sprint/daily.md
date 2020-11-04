@@ -14,6 +14,7 @@ Para hacer hoy:
   - Separar las rutas de las vistas
   - Crear controladores para main, product y user
   - Creación de la carpeta "Partials"
+  - Crear pagina de error 404
 
 ### 2/11/20
 
