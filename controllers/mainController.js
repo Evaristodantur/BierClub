@@ -13,7 +13,7 @@ let mainController = {
 
     //  /about-us
     aboutUs : (req, res, next) => {
-        res.render('aboutUs');
+        res.render('aboutUs', {title : "hola"});
     },
 
     //  /promociones
@@ -31,10 +31,6 @@ let mainController = {
         let idUrl = req.params.id;
 
         let productoBuscado = productsJson.find(producto => producto.id == idUrl);
-
-        console.log(productoBuscado);
-
-        res.render('prueba', productoBuscado);
         
         productoBuscado ? (res.render("prueba",productoBuscado)) : res.render("error")
     },
