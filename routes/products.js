@@ -8,7 +8,7 @@ let productsController = require('../controllers/productsController');
 router.get('/', productsController.index);
 
 /* GET Productos page. */
-router.get('/productDetail', productsController.productDetail);
+router.get('/productDetail/:id', productsController.productDetail);
 
 /* GET Carrito page. */
 router.get('/productCart', productsController.productCart);
