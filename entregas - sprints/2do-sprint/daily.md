@@ -14,7 +14,11 @@ Para hacer hoy:
   - Separar las rutas de las vistas
   - Crear controladores para main, product y user
   - Creación de la carpeta "Partials"
+  - Incluir en "Partials" footer, nav, nav2 y productosRelacionados 
   - Crear pagina de error 404
+  - Crear vistas nuevas (productEdit, suscripcion, perfil, productAdmin y products)
+  - Crear base de controladores con su documentación (main, products y user)
+  - Crear base de datos estatica con el .JSON de los productos
 
 ### 2/11/20
 
