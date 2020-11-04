@@ -4,13 +4,17 @@ var router = express.Router();
 //Controller
 let usersController = require('../controllers/usersController');
 
-/* GET Registro page. */
+
+
+/* GET     /users/register      page. */
 router.get('/register', usersController.register);
 
-/* GET Login page. */
+/* GET     /users/login      page. */
 router.get('/login', usersController.login);
 
-/* GET Perfil page. */
-router.get('/perfil', usersController.perfil);
+/* GET     /users/perfil/:id      page. */
+router.get('/perfil/:id', usersController.perfil);
+
+
 
 module.exports = router;

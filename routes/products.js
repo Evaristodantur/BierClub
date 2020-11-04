@@ -4,25 +4,26 @@ let router = express.Router();
 //Controller
 let productsController = require('../controllers/productsController');
 
-/* GET Productos page. */
+
+
+/* GET     /products      page. */
 router.get('/', productsController.index);
 
-/* GET Productos page. */
+/* GET     /products/productDetail/:id      page. */
 router.get('/productDetail/:id', productsController.productDetail);
 
-/* GET Carrito page. */
+/* GET     /products/productCart      page. */
 router.get('/productCart', productsController.productCart);
-
   
-/* GET formulario de carga de producto page. */
+/* GET     /products/productAdd      page. */
 router.get('/productAdd', productsController.productAdd);
 
-/* GET formulario de carga de producto page. */
+/* GET     /products/productEdit      page. */
 router.get('/productEdit', productsController.productEdit);
 
-/* GET formulario de carga de producto page. */
+/* GET     /products/productAdming      page. */
 router.get('/productAdmin', productsController.productAdmin);
 
 
-/* Exportar variable de rutas*/
+
 module.exports = router;
