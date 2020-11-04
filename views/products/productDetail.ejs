@@ -33,12 +33,11 @@
         
         <!-- IMAGEN -->
         <div class="imagen-producto">
-            <img class="imagen-producto-principal" src="/images/productos/detalle.jpg" alt="">
+            <img class="imagen-producto-principal" src="<%=imagen%>" alt="">
 
             <!-- DESCRIPCION DE LA IMAGEN -->
             <div class="descripcion-producto">
-              <p>Saison de Triomphe rescata el placer del momento. Una cerveza pensada para aquellas personas que valoran su tiempo libre, para quienes disfrutan de los pequeños momentos de la vida. La opción ideal para quienes quieren mimarse.</p>
-              <p>La Saison de Triomphe tiene un estilo Honey Beer.</p>
+              <p><%= descripcion %></p>
             </div>
         </div>
   
@@ -47,26 +46,26 @@
 
           <!-- TITULO -->
           <div class="titulo-producto">
-            <h1>Saison de Triomphe - Hoppy Saison (ABV 5.6% - 12x355ml)</h1>
+            <h1><%=nombre%></h1>
           </div>
   
           <!-- PRECIO NORMAL, DESCONTADO Y DESCUENTO -->
           <div class="fila-precio">
             <div class="precio-flex">
               <h5 class="precio-item">Individual</h5>
-              <h5 class="precio-item">$85</h5>
+              <h5 class="precio-item">$<%=precio%></h5>
               <div><h5 class="texto-invisible">¡10% off comprando 3 cervezas!</h5></div>
               <div><h5 class="texto-invisible-mobile">¡10% off!</h5></div>
             </div>
             <div class="precio-flex">
               <h5 class="precio-item">3 cervezas</h5>
-              <h5 class="precio-item">$225</h5>
+              <h5 class="precio-item">$<%=(precio*3)-(precio*3 /10)%></h5>
               <div><h5 class="texto-descuento">¡10% off comprando 3 cervezas!</h5></div>
               <div><h5 class="texto-descuento-mobile">¡10% off!</h5></div>
             </div>
             <div class="precio-flex">
               <h5 class="precio-item">6 cervezas</h5>
-              <h5 class="precio-item">$430</h5>
+              <h5 class="precio-item">$<%=(precio*6)-(precio*6 /15)%></h5>
               <div><h5 class="texto-descuento">¡15% off comprando 6 cervezas!</h5></div>
               <div><h5 class="texto-descuento-mobile">¡15% off!</h5></div>
             </div>
@@ -81,7 +80,7 @@
             </div>
             <div class="cantidad-input">
               <a href=""><span><i class="fas fa-minus"></i></span></a>
-              <input type="text" name="cantidad" placeholder="1">
+              <input type="text" name="cantidad" placeholder="<%=stock%>">
               <a href=""><span><i class="fas fa-plus"></i></span></a>
             </div>
           </div>
@@ -104,8 +103,7 @@
         </section>
         <div class="descripcion-producto-mobile">
           <h2>Descripción:</h2>
-          <p>Saison de Triomphe rescata el placer del momento. Una cerveza pensada para aquellas personas que valoran su tiempo libre, para quienes disfrutan de los pequeños momentos de la vida. La opción ideal para quienes quieren mimarse.</p>
-          <p>La Saison de Triomphe tiene un estilo Honey Beer.</p>
+          <p><%= descripcion %></p>
         </div>
       </section>
     </div>

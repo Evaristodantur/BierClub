@@ -15,7 +15,9 @@ let productsController = {
     productDetail : (req, res, next) => {
         let idUrl = req.params.id;
 
-        res.render('products/productDetail');
+        let productoBuscado = productsJson.find(producto => producto.id == idUrl);
+
+        productoBuscado ? (res.render("products/productDetail", productoBuscado)) : (res.render("error"));
     },
 
     //  /products/productAdd
