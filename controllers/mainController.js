@@ -4,6 +4,12 @@ let mainController = {
     },
     aboutUs : (req, res, next) => {
         res.render('aboutUs');
+    },
+    promociones : (req, res, next) => {
+        res.render('promociones');
+    },
+    suscripcion : (req, res, next) => {
+        res.render('suscripcion');
     }
 }
 
