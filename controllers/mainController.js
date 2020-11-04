@@ -10,6 +10,9 @@ let mainController = {
     },
     suscripcion : (req, res, next) => {
         res.render('suscripcion');
+    },
+    error : (req, res, next) => {
+        res.render('error');
     }
 }
 

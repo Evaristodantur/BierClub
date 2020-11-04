@@ -16,4 +16,7 @@ router.get('/promociones', mainController.promociones);
 /* GET Carrito page. */
 router.get('/suscripcion', mainController.suscripcion);
 
+/* GET ERROR page. */
+router.get('/error', mainController.error);
+
 module.exports = router;
