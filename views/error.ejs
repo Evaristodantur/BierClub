@@ -1,3 +1,28 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BierClub - Error 404</title>
+    <link rel="icon" href="/images/faviconLogo.ico"/>
+    <link rel='stylesheet' href='/stylesheets/nav.css'/>
+    <link rel='stylesheet' href='/stylesheets/styles.css'/>
+  </head>
+  <header>
+    <%- include('./partials/nav.ejs') %>
+    <br>
+  </header>
+  <body>
+      <div class="container-error">
+          <div class="container-titulo">
+            <h1>Error - 404</h1>
+            <h3>La pagina que estas buscando no existe o fue eliminada</h3>
+          </div>
+
+        <!-- PRODUCTOS RELACIONADOS -->
+            <h2 class="titulo-productosRelacionado">Productos que podrían interesarte</h2>
+          <%- include('./partials/productosRelacionados.ejs') %>
+    </div>
+        
+</body>
+</html>

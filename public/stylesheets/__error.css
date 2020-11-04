@@ -1,0 +1,32 @@
+/* ==========================================================================
+   PADDING TOP PARA ALEJAR EL CONTENIDO DEL NAV
+   ========================================================================== */
+div.container-error{
+    padding-top: 120px;
+}
+
+
+/* ==========================================================================
+   CONTAINER GENERAL
+   ========================================================================== */
+.container-error div.container-titulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container-error div.container-titulo h3{
+    margin-top: -15px;
+    text-align: center;
+}
+.container-error .titulo-productosRelacionado h2{
+    margin-bottom: -10px;
+}
+
+/* ==========================================================================
+   RESOLUCION 0-950PX
+   ========================================================================== */
+@media (max-width: 949px){
+    div.container-error{
+        padding-top: 40px;
+    }
+}

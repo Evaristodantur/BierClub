@@ -29,7 +29,6 @@ let mainController = {
     //  /prueba/:id
     prueba : (req, res, next) => {
         let idUrl = req.params.id;
-        if (idUrl > productsJson.length) { return (res.render('error')); }
 
         let productoBuscado = productsJson.find(producto => producto.id == idUrl);
 
@@ -38,6 +37,9 @@ let mainController = {
         res.render('prueba', productoBuscado);
         
         productoBuscado ? (res.render("prueba",productoBuscado)) : res.render("error")
+    },
+    error : (req, res, next) => {
+        res.render('error');
     }
 }
 

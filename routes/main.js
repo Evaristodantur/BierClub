@@ -22,5 +22,7 @@ router.get('/suscripcion', mainController.suscripcion);
 router.get('/prueba/:id', mainController.prueba);
 
 
+/* GET ERROR page. */
+router.get('/error', mainController.error);
 
 module.exports = router;
