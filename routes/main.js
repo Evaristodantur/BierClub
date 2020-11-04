@@ -4,16 +4,18 @@ var router = express.Router();
 //Controller
 let mainController = require('../controllers/mainController');
 
-/* GET home page. */
+
+
+/* GET    bierclub.com/      page. */
 router.get('/', mainController.index);
 
-/* GET About us page. */
+/* GET    /about-us       page. */
 router.get('/about-us', mainController.aboutUs);
 
-/* GET Carrito page. */
+/* GET    /promociones          page. */
 router.get('/promociones', mainController.promociones);
 
-/* GET Carrito page. */
+/* GET     /suscripcion      page. */
 router.get('/suscripcion', mainController.suscripcion);
 
 /* GET ERROR page. */
