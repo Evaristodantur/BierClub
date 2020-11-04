@@ -1,3 +1,9 @@
+const path = require('path');
+const fs = require('fs');
+
+//Agregado database JSON
+let productsJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8'));
+
 let productsController = {
     index : (req, res, next) => {
         res.render('products/products');
