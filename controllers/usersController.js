@@ -1,3 +1,9 @@
+const path = require('path');
+const fs = require('fs');
+
+//Agregado database JSON
+let perfilJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/perfil.json'), 'utf-8'));
+
 let usersController = {
 
     //  /users/register
@@ -14,9 +20,10 @@ let usersController = {
     perfil : (req, res, next) => {
       let idUrl = req.params.id;
 
-      console.log(idUrl);
+        let perfilBuscado = perfilJson.find(perfil => perfil.id == idUrl);
+        
+        perfilBuscado ? (res.render("users/perfil",perfilBuscado)) : res.render("error")
 
-      res.render('users/perfil');
     }
 }
 

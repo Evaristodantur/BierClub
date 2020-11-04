@@ -3,35 +3,35 @@
 		"id": 1,
 		"nombre": "Saison de Triomphe - Hoppy Saison 111111",
 		"imagen": "/images/productos/producto-1.jpg",
-		"stock": 33,
-		"descripcion": "Augusta Ada King, Condesa de Lovelace (Londres, 10 de diciembre de 1815-íd., 27 de noviembre de 1852), registrada al nacer como Augusta Ada Byron y conocida habitualmente como Ada Lovelace, fue una matemática, informática y escritora británica, célebre sobre todo por su trabajo acerca de la calculadora de uso general de Charles Babbage, la denominada máquina analítica. Entre sus notas sobre la máquina, se encuentra lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por una máquina, por lo que se la considera como la primera programadora de ordenadores."
+		"stock": 645645,
+		"descripcion": "Es la descripcion de prueba 1"
 	},
 	{
 		"id": 2,
 		"nombre": "Prueba 2",
 		"imagen": "/images/productos/producto-2.jpg",
-		"stock": 33,
-		"descripcion": "Augusta Ada King, Condesa de Lovelace (Londres, 10 de diciembre de 1815-íd., 27 de noviembre de 1852), registrada al nacer como Augusta Ada Byron y conocida habitualmente como Ada Lovelace, fue una matemática, informática y escritora británica, célebre sobre todo por su trabajo acerca de la calculadora de uso general de Charles Babbage, la denominada máquina analítica. Entre sus notas sobre la máquina, se encuentra lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por una máquina, por lo que se la considera como la primera programadora de ordenadores."
+		"stock": 2,
+		"descripcion": "Es la descripcion de prueba 2"
 	},
 	{
 		"id": 3,
 		"nombre": "Prueba 3",
 		"imagen": "/images/productos/producto-3.jpg",
-		"stock": 33,
-		"descripcion": "Augusta Ada King, Condesa de Lovelace (Londres, 10 de diciembre de 1815-íd., 27 de noviembre de 1852), registrada al nacer como Augusta Ada Byron y conocida habitualmente como Ada Lovelace, fue una matemática, informática y escritora británica, célebre sobre todo por su trabajo acerca de la calculadora de uso general de Charles Babbage, la denominada máquina analítica. Entre sus notas sobre la máquina, se encuentra lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por una máquina, por lo que se la considera como la primera programadora de ordenadores."
+		"stock": 883,
+		"descripcion": "Es la descripcion de prueba 3"
 	},
 	{
 		"id": 4,
 		"nombre": "Prueba 4",
 		"imagen": "/images/productos/producto-4.jpg",
-		"stock": 33,
-		"descripcion": "Augusta Ada King, Condesa de Lovelace (Londres, 10 de diciembre de 1815-íd., 27 de noviembre de 1852), registrada al nacer como Augusta Ada Byron y conocida habitualmente como Ada Lovelace, fue una matemática, informática y escritora británica, célebre sobre todo por su trabajo acerca de la calculadora de uso general de Charles Babbage, la denominada máquina analítica. Entre sus notas sobre la máquina, se encuentra lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por una máquina, por lo que se la considera como la primera programadora de ordenadores."
+		"stock": 10,
+		"descripcion": "Es la descripcion de prueba 4"
 	},
 	{
 		"id": 5,
 		"nombre": "Prueba 5",
 		"imagen": "/images/productos/producto-5.jpg",
-		"stock": 33,
-		"descripcion": "Augusta Ada King, Condesa de Lovelace (Londres, 10 de diciembre de 1815-íd., 27 de noviembre de 1852), registrada al nacer como Augusta Ada Byron y conocida habitualmente como Ada Lovelace, fue una matemática, informática y escritora británica, célebre sobre todo por su trabajo acerca de la calculadora de uso general de Charles Babbage, la denominada máquina analítica. Entre sus notas sobre la máquina, se encuentra lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por una máquina, por lo que se la considera como la primera programadora de ordenadores."
+		"stock": 45,
+		"descripcion": "Es la descripcion de prueba 5"
 	}
 ]
