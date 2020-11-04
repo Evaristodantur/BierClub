@@ -2,6 +2,22 @@
 
 ## Sprint 3
 
+### 4/11/20
+
+Terminado:
+  - Rutas separadas en carpeta users y carpeta products
+  - Controladores agregados: main, products y user
+  - Creación de la carpeta "Partials" y agregado en la misma: footer, nav, productosRelacionados y head
+  - Creamos pagina de error 404
+  - Creamos vistas nuevas (productEdit, suscripcion, perfil, productAdmin y products)
+  - Creamos base de controladores con su documentación (main, products y user)
+  - Creamos base de datos estatica con el .JSON de los productos y de perfil de usuario
+  
+Para hacer hoy:
+  - Modificar y actualizar productEdit
+  - Crear logica de productDetail/:id
+  - Crear /envios, css, html, route y controlador
+
 ### 3/11/20
 
 Terminado:
