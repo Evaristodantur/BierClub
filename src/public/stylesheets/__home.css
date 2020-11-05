@@ -155,11 +155,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+.home section div.banner-novedades a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
 
 .home section div.banner-novedades img.img-banner {
     margin-top: 2%;
-    width: 90%;
+    width: 100%;
 }
 
 /* ==========================================================================
@@ -328,11 +336,6 @@
         margin-bottom: 3%;
     }
 
-    /*BANNER - NOVEDADES*/
-    .home section div.banner-novedades img.img-banner {
-        width: 95%;
-    }
-
     /*NAV - MEJORES PRODUCTOS*/
     .home section.nav-MejoresProductos ul.mejores-productos {
         display: flex;
@@ -401,11 +404,6 @@
     .home main section.productos div.btnAnt i.fa-chevron-circle-left , 
     .home main section.productos div.btnSig i.fa-chevron-circle-right {
         font-size: 35px;
-    }
-
-    /*BANNER - NOVEDADES*/
-    .home section div.banner-novedades img.img-banner {
-        width: 95%;
     }
 
     /*NAV - MEJORES PRODUCTOS*/
@@ -482,11 +480,6 @@
     .home main section.productos div.btnAnt i.fa-chevron-circle-left , 
     .home main section.productos div.btnSig i.fa-chevron-circle-right {
         font-size: 35px;
-    }
-
-    /*BANNER - NOVEDADES*/
-    .home section div.banner-novedades img.img-banner {
-        width: 98%;
     }
 
     /*NAV - MEJORES PRODUCTOS*/
