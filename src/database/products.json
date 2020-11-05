@@ -1,7 +1,7 @@
 [
 	{
 		"id": 1,
-		"nombre": "Saison de Triomphe - Hoppy Saison 111111",
+		"nombre": "ippa Sippa (TDH Imperial Aussie IPA)",
 		"imagen": "/images/productos/producto-1.jpg",
 		"precio": 90,
 		"categoria":"Lupuladas",   
@@ -10,7 +10,7 @@
 	},
 	{
 		"id": 2,
-		"nombre": "Prueba 2",
+		"nombre": "Saison de Triomphe - Hoppy Saison",
 		"imagen": "/images/productos/producto-2.jpg",
 		"precio": 120,
 		"categoria":"Lupuladas",   
@@ -19,7 +19,7 @@
 	},
 	{
 		"id": 3,
-		"nombre": "Prueba 3",
+		"nombre": "William Wallace Scottish",
 		"imagen": "/images/productos/producto-3.jpg",
 		"precio": 82,
 		"categoria":"No Lupuladas",   
@@ -28,7 +28,7 @@
 	},
 	{
 		"id": 4,
-		"nombre": "Prueba 4",
+		"nombre": "Mumbai 1947",
 		"imagen": "/images/productos/producto-4.jpg",
 		"precio": 99,
 		"categoria":"No Lupuladas",   
@@ -37,20 +37,11 @@
 	},
 	{
 		"id": 5,
-		"nombre": "Prueba 5",
+		"nombre": "German Pils",
 		"imagen": "/images/productos/producto-5.jpg",
 		"precio": 130,
 		"categoria":"Lupuladas",   
 		"stock": 45,
 		"descripcion": "Es la descripcion de prueba 5"
-	},
-	{
-		"id": 6,
-		"nombre": "Prueba 6",
-		"imagen": "/images/productos/detalle.jpg",
-		"precio": 200,
-		"categoria":"Lupuladas",   
-		"stock": 666,
-		"descripcion": "Es la descripcion de prueba 6"
 	}
 ]

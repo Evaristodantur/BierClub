@@ -40,13 +40,13 @@
           </div>
         
           <article class="producto">
-            <a href="/products/productDetail/1">
-              <img src="/images/productos/producto-1.jpg" alt="">
+            <a href="/products/productDetail/<%= productos[0].id %>">
+              <img src="<%= productos[0].imagen %>" alt="">
             </a>
-            <h2 class="producto-titulo">Super Refreshing IPA - Hybrid IPA - 7% ABV x12</h2>
+            <h2 class="producto-titulo"><%= productos[0].nombre %></h2>
             <div class="precio-stock">
               <div>
-                <h4 class="etiqueta-precio">$135</h4>
+                <h4 class="etiqueta-precio">$<%= productos[0].precio %></h4>
               </div>
               <div>
                 <h5 class="etiqueta-stock">Stock Disponible</h5>
@@ -56,13 +56,13 @@
           </article>
 
           <article class="producto resolucionMenorA320">
-            <a href="/products/productDetail/2">
-              <img src="/images/productos/producto-2.jpg" alt="">
+            <a href="/products/productDetail/<%= productos[1].id %>">
+              <img src="<%= productos[1].imagen %>" alt="">
             </a>
-            <h2 class="producto-titulo">Saison de Triomphe - Hoppy Saison (ABV 5.6% - 12x355ml)</h2>
+            <h2 class="producto-titulo"><%= productos[1].nombre %></h2>
             <div class="precio-stock">
               <div>
-                <h4 class="etiqueta-precio">$160</h4>
+                <h4 class="etiqueta-precio">$<%= productos[1].precio %></h4>
               </div>
               <div>
                 <h5 class="etiqueta-stock">Stock Disponible</h5>
@@ -72,13 +72,13 @@
           </article>
 
           <article class="producto resolucionMenorA768">
-            <a href="/products/productDetail/3">
-              <img src="/images/productos/producto-3.jpg" alt="">
+            <a href="/products/productDetail/<%= productos[2].id %>">
+              <img src="<%= productos[2].imagen %>" alt="">
             </a>
-            <h2 class="producto-titulo">Septic Tank - West Coast IPA (12x355ml)</h2>
+            <h2 class="producto-titulo"><%= productos[2].nombre %></h2>
             <div class="precio-stock">
               <div>
-                <h4 class="etiqueta-precio">$149.99</h4>
+                <h4 class="etiqueta-precio">$<%= productos[2].precio %></h4>
               </div>
               <div>
                 <h5 class="etiqueta-stock">Stock Disponible</h5>
@@ -88,13 +88,13 @@
           </article>
 
           <article class="producto resolucionMenorA1024">
-            <a href="/products/productDetail/4">
-              <img src="/images/productos/producto-4.jpg" alt="">
+            <a href="/products/productDetail/<%= productos[3].id %>">
+              <img src="<%= productos[3].imagen %>" alt="">
             </a>
-            <h2 class="producto-titulo">Rippa Sippa (TDH Imperial Aussie IPA) - 8.5 % ABV x12</h2>
+            <h2 class="producto-titulo"><%= productos[3].nombre %></h2>
             <div class="precio-stock">
               <div>
-                <h4 class="etiqueta-precio">$85</h4>
+                <h4 class="etiqueta-precio">$<%= productos[3].precio %></h4>
               </div>
               <div>
                 <h5 class="etiqueta-stock">Stock Disponible</h5>
@@ -104,13 +104,13 @@
           </article>
 
           <article class="producto resolucionMenorA1200">
-            <a href="/products/productDetail/5">
-              <img src="/images/productos/producto-5.jpg" alt="">
+            <a href="/products/productDetail/<%= productos[4].id %>">
+              <img src="<%= productos[4].imagen %>" alt="">
             </a>
-            <h2 class="producto-titulo">Cachorros Inflados (Hazy Session IPA) - 4.5 % ABV x12</h2>
+            <h2 class="producto-titulo"><%= productos[4].nombre %></h2>
             <div class="precio-stock">
               <div>
-                <h4 class="etiqueta-precio">$99.99</h4>
+                <h4 class="etiqueta-precio">$<%= productos[4].precio %></h4>
               </div>
               <div>
                 <h5 class="etiqueta-stock">Stock Disponible</h5>
@@ -169,13 +169,13 @@
           </div>
         
           <article class="producto">
-            <a href="/products/productDetail/1">
-              <img src="/images/productos/producto-1.jpg" alt="">
+            <a href="/products/productDetail/<%= productos[1].id %>">
+              <img src="<%= productos[1].imagen %>" alt="">
             </a>
-            <h2 class="producto-titulo">Super Refreshing IPA - Hybrid IPA - 7% ABV x12</h2>
+            <h2 class="producto-titulo"><%= productos[1].nombre %></h2>
             <div class="precio-stock">
               <div>
-                <h4 class="etiqueta-precio">$135</h4>
+                <h4 class="etiqueta-precio">$<%= productos[1].precio %></h4>
               </div>
               <div>
                 <h5 class="etiqueta-stock">Stock Disponible</h5>
@@ -185,13 +185,13 @@
           </article>
 
           <article class="producto resolucionMenorA320">
-            <a href="/products/productDetail/2">
-              <img src="/images/productos/producto-2.jpg" alt="">
+            <a href="/products/productDetail/<%= productos[2].id %>">
+              <img src="<%= productos[2].imagen %>" alt="">
             </a>
-            <h2 class="producto-titulo">Saison de Triomphe - Hoppy Saison (ABV 5.6% - 12x355ml)</h2>
+            <h2 class="producto-titulo"><%= productos[2].nombre %></h2>
             <div class="precio-stock">
               <div>
-                <h4 class="etiqueta-precio">$160</h4>
+                <h4 class="etiqueta-precio">$<%= productos[2].precio %></h4>
               </div>
               <div>
                 <h5 class="etiqueta-stock">Stock Disponible</h5>
@@ -201,13 +201,13 @@
           </article>
 
           <article class="producto resolucionMenorA768">
-            <a href="/products/productDetail/3">
-              <img src="/images/productos/producto-3.jpg" alt="">
+            <a href="/products/productDetail/<%= productos[4].id %>">
+              <img src="<%= productos[4].imagen %>" alt="">
             </a>
-            <h2 class="producto-titulo">Septic Tank - West Coast IPA (12x355ml)</h2>
+            <h2 class="producto-titulo"><%= productos[4].nombre %></h2>
             <div class="precio-stock">
               <div>
-                <h4 class="etiqueta-precio">$149.99</h4>
+                <h4 class="etiqueta-precio">$<%= productos[4].precio %></h4>
               </div>
               <div>
                 <h5 class="etiqueta-stock">Stock Disponible</h5>
@@ -217,13 +217,13 @@
           </article>
 
           <article class="producto resolucionMenorA1024">
-            <a href="/products/productDetail/4">
-              <img src="/images/productos/producto-4.jpg" alt="">
+            <a href="/products/productDetail/<%= productos[0].id %>">
+              <img src="<%= productos[0].imagen %>" alt="">
             </a>
-            <h2 class="producto-titulo">Rippa Sippa (TDH Imperial Aussie IPA) - 8.5 % ABV x12</h2>
+            <h2 class="producto-titulo"><%= productos[0].nombre %></h2>
             <div class="precio-stock">
               <div>
-                <h4 class="etiqueta-precio">$85</h4>
+                <h4 class="etiqueta-precio">$<%= productos[0].precio %></h4>
               </div>
               <div>
                 <h5 class="etiqueta-stock">Stock Disponible</h5>
@@ -233,13 +233,13 @@
           </article>
 
           <article class="producto resolucionMenorA1200">
-            <a href="/products/productDetail/5">
-              <img src="/images/productos/producto-5.jpg" alt="">
+            <a href="/products/productDetail/<%= productos[3].id %>">
+              <img src="<%= productos[3].imagen %>" alt="">
             </a>
-            <h2 class="producto-titulo">Cachorros Inflados (Hazy Session IPA) - 4.5 % ABV x12</h2>
+            <h2 class="producto-titulo"><%= productos[3].nombre %></h2>
             <div class="precio-stock">
               <div>
-                <h4 class="etiqueta-precio">$99.99</h4>
+                <h4 class="etiqueta-precio">$<%= productos[3].precio %></h4>
               </div>
               <div>
                 <h5 class="etiqueta-stock">Stock Disponible</h5>
