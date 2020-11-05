@@ -8,27 +8,26 @@ let mainController = {
     
     //  Home
     index : (req, res, next) => {
-        function shuffle(array) {
-            var currentIndex = array.length, temporaryValue, randomIndex;
+
+        function arrayDesordenado(array) {
+            let elementoActual = array.length, almacenamientoTemporal, random;
           
-            // While there remain elements to shuffle...
-            while (0 !== currentIndex) {
+            // Mientras queden elementos sin desordenar
+            while (0 !== elementoActual) {
           
-              // Pick a remaining element...
-              randomIndex = Math.floor(Math.random() * currentIndex);
-              currentIndex -= 1;
+              // Agarra un elemento y lo hace random
+              random = Math.floor(Math.random() * elementoActual);
+              elementoActual -= 1;
           
-              // And swap it with the current element.
-              temporaryValue = array[currentIndex];
-              array[currentIndex] = array[randomIndex];
-              array[randomIndex] = temporaryValue;
+              // lo cambia por el elemento actual
+              almacenamientoTemporal = array[elementoActual];
+              array[elementoActual] = array[random];
+              array[random] = almacenamientoTemporal;
             }
-          
             return array;
           }
 
-          shuffle(productsJson)
-        res.render('index', {productos : productsJson});
+        res.render('index', {productos : arrayDesordenado(productsJson)});
     },
 
     //  /about-us
