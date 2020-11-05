@@ -2,6 +2,17 @@
 
 ## Sprint 3
 
+### 5/11/20
+
+Terminado:
+  - productEdit actualizado
+  - Logica de productDetail/:id empezada con: ID, nombre, precio, stock, y foto
+  - /envios empezada: HTML y css
+
+Para hacer hoy:
+  - Logica de productAdd
+  - Logica de register (sin validación de datos)
+
 ### 4/11/20
 
 Terminado:
