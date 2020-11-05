@@ -2,13 +2,20 @@ const path = require('path');
 const fs = require('fs');
 
 //Agregado database JSON
-let perfilJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/perfil.json'), 'utf-8'));
+let usuariosJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8'));
 
 let usersController = {
 
     //  /users/register
-    register : (req, res, next) => {
+    create : (req, res, next) => {
       res.render('users/register');
+    },
+
+    store : (req, res, next) => {
+      usuariosJson.push(req.body);
+      let usersJSON = JSON.stringify(usuariosJson);
+      fs.writeFileSync(__dirname + "/../database/usuarios.json", usersJSON);
+      res.send('Se ha registrado' + req.body.nombre);
     },
 
     //  /users/login
