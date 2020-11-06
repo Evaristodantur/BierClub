@@ -20,11 +20,12 @@ let productsController = {
         productoBuscado ? (res.render("products/productDetail", productoBuscado)) : (res.render("error"));
     },
 
-    createProductAdd : (req, res, next) => {
+    // Creacion del producto
+    createProduct : (req, res, next) => {
         res.render('products/productAdd');
       },
   
-    storeProductAdd : (req, res, next) => {
+    storeProduct : (req, res, next) => {
         let idMax = 0;
 
         //Creacion de ID para los productos nuevos
@@ -46,14 +47,43 @@ let productsController = {
         res.redirect('../');
     },
 
+    // Pagina de Modificacion del producto
+    editProduct : (req, res, next) => {
+
+        let idUrl = req.params.id;
+
+        let productoEncontrado = productsJson.find( producto => producto.id == idUrl );
+
+        productoEncontrado ? (res.render('products/productEdit', productoEncontrado)) : res.render('error')
+    },
+
+    // Actualizacion del producto
+    updateProduct : (req, res, next) => {
+        let idUrl = req.params.id;
+
+        let productosModificado = productsJson.map( function(producto) {
+            if (producto.id == idUrl) {
+                let productoID = producto.id;
+                producto = req.body;
+                producto.id = productoID;
+            }
+            return producto;
+        });
+
+        let productosModificadoJSON = JSON.stringify(productosModificado);
+        fs.writeFileSync(__dirname + "/../database/products.json", productosModificadoJSON);
+
+        res.redirect('../');
+    },
+
+    //  Borrar Producto
+    deleteProduct : (req, res, next) => {
+        res.render('products/productEdit');
+    },
+
     //  /products/productAdd
     productCart : (req, res, next) => {
         res.render('products/productCart');
-    },
-
-    //  /products/productEdit
-    productEdit : (req, res, next) => {
-        res.render('products/productEdit');
     },
 
     //  /products/productAdmin

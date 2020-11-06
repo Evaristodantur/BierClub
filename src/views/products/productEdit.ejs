@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>BierClub - Modificar producto</title>
+    <title>BierClub - Editar producto</title>
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script>tinymce.init({selector:'textarea'});</script>
     <%- include('../partials/head.ejs') %>
@@ -21,10 +21,10 @@
     <div class="productAdd">
 
       <!-- TITULO -->
-      <h1>Modifique su producto</h1>
+      <h1>Edite su producto</h1>
 
       <!-- FORMULARIO -->
-      <form class="formulario-carga" action="" method="">
+      <form class="formulario-carga" action="/products/productEdit/<%= id %> " method="POST">
 
         <!-- BLOQUE DE IMAGEN, NOMBRE, PRECIO Y CANTIDAD -->
         <div class="flex-imgPrev-detalle">
@@ -33,19 +33,19 @@
             <!-- NOMBRE -->
             <div class="nombre">
               <label for="nombreProducto">Nombre del producto:</label>
-              <input id="nombreProducto" type="text" placeholder="Nombre">
+              <input id="nombreProducto" type="text" name="nombre" placeholder="Nombre" value="<%= nombre %>">
             </div>
             
             <!-- PRECIO -->
             <div class="precio">
               <label for="precio">Precio:</label>
-              <input id="precio" type="text" placeholder="Precio">
+              <input id="precio" type="text" name="precio" placeholder="Precio" value="<%= precio %>">
             </div>
             
             <!-- CANTIDAD -->
             <div class="cantidad">
               <label for="cantidad">Cantidad:</label>
-              <input id="cantidad" type="text" placeholder="Cantidad">
+              <input id="cantidad" type="text" name="stock" placeholder="Cantidad" value="<%= stock %>">
             </div>
   
           </div>
@@ -68,16 +68,15 @@
             <select class="select-categoria" name="categoria" id="categoria">
               <option value="cerveza">Cerveza</option>
               <option value="vino">Vino</option>
-              <option value="licor">Licor</option>
-              <option value="awa">Awa</option>
-              <option value="pcGaymer">PC Gaymer</option>
+              <option value="lupulada">Lupulada</option>
+              <option value="no lupulada">No Lupulada</option>
             </select>
           </div>
 
           
         <!-- SUBIR IMAGEN -->
         <div class="imgFile">
-          <input id="imagen" type="file" size="60">
+          <input id="imagen" type="file" size="60" name="imagen">
         </div>
 
         </div>
@@ -85,8 +84,8 @@
         <!-- DESCRIPCION -->
         <textarea placeholder="Descripción del articulo" name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
           <div class="flex-botones-publicar">
-              <button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar Cambios
-              <button class="btn-publicar" type="submit" , id="publicar" , value="publicar">  Editar Producto
+              <button class="btn-publicar" type="submit" , id="publicar" , value="guardar"> Guardar
+              <!--<button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar y Agregar otro producto-->
               <button class="btn-publicar btn-reset" type="reset" , id="reset" , value="reset"> Borrar Producto
           </div>
         

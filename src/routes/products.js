@@ -16,13 +16,16 @@ router.get('/productDetail/:id', productsController.productDetail);
 router.get('/productCart', productsController.productCart);
   
 /* GET     /products/productAdd      page. */
-router.get('/productAdd', productsController.createProductAdd);
+router.get('/productAdd', productsController.createProduct);
 
 /* GET     /products/productAdd      page. */
-router.post('/productAdd', productsController.storeProductAdd);
+router.post('/productAdd', productsController.storeProduct);
 
 /* GET     /products/productEdit      page. */
-router.get('/productEdit', productsController.productEdit);
+router.get('/productEdit/:id', productsController.editProduct);
+
+/* GET     /products/productEdit      page. */
+router.post('/productEdit/:id', productsController.updateProduct);
 
 /* GET     /products/productAdming      page. */
 router.get('/productAdmin', productsController.productAdmin);
