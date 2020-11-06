@@ -16,12 +16,33 @@
 /* ==========================================================================
    GENERAL -LOGIN-REGISTER
    ========================================================================== */
-   body .products-catalogo{
+body .products-catalogo{
     /* Display & Box Model */
     padding-top: 10rem;
     padding-bottom: 3%;
 }
+/* ==========================================================================
+   SECCION  ORDENAR y AGREGAR PRODUCTO
+   ========================================================================== */
+.seccion-ordenar-agregarProducto {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 
+}
+
+.ordenamiento {
+    width: 90%;
+}
+
+.agregarProducto {
+    width: 10%;
+}
+
+/* ==========================================================================
+   SECCION FILTRAR y MOSTRAR PRODUCTO
+   ========================================================================== */
 .seccion-filtro-muestra-productos {
     display: flex;
     width: 100%;
@@ -35,3 +56,10 @@
 .columna-productos {
     width: 75%;
 }
+
+/*
+CERVECERIAS
+PROVINCIA DE ORIGEN
+FAMILIA
+VOLUMEN
+PRECIOS*/
