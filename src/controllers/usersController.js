@@ -11,17 +11,48 @@ let usersController = {
       res.render('users/register');
     },
 
+
+
+    //  /users/register
     store : (req, res, next) => {
-      usuariosJson.push(req.body);
+      // ID maximo para reemplazar
+      let idMax = 0;
+
+      //For para buscar el ID mas alto, y reemplazar idMax por el ID mas alto
+      for(let i = 0 ; i < usuariosJson.length ; i++){
+        if(usuariosJson[i].id > idMax){
+          idMax = usuariosJson[i].id;
+        }
+      }
+
+      //Sumarle 1 al ID mas alto, para crear un producto nuevo
+      idMax = idMax + 1;
+      let sumarUsuario = req.body;
+      sumarUsuario.id = idMax;
+
+      //Sumar el usuario al array
+      usuariosJson.push(sumarUsuario);
+
+      //Convierte el Array en JSON
       let usersJSON = JSON.stringify(usuariosJson);
+
+      //Sobreescribe el archivo
       fs.writeFileSync(__dirname + "/../database/usuarios.json", usersJSON);
-      res.send('Se ha registrado' + req.body.nombre);
+
+      //Te envia a la vista una vez el form fue completado
+      res.redirect("../");
     },
+
+
+
 
     //  /users/login
     login : (req, res, next) => {
       res.render('users/login');
     },
+
+
+
 
     //  /users/perfil/:id
     perfil : (req, res, next) => {

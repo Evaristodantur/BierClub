@@ -1,1 +1,17 @@
-[{"nombre":"adw","username":"adw","email":"adw@dwa","contrasenia":"daw","confirmarContrasenia":"adw"}]
+[
+    {
+        "nombre": "Evaristo Dantur",
+        "email": "evaristo@dantur.com",
+        "contrasenia": "",
+        "confirmarContrasenia": "",
+        "id": 1
+    },
+    {
+        "nombre": "Evaristo Dantur",
+        "email": "evaristo@dantur.com",
+        "contrasenia": "",
+        "confirmarContrasenia": "",
+        "termino-condiciones": "terminos",
+        "id": 2
+    }
+]
