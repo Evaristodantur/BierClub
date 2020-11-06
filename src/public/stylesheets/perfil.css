@@ -13,9 +13,11 @@ body .login-register{
     position:fixed;
     background-color: whitesmoke;
     left:50%;
-    top:47%;
+    top:50%;
     transform: translate(-50%, -50%);
-    transition: 0.8s;
+    z-index: 9;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 .perfil-total{
     display: flex;
@@ -62,10 +64,37 @@ body .login-register{
 .campo1{
     margin-top: 30px;
 }
-.ultimoCampo{
-    margin-bottom: 30px;
+.cerrar-modificar:hover{
+    cursor: pointer;
 }
 .cerrar-modificar{
-    right: 3%;
-    top: 3%;
+    display: inline-block;
+    float:right;
+    margin-right: 12px;
+    margin-top: 12px;
+}
+.login-register .formulario-total form.formulario div.campo-input button.ultimoCampo{
+    margin-bottom: 30px;
+    background-color: red;
+    opacity: 0.6;
+}
+.login-register .formulario-total form.formulario div.campo-input button.modificar-datos{
+    background-color: blue;
+    opacity: 0.6;
+}
+
+@media(min-width: 769px) and (max-width: 1400px){
+    .formulario-total{
+        width: 57%;
+    }
+}
+@media(min-width: 480px) and (max-width: 768px){
+    .formulario-total{
+        width: 80%;
+    }
+}
+@media(max-width: 479px){
+    .formulario-total{
+        width: 94%;
+    }
 }
