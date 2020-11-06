@@ -9,6 +9,13 @@ body .login-register{
 
 .formulario-total{
     display:none;
+    width:40%;
+    position:absolute;
+    background-color: red;
+    left:50%;
+    top:47%;
+    transform: translate(-50%, -50%);
+    transition: 0.8s;
 }
 .perfil-total{
     display: flex;
@@ -16,8 +23,7 @@ body .login-register{
     text-align: center;
 }
 .perfil-izquierda{
-    width: 23%;
-    border: 1px solid black;
+    width: 25%;
 }
 .perfil-derecha{
     width: 55%;
@@ -28,6 +34,28 @@ body .login-register{
 }
 .datos-personales{
     display:flex;
-    justify-content: space-evenly;
-    padding-inline-start: 0px;
+    justify-content: space-between;
+    padding-inline-start: 6%;
+    padding-inline-end: 6%;
+}
+.perfil-izquierda hr{
+    width:90%;
+}
+.perfil-izquierda a{
+    width:60%;
+    color:white;
+    background-color: #DAA520;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.showModificar {
+    display: inline-block;
+  }
+.login-register .formulario-total form.formulario div.campo-input input.input-registro, 
+.login-register .formulario-total form.formulario div.campo-input button.input-button {
+    width: 85%;
+}
+.campo1{
+    margin-top: 30px;
 }
