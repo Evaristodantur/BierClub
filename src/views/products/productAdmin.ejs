@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>BierClub - Administrador de productos</title>
-    <%- include('../partials/head.ejs') %>
-  </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BierClub - Product Admin</title>
+	<link rel="icon" href="/images/faviconLogo.ico"/>
+	<link rel='stylesheet' href='/stylesheets/nav.css'/>
+	<link rel='stylesheet' href='/stylesheets/__products.css'/>
+	<link rel='stylesheet' href='/stylesheets/__footer.css'/>
+	<%- include('../partials/head.ejs') %>
+</head>
 
-  <body>
-    <header>
-      <%- include('../partials/nav.ejs') %>
-    </header>
-    <footer>
-      <%- include('../partials/footer.ejs') %>
-    </footer>
-  
-  </body>
+<body>
+	<header>
+		<%- include('../partials/nav.ejs') %>
+	</header>
+	
+		<div class="products-catalogo">
+			
+			<section>
+				<label for="ordenar">Ordenar:</label>
+            	<select class="select-ordenar" name="ordenar" id="ordenar">
+              		<option value="nuevos-productos">Nuevos Productos</option>
+              		<option value="mas-vendidos">Mas Vendidos</option>
+              		<option value="populares">Populares</option>
+              		<option value="especiales">Especiales</option>
+            	</select>
+			</section>
+			
+			<main class="seccion-filtro-muestra-productos">
+				<section class="columna-filtro">
+					
+						<p>Columna izq para filtrar productos</p>
+					
+				</section>
+
+				<section class="columna-productos">
+					
+						<p>Columna der para mostrar productos</p>
+					
+				</section>
+			</main>
+
+		</div>
+
+	<footer>
+		<%- include('../partials/footer.ejs') %>
+	</footer>
+
+</body>
 </html>

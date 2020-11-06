@@ -6,12 +6,15 @@ let productsJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../databa
 
 let productsController = {
 
+
+    
+
     //  /products
     index : (req, res, next) => {
         res.render('products/products');
     },
 
-    //  /products/productDetail/:id
+    //  /products/productAdd - Pagina visual de agregar el producto
     productDetail : (req, res, next) => {
         let idUrl = req.params.id;
 
@@ -20,7 +23,7 @@ let productsController = {
         productoBuscado ? (res.render("products/productDetail", productoBuscado)) : (res.render("error"));
     },
 
-    // Creacion del producto
+    // /products/productEdit/:id - Crea el producto
     createProduct : (req, res, next) => {
         res.render('products/productAdd');
       },
@@ -44,10 +47,14 @@ let productsController = {
 
         let productoConvertidosAJSON = JSON.stringify(productsJson);
         fs.writeFileSync(__dirname + "/../database/products.json", productoConvertidosAJSON);
-        res.redirect('../');
+        res.redirect('/products/productAdmin');
     },
 
-    // Pagina de Modificacion del producto
+
+
+
+
+    // /products/productEdit/:id - Pagina visual de Modificacion del producto
     editProduct : (req, res, next) => {
 
         let idUrl = req.params.id;
@@ -57,7 +64,7 @@ let productsController = {
         productoEncontrado ? (res.render('products/productEdit', productoEncontrado)) : res.render('error')
     },
 
-    // Actualizacion del producto
+    // /products/productEdit/:id - Actualizacion/Modificacion del producto
     updateProduct : (req, res, next) => {
         let idUrl = req.params.id;
 
@@ -73,10 +80,14 @@ let productsController = {
         let productosModificadoJSON = JSON.stringify(productosModificado);
         fs.writeFileSync(__dirname + "/../database/products.json", productosModificadoJSON);
 
-        res.redirect('../');
+        res.redirect('/products/productAdmin');
     },
 
-    //  Borrar Producto
+
+
+
+
+    // /products/productEdit/borrar/:id - Borrar Producto
     deleteProduct : (req, res, next) => {
         let idUrl = req.params.id;
 
@@ -87,18 +98,21 @@ let productsController = {
         let borrarProductoJSON = JSON.stringify(borrarProducto);
         fs.writeFileSync(__dirname + "/../database/products.json", borrarProductoJSON);
 
-        res.redirect('/products');
+        res.redirect('/products/productAdmin');
     },
 
-    //  /products/productAdd
-    productCart : (req, res, next) => {
-        res.render('products/productCart');
-    },
+
+
 
     //  /products/productAdmin
     productAdmin : (req, res, next) => {
         res.render('products/productAdmin');
-    }
+    },
+
+    //  /products/productCart
+    productCart : (req, res, next) => {
+        res.render('products/productCart');
+    }    
 }
 
 module.exports = productsController;
