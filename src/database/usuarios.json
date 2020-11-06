@@ -1,17 +1,1 @@
-[
-    {
-        "nombre": "Evaristo Dantur",
-        "email": "evaristo@dantur.com",
-        "contrasenia": "",
-        "confirmarContrasenia": "",
-        "id": 1
-    },
-    {
-        "nombre": "Evaristo Dantur",
-        "email": "evaristo@dantur.com",
-        "contrasenia": "",
-        "confirmarContrasenia": "",
-        "termino-condiciones": "terminos",
-        "id": 2
-    }
-]
+[{"nombre":"Evaristo Dantur","email":"evaristo@dantur.com","contrasenia":"","confirmarContrasenia":"","id":1},{"nombre":"Evaristo Dantur","email":"evaristo@dantur.com","contrasenia":"","confirmarContrasenia":"","termino-condiciones":"terminos","id":2},{"nombre":"adsawdwadads","email":"evaristo@dantur.com","contrasenia":"adw","confirmarContrasenia":"adw","termino-condiciones":"terminos","id":3},{"nombre":"adsawdwadads","email":"evaristo@dantur.com","contrasenia":"","confirmarContrasenia":"","termino-condiciones":"terminos","id":5},{"nombre":"adsawdwadads","email":"evaristo@dantur.com","contrasenia":"","confirmarContrasenia":"","termino-condiciones":"terminos","id":6},{"nombre":"adsawdwadads","email":"evaristo@dantur.com","contrasenia":"dasadsasdads","confirmarContrasenia":"adsadsasadsdas","termino-condiciones":"terminos","id":7},{"nombre":"adsawdwadads","email":"evaristo@dantur.com","contrasenia":"","confirmarContrasenia":"","termino-condiciones":"terminos","id":8},{"nombre":"adsawdwadads","email":"evaristo@dantur.com","contrasenia":"","confirmarContrasenia":"","termino-condiciones":"terminos","id":9}]

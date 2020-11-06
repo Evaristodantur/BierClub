@@ -58,9 +58,9 @@ let usersController = {
     perfil : (req, res, next) => {
       let idUrl = req.params.id;
 
-        let perfilBuscado = perfilJson.find(perfil => perfil.id == idUrl);
+        let usuarioBuscado = usuariosJson.find(usuario => usuario.id == idUrl);
         
-        perfilBuscado ? (res.render("users/perfil",perfilBuscado)) : res.render("error")
+        usuarioBuscado ? (res.render("users/perfil",usuarioBuscado)) : res.render("error")
 
     }
 }
