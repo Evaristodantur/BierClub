@@ -114,6 +114,15 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
 }
 
 /* ==========================================================================
+   BLOQUE DESCRIPCION DEL PRODUCTO
+   ========================================================================== */
+.productAdd .formulario-carga .descripcionDelProducto {
+    width: 50%;
+    height: 100px;
+    resize: none;
+}
+
+/* ==========================================================================
    BLOQUE BOTONES PUBLICAR
    ========================================================================== */
 .productAdd div.flex-botones-publicar {
@@ -200,6 +209,11 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
         /* Posicionamiento */
         left: 100px;
     }
+
+    /*DESCRIPCION DEL PRODUCTO*/
+    .productAdd .formulario-carga .descripcionDelProducto {
+        width: 100%;
+    }
 }
 
 
@@ -210,6 +224,10 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
    RESOLUCION: 768 a 1024
    ========================================================================== */
 @media (min-width:768px) and (max-width: 1024px) {
+    .productAddtop{
+        padding-top: 150px;
+    }
+    
     /*BLOQUE NOMBRE-PRECIO-CANTIDAD-IMAGEN PREVISUALIZADA*/
     .productAdd form.formulario-carga div.flex-imgPrev-detalle {
         flex-direction: column;
@@ -260,6 +278,11 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
         /* Posicionamiento */
         left: 55px;
     }
+
+    /*DESCRIPCION DEL PRODUCTO*/
+    .productAdd .formulario-carga .descripcionDelProducto {
+        width: 100%;
+    }
 }
 
 
@@ -269,6 +292,10 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
    RESOLUCION: 768 hacia 480 - mantiene propiedades
    ========================================================================== */
 @media (max-width: 768px) {
+    .productAddtop{
+        padding-top: 100px;
+    }
+
     /*BLOQUE NOMBRE-PRECIO-CANTIDAD-IMAGEN PREVISUALIZADA*/
     .productAdd form.formulario-carga div.flex-imgPrev-detalle {
         flex-direction: column;
@@ -327,6 +354,11 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
         left: 55px;
     }
 
+    /*DESCRIPCION DEL PRODUCTO*/
+    .productAdd .formulario-carga .descripcionDelProducto {
+        width: 100%;
+    }
+
     /*BLOQUE BOTONES PUBLICAR*/
     .productAdd div.flex-botones-publicar {
         display: flex;
@@ -350,7 +382,7 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
 @media (max-width: 480px){
     /*CONTAINER GENERAL*/
     .productAdd {
-        width: 88%;
+        width: 85%;
         margin-left: 4%;
         margin-right: 0;
     }
@@ -365,6 +397,11 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
     div.campo-nombre-precio-cantidad .nombre input#nombreProducto, 
     div.campo-nombre-precio-cantidad .precio input#precio, 
     div.campo-nombre-precio-cantidad .cantidad input#cantidad {
+        width: 100%;
+    }
+
+    /*DESCRIPCION DEL PRODUCTO*/
+    .productAdd .formulario-carga .descripcionDelProducto {
         width: 100%;
     }
 

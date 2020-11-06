@@ -6,7 +6,7 @@
     <title>BierClub - Product Admin</title>
 	<link rel="icon" href="/images/faviconLogo.ico"/>
 	<link rel='stylesheet' href='/stylesheets/nav.css'/>
-	<link rel='stylesheet' href='/stylesheets/__products.css'/>
+	<link rel='stylesheet' href='/stylesheets/__products-productsAdmin.css'/>
 	<link rel='stylesheet' href='/stylesheets/__footer.css'/>
 	<%- include('../partials/head.ejs') %>
 </head>
@@ -17,21 +17,33 @@
 	</header>
 	
 		<div class="products-catalogo">
-			
-			<section>
-				<label for="ordenar">Ordenar:</label>
-            	<select class="select-ordenar" name="ordenar" id="ordenar">
-              		<option value="nuevos-productos">Nuevos Productos</option>
-              		<option value="mas-vendidos">Mas Vendidos</option>
-              		<option value="populares">Populares</option>
-              		<option value="especiales">Especiales</option>
-            	</select>
+
+			<section class="seccion-ordenar-agregarProducto">
+				<div class="ordenamiento">
+					<label for="ordenar">Ordenar:</label>
+					<select class="select-ordenar" name="ordenar" id="ordenar">
+						  <option value="nuevos-productos">Nuevos Productos</option>
+						  <option value="mas-vendidos">Mas Vendidos</option>
+						  <option value="populares">Populares</option>
+						  <option value="especiales">Especiales</option>
+					</select>
+				</div>
+				
+				<div class="agregarProducto">
+					<button>Agregar Producto</button>
+				</div>
 			</section>
+			
+			
 			
 			<main class="seccion-filtro-muestra-productos">
 				<section class="columna-filtro">
 					
-						<p>Columna izq para filtrar productos</p>
+						<h3>Cervecerias</h3>
+						<h3>Provincia de Origen</h3>
+						<h3>Familia</h3>
+						<h3>Volumen</h3>
+						<h3>Precios</h3>
 					
 				</section>
 

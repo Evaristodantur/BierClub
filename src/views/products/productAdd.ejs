@@ -2,8 +2,6 @@
 <html lang="es">
   <head>
     <title>BierClub - Carga de producto</title>
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>tinymce.init({selector:'textarea'});</script>
     <%- include('../partials/head.ejs') %>
   </head>
 
@@ -82,7 +80,7 @@
         </div>
 
         <!-- DESCRIPCION -->
-        <textarea placeholder="Descripción del articulo" name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+        <textarea class="descripcionDelProducto" name="descripcion" placeholder="Describa el producto"></textarea>
           <div class="flex-botones-publicar">
               <button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar
               <!--<button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar y Agregar otro producto-->
