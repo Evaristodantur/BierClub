@@ -1,0 +1,33 @@
+/* ==========================================================================
+   GENERAL -LOGIN-REGISTER
+   ========================================================================== */
+body .login-register{
+    /* Display & Box Model */
+    padding-top: 10rem;
+    padding-bottom: 3%;
+}
+
+.formulario-total{
+    display:none;
+}
+.perfil-total{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.perfil-izquierda{
+    width: 23%;
+    border: 1px solid black;
+}
+.perfil-derecha{
+    width: 55%;
+    border: 1px solid black;
+}
+.perfil-izquierda li{
+    list-style: none;
+}
+.datos-personales{
+    display:flex;
+    justify-content: space-evenly;
+    padding-inline-start: 0px;
+}

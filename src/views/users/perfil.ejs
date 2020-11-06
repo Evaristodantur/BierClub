@@ -7,6 +7,7 @@
 	<link rel="icon" href="/images/faviconLogo.ico"/>
 	<link rel='stylesheet' href='/stylesheets/nav.css'/>
 	<link rel='stylesheet' href='/stylesheets/styles.css'/>
+	<link rel='stylesheet' href='/stylesheets/perfil.css'/>
 </head>
 
 <body>
@@ -20,9 +21,24 @@
 		<div class="login-register">
 
 			<!-- TITULO -->
-			<h1> Nombre de Usuario: <%= nombre %>  </h1>
-		
+			<h1> ¡Bienvenido, <%= nombre %>! </h1>
+			<div class="perfil-total">
+				<div class="perfil-izquierda">
+					<h2>Mis datos personales</h2>
+					<hr>
+					<ul class="datos-personales">
+						<li>Nombre</li>
+						<li><%= nombre %></li>
+					</ul>
+				</div>
+				<div class="perfil-derecha">
+					<h2>Mis compras</h2>
+					<hr>
+				</div>
+
+			</div>
 			<!-- FORMULARIO -->
+			<div class="formulario-total">
 			<form class="formulario" action="/users/perfil/<%= id %>" method="POST">
 				
 
@@ -38,8 +54,13 @@
 
 				<!-- CONTRASEÑA -->
 				<div class="campo-input">
-					<input class="input-registro" type="password" id="contrasenia" name="contrasenia" value="<%= contrasenia %>"> 
+					<input class="input-registro" type="password" id="contrasenia" name="contrasenia" placeholder="Contraseña nueva"> 
 				</div>
+
+				<!-- CONFIRMAR CONTRASEÑA -->
+				<div class="campo-input">
+					<input class="input-registro" type="password" id="confirmarContrasenia" name="confirmarContrasenia" placeholder="Confirmar contraseña nueva"> 
+				</div> 
 			
 				<!-- BOTON INGRESAR -->
 				<div class="campo-input">
@@ -48,6 +69,7 @@
 					<button onclick="window.location.href='/users/perfil/eliminar/<%= id %>'" class="input-button" type="reset" id="" name="" value=""> Eliminar usuario</button>
 				</div>
 			</form>
+			</div>
 			
 		</div>
 

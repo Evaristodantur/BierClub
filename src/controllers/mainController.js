@@ -45,14 +45,7 @@ let mainController = {
         res.render('suscripcion');
     },
 
-    //  /prueba/:id
-    prueba : (req, res, next) => {
-        let idUrl = req.params.id;
-
-        let productoBuscado = productsJson.find(producto => producto.id == idUrl);
-        
-        productoBuscado ? (res.render("prueba",productoBuscado)) : res.render("error")
-    },
+    // ERROR
     error : (req, res, next) => {
         res.render('error');
     }

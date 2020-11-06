@@ -18,9 +18,6 @@ router.get('/promociones', mainController.promociones);
 /* GET     /suscripcion      page. */
 router.get('/suscripcion', mainController.suscripcion);
 
-/* GET     /prueba      page. */
-router.get('/prueba/:id', mainController.prueba);
-
 
 /* GET ERROR page. */
 router.get('/error', mainController.error);
