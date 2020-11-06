@@ -27,6 +27,9 @@ router.get('/productEdit/:id', productsController.editProduct);
 /* GET     /products/productEdit      page. */
 router.post('/productEdit/:id', productsController.updateProduct);
 
+/* GET     /products/productEdit      page. */
+router.get('/productEdit/borrar/:id', productsController.deleteProduct);
+
 /* GET     /products/productAdming      page. */
 router.get('/productAdmin', productsController.productAdmin);
 

@@ -78,7 +78,16 @@ let productsController = {
 
     //  Borrar Producto
     deleteProduct : (req, res, next) => {
-        res.render('products/productEdit');
+        let idUrl = req.params.id;
+
+        let borrarProducto = productsJson.filter(function(producto) {
+            return producto.id != idUrl;
+        });
+
+        let borrarProductoJSON = JSON.stringify(borrarProducto);
+        fs.writeFileSync(__dirname + "/../database/products.json", borrarProductoJSON);
+
+        res.redirect('/products');
     },
 
     //  /products/productAdd

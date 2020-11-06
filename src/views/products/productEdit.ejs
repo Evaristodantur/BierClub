@@ -84,9 +84,8 @@
         <!-- DESCRIPCION -->
         <textarea placeholder="Descripción del articulo" name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
           <div class="flex-botones-publicar">
-              <button class="btn-publicar" type="submit" , id="publicar" , value="guardar"> Guardar
-              <!--<button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar y Agregar otro producto-->
-              <button class="btn-publicar btn-reset" type="reset" , id="reset" , value="reset"> Borrar Producto
+              <button class="btn-publicar" type="submit" , id="publicar" , value="guardar"> Guardar Modificaciones  
+              <button onclick="window.location.href='/products/productEdit/borrar/<%= id %>'" class="btn-publicar btn-reset" type="reset" , id="reset" , value="reset">Borrar Producto</button>
           </div>
         
       </form>
