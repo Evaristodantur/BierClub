@@ -16,7 +16,10 @@ router.get('/productDetail/:id', productsController.productDetail);
 router.get('/productCart', productsController.productCart);
   
 /* GET     /products/productAdd      page. */
-router.get('/productAdd', productsController.productAdd);
+router.get('/productAdd', productsController.createProductAdd);
+
+/* GET     /products/productAdd      page. */
+router.post('/productAdd', productsController.storeProductAdd);
 
 /* GET     /products/productEdit      page. */
 router.get('/productEdit', productsController.productEdit);

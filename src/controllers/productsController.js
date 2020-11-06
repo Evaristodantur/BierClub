@@ -20,9 +20,30 @@ let productsController = {
         productoBuscado ? (res.render("products/productDetail", productoBuscado)) : (res.render("error"));
     },
 
-    //  /products/productAdd
-    productAdd : (req, res, next) => {
+    createProductAdd : (req, res, next) => {
         res.render('products/productAdd');
+      },
+  
+    storeProductAdd : (req, res, next) => {
+        let idMax = 0;
+
+        //Creacion de ID para los productos nuevos
+        productsJson.forEach(producto => {
+            if ( idMax < producto.id ) {
+                idMax = producto.id;
+            }
+        });
+        idMax++;
+
+        //Pushea el elemento al json
+        let productoNuevo = req.body;
+        productoNuevo.id = idMax;
+        productsJson.push(productoNuevo);
+        
+
+        let productoConvertidosAJSON = JSON.stringify(productsJson);
+        fs.writeFileSync(__dirname + "/../database/products.json", productoConvertidosAJSON);
+        res.redirect('../');
     },
 
     //  /products/productAdd
