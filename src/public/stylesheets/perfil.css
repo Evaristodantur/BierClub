@@ -10,8 +10,8 @@ body .login-register{
 .formulario-total{
     display:none;
     width:40%;
-    position:absolute;
-    background-color: red;
+    position:fixed;
+    background-color: whitesmoke;
     left:50%;
     top:47%;
     transform: translate(-50%, -50%);
@@ -49,6 +49,9 @@ body .login-register{
     padding-right: 10px;
     border-radius: 5px;
 }
+.perfil-izquierda a:hover{
+    cursor: pointer;
+}
 .showModificar {
     display: inline-block;
   }
@@ -58,4 +61,11 @@ body .login-register{
 }
 .campo1{
     margin-top: 30px;
+}
+.ultimoCampo{
+    margin-bottom: 30px;
+}
+.cerrar-modificar{
+    right: 3%;
+    top: 3%;
 }

@@ -1,18 +1,18 @@
 /* ==========================================================================
-HAMBURGUESA
+
 ========================================================================== */
 
 /* ONCLICK HAMBURGUESA ABRIR */
-function hamburguesa(){
+/* function hamburguesa(){
     document.getElementById("hamburguesa-onclick").style = "top:60%;";
-  }
+  } */
 
 /* ONCLICK HAMBURGUESA CERRAR */
-  function hamburguesaCerrar(){
+/*   function hamburguesaCerrar(){
     document.getElementById("hamburguesa-onclick").style = "top:47%;";
-  }
+  } */
 
-/* ONCLICK HAMBURGUESA DROPDOWN */
+/* MODIFICAAR ONCLICK */
 
   function hola() {
     document.getElementById("modificar").classList.toggle("showModificar");
