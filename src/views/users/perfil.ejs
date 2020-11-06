@@ -21,32 +21,33 @@
 
 			<!-- TITULO -->
 			<h1> Nombre de Usuario: <%= nombre %>  </h1>
-			<h1> ID: <%= id %> </h1>
 		
 			<!-- FORMULARIO -->
-			<form class="formulario" action="" method="">
+			<form class="formulario" action="/users/perfil/<%= id %>" method="POST">
 				
-			<!-- EMAIL -->
-			<div class="campo-input">
-				<input class="input-registro" type="email" , id="email" placeholder="Email o Usuario">
-			</div>
 
-			<!-- CONTRASEÑA -->
-			<div class="campo-input">
-				<input class="input-registro" type="password" , id="contraseña" placeholder="Contraseña"> 
-			</div>
+				<!-- NOMBRE -->
+				<div class="campo-input">
+					<input class="input-registro" type="text" id="nombre" name="nombre" value="<%= nombre %>">
+					</div>
+
+				<!-- EMAIL -->
+				<div class="campo-input">
+					<input class="input-registro" type="email" id="email" name="email" value="<%= email %>">
+				</div>
+
+				<!-- CONTRASEÑA -->
+				<div class="campo-input">
+					<input class="input-registro" type="password" id="contrasenia" name="contrasenia" value="<%= contrasenia %>"> 
+				</div>
 			
-			<!-- CONTRASEÑA OLVIDADA -->
-			<p class="contraseña-olvidada"><a href="#">¿Olvidaste tu Contraseña?</a></p>
-			
-			<!-- BOTON INGRESAR -->
-			<div class="campo-input">
-				<button class="input-button" type="submit" , id="ingresar" , value="ingresar"> Ingresar</button>
-			</div>
+				<!-- BOTON INGRESAR -->
+				<div class="campo-input">
+					<button class="input-button" type="submit" id="" name="" value="ingresar"> Ingresar</button>
+					<br>
+					<button onclick="window.location.href='/users/perfil/eliminar/<%= id %>'" class="input-button" type="reset" id="" name="" value=""> Eliminar usuario</button>
+				</div>
 			</form>
-			
-			<!-- REGISTRARSE -->
-			<p class="registrate-usuario">¿Aún no tenés usuario?<a href="/register">¡Registrate!</a></p>
 			
 		</div>
 

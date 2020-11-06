@@ -54,15 +54,45 @@ let usersController = {
 
 
 
-    //  /users/perfil/:id
-    perfil : (req, res, next) => {
+    //  /users/perfil/:id (PAGINA VISUAL)
+    perfilEdit : (req, res, next) => {
       let idUrl = req.params.id;
 
-        let usuarioBuscado = usuariosJson.find(usuario => usuario.id == idUrl);
+        let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
         
-        usuarioBuscado ? (res.render("users/perfil",usuarioBuscado)) : res.render("error")
+        
+        usuarioBuscado ? (res.render("users/perfil", usuarioBuscado)) : res.render("error")
+    },
 
+
+    // Modificacion del producto
+    perfilUpdate : (req, res, next) => {
+      let idUrl = req.params.id;
+
+      let usuarioCambiado = usuariosJson.map(function(usuario){
+        if(usuario.id == idUrl){
+          let usuarioId = usuario.id;
+          usuario = req.body;
+          usuario.id = usuarioId;
+        }
+        return usuario;
+      });
+      let usuariosCambiadosJSON = JSON.stringify(usuarioCambiado);
+      fs.writeFileSync(__dirname + "/../database/usuarios.json", usuariosCambiadosJSON);
+      res.redirect("/");
+      },
+
+
+      eliminar : (req, res, next) => {
+        let idUrl = req.params.id;
+
+        let eliminarUsuario = usuariosJson.filter(function(usuario){
+          return usuario.id != idUrl;
+        });
+        let usuarioEliminadoJSON = JSON.stringify(eliminarUsuario);
+        fs.writeFileSync(__dirname + "/../database/usuarios.json", usuarioEliminadoJSON);
+        res.redirect("/");
+      }
     }
-}
 
 module.exports = usersController;

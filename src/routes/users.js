@@ -16,7 +16,13 @@ router.post('/register', usersController.store);
 router.get('/login', usersController.login);
 
 /* GET     /users/perfil/:id      page. */
-router.get('/perfil/:id', usersController.perfil);
+router.get('/perfil/:id', usersController.perfilEdit);
+
+/* GET     /users/perfil/:id      page. */
+router.post('/perfil/:id', usersController.perfilUpdate);
+
+/* GET     /users/perfil/:id      page. */
+router.get('/perfil/eliminar/:id', usersController.eliminar);
 
 
 
