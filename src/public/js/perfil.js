@@ -12,7 +12,7 @@
     document.getElementById("hamburguesa-onclick").style = "top:47%;";
   } */
 
-/* MODIFICAAR ONCLICK */
+/* MODIFICAR ONCLICK */
 
   function modificarPerfil() {
     document.getElementById("modificar").classList.toggle("showModificar");
