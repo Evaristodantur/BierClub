@@ -2,6 +2,16 @@
 
 ## Sprint 3
 
+### 6/11/20
+
+Terminado:
+  - ABM de productAdd funcional
+  - ABM de register funcional
+  
+Para hacer hoy:
+  - Terminar perfil (HTML y CSS, ya que logica ya esta terminada)
+  - Crear productAdmin
+
 ### 5/11/20
 
 Terminado:
