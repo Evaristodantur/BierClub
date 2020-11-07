@@ -14,7 +14,7 @@
 
 /* MODIFICAAR ONCLICK */
 
-  function hola() {
+  function modificarPerfil() {
     document.getElementById("modificar").classList.toggle("showModificar");
   }
 
