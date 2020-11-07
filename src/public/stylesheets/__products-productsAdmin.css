@@ -62,11 +62,9 @@ body .products-catalogo{
 .tituloFiltro:hover {
     cursor: pointer;
 }
-
-.showModificar {
-    display: inline-block;
-}
-
 .cerveceriasDropDown {
     display: none;
+}
+.showModificar {
+    display: inline-block;
 }

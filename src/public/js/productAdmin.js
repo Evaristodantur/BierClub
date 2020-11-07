@@ -1,5 +1,3 @@
-
-
-  function hola() {
-    document.getElementById("modificar").classList.toggle("showModificar");
-  }
+function modificarPerfil() {
+  document.getElementById("modificar").classList.toggle("showModificar");
+}
