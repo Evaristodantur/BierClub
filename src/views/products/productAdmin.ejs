@@ -17,31 +17,26 @@
 		<%- include('../partials/nav.ejs') %>
 	</header>
 	
-		<div class="products-catalogo">
-
-			<section class="seccion-ordenar-agregarProducto">
-				<div class="ordenamiento">
-					<label for="ordenar">Ordenar:</label>
-					<select class="select-ordenar" name="ordenar" id="ordenar">
-						  <option value="nuevos-productos">Nuevos Productos</option>
-						  <option value="mas-vendidos">Mas Vendidos</option>
-						  <option value="populares">Populares</option>
-						  <option value="especiales">Especiales</option>
-					</select>
-				</div>
-				
-				<div class="agregarProducto">
-					<button>Agregar Producto</button>
-				</div>
-			</section>
-			
-			
+		<div class="products-catalogo">	
 			
 			<main class="seccion-filtro-muestra-productos">
 				<section class="columna-filtro">
+
+					<div class="filtro">
+						<button onclick="window.location.href='/products/productAdd'" class="agregarProducto"><i class="fas fa-plus"></i> Agregar Producto</button>
+					</div>
+
+					<div class="filtro">
+						<select class="select-ordenar" name="ordenar" id="ordenar">
+							  <option value="nuevos-productos">Nuevos Productos</option>
+							  <option value="mas-vendidos">Mas Vendidos</option>
+							  <option value="populares">Populares</option>
+							  <option value="especiales">Especiales</option>
+						</select>
+					</div>
 					
-						<div>
-							<a onClick="dropDownFiltros('cerveceriasFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Cervecerias</a>
+						<div class="filtro">
+							<a class="tituloFiltro" onClick="dropDownFiltros('cerveceriasFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Cervecerias</a>
 							<div class="cerveceriasDropDown" id="cerveceriasFiltro">
 								<h4>Almirante Donn</h4>
 								<h4>Andes Origen</h4>
@@ -50,8 +45,8 @@
 							</div>
 						</div>
 
-						<div>
-							<a onClick="dropDownFiltros('provinciasFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Provincia de Origen</a>
+						<div class="filtro">
+							<a class="tituloFiltro" onClick="dropDownFiltros('provinciasFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Provincia de Origen</a>
 							<div class="cerveceriasDropDown" id="provinciasFiltro">
 								<h4>Tucuman</h4>
 								<h4>Mendoza</h4>
@@ -60,16 +55,16 @@
 							</div>
 						</div>
 						
-						<div>
-							<a onClick="dropDownFiltros('familiaFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Familia</a>
+						<div class="filtro">
+							<a class="tituloFiltro" onClick="dropDownFiltros('familiaFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Familia</a>
 							<div class="cerveceriasDropDown" id="familiaFiltro">
 								<h4>Ale</h4>
 								<h4>Lager</h4>
 							</div>
 						</div>
 
-						<div>
-							<a onClick="dropDownFiltros('volumenFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Volumen</a>
+						<div class="filtro">
+							<a class="tituloFiltro" onClick="dropDownFiltros('volumenFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Volumen</a>
 							<div class="cerveceriasDropDown" id="volumenFiltro">
 								<h4>250ml</h4>
 								<h4>269ml</h4>
@@ -83,13 +78,19 @@
 				<section class="columna-productos">
 
 
-						
+						<% for(let i=0; i < productos.length; i++) { %>
 							<article class="producto">
-								<img src="/images/productos/producto-1.jpg" alt="">
-									<h4>Nombre del productadd</h4>
-								<button id="modificarProducto" class="modificar-producto">Modificar</button>
-								<button id="eliminarProducto" class="eliminar-producto">Eliminar</button>
+								<img src="<%= productos[i].imagen %>" alt="">
+									<h4 class="nombre-producto"><%= productos[i].nombre %></h4>
+								<button onclick="window.location.href='/products/productEdit/<%= productos[i].id %>'" id="modificarProducto" class="modificar-producto">Modificar Producto</button>
+								<button onclick="window.location.href='/products/productEdit/borrar/<%= productos[i].id %>'" id="eliminarProducto" class="eliminar-producto">Eliminar Producto</button>
 							</article>
+						<% } %>
+							
+							
+							
+							
+
 							
 							
 						

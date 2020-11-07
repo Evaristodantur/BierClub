@@ -106,7 +106,7 @@ let productsController = {
 
     //  /products/productAdmin
     productAdmin : (req, res, next) => {
-        res.render('products/productAdmin');
+        res.render('products/productAdmin', { productos : productsJson});
     },
 
     //  /products/productCart

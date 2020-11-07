@@ -22,25 +22,6 @@ body .products-catalogo{
     padding-bottom: 3%;
 }
 /* ==========================================================================
-   SECCION  ORDENAR y AGREGAR PRODUCTO
-   ========================================================================== */
-.seccion-ordenar-agregarProducto {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.ordenamiento {
-    width: 90%;
-}
-
-.agregarProducto {
-    width: 10%;
-}
-
-/* ==========================================================================
    SECCION FILTRAR y MOSTRAR PRODUCTO
    ========================================================================== */
 .seccion-filtro-muestra-productos {
@@ -60,13 +41,40 @@ body .products-catalogo{
 /* ==========================================================================
    FILTROS
    ========================================================================== */
-.tituloFiltro:hover {
+.filtro {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+
+.agregarProducto {
     cursor: pointer;
+    background-color: rgb(10, 9, 9);
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.agregarProducto:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+i.fa-plus {
+    color: #DAA520;
+}
+
+a.tituloFiltro {
+    cursor: pointer;
+    font-size: large;
+    width: 100%;
+    text-transform: uppercase;
 }
 
 /*esto va en none*/
 .cerveceriasDropDown {
-    display: flex;
+    display: none;
     margin-bottom: 4%;
     flex-direction: column;
     justify-content: center;
@@ -86,43 +94,41 @@ body .products-catalogo{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .producto {
     width: 20%;
-    height: 100%;
+    position: relative;
+    height: 38vh;
     border: 1px solid rgb(184, 184, 184);
-    margin-right: 15px;
-    margin-top: 3px;
+    margin: 12px 12px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-radius: 8px;
-    overflow: auto-scroll;
 }
 
 .producto img {
-    position: relative;
     width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
-.producto h4 {
+.producto h4.nombre-producto {
     text-align: center;
     word-break: break-all;
     margin: 0;
     margin-top: 5px;
-    
 }
 
 .modificar-producto, 
 .eliminar-producto {
     display: none;
-    position: absolute;
-    top: 35%;
-    width: 15%;
+    position: relative;
+    top: -175px;
+    width: 90%;
     padding: 10px;
     background: rgb(71, 73, 211);
     color: white;
@@ -131,12 +137,13 @@ body .products-catalogo{
 }
 
 .eliminar-producto {
-    top: 40%;
+    top: -165px;
     background: rgb(184, 20, 20);
 }
 
 .producto:hover .modificar-producto,
 .producto:hover .eliminar-producto {
     cursor: pointer;
+    transition: 0.3;
     display: inline-block;
 }
