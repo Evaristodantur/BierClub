@@ -45,14 +45,5 @@
         "categoria": "Lupuladas",
         "stock": 45,
         "descripcion": "Es la descripcion de prueba 5"
-    },
-    {
-        "nombre": "rer",
-        "precio": "3323",
-        "stock": "222",
-        "categoria": "cerveza",
-        "imagen": "/images/productos/producto-5.jpg",
-        "descripcion": "",
-        "id": 6
     }
 ]
