@@ -74,6 +74,7 @@
     font-size: large;
     margin-right: 3%;
     margin-left: 3%;
+    word-break: break-all;
 }
 
 .home main section.productos article.producto div.precio-stock {

@@ -36,7 +36,7 @@
 						<li><%= email %></li>
 					</ul>
 					<hr>
-					<strong><a onClick="hola()">MODIFICAR DATOS</a></strong>
+					<strong><a onClick="modificarPerfil()">MODIFICAR DATOS</a></strong>
 				</div>
 				<div class="perfil-derecha">
 					<h2>Mis compras</h2>
@@ -47,7 +47,7 @@
 			<!-- FORMULARIO -->
 			<div class="formulario-total" id="modificar">
 			<form class="formulario" action="/users/perfil/<%= id %>" method="POST">
-				<div class="cerrar-modificar"><a onclick="hola()"><i class="far fa-times-circle"></i></a></div>
+				<div class="cerrar-modificar"><a onclick="modificarPerfil()"><i class="far fa-times-circle"></i></a></div>
 				
 
 				<!-- NOMBRE -->
@@ -78,7 +78,7 @@
 			
 				<!-- BOTON INGRESAR -->
 				<div class="campo-input">
-					<button class="input-button" type="submit" id="" name="" value="ingresar"> Ingresar</button>
+					<button class="input-button modificar-datos" type="submit" id="" name="" value="ingresar"> Modificar datos</button>
 					<br>
 					<button onclick="window.location.href='/users/perfil/eliminar/<%= id %>'" class="input-button ultimoCampo" type="reset" id="" name="" value=""> Eliminar usuario</button>
 				</div>

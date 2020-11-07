@@ -8,7 +8,7 @@
 	<link rel='stylesheet' href='/stylesheets/nav.css'/>
 	<link rel='stylesheet' href='/stylesheets/__products-productsAdmin.css'/>
 	<link rel='stylesheet' href='/stylesheets/__footer.css'/>
-	<script src="/js/perfil.js" type="text/javascript"></script>
+	<script src="/js/productAdmin.js" type="text/javascript"></script>
 	<%- include('../partials/head.ejs') %>
 </head>
 
@@ -41,45 +41,78 @@
 				<section class="columna-filtro">
 					
 						<div>
-							<div class="tituloFiltro"><a onClick="modificar()">Cervecerias</a></div>
-							<div id="modificar" class="cerveceriasDropDown">
-								<h4>Hola</h4>
-								<h4>Chau</h4>
-							</div>
-						</div>
-						
-						<div>
-							<h3>Provincia de Origen</h3>
-							<div>
-								<h4>Tucuman</h4>
-								<h4>Mendoza</h4>
+							<a onClick="dropDownFiltros('cerveceriasFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Cervecerias</a>
+							<div class="cerveceriasDropDown" id="cerveceriasFiltro">
+								<h4>Almirante Donn</h4>
+								<h4>Andes Origen</h4>
+								<h4>Antares</h4>
+								<h4>Brahma</h4>
 							</div>
 						</div>
 
 						<div>
-							<h3>Familia</h3>
-							<div>
+							<a onClick="dropDownFiltros('provinciasFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Provincia de Origen</a>
+							<div class="cerveceriasDropDown" id="provinciasFiltro">
+								<h4>Tucuman</h4>
+								<h4>Mendoza</h4>
+								<h4>Buenos Aires</h4>
+								<h4>Uruguay</h4>
+							</div>
+						</div>
+						
+						<div>
+							<a onClick="dropDownFiltros('familiaFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Familia</a>
+							<div class="cerveceriasDropDown" id="familiaFiltro">
 								<h4>Ale</h4>
 								<h4>Lager</h4>
 							</div>
 						</div>
 
 						<div>
-							<h3>Volumen</h3>
-							<div>
+							<a onClick="dropDownFiltros('volumenFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Volumen</a>
+							<div class="cerveceriasDropDown" id="volumenFiltro">
 								<h4>250ml</h4>
-								<h4>Lager</h4>
+								<h4>269ml</h4>
+								<h4>330ml</h4>
+								<h4>350ml</h4>
 							</div>
 						</div>
-
-						
-						<h3>Precios</h3>
 					
 				</section>
 
 				<section class="columna-productos">
-					
-						<p></p>
+
+
+						
+							<article class="producto">
+								<img src="/images/productos/producto-1.jpg" alt="">
+									<h4>Nombre del productadd</h4>
+								<button id="modificarProducto" class="modificar-producto">Modificar</button>
+								<button id="eliminarProducto" class="eliminar-producto">Eliminar</button>
+							</article>
+							
+							
+						
+							
+
+						
+						
+						
+						<!--<article class="producto">
+							<a href="/products/productDetail/">
+							  <img src="" alt="">
+							</a>
+							<h2 class="producto-titulo"></h2>
+							<div class="precio-stock">
+							  <div>
+								<h4 class="etiqueta-precio">$</h4>
+							  </div>
+							  <div>
+								<h5 class="etiqueta-stock">Stock Disponible</h5>
+							  </div>
+							</div>
+							<button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
+						  </article>-->
 					
 				</section>
 			</main>
