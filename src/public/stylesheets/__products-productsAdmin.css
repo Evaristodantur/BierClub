@@ -63,10 +63,11 @@ body .products-catalogo{
     cursor: pointer;
 }
 
+.cerveceriasDropDown {
+    display: none;
+}
+
 .showModificar {
     display: inline-block;
 }
 
-.cerveceriasDropDown {
-    display: none;
-}
