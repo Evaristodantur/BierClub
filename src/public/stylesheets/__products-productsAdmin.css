@@ -56,10 +56,17 @@ body .products-catalogo{
 .columna-productos {
     width: 75%;
 }
+/* ==========================================================================
+   
+   ========================================================================== */
+.tituloFiltro:hover {
+    cursor: pointer;
+}
 
-/*
-CERVECERIAS
-PROVINCIA DE ORIGEN
-FAMILIA
-VOLUMEN
-PRECIOS*/
+.showModificar {
+    display: inline-block;
+}
+
+.cerveceriasDropDown {
+    display: none;
+}
