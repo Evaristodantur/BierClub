@@ -2,6 +2,17 @@
 
 ## Sprint 3
 
+### 7/11/20
+
+Terminado:
+  - Perfil avanzado (HTML y CSS)
+  - productAdmin creado y logica hecha
+  
+Para hacer hoy:
+  - Avanzar con Perfil (CSS)
+  - productAdmin arreglar hover
+  - productAdd poder agregar imagenes
+  
 ### 6/11/20
 
 Terminado:
