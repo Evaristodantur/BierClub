@@ -49,7 +49,11 @@ let productsController = {
         //Pushea el elemento al json
         let productoNuevo = req.body;
         productoNuevo.id = idMax;
-        productoNuevo.imagen = req.files[0].destination.substring(12) + '/' + req.files[0].filename
+        if (req.files == "") {
+            productoNuevo.imagen = "/images/productos/product-image-not-available.jpg";
+        } else {
+            productoNuevo.imagen = req.files[0].destination.substring(12) + '/' + req.files[0].filename
+        }
         productsJson.push(productoNuevo);
         
         fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(productsJson));
