@@ -1,1 +1,49 @@
-[]
+[
+    {
+        "id": 1,
+        "nombre": "ippa Sippa (TDH Imperial Aussie IPA)",
+        "imagen": "/images/productos/producto-1.jpg",
+        "precio": 90,
+        "categoria": "Lupuladas",
+        "stock": 645645,
+        "descripcion": "Es la descripcion de prueba 1"
+    },
+    {
+        "id": 2,
+        "nombre": "Saison de Triomphe - Hoppy Saison",
+        "imagen": "/images/productos/producto-2.jpg",
+        "precio": 120,
+        "categoria": "Lupuladas",
+        "stock": 2,
+        "descripcion": "Es la descripcion de prueba 2",
+        "_locals": {}
+    },
+    {
+        "id": 3,
+        "nombre": "William Wallace Scottish",
+        "imagen": "/images/productos/producto-3.jpg",
+        "precio": 82,
+        "categoria": "No Lupuladas",
+        "stock": 883,
+        "descripcion": "Es la descripcion de prueba 3"
+    },
+    {
+        "id": 4,
+        "nombre": "Mumbai 1947",
+        "imagen": "/images/productos/producto-4.jpg",
+        "precio": 99,
+        "categoria": "No Lupuladas",
+        "stock": 10,
+        "descripcion": "Es la descripcion de prueba 4",
+        "_locals": {}
+    },
+    {
+        "id": 5,
+        "nombre": "German Pils",
+        "imagen": "/images/productos/producto-5.jpg",
+        "precio": 130,
+        "categoria": "Lupuladas",
+        "stock": 45,
+        "descripcion": "Es la descripcion de prueba 5"
+    }
+]

@@ -45,10 +45,12 @@ body .products-catalogo{
     margin-top: 15px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin-left: 15%;
 }
 
 .agregarProducto {
+    align-self: center;
     cursor: pointer;
     background-color: rgb(10, 9, 9);
     color: white;
@@ -57,7 +59,10 @@ body .products-catalogo{
     padding: 10px;
     padding-top: 13px;
     padding-bottom: 13px;
+    width: 80%;
 }
+
+
 
 .agregarProducto:hover {
     background-color: rgb(27, 27, 27);
@@ -110,14 +115,18 @@ a.tituloFiltro {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    justify-content: flex-start;
+    margin-right: 1%;
+    margin-left: 1%;
 }
 
 .producto {
-    width: 20%;
+    width: 19%;
     position: relative;
     border: 1px solid rgb(184, 184, 184);
-    margin: 12px 12px 0 0;
+    margin-top: 5px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,6 +168,6 @@ a.tituloFiltro {
 .producto:hover .eliminar-producto {
     position: absolute;
     cursor: pointer;
-    transition: 0.3;
+    transition: 1;
     display: inline-block;
 }
