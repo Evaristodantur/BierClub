@@ -2,7 +2,12 @@ const path = require('path');
 const fs = require('fs');
 
 //Agregado database JSON
-let productsJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8'));
+let productsJson = fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8');
+if(productsJson == "") {
+    fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(productsJson = []));
+} else {
+    productsJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8'));
+}
 
 let productsController = {
 
@@ -29,6 +34,8 @@ let productsController = {
       },
   
     storeProduct : (req, res, next) => {
+        
+
         let idMax = 0;
 
         //Creacion de ID para los productos nuevos
@@ -44,9 +51,7 @@ let productsController = {
         productoNuevo.id = idMax;
         productsJson.push(productoNuevo);
         
-
-        let productoConvertidosAJSON = JSON.stringify(productsJson);
-        fs.writeFileSync(__dirname + "/../database/products.json", productoConvertidosAJSON);
+        fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(productsJson));
         res.redirect('/products/productAdmin');
     },
 
@@ -77,8 +82,7 @@ let productsController = {
             return producto;
         });
 
-        let productosModificadoJSON = JSON.stringify(productosModificado);
-        fs.writeFileSync(__dirname + "/../database/products.json", productosModificadoJSON);
+        fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(productosModificado));
 
         res.redirect('/products/productAdmin');
     },
@@ -95,8 +99,7 @@ let productsController = {
             return producto.id != idUrl;
         });
 
-        let borrarProductoJSON = JSON.stringify(borrarProducto);
-        fs.writeFileSync(__dirname + "/../database/products.json", borrarProductoJSON);
+        fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(borrarProducto));
 
         res.redirect('/products/productAdmin');
     },

@@ -116,7 +116,6 @@ a.tituloFiltro {
 .producto {
     width: 20%;
     position: relative;
-    height: 38vh;
     border: 1px solid rgb(184, 184, 184);
     margin: 12px 12px 0 0;
     display: flex;
@@ -142,8 +141,7 @@ a.tituloFiltro {
 .modificar-producto, 
 .eliminar-producto {
     display: none;
-    position: relative;
-    top: -175px;
+    top: 120px;
     width: 90%;
     padding: 10px;
     background: rgb(71, 73, 211);
@@ -153,12 +151,13 @@ a.tituloFiltro {
 }
 
 .eliminar-producto {
-    top: -165px;
+    top: 180px;
     background: rgb(184, 20, 20);
 }
 
 .producto:hover .modificar-producto,
 .producto:hover .eliminar-producto {
+    position: absolute;
     cursor: pointer;
     transition: 0.3;
     display: inline-block;
