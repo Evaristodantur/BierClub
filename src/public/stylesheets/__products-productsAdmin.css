@@ -150,7 +150,7 @@ a.tituloFiltro {
 .modificar-producto, 
 .eliminar-producto {
     display: none;
-    top: 120px;
+    top: 130px;
     width: 90%;
     padding: 10px;
     background: rgb(71, 73, 211);
@@ -160,7 +160,7 @@ a.tituloFiltro {
 }
 
 .eliminar-producto {
-    top: 180px;
+    top: 170px;
     background: rgb(184, 20, 20);
 }
 
