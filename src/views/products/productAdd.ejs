@@ -22,7 +22,7 @@
       <h1>Agregue su producto</h1>
 
       <!-- FORMULARIO -->
-      <form class="formulario-carga" action="/products/productAdd" method="POST">
+      <form class="formulario-carga" action="/products/productAdd" method="POST" enctype="multipart/form-data">
 
         <!-- BLOQUE DE IMAGEN, NOMBRE, PRECIO Y CANTIDAD -->
         <div class="flex-imgPrev-detalle">
@@ -74,8 +74,7 @@
           
         <!-- SUBIR IMAGEN -->
         <div class="imgFile">
-          <input id="imagen" type="file" size="60" >
-          <input value="/images/productos/producto-5.jpg" id="imagen" type="hidden" size="60" name="imagen">
+          <input type="file" name="imagen">
         </div>
 
         </div>
@@ -83,9 +82,9 @@
         <!-- DESCRIPCION -->
         <textarea class="descripcionDelProducto" name="descripcion" placeholder="Describa el producto"></textarea>
           <div class="flex-botones-publicar">
-              <button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar
+              <button class="btn-publicar" type="submit" id="publicar" > Publicar
               <!--<button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar y Agregar otro producto-->
-              <button class="btn-publicar btn-reset" type="reset" , id="reset" , value="reset"> Borrar Todo
+              <button class="btn-publicar btn-reset" type="reset" id="reset" value="reset"> Borrar Todo
           </div>
         
       </form>

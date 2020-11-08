@@ -49,6 +49,7 @@ let productsController = {
         //Pushea el elemento al json
         let productoNuevo = req.body;
         productoNuevo.id = idMax;
+        productoNuevo.imagen = req.files[0].destination.substring(12) + '/' + req.files[0].filename
         productsJson.push(productoNuevo);
         
         fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(productsJson));
@@ -115,7 +116,7 @@ let productsController = {
     //  /products/productCart
     productCart : (req, res, next) => {
         res.render('products/productCart');
-    }    
+    }
 }
 
 module.exports = productsController;
