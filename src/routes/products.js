@@ -43,7 +43,7 @@ router.post('/productAdd', upload.any(), productsController.storeProduct);
 router.get('/productEdit/:id', productsController.editProduct);
 
 /* GET     /products/productEdit/:id - Modifica el producto             page. */
-router.put('/productEdit/:id', productsController.updateProduct);
+router.put('/productEdit/:id', upload.any(), productsController.updateProduct);
 
 /* GET     /products/productEdit/borrar/:id - Borra el producto         page. */
 router.get('/productEdit/borrar/:id', productsController.deleteProduct);

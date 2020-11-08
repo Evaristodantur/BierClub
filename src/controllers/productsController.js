@@ -83,6 +83,11 @@ let productsController = {
                 let productoID = producto.id;
                 producto = req.body;
                 producto.id = productoID;
+                if (req.files == "") {
+                    producto.imagen = "/images/productos/product-image-not-available.jpg";
+                } else {
+                    producto.imagen = req.files[0].destination.substring(12) + '/' + req.files[0].filename
+                }                
             }
             return producto;
         });
