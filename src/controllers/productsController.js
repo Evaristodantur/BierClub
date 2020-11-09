@@ -54,7 +54,6 @@ let productsController = {
         } else {
             productoNuevo.imagen = req.files[0].filename;
         }
-        console.log(productoNuevo);
         productsJson.push(productoNuevo);
         
         fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(productsJson));
@@ -81,14 +80,18 @@ let productsController = {
 
         let productosModificado = productsJson.map( function(producto) {
             if (producto.id == idUrl) {
+                //Guardo la imagen y el ID antes de pedir un req.body
+                let imagenGuardada = producto.imagen;
                 let productoID = producto.id;
                 producto = req.body;
+
+                //incorporo el id y la imagen nueva, si es que tiene
                 producto.id = productoID;
-                if (req.files == "") {
-                    producto.imagen = "product-image-not-available.jpg";
+                if (req.files[0] == undefined) {
+                    producto.imagen = imagenGuardada;
                 } else {
                     producto.imagen = req.files[0].filename;
-                }                
+                }
             }
             return producto;
         });
