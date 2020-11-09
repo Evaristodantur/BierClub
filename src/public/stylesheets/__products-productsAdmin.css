@@ -204,6 +204,24 @@ a.tituloFiltro {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
+    .agregarProducto {
+        width: 100%;
+        font-size: small;
+    }
+
+    select.select-ordenar {
+        font-size: 12px;
+    }
+
+    a.tituloFiltro {
+        font-size: small;
+        width: 100%;
+    }
+
+    .cerveceriasDropDown h4 {
+        font-size: small;
+    }
+
     .columna-productos {
         margin-left: 3%;
     }
@@ -242,6 +260,11 @@ a.tituloFiltro {
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
+
+    body .products-catalogo {
+        padding-top: 5rem;
+    }
+
     .seccion-filtro-muestra-productos {
         display: flex;
         width: 100%;
@@ -260,8 +283,18 @@ a.tituloFiltro {
     
     .filtro {
         display: flex;
-        flex-direction: row;
-        margin-left: 1%;
+        flex-direction: column;
+        margin-left: 0;
+        width: 94%;
+        justify-content: center;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .cerveceriasDropDown {
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 0;
     }
 
     .producto {
@@ -298,6 +331,10 @@ a.tituloFiltro {
 
 
 @media (max-width: 480px) {
+    body .products-catalogo {
+        padding-top: 5rem;
+    }
+
     .seccion-filtro-muestra-productos {
         display: flex;
         width: 100%;
@@ -316,8 +353,24 @@ a.tituloFiltro {
     
     .filtro {
         display: flex;
-        flex-direction: row;
-        margin-left: 1%;
+        flex-direction: column;
+        margin-left: 0;
+        width: 94%;
+        justify-content: center;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .cerveceriasDropDown {
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    
+    .columna-productos {
+        width: 95%;
+        margin-left: 5%;
+        margin-right: 0;
     }
 
     .producto {
