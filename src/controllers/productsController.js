@@ -50,10 +50,11 @@ let productsController = {
         let productoNuevo = req.body;
         productoNuevo.id = idMax;
         if (req.files == "") {
-            productoNuevo.imagen = "/images/productos/product-image-not-available.jpg";
+            productoNuevo.imagen = "product-image-not-available.jpg";
         } else {
-            productoNuevo.imagen = req.files[0].destination.substring(12) + '/' + req.files[0].filename
+            productoNuevo.imagen = req.files[0].filename;
         }
+        console.log(productoNuevo);
         productsJson.push(productoNuevo);
         
         fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(productsJson));
@@ -84,9 +85,9 @@ let productsController = {
                 producto = req.body;
                 producto.id = productoID;
                 if (req.files == "") {
-                    producto.imagen = "/images/productos/product-image-not-available.jpg";
+                    producto.imagen = "product-image-not-available.jpg";
                 } else {
-                    producto.imagen = req.files[0].destination.substring(12) + '/' + req.files[0].filename
+                    producto.imagen = req.files[0].filename;
                 }                
             }
             return producto;

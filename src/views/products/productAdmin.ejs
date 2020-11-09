@@ -79,7 +79,7 @@
 
 						<% productos.forEach(producto => { %>
 							<article class="producto">
-								<img src="<%= producto.imagen %>" alt="">
+								<img src="/images/productos/<%= producto.imagen %>" alt="">
 									<h4 class="nombre-producto"><%= producto.nombre %></h4>
 								<button onclick="window.location.href='/products/productEdit/<%= producto.id %>'" id="modificarProducto" class="modificar-producto">Modificar Producto</button>
 								<button onclick="window.location.href='/products/productEdit/borrar/<%= producto.id %>'" id="eliminarProducto" class="eliminar-producto">Eliminar Producto</button>
