@@ -27,7 +27,7 @@ let productsController = {
 
         productoBuscado ? (res.render("products/productDetail", productoBuscado)) : (res.render("error"));
     },
-
+    
 
 
 
