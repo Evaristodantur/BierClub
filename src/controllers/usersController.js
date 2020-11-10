@@ -2,8 +2,13 @@ const path = require('path');
 const fs = require('fs');
 
 //Agregado database JSON
-let usuariosJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8'));
+let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
 
+usuariosJson == "" ?
+    fs.writeFileSync(__dirname + "/../database/usuarios.json", JSON.stringify(usuariosJson = [])) :
+    usuariosJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8'));
+
+    
 let usersController = {
 
     //  /users/register
