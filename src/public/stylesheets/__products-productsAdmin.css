@@ -22,25 +22,6 @@ body .products-catalogo{
     padding-bottom: 3%;
 }
 /* ==========================================================================
-   SECCION  ORDENAR y AGREGAR PRODUCTO
-   ========================================================================== */
-.seccion-ordenar-agregarProducto {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.ordenamiento {
-    width: 90%;
-}
-
-.agregarProducto {
-    width: 10%;
-}
-
-/* ==========================================================================
    SECCION FILTRAR y MOSTRAR PRODUCTO
    ========================================================================== */
 .seccion-filtro-muestra-productos {
@@ -50,21 +31,377 @@ body .products-catalogo{
 }
 
 .columna-filtro {
-    width: 25%;
+    width: 15%;
 }
 
 .columna-productos {
-    width: 75%;
+    width: 83%;
+    height: 100%;
 }
 /* ==========================================================================
-   
+   FILTROS
    ========================================================================== */
-.tituloFiltro:hover {
-    cursor: pointer;
+.filtro {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15%;
 }
+
+.agregarProducto {
+    align-self: center;
+    cursor: pointer;
+    background-color: rgb(10, 9, 9);
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 80%;
+}
+
+
+
+.agregarProducto:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+i.fa-plus {
+    color: #DAA520;
+}
+
+select.select-ordenar {
+    /* Display & Box Model */
+    width: 100%;
+    height: 40px;
+    padding-left: 4%;
+
+    /* Otras */
+    border-radius: 5px;
+    border: 0px solid black;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+a.tituloFiltro {
+    cursor: pointer;
+    font-size: medium;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+/*esto va en none*/
 .cerveceriasDropDown {
     display: none;
+    margin-bottom: 4%;
+    flex-direction: column;
+    justify-content: center;
 }
-.showModificar {
+
+.cerveceriasDropDown h4 {
+    margin: 0 0 0 5%;
+}
+
+.showModificarFiltros {
+    display: flex;
+}
+/* ==========================================================================
+   SECCION - PRODUCTOS
+   ========================================================================== */
+.columna-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.producto {
+    width: 19%;
+    position: relative;
+    border: 1px solid rgb(184, 184, 184);
+    margin-top: 5px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 8px;
+}
+
+.producto img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.producto h4.nombre-producto {
+    text-align: center;
+    word-break: break-all;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.modificar-producto, 
+.eliminar-producto {
+    display: none;
+    top: 133px;
+    width: 90%;
+    padding: 10px;
+    background: rgb(71, 73, 211);
+    color: white;
+    border-radius: 9px;
+    border: 0;
+}
+
+.eliminar-producto {
+    top: 170px;
+    background: rgb(184, 20, 20);
+}
+
+.producto:hover .modificar-producto,
+.producto:hover .eliminar-producto {
+    position: absolute;
+    cursor: pointer;
+    transition: 1;
     display: inline-block;
+}
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 1200 a 1400
+   ========================================================================== */
+@media (min-width: 1200px) and (max-width: 1450px) {
+    .producto {
+        width: 23%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .columna-productos {
+        margin-left: 3%;
+    }
+
+    .producto {
+        width: 23%;
+    }
+
+    .modificar-producto {
+        top: 103px;
+    }
+
+    .eliminar-producto {
+        top: 140px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .agregarProducto {
+        width: 100%;
+        font-size: small;
+    }
+
+    select.select-ordenar {
+        font-size: 12px;
+    }
+
+    a.tituloFiltro {
+        font-size: small;
+        width: 100%;
+    }
+
+    .cerveceriasDropDown h4 {
+        font-size: small;
+    }
+
+    .columna-productos {
+        margin-left: 3%;
+    }
+
+    .producto {
+        width: 31%;
+    }
+
+    .modificar-producto, 
+    .eliminar-producto {
+        position: absolute;
+        display: inline-block;
+        
+        width: 90%;
+        padding: 5px;
+        color: white;
+        border-radius: 9px;
+        border: 0;
+    }
+
+    .producto:hover .modificar-producto,
+    .producto:hover .eliminar-producto {
+        position: absolute;
+        cursor: pointer;
+        transition: 1;
+        display: inline-block;
+    }
+
+    .modificar-producto {
+        top: 113px;
+    }
+
+    .eliminar-producto {
+        top: 140px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+
+    body .products-catalogo {
+        padding-top: 5rem;
+    }
+
+    .seccion-filtro-muestra-productos {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .columna-filtro {
+        width: 100%;
+    }
+    
+    .columna-productos {
+        width: 95%;
+        margin-left: 5%;
+        margin-right: 0;
+    }
+    
+    .filtro {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 94%;
+        justify-content: center;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .cerveceriasDropDown {
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .producto {
+        width: 45%;
+    }
+
+    .modificar-producto, 
+    .eliminar-producto {
+        position: absolute;
+        display: inline-block;
+        width: 90%;
+        padding: 5px;
+        color: white;
+        border-radius: 9px;
+        border: 0;
+    }
+
+    .producto:hover .modificar-producto,
+    .producto:hover .eliminar-producto {
+        position: absolute;
+        cursor: pointer;
+        transition: 1;
+        display: inline-block;
+    }
+
+    .modificar-producto {
+        top: 143px;
+    }
+
+    .eliminar-producto {
+        top: 170px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body .products-catalogo {
+        padding-top: 5rem;
+    }
+
+    .seccion-filtro-muestra-productos {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .columna-filtro {
+        width: 100%;
+    }
+    
+    .columna-productos {
+        width: 95%;
+        margin-left: 5%;
+        margin-right: 0;
+    }
+    
+    .filtro {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 94%;
+        justify-content: center;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .cerveceriasDropDown {
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    
+    .columna-productos {
+        width: 95%;
+        margin-left: 5%;
+        margin-right: 0;
+    }
+
+    .producto {
+        width: 95%;
+    }
+
+    .modificar-producto, 
+    .eliminar-producto {
+        position: absolute;
+        display: inline-block;
+        
+        width: 90%;
+        padding: 5px;
+        color: white;
+        border-radius: 9px;
+        border: 0;
+    }
+
+    .producto:hover .modificar-producto,
+    .producto:hover .eliminar-producto {
+        position: absolute;
+        cursor: pointer;
+        transition: 1;
+        display: inline-block;
+    }
+
+    .modificar-producto {
+        top: 173px;
+    }
+
+    .eliminar-producto {
+        top: 200px;
+    }
 }

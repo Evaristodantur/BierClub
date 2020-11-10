@@ -22,7 +22,7 @@
       <h1>Edite su producto</h1>
 
       <!-- FORMULARIO -->
-      <form class="formulario-carga" action="/products/productEdit/<%= id %>/?_method=PUT" method="POST">
+      <form class="formulario-carga" action="/products/productEdit/<%= id %>/?_method=PUT" method="POST" enctype="multipart/form-data">
 
         <!-- BLOQUE DE IMAGEN, NOMBRE, PRECIO Y CANTIDAD -->
         <div class="flex-imgPrev-detalle">
@@ -34,10 +34,18 @@
               <input id="nombreProducto" type="text" name="nombre" placeholder="Nombre" value="<%= nombre %>">
             </div>
             
-            <!-- PRECIO -->
-            <div class="precio">
-              <label for="precio">Precio:</label>
-              <input id="precio" type="text" name="precio" placeholder="Precio" value="<%= precio %>">
+            <div class="precio-descuento">
+              <!-- PRECIO -->
+              <div class="precio">
+                <label for="precio">Precio:</label>
+                <input id="precio" type="text" name="precio" placeholder="Precio" value="<%=precio%>">
+              </div>
+
+              <!-- DESCUENTO -->
+              <div class="descuento">
+                <label for="descuento">Descuento:</label>
+                <input id="descuento" type="text" name="descuento" placeholder="Descuento" value="<%=descuento%>">
+              </div>
             </div>
             
             <!-- CANTIDAD -->
@@ -74,7 +82,7 @@
           
         <!-- SUBIR IMAGEN -->
         <div class="imgFile">
-          <input id="imagen" type="file" size="60" name="imagen">
+          <input name="imagen" type="file">
         </div>
 
         </div>

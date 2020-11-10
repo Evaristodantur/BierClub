@@ -17,56 +17,79 @@
 		<%- include('../partials/nav.ejs') %>
 	</header>
 	
-		<div class="products-catalogo">
-
-			<section class="seccion-ordenar-agregarProducto">
-				<div class="ordenamiento">
-					<label for="ordenar">Ordenar:</label>
-					<select class="select-ordenar" name="ordenar" id="ordenar">
-						  <option value="nuevos-productos">Nuevos Productos</option>
-						  <option value="mas-vendidos">Mas Vendidos</option>
-						  <option value="populares">Populares</option>
-						  <option value="especiales">Especiales</option>
-					</select>
-				</div>
-				
-				<div class="agregarProducto">
-					<button>Agregar Producto</button>
-				</div>
-			</section>
-			
-			
+		<div class="products-catalogo">	
 			
 			<main class="seccion-filtro-muestra-productos">
 				<section class="columna-filtro">
+
+					<div class="filtro">
+						<button onclick="window.location.href='/products/productAdd'" class="agregarProducto"><i class="fas fa-plus"></i> Agregar Producto</button>
+					</div>
+
+					<div class="filtro">
+						<select class="select-ordenar" name="ordenar" id="ordenar">
+							  <option value="nuevos-productos">Nuevos Productos</option>
+							  <option value="mas-vendidos">Mas Vendidos</option>
+							  <option value="populares">Populares</option>
+							  <option value="especiales">Especiales</option>
+						</select>
+					</div>
 					
-						<div>
-							<a onClick="modificarPerfil()">Cervecerias</a>
-							<div class="cerveceriasDropDown" id="modificar">
-								<h4>Hola</h4>
-								<h4>Chau</h4>
+						<div class="filtro">
+							<a class="tituloFiltro" onClick="dropDownFiltros('cerveceriasFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Cervecerias</a>
+							<div class="cerveceriasDropDown" id="cerveceriasFiltro">
+								<h4>Almirante Donn</h4>
+								<h4>Andes Origen</h4>
+								<h4>Antares</h4>
+								<h4>Brahma</h4>
+							</div>
+						</div>
+
+						<div class="filtro">
+							<a class="tituloFiltro" onClick="dropDownFiltros('provinciasFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Provincia de Origen</a>
+							<div class="cerveceriasDropDown" id="provinciasFiltro">
+								<h4>Tucuman</h4>
+								<h4>Mendoza</h4>
+								<h4>Buenos Aires</h4>
+								<h4>Uruguay</h4>
 							</div>
 						</div>
 						
-						<h3>Provincia de Origen</h3>
-						<h3>Familia</h3>
-						<h3>Volumen</h3>
-						<h3>Precios</h3>
+						<div class="filtro">
+							<a class="tituloFiltro" onClick="dropDownFiltros('familiaFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Familia</a>
+							<div class="cerveceriasDropDown" id="familiaFiltro">
+								<h4>Ale</h4>
+								<h4>Lager</h4>
+							</div>
+						</div>
+
+						<div class="filtro">
+							<a class="tituloFiltro" onClick="dropDownFiltros('volumenFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Volumen</a>
+							<div class="cerveceriasDropDown" id="volumenFiltro">
+								<h4>250ml</h4>
+								<h4>269ml</h4>
+								<h4>330ml</h4>
+								<h4>350ml</h4>
+							</div>
+						</div>
 					
 				</section>
 
 				<section class="columna-productos">
-					
-						<p>Columna der para mostrar productos</p>
+
+						<% productos.forEach(producto => { %>
+							<article class="producto">
+								<img src="/images/productos/<%= producto.imagen %>" alt="">
+									<h4 class="nombre-producto"><%= producto.nombre %></h4>
+								<button onclick="window.location.href='/products/productEdit/<%= producto.id %>'" id="modificarProducto" class="modificar-producto">Modificar Producto</button>
+								<button onclick="window.location.href='/products/productEdit/borrar/<%= producto.id %>'" id="eliminarProducto" class="eliminar-producto">Eliminar Producto</button>
+							</article>
+						<% }); %>		
 					
 				</section>
 			</main>
 
 		</div>
-
-	<footer>
-		<%- include('../partials/footer.ejs') %>
-	</footer>
 
 </body>
 </html>

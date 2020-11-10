@@ -2,6 +2,32 @@
 
 ## Sprint 3
 
+### 9/11/20
+
+  Terminado:
+  - productAdmin Hover arreglado
+  - productAdd se pueden agregar imagenes
+  - productDetail rutas arregladas
+  - productAdmin responsive
+  
+  Para hacer hoy:
+  - Avanzar con Perfil (CSS)
+  - Home solucionar problema de repetición de código
+  - Agregar descuentos en productAdd y productEdit (si no hay descuentos, se envía como "0")
+  - Validar usuarios.json para que no se buguee cuando es un array vacío
+  - Terminar envios (HTML y CSS)
+
+### 7/11/20
+
+Terminado:
+  - Perfil avanzado (HTML y CSS)
+  - productAdmin creado y logica hecha
+  
+Para hacer hoy:
+  - Avanzar con Perfil (CSS)
+  - productAdmin arreglar hover
+  - productAdd poder agregar imagenes
+  
 ### 6/11/20
 
 Terminado:
