@@ -53,6 +53,7 @@ let productsController = {
             id : idMax,
             nombre : req.body.nombre,
             precio : req.body.precio,
+            descuento : req.body.descuento,
             stock : req.body.stock,
             categoria : req.body.categoria,
             descripcion : req.body.descripcion
@@ -99,6 +100,7 @@ let productsController = {
                     id : productoBackUp.id,
                     nombre : req.body.nombre,
                     precio : req.body.precio,
+                    descuento : req.body.descuento,
                     stock : req.body.stock,
                     categoria : req.body.categoria,
                     descripcion : req.body.descripcion
@@ -138,7 +140,7 @@ let productsController = {
 
     //  /products/productAdmin
     productAdmin : (req, res, next) => {
-        res.render('products/productAdmin', { productos : productsJson});
+        res.render('products/productAdmin', { productos : productsJson });
     },
 
     //  /products/productCart
