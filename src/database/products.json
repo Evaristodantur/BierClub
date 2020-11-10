@@ -1,52 +1,52 @@
 [
     {
+        "id": 1,
         "nombre": "ippa Sippa (TDH Imperial Aussie IPA)",
         "precio": "90",
+        "descuento": 10,
         "stock": "645645",
         "categoria": "cerveza",
         "descripcion": "Es la descripcion de prueba 1",
-        "id": 1,
-        "imagen": "producto-1.jpg",
-        "descuento": 0
+        "imagen": "producto-1.jpg"
     },
     {
         "id": 2,
         "nombre": "Saison de Triomphe - Hoppy Saison",
-        "imagen": "producto-2.jpg",
         "precio": 120,
-        "categoria": "Lupuladas",
+        "descuento": 2,
         "stock": 2,
+        "categoria": "Lupuladas",
         "descripcion": "Es la descripcion de prueba 2",
-        "descuento": 0
+        "imagen": "producto-2.jpg"
     },
     {
         "id": 3,
         "nombre": "William Wallace Scottish",
-        "imagen": "producto-3.jpg",
         "precio": 82,
-        "categoria": "No Lupuladas",
+        "descuento": 5,
         "stock": 883,
+        "categoria": "No Lupuladas",
         "descripcion": "Es la descripcion de prueba 3",
-        "descuento": 0
+        "imagen": "producto-3.jpg"
     },
     {
         "id": 4,
         "nombre": "Mumbai 1947",
-        "imagen": "producto-4.jpg",
         "precio": 99,
-        "categoria": "No Lupuladas",
+        "descuento": 20,
         "stock": 10,
+        "categoria": "No Lupuladas",
         "descripcion": "Es la descripcion de prueba 4",
-        "descuento": 20
+        "imagen": "producto-4.jpg"
     },
     {
         "id": 5,
         "nombre": "German Pils",
-        "imagen": "producto-5.jpg",
         "precio": 130,
-        "categoria": "Lupuladas",
+        "descuento": 0,
         "stock": 45,
+        "categoria": "Lupuladas",
         "descripcion": "Es la descripcion de prueba 5",
-        "descuento": 0
+        "imagen": "producto-5.jpg"
     }
 ]
