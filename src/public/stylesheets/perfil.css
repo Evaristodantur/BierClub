@@ -1,6 +1,7 @@
 /* ==========================================================================
    GENERAL -LOGIN-REGISTER
    ========================================================================== */
+
 body .login-register{
     /* Display & Box Model */
     padding-top: 10rem;
@@ -55,6 +56,8 @@ body .login-register{
 }
 .showModificar {
     display: inline-block;
+/*     max-height: 100%;
+    overflow: hidden; */
   }
 .login-register .formulario-total form.formulario div.campo-input input.input-registro, 
 .login-register .formulario-total form.formulario div.campo-input button.input-button {
@@ -125,4 +128,12 @@ body .login-register{
 }
 .compras-perfil a:hover{
     cursor: pointer;
+}
+.compras-perfil-completas{
+    display:flex;
+    flex-direction: column;
+}
+.compras-total{
+    display: flex;
+    justify-content: space-between;
 }
