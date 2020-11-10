@@ -1,7 +1,10 @@
 /* ==========================================================================
    GENERAL -LOGIN-REGISTER
    ========================================================================== */
-
+/* html body{
+    height: 100%;
+    overflow: hidden;
+} */
 body .login-register{
     /* Display & Box Model */
     padding-top: 10rem;
