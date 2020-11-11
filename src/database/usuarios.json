@@ -4,7 +4,8 @@
         "email": "evaristo@dantur.com",
         "contrasenia": "",
         "confirmarContrasenia": "",
-        "id": 1
+        "id": 1,
+        "_locals": {}
     },
     {
         "nombre": "Santiago Tejerina",
@@ -14,5 +15,25 @@
         "termino-condiciones": "terminos",
         "id": 3,
         "_locals": {}
+    },
+    {
+        "nombre": "asd",
+        "email": "asdads@acsdas.com",
+        "contrasenia": "asd",
+        "confirmarContrasenia": "asd",
+        "id": 4
+    },
+    {
+        "nombre": "diego",
+        "email": "diego@diego.com",
+        "contrasenia": "diego",
+        "confirmarContrasenia": "diego",
+        "id": 5
+    },
+    {
+        "id": 6,
+        "nombre": "evaristoasd",
+        "email": "evaristo@danturasdasdsad",
+        "contrasenia": "qweqwe"
     }
 ]

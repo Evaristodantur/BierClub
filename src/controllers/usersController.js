@@ -20,6 +20,13 @@ let usersController = {
 
     //  /users/register
     store : (req, res, next) => {
+      let confirmarContrasenia = req.body.confirmarContrasenia;
+      let contraseniaUsuario = req.body.contrasenia;
+
+      if(confirmarContrasenia != contraseniaUsuario){
+        return res.send("Las contraseñas son diferentes. Vuelva a escribirlo")
+
+      }
       // ID maximo para reemplazar
       let idMax = 0;
 
@@ -32,11 +39,15 @@ let usersController = {
 
       //Sumarle 1 al ID mas alto, para crear un producto nuevo
       idMax = idMax + 1;
-      let sumarUsuario = req.body;
-      sumarUsuario.id = idMax;
+      let usuarioNuevo = {
+        id : idMax,
+        nombre : req.body.nombre,
+        email : req.body.email,
+        contrasenia : req.body.contrasenia
+      }
 
       //Sumar el usuario al array
-      usuariosJson.push(sumarUsuario);
+      usuariosJson.push(usuarioNuevo);
 
       //Convierte el Array en JSON
       let usersJSON = JSON.stringify(usuariosJson);
