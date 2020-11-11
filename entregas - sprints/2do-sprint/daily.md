@@ -7,6 +7,7 @@
   Terminado:
   - Perfil avanzado
   - Descuentos agregados
+  - "Mis pedidos" agregado al controlador y a la vista
   
   Para hacer hoy:
   - Terminar /product y /productEdit
