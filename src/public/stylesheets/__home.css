@@ -96,6 +96,13 @@
     margin-bottom: 0;
 }
 
+.home main section.productos article.producto div.precio-stock div h5.sinStock {
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: red;
+}
+
 /* ==========================================================================
    PRODUCTO - BUTTON AÑADIR AL CARRITO
    ========================================================================== */

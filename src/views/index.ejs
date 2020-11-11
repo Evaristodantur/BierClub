@@ -51,7 +51,12 @@
                   <h4 class="etiqueta-precio">$<%= productos[i].precio %></h4>
                 </div>
                 <div>
-                  <h5 class="etiqueta-stock">Stock Disponible</h5>
+                  <% if (productos[i].stock > 0) { %>
+                    <h5 class="etiqueta-stock">Stock Disponible</h5>
+                  <% } else { %>
+                    <h5 class="stock sinStock">Sin Stock</h5>
+                  <% } %>
+                  
                 </div>
               </div>
               <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>

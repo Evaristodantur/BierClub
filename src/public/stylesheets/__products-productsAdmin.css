@@ -109,7 +109,7 @@ a.tituloFiltro {
     display: flex;
 }
 /* ==========================================================================
-   SECCION - PRODUCTOS
+   SECCION - PRODUCTOS - /productAdmin
    ========================================================================== */
 .columna-productos {
     display: flex;
@@ -130,7 +130,7 @@ a.tituloFiltro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     border-radius: 8px;
 }
 
@@ -171,6 +171,100 @@ a.tituloFiltro {
     transition: 1;
     display: inline-block;
 }
+/* ==========================================================================
+   SECCION - PRODUCTOS - COLLECION /products
+   ========================================================================== */
+/* .columna-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.producto {
+    width: 19%;
+    position: relative;
+    border: 1px solid rgb(184, 184, 184);
+    margin-top: 5px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 8px;
+}
+
+.producto img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.producto h4.nombre-producto {
+    text-align: center;
+    word-break: break-all;
+    margin: 0;
+    margin-top: 5px;
+} */
+
+.precio-stock {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.precio , .stock {
+    width: 100%;
+}
+
+.precio-stock h4.precio, 
+.precio-stock h5.stock {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.precio-stock h5.stock {
+    color: green;
+}
+
+.precio-stock h5.noHay-stock {
+    color: red;
+}
+
+.btn-agregarAlCarrito {
+    opacity: 0;
+    width: 90%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 9px;
+    border: 0;
+    margin-bottom: 3px;
+}
+
+.producto:hover button.btn-agregarAlCarrito{
+    opacity: 1;
+    transition: 0.2s;
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
+   ========================================================================== */
+   @media (max-width: 950px) {
+    /*BUTTON - AÑADIR AL CARRITO*/
+    .btn-agregarAlCarrito {
+        opacity: 1;
+    }
+}
+
 
 
 

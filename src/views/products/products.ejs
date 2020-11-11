@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BierClub - Sobre nosotros</title>
+    <title>BierClub - Todos los Productos</title>
 	<link rel="icon" href="/images/faviconLogo.ico"/>
 	<link rel='stylesheet' href='/stylesheets/nav.css'/>
 	<link rel='stylesheet' href='/stylesheets/__products-productsAdmin.css'/>
 	<link rel='stylesheet' href='/stylesheets/__footer.css'/>
+	<script src="/js/productAdmin.js" type="text/javascript"></script>
 	<%- include('../partials/head.ejs') %>
 </head>
 
@@ -16,37 +17,87 @@
 		<%- include('../partials/nav.ejs') %>
 	</header>
 	
-		<div class="products-catalogo">
-			
-			<section>
-				<label for="ordenar">Ordenar:</label>
-            	<select class="select-ordenar" name="ordenar" id="ordenar">
-              		<option value="nuevos-productos">Nuevos Productos</option>
-              		<option value="mas-vendidos">Mas Vendidos</option>
-              		<option value="populares">Populares</option>
-              		<option value="especiales">Especiales</option>
-            	</select>
-			</section>
+		<div class="products-catalogo">	
 			
 			<main class="seccion-filtro-muestra-productos">
 				<section class="columna-filtro">
+
+					<div class="filtro">
+						<select class="select-ordenar" name="ordenar" id="ordenar">
+							  <option value="nuevos-productos">Nuevos Productos</option>
+							  <option value="mas-vendidos">Mas Vendidos</option>
+							  <option value="populares">Populares</option>
+							  <option value="especiales">Especiales</option>
+						</select>
+					</div>
 					
-						<p>Columna izq para filtrar productos</p>
+						<div class="filtro">
+							<a class="tituloFiltro" onClick="dropDownFiltros('cerveceriasFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Cervecerias</a>
+							<div class="cerveceriasDropDown" id="cerveceriasFiltro">
+								<h4>Almirante Donn</h4>
+								<h4>Andes Origen</h4>
+								<h4>Antares</h4>
+								<h4>Brahma</h4>
+							</div>
+						</div>
+
+						<div class="filtro">
+							<a class="tituloFiltro" onClick="dropDownFiltros('provinciasFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Provincia de Origen</a>
+							<div class="cerveceriasDropDown" id="provinciasFiltro">
+								<h4>Tucuman</h4>
+								<h4>Mendoza</h4>
+								<h4>Buenos Aires</h4>
+								<h4>Uruguay</h4>
+							</div>
+						</div>
+						
+						<div class="filtro">
+							<a class="tituloFiltro" onClick="dropDownFiltros('familiaFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Familia</a>
+							<div class="cerveceriasDropDown" id="familiaFiltro">
+								<h4>Ale</h4>
+								<h4>Lager</h4>
+							</div>
+						</div>
+
+						<div class="filtro">
+							<a class="tituloFiltro" onClick="dropDownFiltros('volumenFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Volumen</a>
+							<div class="cerveceriasDropDown" id="volumenFiltro">
+								<h4>250ml</h4>
+								<h4>269ml</h4>
+								<h4>330ml</h4>
+								<h4>350ml</h4>
+							</div>
+						</div>
 					
 				</section>
 
 				<section class="columna-productos">
-					
-						<p>Columna der para mostrar productos</p>
+
+						<% productos.forEach(producto => { %>
+							<article class="producto">
+								<img src="/images/productos/<%= producto.imagen %>" alt="">
+									<h4 class="nombre-producto"><%= producto.nombre %></h4>
+									<div class="precio-stock">
+										<div>
+										  <h4 class="precio">$ <%= producto.precio %> </h4>
+										</div>
+										<div>
+										<% if (producto.stock > 0) { %>
+											<h5 class="stock">Stock Disponible</h5>
+										<% } else { %>
+											<h5 class="stock noHay-stock">Sin Stock</h5>
+										<% } %>
+										  
+										</div>
+									</div>
+									<button class="btn-agregarAlCarrito" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
+							</article>
+						<% }); %>		
 					
 				</section>
 			</main>
 
 		</div>
-
-	<footer>
-		<%- include('../partials/footer.ejs') %>
-	</footer>
 
 </body>
 </html>

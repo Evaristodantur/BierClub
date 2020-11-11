@@ -16,7 +16,7 @@ let productsController = {
 
     //  /products
     index : (req, res, next) => {
-        res.render('products/products');
+        res.render('products/products', { productos : productsJson });
     },
 
     //  /products/productAdd - Pagina visual de agregar el producto
