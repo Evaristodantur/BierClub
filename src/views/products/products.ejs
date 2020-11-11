@@ -6,22 +6,27 @@
     <title>BierClub - Todos los Productos</title>
 	<link rel="icon" href="/images/faviconLogo.ico"/>
 	<link rel='stylesheet' href='/stylesheets/nav.css'/>
-	<link rel='stylesheet' href='/stylesheets/__products-productsAdmin.css'/>
-	<link rel='stylesheet' href='/stylesheets/__footer.css'/>
+	<link rel='stylesheet' href='/stylesheets/styles.css'/>
 	<script src="/js/productAdmin.js" type="text/javascript"></script>
 	<%- include('../partials/head.ejs') %>
 </head>
 
 <body>
+	<!-- NAV -->
 	<header>
 		<%- include('../partials/nav.ejs') %>
 	</header>
 	
+		<!-- CONTAINER PRODUCT-CATALOGO -->
 		<div class="products-catalogo">	
 			
+			<!-- MAIN SECCION FILTRO Y PRODUCTOS -->
 			<main class="seccion-filtro-muestra-productos">
+
+				<!-- COLUMNA FILTROS -->
 				<section class="columna-filtro">
 
+					<!-- SELECCION DE FILTRO -->
 					<div class="filtro">
 						<select class="select-ordenar" name="ordenar" id="ordenar">
 							  <option value="nuevos-productos">Nuevos Productos</option>
@@ -31,6 +36,7 @@
 						</select>
 					</div>
 					
+						<!-- CERVECERIAS -->
 						<div class="filtro">
 							<a class="tituloFiltro" onClick="dropDownFiltros('cerveceriasFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Cervecerias</a>
 							<div class="cerveceriasDropDown" id="cerveceriasFiltro">
@@ -41,6 +47,7 @@
 							</div>
 						</div>
 
+						<!-- PROVINCIA DE ORIGEN -->
 						<div class="filtro">
 							<a class="tituloFiltro" onClick="dropDownFiltros('provinciasFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Provincia de Origen</a>
 							<div class="cerveceriasDropDown" id="provinciasFiltro">
@@ -51,6 +58,7 @@
 							</div>
 						</div>
 						
+						<!-- FAMILIA -->
 						<div class="filtro">
 							<a class="tituloFiltro" onClick="dropDownFiltros('familiaFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Familia</a>
 							<div class="cerveceriasDropDown" id="familiaFiltro">
@@ -59,6 +67,7 @@
 							</div>
 						</div>
 
+						<!-- VOLUMEN -->
 						<div class="filtro">
 							<a class="tituloFiltro" onClick="dropDownFiltros('volumenFiltro', 'showModificarFiltros')"><i class="fas fa-caret-down"></i>  Volumen</a>
 							<div class="cerveceriasDropDown" id="volumenFiltro">
@@ -71,12 +80,15 @@
 					
 				</section>
 
+
+				<!-- COLUMNA PRODUCTOS -->
 				<section class="columna-productos">
 
+						<!-- PRODUCTO -->
 						<% productos.forEach(producto => { %>
 							<article class="producto">
 								<img src="/images/productos/<%= producto.imagen %>" alt="">
-									<h4 class="nombre-producto"><%= producto.nombre %></h4>
+									<h4 class="nombre-producto-collection"><%= producto.nombre %></h4>
 									<div class="precio-stock">
 										<div>
 										  <h4 class="precio">$ <%= producto.precio %> </h4>
@@ -98,6 +110,11 @@
 			</main>
 
 		</div>
+
+		<!-- FOOTER -->
+		<footer>
+			<%- include('../partials/footer.ejs') %>
+		</footer>
 
 </body>
 </html>
