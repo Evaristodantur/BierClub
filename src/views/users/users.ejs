@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BierClub - Todos los Productos</title>
+	<link rel="icon" href="/images/faviconLogo.ico"/>
+	<link rel='stylesheet' href='/stylesheets/nav.css'/>
+	<link rel='stylesheet' href='/stylesheets/users.css'/>
+	<script src="/js/productAdmin.js" type="text/javascript"></script>
+	<%- include('../partials/head.ejs') %>
+</head>
+
+<body>
+	<!-- NAV -->
+	<header>
+		<%- include('../partials/nav.ejs') %>
+	</header>
+    <div class="container-users">
+        <h1>Lista de usuarios completa</h1>
+        <% usuarios.forEach(usuarios => { %>
+            <div class="usuarios-lista">
+                <h3>Nombre: <%= usuarios.nombre %></h3>
+                <h3>email: <%= usuarios.email%></h3>
+            </div>
+        <%});%>
+    </div>	
+
+</body>
+</html>

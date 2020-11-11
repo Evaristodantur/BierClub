@@ -11,11 +11,15 @@ usuariosJson == "" ?
     
 let usersController = {
 
+
+    //    /users
+    index : (req, res, next) => {
+      res.render('users/users', { usuarios : usuariosJson });
+    },
     //  /users/register
     create : (req, res, next) => {
       res.render('users/register');
     },
-
 
 
     //  /users/register
