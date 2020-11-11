@@ -1,10 +1,6 @@
 /* ==========================================================================
    GENERAL -LOGIN-REGISTER
    ========================================================================== */
-/* html body{
-    height: 100%;
-    overflow: hidden;
-} */
 body .login-register{
     /* Display & Box Model */
     padding-top: 10rem;
@@ -59,8 +55,6 @@ body .login-register{
 }
 .showModificar {
     display: inline-block;
-/*     max-height: 100%;
-    overflow: hidden; */
   }
 .login-register .formulario-total form.formulario div.campo-input input.input-registro, 
 .login-register .formulario-total form.formulario div.campo-input button.input-button {

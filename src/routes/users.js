@@ -24,6 +24,9 @@ router.post('/perfil/:id', usersController.perfilUpdate);
 /* GET     /users/perfil/:id      page. */
 router.get('/perfil/eliminar/:id', usersController.eliminar);
 
+/* GET     /users/perfil/pedidos/:id      page. */
+router.get('/perfil/pedidos/:id', usersController.pedidos);
+
 
 
 module.exports = router;

@@ -92,6 +92,13 @@ let usersController = {
         let usuarioEliminadoJSON = JSON.stringify(eliminarUsuario);
         fs.writeFileSync(__dirname + "/../database/usuarios.json", usuarioEliminadoJSON);
         res.redirect("/");
+      },
+      pedidos : (req, res, next) => {
+        let idUrl = req.params.id;
+
+        let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
+        
+        usuarioBuscado ? (res.render("users/pedidos", usuarioBuscado)) : res.render("error")
       }
     }
 
