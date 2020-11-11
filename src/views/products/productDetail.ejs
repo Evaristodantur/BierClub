@@ -50,20 +50,31 @@
             <div class="precio-flex">
               <h5 class="precio-item">Individual</h5>
               <h5 class="precio-item">$<%=precio%></h5>
-              <div><h5 class="texto-invisible">¡10% off comprando 3 cervezas!</h5></div>
+              <div><h5 class="texto-invisible">¡10%  off comprando 3 cervezas!</h5></div>
               <div><h5 class="texto-invisible-mobile">¡10% off!</h5></div>
             </div>
             <div class="precio-flex">
               <h5 class="precio-item">3 cervezas</h5>
-              <h5 class="precio-item">$<%=(precio*3)-(precio*3/10)%></h5>
-              <div><h5 class="texto-descuento">¡10% off comprando 3 cervezas!</h5></div>
-              <div><h5 class="texto-descuento-mobile">¡10% off!</h5></div>
+              <% precio = parseInt(precio); descuento = parseInt(descuento) %>
+              <% if (descuento != 0) { %>
+                <h5 class="precio-item">$<%= ((precio*3)-(precio*3/(descuento + 5))).toFixed(0) %></h5>
+              <% } else { %>
+                <h5 class="precio-item">$<%= precio*3%></h5>
+              <% } %>
+              
+              <div><h5 class="texto-descuento">¡<%= descuento + 5 %> % off comprando 3 cervezas!</h5></div>
+              <div><h5 class="texto-descuento-mobile">¡<%= descuento + 5 %>% off!</h5></div>
             </div>
             <div class="precio-flex">
               <h5 class="precio-item">6 cervezas</h5>
-              <h5 class="precio-item">$<%=(precio*6)-(precio*6 /15)%></h5>
-              <div><h5 class="texto-descuento">¡15% off comprando 6 cervezas!</h5></div>
-              <div><h5 class="texto-descuento-mobile">¡15% off!</h5></div>
+              <% if (descuento != 0) { %>
+                <h5 class="precio-item">$<%=((precio*6)-(precio*6/(descuento + 10))).toFixed(0)%></h5>
+              <% } else { %>
+                <h5 class="precio-item">$<%=(precio*6)%></h5>
+              <% } %>
+
+              <div><h5 class="texto-descuento">¡<%= descuento + 10 %>% off comprando 6 cervezas!</h5></div>
+              <div><h5 class="texto-descuento-mobile">¡<%= descuento + 10 %>% off!</h5></div>
             </div>
           </div>
 

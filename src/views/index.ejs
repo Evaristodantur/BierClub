@@ -39,85 +39,29 @@
             </a>
           </div>
         
-          <article class="producto">
-            <a href="/products/productDetail/<%= productos[0].id %>">
-              <img src="/images/productos/<%= productos[0].imagen %>" alt="">
-            </a>
-            <h2 class="producto-titulo"><%= productos[0].nombre %></h2>
-            <div class="precio-stock">
-              <div>
-                <h4 class="etiqueta-precio">$<%= productos[0].precio %></h4>
+          <% let arrayResponsive = ['', 'resolucionMenorA320', 'resolucionMenorA768', 'resolucionMenorA1024', 'resolucionMenorA1200'] %>
+          <% for (let i=0; i < arrayResponsive.length ; i++) { %>
+            <article class="producto <%= arrayResponsive[i] %>">
+              <a href="/products/productDetail/<%= productos[i].id %>">
+                <img src="/images/productos/<%= productos[i].imagen %>" alt="">
+              </a>
+              <h2 class="producto-titulo"><%= productos[i].nombre %></h2>
+              <div class="precio-stock">
+                <div>
+                  <h4 class="etiqueta-precio">$<%= productos[i].precio %></h4>
+                </div>
+                <div>
+                  <% if (productos[i].stock > 0) { %>
+                    <h5 class="etiqueta-stock">Stock Disponible</h5>
+                  <% } else { %>
+                    <h5 class="stock sinStock">Sin Stock</h5>
+                  <% } %>
+                  
+                </div>
               </div>
-              <div>
-                <h5 class="etiqueta-stock">Stock Disponible</h5>
-              </div>
-            </div>
-            <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-          </article>
-
-          <article class="producto resolucionMenorA320">
-            <a href="/products/productDetail/<%= productos[1].id %>">
-              <img src="/images/productos/<%= productos[1].imagen %>" alt="">
-            </a>
-            <h2 class="producto-titulo"><%= productos[1].nombre %></h2>
-            <div class="precio-stock">
-              <div>
-                <h4 class="etiqueta-precio">$<%= productos[1].precio %></h4>
-              </div>
-              <div>
-                <h5 class="etiqueta-stock">Stock Disponible</h5>
-              </div>
-            </div>
-            <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-          </article>
-
-          <article class="producto resolucionMenorA768">
-            <a href="/products/productDetail/<%= productos[2].id %>">
-              <img src="/images/productos/<%= productos[2].imagen %>" alt="">
-            </a>
-            <h2 class="producto-titulo"><%= productos[2].nombre %></h2>
-            <div class="precio-stock">
-              <div>
-                <h4 class="etiqueta-precio">$<%= productos[2].precio %></h4>
-              </div>
-              <div>
-                <h5 class="etiqueta-stock">Stock Disponible</h5>
-              </div>
-            </div>
-            <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-          </article>
-
-          <article class="producto resolucionMenorA1024">
-            <a href="/products/productDetail/<%= productos[3].id %>">
-              <img src="/images/productos/<%= productos[3].imagen %>" alt="">
-            </a>
-            <h2 class="producto-titulo"><%= productos[3].nombre %></h2>
-            <div class="precio-stock">
-              <div>
-                <h4 class="etiqueta-precio">$<%= productos[3].precio %></h4>
-              </div>
-              <div>
-                <h5 class="etiqueta-stock">Stock Disponible</h5>
-              </div>
-            </div>
-            <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-          </article>
-
-          <article class="producto resolucionMenorA1200">
-            <a href="/products/productDetail/<%= productos[4].id %>">
-              <img src="/images/productos/<%= productos[4].imagen %>" alt="">
-            </a>
-            <h2 class="producto-titulo"><%= productos[4].nombre %></h2>
-            <div class="precio-stock">
-              <div>
-                <h4 class="etiqueta-precio">$<%= productos[4].precio %></h4>
-              </div>
-              <div>
-                <h5 class="etiqueta-stock">Stock Disponible</h5>
-              </div>
-            </div>
-            <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-          </article>
+              <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
+            </article>
+          <% } %>
         
           <div class="btnSig">
             <a href="#">
@@ -169,85 +113,24 @@
               </div>
             </a>
           </div>
-        
-          <article class="producto">
-            <a href="/products/productDetail/<%= productos[1].id %>">
-              <img src="/images/productos/<%= productos[1].imagen %>" alt="">
-            </a>
-            <h2 class="producto-titulo"><%= productos[1].nombre %></h2>
-            <div class="precio-stock">
-              <div>
-                <h4 class="etiqueta-precio">$<%= productos[1].precio %></h4>
+    
+          <% for (let i=0; i < arrayResponsive.length ; i++) { %>
+            <article class="producto <%= arrayResponsive[i] %>">
+              <a href="/products/productDetail/<%= productos[i].id %>">
+                <img src="/images/productos/<%= productos[i].imagen %>" alt="">
+              </a>
+              <h2 class="producto-titulo"><%= productos[i].nombre %></h2>
+              <div class="precio-stock">
+                <div>
+                  <h4 class="etiqueta-precio">$<%= productos[i].precio %></h4>
+                </div>
+                <div>
+                  <h5 class="etiqueta-stock">Stock Disponible</h5>
+                </div>
               </div>
-              <div>
-                <h5 class="etiqueta-stock">Stock Disponible</h5>
-              </div>
-            </div>
-            <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-          </article>
-
-          <article class="producto resolucionMenorA320">
-            <a href="/products/productDetail/<%= productos[2].id %>">
-              <img src="/images/productos/<%= productos[2].imagen %>" alt="">
-            </a>
-            <h2 class="producto-titulo"><%= productos[2].nombre %></h2>
-            <div class="precio-stock">
-              <div>
-                <h4 class="etiqueta-precio">$<%= productos[2].precio %></h4>
-              </div>
-              <div>
-                <h5 class="etiqueta-stock">Stock Disponible</h5>
-              </div>
-            </div>
-            <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-          </article>
-          <article class="producto resolucionMenorA768">
-            <a href="/products/productDetail/<%= productos[4].id %>">
-              <img src="/images/productos/<%= productos[4].imagen %>" alt="">
-            </a>
-            <h2 class="producto-titulo"><%= productos[4].nombre %></h2>
-            <div class="precio-stock">
-              <div>
-                <h4 class="etiqueta-precio">$<%= productos[4].precio %></h4>
-              </div>
-              <div>
-                <h5 class="etiqueta-stock">Stock Disponible</h5>
-              </div>
-            </div>
-            <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-          </article>
-
-          <article class="producto resolucionMenorA1024">
-            <a href="/products/productDetail/<%= productos[0].id %>">
-              <img src="/images/productos/<%= productos[0].imagen %>" alt="">
-            </a>
-            <h2 class="producto-titulo"><%= productos[0].nombre %></h2>
-            <div class="precio-stock">
-              <div>
-                <h4 class="etiqueta-precio">$<%= productos[0].precio %></h4>
-              </div>
-              <div>
-                <h5 class="etiqueta-stock">Stock Disponible</h5>
-              </div>
-            </div>
-            <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-          </article>
-
-          <article class="producto resolucionMenorA1200">
-            <a href="/products/productDetail/<%= productos[3].id %>">
-              <img src="/images/productos/<%= productos[3].imagen %>" alt="">
-            </a>
-            <h2 class="producto-titulo"><%= productos[3].nombre %></h2>
-            <div class="precio-stock">
-              <div>
-                <h4 class="etiqueta-precio">$<%= productos[3].precio %></h4>
-              </div>
-              <div>
-                <h5 class="etiqueta-stock">Stock Disponible</h5>
-              </div>
-            </div>
-            <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-          </article>
+              <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
+            </article>
+          <% } %>
         
           <div class="btnSig">
             <a href="#">

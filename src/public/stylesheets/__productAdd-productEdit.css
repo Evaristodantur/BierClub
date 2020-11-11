@@ -58,10 +58,24 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
     border: 0px solid black;
 }
 
+.productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img{
+    /* Posicionamiento */
+    position: relative;
+    right: 50px;
+    
+    /* Display & Box Model */
+    display: inline-block;
+    width: 320px;
+
+    /* Otras */    
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
+}
+
 /* ==========================================================================
    BLOQUE PRECIO - DESCUENTO
    ========================================================================== */
-
 div.campo-nombre-precio-cantidad div.precio-descuento {
     display: flex;
     flex-direction: row;
@@ -79,21 +93,6 @@ div.campo-nombre-precio-cantidad .precio input#precio {
 
 div.campo-nombre-precio-cantidad .descuento input#descuento {
     width: 77%;
-}
-
-.productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img{
-    /* Posicionamiento */
-    position: relative;
-    right: 50px;
-    
-    /* Display & Box Model */
-    display: inline-block;
-    width: 320px;
-
-    /* Otras */    
-    border: 2px solid black;
-    border-radius: 5px;
-    box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
 }
 
 /* ==========================================================================
@@ -260,6 +259,7 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
         align-items: center;
     }
     
+    /*BLOQUE PRECIO - DESCUENTO*/
     .productAdd form.formulario-carga div.flex-imgPrev-detalle div.campo-nombre-precio-cantidad {
         width: 100%;
         margin: 0;
@@ -341,6 +341,7 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
         align-items: center;
     }
     
+    /*BLOQUE PRECIO - DESCUENTO*/
     .productAdd form.formulario-carga div.flex-imgPrev-detalle div.campo-nombre-precio-cantidad {
         width: 100%;
         margin: 0;
@@ -450,6 +451,7 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
         width: 100%;
     }
 
+    /*BLOQUE PRECIO - DESCUENTO*/
     div.campo-nombre-precio-cantidad div.precio-descuento {
         justify-content: space-between;
         width: 100%;
