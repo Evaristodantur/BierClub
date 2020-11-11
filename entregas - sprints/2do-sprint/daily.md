@@ -2,6 +2,16 @@
 
 ## Sprint 3
 
+### 10/11/20
+  
+  Terminado:
+  - Perfil avanzado
+  - Descuentos agregados
+  
+  Para hacer hoy:
+  - Terminar /product y /productEdit
+  - Comenzar el HTML y CSS de "Mis pedidos" (/users/perfil/pedidos/:id)
+  
 ### 9/11/20
 
   Terminado:
