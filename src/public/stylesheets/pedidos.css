@@ -9,3 +9,17 @@ body .login-register{
     padding-top: 170px;
     text-align: center;
 }
+.pedidos-completo{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+}
+.pedidos-individual{
+    display: flex;
+    justify-content: space-around;
+}
+.pedidos-individual img{
+    width: 130px;
+    border-radius: 8px;
+}
