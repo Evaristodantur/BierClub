@@ -1,6 +1,11 @@
 /* ==========================================================================
    GENERAL -LOGIN-REGISTER
    ========================================================================== */
+
+.hola{
+       height:100%;
+       overflow: hidden;
+   }
 body .login-register{
     /* Display & Box Model */
     padding-top: 10rem;
@@ -16,8 +21,6 @@ body .login-register{
     top:50%;
     transform: translate(-50%, -50%);
     z-index: 9;
-    border: 1px solid black;
-    border-radius: 8px;
 }
 .perfil-total{
     display: flex;
@@ -133,4 +136,21 @@ body .login-register{
 .compras-total{
     display: flex;
     justify-content: space-between;
+}
+
+.invisible{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: -1;
+    opacity: .5;
+    margin-top: -30vh;
+    margin-left: -30vw;
+}
+.formulario{
+    background-color: whitesmoke;
+    border-radius: 8px;
 }

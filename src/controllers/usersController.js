@@ -24,8 +24,11 @@ let usersController = {
       let contraseniaUsuario = req.body.contrasenia;
 
       if(confirmarContrasenia != contraseniaUsuario){
-        return res.send("Las contraseñas son diferentes. Vuelva a escribirlo")
-
+        return res.send("Las contraseñas son diferentes. Vuelva a escribirlo");
+      }
+      let terminosCondiciones = req.body.terminosCondiciones;
+      if(!terminosCondiciones){
+        return res.send("Acepta los terminos y condiciones por favor.");
       }
       // ID maximo para reemplazar
       let idMax = 0;

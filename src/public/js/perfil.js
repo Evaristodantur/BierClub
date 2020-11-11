@@ -16,4 +16,5 @@
 
   function modificarPerfil() {
     document.getElementById("modificar").classList.toggle("showModificar");
+    document.getElementById("body").classList.toggle("hola");
   }
