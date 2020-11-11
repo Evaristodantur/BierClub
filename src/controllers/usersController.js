@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-
+const bcrypt = require('bcryptjs');
 //Agregado database JSON
 let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
 
@@ -39,11 +39,18 @@ let usersController = {
 
       //Sumarle 1 al ID mas alto, para crear un producto nuevo
       idMax = idMax + 1;
+
+      //Encriptar contraseña
+      let contraseniaCompleta = req.body.contrasenia;
+      let passEcritpada = bcrypt.hashSync(contraseniaCompleta,10); 
+
+      /* let check = bcrypt.compareSync(contraseniaCompleta,passEcritpada); */
+      //Hacer objeto completo, con el ID primero para mas comodidad
       let usuarioNuevo = {
         id : idMax,
         nombre : req.body.nombre,
         email : req.body.email,
-        contrasenia : req.body.contrasenia
+        contrasenia : passEcritpada
       }
 
       //Sumar el usuario al array
