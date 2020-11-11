@@ -2,6 +2,17 @@
 
 ## Sprint 3
 
+### 11/11/20
+
+  Terminado:
+  - /product y /productAdmin terminados
+  - productDetail dinamico terminado
+  
+  Para hacer hoy:
+  - Encriptar contraseña
+  - Avanzar con lógica de register
+  - Avanzar con lógica de logueo
+
 ### 10/11/20
   
   Terminado:
@@ -10,7 +21,7 @@
   - "Mis pedidos" agregado al controlador y a la vista
   
   Para hacer hoy:
-  - Terminar /product y /productEdit
+  - Terminar /product y /productAdmin
   - Comenzar el HTML y CSS de "Mis pedidos" (/users/perfil/pedidos/:id)
   
 ### 9/11/20
