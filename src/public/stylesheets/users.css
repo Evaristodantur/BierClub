@@ -16,3 +16,25 @@
 .usuarios-lista{
     padding-bottom: 50px;
 }
+.usuarios-listaCompleta{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.button-enteros{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    border: 0px;
+    font-weight: bold;
+    margin-top:10px;
+}
+.button-eliminar{
+    background-color: red;
+}
+.button-modificar{
+    background-color: blue;
+}
