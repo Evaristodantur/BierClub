@@ -16,7 +16,10 @@ router.get('/register', usersController.create);
 router.post('/register', usersController.store);
 
 /* GET     /users/login      page. */
-router.get('/login', usersController.login);
+router.get('/login', usersController.loginRender);
+
+/* GET     /users/login      page. */
+router.post('/login', usersController.loginIniciar);
 
 /* GET     /users/perfil/:id      page. */
 router.get('/perfil/:id', usersController.perfilEdit);

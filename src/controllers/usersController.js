@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
+const { RSA_NO_PADDING } = require('constants');
 //Agregado database JSON
 let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
 
@@ -68,8 +69,28 @@ let usersController = {
 
 
     //  /users/login
-    login : (req, res, next) => {
+    loginRender : (req, res, next) => {
       res.render('users/login');
+    },
+
+    loginIniciar : (req, res, next) => {
+      let email = req.body.email;
+
+      //VALIDACIONES DE EMIAL Y CONTRASEÑA (Si estan puestos o no)
+      if(email == "" && req.body.contrasenia == ""){ return res.send("El email y la contraseña estan vacios") }
+      if(email == ""){ return res.send("El email esta vacio") }
+      if(req.body.contrasenia == ""){ return res.send("La contraseña esta vacia") }
+
+
+      let buscarUsuario = usuariosJson.find(usuario => usuario.email == email)
+
+      if(buscarUsuario == undefined){ return res.send("El email no se encuentra registrado") }
+
+      if(req.body.email == buscarUsuario.email && bcrypt.compareSync(req.body.contrasenia,buscarUsuario.contrasenia)){
+          return res.send("Iniciaste sesión")
+      }else{
+        return res.send("La contraseña es inconrrecta")
+      }
     },
 
 
