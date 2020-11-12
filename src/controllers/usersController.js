@@ -13,10 +13,21 @@ usuariosJson == "" ?
 let usersController = {
 
 
-    //    /users
+    //    /users/usersAdmin
     usersAdmin : (req, res, next) => {
       res.render('users/usersAdmin', { usuarios : usuariosJson });
     },
+    //    /users/usersAdmin
+    usersAdminCambios : (req,res,next) =>{
+      let usuarioModificado = req.body;
+      let usuariosCompletos = usuariosJson.map(usuario => usuarioModificado.id == usuario.id);
+
+      fs.writeFileSync(__dirname + "/../database/usuarios.json", JSON.stringify(usuariosCompletos));
+      res.redirect("users/usersAdmin", { usuarios : usuariosCompletos})
+    },
+
+
+    
     //  /users/register
     create : (req, res, next) => {
       res.render('users/register');
