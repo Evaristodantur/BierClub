@@ -2,6 +2,23 @@
 
 ## Sprint 3
 
+### 12/11/20
+  
+  Terminado:
+  - Contraseñas encriptadas en el ABM de usuarios
+  - Lógica de register avanzada:
+    - Verificación de que "Contraseña" y "Confirmar contraseña" sean iguales
+    - Verificación de que "Términos y condiciones" esté aceptado
+    - Verificación de que todos los campos estén completados
+  - Lógica de login avanzada: 
+    - Verificación de que el email exista
+    - Verificación de que la contraseña este bien puesta
+    - Verificación de que ambos campos están completados
+  
+  Para hacer hoy:
+  - Terminar con los cambios en el login
+  - Terminar con la pagina Envios
+  
 ### 11/11/20
 
   Terminado:
