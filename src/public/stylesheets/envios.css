@@ -1,0 +1,27 @@
+ /* Display & Box Model */
+.la-ubi{
+ padding: 10px;
+ display: block;
+ height: 40px;
+ width: 30%;
+ 
+
+ /* Otras */
+ cursor: not-allowed;
+ opacity: 0.3;
+ background-color: black;
+ border: 0px solid black;
+ font-size: large;
+ border-radius: 5px;
+ color: white;
+}
+.boton-ubi{ 
+display: flex;
+justify-content: center;
+justify-items: center;
+}
+.enviar-ubicacion{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between ;
+}
