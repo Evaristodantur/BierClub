@@ -32,7 +32,7 @@ let usersController = {
       }
       let terminosCondiciones = req.body.terminosCondiciones;
       if(!terminosCondiciones){
-        return res.send("Acepta los terminos y condiciones por favor.");
+        return res.send("Acepta los terminos y condiciones por favor.");.
       }
       // ID maximo para reemplazar
       let idMax = 0;
