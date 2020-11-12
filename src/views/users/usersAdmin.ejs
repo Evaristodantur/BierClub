@@ -21,8 +21,21 @@
         <section class="usuarios-listaCompleta">
         <% usuarios.forEach(usuarios => { %>
             <div class="usuarios-lista">
-                <h3>Nombre: <%= usuarios.nombre %></h3>
-                <h3>email: <%= usuarios.email%></h3>
+                <div class="container-input">
+                    <h3>ID: <%= usuarios.id %></h3> 
+                </div>
+                <div class="container-input">
+                    <h3>Nombre:</h3> 
+                    <input class="inputModificar" type="text" id="nombre" name="nombre" value="<%= usuarios.nombre %>">
+                </div>
+                <div class="container-input">
+                    <h3>Email:</h3> 
+                    <input class="inputModificar" type="email" id="email" name="email" value="<%= usuarios.email %>">
+                </div>
+                <div class="container-input">
+                    <h3>Contraseña:</h3> 
+                    <input class="inputModificar" type="text" id="contrasenia" name="contrasenia" value="<%= usuarios.contrasenia %>">
+                </div>
                 <button class="button-modificar button-enteros" type="submit" id="" name="" value="ingresar"> Modificar datos</button>
                 <button onclick="window.location.href='/users/perfil/eliminar/<%= usuarios.id %>'" class="button-eliminar button-enteros" type="reset" id="" name="" value=""> Eliminar usuario</button>
             </div>

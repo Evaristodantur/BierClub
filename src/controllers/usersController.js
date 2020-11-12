@@ -13,8 +13,8 @@ let usersController = {
 
 
     //    /users
-    index : (req, res, next) => {
-      res.render('users/users', { usuarios : usuariosJson });
+    usersAdmin : (req, res, next) => {
+      res.render('users/usersAdmin', { usuarios : usuariosJson });
     },
     //  /users/register
     create : (req, res, next) => {

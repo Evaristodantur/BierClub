@@ -5,15 +5,13 @@
 .container-users h3{
     margin-block-start: 0em;
     margin-block-end: 0em;
+    margin-right: 10px;
 }
 .container-users h1{
     margin-block-start: 0em;
     margin-block-end: 0em;
     padding-top: 150px;
     text-align: center;
-    padding-bottom: 50px;
-}
-.usuarios-lista{
     padding-bottom: 50px;
 }
 .usuarios-listaCompleta{
@@ -32,9 +30,19 @@
     font-weight: bold;
     margin-top:10px;
 }
+.button-enteros:hover{
+    cursor: pointer;
+}
 .button-eliminar{
     background-color: red;
 }
 .button-modificar{
     background-color: blue;
+}
+.container-input{
+    display: flex;
+    margin-bottom: 10px;
+}
+.container-input input{
+    border-radius: 7px;
 }
