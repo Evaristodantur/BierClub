@@ -6,8 +6,8 @@ let usersController = require('../controllers/usersController');
 
 
 
-/* GET     /users     page. */
-router.get('/', usersController.index);
+/* GET     /users/usersAdmin     page. */
+router.get('/usersAdmin', usersController.usersAdmin);
 
 /* GET     /users/register      page. */
 router.get('/register', usersController.create);

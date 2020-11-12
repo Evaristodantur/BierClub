@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BierClub - Todos los Productos</title>
+	<link rel="icon" href="/images/faviconLogo.ico"/>
+	<link rel='stylesheet' href='/stylesheets/nav.css'/>
+	<link rel='stylesheet' href='/stylesheets/users.css'/>
+	<script src="/js/productAdmin.js" type="text/javascript"></script>
+	<%- include('../partials/head.ejs') %>
+</head>
+
+<body>
+	<!-- NAV -->
+	<header>
+		<%- include('../partials/nav.ejs') %>
+	</header>
+    <div class="container-users">
+        <h1>Lista de usuarios completa</h1>
+        <section class="usuarios-listaCompleta">
+        <% usuarios.forEach(usuarios => { %>
+            <div class="usuarios-lista">
+                <div class="container-input">
+                    <h3>ID: <%= usuarios.id %></h3> 
+                </div>
+                <div class="container-input">
+                    <h3>Nombre:</h3> 
+                    <input class="inputModificar" type="text" id="nombre" name="nombre" value="<%= usuarios.nombre %>">
+                </div>
+                <div class="container-input">
+                    <h3>Email:</h3> 
+                    <input class="inputModificar" type="email" id="email" name="email" value="<%= usuarios.email %>">
+                </div>
+                <div class="container-input">
+                    <h3>Contraseña:</h3> 
+                    <input class="inputModificar" type="text" id="contrasenia" name="contrasenia" value="<%= usuarios.contrasenia %>">
+                </div>
+                <button class="button-modificar button-enteros" type="submit" id="" name="" value="ingresar"> Modificar datos</button>
+                <button onclick="window.location.href='/users/perfil/eliminar/<%= usuarios.id %>'" class="button-eliminar button-enteros" type="reset" id="" name="" value=""> Eliminar usuario</button>
+            </div>
+        <%});%>
+        </section>
+    </div>	
+
+</body>
+</html>

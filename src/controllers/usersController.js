@@ -11,6 +11,11 @@ usuariosJson == "" ?
     
 let usersController = {
 
+
+    //    /users
+    usersAdmin : (req, res, next) => {
+      res.render('users/usersAdmin', { usuarios : usuariosJson });
+    },
     //  /users/register
     create : (req, res, next) => {
       res.render('users/register');
