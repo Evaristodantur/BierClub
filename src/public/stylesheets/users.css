@@ -16,7 +16,7 @@
 }
 .usuarios-listaCompleta{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 .button-enteros{
@@ -45,4 +45,8 @@
 }
 .container-input input{
     border-radius: 7px;
+}
+.usuarios-lista{
+    margin-bottom: 30px;
+    margin-right: 50px;
 }

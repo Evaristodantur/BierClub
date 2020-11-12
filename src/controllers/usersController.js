@@ -24,16 +24,6 @@ let usersController = {
 
     //  /users/register
     store : (req, res, next) => {
-      let confirmarContrasenia = req.body.confirmarContrasenia;
-      let contraseniaUsuario = req.body.contrasenia;
-
-      if(confirmarContrasenia != contraseniaUsuario){
-        return res.send("Las contraseñas son diferentes. Vuelva a escribirlo");
-      }
-      let terminosCondiciones = req.body.terminosCondiciones;
-      if(!terminosCondiciones){
-        return res.send("Acepta los terminos y condiciones por favor.");.
-      }
       // ID maximo para reemplazar
       let idMax = 0;
 
@@ -47,27 +37,28 @@ let usersController = {
       //Sumarle 1 al ID mas alto, para crear un producto nuevo
       idMax = idMax + 1;
 
-      //Encriptar contraseña
-      let contraseniaCompleta = req.body.contrasenia;
-      let passEcritpada = bcrypt.hashSync(contraseniaCompleta,10); 
-
       /* let check = bcrypt.compareSync(contraseniaCompleta,passEcritpada); */
       //Hacer objeto completo, con el ID primero para mas comodidad
       let usuarioNuevo = {
         id : idMax,
         nombre : req.body.nombre,
         email : req.body.email,
-        contrasenia : passEcritpada
+        contrasenia : bcrypt.hashSync(req.body.contrasenia,10)
+      }
+
+      if(!req.body.terminosCondiciones){
+        return res.send("Acepta los terminos y condiciones por favor.");
+      }
+
+      if(!bcrypt.compareSync(req.body.confirmarContrasenia,usuarioNuevo.contrasenia)){
+        return res.send("Las contraseñas no coinciden");
       }
 
       //Sumar el usuario al array
       usuariosJson.push(usuarioNuevo);
 
-      //Convierte el Array en JSON
-      let usersJSON = JSON.stringify(usuariosJson);
-
       //Sobreescribe el archivo
-      fs.writeFileSync(__dirname + "/../database/usuarios.json", usersJSON);
+      fs.writeFileSync(__dirname + "/../database/usuarios.json", JSON.stringify(usuariosJson));
 
       //Te envia a la vista una vez el form fue completado
       res.redirect("../");
