@@ -6,6 +6,9 @@ let usersController = require('../controllers/usersController');
 
 
 
+/* GET     /users/usersAdmin     page. */
+router.get('/usersAdmin', usersController.usersAdmin);
+
 /* GET     /users/register      page. */
 router.get('/register', usersController.create);
 
@@ -13,7 +16,10 @@ router.get('/register', usersController.create);
 router.post('/register', usersController.store);
 
 /* GET     /users/login      page. */
-router.get('/login', usersController.login);
+router.get('/login', usersController.loginRender);
+
+/* GET     /users/login      page. */
+router.post('/login', usersController.loginIniciar);
 
 /* GET     /users/perfil/:id      page. */
 router.get('/perfil/:id', usersController.perfilEdit);
@@ -23,6 +29,9 @@ router.post('/perfil/:id', usersController.perfilUpdate);
 
 /* GET     /users/perfil/:id      page. */
 router.get('/perfil/eliminar/:id', usersController.eliminar);
+
+/* GET     /users/perfil/pedidos/:id      page. */
+router.get('/perfil/pedidos/:id', usersController.pedidos);
 
 
 

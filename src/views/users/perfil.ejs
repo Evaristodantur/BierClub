@@ -11,7 +11,7 @@
 	<script src="/js/perfil.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body id="body">
 
 	<!-- NAV -->
 	<header>
@@ -41,11 +41,28 @@
 				<div class="perfil-derecha">
 					<h2>Mis compras</h2>
 					<hr>
+					<div class="compras-perfil">
+						<img src="/images/productos/producto-2.jpg" alt="">
+						<h3>Precio total del pedido: $2000</h3>
+						<a onclick="window.location.href='/users/perfil/pedidos/<%= id %>'"  class=""> Ver pedido completo</a>
+					</div>
+					<div class="compras-perfil">
+						<img src="/images/productos/producto-2.jpg" alt="">
+						<h3>Precio total del pedido: $2000</h3>
+						<a onclick="window.location.href='/users/perfil/pedidos/<%= id %>'"  class=""> Ver pedido completo</a>
+					</div>
+					<div class="compras-perfil">
+						<img src="/images/productos/producto-2.jpg" alt="">
+						<h3>Precio total del pedido: $2000</h3>
+						<a onclick="window.location.href='/users/perfil/pedidos/<%= id %>'" class=""> Ver pedido completo</a>
+					</div>
 				</div>
 
 			</div>
 			<!-- FORMULARIO -->
 			<div class="formulario-total" id="modificar">
+				<div class="invisible"></div>
+				
 			<form class="formulario" action="/users/perfil/<%= id %>" method="POST">
 				<div class="cerrar-modificar"><a onclick="modificarPerfil()"><i class="far fa-times-circle"></i></a></div>
 				
@@ -53,7 +70,7 @@
 				<!-- NOMBRE -->
 				<div class="campo-input campo1">
 					<input class="input-registro" type="text" id="nombre" name="nombre" value="<%= nombre %>">
-					</div>
+				</div>
 
 				<!-- EMAIL -->
 				<div class="campo-input">

@@ -1,20 +1,5 @@
 /* ==========================================================================
-   RESET GENERAL
-   ========================================================================== */
-   body {
-    /* Display & Box Model */
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-
-    /* Otras */
-    background-color: rgb(228, 228, 228);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-}
-
-/* ==========================================================================
-   GENERAL -LOGIN-REGISTER
+   GENERAL
    ========================================================================== */
 body .products-catalogo{
     /* Display & Box Model */
@@ -24,55 +9,59 @@ body .products-catalogo{
 /* ==========================================================================
    SECCION FILTRAR y MOSTRAR PRODUCTO
    ========================================================================== */
-.seccion-filtro-muestra-productos {
+.products-catalogo main.seccion-filtro-muestra-productos {
     display: flex;
     width: 100%;
     flex-direction: row;
 }
 
-.columna-filtro {
+.products-catalogo .seccion-filtro-muestra-productos section.columna-filtro {
     width: 15%;
 }
 
-.columna-productos {
+.products-catalogo .seccion-filtro-muestra-productos section.columna-productos {
     width: 83%;
     height: 100%;
 }
 /* ==========================================================================
    FILTROS
    ========================================================================== */
-.filtro {
-    margin-top: 15px;
+.products-catalogo .seccion-filtro-muestra-productos .columna-filtro div.filtro {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 15px;
     margin-left: 15%;
 }
 
-.agregarProducto {
+.products-catalogo .seccion-filtro-muestra-productos .columna-filtro .filtro button.agregarProducto {
+    /* Display & Box Model */
     align-self: center;
+    padding: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 80%;
+
+    /* Otras */
     cursor: pointer;
     background-color: rgb(10, 9, 9);
     color: white;
     border: 0;
     border-radius: 8px;
-    padding: 10px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    width: 80%;
 }
 
 
 
-.agregarProducto:hover {
+.products-catalogo .seccion-filtro-muestra-productos .columna-filtro .filtro button.agregarProducto:hover {
     background-color: rgb(27, 27, 27);
 }
 
-i.fa-plus {
+.products-catalogo .seccion-filtro-muestra-productos .columna-filtro .filtro .agregarProducto i.fa-plus,
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto .btn-agregarAlCarrito i.fa-plus {
     color: #DAA520;
 }
 
-select.select-ordenar {
+.products-catalogo .seccion-filtro-muestra-productos .columna-filtro .filtro select.select-ordenar {
     /* Display & Box Model */
     width: 100%;
     height: 40px;
@@ -86,14 +75,16 @@ select.select-ordenar {
     font-weight: 400;
 }
 
-a.tituloFiltro {
+.products-catalogo .seccion-filtro-muestra-productos .columna-filtro .filtro a.tituloFiltro {
+    /* Display & Box Model */
+    width: 100%;
+
+    /* Otras */
     cursor: pointer;
     font-size: medium;
-    width: 100%;
     text-transform: uppercase;
 }
 
-/*esto va en none*/
 .cerveceriasDropDown {
     display: none;
     margin-bottom: 4%;
@@ -101,17 +92,18 @@ a.tituloFiltro {
     justify-content: center;
 }
 
-.cerveceriasDropDown h4 {
-    margin: 0 0 0 5%;
-}
-
 .showModificarFiltros {
     display: flex;
 }
+
+.products-catalogo .seccion-filtro-muestra-productos .columna-filtro .filtro .cerveceriasDropDown h4 {
+    margin: 0 0 0 5%;
+}
+
 /* ==========================================================================
-   SECCION - PRODUCTOS
+   SECCION - PRODUCTOS - /productAdmin
    ========================================================================== */
-.columna-productos {
+.products-catalogo .seccion-filtro-muestra-productos section.columna-productos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -121,53 +113,338 @@ a.tituloFiltro {
     margin-left: 1%;
 }
 
-.producto {
+/* ==========================================================================
+   ARTICLE - PRODUCTO
+   ========================================================================== */
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos article.producto {
+    /* Display & Box Model */
     width: 19%;
-    position: relative;
-    border: 1px solid rgb(184, 184, 184);
     margin-top: 5px;
     margin-right: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+
+    /* Posicionamiento */
+    position: relative;
+
+    /* Otras */
+    border: 1px solid rgb(184, 184, 184);
     border-radius: 8px;
 }
 
-.producto img {
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+    /* Display & Box Model */
     width: 100%;
+
+    /* Otras */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
-.producto h4.nombre-producto {
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto h4.nombre-producto-collection,
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto h4.nombre-producto-productAdmin {
+    /* Display & Box Model */
     text-align: center;
-    word-break: break-all;
-    margin: 0;
     margin-top: 5px;
+
+    /* Otras */
+    word-break: break-all;
 }
 
-.modificar-producto, 
-.eliminar-producto {
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto h4.nombre-producto-collection {
+    margin: 0;
+}
+
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto, 
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
+    /* Display & Box Model */
     display: none;
-    top: 130px;
     width: 90%;
     padding: 10px;
+
+    /* Posicionamiento */
+    top: 133px;
+
+    /* Otras */
     background: rgb(71, 73, 211);
     color: white;
     border-radius: 9px;
     border: 0;
 }
 
-.eliminar-producto {
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
+    /* Posicionamiento */
     top: 170px;
+
+    /* Otras */
     background: rgb(184, 20, 20);
 }
 
-.producto:hover .modificar-producto,
-.producto:hover .eliminar-producto {
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.modificar-producto,
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.eliminar-producto {
+    /* Display & Box Model */
+    display: inline-block;
+
+    /* Posicionamiento */
     position: absolute;
+
+    /* Otras */
     cursor: pointer;
     transition: 1;
-    display: inline-block;
+}
+/* ==========================================================================
+   SECCION - PRODUCTOS - COLLECION /products
+   ========================================================================== */
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto div.precio-stock {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto .precio-stock .precio,
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto .precio-stock .stock {
+    width: 100%;
+}
+
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto .precio-stock h4.precio, 
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto .precio-stock h5.stock {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto .precio-stock h5.stock {
+    color: green;
+}
+
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto .precio-stock h5.noHay-stock {
+    color: red;
+}
+
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.btn-agregarAlCarrito {
+    /* Display & Box Model */
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 3px;
+
+    /* Otras */
+    opacity: 0;
+    background: black;
+    color: white;
+    border-radius: 9px;
+    border: 0;
+}
+
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.btn-agregarAlCarrito{
+    opacity: 1;
+    transition: 0.2s;
+}
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
+   ========================================================================== */
+@media (max-width: 950px) {
+    /*BUTTON - AÑADIR AL CARRITO*/
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.btn-agregarAlCarrito {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 1200 a 1450
+   ========================================================================== */
+@media (max-width: 1450px) {
+    /* ARTICLE - PRODUCTO */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos article.producto {
+        width: 23%;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 1024 a 1200
+   ========================================================================== */
+@media (max-width: 1200px) {
+    /* SECCION PRODUCTOS*/
+    .products-catalogo .seccion-filtro-muestra-productos section.columna-productos {
+        margin-left: 3%;
+    }
+
+    /* BUTTON, ELIMINAR - MODIFICAR */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto {
+        top: 103px;
+    }
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
+        top: 140px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 768 a 1024
+   ========================================================================== */
+@media (max-width: 1024px) {
+    /* SELECTOR DE FILTRO */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-filtro .filtro select.select-ordenar {
+        font-size: 12px;
+    }
+
+    /* TITULO - FILTRO */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-filtro .filtro a.tituloFiltro {
+        font-size: small;
+        width: 100%;
+    }
+
+    /* DROPDOWN - CERVECERIAS TITULO */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-filtro .filtro .cerveceriasDropDown h4 {
+        font-size: small;
+    }
+
+    /* ARTICLE - PRODUCTO */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos article.producto {
+        width: 31%;
+    }
+
+    /* BUTTON, ELIMINAR - MODIFICAR */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto, 
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
+        /* Display & Box Model */
+        display: inline-block;
+        width: 90%;
+        padding: 5px;
+
+        /* Posicionamiento */
+        position: absolute;
+
+        /* Otras */
+        color: white;
+        border-radius: 9px;
+        border: 0;
+    }
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.modificar-producto,
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.eliminar-producto {
+        position: absolute;
+        cursor: pointer;
+        transition: 1;
+        display: inline-block;
+    }
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto {
+        top: 113px;
+    }
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
+        top: 140px;
+    }
+
+    /* BUTTON, AGREGAR AL CARRITO */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.agregarProducto {
+        width: 100%;
+        font-size: small;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 480 a 768
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* BODY */
+    body .products-catalogo {
+        padding-top: 5rem;
+    }
+
+    /* SECCION FILTRO + TODOS LOS PRODUCTOS */
+    .products-catalogo main.seccion-filtro-muestra-productos {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    /* SECCION - FILTROS */
+    .products-catalogo .seccion-filtro-muestra-productos section.columna-filtro {
+        width: 100%;
+    }
+    
+    /* SECCION PRODUCTOS */
+    .products-catalogo .seccion-filtro-muestra-productos section.columna-productos {
+        width: 95%;
+        margin-left: 5%;
+        margin-right: 0;
+    }
+    
+    /* DIV DE CADA FILTRO */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-filtro div.filtro {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 94%;
+        justify-content: center;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    /* DROPDOWN - CERVECERIAS TITULO */
+    .cerveceriasDropDown {
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    /* ARTICLE - PRODUCTO */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos article.producto {
+        width: 45%;
+    }
+
+    /* BUTTON, ELIMINAR - MODIFICAR */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto {
+        top: 143px;
+    }
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
+        top: 170px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 480 hacia abajo
+   ========================================================================== */
+@media (max-width: 480px) {
+    /* ARTICLE - PRODUCTO */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos article.producto {
+        width: 95%;
+    }
+
+    /* BUTTON, ELIMINAR - MODIFICAR */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto {
+        top: 173px;
+    }
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
+        top: 200px;
+    }
 }

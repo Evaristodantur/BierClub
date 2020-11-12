@@ -44,7 +44,8 @@
 
 div.campo-nombre-precio-cantidad .nombre input#nombreProducto , 
 div.campo-nombre-precio-cantidad .precio input#precio , 
-div.campo-nombre-precio-cantidad .cantidad input#cantidad {
+div.campo-nombre-precio-cantidad .cantidad input#cantidad,
+div.campo-nombre-precio-cantidad .descuento input#descuento {
     /* Display & Box Model */
     display: block;
     margin: 0 0 1% 0;
@@ -70,6 +71,28 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
+}
+
+/* ==========================================================================
+   BLOQUE PRECIO - DESCUENTO
+   ========================================================================== */
+div.campo-nombre-precio-cantidad div.precio-descuento {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+div.campo-nombre-precio-cantidad div.precio, 
+div.campo-nombre-precio-cantidad div.descuento {
+    width: 40%;
+}
+
+div.campo-nombre-precio-cantidad .precio input#precio {
+    width: 77%;
+}
+
+div.campo-nombre-precio-cantidad .descuento input#descuento {
+    width: 77%;
 }
 
 /* ==========================================================================
@@ -236,6 +259,7 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
         align-items: center;
     }
     
+    /*BLOQUE PRECIO - DESCUENTO*/
     .productAdd form.formulario-carga div.flex-imgPrev-detalle div.campo-nombre-precio-cantidad {
         width: 100%;
         margin: 0;
@@ -247,6 +271,19 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    div.campo-nombre-precio-cantidad div.precio-descuento {
+        justify-content: center;
+        width: 100%;
+    }
+
+    div.campo-nombre-precio-cantidad .precio input#precio {
+        width: 77%;
+    }
+    
+    div.campo-nombre-precio-cantidad .descuento input#descuento {
+        width: 88%;
     }
 
     .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev {
@@ -304,9 +341,23 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
         align-items: center;
     }
     
+    /*BLOQUE PRECIO - DESCUENTO*/
     .productAdd form.formulario-carga div.flex-imgPrev-detalle div.campo-nombre-precio-cantidad {
         width: 100%;
         margin: 0;
+    }
+
+    div.campo-nombre-precio-cantidad div.precio-descuento {
+        justify-content: center;
+        width: 100%;
+    }
+
+    div.campo-nombre-precio-cantidad .precio input#precio {
+        width: 77%;
+    }
+    
+    div.campo-nombre-precio-cantidad .descuento input#descuento {
+        width: 88%;
     }
 
     .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev {
@@ -397,6 +448,20 @@ div.campo-nombre-precio-cantidad .cantidad input#cantidad {
     div.campo-nombre-precio-cantidad .nombre input#nombreProducto, 
     div.campo-nombre-precio-cantidad .precio input#precio, 
     div.campo-nombre-precio-cantidad .cantidad input#cantidad {
+        width: 100%;
+    }
+
+    /*BLOQUE PRECIO - DESCUENTO*/
+    div.campo-nombre-precio-cantidad div.precio-descuento {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    div.campo-nombre-precio-cantidad .precio input#precio {
+        width: 100%;
+    }
+    
+    div.campo-nombre-precio-cantidad .descuento input#descuento {
         width: 100%;
     }
 

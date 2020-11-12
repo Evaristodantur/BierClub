@@ -19,16 +19,16 @@
 			<h1>Ingresa a tu Cuenta</h1>
 		
 			<!-- FORMULARIO -->
-			<form class="formulario" action="" method="">
+			<form class="formulario" action="/users/login" method="POST">
 				
 			<!-- EMAIL -->
 			<div class="campo-input">
-				<input class="input-registro" type="email" , id="email" placeholder="Email o Usuario">
+				<input class="input-registro" type="email" id="email" name="email" placeholder="Email o Usuario">
 			</div>
 
 			<!-- CONTRASEÑA -->
 			<div class="campo-input">
-				<input class="input-registro" type="password" , id="contraseña" placeholder="Contraseña"> 
+				<input class="input-registro" type="password" id="contraseña" name="contrasenia" placeholder="Contraseña"> 
 			</div>
 			
 			<!-- CONTRASEÑA OLVIDADA -->
@@ -36,7 +36,7 @@
 			
 			<!-- BOTON INGRESAR -->
 			<div class="campo-input">
-				<button class="input-button" type="submit" , id="ingresar" , value="ingresar"> Ingresar</button>
+				<button class="input-button" type="submit" id="ingresar" value="ingresar"> Ingresar</button>
 			</div>
 			</form>
 			

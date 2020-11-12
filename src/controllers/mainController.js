@@ -3,12 +3,12 @@ const fs = require('fs');
 
 //Agregado database JSON
 let productsJson = fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8');
-if(productsJson == "") {
-    fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(productsJson = []));
-} else {
-    productsJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8'));
-}
 
+productsJson == "" ?
+    fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(productsJson = [])) :
+    productsJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8'));
+
+    
 let mainController = {
     
     //  Home

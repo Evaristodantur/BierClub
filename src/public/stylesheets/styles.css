@@ -4,6 +4,7 @@
 @import '__productCart.css';
 @import '__productDetail.css';
 @import '__register-login.css';
-@import '__productAdd.css';
+@import '__products-productsAdmin.css';
+@import '__productAdd-productEdit.css';
 @import '__footer.css';
 @import '__error.css';

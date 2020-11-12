@@ -2,6 +2,43 @@
 
 ## Sprint 3
 
+### 11/11/20
+
+  Terminado:
+  - /product y /productAdmin terminados
+  - productDetail dinamico terminado
+  
+  Para hacer hoy:
+  - Encriptar contraseña
+  - Avanzar con lógica de register
+  - Avanzar con lógica de logueo
+
+### 10/11/20
+  
+  Terminado:
+  - Perfil avanzado
+  - Descuentos agregados
+  - "Mis pedidos" agregado al controlador y a la vista
+  
+  Para hacer hoy:
+  - Terminar /product y /productAdmin
+  - Comenzar el HTML y CSS de "Mis pedidos" (/users/perfil/pedidos/:id)
+  
+### 9/11/20
+
+  Terminado:
+  - productAdmin Hover arreglado
+  - productAdd se pueden agregar imagenes
+  - productDetail rutas arregladas
+  - productAdmin responsive
+  
+  Para hacer hoy:
+  - Avanzar con Perfil (CSS)
+  - Home solucionar problema de repetición de código
+  - Agregar descuentos en productAdd y productEdit (si no hay descuentos, se envía como "0")
+  - Validar usuarios.json para que no se buguee cuando es un array vacío
+  - Terminar envios (HTML y CSS)
+
 ### 7/11/20
 
 Terminado:
