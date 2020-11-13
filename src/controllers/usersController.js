@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
-const { RSA_NO_PADDING } = require('constants');
+
 //Agregado database JSON
 let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
 
@@ -23,7 +23,7 @@ let usersController = {
       let usuariosCompletos = usuariosJson.map(usuario => usuarioModificado.id == usuario.id);
 
       fs.writeFileSync(__dirname + "/../database/usuarios.json", JSON.stringify(usuariosCompletos));
-      res.redirect("users/usersAdmin", { usuarios : usuariosCompletos})
+      res.redirect("../")
     },
 
 
@@ -122,14 +122,23 @@ let usersController = {
     perfilUpdate : (req, res, next) => {
       let idUrl = req.params.id;
 
-      let usuarioCambiado = usuariosJson.map(function(usuario){
+      let usuarioOriginal = usuariosJson.find( usuario => usuario.id == idUrl);
+      if(req.body.contrasenia != req.body.confirmarContrasenia){ return res.send("Las contraseñas no coinciden") }
+      if(!bcrypt.compareSync(req.body.antiguaContrasenia,usuarioOriginal.contrasenia)){ return res.send("La contraseña antigua no es correcta") }
+
+
+       let usuarioCambiado = usuariosJson.map(function(usuario){
         if(usuario.id == idUrl){
-          let usuarioId = usuario.id;
-          usuario = req.body;
-          usuario.id = usuarioId;
+           usuario = {
+            id : idUrl,
+            nombre : req.body.nombre,
+            email : req.body.email,
+            contrasenia : bcrypt.hashSync(req.body.contrasenia,10)
+          }
         }
         return usuario;
       });
+
       let usuariosCambiadosJSON = JSON.stringify(usuarioCambiado);
       fs.writeFileSync(__dirname + "/../database/usuarios.json", usuariosCambiadosJSON);
       res.redirect("/");
