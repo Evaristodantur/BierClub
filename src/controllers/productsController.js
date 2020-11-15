@@ -19,7 +19,7 @@ let productsController = {
         res.render('products/products', { productos : productsJson });
     },
 
-    //  /products/productAdd - Pagina visual de agregar el producto
+    //  /products/productDetail/:id
     productDetail : (req, res, next) => {
         let idUrl = req.params.id;
 
@@ -32,7 +32,7 @@ let productsController = {
 
 
 
-    // /products/productEdit/:id - Crea el producto
+    // /products/productAdd - Crea el producto
     createProduct : (req, res, next) => {
         res.render('products/productAdd');
       },

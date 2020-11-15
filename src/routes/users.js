@@ -9,6 +9,9 @@ let usersController = require('../controllers/usersController');
 /* GET     /users/usersAdmin     page. */
 router.get('/usersAdmin', usersController.usersAdmin);
 
+/* GET     /users/usersAdmin     page. */
+router.post('/usersAdmin', usersController.usersAdminCambios);
+
 /* GET     /users/register      page. */
 router.get('/register', usersController.create);
 

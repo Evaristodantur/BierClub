@@ -1,0 +1,71 @@
+<title>BierClub - Registrarse</title>
+<%- include('../partials/head.ejs') %>
+</head>
+
+<body>
+	<!-- NAV -->
+	<header>
+		<%- include('../partials/nav.ejs') %>
+	</header>
+	
+		<!-- CONTAINER REGISTER -->
+		<div class="login-register">
+
+			<!-- TITULO -->
+			<h1>Regístrate con tu Dirección Email</h1>
+			
+		
+			<!-- FORMULARIO -->
+			<form class="formulario" action="/users/register" method="POST">
+				
+			<!-- NOMBRE -->
+			<div class="campo-input">
+				<input class="input-registro" type="text" id="nombre" name="nombre" placeholder="Nombre">
+			</div>
+
+			<!-- NOMBRE DE USUARIO -->
+<!-- 			<div class="campo-input">
+				<input class="input-registro" type="text" id="usuario" name="id" placeholder="Nombre de usuario">
+			</div> -->
+
+			<!-- MAIL -->
+			<div class="campo-input">
+				<input class="input-registro" type="email"  id="email" name="email" placeholder="Email">
+			</div>
+
+			<!-- CONTRASEÑA -->
+			<div class="campo-input">
+				<input class="input-registro" type="password" id="Contrasenia" name="contrasenia" placeholder="Contraseña"> 
+			</div>
+
+			<!-- CONFIRMAR CONTRASEÑA -->
+			<div class="campo-input">
+				<input class="input-registro" type="password" id="confirmarContrasenia" name="confirmarContrasenia" placeholder="Confirmar contraseña"> 
+			</div> 
+
+			<!-- TERMINOS Y CONDICIONES -->
+			<div class="terminos">
+				<input type="checkbox" id="terminosCondiciones" name="terminosCondiciones" value="terminos">
+				<label for="terminos-condiciones">Acepto los <a href="#">Términos y Condiciones</a> de BierClub </label>
+			</div>
+
+			<!-- BOTON REGISTRARSE -->
+			<div class="campo-input">
+				<button class="input-button" type="submit", id="registrar", value="registrar"> Registrarse </button>
+			</div>
+			
+			
+			</form>
+			
+			<!-- INICIAR SESION -->
+			<p class="iniciar-sesion">¿Ya sos cliente? <a href="/users/login">Inicia Sesión</a></p>
+			
+		</div>
+
+	<!-- FOOTER -->
+	<footer>
+		<%- include('../partials/footer.ejs') %>
+	</footer>
+
+</body>
+</html>

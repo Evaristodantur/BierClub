@@ -2,6 +2,33 @@
 
 ## Sprint 3
 
+### 13/11/20
+  
+  Terminado:
+  - Modificar productos funcional
+  - Pagina Envios avanzada (No terminada)
+  
+  Para hacer hoy:
+  - Terminar pagina de Envios (HTML Y CSS)
+  - Actualizar perfil (Responsive)
+
+### 12/11/20
+  
+  Terminado:
+  - Contraseñas encriptadas en el ABM de usuarios
+  - Lógica de register avanzada:
+    - Verificación de que "Contraseña" y "Confirmar contraseña" sean iguales
+    - Verificación de que "Términos y condiciones" esté aceptado
+    - Verificación de que todos los campos estén completados
+  - Lógica de login avanzada: 
+    - Verificación de que el email exista
+    - Verificación de que la contraseña este bien puesta
+    - Verificación de que ambos campos están completados
+  
+  Para hacer hoy:
+  - Hacer la modificacion de productos funcional
+  - Terminar con la pagina Envios
+  
 ### 11/11/20
 
   Terminado:

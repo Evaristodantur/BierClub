@@ -57,7 +57,7 @@ let mainController = {
     //ENVIOS
     
     envios : (req,res, next) => { 
-        res.render ('envios')
+        res.render ('users/envios')
     },
 } 
 
