@@ -3,10 +3,11 @@ const fs = require('fs');
 
 //Agregado database JSON
 let productsJson = fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8');
+let dbDirectory = path.resolve(__dirname, '../database/products.json');
 
 productsJson == "" ?
-    fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(productsJson = [])) :
-    productsJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8'));
+    fs.writeFileSync(dbDirectory, JSON.stringify(productsJson = [])) :
+    productsJson = JSON.parse(fs.readFileSync(dbDirectory, 'utf-8'));
 
 
 let productsController = {
@@ -68,7 +69,7 @@ let productsController = {
         //Lo guarda en el array Json
         productsJson.push(productoNuevo);
         
-        fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(productsJson));
+        fs.writeFileSync(dbDirectory, JSON.stringify(productsJson));
         res.redirect('/products/productAdmin');
     },
 
@@ -115,7 +116,7 @@ let productsController = {
             return producto;
         });
 
-        fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(productosModificado));
+        fs.writeFileSync(dbDirectory, JSON.stringify(productosModificado));
 
         res.redirect('/products/productAdmin');
     },
@@ -130,7 +131,7 @@ let productsController = {
 
         let borrarProducto = productsJson.filter( producto => producto.id != idUrl );
 
-        fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(borrarProducto));
+        fs.writeFileSync(dbDirectory, JSON.stringify(borrarProducto));
 
         res.redirect('/products/productAdmin');
     },
