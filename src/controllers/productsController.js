@@ -15,12 +15,12 @@ let productsController = {
 
     
 
-    //  /products
+    //  /products - Vista Home
     index : (req, res, next) => {
         res.render('products/products', { productos : productsJson });
     },
 
-    //  /products/productDetail/:id
+    //  /products/productDetail/:id - Vista productDetail
     productDetail : (req, res, next) => {
         let idUrl = req.params.id;
 
@@ -33,11 +33,12 @@ let productsController = {
 
 
 
-    // /products/productAdd - Crea el producto
+    // /products/productAdd - Vista productAdd
     createProduct : (req, res, next) => {
         res.render('products/productAdd');
       },
   
+    // /products/productAdd - Almacenamiento del producto en el JSON
     storeProduct : (req, res, next) => {
         //Creacion de ID para los productos nuevos
         let idMax = 0;
@@ -87,7 +88,7 @@ let productsController = {
         productoEncontrado ? (res.render('products/productEdit', productoEncontrado)) : res.render('error')
     },
 
-    // /products/productEdit/:id - Actualizacion/Modificacion del producto
+    // /products/productEdit/:id - Actualizacion/Modificacion del producto en el JSON
     updateProduct : (req, res, next) => {
         let idUrl = req.params.id;
 
@@ -125,7 +126,7 @@ let productsController = {
 
 
 
-    // /products/productEdit/borrar/:id - Borrar Producto
+    // /products/productEdit/borrar/:id - Borrar Producto del JSON
     deleteProduct : (req, res, next) => {
         let idUrl = req.params.id;
 
@@ -139,12 +140,12 @@ let productsController = {
 
 
 
-    //  /products/productAdmin
+    //  /products/productAdmin - Vista de productAdmin
     productAdmin : (req, res, next) => {
         res.render('products/productAdmin', { productos : productsJson });
     },
 
-    //  /products/productCart
+    //  /products/productCart - Vista de proudctCart
     productCart : (req, res, next) => {
         res.render('products/productCart');
     }

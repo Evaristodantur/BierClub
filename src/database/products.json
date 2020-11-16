@@ -10,7 +10,7 @@
         "imagen": "producto-1.jpg"
     },
     {
-        "id": "2",
+        "id": 2,
         "nombre": "Saison de Triomphe - Hoppy Saison",
         "precio": "115",
         "descuento": "0",
@@ -20,7 +20,7 @@
         "imagen": "producto-2.jpg"
     },
     {
-        "id": "3",
+        "id": 3,
         "nombre": "William Wallace Scottish",
         "precio": "82",
         "descuento": "5",
@@ -30,7 +30,7 @@
         "imagen": "producto-3.jpg"
     },
     {
-        "id": "4",
+        "id": 4,
         "nombre": "Mumbai 1947",
         "precio": "99",
         "descuento": "20",
@@ -40,7 +40,7 @@
         "imagen": "producto-4.jpg"
     },
     {
-        "id": "5",
+        "id": 5,
         "nombre": "German Pils",
         "precio": "125",
         "descuento": "10",
