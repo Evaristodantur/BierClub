@@ -2,6 +2,24 @@
 
 ## Sprint 3
 
+### 15/11/20
+  
+  Terminado:
+  - Terminado pagina de Envios (HTML Y CSS)
+  
+  Para hacer hoy:
+  - Actualizar perfil (Responsive)
+
+### 13/11/20
+  
+  Terminado:
+  - Modificar productos funcional
+  - Pagina Envios avanzada (No terminada)
+  
+  Para hacer hoy:
+  - Terminar pagina de Envios (HTML Y CSS)
+  - Actualizar perfil (Responsive)
+
 ### 12/11/20
   
   Terminado:
@@ -16,7 +34,7 @@
     - Verificación de que ambos campos están completados
   
   Para hacer hoy:
-  - Terminar con los cambios en el login
+  - Hacer la modificacion de productos funcional
   - Terminar con la pagina Envios
   
 ### 11/11/20

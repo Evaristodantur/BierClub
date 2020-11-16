@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <link rel="icon" href="/images/faviconLogo.ico"/>
+    <link href="/stylesheets/envios.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="/stylesheets/__footer.css" rel="stylesheet">
+    <link href="/stylesheets/__nav.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8431526c8f.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <%- include('./partials/nav.ejs') %>
+</header>
+<body> 
+  
+    <div class="todo">
+        <div class="titulo">
+<h1> Pone tu ubicación</h1> 
+</div>
+   <div class="requisitos">
+    <div>
+        <input type="radio" id="localidad1"
+         name="localidad1" value="Centro">
+        <label for="Centro">Centro de Tucuman</label>
+    
+        <input type="radio" id="localidad2"
+         name="localidad2" value="Yerba Buena">
+        <label for="Yerba Buena">Yerba Buena</label>
+<div class="boton-ubi">
+   <form action="/envios" method="POST">
+<input type="text">
+<button class="input-button" type="submit", id="ubicación", value="ubicación"> Envia tu ubicación</button>
+<h3> Sino buscate</h3> 
+    <div class="la-ubi">
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28486.66384756181!2d-65.31286757934447!3d-26.813446221549537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942242d62123af13%3A0xaa2edb3420b1b358!2sParroquia%20Nuestra%20Se%C3%B1ora%20del%20Valle!5e0!3m2!1ses-419!2sar!4v1602643734873!5m2!1ses-419!2sar" width="300" height="300" frameborder="0" style="border-radius: 10px; border: 0px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+     </div>
+ 	<footer>
+		<%- include('./partials/footer.ejs') %>
+	</footer>
+</section>
+
+</body>

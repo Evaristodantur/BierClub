@@ -53,7 +53,13 @@ let mainController = {
     // ERROR
     error : (req, res, next) => {
         res.render('error');
+    },
+    //ENVIOS
+    
+    envios : (req,res, next) => { 
+        res.render('envios');
     }
-}
+} 
+
 
 module.exports = mainController;
