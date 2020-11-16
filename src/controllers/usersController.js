@@ -4,10 +4,11 @@ const bcrypt = require('bcryptjs');
 
 //Agregado database JSON
 let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
+let dbDirectory = path.resolve(__dirname, '../database/usuarios.json')
 
 usuariosJson == "" ?
-    fs.writeFileSync(__dirname + "/../database/usuarios.json", JSON.stringify(usuariosJson = [])) :
-    usuariosJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8'));
+    fs.writeFileSync(dbDirectory, JSON.stringify(usuariosJson = [])) :
+    usuariosJson = JSON.parse(fs.readFileSync(dbDirectory), 'utf-8');
 
     
 let usersController = {
@@ -22,7 +23,7 @@ let usersController = {
       let usuarioModificado = req.body;
       let usuariosCompletos = usuariosJson.map(usuario => usuarioModificado.id == usuario.id);
 
-      fs.writeFileSync(__dirname + "/../database/usuarios.json", JSON.stringify(usuariosCompletos));
+      fs.writeFileSync(dbDirectory, JSON.stringify(usuariosCompletos));
       res.redirect("../")
     },
 
@@ -70,7 +71,7 @@ let usersController = {
       usuariosJson.push(usuarioNuevo);
 
       //Sobreescribe el archivo
-      fs.writeFileSync(__dirname + "/../database/usuarios.json", JSON.stringify(usuariosJson));
+      fs.writeFileSync(dbDirectory, JSON.stringify(usuariosJson));
 
       //Te envia a la vista una vez el form fue completado
       res.redirect("../");
@@ -140,7 +141,7 @@ let usersController = {
       });
 
       let usuariosCambiadosJSON = JSON.stringify(usuarioCambiado);
-      fs.writeFileSync(__dirname + "/../database/usuarios.json", usuariosCambiadosJSON);
+      fs.writeFileSync(dbDirectory, usuariosCambiadosJSON);
       res.redirect("/");
       },
 
@@ -152,7 +153,7 @@ let usersController = {
           return usuario.id != idUrl;
         });
         let usuarioEliminadoJSON = JSON.stringify(eliminarUsuario);
-        fs.writeFileSync(__dirname + "/../database/usuarios.json", usuarioEliminadoJSON);
+        fs.writeFileSync(dbDirectory, usuarioEliminadoJSON);
         res.redirect("/");
       },
       pedidos : (req, res, next) => {

@@ -2,6 +2,14 @@
 
 ## Sprint 3
 
+### 15/11/20
+  
+  Terminado:
+  - Terminado pagina de Envios (HTML Y CSS)
+  
+  Para hacer hoy:
+  - Actualizar perfil (Responsive)
+
 ### 13/11/20
   
   Terminado:
