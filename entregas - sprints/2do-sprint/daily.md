@@ -8,6 +8,7 @@
   - Terminado pagina de Envios (HTML Y CSS)
   
   Para hacer hoy:
+  - Crear variable "dbDirectory" para hacer mas limpios los controladores
   - Actualizar perfil (Responsive)
 
 ### 13/11/20
