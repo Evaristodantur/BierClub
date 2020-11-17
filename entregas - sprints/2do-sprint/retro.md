@@ -1,5 +1,20 @@
+# Retrospectiva - 3er Sprint
 
-# Retrospectiva - 2do sprint
+### Start Doing:
+  
+### More of:
+
+### Keep doing:
+  
+### Less of:
+
+### Stop Doing:
+
+### Conclusiones:
+
+-------------------------
+
+# Retrospectiva - 2do Sprint
 
 ### Start Doing:
   - Crear un horario fijo de encuentro, para codear, no necesariamente todos los días
@@ -27,7 +42,8 @@
 El equipo está muy comprometido con el proyecto. Creemos que el ritmo llevando desde el sprint 1 es muy bueno y deberíamos mantenerlo o mejorarlo.
 
 -------------------------
-# Retrospectiva - 1er sprint
+
+# Retrospectiva - 1er Sprint
 
 ### Start Doing:
   - Buscar un horario en el cual podamos reunirnos en la semana
