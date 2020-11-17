@@ -1,22 +1,12 @@
 let express = require('express');
 let router = express.Router();
-let multer = require('multer');
-let path = require('path');
 
 //Controller
 let productsController = require('../controllers/productsController');
 
-//Almacenamiento de las imagenes
-var storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-      cb(null, './src/public/images/productos')
-    },
-    filename: function (req, file, cb) {
-      cb(null, 'producto' + '-' + Date.now() + path.extname(file.originalname));
-    }
-  });
-   
-  var upload = multer({ storage: storage });
+//Middleware
+let upload = require('../middlewares/multer');  //Multer
+const { check, validationResult, body } = require('express-validator'); //Express-validator
 
 
 
@@ -47,7 +37,7 @@ router.get('/productAdmin', productsController.productAdmin);
 /* GET     /products/productAdd - Pagina Visual de create               page. */
 router.get('/productAdd', productsController.createProduct);
 
-/* GET     /products/productAdd - Crea/almacena el producto             page. */
+/* POST     /products/productAdd - Crea/almacena el producto             page. */
 router.post('/productAdd', upload.any(), productsController.storeProduct);
 
 /**********************************PRODUCT EDIT***************************************/
@@ -55,7 +45,7 @@ router.post('/productAdd', upload.any(), productsController.storeProduct);
 /* GET     /products/productEdit/:id - Pagina Visual de productEdit     page. */
 router.get('/productEdit/:id', productsController.editProduct);
 
-/* GET     /products/productEdit/:id - Modifica el producto             page. */
+/* PUT     /products/productEdit/:id - Modifica el producto             page. */
 router.put('/productEdit/:id', upload.any(), productsController.updateProduct);
 
 /**********************************BORRAR*********************************************/
