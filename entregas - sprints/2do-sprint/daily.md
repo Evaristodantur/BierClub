@@ -2,14 +2,19 @@
 
 ## Sprint 4
 
-### 15/11/20
+### 17/11/20
   
   Terminado:
-  
+  - Sitio listo para el Sprint 4
   
   Para hacer hoy:
+  - Actualizar Trello para el Sprint 4
+  - Retrospectiva del Sprint 3
+  - Actualizar perfil (Responsive)
+  - Crear carpeta Middlewares
+  - Traslado del Middleware "Multer" a la carpeta
+  - Middleware de Productos 
   
-
 ## Sprint 3
 
 ### 15/11/20
@@ -19,7 +24,6 @@
   
   Para hacer hoy:
   - Crear variable "dbDirectory" para hacer mas limpios los controladores
-  - Actualizar perfil (Responsive)
 
 ### 13/11/20
   
