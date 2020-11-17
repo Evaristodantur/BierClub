@@ -5,8 +5,9 @@ let router = express.Router();
 let productsController = require('../controllers/productsController');
 
 //Middleware
-let upload = require('../middlewares/multer');  //Multer
-const { check, validationResult, body } = require('express-validator'); //Express-validator
+let multerUpload = require('../middlewares/multer');  //Multer
+let productMiddleware = require('../middlewares/productosMiddleware');
+
 
 
 
@@ -38,7 +39,7 @@ router.get('/productAdmin', productsController.productAdmin);
 router.get('/productAdd', productsController.createProduct);
 
 /* POST     /products/productAdd - Crea/almacena el producto             page. */
-router.post('/productAdd', upload.any(), productsController.storeProduct);
+router.post('/productAdd', multerUpload.any(), productMiddleware, productsController.storeProduct);
 
 /**********************************PRODUCT EDIT***************************************/
 
@@ -46,7 +47,7 @@ router.post('/productAdd', upload.any(), productsController.storeProduct);
 router.get('/productEdit/:id', productsController.editProduct);
 
 /* PUT     /products/productEdit/:id - Modifica el producto             page. */
-router.put('/productEdit/:id', upload.any(), productsController.updateProduct);
+router.put('/productEdit/:id', multerUpload.any(), productMiddleware, productsController.updateProduct);
 
 /**********************************BORRAR*********************************************/
 

@@ -22,7 +22,7 @@
       <h1>Edite su producto</h1>
 
       <!-- FORMULARIO -->
-      <form class="formulario-carga" action="/products/productEdit/<%= id %>/?_method=PUT" method="POST" enctype="multipart/form-data">
+      <form class="formulario-carga" action="/products/productEdit/<%= producto.id %>/?_method=PUT" method="POST" enctype="multipart/form-data">
 
         <!-- BLOQUE DE IMAGEN, NOMBRE, PRECIO Y CANTIDAD -->
         <div class="flex-imgPrev-detalle">
@@ -31,27 +31,27 @@
             <!-- NOMBRE -->
             <div class="nombre">
               <label for="nombreProducto">Nombre del producto:</label>
-              <input id="nombreProducto" type="text" name="nombre" placeholder="Nombre" value="<%= nombre %>">
+              <input id="nombreProducto" type="text" name="nombre" placeholder="Nombre" value="<%= producto.nombre %>">
             </div>
             
             <div class="precio-descuento">
               <!-- PRECIO -->
               <div class="precio">
                 <label for="precio">Precio:</label>
-                <input id="precio" type="text" name="precio" placeholder="Precio" value="<%=precio%>">
+                <input id="precio" type="text" name="precio" placeholder="Precio" value="<%=producto.precio%>">
               </div>
 
               <!-- DESCUENTO -->
               <div class="descuento">
                 <label for="descuento">Descuento:</label>
-                <input id="descuento" type="text" name="descuento" placeholder="Descuento" value="<%=descuento%>">
+                <input id="descuento" type="text" name="descuento" placeholder="Descuento" value="<%=producto.descuento%>">
               </div>
             </div>
             
             <!-- CANTIDAD -->
             <div class="cantidad">
               <label for="cantidad">Cantidad:</label>
-              <input id="cantidad" type="text" name="stock" placeholder="Cantidad" value="<%= stock %>">
+              <input id="cantidad" type="text" name="stock" placeholder="Cantidad" value="<%= producto.stock %>">
             </div>
   
           </div>
@@ -88,14 +88,25 @@
         </div>
 
         <!-- DESCRIPCION -->
-        <textarea class="descripcionDelProducto" name="descripcion" placeholder="Describa el producto"><%=descripcion%></textarea>
+        <textarea class="descripcionDelProducto" name="descripcion" placeholder="Describa el producto"><%=producto.descripcion%></textarea>
           <div class="flex-botones-publicar">
               <button class="btn-publicar" type="submit" , id="publicar" , value="guardar"> Guardar Modificaciones  
-              <button onclick="window.location.href='/products/productEdit/delete/<%= id %>'" class="btn-publicar btn-reset" type="reset" , id="reset" , value="reset">Borrar Producto</button>
+              <button onclick="window.location.href='/products/productEdit/delete/<%= producto.id %>'" class="btn-publicar btn-reset" type="reset" , id="reset" , value="reset">Borrar Producto</button>
           </div>
         
       </form>
+      <% if (typeof producto.errors != 'undefined') { %>
+        <p style="color: red;">ERROR</p>
+        <ul>
+            <% for (let i=0; i < producto.errors.length; i++) { %>
+                <li>
+                    <%= producto.errors[i].msg %>
+                </li>
+            <% } %>
+        </ul>
+    <% } %>
+      
     </div>
-   
+    
 </body>
 </html>

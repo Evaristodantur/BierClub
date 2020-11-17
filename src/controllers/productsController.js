@@ -1,6 +1,9 @@
 const path = require('path');
 const fs = require('fs');
 
+//Middleware
+let { check, validationResult, body } = require('express-validator');
+
 //Agregado database JSON
 let productsJson = fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8');
 let dbDirectory = path.resolve(__dirname, '../database/products.json');
@@ -40,38 +43,45 @@ let productsController = {
   
     // /products/productAdd - Almacenamiento del producto en el JSON
     storeProduct : (req, res, next) => {
-        //Creacion de ID para los productos nuevos
-        let idMax = 0;
 
-        productsJson.forEach(producto => {
-            if ( idMax < producto.id ) {
-                idMax = producto.id;
-            }
-        });
-        idMax++; //Le sumo uno a la ID para que no se repita
-
-        //Crea el elemento nuevo
-        let productoNuevo = {
-            id : idMax,
-            nombre : req.body.nombre,
-            precio : req.body.precio,
-            descuento : req.body.descuento,
-            stock : req.body.stock,
-            categoria : req.body.categoria,
-            descripcion : req.body.descripcion
+        let errores = validationResult(req);
+        if (!errores.isEmpty()) {
+            return res.render('products/productAdd', {errors: errores.errors});
         }
 
-        //Agrega la imagen
-        req.files == "" ? 
-            productoNuevo.imagen = "product-image-not-available.jpg" :
-            productoNuevo.imagen = req.files[0].filename;
-        
 
-        //Lo guarda en el array Json
-        productsJson.push(productoNuevo);
-        
-        fs.writeFileSync(dbDirectory, JSON.stringify(productsJson));
-        res.redirect('/products/productAdmin');
+            //Creacion de ID para los productos nuevos
+            let idMax = 0;
+
+            productsJson.forEach(producto => {
+                if ( idMax < producto.id ) {
+                    idMax = producto.id;
+                }
+            });
+            idMax++; //Le sumo uno a la ID para que no se repita
+
+            //Crea el elemento nuevo
+            let productoNuevo = {
+                id : idMax,
+                nombre : req.body.nombre,
+                precio : req.body.precio,
+                descuento : req.body.descuento,
+                stock : req.body.stock,
+                categoria : req.body.categoria,
+                descripcion : req.body.descripcion
+            }
+
+            //Agrega la imagen
+            req.files == "" ? 
+                productoNuevo.imagen = "product-image-not-available.jpg" :
+                productoNuevo.imagen = req.files[0].filename;
+            
+
+            //Lo guarda en el array Json
+            productsJson.push(productoNuevo);
+            
+            fs.writeFileSync(dbDirectory, JSON.stringify(productsJson));
+            res.redirect('/products/productAdmin');
     },
 
 
@@ -90,7 +100,21 @@ let productsController = {
 
     // /products/productEdit/:id - Actualizacion/Modificacion del producto en el JSON
     updateProduct : (req, res, next) => {
+
         let idUrl = req.params.id;
+
+        let errores = validationResult(req);
+        if (!errores.isEmpty()) {
+
+            let productoEncontrado = productsJson.find( producto => producto.id == idUrl );
+            //errors: errores.errors, 
+            productoEncontrado.errors = errores.errors
+            console.log(productoEncontrado)
+
+            return res.render('products/productEdit', {producto: productoEncontrado});
+        }
+
+        
 
         let productosModificado = productsJson.map( function(producto) {
             if (producto.id == idUrl) {

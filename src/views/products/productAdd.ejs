@@ -96,6 +96,17 @@
           </div>
         
       </form>
+
+      <% if (typeof errors != 'undefined') { %>
+        <p style="color: red;">ERROR</p>
+        <ul>
+            <% for (let i=0; i < errors.length; i++) { %>
+                <li>
+                    <%= errors[i].msg %>
+                </li>
+            <% } %>
+        </ul>
+    <% } %>
     </div>
    
 </body>
