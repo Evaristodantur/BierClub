@@ -95,7 +95,7 @@ let productsController = {
 
         let productoEncontrado = productsJson.find( producto => producto.id == idUrl );
 
-        productoEncontrado ? (res.render('products/productEdit', productoEncontrado)) : res.render('error')
+        productoEncontrado ? (res.render('products/productEdit', {producto: productoEncontrado})) : res.render('error')
     },
 
     // /products/productEdit/:id - Actualizacion/Modificacion del producto en el JSON
@@ -103,19 +103,18 @@ let productsController = {
 
         let idUrl = req.params.id;
 
+        //Validacion
         let errores = validationResult(req);
         if (!errores.isEmpty()) {
 
             let productoEncontrado = productsJson.find( producto => producto.id == idUrl );
-            //errors: errores.errors, 
             productoEncontrado.errors = errores.errors
-            console.log(productoEncontrado)
 
             return res.render('products/productEdit', {producto: productoEncontrado});
         }
 
         
-
+        //Modificacion del producto
         let productosModificado = productsJson.map( function(producto) {
             if (producto.id == idUrl) {
                 //Backup De Productos, para usar la ID y la Imagen

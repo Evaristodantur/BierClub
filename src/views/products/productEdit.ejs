@@ -100,7 +100,7 @@
         <ul>
             <% for (let i=0; i < producto.errors.length; i++) { %>
                 <li>
-                    <%= producto.errors[i].msg %>
+                    El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %> 
                 </li>
             <% } %>
         </ul>
