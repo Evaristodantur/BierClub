@@ -43,6 +43,7 @@ let productsController = {
   
     // /products/productAdd - Almacenamiento del producto en el JSON
     storeProduct : (req, res, next) => {
+        console.log(req.files);
 
         let errores = validationResult(req);
         if (!errores.isEmpty()) {
