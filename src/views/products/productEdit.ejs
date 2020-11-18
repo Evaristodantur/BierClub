@@ -39,6 +39,7 @@
                 <% for(let i=0; i < producto.errors.length; i++)  { %>
                   <% if (producto.errors[i].param == "nombre") {  %>
                     <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                    <% break; %>
                   <% } %>
                 <% } %>
               <% } %>
@@ -53,6 +54,7 @@
                   <% for(let i=0; i < producto.errors.length; i++)  { %>
                     <% if (producto.errors[i].param == "precio") {  %>
                       <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                      <% break; %>
                     <% } %>
                   <% } %>
                 <% } %>
@@ -66,6 +68,7 @@
                   <% for(let i=0; i < producto.errors.length; i++)  { %>
                     <% if (producto.errors[i].param == "descuento") {  %>
                       <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                      <% break; %>
                     <% } %>
                   <% } %>
                 <% } %>
@@ -80,6 +83,7 @@
                 <% for(let i=0; i < producto.errors.length; i++)  { %>
                   <% if (producto.errors[i].param == "cantidad") {  %>
                     <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                    <% break; %>
                   <% } %>
                 <% } %>
               <% } %>
@@ -118,6 +122,7 @@
             <% for(let i=0; i < producto.errors.length; i++)  { %>
               <% if (producto.errors[i].param == "imagen") {  %>
                 <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                <% break; %>
               <% } %>
             <% } %>
           <% } %>
@@ -133,6 +138,7 @@
           <% for(let i=0; i < producto.errors.length; i++)  { %>
             <% if (producto.errors[i].param == "descripcion") {  %>
               <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+              <% break; %>
             <% } %>
           <% } %>
         <% } %>
