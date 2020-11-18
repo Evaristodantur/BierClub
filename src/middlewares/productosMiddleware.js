@@ -24,6 +24,22 @@ let productMiddleware =  [
                         },
                         errorMessage : 'debe ser png, jpg o jpeg'
                 }
+        }),
+        checkSchema({
+                imagen: {
+                        custom: {
+                                options: (value, { req, location, paths }) => {
+
+                                        if (typeof req.files[0] != 'undefined') {
+                                                if (req.files[0].size > 3150000) {
+                                                        return false;
+                                                }
+                                        }
+                                        return true;
+                                }
+                        },
+                        errorMessage : 'debe ser una imagen menor a 3mb'
+                }
         })
 ]
 
