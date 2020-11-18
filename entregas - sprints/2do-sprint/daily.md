@@ -2,7 +2,33 @@
 
 ## Sprint 4
 
+### 18/11/20
+  
+  Terminado:
+  - Middleware de Register
+  - Middleware de login
+  - Eliminar validaciones del Controller
+  
+  Para hacer hoy:
+  - Errores en ProductAdd responsive
+  - Arreglar CSS del Login y Register (titulo)
+  - Errores en Login y Register responsive
+  
 ### 17/11/20
+  
+  Terminado:
+  - Trello actualizado para el Sprint 4
+  - Retrospectiva del Sprint 3
+  - Carpeta Middlewares creada
+  - Traslado de "Multer" a la carpeta
+  - Middleware de Productos
+  
+  Para hacer hoy:
+  - Middleware de Register
+  - Middleware de login
+  - Eliminar validaciones del Controller
+
+### 16/11/20
   
   Terminado:
   - Sitio listo para el Sprint 4
