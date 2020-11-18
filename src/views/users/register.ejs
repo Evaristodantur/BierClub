@@ -51,7 +51,11 @@
 			
 			
 			</form>
-			
+		<%if(typeof errors != "undefined"){%>
+			<%for(let i = 0 ; i < errors.length ; i++){%>
+				<p>Este campo <%= errors[i].msg %></p>
+			<%}%>
+		<%}%>
 			<!-- INICIAR SESION -->
 			<p class="iniciar-sesion">¿Ya sos cliente? <a href="/users/login">Inicia Sesión</a></p>
 			

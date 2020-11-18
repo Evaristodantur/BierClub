@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
+const {validationResult} = require("express-validator");
 
 //Agregado database JSON
 let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
@@ -37,6 +38,14 @@ let usersController = {
 
     //  /users/register
     store : (req, res, next) => {
+
+      // Enviar errores express-validator
+      let errores = validationResult(req);
+      if (!errores.isEmpty()){
+        console.log(errores);
+        return res.render("users/register", {errors : errores.errors})
+      }
+
       // ID maximo para reemplazar
       let idMax = 0;
 
