@@ -1,5 +1,35 @@
+# Retrospectiva - 3er Sprint
 
-# Retrospectiva - 2do sprint
+### Start Doing:
+  - Documentar más el código
+  
+### More of:
+  - Continuar la reunión diaria en Discord
+  - Al avanzar ver las views viejas que fueron terminadas en sprint anteriores, analizarlas y modificarlas si es necesario
+
+### Keep doing:
+  - Al empezar un sprint, juntarnos y hacer la primera parte juntos. De ese modo, vamos a poder guiarnos de una mejor forma
+  - Detallar y mejorar la planificación de Trello, agregando o sacando tareas de las mismas etiquetas
+  - Mantener el ritmo de codeo individual, y la proactividad del grupo
+  - Seguir ayudando a nuestros compañeros con las dudas o consultas
+  - Continuar usando Trello para mantener al día al grupo
+  - Mantener la eficiencia de los commits, y su clasificación de los nombre
+  - Mantener el diálogo abierto en el grupo, su confianza y dinamismo
+  - Terminar la deadline antes de tiempo
+  
+### Less of:
+  - Dejar de atrasarse con las prácticas de Playground para estar al día con el curso los primeros días del Sprint
+
+### Stop Doing:
+  - Dejar de poner nombres incorrectos en las carpetas, clases, variables y funciones
+
+### Conclusiones:
+Al igual que el Sprint anterior, tenemos un buen ritmo, mucha proactividad, e intentamos cumplir con gran parte del Sprint los primeros días.
+Además, siempre que podemos, adelantamos el contenido de los próximos Sprints.
+
+-------------------------
+
+# Retrospectiva - 2do Sprint
 
 ### Start Doing:
   - Crear un horario fijo de encuentro, para codear, no necesariamente todos los días
@@ -27,7 +57,8 @@
 El equipo está muy comprometido con el proyecto. Creemos que el ritmo llevando desde el sprint 1 es muy bueno y deberíamos mantenerlo o mejorarlo.
 
 -------------------------
-# Retrospectiva - 1er sprint
+
+# Retrospectiva - 1er Sprint
 
 ### Start Doing:
   - Buscar un horario en el cual podamos reunirnos en la semana

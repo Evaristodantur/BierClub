@@ -22,7 +22,10 @@
       <h1>Edite su producto</h1>
 
       <!-- FORMULARIO -->
-      <form class="formulario-carga" action="/products/productEdit/<%= id %>/?_method=PUT" method="POST" enctype="multipart/form-data">
+      <form class="formulario-carga" action="/products/productEdit/<%= producto.id %>/?_method=PUT" method="POST" enctype="multipart/form-data">
+
+        
+        
 
         <!-- BLOQUE DE IMAGEN, NOMBRE, PRECIO Y CANTIDAD -->
         <div class="flex-imgPrev-detalle">
@@ -31,27 +34,55 @@
             <!-- NOMBRE -->
             <div class="nombre">
               <label for="nombreProducto">Nombre del producto:</label>
-              <input id="nombreProducto" type="text" name="nombre" placeholder="Nombre" value="<%= nombre %>">
+              <input id="nombreProducto" type="text" name="nombre" placeholder="Nombre" value="<%= producto.nombre %>">
+              <% if (typeof producto.errors != 'undefined') { %>
+                <% for(let i=0; i < producto.errors.length; i++)  { %>
+                  <% if (producto.errors[i].param == "nombre") {  %>
+                    <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                  <% } %>
+                <% } %>
+              <% } %>
             </div>
             
             <div class="precio-descuento">
               <!-- PRECIO -->
               <div class="precio">
                 <label for="precio">Precio:</label>
-                <input id="precio" type="text" name="precio" placeholder="Precio" value="<%=precio%>">
+                <input id="precio" type="text" name="precio" placeholder="Precio" value="<%=producto.precio%>">
+                <% if (typeof producto.errors != 'undefined') { %>
+                  <% for(let i=0; i < producto.errors.length; i++)  { %>
+                    <% if (producto.errors[i].param == "precio") {  %>
+                      <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                    <% } %>
+                  <% } %>
+                <% } %>
               </div>
 
               <!-- DESCUENTO -->
               <div class="descuento">
                 <label for="descuento">Descuento:</label>
-                <input id="descuento" type="text" name="descuento" placeholder="Descuento" value="<%=descuento%>">
+                <input id="descuento" type="text" name="descuento" placeholder="Descuento" value="<%=producto.descuento%>">
+                <% if (typeof producto.errors != 'undefined') { %>
+                  <% for(let i=0; i < producto.errors.length; i++)  { %>
+                    <% if (producto.errors[i].param == "descuento") {  %>
+                      <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                    <% } %>
+                  <% } %>
+                <% } %>
               </div>
             </div>
             
             <!-- CANTIDAD -->
             <div class="cantidad">
               <label for="cantidad">Cantidad:</label>
-              <input id="cantidad" type="text" name="stock" placeholder="Cantidad" value="<%= stock %>">
+              <input id="cantidad" type="text" name="stock" placeholder="Cantidad" value="<%= producto.stock %>">
+              <% if (typeof producto.errors != 'undefined') { %>
+                <% for(let i=0; i < producto.errors.length; i++)  { %>
+                  <% if (producto.errors[i].param == "cantidad") {  %>
+                    <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                  <% } %>
+                <% } %>
+              <% } %>
             </div>
   
           </div>
@@ -83,19 +114,38 @@
         <!-- SUBIR IMAGEN -->
         <div class="imgFile">
           <input name="imagen" type="file">
+          <% if (typeof producto.errors != 'undefined') { %>
+            <% for(let i=0; i < producto.errors.length; i++)  { %>
+              <% if (producto.errors[i].param == "imagen") {  %>
+                <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+              <% } %>
+            <% } %>
+          <% } %>
         </div>
 
         </div>
+
+        
 
         <!-- DESCRIPCION -->
-        <textarea class="descripcionDelProducto" name="descripcion" placeholder="Describa el producto"><%=descripcion%></textarea>
+        <textarea class="descripcionDelProducto" name="descripcion" placeholder="Describa el producto"><%=producto.descripcion%></textarea>
+        <% if (typeof producto.errors != 'undefined') { %>
+          <% for(let i=0; i < producto.errors.length; i++)  { %>
+            <% if (producto.errors[i].param == "descripcion") {  %>
+              <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+            <% } %>
+          <% } %>
+        <% } %>
+
           <div class="flex-botones-publicar">
               <button class="btn-publicar" type="submit" , id="publicar" , value="guardar"> Guardar Modificaciones  
-              <button onclick="window.location.href='/products/productEdit/borrar/<%= id %>'" class="btn-publicar btn-reset" type="reset" , id="reset" , value="reset">Borrar Producto</button>
+              <button onclick="window.location.href='/products/productEdit/delete/<%= producto.id %>'" class="btn-publicar btn-reset" type="reset" , id="reset" , value="reset">Borrar Producto</button>
           </div>
         
       </form>
+      
+      
     </div>
-   
+    
 </body>
 </html>

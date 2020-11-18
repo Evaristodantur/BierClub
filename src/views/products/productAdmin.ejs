@@ -95,7 +95,7 @@
 								<img src="/images/productos/<%= producto.imagen %>" alt="">
 									<h4 class="nombre-producto-productAdmin"><%= producto.nombre %></h4>
 								<button onclick="window.location.href='/products/productEdit/<%= producto.id %>'" id="modificarProducto" class="modificar-producto">Modificar Producto</button>
-								<button onclick="window.location.href='/products/productEdit/borrar/<%= producto.id %>'" id="eliminarProducto" class="eliminar-producto">Eliminar Producto</button>
+								<button onclick="window.location.href='/products/productEdit/delete/<%= producto.id %>'" id="eliminarProducto" class="eliminar-producto">Eliminar Producto</button>
 							</article>
 						<% }); %>		
 					

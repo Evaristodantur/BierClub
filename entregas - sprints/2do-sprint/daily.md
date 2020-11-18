@@ -1,5 +1,20 @@
 # Dailies
 
+## Sprint 4
+
+### 17/11/20
+  
+  Terminado:
+  - Sitio listo para el Sprint 4
+  
+  Para hacer hoy:
+  - Actualizar Trello para el Sprint 4
+  - Retrospectiva del Sprint 3
+  - Actualizar perfil (Responsive)
+  - Crear carpeta Middlewares
+  - Traslado del Middleware "Multer" a la carpeta
+  - Middleware de Productos 
+  
 ## Sprint 3
 
 ### 15/11/20
@@ -8,7 +23,7 @@
   - Terminado pagina de Envios (HTML Y CSS)
   
   Para hacer hoy:
-  - Actualizar perfil (Responsive)
+  - Crear variable "dbDirectory" para hacer mas limpios los controladores
 
 ### 13/11/20
   

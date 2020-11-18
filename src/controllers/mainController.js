@@ -4,9 +4,11 @@ const fs = require('fs');
 //Agregado database JSON
 let productsJson = fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8');
 
+let dbDirectory = path.resolve(__dirname, '../database/products.json');
+
 productsJson == "" ?
-    fs.writeFileSync(__dirname + "/../database/products.json", JSON.stringify(productsJson = [])) :
-    productsJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8'));
+    fs.writeFileSync(dbDirectory, JSON.stringify(productsJson = [])) :
+    productsJson = JSON.parse(fs.readFileSync(dbDirectory, 'utf-8'));
 
     
 let mainController = {
