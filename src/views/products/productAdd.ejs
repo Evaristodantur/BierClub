@@ -39,6 +39,7 @@
                 <% for(let i=0; i < errors.length; i++)  { %>
                   <% if (errors[i].param == "nombre") {  %>
                     <p class="errorDeCarga">* El campo <%=`"${errors[i].param}" ` + errors[i].msg %></p>
+                    <% break; %>
                   <% } %>
                 <% } %>
               <% } %>
@@ -54,6 +55,7 @@
                   <% for(let i=0; i < errors.length; i++)  { %>
                     <% if (errors[i].param == "precio") {  %>
                       <p class="errorDeCarga">* El campo <%=`"${errors[i].param}" ` + errors[i].msg %></p>
+                      <% break; %>
                     <% } %>
                   <% } %>
                 <% } %>
@@ -67,6 +69,7 @@
                   <% for(let i=0; i < errors.length; i++)  { %>
                     <% if (errors[i].param == "descuento") {  %>
                       <p class="errorDeCarga">* El campo <%=`"${errors[i].param}" ` + errors[i].msg %></p>
+                      <% break; %>
                     <% } %>
                   <% } %>
                 <% } %>
@@ -81,6 +84,7 @@
                 <% for(let i=0; i < errors.length; i++)  { %>
                   <% if (errors[i].param == "stock") {  %>
                     <p class="errorDeCarga">* El campo <%=`"${errors[i].param}" ` + errors[i].msg %></p>
+                    <% break; %>
                   <% } %>
                 <% } %>
               <% } %>
@@ -119,6 +123,7 @@
             <% for(let i=0; i < errors.length; i++)  { %>
               <% if (errors[i].param == "imagen") {  %>
                 <p class="errorDeCarga">* El campo <%=`"${errors[i].param}" ` + errors[i].msg %></p>
+                <% break; %>
               <% } %>
             <% } %>
           <% } %>
@@ -132,6 +137,7 @@
           <% for(let i=0; i < errors.length; i++)  { %>
             <% if (errors[i].param == "descripcion") {  %>
               <p class="errorDeCarga">* El campo <%=`"${errors[i].param}" ` + errors[i].msg %></p>
+              <% break; %>
             <% } %>
           <% } %>
         <% } %>

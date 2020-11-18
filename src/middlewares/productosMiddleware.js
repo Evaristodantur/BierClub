@@ -15,7 +15,7 @@ let productMiddleware =  [
         checkSchema({
                 imagen: {
                         custom: {
-                                options: (value, { req, location, paths }) => {
+                                options: (value, { req }) => {
 
                                         if (typeof req.files[0] != 'undefined') {
                                                 if (path.extname(req.files[0].originalname) != ".png" && 
@@ -33,7 +33,7 @@ let productMiddleware =  [
         checkSchema({
                 imagen: {
                         custom: {
-                                options: (value, { req, location, paths }) => {
+                                options: (value, { req }) => {
 
                                         if (typeof req.files[0] != 'undefined') {
                                                 if (req.files[0].size > 3150000) {
