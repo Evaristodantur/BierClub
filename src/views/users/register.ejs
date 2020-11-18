@@ -21,27 +21,67 @@
 			<!-- NOMBRE -->
 			<div class="campo-input">
 				<input class="input-registro" type="text" id="nombre" name="nombre" placeholder="Nombre">
+				<%if(typeof errors != "undefined"){%>
+					<% for(let i = 0 ; i < errors.length ; i++){ %>
+						<%if(errors[i].param == "nombre"){%>
+							<p class="error-total">Este campo <%= errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
 			</div>
 
 			<!-- MAIL -->
 			<div class="campo-input">
 				<input class="input-registro" type="email"  id="email" name="email" placeholder="Email">
+				<%if(typeof errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.length ; i++){%>
+						<%if(errors[i].param == "email"){%>
+							<p class="error-total">Este campo <%= errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
 			</div>
 
 			<!-- CONTRASEÑA -->
 			<div class="campo-input">
 				<input class="input-registro" type="password" id="Contrasenia" name="contrasenia" placeholder="Contraseña"> 
+				<%if(typeof errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.length ; i++){%>
+						<%if(errors[i].param == "contrasenia"){%>
+							<p class="error-total">Este campo <%= errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
 			</div>
 
 			<!-- CONFIRMAR CONTRASEÑA -->
 			<div class="campo-input">
 				<input class="input-registro" type="password" id="confirmarContrasenia" name="confirmarContrasenia" placeholder="Confirmar contraseña"> 
+				<%if(typeof errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.length ; i++){%>
+						<%if(errors[i].param == "confirmarContrasenia"){%>
+							<p class="error-total">Este campo <%= errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
 			</div> 
 
 			<!-- TERMINOS Y CONDICIONES -->
 			<div class="terminos">
-				<input type="checkbox" id="terminosCondiciones" name="terminosCondiciones" value="terminos">
+				<input type="checkbox" id="terminosCondiciones" name="terminosCondiciones">
 				<label for="terminos-condiciones">Acepto los <a href="#">Términos y Condiciones</a> de BierClub </label>
+				<%if(typeof errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.length ; i++){%>
+						<%if(errors[i].param == "terminosCondiciones"){%>
+							<p class="error-terminosCondiciones"><%= errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
 			</div>
 
 			<!-- BOTON REGISTRARSE -->
@@ -51,11 +91,6 @@
 			
 			
 			</form>
-		<%if(typeof errors != "undefined"){%>
-			<%for(let i = 0 ; i < errors.length ; i++){%>
-				<p>Este campo <%= errors[i].msg %></p>
-			<%}%>
-		<%}%>
 			<!-- INICIAR SESION -->
 			<p class="iniciar-sesion">¿Ya sos cliente? <a href="/users/login">Inicia Sesión</a></p>
 			

@@ -23,12 +23,28 @@
 				
 			<!-- EMAIL -->
 			<div class="campo-input">
-				<input class="input-registro" type="email" id="email" name="email" placeholder="Email o Usuario">
+				<input class="input-registro" type="email" id="email" name="email" placeholder="Email">
+				<%if(typeof errors != "undefined"){%>
+					<% for(let i = 0 ; i < errors.length ; i++){ %>
+						<%if(errors[i].param == "email"){%>
+							<p style="margin: 0 auto; color:red;">Este campo <%= errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
 			</div>
 
 			<!-- CONTRASEÑA -->
 			<div class="campo-input">
 				<input class="input-registro" type="password" id="contraseña" name="contrasenia" placeholder="Contraseña"> 
+				<%if(typeof errors != "undefined"){%>
+					<% for(let i = 0 ; i < errors.length ; i++){ %>
+						<%if(errors[i].param == "contrasenia"){%>
+							<p style="margin: 0 auto; color:red;">Este campo <%= errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
 			</div>
 			
 			<!-- CONTRASEÑA OLVIDADA -->
