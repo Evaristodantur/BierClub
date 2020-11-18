@@ -5,8 +5,8 @@ var router = express.Router();
 let usersController = require('../controllers/usersController');
 
 //Middlewares 
-let userMiddleware = require("../middlewares/userMiddleware")
-
+let userMiddleware = require("../middlewares/userMiddleware") //Middleware de Register
+let loginMiddleware = require("../middlewares/loginMiddleware")//Middleware de Login
 
 
 /********************************ADMINISTRADOR****************************************/
@@ -31,7 +31,7 @@ router.post('/register',userMiddleware, usersController.store);
 router.get('/login', usersController.loginRender);
 
 /* GET     /users/login      page. */
-router.post('/login', userMiddleware,  usersController.loginIniciar);
+router.post('/login', loginMiddleware,  usersController.loginIniciar);
 
 /**********************************PERFIL*********************************************/
 

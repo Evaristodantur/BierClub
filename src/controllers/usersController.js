@@ -4,8 +4,8 @@ const bcrypt = require('bcryptjs');
 const {validationResult} = require("express-validator");
 
 //Agregado database JSON
-let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
 let dbDirectory = path.resolve(__dirname, '../database/usuarios.json')
+let usuariosJson = fs.readFileSync(dbDirectory, 'utf-8');
 
 usuariosJson == "" ?
     fs.writeFileSync(dbDirectory, JSON.stringify(usuariosJson = [])) :
@@ -91,17 +91,7 @@ let usersController = {
       if (!errores.isEmpty()){
         return res.render("users/login", {errors : errores.errors})
       }
-      let email = req.body.email;
-
-      let buscarUsuario = usuariosJson.find(usuario => usuario.email == email)
-
-      if(buscarUsuario == undefined){ return res.send("El email no se encuentra registrado") }
-
-      if(req.body.email == buscarUsuario.email && bcrypt.compareSync(req.body.contrasenia,buscarUsuario.contrasenia)){
-          return res.send("Iniciaste sesión")
-      }else{
-        return res.send("La contraseña es inconrrecta")
-      }
+      res.redirect("/")
     },
 
 

@@ -27,7 +27,7 @@
 				<%if(typeof errors != "undefined"){%>
 					<% for(let i = 0 ; i < errors.length ; i++){ %>
 						<%if(errors[i].param == "email"){%>
-							<p style="margin: 0 auto; color:red;">Este campo <%= errors[i].msg %></p>
+							<p style="margin: 0 auto; color:red;"><%= errors[i].msg %></p>
 							<% break; %>
 						<%}%>
 					<%}%>
@@ -40,7 +40,7 @@
 				<%if(typeof errors != "undefined"){%>
 					<% for(let i = 0 ; i < errors.length ; i++){ %>
 						<%if(errors[i].param == "contrasenia"){%>
-							<p style="margin: 0 auto; color:red;">Este campo <%= errors[i].msg %></p>
+							<p style="margin: 0 auto; color:red;"><%= errors[i].msg %></p>
 							<% break; %>
 						<%}%>
 					<%}%>
