@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
+const {validationResult} = require("express-validator");
 
 //Agregado database JSON
 let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
@@ -37,6 +38,13 @@ let usersController = {
 
     //  /users/register
     store : (req, res, next) => {
+      // Enviar errores express-validator
+      let errores = validationResult(req);
+      if (!errores.isEmpty()){
+        console.log(errores);
+        return res.render("users/register", {errors : errores.errors})
+      }
+
       // ID maximo para reemplazar
       let idMax = 0;
 
@@ -59,14 +67,6 @@ let usersController = {
         contrasenia : bcrypt.hashSync(req.body.contrasenia,10)
       }
 
-      if(!req.body.terminosCondiciones){
-        return res.send("Acepta los terminos y condiciones por favor.");
-      }
-
-      if(!bcrypt.compareSync(req.body.confirmarContrasenia,usuarioNuevo.contrasenia)){
-        return res.send("Las contraseñas no coinciden");
-      }
-
       //Sumar el usuario al array
       usuariosJson.push(usuarioNuevo);
 
@@ -86,13 +86,12 @@ let usersController = {
     },
 
     loginIniciar : (req, res, next) => {
+      // Enviar errores express-validator
+      let errores = validationResult(req);
+      if (!errores.isEmpty()){
+        return res.render("users/login", {errors : errores.errors})
+      }
       let email = req.body.email;
-
-      //VALIDACIONES DE EMIAL Y CONTRASEÑA (Si estan puestos o no)
-      if(email == "" && req.body.contrasenia == ""){ return res.send("El email y la contraseña estan vacios") }
-      if(email == ""){ return res.send("El email esta vacio") }
-      if(req.body.contrasenia == ""){ return res.send("La contraseña esta vacia") }
-
 
       let buscarUsuario = usuariosJson.find(usuario => usuario.email == email)
 

@@ -4,6 +4,9 @@ var router = express.Router();
 //Controller
 let usersController = require('../controllers/usersController');
 
+//Middlewares 
+let userMiddleware = require("../middlewares/userMiddleware")
+
 
 
 /********************************ADMINISTRADOR****************************************/
@@ -20,7 +23,7 @@ router.post('/usersAdmin', usersController.usersAdminCambios);
 router.get('/register', usersController.create);
 
 /* GET     /users/register      page. */
-router.post('/register', usersController.store);
+router.post('/register',userMiddleware, usersController.store);
 
 /*********************************LOGIN***********************************************/
 
@@ -28,7 +31,7 @@ router.post('/register', usersController.store);
 router.get('/login', usersController.loginRender);
 
 /* GET     /users/login      page. */
-router.post('/login', usersController.loginIniciar);
+router.post('/login', userMiddleware,  usersController.loginIniciar);
 
 /**********************************PERFIL*********************************************/
 
