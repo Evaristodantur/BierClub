@@ -94,6 +94,18 @@
           <!-- IMAGEN -->
           <div class="imagenPrev">
             <img src="/images/productos/producto-2.jpg" alt="muestra de producto">
+            <div class="fileImagenes">
+              <input type="file" name="imagen" multiple="multiple">
+              <p style="margin: 0; font-size: small; width: 100%; color: rgb(82, 12, 12);">*Se permite subir hasta 4 imagenes*</p>
+              <% if (typeof producto.errors != 'undefined') { %>
+                <% for(let i=0; i < producto.errors.length; i++)  { %>
+                  <% if (producto.errors[i].param == "imagen") {  %>
+                    <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                    <% break; %>
+                  <% } %>
+                <% } %>
+              <% } %>
+            </div>
           </div>
         </div>
 
@@ -113,20 +125,6 @@
               <option value="no lupulada">No Lupulada</option>
             </select>
           </div>
-
-          
-        <!-- SUBIR IMAGEN -->
-        <div class="imgFile">
-          <input name="imagen" type="file">
-          <% if (typeof producto.errors != 'undefined') { %>
-            <% for(let i=0; i < producto.errors.length; i++)  { %>
-              <% if (producto.errors[i].param == "imagen") {  %>
-                <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
-                <% break; %>
-              <% } %>
-            <% } %>
-          <% } %>
-        </div>
 
         </div>
 
@@ -152,6 +150,8 @@
       
       
     </div>
+
+    
     
 </body>
 </html>

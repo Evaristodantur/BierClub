@@ -7,7 +7,9 @@
         "stock": "645645",
         "categoria": "cerveza",
         "descripcion": "Es la descripcion de prueba 1",
-        "imagen": "producto-1.jpg"
+        "imagen": [
+            "producto-1.jpg"
+        ]
     },
     {
         "id": 2,
@@ -17,7 +19,9 @@
         "stock": "0",
         "categoria": "Lupuladas",
         "descripcion": "Es la descripcion de prueba 2",
-        "imagen": "producto-2.jpg"
+        "imagen": [
+            "producto-2.jpg"
+        ]
     },
     {
         "id": 3,
@@ -27,7 +31,9 @@
         "stock": "883",
         "categoria": "No Lupuladas",
         "descripcion": "Es la descripcion de prueba 3",
-        "imagen": "producto-3.jpg"
+        "imagen": [
+            "producto-3.jpg"
+        ]
     },
     {
         "id": 4,
@@ -37,7 +43,9 @@
         "stock": "10",
         "categoria": "No Lupuladas",
         "descripcion": "Es la descripcion de prueba 4",
-        "imagen": "producto-4.jpg"
+        "imagen": [
+            "producto-4.jpg"
+        ]
     },
     {
         "id": 5,
@@ -47,6 +55,8 @@
         "stock": "45",
         "categoria": "cerveza",
         "descripcion": "Es la descripcion de prueba 5",
-        "imagen": "producto-5.jpg"
+        "imagen": [
+            "producto-5.jpg"
+        ]
     }
 ]

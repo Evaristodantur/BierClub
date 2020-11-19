@@ -59,18 +59,25 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
 }
 
 .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img{
-    /* Posicionamiento */
-    position: relative;
-    right: 50px;
-    
     /* Display & Box Model */
     display: inline-block;
     width: 320px;
+    margin-right: 20px;
 
     /* Otras */    
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
+}
+
+div.imagenPrev {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+div.fileImagenes {
+    width: 40%;
 }
 
 /* ==========================================================================
@@ -102,8 +109,7 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
     display: flex;
 }
 
-.flex-categoria-imgFile div.categoria, 
-.flex-categoria-imgFile div.imgFile {
+.flex-categoria-imgFile div.categoria {
     width: 50%;
 }
 
@@ -123,17 +129,10 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
 }
 
 
-.flex-categoria-imgFile div.imgFile input#imagen ,
 .flex-categoria-imgFile div.categoria select#categoria {
     display: inline-block;
     width: 50%;
     margin: 0 0% 1% 0;
-}
-
-.flex-categoria-imgFile div.imgFile input#imagen {
-    /* Posicionamiento */
-    position: relative;
-    left: 250px;
 }
 
 /* ==========================================================================
@@ -216,10 +215,8 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
         padding-bottom: 12%
     }
 
-    /*BLOQUE IMGFILE*/
-    .flex-categoria-imgFile div.imgFile input#imagen {
-        /* Posicionamiento */
-        left: 150px;
+    div.fileImagenes {
+        width: 50%;
     }
 }
 
@@ -231,15 +228,14 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
    RESOLUCION: 1024 a 1200
    ========================================================================== */
 @media (min-width:1024px) and (max-width: 1200px) {
-    /*BLOQUE IMGFILE*/
-    .flex-categoria-imgFile div.imgFile input#imagen {
-        /* Posicionamiento */
-        left: 100px;
-    }
-
     /*DESCRIPCION DEL PRODUCTO*/
     .productAdd .formulario-carga .descripcionDelProducto {
         width: 100%;
+    }
+
+    .productAdd div.flex-categoria-imgFile {
+        margin-top: 15px;
+        justify-content: center;
     }
 }
 
@@ -254,7 +250,7 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
     .productAddtop{
         padding-top: 150px;
     }
-    
+
     /*BLOQUE NOMBRE-PRECIO-CANTIDAD-IMAGEN PREVISUALIZADA*/
     .productAdd form.formulario-carga div.flex-imgPrev-detalle {
         flex-direction: column;
@@ -262,7 +258,7 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
         justify-content: center;
         align-items: center;
     }
-    
+
     /*BLOQUE PRECIO - DESCUENTO*/
     .productAdd form.formulario-carga div.flex-imgPrev-detalle div.campo-nombre-precio-cantidad {
         width: 100%;
@@ -293,6 +289,11 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
     .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev {
         display: flex;
         justify-content: center;
+        align-items: center;
+    }
+
+    .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev input {
+        margin-left: 20px;
     }
 
     .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
@@ -301,23 +302,20 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
         right: 0px;
 
         /* Display & Box Model */
-        width: 45%;  
+        width: 50%;  
     }
 
     /*BLOQUE IMGFILE - CATEGORIA*/
-    .flex-categoria-imgFile div.imgFile {
-        width: 100%;
+    div.fileImagenes {
+        width: 60%;
     }
 
-    .flex-categoria-imgFile div.imgFile input#imagen, 
     .flex-categoria-imgFile div.categoria select#categoria {
         width: 100%;
     }
 
-    /*BLOQUE IMGFILE*/
-    .flex-categoria-imgFile div.imgFile input#imagen {
-        /* Posicionamiento */
-        left: 55px;
+    .productAdd div.flex-categoria-imgFile {
+        justify-content: center;
     }
 
     /*DESCRIPCION DEL PRODUCTO*/
@@ -366,7 +364,13 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
 
     .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        width: 75%;
+    }
+
+    div.fileImagenes{
+        width: 60%;
     }
 
     .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
@@ -441,12 +445,6 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
         margin-left: 4%;
         margin-right: 0;
     }
-    
-    /*BLOQUE IMGFILE*/
-    .flex-categoria-imgFile div.imgFile input#imagen {
-        /* Posicionamiento */
-        left: 25px;
-    }
 
     /*BLOQUE NOMBRE-PRECIO-CANTIDAD-IMAGEN PREVISUALIZADA*/
     div.campo-nombre-precio-cantidad .nombre input#nombreProducto, 
@@ -467,6 +465,11 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
     
     div.campo-nombre-precio-cantidad .descuento input#descuento {
         width: 100%;
+    }
+
+    div.fileImagenes{
+        width: 100%;
+        align-self: flex-start;
     }
 
     /*DESCRIPCION DEL PRODUCTO*/

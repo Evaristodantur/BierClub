@@ -10,9 +10,10 @@ var storage = multer.diskStorage({
       cb(null, 'producto' + '-' + Date.now() + path.extname(file.originalname));
     }
   });
-   
-  var multerUpload = multer({ storage: storage });
-  
+
+  var multerUpload = multer({
+    storage: storage
+  });
 
 
   module.exports = multerUpload;

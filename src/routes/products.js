@@ -39,7 +39,7 @@ router.get('/productAdmin', productsController.productAdmin);
 router.get('/productAdd', productsController.createProduct);
 
 /* POST     /products/productAdd - Crea/almacena el producto             page. */
-router.post('/productAdd', multerUpload.any(), productMiddleware, productsController.storeProduct);
+router.post('/productAdd', multerUpload.any() ,productMiddleware, productsController.storeProduct);
 
 /**********************************PRODUCT EDIT***************************************/
 

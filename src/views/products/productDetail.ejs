@@ -21,15 +21,14 @@
   
         <!-- IMAGEN-PREVIEWS -->
         <div class="imagen-producto-previews">
-          <img class="imagen-previews" src="/images/productos/producto-2.jpg" alt="">
-          <img class="imagen-previews" src="/images/productos/producto-3.jpg" alt="">
-          <img class="imagen-previews" src="/images/productos/producto-4.jpg" alt="">
-          <img class="imagen-previews" src="/images/productos/producto-5.jpg" alt="">
+          <% for(let i=1; i < imagen.length; i++) { %>
+            <img class="imagen-previews" src="/images/productos/<%=imagen[i]%>" alt="">
+          <% } %>
         </div>
         
         <!-- IMAGEN -->
         <div class="imagen-producto">
-            <img class="imagen-producto-principal" src="/images/productos/<%=imagen%>" alt="">
+            <img class="imagen-producto-principal" src="/images/productos/<%=imagen[0]%>" alt="">
 
             <!-- DESCRIPCION DE LA IMAGEN -->
             <div class="descripcion-producto">

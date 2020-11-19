@@ -11,17 +11,18 @@ let productMiddleware =  [
         check('stock').notEmpty().withMessage('no puede estar vacio')
                 .isInt({min:0}).withMessage('debe ser un numero positivo'),
         check('descripcion').isLength({max:280})
-                .withMessage('solo acepta hasta 280 caracteres'),
+                .withMessage('solo acepta hasta 280 caracteres') ,
         checkSchema({
                 imagen: {
                         custom: {
                                 options: (value, { req }) => {
-
-                                        if (typeof req.files[0] != 'undefined') {
-                                                if (path.extname(req.files[0].originalname) != ".png" && 
-                                                    path.extname(req.files[0].originalname) != ".jpg" &&
-                                                    path.extname(req.files[0].originalname) != ".jpeg") {
-                                                        return false;
+                                        for(let i=0; i < req.files.length; i++) {
+                                                if (typeof req.files[i] != 'undefined') {
+                                                        if (path.extname(req.files[i].originalname) != ".png" && 
+                                                            path.extname(req.files[i].originalname) != ".jpg" &&
+                                                            path.extname(req.files[i].originalname) != ".jpeg") {
+                                                                return false;
+                                                        }
                                                 }
                                         }
                                         return true;
@@ -34,10 +35,11 @@ let productMiddleware =  [
                 imagen: {
                         custom: {
                                 options: (value, { req }) => {
-
-                                        if (typeof req.files[0] != 'undefined') {
-                                                if (req.files[0].size > 3150000) {
-                                                        return false;
+                                        for(let i=0; i < req.files.length; i++) {
+                                                if (typeof req.files[i] != 'undefined') {
+                                                        if (req.files[i].size > 3150000) {
+                                                                return false;
+                                                        }
                                                 }
                                         }
                                         return true;
