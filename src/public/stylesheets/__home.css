@@ -462,6 +462,16 @@
     .home section.newsletter-background input.newsletter {
         width: 70%;
     }
+    .home div.banner-parallax{
+        height: 46vh; 
+    }
+    .home div.banner-parallax div.banner-texto{
+        margin-top: 23vh;
+        margin-left: 45vw;
+    }
+    .home section.nav-MejoresProductos div.titulo-mejores-productos{
+        margin-top: 54vh;
+    }
 }
   
 
@@ -536,5 +546,12 @@
     /*NEWSLETTER*/
     .home section.newsletter-background input.newsletter {
         width: 80%;
+    }
+    .home div.banner-parallax,
+    .home div.banner-parallax div.banner-texto{
+        display:none;
+    }
+    .home section.nav-MejoresProductos div.titulo-mejores-productos{
+        margin-top: 20px;
     }
 }
