@@ -245,7 +245,7 @@
     opacity: 1;
     font-size: medium;
 }
-.banner-parallax{
+.home div.banner-parallax{
   /* The image used */
   background-image: url("/images/home/banners/banner1.jpg");
 
@@ -260,7 +260,17 @@
   background-size: cover;
   position: absolute;
 }
-
+.home div.banner-parallax div.banner-texto{
+    text-align: center;
+    margin-top: 30vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin-left: 55vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid white;
+}
 
 
 
