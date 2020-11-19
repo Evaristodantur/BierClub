@@ -71,13 +71,21 @@ let productsController = {
                 descuento : req.body.descuento,
                 stock : req.body.stock,
                 categoria : req.body.categoria,
-                descripcion : req.body.descripcion
+                descripcion : req.body.descripcion,
+                imagen : ['product-image-not-available.jpg']
             }
 
-            //Agrega la imagen
-            req.files == "" ? 
-                productoNuevo.imagen = "product-image-not-available.jpg" :
-                productoNuevo.imagen = req.files[0].filename;
+                //Agrega las imagenes
+                let imagenes = [];                
+                for(let i=0; i < 4; i++) {
+                    if(typeof req.files[i] != "undefined") {
+                        imagenes.push(req.files[i].filename)
+                    }
+                }
+
+                if (typeof imagenes[0] != "undefined") {
+                    productoNuevo.imagen = imagenes
+                }
             
 
             //Lo guarda en el array Json
@@ -134,11 +142,22 @@ let productsController = {
                     descripcion : req.body.descripcion
                 }
 
-                //incorporo el id y la imagen nueva, si es que tiene
-                req.files[0] == undefined ?
-                     producto.imagen = productoBackUp.imagen :
-                     producto.imagen = req.files[0].filename;
-                
+                 if (typeof req.files[0] == "undefined") {
+                    producto.imagen = productoBackUp.imagen;
+                } else {
+
+                    let imagenes = [];                
+                    for(let i=0; i < 4; i++) {
+                        if(typeof req.files[i] != "undefined") {
+                            imagenes.push(req.files[i].filename)
+                        }
+                    }
+
+                    if (typeof imagenes[0] != "undefined") {
+                        producto.imagen = imagenes
+                    }
+
+                }
             }
             return producto;
         });
