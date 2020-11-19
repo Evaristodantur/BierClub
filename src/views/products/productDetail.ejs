@@ -21,10 +21,9 @@
   
         <!-- IMAGEN-PREVIEWS -->
         <div class="imagen-producto-previews">
-          <img class="imagen-previews" src="/images/productos/producto-2.jpg" alt="">
-          <img class="imagen-previews" src="/images/productos/producto-3.jpg" alt="">
-          <img class="imagen-previews" src="/images/productos/producto-4.jpg" alt="">
-          <img class="imagen-previews" src="/images/productos/producto-5.jpg" alt="">
+          <% for(let i=1; i < imagen.length; i++) { %>
+            <img class="imagen-previews" src="/images/productos/<%=imagen[i]%>" alt="">
+          <% } %>
         </div>
         
         <!-- IMAGEN -->
