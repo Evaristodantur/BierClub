@@ -183,7 +183,7 @@
    ========================================================================== */
 .home section.nav-MejoresProductos div.titulo-mejores-productos{
     text-align: center;
-    margin-top: 60px;
+    margin-top: 78vh;
 }
 
 .home section.nav-MejoresProductos ul.mejores-productos {
@@ -245,7 +245,21 @@
     opacity: 1;
     font-size: medium;
 }
+.banner-parallax{
+  /* The image used */
+  background-image: url("/images/home/banners/banner1.jpg");
 
+  /* Full height */
+  height: 63vh; 
+  width: 100vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
 
 
 
