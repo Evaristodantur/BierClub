@@ -10,10 +10,17 @@ body .login-register{
 /* ==========================================================================
    TITULO
    ========================================================================== */
-.login-register h1 {
+.login-register-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-register div.login-register-titulo h1 {
     /* Display & Box Model */
     margin-top: 1%;
     margin-bottom: 5%;
+    width: 90%;
+    margin-left: 5%;
 
     /* Otras */
     text-align: center;
@@ -114,6 +121,7 @@ body .login-register{
 .login-register form.formulario div.campo-input .error-total,
 .login-register form.formulario div.terminos .error-terminosCondiciones{
     color: red;
+    font-size: 14px;
 }
 .login-register form.formulario div.campo-input .error-total{
     margin: 0 auto;
@@ -121,7 +129,7 @@ body .login-register{
 .login-register form.formulario div.terminos .error-terminosCondiciones{
     margin-top: 0px;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
@@ -139,8 +147,18 @@ body .login-register{
 }
 
 
+/* ==========================================================================
+   RESOLUCION: 480 a 768
+   ========================================================================== */
+@media (max-width: 950px){
+.login-register div.login-register-titulo{
+    margin-top: -55px;
+    }
+}
 
-  
+
+
+
 /* ==========================================================================
    RESOLUCION: 480 a 768
    ========================================================================== */
@@ -171,5 +189,11 @@ body .login-register{
     .login-register form.formulario div.campo-input input.input-registro, 
     .login-register form.formulario div.campo-input button.input-button {
         width: 90%;
+    }
+    .login-register footer{
+        margin-top: 50px;
+    }
+    .login-footer footer{
+        margin-top: 120px;
     }
 }

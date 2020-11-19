@@ -16,7 +16,9 @@
 		<div class="login-register">
 
 			<!-- TITULO -->
-			<h1>Ingresa a tu Cuenta</h1>
+			<div class="login-register-titulo">
+				<h1>Ingresa tu cuenta</h1>	
+			</div>
 		
 			<!-- FORMULARIO -->
 			<form class="formulario" action="/users/login" method="POST">
@@ -27,7 +29,7 @@
 				<%if(typeof errors != "undefined"){%>
 					<% for(let i = 0 ; i < errors.length ; i++){ %>
 						<%if(errors[i].param == "email"){%>
-							<p style="margin: 0 auto; color:red;"><%= errors[i].msg %></p>
+							<p class="error-total"><%= errors[i].msg %></p>
 							<% break; %>
 						<%}%>
 					<%}%>
@@ -40,7 +42,7 @@
 				<%if(typeof errors != "undefined"){%>
 					<% for(let i = 0 ; i < errors.length ; i++){ %>
 						<%if(errors[i].param == "contrasenia"){%>
-							<p style="margin: 0 auto; color:red;"><%= errors[i].msg %></p>
+							<p class="error-total"><%= errors[i].msg %></p>
 							<% break; %>
 						<%}%>
 					<%}%>
@@ -59,12 +61,11 @@
 			<!-- REGISTRARSE -->
 			<p class="registrate-usuario">¿Aún no tenés usuario?<a href="/users/register">¡Registrate!</a></p>
 			
-		</div>
-
-	<!-- FOOTER -->
-	<footer>
-		<%- include('../partials/footer.ejs') %>
-	</footer>
+				<!-- FOOTER -->
+				<footer class="login-footer">
+					<%- include('../partials/footer.ejs') %>
+				</footer>
+			</div>
 
 </body>
 </html>
