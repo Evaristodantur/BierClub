@@ -1,1 +1,8 @@
-[{"id":1,"nombre":"adsawdwadads","email":"lourdes@dantur.com","contrasenia":"$2a$10$HKGOSga1pbyyABgXyUpUJeCvqilHF8YzksGKoKuhFgROAp/6DlNwu"}]
+[
+    {
+        "id": 1,
+        "nombre": "adsawdwadads",
+        "email": "lourdes@dantur.com",
+        "contrasenia": "$2a$10$HKGOSga1pbyyABgXyUpUJeCvqilHF8YzksGKoKuhFgROAp/6DlNwu"
+    }
+]

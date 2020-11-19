@@ -21,18 +21,18 @@
 		<div class="login-register">
 
 			<!-- TITULO -->
-			<h1> ¡Bienvenido, <%= nombre %>! </h1>
+			<h1> ¡Bienvenido, <%= usuario.nombre %>! </h1>
 			<div class="perfil-total">
 				<div class="perfil-izquierda">
 					<h2>Mis datos personales</h2>
 					<hr>
 					<ul class="datos-personales">
 						<li>Nombre:</li>
-						<li><%= nombre %></li>
+						<li><%= usuario.nombre %></li>
 					</ul>
 					<ul class="datos-personales">
 						<li>Email:</li>
-						<li><%= email %></li>
+						<li><%= usuario.email %></li>
 					</ul>
 					<hr>
 					<strong><a onClick="modificarPerfil()">MODIFICAR DATOS</a></strong>
@@ -43,17 +43,17 @@
 					<div class="compras-perfil">
 						<img src="/images/productos/producto-2.jpg" alt="">
 						<h3>Precio total del pedido: $2000</h3>
-						<a onclick="window.location.href='/users/perfil/pedidos/<%= id %>'"  class=""> Ver pedido completo</a>
+						<a onclick="window.location.href='/users/perfil/pedidos/<%= usuario.id %>'"  class=""> Ver pedido completo</a>
 					</div>
 					<div class="compras-perfil">
 						<img src="/images/productos/producto-2.jpg" alt="">
 						<h3>Precio total del pedido: $2000</h3>
-						<a onclick="window.location.href='/users/perfil/pedidos/<%= id %>'"  class=""> Ver pedido completo</a>
+						<a onclick="window.location.href='/users/perfil/pedidos/<%= usuario.id %>'"  class=""> Ver pedido completo</a>
 					</div>
 					<div class="compras-perfil">
 						<img src="/images/productos/producto-2.jpg" alt="">
 						<h3>Precio total del pedido: $2000</h3>
-						<a onclick="window.location.href='/users/perfil/pedidos/<%= id %>'" class=""> Ver pedido completo</a>
+						<a onclick="window.location.href='/users/perfil/pedidos/<%= usuario.id %>'" class=""> Ver pedido completo</a>
 					</div>
 				</div>
 
@@ -62,41 +62,81 @@
 			<div class="formulario-total" id="modificar">
 				<div class="invisible"></div>
 				
-			<form class="formulario" action="/users/perfil/<%= id %>" method="POST">
+			<form class="formulario" action="/users/perfil/<%= usuario.id %>" method="POST">
 				<div class="cerrar-modificar"><a onclick="modificarPerfil()"><i class="far fa-times-circle"></i></a></div>
 				
 
 				<!-- NOMBRE -->
 				<div class="campo-input campo1">
-					<input class="input-registro" type="text" id="nombre" name="nombre" value="<%= nombre %>">
+					<input class="input-registro" type="text" id="nombre" name="nombre" value="<%= usuario.nombre %>">
+					<%if(typeof usuario.errors != "undefined"){%>
+						<% for(let i = 0 ; i < usuario.errors.length ; i++){ %>
+							<%if(usuario.errors[i].param == "nombre"){%>
+								<p class="error-total"><%= usuario.errors[i].msg %></p>
+								<% break; %>
+							<%}%>
+						<%}%>
+					<%}%>
 				</div>
 
 				<!-- EMAIL -->
 				<div class="campo-input">
-					<input class="input-registro" type="email" id="email" name="email" value="<%= email %>">
+					<input class="input-registro" type="email" id="email" name="email" value="<%= usuario.email %>">
+					<%if(typeof usuario.errors != "undefined"){%>
+						<% for(let i = 0 ; i < usuario.errors.length ; i++){ %>
+							<%if(usuario.errors[i].param == "email"){%>
+								<p class="error-total"><%= usuario.errors[i].msg %></p>
+								<% break; %>
+							<%}%>
+						<%}%>
+					<%}%>
 				</div>
+				
 
 
 				<!-- VIEJA CONTRASEÑA -->
 				<div class="campo-input">
 					<input class="input-registro" type="password" placeholder="Antigua Contraseña" name="antiguaContrasenia"> 
-				
+					<%if(typeof usuario.errors != "undefined"){%>
+						<% for(let i = 0 ; i < usuario.errors.length ; i++){ %>
+							<%if(usuario.errors[i].param == "antiguaContrasenia"){%>
+								<p class="error-total"><%= usuario.errors[i].msg %></p>
+								<% break; %>
+							<%}%>
+						<%}%>
+					<%}%>
 				</div>
 				<!-- CONTRASEÑA -->
 				<div class="campo-input">
 					<input class="input-registro" type="password" id="contrasenia" name="contrasenia" placeholder="Contraseña nueva"> 
+					<%if(typeof usuario.errors != "undefined"){%>
+						<% for(let i = 0 ; i < usuario.errors.length ; i++){ %>
+							<%if(usuario.errors[i].param == "contrasenia"){%>
+								<p class="error-total"><%= usuario.errors[i].msg %></p>
+								<% break; %>
+							<%}%>
+						<%}%>
+					<%}%>
 				</div>
 
 				<!-- CONFIRMAR CONTRASEÑA -->
 				<div class="campo-input">
 					<input class="input-registro" type="password" id="confirmarContrasenia" name="confirmarContrasenia" placeholder="Confirmar contraseña nueva"> 
+					<%if(typeof usuario.errors != "undefined"){%>
+						<% for(let i = 0 ; i < usuario.errors.length ; i++){ %>
+							<%if(usuario.errors[i].param == "confirmarContrasenia"){%>
+								<p class="error-total"><%= usuario.errors[i].msg %></p>
+								<% break; %>
+							<%}%>
+						<%}%>
+					<%}%>
 				</div> 
 			
 				<!-- BOTON INGRESAR -->
 				<div class="campo-input">
 					<button class="input-button modificar-datos" type="submit" id="" name="" value="ingresar"> Modificar datos</button>
 					<br>
-					<button onclick="window.location.href='/users/perfil/eliminar/<%= id %>'" class="input-button ultimoCampo" type="reset" id="" name="" value=""> Eliminar usuario</button>
+					<button onclick="window.location.href='/users/perfil/eliminar/<%= usuario.id %>'" class="input-button ultimoCampo" type="reset" id="" name="" value=""> Eliminar usuario</button>
 				</div>
 			</form>
 			</div>

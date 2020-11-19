@@ -7,6 +7,7 @@ let usersController = require('../controllers/usersController');
 //Middlewares 
 let userMiddleware = require("../middlewares/userMiddleware") //Middleware de Register
 let loginMiddleware = require("../middlewares/loginMiddleware")//Middleware de Login
+let modificarUserMiddleware = require("../middlewares/modificarUserMiddleware")//Middleware de Login
 
 
 /********************************ADMINISTRADOR****************************************/
@@ -39,7 +40,7 @@ router.post('/login', loginMiddleware,  usersController.loginIniciar);
 router.get('/perfil/:id', usersController.perfilEdit);
 
 /* GET     /users/perfil/:id      page. */
-router.post('/perfil/:id', usersController.perfilUpdate);
+router.post('/perfil/:id', modificarUserMiddleware , usersController.perfilUpdate);
 
 /**********************************ELIMINAR*******************************************/
 

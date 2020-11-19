@@ -41,7 +41,6 @@ let usersController = {
       // Enviar errores express-validator
       let errores = validationResult(req);
       if (!errores.isEmpty()){
-        console.log(errores);
         return res.render("users/register", {errors : errores.errors})
       }
 
@@ -104,18 +103,18 @@ let usersController = {
         let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
         
         
-        usuarioBuscado ? (res.render("users/perfil", usuarioBuscado)) : res.render("error")
+        usuarioBuscado ? (res.render("users/perfil", { usuario : usuarioBuscado })) : res.render("error")
     },
-
 
     // Modificacion del producto
     perfilUpdate : (req, res, next) => {
       let idUrl = req.params.id;
-
-      let usuarioOriginal = usuariosJson.find( usuario => usuario.id == idUrl);
-      if(req.body.contrasenia != req.body.confirmarContrasenia){ return res.send("Las contraseñas no coinciden") }
-      if(!bcrypt.compareSync(req.body.antiguaContrasenia,usuarioOriginal.contrasenia)){ return res.send("La contraseña antigua no es correcta") }
-
+      let errores = validationResult(req);
+      if (!errores.isEmpty()){
+        let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
+        usuarioBuscado.errors = errores.errors;
+        return res.render("users/perfil", { usuario : usuarioBuscado })
+      }
 
        let usuarioCambiado = usuariosJson.map(function(usuario){
         if(usuario.id == idUrl){

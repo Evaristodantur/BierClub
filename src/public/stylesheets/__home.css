@@ -246,17 +246,15 @@
     font-size: medium;
 }
 .home div.banner-parallax{
-  /* The image used */
   background-image: url("/images/home/banners/banner1.jpg");
 
-  /* Full height */
+  /* Display & Box Model */
   height: 63vh; 
-  width: 100vw;
+  width: 100%;
 
-  /* Create the parallax scrolling effect */
+  /* Otras */
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
 }
@@ -271,7 +269,6 @@
     padding-right: 10px;
     border: 1px solid white;
 }
-
 
 
 /* ==========================================================================
