@@ -4,7 +4,7 @@ body {
   font-weight: 300;
 }
 
-.nav-backgc {
+.nav2 .nav-backgc {
   height: 140px;
   position: fixed;
   width: 100%;
@@ -13,14 +13,14 @@ body {
   backdrop-filter: blur(1rem);
 }
 
-.container-nav {
+.nav2 .nav-backgc .container-nav {
   width: 80%;
   margin-left: 10%;
   position: fixed;
   z-index: inherit 9;
 }
 
-.logonav {
+.nav2 .nav-backgc .container-nav .navbar img.logonav {
   max-width: 65px;
   padding: 10px 0px 2px 0px;
   position: relative;
@@ -34,50 +34,50 @@ body {
   padding: 10px 0px 2px 0px;
 }
 
-nav {
+.nav2 .nav-backgc .container-nav .navbar nav {
   width: 100%;
   padding-bottom: 2px;
 }
 
 
-.navbar ul {
+.nav2 .nav-backgc .container-nav .navbar ul {
   padding: 0;
   list-style: none;
 }
 
-.navbar li {
+.nav2 .nav-backgc .container-nav .navbar li {
   display: inline-block;
   margin: 0px 25px;
   position: relative;
 }
 
-.navcarrito span {
+.nav2 .nav-backgc .container-nav .navbar .navcarrito span {
   display: none;
 }
 
-.navbar a {
+.nav2 .nav-backgc .container-nav .navbar a {
   text-decoration: none;
   color: #fff;
 }
 
-.navbar a {
+.nav2 .nav-backgc .container-nav .navbar a {
   color: #fff;
 }
 
-.barra {
+.nav2 .nav-backgc .container-nav .navbar nav .barra {
   margin-top: 27px;
 }
 
-hr {
+.nav2 hr {
   opacity: 20%
 }
 
-.navcarrito.login-carrito {
+.nav2 .nav-backgc .container-nav .navbar .navcarrito .login-carrito {
   display: none;
   font-size: 18px;
 }
 
-.navcarrito {
+.nav2 .nav-backgc .container-nav .navbar .navcarrito {
   display: flex;
   float: right;
   position: fixed;
@@ -86,7 +86,7 @@ hr {
   transition: 0.3s;
 }
 
-.navlogin {
+.nav2 .nav-backgc .container-nav .navbar .navlogin {
   float: right;
   display: flex;
   position: fixed;
@@ -95,15 +95,7 @@ hr {
   transition: 0.3s;
 }
 
-.navlogin {
-  float: right;
-  position: fixed;
-  right: 1.5%;
-  margin-top: -35px;
-  transition: 0.3s;
-}
-
-.hamburguesa-icono{
+.nav2 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono{
   display: none;
   color: white;
 }
@@ -147,7 +139,7 @@ DROPDOWN MENU
 /* ==========================================================================
 MENU HAMBURGUESA MOBILE
 ========================================================================== */
-.mobile-hamburguesa-menu{
+.nav2 .nav-backgc div.mobile-hamburguesa-menu{
   position: absolute;
   height: 96vh;
   width: 350px;
@@ -159,29 +151,29 @@ MENU HAMBURGUESA MOBILE
   transition: 0.4s;
 }
 
-.hamburguesa-menu{
+.nav2 .nav-backgc .mobile-hamburguesa-menu .hamburguesa-margin .hamburguesa-top div.hamburguesa-menu{
   margin: 6px;
 }
-.hamburguesa-margin{
+.nav2 .nav-backgc .mobile-hamburguesa-menu div.hamburguesa-margin{
   margin:2%;
 }
-.hamburguesa-top{
+.nav2 .nav-backgc .mobile-hamburguesa-menu .hamburguesa-margin div.hamburguesa-top{
   display:flex;
   justify-content: space-between;
 }
-.hamburguesa-items{
+.nav2 .nav-backgc .mobile-hamburguesa-menu .hamburguesa-margin div.hamburguesa-items{
   display:flex;
   flex-direction: column;
   margin-top: 3%;
   margin-left: 4%;
 }
-.hamburguesa-item{
+.nav2 .nav-backgc .mobile-hamburguesa-menu .hamburguesa-margin .hamburguesa-items a.hamburguesa-item{
   color:#DAA520;
   display: inline-block;
   margin-bottom: 7px;
   transition: 0.4s;
 }
-.fa-times-circle{
+.nav2 .nav-backgc .mobile-hamburguesa-menu .hamburguesa-margin .hamburguesa-top .hamburguesa-menu .fa-times-circle{
   font-size: 25px;
   color: #DAA520;
 }
@@ -231,7 +223,7 @@ RESOLUCION 1200-1300
 ========================================================================== */
 
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .navcarrito li {
+  .nav2 .nav-backgc .container-nav .navbar .navcarrito li {
       margin: 0px 15px;
   }
 }
@@ -244,15 +236,15 @@ RESOLUCION 950-1600
 ========================================================================== */
 
 @media (min-width: 950px) and (max-width: 1600px) {
-  .navlogin li a {
+  .nav2 .nav-backgc .container-nav .navbar .navlogin li a {
       display: none;
   }
 
-  .navcarrito span {
+  .nav2 .nav-backgc .container-nav .navbar .navcarrito span {
       display: inline-block;
   }
 
-  .navcarrito {
+  .nav2 .nav-backgc .container-nav .navbar .navcarrito {
       right: -3%;
   }
 }
@@ -266,37 +258,37 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
 @media(max-width: 949px){
   /* SCRIPT DE NAV BAR DESACTIVADO */
 
-  .barra{
+  .nav2 .nav-backgc .container-nav .navbar nav .barra{
     display: none;
   }
 
-  .nav-backgc{
+  .nav2 .nav-backgc{
     margin: -72px 0px 0px 0px;
   }
 
-  .logonav{
+  .nav2 .nav-backgc .container-nav .navbar img.logonav{
     display: inline-block;
   }
 
-  .navcarrito{
+  .nav2 .nav-backgc .container-nav .navbar .navcarrito{
     margin: 32px 0px 0px 0px;
     right: -5%;
   }
 
-  .navlogin{
+  .nav2 .nav-backgc .container-nav .navbar .navlogin{
     margin: 32px 0px 0px 0px;
   }
 
   /* ICONOS DE LA DERECHA (NAV BAR)*/
-  .navlogin li a {
+  .nav2 .nav-backgc .container-nav .navbar .navlogin li a {
     display: none;
   }
 
-  .navcarrito span {
+  .nav2 .nav-backgc .container-nav .navbar .navcarrito span {
     display: inline-block;
   }
 
-  .hamburguesa-icono{
+  .nav2 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono{
     display: inline-block;
   }
 
@@ -304,7 +296,7 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
   .logo{
     padding: 10px 0px 2px 15px;
   }
-  .hamburguesa-icono:hover>.mobile-hamburguesa-menu{
+  .nav2 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono:hover>.nav2 .nav-backgc div.mobile-hamburguesa-menu{
     left: 10px;
   }
 }
@@ -316,7 +308,7 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
 RESOLUCION 480-768
 ========================================================================== */
 @media (min-width: 480px) and (max-width: 767px){
-  .mobile-hamburguesa-menu{
+  .nav2 .nav-backgc div.mobile-hamburguesa-menu{
     width: 290px;
   }
 }
@@ -328,15 +320,15 @@ RESOLUCION 480-768
 RESOLUCION 0-480
 ========================================================================== */
 @media(max-width: 479px) {
-  .mobile-hamburguesa-menu{
+  .nav2 .nav-backgc div.mobile-hamburguesa-menu{
     width: 200px;
 /*     border-radius: 0px;
     height: 100vh; */
   }
-  .navbar .nav-items{
+  .nav2 .nav-backgc .container-nav .navbar .nav-items{
     display:none;
   }
-  .hamburguesa-items-none{
+  .hamburguesa-items-none:hover{
     display:flex;
     flex-direction: column;
   }
