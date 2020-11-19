@@ -2,6 +2,27 @@
 
 ## Sprint 4
 
+### 19/11/20
+  
+  Terminado:
+  - Errores en ProductAdd responsive
+  - Arreglar CSS del Login y Register (titulo)
+  - logMiddleware
+  - Agregar imagenes multiples con Multer
+  - productDetail dinamico con las nuevas imagenes
+  - Login y Register
+    - Letra achicada en los errores
+    - Footer alejado
+    - Titulo alejado del nav
+  
+  Para hacer hoy:
+  - Chequeo general de la pagina para buscar errores
+  - Parallax background en el home
+  - Perfil (HTML y CSS responsive)
+  - Nav y nav2:
+    - Especificarlos
+    - Agregarlos al styles.css
+
 ### 18/11/20
   
   Terminado:
