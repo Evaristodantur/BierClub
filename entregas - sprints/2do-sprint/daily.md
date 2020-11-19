@@ -21,7 +21,7 @@
   - Perfil (HTML y CSS responsive)
   - Nav y nav2:
     - Especificarlos
-    - Agregados al styles.css
+    - Agregarlos al styles.css
 
 ### 18/11/20
   
