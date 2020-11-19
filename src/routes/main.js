@@ -21,8 +21,4 @@ router.get('/suscripcion', mainController.suscripcion);
 /* GET ENVIOS page.*/
 router.get("/envios", mainController.envios);
 
-
-/* GET ERROR page. */
-router.get('/error', mainController.error);
-
 module.exports = router;

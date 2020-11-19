@@ -1,4 +1,6 @@
 @import '__general.css';
+@import '__nav.css';
+@import '__nav2.css';
 @import '__home.css';
 @import '__about-us.css';
 @import '__productCart.css';
