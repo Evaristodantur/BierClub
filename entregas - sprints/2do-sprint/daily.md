@@ -16,12 +16,12 @@
     - Titulo alejado del nav
   
   Para hacer hoy:
-    - Chequeo general de la pagina para buscar errores
-    - Parallax background en el home
-    - Perfil (HTML y CSS responsive)
-    - Nav y nav2:
-      - Especificarlos
-      - Agregados al styles.css
+  - Chequeo general de la pagina para buscar errores
+  - Parallax background en el home
+  - Perfil (HTML y CSS responsive)
+  - Nav y nav2:
+    - Especificarlos
+    - Agregados al styles.css
 
 ### 18/11/20
   
