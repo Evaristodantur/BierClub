@@ -2,6 +2,20 @@
 
 ## Sprint 4
  
+### 20/11/20
+ 
+  Terminado:
+  - Parallax background en el home
+  - Nav y nav2:
+    - Especificarlos
+    - Agregarlos al styles.css
+
+  Para hacer hoy:
+  - Cambiar home.css a index.css
+  - Implementar Session (creacion de middlewares y uso en login)
+  - Implementar Cookies (creacion de middlewares y uso en login)
+  - Crear middlewares guest y auth
+ 
 ### 19/11/20
   
   Terminado:
