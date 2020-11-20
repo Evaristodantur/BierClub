@@ -5,5 +5,12 @@
         "email": "pepe@pepe.com",
         "contrasenia": "$2a$10$wxE6Hs0AIzBsmXP8Q/76vembQD14FxMDiILSqRAzeLptY0gpWgo.m",
         "admin": true
+    },
+    {
+        "id": 2,
+        "nombre": "KIPPES",
+        "email": "kippes.diego@gmail.com",
+        "contrasenia": "$2a$10$g9np3VWiyHupOwU1eacuZepBF2lrT7w7AhU48EBrRjfTnvBcxTaTu",
+        "admin": false
     }
 ]

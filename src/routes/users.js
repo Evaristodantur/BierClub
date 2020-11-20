@@ -16,7 +16,7 @@ let authAdminMiddleware = require("../middlewares/authAdminMiddleware")         
 /********************************ADMINISTRADOR****************************************/
 
 /* GET     /users/usersAdmin     page. */
-router.get('/usersAdmin',authAdminMiddleware, usersController.usersAdmin);
+router.get('/usersAdmin', guestMiddleware, authAdminMiddleware, usersController.usersAdmin);
 
 /* GET     /users/usersAdmin     page. */
 router.post('/usersAdmin', usersController.usersAdminCambios);
