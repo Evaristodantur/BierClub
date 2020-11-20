@@ -16,10 +16,13 @@ let authAdminMiddleware = require("../middlewares/authAdminMiddleware")         
 /********************************ADMINISTRADOR****************************************/
 
 /* GET     /users/usersAdmin     page. */
-router.get('/usersAdmin',authAdminMiddleware, usersController.usersAdmin);
+router.get('/usersAdmin',/* authAdminMiddleware */ usersController.usersAdminList);
 
 /* GET     /users/usersAdmin     page. */
-router.post('/usersAdmin', usersController.usersAdminCambios);
+router.get('/usersAdmin/:id', usersController.usersAdminEditView);
+
+/* GET     /users/usersAdmin     page. */
+router.post('/usersAdmin/:id', usersController.usersAdminEdit);
 
 /********************************REGISTER*********************************************/
 
