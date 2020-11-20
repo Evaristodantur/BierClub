@@ -68,7 +68,7 @@ let usersController = {
 
       //Sumar el usuario al array
       usuariosJson.push(usuarioNuevo);
-
+      
       //Sobreescribe el archivo
       fs.writeFileSync(dbDirectory, JSON.stringify(usuariosJson));
 
