@@ -94,11 +94,11 @@ let usersController = {
 
       let buscarUsuario = usuariosJson.find(usuario => usuario.email == req.body.email);
 
-      req.session.usuarioLogueado = { 
-        email: buscarUsuario.email, 
-        id: buscarUsuario.id 
-      };
+      req.session.usuarioLogueado = buscarUsuario;
 
+      if(req.body.recordameLogin != undefined){
+        res.cookie('recordame', buscarUsuario.email,{ maxAge: 1000*60*60*24*365*3 })
+      }console.log(req.cookies);
       res.redirect("/")
     },
 
