@@ -38,6 +38,10 @@
                     <h3>Contraseña:</h3> 
                     <input class="inputModificar" type="text" id="contrasenia" name="contrasenia" value="<%= usuarios.contrasenia %>">
                 </div>
+                <div class="container-input">
+                    <h3>Admin:</h3> 
+                    <input class="inputModificar" type="text" id="admin" name="admin" value="<%= usuarios.admin %>">
+                </div>
                 <button onclick="window.location.href='/users/perfil/<%= usuarios.id %>'" class="button-modificar button-enteros" type="submit" id="" name="" value="ingresar"> Modificar datos</button>
                 <button onclick="window.location.href='/users/perfil/eliminar/<%= usuarios.id %>'" class="button-eliminar button-enteros" type="reset" id="" name="" value=""> Eliminar usuario</button>
                 </form>

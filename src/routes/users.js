@@ -11,12 +11,12 @@ let modificarUserMiddleware = require("../middlewares/modificarUserMiddleware");
 let authMiddleware = require('../middlewares/authMiddleware');                  //Middleware de usuario logueado
 let guestMiddleware = require('../middlewares/guestMiddleware');                //Middleware de invitado, sin usuario
 let logUsersMiddleware = require('../middlewares/logUsersMiddleware');          //Middleware de usuarios registrados (LOG)
-
+let authAdminMiddleware = require("../middlewares/authAdminMiddleware")         //Middleware de administradores
 
 /********************************ADMINISTRADOR****************************************/
 
 /* GET     /users/usersAdmin     page. */
-router.get('/usersAdmin', usersController.usersAdmin);
+router.get('/usersAdmin',authAdminMiddleware, usersController.usersAdmin);
 
 /* GET     /users/usersAdmin     page. */
 router.post('/usersAdmin', usersController.usersAdminCambios);

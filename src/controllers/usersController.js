@@ -63,7 +63,8 @@ let usersController = {
         id : idMax,
         nombre : req.body.nombre,
         email : req.body.email,
-        contrasenia : bcrypt.hashSync(req.body.contrasenia,10)
+        contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
+        admin: false
       }
 
       //Sumar el usuario al array
