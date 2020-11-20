@@ -25,10 +25,6 @@ router.post('/usersAdmin', usersController.usersAdminCambios);
 /* GET     /users/register      page. */
 router.get('/register', authMiddleware, usersController.create);
 
-router.get('/verUsuario', function(req,res,next){
-    res.send("el usuario logueado es: " + req.session.usuarioLogueado.email)
-});
-
 /* GET     /users/register      page. */
 router.post('/register', userMiddleware, usersController.store);
 

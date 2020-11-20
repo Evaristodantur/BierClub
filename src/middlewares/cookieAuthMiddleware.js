@@ -7,14 +7,9 @@ let usuariosJson = JSON.parse(fs.readFileSync(dbDirectory), 'utf-8');
 let cookieAuthMiddleware = (req, res, next) => {
     if (req.cookies.recordame != undefined && 
         req.session.usuarioLogueado == undefined) {
-            let usuarioALoguearse;
 
-            for(let i=0; i < usuariosJson.length; i++) {
-                if (req.cookies.recordame == usuariosJson[i].email) {
-                        usuarioALoguearse = usuariosJson[i];
-                        break;
-                }
-            }
+            let usuarioALoguearse = usuariosJson.find(usuario => usuario.email == req.cookies.recordame);
+
             req.session.usuarioLogueado = usuarioALoguearse;
     }
     next();
