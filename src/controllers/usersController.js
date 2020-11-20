@@ -4,8 +4,9 @@ const bcrypt = require('bcryptjs');
 const {validationResult} = require("express-validator");
 
 //Agregado database JSON
+
+let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
 let dbDirectory = path.resolve(__dirname, '../database/usuarios.json')
-let usuariosJson = fs.readFileSync(dbDirectory, 'utf-8');
 
 usuariosJson == "" ?
     fs.writeFileSync(dbDirectory, JSON.stringify(usuariosJson = [])) :

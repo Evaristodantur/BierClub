@@ -1,8 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-let dbDirectory = path.resolve(__dirname, '../database/usuarios.json')
-let usuariosJson = JSON.parse(fs.readFileSync(dbDirectory), 'utf-8');
+let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
 
 let cookieAuthMiddleware = (req, res, next) => {
     if (req.cookies.recordame != undefined && 
