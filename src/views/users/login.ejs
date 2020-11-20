@@ -41,13 +41,24 @@
 				<input class="input-registro" type="password" id="contraseña" name="contrasenia" placeholder="Contraseña"> 
 				<%if(typeof errors != "undefined"){%>
 					<% for(let i = 0 ; i < errors.length ; i++){ %>
-						<%if(errors[i].param == "contrasenia"){%>
-							<p class="error-total"><%= errors[i].msg %></p>
+						<% if(errors[i].param == "email") {%>
 							<% break; %>
+						<%}%>
+						<%if(errors[i].param == "contrasenia" ){%>
+							<p class="error-total"><%= errors[i].msg %></p>
+							<% break %>
 						<%}%>
 					<%}%>
 				<%}%>
 			</div>
+
+			<!-- <div class="campo-input">
+				<div>
+					<label for="recordameLogin">Recordame</label>
+					<input type="checkbox" id="recordameLogin" name="recordameLogin">
+				</div>
+			</div> -->
+				
 			
 			<!-- CONTRASEÑA OLVIDADA -->
 			<p class="contraseña-olvidada"><a href="#">¿Olvidaste tu Contraseña?</a></p>

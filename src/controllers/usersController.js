@@ -87,9 +87,18 @@ let usersController = {
     loginIniciar : (req, res, next) => {
       // Enviar errores express-validator
       let errores = validationResult(req);
+
       if (!errores.isEmpty()){
         return res.render("users/login", {errors : errores.errors})
       }
+
+      let buscarUsuario = usuariosJson.find(usuario => usuario.email == req.body.email);
+
+      req.session.usuarioLogueado = { 
+        email: buscarUsuario.email, 
+        id: buscarUsuario.id 
+      };
+
       res.redirect("/")
     },
 

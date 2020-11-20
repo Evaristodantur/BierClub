@@ -1,1 +1,20 @@
-[{"id":1,"nombre":"adsawdwadads","email":"lourdes@dantur.com","contrasenia":"$2a$10$HKGOSga1pbyyABgXyUpUJeCvqilHF8YzksGKoKuhFgROAp/6DlNwu"},{"id":2,"nombre":"KIPPES","email":"kippes.diego@gmail.com","contrasenia":"$2a$10$mPMXf0dnh7jP0S3NgfWN5.p214pzcJ28oDyF83XKuJaKfiymS6Eti"}]
+[
+    {
+        "id": 1,
+        "nombre": "adsawdwadads",
+        "email": "lourdes@dantur.com",
+        "contrasenia": "$2a$10$HKGOSga1pbyyABgXyUpUJeCvqilHF8YzksGKoKuhFgROAp/6DlNwu"
+    },
+    {
+        "id": 3,
+        "nombre": "KIPPES",
+        "email": "kippes.diego@gmail.com",
+        "contrasenia": "$2a$10$dz7eYd0NcE6n6vZu6RMxHupgpQkLH3E6KHGE5Qnnq7822bekV9qDe"
+    },
+    {
+        "id": 4,
+        "nombre": "KIPPES",
+        "email": "kippe@gmail.com",
+        "contrasenia": "$2a$10$ZDTIC/F6kvlWiXme7pn8FOYiKpui04sWdDjWM38n8lVzA8b3rHy8m"
+    }
+]
