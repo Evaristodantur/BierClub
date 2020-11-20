@@ -10,6 +10,7 @@ let loginMiddleware = require("../middlewares/loginMiddleware");                
 let modificarUserMiddleware = require("../middlewares/modificarUserMiddleware");//Middleware de modificar usuario
 let authMiddleware = require('../middlewares/authMiddleware');                  //Middleware de usuario logueado
 let guestMiddleware = require('../middlewares/guestMiddleware');                //Middleware de invitado, sin usuario
+let logUsersMiddleware = require('../middlewares/logUsersMiddleware');          //Middleware de usuarios registrados (LOG)
 
 
 /********************************ADMINISTRADOR****************************************/
@@ -26,28 +27,41 @@ router.post('/usersAdmin', usersController.usersAdminCambios);
 router.get('/register', authMiddleware, usersController.create);
 
 /* GET     /users/register      page. */
-router.post('/register', userMiddleware, usersController.store);
+router.post('/register', 
+                userMiddleware,
+                logUsersMiddleware, 
+                                usersController.store);
 
 /*********************************LOGIN***********************************************/
 
 /* GET     /users/login      page. */
-router.get('/login', authMiddleware, usersController.loginRender);
+router.get('/login', 
+                authMiddleware, 
+                                usersController.loginRender);
 
 /* GET     /users/login      page. */
-router.post('/login', loginMiddleware,  usersController.loginIniciar);
+router.post('/login', 
+                loginMiddleware,  
+                                usersController.loginIniciar);
 
 /**********************************PERFIL*********************************************/
 
 /* GET     /users/perfil/:id      page. */
-router.get('/perfil/:id', guestMiddleware, usersController.perfilEdit);
+router.get('/perfil/:id', 
+                guestMiddleware, 
+                                usersController.perfilEdit);
 
 /* GET     /users/perfil/:id      page. */
-router.post('/perfil/:id', modificarUserMiddleware , usersController.perfilUpdate);
+router.post('/perfil/:id', 
+                modificarUserMiddleware, 
+                                usersController.perfilUpdate);
 
 /**********************************ELIMINAR*******************************************/
 
 /* GET     /users/perfil/:id      page. */
-router.get('/perfil/eliminar/:id', guestMiddleware, usersController.eliminar);
+router.get('/perfil/eliminar/:id', 
+                guestMiddleware, 
+                                usersController.eliminar);
 
 /* GET     /users/perfil/pedidos/:id      page. */
 router.get('/perfil/pedidos/:id', usersController.pedidos);
