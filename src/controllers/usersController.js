@@ -17,17 +17,38 @@ let usersController = {
 
 
     //    /users/usersAdmin
-    usersAdmin : (req, res, next) => {
+    usersAdminList : (req, res, next) => {
       res.render('users/usersAdmin', { usuarios : usuariosJson });
     },
-    //    /users/usersAdmin
-    usersAdminCambios : (req,res,next) =>{
-      let usuarioModificado = req.body;
-      let usuariosCompletos = usuariosJson.map(usuario => usuarioModificado.id == usuario.id);
 
-      fs.writeFileSync(dbDirectory, JSON.stringify(usuariosCompletos));
-      res.redirect("../")
+    usersAdminEditView : (req, res, next) => {
+      let idUrl = req.params.id;
+
+      let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
+      usuarioBuscado ? (res.render("users/usersAdminEdit", { usuarios : usuarioBuscado })) : res.send("El usuario que queres editar no existe")
     },
+
+    usersAdminEdit : (req,res,next) =>{
+      let idUrl = req.params.id;
+      let admin;
+      req.body.admin ?  admin = true : admin = false;
+       let usuarioCambiado = usuariosJson.map(function(usuario){
+        if(usuario.id == idUrl){
+           usuario = {
+            id : idUrl,
+            nombre : req.body.nombre,
+            email : req.body.email,
+            contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
+            admin : admin
+          }
+        }
+        return usuario;
+      });
+
+      let usuariosCambiadosJSON = JSON.stringify(usuarioCambiado);
+      fs.writeFileSync(dbDirectory, usuariosCambiadosJSON);
+      res.redirect("/users/usersAdmin");
+      },
 
 
     
@@ -126,14 +147,20 @@ let usersController = {
         usuarioBuscado.errors = errores.errors;
         return res.render("users/perfil", { usuario : usuarioBuscado })
       }
-
+/*       let admin;
+      if(req.body.admin == undefined){
+        admin = false;
+      }else{
+        admin = true;
+      } */
        let usuarioCambiado = usuariosJson.map(function(usuario){
         if(usuario.id == idUrl){
            usuario = {
             id : idUrl,
             nombre : req.body.nombre,
             email : req.body.email,
-            contrasenia : bcrypt.hashSync(req.body.contrasenia,10)
+            contrasenia : bcrypt.hashSync(req.body.contrasenia,10)/* ,
+            admin : admin */
           }
         }
         return usuario;

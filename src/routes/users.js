@@ -11,20 +11,31 @@ let modificarUserMiddleware = require("../middlewares/modificarUserMiddleware");
 let authMiddleware = require('../middlewares/authMiddleware');                  //Middleware de usuario logueado
 let guestMiddleware = require('../middlewares/guestMiddleware');                //Middleware de invitado, sin usuario
 let logUsersMiddleware = require('../middlewares/logUsersMiddleware');          //Middleware de usuarios registrados (LOG)
-let authAdminMiddleware = require("../middlewares/authAdminMiddleware")         //Middleware de administradores
+let authAdminMiddleware = require("../middlewares/authAdminMiddleware");         //Middleware de administradores
 
 /********************************ADMINISTRADOR****************************************/
 
 /* GET     /users/usersAdmin     page. */
-router.get('/usersAdmin', guestMiddleware, authAdminMiddleware, usersController.usersAdmin);
+router.get('/usersAdmin',
+                guestMiddleware,
+                authAdminMiddleware,
+                                 usersController.usersAdminList);
 
 /* GET     /users/usersAdmin     page. */
-router.post('/usersAdmin', usersController.usersAdminCambios);
+router.get('/usersAdmin/:id',
+                guestMiddleware,
+                authAdminMiddleware,
+                                 usersController.usersAdminEditView);
+
+/* GET     /users/usersAdmin     page. */
+router.post('/usersAdmin/:id', usersController.usersAdminEdit);
 
 /********************************REGISTER*********************************************/
 
 /* GET     /users/register      page. */
-router.get('/register', authMiddleware, usersController.create);
+router.get('/register',
+                authMiddleware,
+                                usersController.create);
 
 /* GET     /users/register      page. */
 router.post('/register', 
