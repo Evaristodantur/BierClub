@@ -40,7 +40,11 @@ router.get('/productAdmin', productsController.productAdmin);
 router.get('/productAdd', productsController.createProduct);
 
 /* POST     /products/productAdd - Crea/almacena el producto             page. */
-router.post('/productAdd', multerUpload.any() ,productMiddleware, logProductsMiddleware, productsController.storeProduct);
+router.post('/productAdd', 
+                    multerUpload.any() ,
+                    productMiddleware, 
+                    logProductsMiddleware, 
+                                        productsController.storeProduct);
 
 /**********************************PRODUCT EDIT***************************************/
 
@@ -48,7 +52,11 @@ router.post('/productAdd', multerUpload.any() ,productMiddleware, logProductsMid
 router.get('/productEdit/:id', productsController.editProduct);
 
 /* PUT     /products/productEdit/:id - Modifica el producto             page. */
-router.put('/productEdit/:id', multerUpload.any(), productMiddleware, logProductsMiddleware, productsController.updateProduct);
+router.put('/productEdit/:id', 
+                    multerUpload.any(), 
+                    productMiddleware, 
+                    logProductsMiddleware, 
+                                        productsController.updateProduct);
 
 /**********************************BORRAR*********************************************/
 

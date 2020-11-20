@@ -11,9 +11,7 @@ var storage = multer.diskStorage({
     }
   });
 
-  var multerUpload = multer({
-    storage: storage
-  });
+  var multerUpload = multer({ storage: storage });
 
 
   module.exports = multerUpload;

@@ -44,11 +44,21 @@ let productsController = {
     // /products/productAdd - Almacenamiento del producto en el JSON
     storeProduct : (req, res, next) => {
 
-        
-
         let errores = validationResult(req);   
 
+        console.log(fs.existsSync('./src/public/images/productos/lalala.txt'))
+
+       
+
         if (!errores.isEmpty()) {
+            
+            for(let i=0; i < req.files.length; i++) {
+                let borrandoElArchivo = `./src/public/images/productos/${req.files[i].filename}`
+                fs.unlinkSync(borrandoElArchivo)
+            }
+
+            
+            console.log(req.files);
             return res.render('products/productAdd', {errors: errores.errors});
         }
 
@@ -117,6 +127,11 @@ let productsController = {
         //Validacion
         let errores = validationResult(req);
         if (!errores.isEmpty()) {
+
+            for(let i=0; i < req.files.length; i++) {
+                let borrandoElArchivo = `./src/public/images/productos/${req.files[i].filename}`
+                fs.unlinkSync(borrandoElArchivo)
+            }
 
             let productoEncontrado = productsJson.find( producto => producto.id == idUrl );
             productoEncontrado.errors = errores.errors

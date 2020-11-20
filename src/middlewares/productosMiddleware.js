@@ -15,22 +15,40 @@ let productMiddleware =  [
         checkSchema({
                 imagen: {
                         custom: {
-                                options: (value, { req }) => {
+                                 
+                                options: (value, { req, errorMessage }) => {
                                         for(let i=0; i < req.files.length; i++) {
+                                                let extensionesValidas = ['.png', '.jpg', '.jpeg']
+
                                                 if (typeof req.files[i] != 'undefined') {
-                                                        if (path.extname(req.files[i].originalname) != ".png" && 
-                                                            path.extname(req.files[i].originalname) != ".jpg" &&
-                                                            path.extname(req.files[i].originalname) != ".jpeg") {
+                                                        if ( !extensionesValidas.includes(path.extname(req.files[i].originalname)) ) {
                                                                 return false;
                                                         }
                                                 }
+
                                         }
+
                                         return true;
                                 }
-                        },
-                        errorMessage : 'debe ser png, jpg o jpeg'
+                        }, errorMessage : 'las imagenes deben ser .jpg, .png o .jpeg'
+
                 }
         }),
+        checkSchema({
+                imagen: {
+                        custom: {
+                                 
+                                options: (value, { req, errorMessage }) => {
+                                        if (typeof req.files != 'undefined' && req.files.length > 4) {
+                                                        return false;
+                                        }
+
+                                        return true;
+                                }
+                        }, errorMessage : 'deben ser 4 imagenes como maximo'
+
+                }
+        }),        
         checkSchema({
                 imagen: {
                         custom: {

@@ -1,8 +1,1 @@
-[
-    {
-        "id": 1,
-        "nombre": "adsawdwadads",
-        "email": "lourdes@dantur.com",
-        "contrasenia": "$2a$10$HKGOSga1pbyyABgXyUpUJeCvqilHF8YzksGKoKuhFgROAp/6DlNwu"
-    }
-]
+[{"id":1,"nombre":"adsawdwadads","email":"lourdes@dantur.com","contrasenia":"$2a$10$HKGOSga1pbyyABgXyUpUJeCvqilHF8YzksGKoKuhFgROAp/6DlNwu"},{"id":2,"nombre":"KIPPES","email":"kippes.diego@gmail.com","contrasenia":"$2a$10$mPMXf0dnh7jP0S3NgfWN5.p214pzcJ28oDyF83XKuJaKfiymS6Eti"}]
