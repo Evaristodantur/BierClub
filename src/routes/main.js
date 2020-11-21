@@ -8,6 +8,9 @@ let mainController = require('../controllers/mainController');
 
 /* GET    bierclub.com/      page. */
 router.get('/', mainController.index);
+router.get('/sinPermisos', function(req,res,next){
+    res.render("sinPermisos")
+});
 
 /* GET    /about-us       page. */
 router.get('/about-us', mainController.aboutUs);

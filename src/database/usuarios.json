@@ -123,6 +123,6 @@
         "nombre": "bauti el mogolico",
         "email": "bautimogolico@gmail.com",
         "contrasenia": "$2a$10$T8n.lvRIVczzXidwaiy/OO6Rv0l8V80Wfa6mu1183jfquhDAunR8.",
-        "admin": true
+        "admin": false 
     }
 ]
