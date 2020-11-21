@@ -1,5 +1,6 @@
 let path = require('path');
 let multer = require('multer');
+let fs = require('fs');
 
 //Almacenamiento de las imagenes
 var storage = multer.diskStorage({
@@ -11,7 +12,30 @@ var storage = multer.diskStorage({
     }
   });
 
-  var multerUpload = multer({ storage: storage });
+  let multerUpload = multer({ storage: storage,
+    fileFilter: (req, file, cb) => {        
+          console.log(req.files.length)
+
+          let unoFueFiltrado = false;
+
+          if(file.mimetype != "image/png" && 
+              file.mimetype != "image/jpg" && 
+              file.mimetype != "image/jpeg"){
+                
+                unoFueFiltrado = true;
+
+          cb(null, false);
+        }
+
+        if(unoFueFiltrado == false) {
+          cb(null, true);
+        } else {
+          req.files = [];
+          cb(null, false);
+        }
+
+    }
+});
 
 
   module.exports = multerUpload;
