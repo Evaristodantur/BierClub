@@ -1,1 +1,128 @@
-[{"id":"1","nombre":"adsawdwadads","email":"pepe@pepe.comss","contrasenia":"$2a$10$kOIkrVKjGdYgI2MkfnXuYOBOJPrczjXXF1hGwrBheEyoCoVTT61qW","admin":false},{"id":2,"nombre":"pepito@pepito.com","email":"pepito@pepito.com","contrasenia":"$2a$10$RLsLEWcret1lkKFwTkesvebI.VHBtDZbOaAGHKWBRPdEHoYAYKXNm","admin":true}]
+[
+    {
+        "id": 1,
+        "nombre": "JAJA@lol.com",
+        "email": "JAJA@lol.com",
+        "contrasenia": "$2a$10$d8qtKdKpM6QoBcMdGgOMaeOnH7dI35izdGNtcBWaZI/8oPTrRxjD.",
+        "admin": false
+    },
+    {
+        "id": 2,
+        "nombre": "JAJA@lol.com",
+        "email": "JAJA@lol.com",
+        "contrasenia": "$2a$10$E87KDxyg.9EOUHE8XPtVjudqO.YIYsC8RtDn0lVtjwMAJQ34Ca2RW",
+        "admin": false
+    },
+    {
+        "id": 3,
+        "nombre": "JAJA@lol.com",
+        "email": "JAJA@lol.com",
+        "contrasenia": "$2a$10$pD1lDYj0oRtoxoRIQ01f6OObJ5f87O5M4Rvzw6kTaoYNRPAFJzQQy",
+        "admin": false
+    },
+    {
+        "id": 4,
+        "nombre": "evaristo@dantur.com",
+        "email": "evaristo@dantur.com",
+        "contrasenia": "$2a$10$RIkx//rFUidjVbxq9ar2v.o8T.oPRgh1ScaRMYzRkx1k5kRKNJBcy",
+        "admin": false
+    },
+    {
+        "id": 5,
+        "nombre": "evaristo@dantur.com",
+        "email": "evaristo@dantur.com",
+        "contrasenia": "$2a$10$sBfSdl/Tmzzk446MLCr5lu5fd3PC6SUj/1IRBEQf82L6peEBEJvsO",
+        "admin": false
+    },
+    {
+        "id": 6,
+        "nombre": "evaristo@dantur.com",
+        "email": "evaristo@danasdasdtur.com",
+        "contrasenia": "$2a$10$LqSzYuHWg0tpciCCYJ9et.Ks.RiF3x/3XnZLkFU8IFQNs.ruzyoB.",
+        "admin": false
+    },
+    {
+        "id": 7,
+        "nombre": "Evaristo Dantur",
+        "email": "evaristo@dantur.com",
+        "contrasenia": "$2a$10$SEboN.URknSlvlJK4cd1vearMfrZY2oQpNzTpqeu5YrjXzbI7w82y",
+        "admin": false
+    },
+    {
+        "id": 8,
+        "nombre": "Evaristo Dantur",
+        "email": "evaristo@daasdadssadsadntur.com",
+        "contrasenia": "$2a$10$B/PD9pBs.ZpM0HED55VayeS42m/f2jg6u1QQ.M4mfUWqzR1eKR8w2",
+        "admin": false
+    },
+    {
+        "id": 9,
+        "nombre": "Evaristo Dantur",
+        "email": "evaristo@daasdadssadsadntur.com",
+        "contrasenia": "$2a$10$WbQqtVYlf3raEmOZekxkY.COs8v/j6uQHP.2UeLqjoorY24wiCXAW",
+        "admin": false
+    },
+    {
+        "id": 10,
+        "nombre": "Evaristo Dantur",
+        "email": "evaristo@dantur.com",
+        "contrasenia": "$2a$10$o/AAZ65aQzMiToWsYfpg0eBxcZy5ndhVhzwvmk/KSYqbUtBZ4V86q",
+        "admin": false
+    },
+    {
+        "id": 11,
+        "nombre": "Evaristo Dantur",
+        "email": "evaristo@dantur.com",
+        "contrasenia": "$2a$10$YYBTgM4qLYFCFLPH.wvTs.zNYmlbkkx1ftCvNZRcd2SwazjzPXmNy",
+        "admin": false
+    },
+    {
+        "id": 12,
+        "nombre": "evaristo@dantur.com",
+        "email": "evaristo@daHOLACOMOANDASntur.com",
+        "contrasenia": "$2a$10$cIBFPifY5UbiK0ET4rlIYOMEYWxVAUNaN2sBI2A8123pMrh3PoeOW",
+        "admin": false
+    },
+    {
+        "id": 13,
+        "nombre": "evaristo@daHOLACOMOANDASntur.com",
+        "email": "evaristo@daHOLACsssOMOANDASntur.com",
+        "contrasenia": "$2a$10$314XRi20/zwHho5aRz67lOvyhxpKYsyJxcPqYdsANKWi58JMTtfVq",
+        "admin": false
+    },
+    {
+        "id": 14,
+        "nombre": "evaristo@daHOLACsssOMOANDASntur.com",
+        "email": "evaristo@daHOLACsssOMOANDASntur.com",
+        "contrasenia": "$2a$10$cIR6xOOekl2KhPvFTjhXrugKjgFJw5GDSBjaRzT6AmLOCLpRq5THG",
+        "admin": false
+    },
+    {
+        "id": 15,
+        "nombre": "evaristo@daHOLACsssOMOANDASntur.com",
+        "email": "evaristo@daHOLACsssOMOANDASntur.com",
+        "contrasenia": "$2a$10$9Xd7tZulKTG8HwI2C/rQw.26IS6LEz3oUSpnke6iM8I4CENE312ui",
+        "admin": false
+    },
+    {
+        "id": 16,
+        "nombre": "Evaristo Dantur",
+        "email": "evaristo@danturasdasdsad.com",
+        "contrasenia": "$2a$10$1cuEc9A2RxhjeylP7UKaKONL2I4wXgwBT6pCOJmAbdmY7N/sL6QNa",
+        "admin": false
+    },
+    {
+        "id": 17,
+        "nombre": "Evaristo Dantur",
+        "email": "evaro-elcapo@hotmail.com",
+        "contrasenia": "$2a$10$D2ah6gIROqypaIh70pKAnuAbRj92p9kbODMu.7ezhMpV6zw88Kp..",
+        "admin": false
+    },
+    {
+        "id": 18,
+        "nombre": "bauti el mogolico",
+        "email": "bautimogolico@gmail.com",
+        "contrasenia": "$2a$10$T8n.lvRIVczzXidwaiy/OO6Rv0l8V80Wfa6mu1183jfquhDAunR8.",
+        "admin": true
+    }
+]

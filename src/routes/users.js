@@ -11,7 +11,8 @@ let modificarUserMiddleware = require("../middlewares/modificarUserMiddleware");
 let authMiddleware = require('../middlewares/authMiddleware');                  //Middleware de usuario logueado
 let guestMiddleware = require('../middlewares/guestMiddleware');                //Middleware de invitado, sin usuario
 let logUsersMiddleware = require('../middlewares/logUsersMiddleware');          //Middleware de usuarios registrados (LOG)
-let authAdminMiddleware = require("../middlewares/authAdminMiddleware");         //Middleware de administradores
+let authAdminMiddleware = require("../middlewares/authAdminMiddleware");        //Middleware de administradores
+let perfilOrAdminMiddleware = require("../middlewares/perfilOrAdminMiddleware");        //Middleware de administradores
 
 /********************************ADMINISTRADOR****************************************/
 
@@ -60,6 +61,7 @@ router.post('/login',
 /* GET     /users/perfil/:id      page. */
 router.get('/perfil/:id', 
                 guestMiddleware, 
+                perfilOrAdminMiddleware,
                                 usersController.perfilEdit);
 
 /* GET     /users/perfil/:id      page. */

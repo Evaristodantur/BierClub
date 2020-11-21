@@ -1,4 +1,12 @@
 const {check, checkSchema} = require("express-validator");
+const fs = require('fs');
+const path = require('path');
+let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
+let dbDirectory = path.resolve(__dirname, '../database/usuarios.json')
+
+usuariosJson == "" ?
+    fs.writeFileSync(dbDirectory, JSON.stringify(usuariosJson = [])) :
+    usuariosJson = JSON.parse(fs.readFileSync(dbDirectory), 'utf-8');
 
 let userMiddleware = [
     check("nombre").notEmpty().withMessage("Este campo no puede estar vacío")
@@ -9,6 +17,21 @@ let userMiddleware = [
         .isLength({min:8}).withMessage("Este campo debe tener al menos 8 caracteres"),
     check("confirmarContrasenia").notEmpty().withMessage("Este campo no puede estar vacío")
         .isLength({min:8}).withMessage("Este campo debe tener al menos 8 caracteres"),
+        checkSchema({
+            email: {
+                    custom: {
+                            options: (value, { req }) => {
+                                for(let i = 0 ; i < usuariosJson.length ; i++){
+                                    if(req.body.email == usuariosJson[i].email){
+                                      return false;
+                                    }
+                                  }
+                                    return true;                                
+                            }
+                    },
+                    errorMessage : 'Esta dirección email ya esta registrada'
+            }
+    }),
         checkSchema({
             confirmarContrasenia: {
                     custom: {
