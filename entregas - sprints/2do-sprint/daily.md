@@ -2,6 +2,21 @@
 
 ## Sprint 4
  
+### 21/11/20
+
+  Terminado:
+  - home.css cambiado a index.css e implementado en styles.css
+  - Session y Cookies funcionales (funcionalidad de recordame en login implementada)
+  - Middlewares guest y auth creados
+  - Permisos de administrador (userAdmin y productAdmin funcionales)
+  - Perfil:
+    - Si el usuario a ver el perfil no es el correcto, tira una vista de error
+    - Si el usuario a ver el perfil es administrador, deja entrar sin problemas
+    
+  Para hacer hoy:
+  - Cambios generales en el sitio para mejorar la visual (HTML y CSS)
+  - Perfil: Mejorar HTML y CSS (Responsive)
+ 
 ### 20/11/20
  
   Terminado:
