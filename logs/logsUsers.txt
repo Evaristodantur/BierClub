@@ -63,4 +63,8 @@ Se registró el usuario "bautimogolico@gmail.com" -- 2020-11-21 6:04:12
 Se registró el usuario "kippes.diego@gmail.com" -- 20/11/2020 18:47:23
 >>>>>>> 0da825f060fbc49f026ee6d47c3a8e4778f8dba8
 Se registró el usuario "kippes.diego@gmail.com" -- 22/11/2020 23:31:42
+<<<<<<< HEAD
 Se registró el usuario "evaristo@dantur.com" -- 2020-11-23 3:02:25
+=======
+Se registró el usuario "kippes.diego@gmail.com" -- 23/11/2020 05:59:20
+>>>>>>> d2d8643739075d1a42a8c40e1bb3516b4c3ec874

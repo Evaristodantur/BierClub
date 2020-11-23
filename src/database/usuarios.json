@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 [{"id":1,"nombre":"Evaristo Dantur","email":"evaristo@dantur.com","contrasenia":"$2a$10$tAwqcnxC.Jtu49zNzZayveUiFOy8ZXAfUZLmwWvcwzlKdkRM1FMbC","admin":false}]
+=======
+[
+    {
+        "id": 1,
+        "nombre": "omsaddsa",
+        "email": "kippes.diego@gmail.com",
+        "contrasenia": "$2a$10$F4BYm6hvwdHQdd/OUYPUm.0HCaGYKqUo.Qtcuw.jGl48pm38b7Xea",
+        "admin": true
+    }
+]
+>>>>>>> d2d8643739075d1a42a8c40e1bb3516b4c3ec874

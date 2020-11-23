@@ -1,7 +1,18 @@
 # Dailies
 
 ## Sprint 4
- 
+
+### 22/11/20
+
+  Terminado:
+  - Perfil:
+   - Avanzado estructura y estilo, HTML CSS
+   - IDs funcionales
+    
+  Para hacer hoy:
+  - Multer: Arreglar multiple carga de imagenes y bug al carga 1 sola
+  - Home, border on click email y texto wrap en los productos
+  
 ### 21/11/20
 
   Terminado:
@@ -16,7 +27,7 @@
   Para hacer hoy:
   - Cambios generales en el sitio para mejorar la visual (HTML y CSS)
   - Perfil: Mejorar HTML y CSS (Responsive)
- 
+  
 ### 20/11/20
  
   Terminado:
