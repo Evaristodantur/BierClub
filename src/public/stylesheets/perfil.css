@@ -187,8 +187,8 @@ body .login-register{
 }
 
 .invisible{
-    height: 100vh;
-    width: 100vw;
+    height: 105vh;
+    width: 127vw;
     background-color: black;
     position: absolute;
     left: 0%;
