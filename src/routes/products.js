@@ -34,12 +34,12 @@ router.get('/productCart', productsController.productCart);
 /**********************************ADMINISTRADOR**************************************/
 
 /* GET     /products/productAdmin                                       page. */
-router.get('/productAdmin', guestMiddleware, authAdminMiddleware, productsController.productAdmin);
+router.get('/productAdmin', /* guestMiddleware, authAdminMiddleware, */ productsController.productAdmin);
 
 /**********************************PRODUCT ADD****************************************/
 
 /* GET     /products/productAdd - Pagina Visual de create               page. */
-router.get('/productAdd', guestMiddleware, authAdminMiddleware, productsController.createProduct);
+router.get('/productAdd', /* guestMiddleware, authAdminMiddleware, */ productsController.createProduct);
 
 /* POST     /products/productAdd - Crea/almacena el producto             page. */
 router.post('/productAdd', 
@@ -51,7 +51,7 @@ router.post('/productAdd',
 /**********************************PRODUCT EDIT***************************************/
 
 /* GET     /products/productEdit/:id - Pagina Visual de productEdit     page. */
-router.get('/productEdit/:id', guestMiddleware, authAdminMiddleware, productsController.editProduct);
+router.get('/productEdit/:id', /* guestMiddleware, authAdminMiddleware, */ productsController.editProduct);
 
 /* PUT     /products/productEdit/:id - Modifica el producto             page. */
 router.put('/productEdit/:id', 

@@ -16,8 +16,11 @@ let productMiddleware =  [
         imagen: {
                         custom: {
                                          
-                                options: (value, { req, errorMessage, files }) => {
-                                        console.log(req)
+                                options: (value, { req, errorMessage, files, paths }) => {
+                                        if(req.imagenGuardada == undefined) {
+                                                return true;
+                                        }
+
                                         if(typeof req.files[0] == "undefined") {
                                                 return false;
                                         }
