@@ -1,29 +1,28 @@
 /* ==========================================================================
    GENERAL -LOGIN-REGISTER
    ========================================================================== */
-
 .hola{
        height:100%;
        overflow: hidden;
    }
-body .login-register{
+
+   body .login-register{
     /* Display & Box Model */
     padding-top: 10rem;
     padding-bottom: 3%;
 }
-
-.titulo-perfil{
+.login-register .titulo-perfil{
     display: flex;
     justify-content: center;
 }
-.titulo-perfil h1{
+.login-register .titulo-perfil h1{
     text-align: center;
 }
-.compras-perfil h3{
+.login-register .perfil-total .perfil-derecha .compras-perfil h3{
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
-.formulario-total{
+/* .login-register */ .formulario-perfil{
     display:none;
     width:40%;
     position:fixed;
@@ -33,30 +32,30 @@ body .login-register{
     transform: translate(-50%, -50%);
     z-index: 9;
 }
-.perfil-total{
+.login-register .perfil-total{
     display: flex;
     justify-content: space-around;
     text-align: center;
 }
-.perfil-izquierda{
+.login-register .perfil-total .perfil-izquierda{
     width: 25%;
 }
-.perfil-derecha{
+.login-register .perfil-total .perfil-derecha{
     width: 55%;
 }
-.perfil-izquierda li{
+.login-register .perfil-total .perfil-izquierda li{
     list-style: none;
 }
-.datos-personales{
+.login-register .perfil-total .perfil-izquierda .datos-personales{
     display:flex;
     justify-content: space-between;
     padding-inline-start: 6%;
     padding-inline-end: 6%;
 }
-.perfil-izquierda hr{
+.login-register .perfil-total .perfil-izquierda hr{
     width:90%;
 }
-.perfil-izquierda a{
+.login-register .perfil-total .perfil-izquierda a{
     width:60%;
     color:white;
     background-color: #DAA520;
@@ -64,18 +63,27 @@ body .login-register{
     padding-right: 10px;
     border-radius: 5px;
 }
-.perfil-izquierda a:hover{
+.login-register .perfil-total .perfil-izquierda a:hover{
     cursor: pointer;
 }
 .showModificar {
     display: inline-block;
   }
-.login-register .formulario-total form.formulario div.campo-input input.input-registro, 
-.login-register .formulario-total form.formulario div.campo-input button.input-button {
+.login-register .formulario-perfil form.formulario div.campo-input input.input-registro, 
+.login-register .formulario-perfil form.formulario div.campo-input button.input-button {
     width: 85%;
 }
-.campo1{
+.login-register .formulario-perfil .campo1{
     margin-top: 30px;
+}
+.login-register .formulario-perfil form.formulario div.campo-input button.ultimoCampo{
+    margin-bottom: 30px;
+    background-color: red;
+    opacity: 0.6;
+}
+.login-register .formulario-perfil form.formulario div.campo-input button.modificar-datos{
+    background-color: blue;
+    opacity: 0.6;
 }
 .cerrar-modificar:hover{
     cursor: pointer;
@@ -86,76 +94,10 @@ body .login-register{
     margin-right: 12px;
     margin-top: 12px;
 }
-.login-register .formulario-total form.formulario div.campo-input button.ultimoCampo{
-    margin-bottom: 30px;
-    background-color: red;
-    opacity: 0.6;
-}
-.login-register .formulario-total form.formulario div.campo-input button.modificar-datos{
-    background-color: blue;
-    opacity: 0.6;
-}
-
-@media(max-width: 1024px){
-    .perfil-total{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .perfil-izquierda{
-        width: 50%;
-    }
-    .perfil-derecha{
-        width: 90%;
-    }
-}
-@media(max-width: 950px){
-    .titulo-perfil{
-        margin-top: -95px;
-    }
-
-}
-@media(max-width: 650px){
-    .perfil-izquierda{
-        width: 75%;
-    }
-    .compras-perfil{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .compras-perfil img{
-        margin-top: 20px;
-    }
-    .compras-perfil h3{
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-    }
-}
-@media(min-width: 1025px) and (max-width: 1400px){
-    .formulario-total{
-        width: 57%;
-    }
-    .perfil-izquierda{
-        width: 35%;
-    }
-}
-@media(min-width: 480px) and (max-width: 768px){
-    .formulario-total{
-        width: 80%;
-    }
-}
-@media(max-width: 479px){
-    .formulario-total{
-        width: 94%;
-    }
-    .perfil-izquierda{
-        width: 90%;
-    }
-}
-.perfil-derecha hr{
+.login-register .perfil-total .perfil-derecha hr{
     width: 85%;
 }
-.compras-perfil{
+.login-register .perfil-total .perfil-derecha .compras-perfil{
     width: 100%;
     display:flex;
     justify-content: space-evenly;
@@ -163,11 +105,11 @@ body .login-register{
     margin-bottom: 15px;
     margin-top: 15px;
 }
-.compras-perfil img{
+.login-register .perfil-total .perfil-derecha .compras-perfil img{
     width: 130px;
     border-radius: 5px;
 }
-.compras-perfil a{
+.login-register .perfil-total .perfil-derecha .compras-perfil a{
     color: white;
     background-color: orange;
     padding-left: 15px;
@@ -177,16 +119,8 @@ body .login-register{
 .compras-perfil a:hover{
     cursor: pointer;
 }
-.compras-perfil-completas{
-    display:flex;
-    flex-direction: column;
-}
-.compras-total{
-    display: flex;
-    justify-content: space-between;
-}
 
-.invisible{
+.login-register .formulario-perfil .invisible{
     height: 105vh;
     width: 127vw;
     background-color: black;
@@ -198,7 +132,66 @@ body .login-register{
     margin-top: -30vh;
     margin-left: -30vw;
 }
-.formulario{
+.login-register .formulario-perfil .form-perfil{
     background-color: whitesmoke;
     border-radius: 8px;
+}
+.login-register .formulario-perfil .form-perfil .fa-times-circle{
+    color: #DAA520;
+}
+@media(min-width: 1025px) and (max-width: 1400px){
+    .login-register .formulario-perfil{
+        width: 57%;
+    }
+    .login-register .perfil-total .perfil-izquierda{
+        width: 35%;
+    }
+}
+@media(max-width: 1024px){
+    .login-register .perfil-total{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .login-register .perfil-total .perfil-izquierda{
+        width: 50%;
+    }
+    .login-register .perfil-total .perfil-derecha{
+        width: 90%;
+    }
+}
+@media(max-width: 950px){
+    .login-register .titulo-perfil{
+        margin-top: -95px;
+    }
+
+}
+@media(max-width: 650px){
+    .login-register .perfil-total .perfil-izquierda{
+        width: 75%;
+    }
+    .login-register .perfil-total .perfil-derecha .compras-perfil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .login-register .perfil-total .perfil-derecha .compras-perfil img{
+        margin-top: 20px;
+    }
+    .login-register .perfil-total .perfil-derecha .compras-perfil h3{
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+}
+@media(min-width: 480px) and (max-width: 768px){
+    .login-register .formulario-perfil{
+        width: 80%;
+    }
+}
+@media(max-width: 479px){
+    .login-register .formulario-perfil{
+        width: 94%;
+    }
+    .login-register .perfil-total .perfil-izquierda{
+        width: 90%;
+    }
 }
