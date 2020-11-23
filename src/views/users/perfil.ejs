@@ -6,7 +6,6 @@
 	<title>BierClub - Mi Perfil</title>
 	<link rel="icon" href="/images/faviconLogo.ico"/>
 	<link rel='stylesheet' href='/stylesheets/styles.css'/>
-	<link rel='stylesheet' href='/stylesheets/perfil.css'/>
 	<script src="/js/perfil.js" type="text/javascript"></script>
 </head>
 
@@ -136,9 +135,16 @@
 				
 					<!-- BOTON INGRESAR -->
 					<div class="campo-input">
-						<button class="input-button modificar-datos" type="submit" id="" name="" value="ingresar"> Modificar datos</button>
+						<button class="input-button modificar-datos" type="submit" value="ingresar"> Modificar datos</button>
 						<br>
-						<button onclick="window.location.href='/users/perfil/eliminar/<%= usuario.id %>'" class="input-button ultimoCampo" type="reset" id="" name="" value=""> Eliminar usuario</button>
+						<button onclick="eliminarPerfil()" class="input-button ultimoCampo" type="reset" value=""> Eliminar usuario</button>
+						<div class="invisible-eliminar-usuario" id="eliminar-user">
+							<p>¿Está seguro que desea eliminar este usuario?</p>
+							<div class="eliminar-usuario-container ">
+								<button class="input-button modificar-datos boton-eliminar" type="reset" id="" name="" value="">No</button>
+								<button onclick="window.location.href='/users/perfil/eliminar/<%= usuario.id %>'" class="input-button ultimoCampo boton-eliminar" type="reset" id="" name="" value="">Si</button>
+							</div>
+						</div>
 					</div>
 				</form>
 			</div>

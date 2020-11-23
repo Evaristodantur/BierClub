@@ -18,3 +18,6 @@
     document.getElementById("modificar").classList.toggle("showModificar");
     document.getElementById("body").classList.toggle("hola");
   }
+  function eliminarPerfil() {
+    document.getElementById("eliminar-user").classList.toggle("showFlex");
+  }
