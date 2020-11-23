@@ -147,10 +147,11 @@ body .products-catalogo{
 .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto h4.nombre-producto-productAdmin {
     /* Display & Box Model */
     text-align: center;
-    margin-top: 5px;
+    margin-top: 0px;
 
     /* Otras */
-    word-break: break-all;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto h4.nombre-producto-collection {

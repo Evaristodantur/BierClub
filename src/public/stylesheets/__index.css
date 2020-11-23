@@ -74,7 +74,9 @@
     font-size: large;
     margin-right: 3%;
     margin-left: 3%;
-    word-break: break-all;
+    margin-top: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 .home main section.productos article.producto div.precio-stock {
@@ -238,6 +240,7 @@
     border: 0;
     border-radius: 20px;
     text-align: center;
+    outline: none;
 }
 
 .home section.newsletter-background input.newsletter::placeholder {

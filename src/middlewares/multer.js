@@ -14,25 +14,31 @@ var storage = multer.diskStorage({
 
   let multerUpload = multer({ storage: storage,
     fileFilter: (req, file, cb) => {        
-          console.log(req.files.length)
 
-          let unoFueFiltrado = false;
-
+          if(req.imagenGuardada == undefined) {
+            req.imagenGuardada = [];
+            req.imagenGuardada.push(file);
+          } else {
+            req.imagenGuardada.push(file);
+          }     
+          
           if(file.mimetype != "image/png" && 
               file.mimetype != "image/jpg" && 
               file.mimetype != "image/jpeg"){
+
                 
-                unoFueFiltrado = true;
-
           cb(null, false);
         }
 
-        if(unoFueFiltrado == false) {
-          cb(null, true);
-        } else {
-          req.files = [];
-          cb(null, false);
+        for(let i=0; i < req.imagenGuardada.length; i++) {
+          if(path.extname(req.imagenGuardada[i].originalname) != '.png' &&
+          path.extname(req.imagenGuardada[i].originalname) != '.jpeg' && 
+          path.extname(req.imagenGuardada[i].originalname) != '.jpg' ) {
+            return cb(null, false);
+          }
         }
+        
+        cb(null, true);
 
     }
 });
