@@ -51,9 +51,6 @@ body {
   position: relative;
 }
 
-.nav2 .nav-backgc .container-nav .navbar .navcarrito span {
-  display: none;
-}
 
 .nav2 .nav-backgc .container-nav .navbar a {
   text-decoration: none;
@@ -73,7 +70,6 @@ body {
 }
 
 .nav2 .nav-backgc .container-nav .navbar .navcarrito .login-carrito {
-  display: none;
   font-size: 18px;
 }
 
@@ -240,10 +236,6 @@ RESOLUCION 950-1600
       display: none;
   }
 
-  .nav2 .nav-backgc .container-nav .navbar .navcarrito span {
-      display: inline-block;
-  }
-
   .nav2 .nav-backgc .container-nav .navbar .navcarrito {
       right: -3%;
   }
@@ -284,9 +276,6 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
     display: none;
   }
 
-  .nav2 .nav-backgc .container-nav .navbar .navcarrito span {
-    display: inline-block;
-  }
 
   .nav2 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono{
     display: inline-block;
