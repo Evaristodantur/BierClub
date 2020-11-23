@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "id": 1,
+        "nombre": "omsaddsa",
+        "email": "kippes.diego@gmail.com",
+        "contrasenia": "$2a$10$F4BYm6hvwdHQdd/OUYPUm.0HCaGYKqUo.Qtcuw.jGl48pm38b7Xea",
+        "admin": true
+    }
+]
