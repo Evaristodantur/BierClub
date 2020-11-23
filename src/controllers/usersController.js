@@ -80,7 +80,6 @@ let usersController = {
       //Sumarle 1 al ID mas alto, para crear un producto nuevo
       idMax = idMax + 1;
 
-      /* let check = bcrypt.compareSync(contraseniaCompleta,passEcritpada); */
       //Hacer objeto completo, con el ID primero para mas comodidad
       let usuarioNuevo = {
         id : idMax,
@@ -122,7 +121,7 @@ let usersController = {
 
       if(req.body.recordameLogin != undefined){
         res.cookie('recordame', buscarUsuario.email,{ maxAge: 1000*60*60*24*365*3 })
-      }console.log(req.cookies);
+      }
       res.redirect("/")
     },
 
@@ -148,20 +147,14 @@ let usersController = {
         usuarioBuscado.errors = errores.errors;
         return res.render("users/perfil", { usuario : usuarioBuscado })
       }
-/*       let admin;
-      if(req.body.admin == undefined){
-        admin = false;
-      }else{
-        admin = true;
-      } */
+
        let usuarioCambiado = usuariosJson.map(function(usuario){
         if(usuario.id == idUrl){
            usuario = {
             id : idUrl,
             nombre : req.body.nombre,
             email : req.body.email,
-            contrasenia : bcrypt.hashSync(req.body.contrasenia,10)/* ,
-            admin : admin */
+            contrasenia : bcrypt.hashSync(req.body.contrasenia,10)
           }
         }
         return usuario;
