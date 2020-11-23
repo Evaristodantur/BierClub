@@ -238,6 +238,7 @@
     border: 0;
     border-radius: 20px;
     text-align: center;
+    outline: none;
 }
 
 .home section.newsletter-background input.newsletter::placeholder {
