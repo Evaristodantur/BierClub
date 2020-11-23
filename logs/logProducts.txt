@@ -107,3 +107,13 @@ Se creo-modifico el producto "dassdasda" -- 20/11/2020 21:40:40
 Se creo-modifico el producto "dsaadsdas" -- 20/11/2020 21:42:30
 Se creo-modifico el producto "asdasdads" -- 20/11/2020 21:42:41
 Se creo-modifico el producto "asdsadasd" -- 20/11/2020 21:43:37
+Se creo-modifico el producto "asdsadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" -- 22/11/2020 23:32:13
+Se creo-modifico el producto "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" -- 22/11/2020 23:32:38
+Se creo-modifico el producto "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" -- 22/11/2020 23:32:46
+Se creo-modifico el producto "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" -- 22/11/2020 23:32:58
+Se creo-modifico el producto "aaaaaa" -- 22/11/2020 23:33:03
+Se creo-modifico el producto "aaaaaa" -- 22/11/2020 23:33:07
+Se creo-modifico el producto "aaaa" -- 22/11/2020 23:33:12
+Se creo-modifico el producto "aaaaaaaaaaaaa" -- 22/11/2020 23:37:11
+Se creo-modifico el producto "aaaaaaaaaaaaaaaaaaaaa" -- 22/11/2020 23:37:50
+Se creo-modifico el producto "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" -- 22/11/2020 23:38:14

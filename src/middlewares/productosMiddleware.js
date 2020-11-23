@@ -3,7 +3,7 @@ const { check, checkSchema } = require('express-validator'); //Express-validator
 
 let productMiddleware =  [
         check('nombre').notEmpty().withMessage('no puede estar vacio')
-                .isLength({min:3, max:100}).withMessage('debe tener entre 3 y 100 caracteres'),
+                .isLength({min:3, max:61}).withMessage('debe tener entre 3 y 60 caracteres'),
         check('precio').notEmpty().withMessage('no puede estar vacio')
                 .isInt({min:0}).withMessage('debe ser un numero positivo'),
         check('descuento').notEmpty().withMessage('no puede estar vacio')
@@ -17,6 +17,7 @@ let productMiddleware =  [
                         custom: {
                                          
                                 options: (value, { req, errorMessage, files }) => {
+                                        console.log(req)
                                         if(typeof req.files[0] == "undefined") {
                                                 return false;
                                         }

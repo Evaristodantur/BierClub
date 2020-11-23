@@ -123,6 +123,13 @@
         "nombre": "bauti el mogolico",
         "email": "bautimogolico@gmail.com",
         "contrasenia": "$2a$10$T8n.lvRIVczzXidwaiy/OO6Rv0l8V80Wfa6mu1183jfquhDAunR8.",
-        "admin": false 
+        "admin": false
+    },
+    {
+        "id": 19,
+        "nombre": "KIPPES",
+        "email": "kippes.diego@gmail.com",
+        "contrasenia": "$2a$10$plUZJ/KMOY6XGMaweHQxteCrEYPQb09Jb4dB69O4OV1EudpnbM.km",
+        "admin": true
     }
 ]
