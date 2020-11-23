@@ -51,7 +51,7 @@ body {
   position: relative;
 }
 
-.nav1 .nav-backgc .container-nav .navbar .navcarrito span {
+.profile-icon .fa-user-circle {
   display: none;
 }
 
@@ -73,7 +73,6 @@ body {
 }
 
 .nav1 .nav-backgc .container-nav .navbar .navcarrito .login-carrito {
-  display: none;
   font-size: 18px;
 }
 
@@ -233,9 +232,9 @@ RESOLUCION 950-1600
 @media (min-width: 950px) and (max-width: 1600px) {
   .nav1 .nav-backgc .container-nav .navbar .navlogin li a {
       display: none;
-  }
+  } 
 
-  .nav1 .nav-backgc .container-nav .navbar .navcarrito span {
+  .profile-icon .fa-user-circle {
       display: inline-block;
   }
 
@@ -279,7 +278,7 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
     display: none;
   }
 
-  .nav1 .nav-backgc .container-nav .navbar .navcarrito span {
+  .profile-icon .fa-user-circle {
     display: inline-block;
   }
 
