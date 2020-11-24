@@ -60,8 +60,8 @@ router.post('/login',
 
 /* GET     /users/perfil/:id      page. */
 router.get('/perfil/:id', 
-/*                 guestMiddleware, 
-                perfilOrAdminMiddleware, */
+                guestMiddleware, 
+                perfilOrAdminMiddleware,
                                 usersController.perfilEdit);
 
 /* GET     /users/perfil/:id      page. */
