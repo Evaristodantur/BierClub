@@ -2,6 +2,14 @@
 
 ## 📈 Sprint 4
 
+### 🗓️ 24/11/20
+  Terminado:
+  - Multer: Arreglar multiple carga de imagenes y bug al carga 1 sola
+  - Home, border on click email y texto wrap en los productos
+    
+  Para hacer hoy:
+  - Chequeo general del sitio para presentacion del Sprint
+
 ### 🗓️ 22/11/20
 
   Terminado:
