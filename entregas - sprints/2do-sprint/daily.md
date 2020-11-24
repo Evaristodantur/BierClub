@@ -4,11 +4,22 @@
 
 ### 🗓️ 24/11/20
   Terminado:
+  -Perfil: Boton "no" en ¿Seguro que desea eliminar este usuario? funcional (js)
+  - usersAdmin:
+    - Cortar palabra (contraseña) si es muy larga
+    - Invertir flex, para que muestre los usuarios mas nuevos primero
+    - ¿Seguro que desea eliminar este usuario? Agregar funcionalidad
+    
+  Para hacer hoy:
+  - Chequeo general del sitio para presentacion del Sprint y agregar tareas necesarias en Trello
+  
+### 🗓️ 23/11/20
+  Terminado:
   - Multer: Arreglar multiple carga de imagenes y bug al carga 1 sola
   - Home, border on click email y texto wrap en los productos
     
   Para hacer hoy:
-  - Chequeo general del sitio para presentacion del Sprint
+  - Chequeo general del sitio para presentacion del Sprint y agregar tareas necesarias en Trello
 
 ### 🗓️ 22/11/20
 
