@@ -1,8 +1,8 @@
 # Dailies
 
-## Sprint 4
+## 📈 Sprint 4
 
-### 22/11/20
+### 🗓️ 22/11/20
 
   Terminado:
   - Perfil:
@@ -13,7 +13,7 @@
   - Multer: Arreglar multiple carga de imagenes y bug al carga 1 sola
   - Home, border on click email y texto wrap en los productos
   
-### 21/11/20
+### 🗓️ 21/11/20
 
   Terminado:
   - home.css cambiado a index.css e implementado en styles.css
@@ -28,7 +28,7 @@
   - Cambios generales en el sitio para mejorar la visual (HTML y CSS)
   - Perfil: Mejorar HTML y CSS (Responsive)
   
-### 20/11/20
+### 🗓️ 20/11/20
  
   Terminado:
   - Parallax background en el home
@@ -42,7 +42,7 @@
   - Implementar Cookies (creacion de middlewares y uso en login)
   - Crear middlewares guest y auth
  
-### 19/11/20
+### 🗓️ 19/11/20
   
   Terminado:
   - Errores en ProductAdd responsive
@@ -63,7 +63,7 @@
     - Especificarlos
     - Agregarlos al styles.css
 
-### 18/11/20
+### 🗓️ 18/11/20
   
   Terminado:
   - Middleware de Register
@@ -75,7 +75,7 @@
   - Arreglar CSS del Login y Register (titulo)
   - Errores en Login y Register responsive
   
-### 17/11/20
+### 🗓️ 17/11/20
   
   Terminado:
   - Trello actualizado para el Sprint 4
@@ -89,7 +89,7 @@
   - Middleware de login
   - Eliminar validaciones del Controller
 
-### 16/11/20
+### 🗓️ 16/11/20
   
   Terminado:
   - Sitio listo para el Sprint 4
@@ -102,9 +102,9 @@
   - Traslado del Middleware "Multer" a la carpeta
   - Middleware de Productos 
   
-## Sprint 3
+## 📈 Sprint 3
 
-### 15/11/20
+### 🗓️ 15/11/20
   
   Terminado:
   - Terminado pagina de Envios (HTML Y CSS)
@@ -112,7 +112,7 @@
   Para hacer hoy:
   - Crear variable "dbDirectory" para hacer mas limpios los controladores
 
-### 13/11/20
+### 🗓️ 13/11/20
   
   Terminado:
   - Modificar productos funcional
@@ -122,7 +122,7 @@
   - Terminar pagina de Envios (HTML Y CSS)
   - Actualizar perfil (Responsive)
 
-### 12/11/20
+### 🗓️ 12/11/20
   
   Terminado:
   - Contraseñas encriptadas en el ABM de usuarios
@@ -139,7 +139,7 @@
   - Hacer la modificacion de productos funcional
   - Terminar con la pagina Envios
   
-### 11/11/20
+### 🗓️ 11/11/20
 
   Terminado:
   - /product y /productAdmin terminados
@@ -150,7 +150,7 @@
   - Avanzar con lógica de register
   - Avanzar con lógica de logueo
 
-### 10/11/20
+### 🗓️ 10/11/20
   
   Terminado:
   - Perfil avanzado
@@ -161,7 +161,7 @@
   - Terminar /product y /productAdmin
   - Comenzar el HTML y CSS de "Mis pedidos" (/users/perfil/pedidos/:id)
   
-### 9/11/20
+### 🗓️ 9/11/20
 
   Terminado:
   - productAdmin Hover arreglado
@@ -176,7 +176,7 @@
   - Validar usuarios.json para que no se buguee cuando es un array vacío
   - Terminar envios (HTML y CSS)
 
-### 7/11/20
+### 🗓️ 7/11/20
 
 Terminado:
   - Perfil avanzado (HTML y CSS)
@@ -187,7 +187,7 @@ Para hacer hoy:
   - productAdmin arreglar hover
   - productAdd poder agregar imagenes
   
-### 6/11/20
+### 🗓️ 6/11/20
 
 Terminado:
   - ABM de productAdd funcional
@@ -197,7 +197,7 @@ Para hacer hoy:
   - Terminar perfil (HTML y CSS, ya que logica ya esta terminada)
   - Crear productAdmin
 
-### 5/11/20
+### 🗓️ 5/11/20
 
 Terminado:
   - productEdit actualizado
@@ -208,7 +208,7 @@ Para hacer hoy:
   - Logica de productAdd
   - Logica de register (sin validación de datos)
 
-### 4/11/20
+### 🗓️ 4/11/20
 
 Terminado:
   - Rutas separadas en carpeta users y carpeta products
@@ -224,7 +224,7 @@ Para hacer hoy:
   - Crear logica de productDetail/:id
   - Crear /envios, css, html, route y controlador
 
-### 3/11/20
+### 🗓️ 3/11/20
 
 Terminado:
   - Organización del Sprint 3 en Trello
@@ -242,7 +242,7 @@ Para hacer hoy:
   - Crear base de controladores con su documentación (main, products y user)
   - Crear base de datos estatica con el .JSON de los productos
 
-### 2/11/20
+### 🗓️ 2/11/20
 
 Terminado:
   - Testeo general de las views, maquetado listo para la entrega del Sprint 2
@@ -254,9 +254,9 @@ Para hacer hoy:
   
 --------------------------------------
 
-## Sprint 2
+## 📈 Sprint 2
 
-### 29/10/20
+### 🗓️ 29/10/20
 
 Terminado:
   - Corregimos faltas de ortografía
@@ -272,7 +272,7 @@ Terminado:
 Para hacer hoy:
   - Testeo general del sitio terminado y listo para entrega del sprint 2
   
-### 28/10/20
+### 🗓️ 28/10/20
 
 Terminado:
   - Agregamos "Productos relacionados" en el carrito y mejoramos estética del titulo del producto en resoluciones bajas
@@ -288,7 +288,7 @@ Para hacer hoy:
   - Carrito: Agregar <a> a los botones, arreglar cambio de dirección, documentar el código y especificarlo
   - Poner productDetail en styles.css, comentar el código, especificar la ruta y agregar productos relacionados
 
-### 27/10/20
+### 🗓️ 27/10/20
 
 - Menú hamburguesa del nav1 y nav2 completado
 - Nav1 y nav2 hechos responsive por completo
@@ -302,7 +302,7 @@ Para hacer hoy:
 - Documentar productAdd
 - Documentar productDetail
 
-### 26/10/20
+### 🗓️ 26/10/20
 
 - Menú hamburguesa en el nav casi completado.
 - Nuevo banner en el home.
@@ -311,14 +311,14 @@ Para hacer hoy:
 - También hay que terminar el menú hamburguesa del nav para mobile.
 - Verificar login, register y productAdd para chequear mejoras y cambios.
 
-### 25/10/20
+### 🗓️ 25/10/20
 
 - Agregamos disponibilidad de productos en el home.
 - Solucionamos parte del nav.
 - Comenzamos el desarrollo del menú hamburguesa para las resoluciones menores.
 - Todavía hay que arreglar detalle de producto y parte del nav.
 
-### 24/10/20
+### 🗓️ 24/10/20
 
 - Actualizamos e hicimos responsive el home, login, register, agregar producto y el carrito.
 - Tuvimos problemas con el nav, se está buscando una solución.
