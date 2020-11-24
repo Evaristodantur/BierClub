@@ -4,7 +4,7 @@
 
 ### 🗓️ 24/11/20
   Terminado:
-  -Perfil: Boton "no" en ¿Seguro que desea eliminar este usuario? funcional (js)
+  - Perfil: Boton "no" en ¿Seguro que desea eliminar este usuario? funcional (js)
   - usersAdmin:
     - Cortar palabra (contraseña) si es muy larga
     - Invertir flex, para que muestre los usuarios mas nuevos primero
