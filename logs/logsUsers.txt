@@ -68,3 +68,7 @@ Se registró el usuario "evaristo@dantur.com" -- 2020-11-23 3:02:25
 =======
 Se registró el usuario "kippes.diego@gmail.com" -- 23/11/2020 05:59:20
 >>>>>>> d2d8643739075d1a42a8c40e1bb3516b4c3ec874
+Se registró el usuario "kippes.diego@gmail.com" -- 2020-11-24 18:14:26
+Se registró el usuario "kippes.dieago@gmail.com" -- 2020-11-24 18:31:44
+Se registró el usuario "kippes.diego@gmail.com" -- 2020-11-24 18:31:47
+Se registró el usuario "kippes.diego@gaamail.com" -- 2020-11-24 18:31:53

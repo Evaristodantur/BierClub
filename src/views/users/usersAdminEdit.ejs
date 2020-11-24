@@ -17,7 +17,7 @@
 		<%- include('../partials/nav.ejs') %>
 	</header>
     <div class="container-users">
-        <h1>Usuario <%= usuarios.nombre %></h1>
+        <h1>Usuario: <%= usuarios.nombre %></h1>
         <section class="usuarios-listaCompleta">
             <div class="usuarios-lista">
                 <form action="/users/usersAdmin/<%= usuarios.id %>" method="POST">
@@ -44,7 +44,14 @@
                     
                 </div>
                 <button class="button-modificar button-enteros" type="submit"> Modificar datos</button>
-                <button onclick="window.location.href='/users/perfil/eliminar/<%= usuarios.id %>'" class="button-eliminar button-enteros" type="reset" id="" name="" value=""> Eliminar usuario</button>
+                <button onclick="eliminarPerfil()" class="input-button ultimoCampo" type="reset" value=""> Eliminar usuario</button>
+						<div class="invisible-eliminar-usuario" id="eliminar-user">
+							<p>¿Está seguro que desea eliminar este usuario?</p>
+							<div class="eliminar-usuario-container ">
+								<button class="input-button modificar-datos boton-eliminar" type="reset" id="" name="" value="">No</button>
+								<button onclick="window.location.href='/users/perfil/eliminar/<%= usuario.id %>'" class="input-button ultimoCampo boton-eliminar" type="reset" id="" name="" value="">Si</button>
+							</div>
+						</div>
                 </form>
             </div>
         </section>

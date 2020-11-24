@@ -7,7 +7,7 @@
 	<link rel="icon" href="/images/faviconLogo.ico"/>
 	<link rel='stylesheet' href='/stylesheets/nav.css'/>
 	<link rel='stylesheet' href='/stylesheets/users.css'/>
-	<script src="/js/productAdmin.js" type="text/javascript"></script>
+    <script src="/js/userAdmin.js" type="text/javascript"></script>
 	<%- include('../partials/head.ejs') %>
 </head>
 
@@ -42,7 +42,14 @@
                     
                 </div>
                 <button onclick="window.location.href='/users/usersAdmin/<%= usuarios.id %>'" class="button-modificar button-enteros" type="submit" id="" name="" value="ingresar"> Modificar datos</button>
-                <button onclick="window.location.href='/users/perfil/eliminar/<%= usuarios.id %>'" class="button-eliminar button-enteros" type="reset" id="" name="" value=""> Eliminar usuario</button>
+                <button onclick="eliminarUsuario()" class="button-eliminar button-enteros" type="reset" value=""> Eliminar usuario</button>
+                <div class="invisible-eliminar-usuario" id="eliminar-user">
+                    <p>¿Está seguro que desea eliminar este usuario?</p>
+                    <div class="eliminar-usuario-container ">
+                        <button onclick="eliminarUsuario()" class="input-button button-enteros button-modificar" type="reset" id="" name="" value="">No</button>
+                        <button onclick="window.location.href='/users/perfil/eliminar/<%= usuarios.id %>'" class="input-button button-enteros button-eliminar" type="reset" id="" name="" value="">Si</button>
+                    </div>
+                </div>
             </div>
         <%});%>
         </section>

@@ -12,9 +12,10 @@ let authMiddleware = require('../middlewares/authMiddleware');                  
 let guestMiddleware = require('../middlewares/guestMiddleware');                //Middleware de invitado, sin usuario
 let logUsersMiddleware = require('../middlewares/logUsersMiddleware');          //Middleware de usuarios registrados (LOG)
 let authAdminMiddleware = require("../middlewares/authAdminMiddleware");        //Middleware de administradores
-let perfilOrAdminMiddleware = require("../middlewares/perfilOrAdminMiddleware");        //Middleware de administradores
+let perfilOrAdminMiddleware = require("../middlewares/perfilOrAdminMiddleware");//Middleware de administradores
 
-/********************************ADMINISTRADOR****************************************/
+/********************************ADMINISTRADOR******************
+ * **********************/
 
 /* GET     /users/usersAdmin     page. */
 router.get('/usersAdmin',
