@@ -21,6 +21,13 @@ let productMiddleware =  [
                                                 return true;
                                         }
 
+                                        let extensionesValidas = ['.png', '.jpeg', 'jpg']
+                                        for(let i=0; i < req.imagenGuardada.length; i++) {
+                                                if ( !extensionesValidas.includes(path.extname(req.imagenGuardada[i].originalname))) {
+                                                        return false;
+                                                }
+                                        }
+
                                         if(typeof req.files[0] == "undefined") {
                                                 return false;
                                         }
@@ -50,7 +57,7 @@ let productMiddleware =  [
                                 options: (value, { req }) => {
                                         for(let i=0; i < req.files.length; i++) {
                                                 if (typeof req.files[i] != 'undefined') {
-                                                        if (req.files[i].size > 3150000) {
+                                                        if (req.files[i].size > 4200000) {
                                                                 return false;
                                                         }
                                                 }
@@ -58,7 +65,7 @@ let productMiddleware =  [
                                         return true;
                                 }
                         },
-                        errorMessage : 'debe ser una imagen menor a 3mb'
+                        errorMessage : 'debe ser una imagen menor a 4mb'
                 }
         })
 ]
