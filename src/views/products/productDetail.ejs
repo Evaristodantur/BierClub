@@ -59,7 +59,7 @@
             </div>
             <div class="precio-flex">
               <h5 class="precio-item">3 cervezas</h5>
-              <% precio = parseInt(precio); descuento = parseInt(descuento) %>
+              
               <% if (descuento != 0) { %>
                 <h5 class="precio-item">$<%= ((precio*3)-(precio*3/(descuento + 5))).toFixed(0) %></h5>
               <% } else { %>

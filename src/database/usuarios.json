@@ -1,1 +1,41 @@
+<<<<<<< HEAD
 [{"id":2,"nombre":"JAJALOL","email":"evaristo@dantur.com","contrasenia":"$2a$10$FkolQM5D1yKm5shaiLaxG.wO9vMS1hWZkS1REeYZM8o8ZAZpp.R5i","admin":true}]
+=======
+[
+    {
+        "id": 1,
+        "nombre": "Evaristo Dantura",
+        "email": "asdads@acsdas.com",
+        "contrasenia": "$2a$10$H5Qn1etT07Cwa7B7vfSuNePNoYdfXhIJGUhwfpjBPdmBfF7eagMne",
+        "admin": true
+    },
+    {
+        "id": 2,
+        "nombre": "JAJALOL",
+        "email": "evaristo@dantur.com",
+        "contrasenia": "$2a$10$FkolQM5D1yKm5shaiLaxG.wO9vMS1hWZkS1REeYZM8o8ZAZpp.R5i",
+        "admin": true
+    },
+    {
+        "id": 3,
+        "nombre": "evaristo@dantur.com",
+        "email": "evaristo@dantur.comasdasdasdasdasdasdasdasd",
+        "contrasenia": "$2a$10$Z5U6KHjqux1jGtx237dLFuWCdQITDlQwn6lwvy0PWv8Htb0IjNygW",
+        "admin": false
+    },
+    {
+        "id": 4,
+        "nombre": "KIPPES",
+        "email": "diego.kippes@hotmail.com",
+        "contrasenia": "$2a$10$PZnVzF52kr.VdAYfgYWIT.0OZDcnwOf8HJR/F7lkyKdbvYtpbd4FS",
+        "admin": false
+    },
+    {
+        "id": 5,
+        "nombre": "kippes.diego",
+        "email": "kippes.diego@gmail.com",
+        "contrasenia": "$2a$10$AmUIkNHeoE4k3xx5dTFQQ.xzZ3fpEoVT6EiJTUTgD2i1kjxTWXqeW",
+        "admin": true
+    }
+]
+>>>>>>> ca3ce48227c67c9b3c3ccd443361774c48bfa7ff
