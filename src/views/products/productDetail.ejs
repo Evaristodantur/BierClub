@@ -22,13 +22,13 @@
         <!-- IMAGEN-PREVIEWS -->
         <div class="imagen-producto-previews">
           <% for(let i=1; i < imagen.length; i++) { %>
-            <img class="imagen-previews" src="/images/productos/<%=imagen[i]%>" alt="">
+            <img class="imagen-previews" src="/images/productos/<%=imagen[i]%>" alt="Imagenes de <%=nombre%>">
           <% } %>
         </div>
         
         <!-- IMAGEN -->
         <div class="imagen-producto">
-            <img class="imagen-producto-principal" src="/images/productos/<%=imagen[0]%>" alt="">
+            <img class="imagen-producto-principal" src="/images/productos/<%=imagen[0]%>" alt="<%=nombre%>">
 
             <!-- DESCRIPCION DE LA IMAGEN -->
             <div class="descripcion-producto">
