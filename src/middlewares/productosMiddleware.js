@@ -2,16 +2,16 @@ let path = require('path');
 const { check, checkSchema } = require('express-validator'); //Express-validator
 
 let productMiddleware =  [
-        check('nombre').notEmpty().withMessage('no puede estar vacio')
+        check('nombre').notEmpty().withMessage('no puede estar vacío')
                 .isLength({min:3, max:61}).withMessage('debe tener entre 3 y 60 caracteres'),
-        check('precio').notEmpty().withMessage('no puede estar vacio')
-                .isInt({min:0}).withMessage('debe ser un numero positivo'),
-        check('descuento').notEmpty().withMessage('no puede estar vacio')
-                .isInt({min:0, max:100}).withMessage('debe ser un numero del 0 al 100'),
-        check('stock').notEmpty().withMessage('no puede estar vacio')
-                .isInt({min:0}).withMessage('debe ser un numero positivo'),
+        check('precio').notEmpty().withMessage('no puede estar vacío')
+                .isInt({min:0}).withMessage('debe ser un número positivo'),
+        check('descuento').notEmpty().withMessage('no puede estar vacío')
+                .isInt({min:0, max:100}).withMessage('debe ser un número del 0 al 100'),
+        check('stock').notEmpty().withMessage('no puede estar vacío')
+                .isInt({min:0}).withMessage('debe ser un número positivo'),
         check('descripcion').isLength({max:280})
-                .withMessage('solo acepta hasta 280 caracteres'),
+                .withMessage('sólo acepta hasta 280 caracteres'),
         checkSchema({
         imagen: {
                         custom: {
@@ -21,12 +21,19 @@ let productMiddleware =  [
                                                 return true;
                                         }
 
+                                        let extensionesValidas = ['.png', '.jpeg', 'jpg']
+                                        for(let i=0; i < req.imagenGuardada.length; i++) {
+                                                if ( !extensionesValidas.includes(path.extname(req.imagenGuardada[i].originalname))) {
+                                                        return false;
+                                                }
+                                        }
+
                                         if(typeof req.files[0] == "undefined") {
                                                 return false;
                                         }
                                         return true;
                                 }
-                        }, errorMessage : 'las imagenes deben ser .jpg, .png o .jpeg'
+                        }, errorMessage : 'las imágenes deben ser .jpg, .png o .jpeg'
                 }
         }),
         checkSchema({
@@ -40,7 +47,7 @@ let productMiddleware =  [
 
                                         return true;
                                 }
-                        }, errorMessage : 'deben ser 4 imagenes como maximo'
+                        }, errorMessage : 'debe ser 4 imágenes como máximo'
 
                 }
         }),        
@@ -50,7 +57,7 @@ let productMiddleware =  [
                                 options: (value, { req }) => {
                                         for(let i=0; i < req.files.length; i++) {
                                                 if (typeof req.files[i] != 'undefined') {
-                                                        if (req.files[i].size > 3150000) {
+                                                        if (req.files[i].size > 4200000) {
                                                                 return false;
                                                         }
                                                 }
@@ -58,7 +65,7 @@ let productMiddleware =  [
                                         return true;
                                 }
                         },
-                        errorMessage : 'debe ser una imagen menor a 3mb'
+                        errorMessage : 'debe ser una imágen menor a 4mb'
                 }
         })
 ]

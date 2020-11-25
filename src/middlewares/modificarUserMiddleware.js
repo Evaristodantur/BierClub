@@ -10,7 +10,7 @@ let modificarUserMiddleware = [
     check("nombre").notEmpty().withMessage("Este campo no puede estar vacío")
         .isLength({min:2}).withMessage("Este campo debe tener al menos 2 caracteres"),
     check("email").notEmpty().withMessage("Este campo no puede estar vacío")
-        .isEmail().withMessage("Este campo debe ser un email valido"),
+        .isEmail().withMessage("Este campo debe ser un email válido"),
     check("contrasenia").notEmpty().withMessage("Este campo no puede estar vacío")
         .isLength({min:8}).withMessage("Este campo debe tener al menos 8 caracteres"),
     check("confirmarContrasenia").notEmpty().withMessage("Este campo no puede estar vacío")

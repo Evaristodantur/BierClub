@@ -97,7 +97,7 @@
             <img src="/images/productos/producto-2.jpg" alt="muestra de producto">
             <div class="fileImagenes">
               <input type="file" name="imagen" multiple="multiple">
-              <p class="errorDeCarga">*Se permite subir hasta 4 imagenes*</p>
+              <p class="errorDeCarga">*Se permite subir hasta 4 imágenes*</p>
               <% if (typeof errors != 'undefined') { %>
                 <% for(let i=0; i < errors.length; i++)  { %>
                   <% if (errors[i].param == "imagen") {  %>
@@ -143,7 +143,6 @@
 
           <div class="flex-botones-publicar">
               <button class="btn-publicar" type="submit" id="publicar" > Publicar
-              <!--<button class="btn-publicar" type="submit" , id="publicar" , value="publicar"> Publicar y Agregar otro producto-->
               <button class="btn-publicar btn-reset" type="reset" id="reset" value="reset"> Borrar Todo
           </div>
         
