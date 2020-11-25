@@ -2,16 +2,16 @@ let path = require('path');
 const { check, checkSchema } = require('express-validator'); //Express-validator
 
 let productMiddleware =  [
-        check('nombre').notEmpty().withMessage('no puede estar vacio')
+        check('nombre').notEmpty().withMessage('no puede estar vacío')
                 .isLength({min:3, max:61}).withMessage('debe tener entre 3 y 60 caracteres'),
-        check('precio').notEmpty().withMessage('no puede estar vacio')
-                .isInt({min:0}).withMessage('debe ser un numero positivo'),
-        check('descuento').notEmpty().withMessage('no puede estar vacio')
-                .isInt({min:0, max:100}).withMessage('debe ser un numero del 0 al 100'),
-        check('stock').notEmpty().withMessage('no puede estar vacio')
-                .isInt({min:0}).withMessage('debe ser un numero positivo'),
+        check('precio').notEmpty().withMessage('no puede estar vacío')
+                .isInt({min:0}).withMessage('debe ser un número positivo'),
+        check('descuento').notEmpty().withMessage('no puede estar vacío')
+                .isInt({min:0, max:100}).withMessage('debe ser un número del 0 al 100'),
+        check('stock').notEmpty().withMessage('no puede estar vacío')
+                .isInt({min:0}).withMessage('debe ser un número positivo'),
         check('descripcion').isLength({max:280})
-                .withMessage('solo acepta hasta 280 caracteres'),
+                .withMessage('sólo acepta hasta 280 caracteres'),
         checkSchema({
         imagen: {
                         custom: {
@@ -33,7 +33,7 @@ let productMiddleware =  [
                                         }
                                         return true;
                                 }
-                        }, errorMessage : 'las imagenes deben ser .jpg, .png o .jpeg'
+                        }, errorMessage : 'las imágenes deben ser .jpg, .png o .jpeg'
                 }
         }),
         checkSchema({
@@ -47,7 +47,7 @@ let productMiddleware =  [
 
                                         return true;
                                 }
-                        }, errorMessage : 'deben ser 4 imagenes como maximo'
+                        }, errorMessage : 'debe ser 4 imágenes como máximo'
 
                 }
         }),        
@@ -65,7 +65,7 @@ let productMiddleware =  [
                                         return true;
                                 }
                         },
-                        errorMessage : 'debe ser una imagen menor a 4mb'
+                        errorMessage : 'debe ser una imágen menor a 4mb'
                 }
         })
 ]

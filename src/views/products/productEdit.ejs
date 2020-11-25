@@ -96,7 +96,7 @@
             <img src="/images/productos/producto-2.jpg" alt="muestra de producto">
             <div class="fileImagenes">
               <input type="file" name="imagen" multiple="multiple">
-              <p class="errorDeCarga">*Se permite subir hasta 4 imagenes*</p>
+              <p class="errorDeCarga">*Se permite subir hasta 4 imágenes*</p>
               <% if (typeof producto.errors != 'undefined') { %>
                 <% for(let i=0; i < producto.errors.length; i++)  { %>
                   <% if (producto.errors[i].param == "imagen") {  %>

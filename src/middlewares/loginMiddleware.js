@@ -8,7 +8,7 @@ let usuariosJson = JSON.parse(fs.readFileSync(dbDirectory), 'utf-8');
 
 let loginMiddleware = [
     check("email").notEmpty().withMessage("Este campo no puede estar vacío")
-        .isEmail().withMessage("Este campo debe ser un email valido"),
+        .isEmail().withMessage("Este campo debe ser un email válido"),
     check("contrasenia").notEmpty().withMessage("Este campo no puede estar vacío")
         .isLength({min:8}).withMessage("Este campo debe tener al menos 8 caracteres"),
     checkSchema({
