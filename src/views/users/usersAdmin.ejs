@@ -42,14 +42,14 @@
                     
                 </div>
                 <button onclick="window.location.href='/users/usersAdmin/<%= usuarios.id %>'" class="button-modificar button-enteros" type="submit" id="" name="" value="ingresar"> Modificar datos</button>
-                <button onclick="eliminarUsuario()" class="button-eliminar button-enteros" type="reset" value=""> Eliminar usuario</button>
-                <div class="invisible-eliminar-usuario" id="eliminar-user">
+                <button onclick="window.location.href='/users/perfil/eliminar/<%= usuarios.id %>'" class="button-eliminar button-enteros" type="reset" value=""> Eliminar usuario</button>
+<!--                 <div class="invisible-eliminar-usuario" id="eliminar-user">
                     <p>¿Está seguro que desea eliminar este usuario?</p>
-                    <div class="eliminar-usuario-container ">
+                    <div class="eliminar-usuario-container">
                         <button onclick="eliminarUsuario()" class="input-button button-enteros button-modificar" type="reset" id="" name="" value="">No</button>
-                        <button onclick="window.location.href='/users/perfil/eliminar/<%= usuarios.id %>'" class="input-button button-enteros button-eliminar" type="reset" id="" name="" value="">Si</button>
+                        <button onclick="window.location.href='/users/perfil/eliminar/'" class="input-button button-enteros button-eliminar" type="reset" id="" name="" value="">Si</button>
                     </div>
-                </div>
+                </div> -->
             </div>
         <%});%>
         </section>
