@@ -15,30 +15,28 @@ var storage = multer.diskStorage({
   let multerUpload = multer({ storage: storage,
     fileFilter: (req, file, cb) => {        
 
-          if(req.imagenGuardada == undefined) {
-            req.imagenGuardada = [];
-            req.imagenGuardada.push(file);
-          } else {
-            req.imagenGuardada.push(file);
-          }     
-          
-          if(file.mimetype != "image/png" && 
-              file.mimetype != "image/jpg" && 
-              file.mimetype != "image/jpeg"){
+        if(req.imagenGuardada == undefined) {
+          req.imagenGuardada = [];
+          req.imagenGuardada.push(file);
+        } else {
+          req.imagenGuardada.push(file);
+        }     
 
-                
+        if(file.mimetype != "image/png" && 
+             file.mimetype != "image/jpg" && 
+             file.mimetype != "image/jpeg"){
+         
           cb(null, false);
         }
 
         //Recorro y verifico si alguna de las imagenes no es .png, jpeg o .jpg
-        let extensionesValidos = ['.png', '.jpeg', 'jpg']
+        let extensionesValidas = ['.png', '.jpeg', 'jpg']
 
         for(let i=0; i < req.imagenGuardada.length; i++) {
-          if ( !extensionesValidos.includes(path.extname(req.imagenGuardada[i].originalname))) {
+          if ( !extensionesValidas.includes(path.extname(req.imagenGuardada[i].originalname))) {
             return cb(null, false);
           }
         }
-
         cb(null, true);
 
     }
