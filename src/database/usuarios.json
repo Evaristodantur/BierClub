@@ -1,9 +1,23 @@
 [
     {
-        "id": 2,
-        "nombre": "kippes.diego@gmail.com",
-        "email": "kippes.diego@gmail.com",
-        "contrasenia": "$2a$10$y66o0OU/0FGIGS/9B.RShejHo0jNqRxEW8kgRXAak8xWXqs/8I5jy",
+        "id": 1,
+        "nombre": "Evaristo Dantura",
+        "email": "asdads@acsdas.com",
+        "contrasenia": "$2a$10$H5Qn1etT07Cwa7B7vfSuNePNoYdfXhIJGUhwfpjBPdmBfF7eagMne",
         "admin": true
+    },
+    {
+        "id": 2,
+        "nombre": "JAJALOL",
+        "email": "evaristo@dantur.com",
+        "contrasenia": "$2a$10$FkolQM5D1yKm5shaiLaxG.wO9vMS1hWZkS1REeYZM8o8ZAZpp.R5i",
+        "admin": true
+    },
+    {
+        "id": 3,
+        "nombre": "evaristo@dantur.com",
+        "email": "evaristo@dantur.comasdasdasdasdasdasdasdasd",
+        "contrasenia": "$2a$10$Z5U6KHjqux1jGtx237dLFuWCdQITDlQwn6lwvy0PWv8Htb0IjNygW",
+        "admin": false
     }
 ]

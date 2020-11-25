@@ -35,10 +35,10 @@ let usersController = {
        let usuarioCambiado = usuariosJson.map(function(usuario){
         if(usuario.id == idUrl){
            usuario = {
-            id : idUrl,
+            id : parseInt(idUrl),
             nombre : req.body.nombre,
             email : req.body.email,
-            contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
+            contrasenia : req.body.contrasenia,
             admin : admin
           }
         }
@@ -133,7 +133,6 @@ let usersController = {
       let idUrl = req.params.id;
 
         let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
-        
         
         usuarioBuscado ? (res.render("users/perfil", { usuario : usuarioBuscado })) : res.render("error")
     },
