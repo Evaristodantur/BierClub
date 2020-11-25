@@ -17,8 +17,7 @@
 }
 .container-users .usuarios-listaCompleta{
     display:flex;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     flex-wrap: wrap;
 }
 .container-users .button-enteros{
