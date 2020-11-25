@@ -1,1 +1,62 @@
-[{"id":1,"nombre":"ippa Sippa (TDH Imperial Aussie IPA)","precio":"90","descuento":"10","stock":"645645","categoria":"cerveza","descripcion":"Es la descripcion de prueba 1","imagen":["producto-1.jpg"]},{"id":2,"nombre":"Saison de Triomphe - Hoppy Saison","precio":"115","descuento":"0","stock":"0","categoria":"Lupuladas","descripcion":"Es la descripcion de prueba 2","imagen":["producto-2.jpg"]},{"id":3,"nombre":"William Wallace Scottish","precio":"82","descuento":"5","stock":"883","categoria":"No Lupuladas","descripcion":"Es la descripcion de prueba 3","imagen":["producto-3.jpg"]},{"id":4,"nombre":"Mumbai 1947","precio":"99","descuento":"20","stock":"10","categoria":"No Lupuladas","descripcion":"Es la descripcion de prueba 4","imagen":["producto-4.jpg"]},{"id":5,"nombre":"German Pils","precio":"125","descuento":"10","stock":"45","categoria":"cerveza","descripcion":"Es la descripcion de prueba 5","imagen":["producto-5.jpg"]},{"id":6,"nombre":"dsfdsfdsffds","precio":"0","descuento":"0","stock":"0","categoria":"cerveza","descripcion":"","imagen":["product-image-not-available.jpg"]},{"id":7,"nombre":"sadsdasda","precio":"0","descuento":"0","stock":"0","categoria":"cerveza","descripcion":"","imagen":["product-image-not-available.jpg"]},{"id":8,"nombre":"asdsaddas","precio":"0","descuento":"0","stock":"0","categoria":"cerveza","descripcion":"","imagen":["producto-1606262416759.png"]},{"id":9,"nombre":"asdsdaasd","precio":"0","descuento":"0","stock":"0","categoria":"cerveza","descripcion":"","imagen":["producto-1606263093260.png"]}]
+[
+    {
+        "id": 1,
+        "nombre": "ippa Sippa (TDH Imperial Aussie IPA)",
+        "precio": "90",
+        "descuento": "10",
+        "stock": "645645",
+        "categoria": "cerveza",
+        "descripcion": "Es la descripcion de prueba 1",
+        "imagen": [
+            "producto-1.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Saison de Triomphe - Hoppy Saison",
+        "precio": "115",
+        "descuento": "0",
+        "stock": "0",
+        "categoria": "Lupuladas",
+        "descripcion": "Es la descripcion de prueba 2",
+        "imagen": [
+            "producto-2.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "William Wallace Scottish",
+        "precio": "82",
+        "descuento": "5",
+        "stock": "883",
+        "categoria": "No Lupuladas",
+        "descripcion": "Es la descripcion de prueba 3",
+        "imagen": [
+            "producto-3.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "Mumbai 1947",
+        "precio": "99",
+        "descuento": "20",
+        "stock": "10",
+        "categoria": "No Lupuladas",
+        "descripcion": "Es la descripcion de prueba 4",
+        "imagen": [
+            "producto-4.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "German Pils",
+        "precio": "125",
+        "descuento": "10",
+        "stock": "45",
+        "categoria": "cerveza",
+        "descripcion": "Es la descripcion de prueba 5",
+        "imagen": [
+            "producto-5.jpg"
+        ]
+    }
+]
