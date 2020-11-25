@@ -32,6 +32,19 @@ let userMiddleware = [
                     errorMessage : 'Esta dirección email ya esta registrada'
             }
     }),
+    checkSchema({
+        contrasenia: {
+            custom: {
+                options: (value, { req }) => {
+                    if(req.body.contrasenia === req.body.email){
+                        return false;
+                      }
+                      return true;                                
+                }
+            },
+            errorMessage : 'La contraseña no puede ser igual al email'
+        }
+    }),
         checkSchema({
             confirmarContrasenia: {
                     custom: {
