@@ -2,6 +2,19 @@
 
 ## 📈 Sprint 4
 
+### 🗓️ 25/11/20
+  Terminado:
+  - Problemas solucionados en Multer
+  - Cambio del nombre del logo
+  - Productos: Ahora todos los numeros con parseInt
+  - Modificar usuarios:
+    - Contraseña se hasheaba 2 veces (solucionado)
+    - ID del usuario se pasaba como String (Ahora como number)
+    - Eliminar usuarios problema del OnClick solucionado
+    
+  Para hacer hoy:
+  - Chequeo general del sitio para presentacion del Sprint y agregar tareas necesarias en Trello
+
 ### 🗓️ 24/11/20
   Terminado:
   - Perfil: Boton "no" en ¿Seguro que desea eliminar este usuario? funcional (js)
