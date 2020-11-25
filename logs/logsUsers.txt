@@ -91,3 +91,5 @@ Se registró el usuario "adw@dwa.com" -- 2020-11-25 4:11:53
 Se registró el usuario "adw@dwassaa.com" -- 2020-11-25 4:12:19
 Se registró el usuario "evaristo@dantur.com" -- 2020-11-25 4:13:28
 Se registró el usuario "evaristo@evaristasdasdo.com" -- 2020-11-25 4:13:38
+Se registró el usuario "evaristo@evaristasdasdo.com" -- 2020-11-25 4:21:36
+Se registró el usuario "asdasd@asd.com" -- 2020-11-25 4:21:53
