@@ -38,14 +38,17 @@ body .login-register{
     align-content: center;
 }
 .campo-input textarea{
+    /* Display & Box Model */
     margin-top: 20px;
     margin-bottom: 20px;
-    border-radius: 8px;
     width: 30%;
     height: 120px;
-    border: 0px;
     padding-left: 2%;
     padding-top: 10px;
+    
+    /* Otras */
+    border-radius: 8px;
+    border: 0px;
 }
 /* ==========================================================================
    INPUT FORMULARIO
