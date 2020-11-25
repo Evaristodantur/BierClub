@@ -37,7 +37,16 @@ body .login-register{
     justify-content: center;
     align-content: center;
 }
-
+.campo-input textarea{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 30%;
+    height: 120px;
+    border: 0px;
+    padding-left: 2%;
+    padding-top: 10px;
+}
 /* ==========================================================================
    INPUT FORMULARIO
    ========================================================================== */
@@ -144,6 +153,9 @@ body .login-register{
     .login-register form.formulario div.campo-input button.input-button {
         width: 50%;
     }
+    .campo-input textarea{
+        width: 50%;
+    }
 }
 
 
@@ -172,6 +184,9 @@ body .login-register{
     .login-register form.formulario div.campo-input button.input-button {
         width: 75%;
     }
+    .campo-input textarea{
+        width: 75%;
+    }
 }
 
 
@@ -188,6 +203,9 @@ body .login-register{
     /*INPUT FORMULARIO y BUTTON - REGISTER,LOGIN*/
     .login-register form.formulario div.campo-input input.input-registro, 
     .login-register form.formulario div.campo-input button.input-button {
+        width: 90%;
+    }
+    .campo-input textarea{
         width: 90%;
     }
     .login-register footer{

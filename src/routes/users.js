@@ -80,7 +80,10 @@ router.get('/perfil/eliminar/:id',
 /* GET     /users/perfil/pedidos/:id      page. */
 router.get('/perfil/pedidos/:id', usersController.pedidos);
 
-/*************************************************************************************/
+/**********************************CONTACTO****************************************/
+
+router.get('/contacto', usersController.contactoRender);
+
 
 
 

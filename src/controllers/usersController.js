@@ -183,6 +183,9 @@ let usersController = {
         let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
         
         usuarioBuscado ? (res.render("users/pedidos", usuarioBuscado)) : res.render("error")
+      },
+      contactoRender : (req, res, next) => {
+        res.render("users/contacto")
       }
     }
 
