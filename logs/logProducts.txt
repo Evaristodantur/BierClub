@@ -281,3 +281,5 @@ Se creo-modifico el producto "sadasdsadsda" -- 24/11/2020 22:17:10
 Se creo-modifico el producto "asddasddsa" -- 24/11/2020 22:18:42
 Se creo-modifico el producto "dfsfddfsdsf" -- 24/11/2020 22:18:59
 Se creo-modifico el producto "dsfsdf" -- 24/11/2020 22:19:03
+Se creo-modifico el producto "fgdgfdgfd" -- 24/11/2020 22:28:19
+Se creo-modifico el producto "fdsdsffds" -- 24/11/2020 22:28:26
