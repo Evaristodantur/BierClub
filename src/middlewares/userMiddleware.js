@@ -19,58 +19,58 @@ let userMiddleware = [
         .isLength({min:8}).withMessage("Este campo debe tener al menos 8 caracteres"),
         checkSchema({
             email: {
-                    custom: {
-                            options: (value, { req }) => {
-                                for(let i = 0 ; i < usuariosJson.length ; i++){
-                                    if(req.body.email == usuariosJson[i].email){
-                                      return false;
-                                    }
-                                  }
-                                    return true;                                
-                            }
+                custom: {
+                        options: (value, { req }) => {
+                            for(let i = 0 ; i < usuariosJson.length ; i++){
+                                if(req.body.email == usuariosJson[i].email){
+                                    return false;
+                                }
+                                }
+                                return true;                                
+                        }
                     },
-                    errorMessage : 'Esta dirección email ya esta registrada'
+                errorMessage : 'Esta dirección email ya esta registrada'
             }
-    }),
-    checkSchema({
-        contrasenia: {
-            custom: {
-                options: (value, { req }) => {
-                    if(req.body.contrasenia === req.body.email){
-                        return false;
-                      }
-                      return true;                                
-                }
-            },
+        }),
+        checkSchema({
+            contrasenia: {
+                custom: {
+                    options: (value, { req }) => {
+                        if(req.body.contrasenia === req.body.email){
+                            return false;
+                        }
+                        return true;                                
+                    }
+                },
             errorMessage : 'La contraseña no puede ser igual al email'
-        }
-    }),
+            }
+        }),
         checkSchema({
             confirmarContrasenia: {
                     custom: {
                             options: (value, { req }) => {
                                 if(req.body.contrasenia == req.body.confirmarContrasenia){
                                     return true;
-                                  }
-                                  return false;                                
+                                    }
+                                    return false;                                
                             }
                     },
-                    errorMessage : 'Las contraseñas no coinciden'
+                errorMessage : 'Las contraseñas no coinciden'
             }
-    }),
-    checkSchema({
-        terminosCondiciones: {
-            custom: {
-                    options: (value, { req }) => {
-                        if(!req.body.terminosCondiciones){
-                            return false;
-                          }
-                          return true;                                
-                    }
-            },
-            errorMessage : 'Por favor acepta los términos y condiciones'
-    }
-    })
+        }),
+        checkSchema({
+            terminosCondiciones: {
+                custom: {
+                        options: (value, { req }) => {
+                            if(!req.body.terminosCondiciones){
+                                return false;
+                            }
+                            return true;                                
+                        }
+                    },
+                errorMessage : 'Por favor acepta los términos y condiciones'
+            }
+        })
 ]
 
 module.exports = userMiddleware
