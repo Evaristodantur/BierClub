@@ -285,3 +285,4 @@ Se creo-modifico el producto "fgdgfdgfd" -- 24/11/2020 22:28:19
 Se creo-modifico el producto "fdsdsffds" -- 24/11/2020 22:28:26
 Se creó-modificó el producto "dassdadas" -- 25/11/2020 03:22:38
 Se creó-modificó el producto "dassdadas" -- 25/11/2020 03:23:41
+Se creó-modificó el producto "" -- 2020-11-25 10:44:13

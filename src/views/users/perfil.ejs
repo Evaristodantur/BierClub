@@ -73,7 +73,7 @@
 						<%if(typeof usuario.errors != "undefined"){%>
 							<% for(let i = 0 ; i < usuario.errors.length ; i++){ %>
 								<%if(usuario.errors[i].param == "nombre"){%>
-									<p class="error-total"><%= usuario.errors[i].msg %></p>
+									<p class="error-total">* <%= usuario.errors[i].msg %></p>
 									<% break; %>
 								<%}%>
 							<%}%>
@@ -86,7 +86,7 @@
 						<%if(typeof usuario.errors != "undefined"){%>
 							<% for(let i = 0 ; i < usuario.errors.length ; i++){ %>
 								<%if(usuario.errors[i].param == "email"){%>
-									<p class="error-total"><%= usuario.errors[i].msg %></p>
+									<p class="error-total">* <%= usuario.errors[i].msg %></p>
 									<% break; %>
 								<%}%>
 							<%}%>
@@ -101,7 +101,7 @@
 						<%if(typeof usuario.errors != "undefined"){%>
 							<% for(let i = 0 ; i < usuario.errors.length ; i++){ %>
 								<%if(usuario.errors[i].param == "antiguaContrasenia"){%>
-									<p class="error-total"><%= usuario.errors[i].msg %></p>
+									<p class="error-total">* <%= usuario.errors[i].msg %></p>
 									<% break; %>
 								<%}%>
 							<%}%>
@@ -113,7 +113,7 @@
 						<%if(typeof usuario.errors != "undefined"){%>
 							<% for(let i = 0 ; i < usuario.errors.length ; i++){ %>
 								<%if(usuario.errors[i].param == "contrasenia"){%>
-									<p class="error-total"><%= usuario.errors[i].msg %></p>
+									<p class="error-total">* <%= usuario.errors[i].msg %></p>
 									<% break; %>
 								<%}%>
 							<%}%>
@@ -126,7 +126,7 @@
 						<%if(typeof usuario.errors != "undefined"){%>
 							<% for(let i = 0 ; i < usuario.errors.length ; i++){ %>
 								<%if(usuario.errors[i].param == "confirmarContrasenia"){%>
-									<p class="error-total"><%= usuario.errors[i].msg %></p>
+									<p class="error-total">* <%= usuario.errors[i].msg %></p>
 									<% break; %>
 								<%}%>
 							<%}%>
