@@ -150,7 +150,7 @@ let usersController = {
        let usuarioCambiado = usuariosJson.map(function(usuario){
         if(usuario.id == idUrl){
            usuario = {
-            id : idUrl,
+            id : parseInt(idUrl),
             nombre : req.body.nombre,
             email : req.body.email,
             contrasenia : bcrypt.hashSync(req.body.contrasenia,10)
