@@ -69,11 +69,11 @@ let productsController = {
 
             //Crea el elemento nuevo
             let productoNuevo = {
-                id : idMax,
+                id : parseInt(idMax),
                 nombre : req.body.nombre,
-                precio : req.body.precio,
-                descuento : req.body.descuento,
-                stock : req.body.stock,
+                precio : parseInt(req.body.precio),
+                descuento : parseInt(req.body.descuento),
+                stock : parseInt(req.body.stock),
                 categoria : req.body.categoria,
                 descripcion : req.body.descripcion,
                 imagen : ['product-image-not-available.jpg']
@@ -142,11 +142,11 @@ let productsController = {
 
                 //Pido los datos del formulario con los datos cambiados
                 producto = {
-                    id : productoBackUp.id,
+                    id : parseInt(productoBackUp.id),
                     nombre : req.body.nombre,
-                    precio : req.body.precio,
-                    descuento : req.body.descuento,
-                    stock : req.body.stock,
+                    precio : parseInt(req.body.precio),
+                    descuento : parseInt(req.body.descuento),
+                    stock : parseInt(req.body.stock),
                     categoria : req.body.categoria,
                     descripcion : req.body.descripcion
                 }

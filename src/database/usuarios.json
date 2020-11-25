@@ -19,5 +19,19 @@
         "email": "evaristo@dantur.comasdasdasdasdasdasdasdasd",
         "contrasenia": "$2a$10$Z5U6KHjqux1jGtx237dLFuWCdQITDlQwn6lwvy0PWv8Htb0IjNygW",
         "admin": false
+    },
+    {
+        "id": 4,
+        "nombre": "KIPPES",
+        "email": "diego.kippes@hotmail.com",
+        "contrasenia": "$2a$10$PZnVzF52kr.VdAYfgYWIT.0OZDcnwOf8HJR/F7lkyKdbvYtpbd4FS",
+        "admin": false
+    },
+    {
+        "id": 5,
+        "nombre": "kippes.diego",
+        "email": "kippes.diego@gmail.com",
+        "contrasenia": "$2a$10$AmUIkNHeoE4k3xx5dTFQQ.xzZ3fpEoVT6EiJTUTgD2i1kjxTWXqeW",
+        "admin": true
     }
 ]
