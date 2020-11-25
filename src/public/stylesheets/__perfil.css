@@ -1,7 +1,7 @@
 /* ==========================================================================
    GENERAL -LOGIN-REGISTER
    ========================================================================== */
-.hola{
+.hideOverflow{
        height:100%;
        overflow: hidden;
    }
@@ -165,6 +165,7 @@
 }
 .login-register .formulario-perfil .form-perfil .fa-times-circle{
     color: #DAA520;
+    font-size: 24px;
 }
 @media(min-width: 1025px) and (max-width: 1400px){
     .login-register .formulario-perfil{
