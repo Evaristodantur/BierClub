@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-[{"id":2,"nombre":"JAJALOL","email":"evaristo@dantur.com","contrasenia":"$2a$10$FkolQM5D1yKm5shaiLaxG.wO9vMS1hWZkS1REeYZM8o8ZAZpp.R5i","admin":true}]
-=======
 [
     {
         "id": 1,
@@ -38,4 +35,3 @@
         "admin": true
     }
 ]
->>>>>>> ca3ce48227c67c9b3c3ccd443361774c48bfa7ff
