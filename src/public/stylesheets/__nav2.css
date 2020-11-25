@@ -210,7 +210,11 @@ MENU HAMBURGUESA MOBILE
 .hamburguesa-items-none{
   display: none;
 }
-
+.hamburguesa-dropdown-mobile hr{
+  color: black;
+  margin-right: 8px;
+  opacity: 100%;
+}
 
 
 
