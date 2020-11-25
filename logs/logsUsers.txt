@@ -80,3 +80,4 @@ Se registró el usuario "evaristo@dantur.com" -- 2020-11-25 2:52:35
 Se registró el usuario "" -- 2020-11-25 2:54:21
 Se registró el usuario "evaristo@dantur.com" -- 2020-11-25 2:55:54
 Se registró el usuario "evaristo@dantur.comasdasdasdasdasdasdasdasd" -- 2020-11-25 2:56:03
+Se registró el usuario "kippes.diego@gmail.com" -- 2020-11-25 3:13:11

@@ -141,8 +141,9 @@ let usersController = {
     perfilUpdate : (req, res, next) => {
       let idUrl = req.params.id;
       let errores = validationResult(req);
+      let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
+      let admin = usuarioBuscado.admin;
       if (!errores.isEmpty()){
-        let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
         usuarioBuscado.errors = errores.errors;
         return res.render("users/perfil", { usuario : usuarioBuscado })
       }
@@ -153,7 +154,8 @@ let usersController = {
             id : parseInt(idUrl),
             nombre : req.body.nombre,
             email : req.body.email,
-            contrasenia : bcrypt.hashSync(req.body.contrasenia,10)
+            contrasenia : req.body.contrasenia,
+            admin
           }
         }
         return usuario;
