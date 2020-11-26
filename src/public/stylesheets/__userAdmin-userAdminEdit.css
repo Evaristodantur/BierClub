@@ -61,20 +61,15 @@
 }
 @media(max-width:1000px){
     .container-users .usuarios-listaCompleta{
-        width:98vw;
-    }
-    .container-users .container-users{
         width:100%;
-        margin-left: 0px;
-    }
-}
-@media(max-width:1000px){
-    .container-users .usuarios-listaCompleta{
-        width:98vw;
         flex-direction: column-reverse;
         align-items: center;
     }
     .container-users .usuarios-lista{
-        width:95%;
+        width:100%;
+    }
+    .container-users .container-users{
+        width:100%;
+        margin-left: 0px;
     }
 }
