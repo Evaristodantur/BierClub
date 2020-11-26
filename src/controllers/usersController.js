@@ -186,6 +186,9 @@ let usersController = {
       },
       contactoRender : (req, res, next) => {
         res.render("users/contacto")
+      },
+      contactoSend : (req, res, next) => {
+        res.render("users/contacto")
       }
     }
 

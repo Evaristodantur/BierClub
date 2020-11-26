@@ -1,4 +1,4 @@
 /* MODIFICAR ONCLICK */
-  function eliminarUsuario() {
-    document.getElementById("eliminar-user").classList.toggle("showFlex");
-  }
+function eliminarUsuario(usuarioId) {
+  document.getElementById("eliminar-user-" + usuarioId).classList.toggle("showFlex");
+}
