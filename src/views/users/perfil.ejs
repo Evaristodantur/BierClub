@@ -134,21 +134,24 @@
 					</div> 
 				
 					<!-- BOTON INGRESAR -->
+
 					<div class="campo-input">
 						<button class="input-button modificar-datos" type="submit" value="ingresar"> Modificar datos</button>
 						<br>
 						<button onclick="eliminarPerfil()" class="input-button ultimoCampo" type="reset"> Eliminar usuario</button>
-						<div class="invisible-eliminar-usuario" id="eliminar-user">
-							<p>¿Está seguro que desea eliminar este usuario?</p>
-							<div class="eliminar-usuario-container ">
-								<button class="input-button modificar-datos boton-eliminar" type="reset">No</button>
-								<form action="/users/perfil/eliminar/<%= usuario.id %>?_method=DELETE" method="POST">
-									<button type="submit" class="input-button button-enteros button-eliminar">Si</button>
-								</form>
-							</div>
-						</div>
 					</div>
 				</form>
+				<div class="eliminar-confirmacion">
+					<div class="invisible-eliminar-usuario" id="eliminar-user">
+						<p>¿Está seguro que desea eliminar este usuario?</p>
+						<div class="eliminar-usuario-container">
+							<button class="input-button modificar-datos boton-eliminar" type="reset">No</button>
+							<form class="form-eliminar"action="/users/perfil/eliminar/<%= usuario.id %>?_method=DELETE" method="POST">
+								<button type="submit" class="input-button button-enteros button-eliminar">Si</button>
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
 			
 		</div>

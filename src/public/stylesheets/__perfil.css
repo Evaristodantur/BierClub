@@ -15,6 +15,11 @@
     display: flex;
     justify-content: center;
 }
+.eliminar-confirmacion{
+    background-color: white;
+    margin-top: -14px;
+    border-radius: 9px;
+}
 .login-register .titulo-perfil h1{
     text-align: center;
 }
@@ -26,7 +31,7 @@
     display:none;
     width:40%;
     position:fixed;
-    background-color: whitesmoke;
+    background-color: transparent;
     left:50%;
     top:50%;
     transform: translate(-50%, -50%);
@@ -75,20 +80,36 @@
 .showFlex{
     display:flex;
 }
-.login-register .formulario-perfil form.formulario div.campo-input .invisible-eliminar-usuario p{
+.login-register .formulario-perfil .invisible-eliminar-usuario p{
     margin-block-start: -1em;
     text-align: center;
 }
-.login-register .formulario-perfil form.formulario div.campo-input .invisible-eliminar-usuario .modificar-datos{
+.login-register .formulario-perfil .invisible-eliminar-usuario .modificar-datos{
     margin-bottom: 15px;
 }
-.login-register .formulario-perfil form.formulario div.campo-input .invisible-eliminar-usuario .eliminar-usuario-container {
+.eliminar-usuario-container {
     width: 85%;
     display:flex;
     justify-content: space-evenly;
 }
-.login-register .formulario-perfil form.formulario div.campo-input .invisible-eliminar-usuario .eliminar-usuario-container .boton-eliminar{
+.form-eliminar{
+    width:45%;
+}
+.form-eliminar .button-eliminar{
+    width: 100%;
+    background-color: red;
+}
+.form-eliminar .button-eliminar,
+.eliminar-usuario-container .boton-eliminar{
+    color: white;
+    opacity: 0.6;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.eliminar-usuario-container .boton-eliminar{
     width: 45%;
+    background-color: blue;
 }
 .showModificar {
     display: inline-block;
