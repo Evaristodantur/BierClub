@@ -26,51 +26,24 @@
 			<!-- NOMBRE -->
 			<div class="campo-input">
 				<input class="input-registro" type="text" id="nombre" name="nombre" placeholder="Nombre"> 
-				<%if(typeof errors != "undefined"){%>
-					<% for(let i = 0 ; i < errors.length ; i++){ %>
-						<% if(errors[i].param == "email") {%>
-							<% break; %>
-						<%}%>
-						<%if(errors[i].param == "contrasenia" ){%>
-							<p class="error-total">* <%= errors[i].msg %></p>
-							<% break %>
-						<%}%>
-					<%}%>
-				<%}%>
 			</div>
 	
 			<!-- EMAIL -->
 			<div class="campo-input">
 				<input class="input-registro" type="email" id="email" name="email" placeholder="Email">
-				<%if(typeof errors != "undefined"){%>
-					<% for(let i = 0 ; i < errors.length ; i++){ %>
-						<%if(errors[i].param == "email"){%>
-							<p class="error-total">* <%= errors[i].msg %></p>
-							<% break; %>
-						<%}%>
-					<%}%>
-				<%}%>
 			</div>
 
 			<!-- Asunto -->
 			<div class="campo-input">
 				<input class="input-registro" type="email" id="asunto" name="asunto" placeholder="Asunto del mensaje">
-				<%if(typeof errors != "undefined"){%>
-					<% for(let i = 0 ; i < errors.length ; i++){ %>
-						<%if(errors[i].param == "email"){%>
-							<p class="error-total">* <%= errors[i].msg %></p>
-							<% break; %>
-						<%}%>
-					<%}%>
-				<%}%>
 			</div>		
 			<div class="campo-input">
 				<textarea placeholder="Escribe tu mensaje"></textarea>
 			</div>
 			
-			<!-- BOTON INGRESAR -->
+			<!-- BOTON ENVIAR -->
 			<div class="campo-input">
-				<button class="input-button" type="submit" id="ingresar" value="ingresar"> Ingresar</button>
+				<button class="input-button" type="submit">Enviar mensaje</button>
 			</div>
 			</form>
 		</div>
