@@ -76,7 +76,6 @@ let usersController = {
         }
       }
     
-
       //Sumarle 1 al ID mas alto, para crear un producto nuevo
       idMax = idMax + 1;
 

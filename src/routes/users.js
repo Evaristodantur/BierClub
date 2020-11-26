@@ -73,7 +73,7 @@ router.post('/perfil/:id',
 /**********************************ELIMINAR*******************************************/
 
 /* GET     /users/perfil/:id      page. */
-router.get('/perfil/eliminar/:id', 
+router.delete('/perfil/eliminar/:id', 
                 guestMiddleware, 
                                 usersController.eliminar);
 

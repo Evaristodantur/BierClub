@@ -37,6 +37,9 @@
 .container-users .button-eliminar{
     background-color: red;
 }
+.invisible-eliminar-usuario-userAdmin{
+    width: 80%;
+}
 .container-users .invisible-eliminar-usuario p{
     text-align: center;
 }
