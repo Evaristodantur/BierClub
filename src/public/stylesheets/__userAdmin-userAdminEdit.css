@@ -17,8 +17,8 @@
 }
 .container-users .usuarios-listaCompleta{
     display:flex;
-    /* flex-direction: row-reverse; */
     flex-wrap: wrap;
+    justify-content: center;
 }
 .container-users .button-enteros{
     color: white;
