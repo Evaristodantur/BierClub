@@ -35,8 +35,8 @@ router.get('/productCart', productsController.productCart);
 
 /* GET     /products/productAdmin                                       page. */
 router.get('/productAdmin', 
-                    /* guestMiddleware,
-                    authAdminMiddleware,  */
+                    guestMiddleware,
+                    authAdminMiddleware, 
                                         productsController.productAdmin);
 
 /**********************************PRODUCT ADD****************************************/
