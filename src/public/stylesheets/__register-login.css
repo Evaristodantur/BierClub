@@ -145,6 +145,13 @@ body .login-register{
     font-size: small;
 }
 
+/* ==========================================================================
+   Mensaje de envio (Contacto)
+   ========================================================================== */
+.success-message{
+    color: green;
+    margin-bottom: -10px;
+}
 
 
 

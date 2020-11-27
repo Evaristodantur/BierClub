@@ -192,13 +192,11 @@ let usersController = {
 
         let transporter = nodemailer.createTransport({
           service: "gmail",
-          secure: false,
           auth: {
             user: process.env.email,
             pass: process.env.password
           }
         });
-        console.log(transporter);
         const output = `
           <h3>Detalles de contacto:</h3> 
           <ul>
@@ -209,20 +207,17 @@ let usersController = {
           ${req.body.message}
           `
         let mailOptions = {
-          replyTo: "evaristo@dantur.com",
+          replyTo: req.body.email,
           to: process.env.email,
           subject: req.body.subject,
           html: output
         }
 
         transporter.sendMail(mailOptions, function(err, data){
-          if(err){
-            console.log("ERROR");
-          }else{
-            console.log("Se envió bien!");
+          if(!err){
+            res.render("users/contacto", { success : "Tu mensaje fue enviado con exito!" })
           }
         })
-        res.send("mamame el huevo derecho")
       }
     }
 

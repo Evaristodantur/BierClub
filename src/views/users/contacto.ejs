@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">  
 	<head>
-		<title>BierClub - Iniciar Sesión</title>
+		<title>BierClub - Contactanos!</title>
 		<%- include('../partials/head.ejs') %>
 </head>
 
@@ -11,7 +11,7 @@
 	<header>
 		<%- include('../partials/nav.ejs') %>
 	</header>
-	
+
 		<!-- CONTAINER LOGIN -->
 		<div class="login-register">
 
@@ -22,9 +22,12 @@
 		
 			<!-- FORMULARIO -->
 			<form class="formulario" action="/users/contacto" method="POST">
-			
+
 			<!-- NOMBRE -->
 			<div class="campo-input">
+				<% if (typeof success != "undefined") {%>
+					<p class="success-message"><%= success %></p>
+				<%} %>
 				<input class="input-registro" type="text" name="nombre" placeholder="Nombre"> 
 			</div>
 	
