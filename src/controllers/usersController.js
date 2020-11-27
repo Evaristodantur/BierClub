@@ -178,6 +178,7 @@ let usersController = {
         fs.writeFileSync(dbDirectory, usuarioEliminadoJSON);
         res.redirect("/");
       },
+
       pedidos : (req, res, next) => {
         let idUrl = req.params.id;
 
@@ -185,10 +186,17 @@ let usersController = {
         
         usuarioBuscado ? (res.render("users/pedidos", usuarioBuscado)) : res.render("error")
       },
+
       contactoRender : (req, res, next) => {
         res.render("users/contacto")
       },
+
       contactoSend : (req, res, next) => {
+        // Enviar errores express-validator
+        let errores = validationResult(req);
+        if (!errores.isEmpty()){
+          return res.render("users/contacto", {errors : errores.errors})
+        }
         let nodemailerAssets = require("../assets/nodemailerAssets");
 
         nodemailerAssets(req).transporter.sendMail(nodemailerAssets(req).mailOptions, function(err, data){
@@ -197,6 +205,7 @@ let usersController = {
           }
         })
       }
-    }
+
+}
 
 module.exports = usersController;

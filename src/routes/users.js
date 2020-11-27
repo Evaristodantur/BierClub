@@ -13,6 +13,7 @@ let guestMiddleware = require('../middlewares/guestMiddleware');                
 let logUsersMiddleware = require('../middlewares/logUsersMiddleware');          //Middleware de usuarios registrados (LOG)
 let authAdminMiddleware = require("../middlewares/authAdminMiddleware");        //Middleware de administradores
 let perfilOrAdminMiddleware = require("../middlewares/perfilOrAdminMiddleware");//Middleware de administradores
+let contactMiddleware = require("../middlewares/contactMiddleware");//Middleware de contacto
 
 /********************************ADMINISTRADOR******************
  * **********************/
@@ -84,7 +85,9 @@ router.get('/perfil/pedidos/:id', usersController.pedidos);
 
 router.get('/contacto', usersController.contactoRender);
 
-router.post('/contacto', usersController.contactoSend);
+router.post('/contacto',
+                contactMiddleware,
+                                usersController.contactoSend);
 
 
 

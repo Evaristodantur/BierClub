@@ -9,12 +9,12 @@ usuariosJson == "" ?
     usuariosJson = JSON.parse(fs.readFileSync(dbDirectory), 'utf-8');
 
 let userMiddleware = [
-    check("nombre").notEmpty().withMessage("Este campo no puede estar vacío")
-        .isLength({min:2}).withMessage("Este campo debe tener al menos 2 caracteres"),
-    check("email").notEmpty().withMessage("Este campo no puede estar vacío")
-        .isEmail().withMessage("Este campo debe ser un email válido"),
-    check("contrasenia").notEmpty().withMessage("Este campo no puede estar vacío")
-        .isLength({min:8}).withMessage("Este campo debe tener al menos 8 caracteres"),
+    check("nombre").notEmpty().withMessage("El nombre no puede estar vacío")
+        .isLength({min:2}).withMessage("El nombre debe tener al menos 2 caracteres"),
+    check("email").notEmpty().withMessage("El email no puede estar vacío")
+        .isEmail().withMessage("El email debe ser un email válido"),
+    check("contrasenia").notEmpty().withMessage("La contraseña no puede estar vacío")
+        .isLength({min:8}).withMessage("La contraseña debe tener al menos 8 caracteres"),
     check("confirmarContrasenia").notEmpty().withMessage("Este campo no puede estar vacío")
         .isLength({min:8}).withMessage("Este campo debe tener al menos 8 caracteres"),
         checkSchema({
