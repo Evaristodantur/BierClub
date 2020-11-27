@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
 const {validationResult} = require("express-validator");
+const nodemailer = require("nodemailer");
 
 //Agregado database JSON
 
@@ -188,6 +189,28 @@ let usersController = {
       },
       contactoSend : (req, res, next) => {
         res.render("users/contacto")
+        let transporter = nodemailer.createTransport({
+          service: "gmail",
+          auth: {
+            user:"",
+            pass:""
+          }
+        });
+        
+        let mailOptions = {
+          from: "",
+          to: "bierclubtucuman@gmail.com",
+          subject: "testing",
+          text: "it works"
+        }
+        
+        transporter.sendMail(mailOptions, function(err, data){
+          if(err){
+            console.log("ERROR");
+          }else{
+            console.log("Se envió bien!");
+          }
+        })
       }
     }
 
