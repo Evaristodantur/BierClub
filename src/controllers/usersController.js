@@ -192,14 +192,24 @@ let usersController = {
 
         let transporter = nodemailer.createTransport({
           service: "gmail",
+          secure: false,
           auth: {
             user: process.env.email,
             pass: process.env.password
           }
         });
-        const output = `<h1>Detalles de contacto:</h1> \n - Nombre: ${req.body.nombre} \n - Email: ${req.body.email} \n \n - Mensaje: \n ${req.body.message}`
+        console.log(transporter);
+        const output = `
+          <h3>Detalles de contacto:</h3> 
+          <ul>
+            <li>Nombre: ${req.body.nombre}</li>
+            <li>Email: ${req.body.email}</li>
+          </ul>
+          <h3>Mensaje:</h3>
+          ${req.body.message}
+          `
         let mailOptions = {
-          from: process.env.email,
+          replyTo: "evaristo@dantur.com",
           to: process.env.email,
           subject: req.body.subject,
           html: output
