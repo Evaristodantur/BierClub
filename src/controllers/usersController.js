@@ -3,6 +3,7 @@ const fs = require('fs');
 const bcrypt = require('bcryptjs');
 const {validationResult} = require("express-validator");
 const nodemailer = require("nodemailer");
+require("dotenv").config();
 
 //Agregado database JSON
 
@@ -188,22 +189,22 @@ let usersController = {
         res.render("users/contacto")
       },
       contactoSend : (req, res, next) => {
-        res.render("users/contacto")
+
         let transporter = nodemailer.createTransport({
           service: "gmail",
           auth: {
-            user:"",
-            pass:""
+            user: process.env.email,
+            pass: process.env.password
           }
         });
-        
+        const output = `<h1>Detalles de contacto:</h1> \n - Nombre: ${req.body.nombre} \n - Email: ${req.body.email} \n \n - Mensaje: \n ${req.body.message}`
         let mailOptions = {
-          from: "",
-          to: "bierclubtucuman@gmail.com",
-          subject: "testing",
-          text: "it works"
+          from: process.env.email,
+          to: process.env.email,
+          subject: req.body.subject,
+          html: output
         }
-        
+
         transporter.sendMail(mailOptions, function(err, data){
           if(err){
             console.log("ERROR");
@@ -211,6 +212,7 @@ let usersController = {
             console.log("Se envió bien!");
           }
         })
+        res.send("mamame el huevo derecho")
       }
     }
 

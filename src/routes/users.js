@@ -84,7 +84,7 @@ router.get('/perfil/pedidos/:id', usersController.pedidos);
 
 router.get('/contacto', usersController.contactoRender);
 
-router.get('/contacto', usersController.contactoSend);
+router.post('/contacto', usersController.contactoSend);
 
 
 
