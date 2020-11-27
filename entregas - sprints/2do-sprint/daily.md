@@ -10,6 +10,7 @@
     - Hacer funcional nodemailer en Assets
     
   Para hacer hoy:
+  - Contacto: Implementación de middleware de error
   - Log:
     - Mejorar para que esté mas limpio
     - Hacer log de errores
