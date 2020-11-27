@@ -1,0 +1,15 @@
+Se registró un usuario el 2020-11-27 20:18:05
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-11-27 20:22:00
+El usuario registrado es:
+Nombre: ADMIN
+Email: admin@admin.com
+*************************************************************
+Se registró un usuario el 2020-11-27 20:22:32
+El usuario registrado es:
+Nombre: User COMUN
+Email: user@user.com
+*************************************************************
