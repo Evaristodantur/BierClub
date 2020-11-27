@@ -189,31 +189,9 @@ let usersController = {
         res.render("users/contacto")
       },
       contactoSend : (req, res, next) => {
+        let nodemailerAssets = require("../assets/nodemailerAssets");
 
-        let transporter = nodemailer.createTransport({
-          service: "gmail",
-          auth: {
-            user: process.env.email,
-            pass: process.env.password
-          }
-        });
-        const output = `
-          <h3>Detalles de contacto:</h3> 
-          <ul>
-            <li>Nombre: ${req.body.nombre}</li>
-            <li>Email: ${req.body.email}</li>
-          </ul>
-          <h3>Mensaje:</h3>
-          ${req.body.message}
-          `
-        let mailOptions = {
-          replyTo: req.body.email,
-          to: process.env.email,
-          subject: req.body.subject,
-          html: output
-        }
-
-        transporter.sendMail(mailOptions, function(err, data){
+        nodemailerAssets(req).transporter.sendMail(nodemailerAssets(req).mailOptions, function(err, data){
           if(!err){
             res.render("users/contacto", { success : "Tu mensaje fue enviado con exito!" })
           }

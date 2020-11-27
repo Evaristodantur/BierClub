@@ -79,17 +79,17 @@ let productsController = {
                 imagen : ['product-image-not-available.jpg']
             }
 
-                //Agrega las imagenes
-                let imagenes = [];                
-                for(let i=0; i < 4; i++) {
-                    if(typeof req.files[i] != "undefined") {
-                        imagenes.push(req.files[i].filename)
-                    }
+            //Agrega las imagenes
+            let imagenes = [];                
+            for(let i=0; i < 4; i++) {
+                if(typeof req.files[i] != "undefined") {
+                    imagenes.push(req.files[i].filename)
                 }
+            }
 
-                if (typeof imagenes[0] != "undefined") {
-                    productoNuevo.imagen = imagenes
-                }
+            if (typeof imagenes[0] != "undefined") {
+                productoNuevo.imagen = imagenes
+            }
             
 
             //Lo guarda en el array Json

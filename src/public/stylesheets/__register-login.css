@@ -151,6 +151,7 @@ body .login-register{
 .success-message{
     color: green;
     margin-bottom: -10px;
+    font-size: small;
 }
 
 
