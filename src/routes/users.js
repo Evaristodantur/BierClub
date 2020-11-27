@@ -13,7 +13,7 @@ let guestMiddleware = require('../middlewares/guestMiddleware');                
 let logUsersMiddleware = require('../middlewares/logUsersMiddleware');          //Middleware de usuarios registrados (LOG)
 let authAdminMiddleware = require("../middlewares/authAdminMiddleware");        //Middleware de administradores
 let perfilOrAdminMiddleware = require("../middlewares/perfilOrAdminMiddleware");//Middleware de administradores
-let contactMiddleware = require("../middlewares/contactMiddleware");//Middleware de contacto
+let contactMiddleware = require("../middlewares/contactMiddleware");            //Assets de contacto
 
 /********************************ADMINISTRADOR******************
  * **********************/
@@ -76,6 +76,7 @@ router.post('/perfil/:id',
 /* GET     /users/perfil/:id      page. */
 router.delete('/perfil/eliminar/:id', 
                 guestMiddleware, 
+                perfilOrAdminMiddleware,
                                 usersController.eliminar);
 
 /* GET     /users/perfil/pedidos/:id      page. */

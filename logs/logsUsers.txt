@@ -13,3 +13,8 @@ El usuario registrado es:
 Nombre: User COMUN
 Email: user@user.com
 *************************************************************
+Se registró un usuario el 2020-11-27 20:43:54
+El usuario registrado es:
+Nombre: pichin durso
+Email: pichin@pichin.com
+*************************************************************
