@@ -35,8 +35,8 @@ router.get('/productCart', productsController.productCart);
 
 /* GET     /products/productAdmin                                       page. */
 router.get('/productAdmin', 
-                    guestMiddleware,
-                    authAdminMiddleware, 
+                    /* guestMiddleware,
+                    authAdminMiddleware,  */
                                         productsController.productAdmin);
 
 /**********************************PRODUCT ADD****************************************/
@@ -72,7 +72,7 @@ router.put('/productEdit/:id',
 /**********************************BORRAR*********************************************/
 
 /* GET     /products/productEdit/borrar/:id - Borra el producto         page. */
-router.get('/productEdit/delete/:id',
+router.delete('/productEdit/delete/:id',
                     guestMiddleware,
                     authAdminMiddleware, 
                                         productsController.deleteProduct);

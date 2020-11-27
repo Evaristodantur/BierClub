@@ -192,7 +192,6 @@ let usersController = {
 
         let transporter = nodemailer.createTransport({
           service: "gmail",
-          secure: false,
           auth: {
             user: process.env.email,
             pass: process.env.password
@@ -209,7 +208,7 @@ let usersController = {
           ${req.body.message}
           `
         let mailOptions = {
-          replyTo: "evaristo@dantur.com",
+          replyTo: req.body.email,
           to: process.env.email,
           subject: req.body.subject,
           html: output
