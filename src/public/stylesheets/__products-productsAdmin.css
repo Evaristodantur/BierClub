@@ -158,6 +158,11 @@ body .products-catalogo{
     margin: 0;
 }
 
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto .borrarProducto {
+    width: 100%;
+    position: absolute;
+}
+
 .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto, 
 .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
     /* Display & Box Model */
@@ -177,7 +182,8 @@ body .products-catalogo{
 
 .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
     /* Posicionamiento */
-    top: 170px;
+    margin-top: 171px;
+    margin-left: 5%;
 
     /* Otras */
     background: rgb(184, 20, 20);
@@ -188,13 +194,16 @@ body .products-catalogo{
     /* Display & Box Model */
     display: inline-block;
 
-    /* Posicionamiento */
-    position: absolute;
-
     /* Otras */
     cursor: pointer;
     transition: 1;
 }
+
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.modificar-producto {
+    /* Posicionamiento */
+    position: absolute;
+}
+
 /* ==========================================================================
    SECCION - PRODUCTOS - COLLECION /products
    ========================================================================== */
@@ -268,6 +277,7 @@ body .products-catalogo{
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos article.producto {
         width: 23%;
     }
+
 }
 
 
@@ -289,7 +299,7 @@ body .products-catalogo{
     }
 
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
-        top: 140px;
+        margin-top: 141px;
     }
 }
 
@@ -330,29 +340,15 @@ body .products-catalogo{
         width: 90%;
         padding: 5px;
 
-        /* Posicionamiento */
-        position: absolute;
-
         /* Otras */
         color: white;
         border-radius: 9px;
         border: 0;
     }
 
-    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.modificar-producto,
-    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.eliminar-producto {
-        position: absolute;
-        cursor: pointer;
-        transition: 1;
-        display: inline-block;
-    }
-
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto {
+        position: absolute;
         top: 113px;
-    }
-
-    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
-        top: 140px;
     }
 
     /* BUTTON, AGREGAR AL CARRITO */
@@ -423,7 +419,7 @@ body .products-catalogo{
     }
 
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
-        top: 170px;
+        margin-top: 171px;
     }
 }
 
@@ -446,6 +442,6 @@ body .products-catalogo{
     }
 
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
-        top: 200px;
+        margin-top: 200px;
     }
 }

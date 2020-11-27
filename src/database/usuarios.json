@@ -1,1 +1,9 @@
-[{"id":4,"nombre":"KIPPES","email":"diego.kippes@hotmail.com","contrasenia":"$2a$10$PZnVzF52kr.VdAYfgYWIT.0OZDcnwOf8HJR/F7lkyKdbvYtpbd4FS","admin":false},{"id":5,"nombre":"kippes.diego","email":"kippes.diego@gmail.com","contrasenia":"$2a$10$AmUIkNHeoE4k3xx5dTFQQ.xzZ3fpEoVT6EiJTUTgD2i1kjxTWXqeW","admin":true},{"id":6,"nombre":"evaristo@dantur.com","email":"adw@dwa.com","contrasenia":"$2a$10$zpHJUxD8Ree/D9N1g2k7cO5JFBmX5BWCmV46R98eU.lnQkN2gVvq.","admin":false},{"id":7,"nombre":"evaristo@dantur.com","email":"adw@dwassaa.com","contrasenia":"$2a$10$dKZ4rGWZVPqhgcehe2PZwOyBZemL5UtCxb3DIycEym7ehCl5mjcXG","admin":false},{"id":8,"nombre":"Evaristo Dantur","email":"asdasd@asd.com","contrasenia":"$2a$10$rB/0AdoctBasCSo.MMZ0FunBlq.jw3WvnjDS/Hj7jK60m0IG/ylXC","admin":false}]
+[
+    {
+        "id": 5,
+        "nombre": "kippes.diego",
+        "email": "kippes.diego@gmail.com",
+        "contrasenia": "$2a$10$AmUIkNHeoE4k3xx5dTFQQ.xzZ3fpEoVT6EiJTUTgD2i1kjxTWXqeW",
+        "admin": true
+    }
+]

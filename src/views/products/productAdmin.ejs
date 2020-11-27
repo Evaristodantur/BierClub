@@ -93,7 +93,9 @@
 								<img src="/images/productos/<%= producto.imagen[0] %>" alt="<%= producto.nombre %>">
 									<h4 class="nombre-producto-productAdmin"><%= producto.nombre %></h4>
 								<button onclick="window.location.href='/products/productEdit/<%= producto.id %>'" id="modificarProducto" class="modificar-producto">Modificar Producto</button>
-								<button onclick="window.location.href='/products/productEdit/delete/<%= producto.id %>'" id="eliminarProducto" class="eliminar-producto">Eliminar Producto</button>
+								<form class="borrarProducto" action="/products/productEdit/delete/<%= producto.id %>?_method=DELETE" method="POST">
+									<button type="submit" id="eliminarProducto" class="eliminar-producto">Eliminar Producto</button>	
+								</form>
 							</article>
 						<% }); %>		
 					

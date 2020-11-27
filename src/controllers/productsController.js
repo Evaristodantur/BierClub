@@ -50,7 +50,7 @@ let productsController = {
             
             for(let i=0; i < req.files.length; i++) {
                 let borrandoElArchivo = `./src/public/images/productos/${req.files[i].filename}`
-                fs.unlinkSync(borrandoElArchivo)
+                fs.unlinkSync(borrandoElArchivo);
             }
 
             return res.render('products/productAdd', {errors: errores.errors});

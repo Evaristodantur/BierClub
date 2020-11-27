@@ -13,7 +13,7 @@ var storage = multer.diskStorage({
   });
 
   let multerUpload = multer({ storage: storage,
-    fileFilter: (req, file, cb) => {        
+    fileFilter: (req, file, cb) => {
 
         if(req.imagenGuardada == undefined) {
           req.imagenGuardada = [];
