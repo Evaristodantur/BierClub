@@ -2,6 +2,33 @@
 
 ## 📈 Sprint 4
 
+### 🗓️ 27/11/20
+  Terminado:
+  - Contacto - nodemailer:
+    - Hacer nodemailer funcional
+    - Incluir nodemailer en Assets
+    - Hacer funcional nodemailer en Assets
+    
+  Para hacer hoy:
+  - Contacto: Implementación de middleware de error
+  - Log:
+    - Mejorar para que esté mas limpio
+    - Hacer log de errores
+
+### 🗓️ 26/11/20
+  Terminado:
+  - Contacto HTML y CSS, responsive
+  - usersAdmin: Implementación del metodo Delete
+  - productAdmin:
+    - Implementación del metodo Delete
+    - Arreglo del boton "eliminar" (CSS)
+    
+  Para hacer hoy:
+  - Contacto - nodemailer:
+    - Hacer nodemailer funcional
+    - Incluir nodemailer en Assets
+    - Hacer funcional nodemailer en Assets
+  
 ### 🗓️ 25/11/20
   Terminado:
   - Problemas solucionados en Multer
