@@ -1,6 +1,6 @@
 # Usuarios
 
-##¡Advertencia!
+## ¡Advertencia!
   - Para registrarte correctamente en la pagina, debes ingresar un email al que tengas acceso.
   - Se te enviará un email de verificación a tu correo, una vez actives la cuenta, podras usarla correctamente.
 
