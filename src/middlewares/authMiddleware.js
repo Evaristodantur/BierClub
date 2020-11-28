@@ -1,3 +1,5 @@
+// Verificacion de si el usuario esta logueado
+
 let authMiddleware = (req, res, next) => {
     if (req.session.usuarioLogueado == undefined) {
         next();

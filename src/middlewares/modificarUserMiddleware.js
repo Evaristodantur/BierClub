@@ -1,3 +1,5 @@
+// Validacion de campos al modificar usuarios en userAdmin
+
 const { check, checkSchema } = require("express-validator");
 const fs = require("fs");
 const bcrypt = require('bcryptjs');

@@ -1,9 +1,11 @@
 const path = require('path');
 const fs = require('fs');
+const {validationResult} = require("express-validator");
+const nodemailer = require("nodemailer");
+require("dotenv").config();
 
 //Agregado database JSON
 let productsJson = fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8');
-
 let dbDirectory = path.resolve(__dirname, '../database/products.json');
 
 productsJson == "" ?
@@ -60,6 +62,29 @@ let mainController = {
     
     envios : (req,res, next) => { 
         res.render('envios');
+    },
+
+
+
+    //Contacto
+    contactoRender : (req, res, next) => {
+        res.render("contacto")
+      },
+
+    contactoSend : (req, res, next) => {
+    // Enviar errores express-validator
+    let errores = validationResult(req);
+    if (!errores.isEmpty()){
+        return res.render("contacto", {errors : errores.errors})
+    }
+
+    let nodemailerAssets = require("../assets/nodemailerAssets");
+
+    nodemailerAssets(req).transporter.sendMail(nodemailerAssets(req).mailOptions, function(err, data){
+        if(!err){
+        res.render("contacto", { success : "Tu mensaje fue enviado con exito!" })
+        }
+    })
     }
 } 
 

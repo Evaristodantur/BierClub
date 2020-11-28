@@ -1,3 +1,5 @@
+// Routa de pagina de usuarios "bierclub.com/users/"
+
 var express = require('express');
 var router = express.Router();
 
@@ -14,34 +16,36 @@ let logUsersMiddleware = require('../middlewares/logUsersMiddleware');          
 let authAdminMiddleware = require("../middlewares/authAdminMiddleware");        //Middleware de administradores
 let perfilOrAdminMiddleware = require("../middlewares/perfilOrAdminMiddleware");//Middleware de administradores o perfil logueado
 let verifyAccountMiddleware = require("../middlewares/verifyAccountMiddleware");//Middleware de verified
-let contactMiddleware = require("../middlewares/contactMiddleware");            //Assets de contacto
 
-/********************************ADMINISTRADOR******************
- * **********************/
 
-/* GET     /users/usersAdmin     page. */
+
+//Routes
+
+/********************************ADMINISTRADOR****************************************/
+
+/* GET     /users/usersAdmin            page. */
 router.get('/usersAdmin',
                 guestMiddleware,
                 authAdminMiddleware,
                                  usersController.usersAdminList);
 
-/* GET     /users/usersAdmin     page. */
+/* GET     /users/usersAdmin             page. */
 router.get('/usersAdmin/:id',
                 guestMiddleware,
                 authAdminMiddleware,
                                  usersController.usersAdminEditView);
 
-/* GET     /users/usersAdmin     page. */
+/* POST     /users/usersAdmin            page. */
 router.post('/usersAdmin/:id', usersController.usersAdminEdit);
 
 /********************************REGISTER*********************************************/
 
-/* GET     /users/register      page. */
+/* GET     /users/register               page. */
 router.get('/register',
                 authMiddleware,
                                 usersController.create);
 
-/* GET     /users/register      page. */
+/* POST     /users/register              page. */
 router.post('/register', 
                 userMiddleware,
                 logUsersMiddleware, 
@@ -49,54 +53,46 @@ router.post('/register',
 
 /**********************************EMAIL VERIFY***************************************/
 
+/* GET     /users/verifyAccount          page. */
 router.get('/verifyAccount/:id', usersController.verifyAccount);
 
 
 /*********************************LOGIN***********************************************/
 
-/* GET     /users/login      page. */
+/* GET     /users/login                  page. */
 router.get('/login', 
                 authMiddleware, 
                                 usersController.loginRender);
 
-/* GET     /users/login      page. */
+/* POST     /users/login                 page. */
 router.post('/login', 
                 loginMiddleware,  
                                 usersController.loginIniciar);
 
 /**********************************PERFIL*********************************************/
 
-/* GET     /users/perfil/:id      page. */
+/* GET     /users/perfil/:id             page. */
 router.get('/perfil/:id', 
                 guestMiddleware, 
                 verifyAccountMiddleware,
                 perfilOrAdminMiddleware,
                                 usersController.perfilEdit);
 
-/* GET     /users/perfil/:id      page. */
+/* POST     /users/perfil/:id            page. */
 router.post('/perfil/:id', 
                 modificarUserMiddleware, 
                                 usersController.perfilUpdate);
 
 /**********************************ELIMINAR*******************************************/
 
-/* GET     /users/perfil/:id      page. */
+/* GET     /users/perfil/pedidos/:id     page. */
+router.get('/perfil/pedidos/:id', usersController.pedidos);
+
+/* DELETE     /users/perfil/:id          page. */
 router.delete('/perfil/eliminar/:id', 
                 guestMiddleware, 
                 perfilOrAdminMiddleware,
                                 usersController.eliminar);
-
-/* GET     /users/perfil/pedidos/:id      page. */
-router.get('/perfil/pedidos/:id', usersController.pedidos);
-
-/**********************************CONTACTO****************************************/
-
-router.get('/contacto', usersController.contactoRender);
-
-router.post('/contacto',
-                contactMiddleware,
-                                usersController.contactoSend);
-
 
 
 

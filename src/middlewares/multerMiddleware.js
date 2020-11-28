@@ -1,3 +1,5 @@
+// Multer, carga y filtrado de archivos
+
 let path = require('path');
 let multer = require('multer');
 

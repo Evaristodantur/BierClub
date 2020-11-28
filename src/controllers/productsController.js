@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 
 //Middleware
-let { check, validationResult, body } = require('express-validator');
+let { validationResult } = require('express-validator');
 
 //Agregado database JSON
 let productsJson = fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8');

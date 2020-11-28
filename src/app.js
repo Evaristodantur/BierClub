@@ -1,3 +1,4 @@
+// Requerimiento de modulos
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -9,6 +10,7 @@ var session = require('express-session');
 //Middlewares generales
 var cookieAuthMiddleware = require("./middlewares/cookieAuthMiddleware") 
 
+// Requerimiento de routes principales de la pagina
 var indexRouter = require('./routes/main');
 var usersRouter = require('./routes/users');
 var productsRouter = require('./routes/products');
@@ -19,7 +21,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-
+// Uso de modulos en toda la pagina
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -29,6 +31,7 @@ app.use(methodOverride("_method"));
 app.use(session({secret: 'super secreto'}));
 app.use(cookieAuthMiddleware);
 
+// Uso de routes principales de la pagina
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);

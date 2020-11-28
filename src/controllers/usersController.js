@@ -3,7 +3,6 @@ const fs = require('fs');
 const bcrypt = require('bcryptjs');
 const {validationResult} = require("express-validator");
 const nodemailer = require("nodemailer");
-const { verify } = require('crypto');
 require("dotenv").config();
 
 //Agregado database JSON
@@ -218,31 +217,13 @@ let usersController = {
         usuarioBuscado ? (res.render("users/pedidos", usuarioBuscado)) : res.render("error")
       },
 
-      contactoRender : (req, res, next) => {
-        res.render("users/contacto")
-      },
-
-      contactoSend : (req, res, next) => {
-        // Enviar errores express-validator
-        let errores = validationResult(req);
-        if (!errores.isEmpty()){
-          return res.render("users/contacto", {errors : errores.errors})
-        }
-        let nodemailerAssets = require("../assets/nodemailerAssets");
-
-        nodemailerAssets(req).transporter.sendMail(nodemailerAssets(req).mailOptions, function(err, data){
-          if(!err){
-            res.render("users/contacto", { success : "Tu mensaje fue enviado con exito!" })
-          }
-        })
-      },
+      
 
 
 
 
       verifyAccount: (req, res, next) => {
         let idUrl = req.params.id;
-        console.log(idUrl)
 
         let usuarioAVerificar = usuariosJson.find( usuario => usuario.verify[1] == idUrl );
 

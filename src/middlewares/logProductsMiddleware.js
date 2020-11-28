@@ -1,3 +1,5 @@
+// Log de productos
+
 const fs = require('fs');
 let { validationResult } = require('express-validator');
 

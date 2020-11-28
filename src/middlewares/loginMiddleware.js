@@ -1,3 +1,5 @@
+// Validaciones de logueo
+
 const { check, checkSchema } = require("express-validator");
 const fs = require("fs");
 const bcrypt = require('bcryptjs');

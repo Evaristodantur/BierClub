@@ -1,3 +1,5 @@
+// Verificacion de campos en los productos
+
 let path = require('path');
 const { check, checkSchema } = require('express-validator'); //Express-validator
 

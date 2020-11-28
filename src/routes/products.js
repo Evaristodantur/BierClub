@@ -1,3 +1,5 @@
+// Routa de pagina de productos "bierclub.com/products/"
+
 let express = require('express');
 let router = express.Router();
 
@@ -5,11 +7,11 @@ let router = express.Router();
 let productsController = require('../controllers/productsController');
 
 //Middleware
-let multerUpload = require('../middlewares/multerMiddleware');  //Multer
-let productMiddleware = require('../middlewares/productosMiddleware');
-let logProductsMiddleware = require('../middlewares/logProductsMiddleware');
+let multerUpload = require('../middlewares/multerMiddleware');                  //Multer Middleware
+let productMiddleware = require('../middlewares/productosMiddleware');          //Product Middleware
+let logProductsMiddleware = require('../middlewares/logProductsMiddleware');    //Log de product Middleware
 let guestMiddleware = require('../middlewares/guestMiddleware');                //Middleware de invitado, sin usuario
-let authAdminMiddleware = require('../middlewares/authAdminMiddleware');
+let authAdminMiddleware = require('../middlewares/authAdminMiddleware');        //Admin Middleware
 
 
 
@@ -18,17 +20,17 @@ let authAdminMiddleware = require('../middlewares/authAdminMiddleware');
 
 /**********************************PRODUCTOS******************************************/
 
-/* GET     /products      page. */
+/* GET     /products                                                    page. */
 router.get('/', productsController.index);
 
 /**********************************PRODUCT DETAIL*************************************/
 
-/* GET     /products/productDetail/:id      page. */
+/* GET     /products/productDetail/:id                                  page. */
 router.get('/productDetail/:id', productsController.productDetail);
 
 /**********************************PRODUCT CART***************************************/
 
-/* GET     /products/productCart      page. */
+/* GET     /products/productCart                                        page. */
 router.get('/productCart', productsController.productCart);
 
 /**********************************ADMINISTRADOR**************************************/
@@ -71,11 +73,12 @@ router.put('/productEdit/:id',
 
 /**********************************BORRAR*********************************************/
 
-/* GET     /products/productEdit/borrar/:id - Borra el producto         page. */
+/* DELETE     /products/productEdit/borrar/:id - Borra el producto      page. */
 router.delete('/productEdit/delete/:id',
                     guestMiddleware,
                     authAdminMiddleware, 
                                         productsController.deleteProduct);
+
 
 
 
