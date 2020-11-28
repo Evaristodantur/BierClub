@@ -6,6 +6,8 @@ Por el momento envios en la provincia de Tucumán, pero apuntamos a mejorar en u
 
 ## Links: [**Retrospectivas**](https://github.com/Evaristodantur/BierClub/blob/master/entregas%20-%20sprints/2do-sprint/retro.md) y [**Dailies**](https://github.com/Evaristodantur/BierClub/blob/master/entregas%20-%20sprints/2do-sprint/daily.md) 📝
 
+## [Usuarios](https://github.com/Evaristodantur/BierClub/blob/master/entregas%20-%20sprints/Usuarios-Login/users.md) para pruebas
+
 ## Funcionalidad 🧰:
 - Venta de cerveza artesanal (Latas y botellas chicas)
 - Suscripcion mensual (extra)
