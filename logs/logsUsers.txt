@@ -278,3 +278,43 @@ El usuario registrado es:
 Nombre: Evaristo Dantur
 Email: evaristo@dantur.com
 *************************************************************
+Se registró un usuario el 28/11/2020 18:52:55
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 28/11/2020 18:54:06
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 28/11/2020 18:56:07
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 28/11/2020 19:04:07
+El usuario registrado es:
+Nombre: ADMIN
+Email: admin@admin.com
+*************************************************************
+Se registró un usuario el 28/11/2020 19:05:14
+El usuario registrado es:
+Nombre: User COMUN
+Email: user@user.com
+*************************************************************
+Se registró un usuario el 28/11/2020 19:10:51
+El usuario registrado es:
+Nombre: User No Verificado
+Email: user-no-verificado@user.com
+*************************************************************
+Hubo un intento de registro el 28/11/2020 19:15:59
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 28/11/2020 19:16:09
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
