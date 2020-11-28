@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>   
+   <title>BierClub</title>
+    <%- include('../partials/head.ejs') %>
+  </head>
+
+  <header>
+    <%- include('../partials/nav.ejs') %>
+    <br>
+  </header>
+  <body>
+      <br><br><br><br><br><br><br>
+      <div>
+        <% if (typeof msgError != 'undefined') { %>
+            <p><%= msgError %></p>
+        <% } %>
+
+        <% if (typeof usuario != 'undefined') { %>
+            <h1>Tu email: <%= usuario.email %> ha sido verificada</h1>
+            <img src="/images/home/verify.png" alt="">
+        <% } %>
+
+        <% if (typeof msgErrorYaVerificado != 'undefined') { %>
+            <%= msgErrorYaVerificado %>
+        <% } %>
+          
+          
+      </div>
+        
+</body>
+</html>

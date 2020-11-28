@@ -93,7 +93,6 @@ body {
   margin-top: -35px;
   transition: 0.3s;
 }
-
 .nav1 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono{
   display: none;
   color: white;
@@ -329,5 +328,8 @@ RESOLUCION 0-480
 .hamburguesa-items-none:hover{
     display:flex;
     flex-direction: column;
+  }
+  .nav1 .nav-backgc .container-nav .navbar center .navcarrito .btn-hamburguesa{
+    right: -25px;
   }
 }

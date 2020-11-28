@@ -280,7 +280,6 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
     display: none;
   }
 
-
   .nav2 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono{
     display: inline-block;
   }
@@ -324,5 +323,8 @@ RESOLUCION 0-480
   .hamburguesa-items-none:hover{
     display:flex;
     flex-direction: column;
+  }
+  .nav2 .nav-backgc .container-nav .navbar center .navcarrito .btn-hamburguesa{
+    right: -25px;
   }
 }
