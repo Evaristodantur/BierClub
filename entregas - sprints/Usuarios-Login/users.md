@@ -37,7 +37,7 @@
 ### Paginas afectadas al estar logueado como administrador:
   - /users/usersAdmin:
     - Solo podes iniciar siendo administrador
-  - /users/usersAdmin/: id
+  - /users/usersAdmin/:id
     - Solo podes iniciar siendo administrador
   - /users/perfil/:id
     - El administrador puede entrar a todos los perfiles, de todos los usuarios, ya sean usuarios comunes o administradores

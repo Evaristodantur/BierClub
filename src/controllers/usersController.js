@@ -77,9 +77,32 @@ let usersController = {
           idMax = usuariosJson[i].id;
         }
       }
-    
+      
       //Sumarle 1 al ID mas alto, para crear un producto nuevo
       idMax = idMax + 1;
+
+      let transporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+          user: process.env.email,
+          pass: process.env.password
+        }
+      });
+      const output = `
+      <h3>¡Gracias por registrarte en BierClub!:</h3> 
+      <p>Por favor haz click en <a href="http://localhost:3000/users/verifyAccount/${idMax}">este</a> link para activar tu cuenta</p>
+      `;
+      let mailOptions = {
+        from: process.env.email, 
+        to: req.body.email,
+        subject: "Verificacion de la cuenta de BierClub",
+        html: output
+      }
+      transporter.sendMail(mailOptions, function(err, data){
+        if(err){
+          console.log("ERROR");
+        }else{
+          console.log("Mensaje enviado!");
 
       //Hacer objeto completo, con el ID primero para mas comodidad
       let usuarioNuevo = {
@@ -87,8 +110,8 @@ let usersController = {
         nombre : req.body.nombre,
         email : req.body.email,
         contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
-        admin: false
-      }
+        admin : false
+      } 
 
       //Sumar el usuario al array
       usuariosJson.push(usuarioNuevo);
@@ -97,7 +120,10 @@ let usersController = {
       fs.writeFileSync(dbDirectory, JSON.stringify(usuariosJson));
 
       //Te envia a la vista una vez el form fue completado
+      
       res.redirect("../");
+        }
+      })
     },
 
 
