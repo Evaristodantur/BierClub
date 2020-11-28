@@ -318,3 +318,33 @@ El usuario registrado es:
 Nombre: KIPPES
 Email: kippes.diego@gmail.com
 *************************************************************
+Se registró un usuario el 28/11/2020 19:37:10
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 28/11/2020 19:38:54
+El usuario a registrarse fue:
+Nombre: ADMIN
+Email: admin@admin.com
+*************************************************************
+Hubo un intento de registro el 28/11/2020 19:39:07
+El usuario a registrarse fue:
+Nombre: ADMIN
+Email: admin@admin.com
+*************************************************************
+Se registró un usuario el 28/11/2020 19:39:32
+El usuario registrado es:
+Nombre: ADMIN
+Email: admin@admin.com
+*************************************************************
+Se registró un usuario el 28/11/2020 19:41:02
+El usuario registrado es:
+Nombre: User COMUN
+Email: user@user.com
+*************************************************************
+Se registró un usuario el 28/11/2020 19:41:35
+El usuario registrado es:
+Nombre: User No Verificado
+Email: user-no-verificado@user.com
+*************************************************************

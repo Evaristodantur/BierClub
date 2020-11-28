@@ -56,7 +56,7 @@ let usersController = {
 
     
     //  /users/register
-    create : (req, res, next) => {      
+    create : (req, res, next) => {
       res.render('users/register');
     },
 
@@ -89,7 +89,7 @@ let usersController = {
         email : req.body.email,
         contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
         admin : false,
-        verify: [false, bcrypt.hashSync( (Math.floor(Math.random() * 10000000)).toString() ,10)]
+        verify: [false, (Math.random()*15).toString(36).substring(2)]
       } 
 
       //Manda mail de verificacion
