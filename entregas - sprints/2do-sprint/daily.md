@@ -2,6 +2,17 @@
 
 ## 📈 Sprint 4
 
+### 🗓️ 28/11/20
+  Terminado:
+  - Contacto: Implementación de middleware de error
+  - Log:
+    - Mejorar para que esté mas limpio
+    - Hacer log de errores en register y en products
+    
+  Para hacer hoy:
+  - Readme de usuarios (user comun y administrador)
+  - Register: Pedir verificacion por email para activar cuenta
+
 ### 🗓️ 27/11/20
   Terminado:
   - Contacto - nodemailer:
