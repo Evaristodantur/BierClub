@@ -273,3 +273,8 @@ El usuario registrado es:
 Nombre: asd
 Email: kippes.diego@gmail.com
 *************************************************************
+Se registró un usuario el 2020-11-28 5:11:06
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************

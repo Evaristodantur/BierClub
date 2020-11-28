@@ -9,22 +9,34 @@
     <%- include('../partials/nav.ejs') %>
     <br>
   </header>
-  <body>
-      <br><br><br><br><br><br><br>
-      <div>
+  <body class="verify-account-body">
+      <div class="verify-account">
         <% if (typeof msgError != 'undefined') { %>
-            <p><%= msgError %></p>
+            <h1><%= msgError %></h1>
+            <img src="/images/home/verify-denied.png" alt="">
         <% } %>
 
         <% if (typeof usuario != 'undefined') { %>
-            <h1>Tu email: <%= usuario.email %> ha sido verificada</h1>
+            <h1>Tu email: <%= usuario.email %> ha sido verificado</h1>
             <img src="/images/home/verify.png" alt="">
         <% } %>
 
         <% if (typeof msgErrorYaVerificado != 'undefined') { %>
-            <%= msgErrorYaVerificado %>
+            <h1><%= msgErrorYaVerificado %></h1>
+            <img src="/images/home/verify-denied.png" alt="">
         <% } %>
-          
+        
+        <% if (typeof msgErrorVerify != 'undefined') { %>
+              <h1><%= msgErrorVerify %></h1>
+              <img src="/images/home/verify-denied.png" alt="">
+        <% } %>
+
+        <% if (typeof msgErrorUsuarioInexistente != 'undefined') { %>
+          <h1><%= msgErrorUsuarioInexistente %></h1>
+          <img src="/images/home/verify-denied.png" alt="">
+        <% } %>
+        
+        <button onclick="window.location.href='/'"><i class="fas fa-chevron-left"></i> Volver al Home</button>
           
       </div>
         

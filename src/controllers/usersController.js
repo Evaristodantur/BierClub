@@ -28,7 +28,7 @@ let usersController = {
       let idUrl = req.params.id;
 
       let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
-      usuarioBuscado ? (res.render("users/usersAdminEdit", { usuarios : usuarioBuscado })) : res.send("El usuario que queres editar no existe")
+      usuarioBuscado ? (res.render("users/usersAdminEdit", { usuarios : usuarioBuscado })) : res.render('users/verifyAccount', { msgErrorUsuarioInexistente: 'Este usuario no existe'});
     },
 
     usersAdminEdit : (req,res,next) =>{
@@ -244,7 +244,7 @@ let usersController = {
 
         //Verificacion de email inexistente
         if (usuarioAVerificar == undefined) {
-          return res.render('users/verifyAccount', { msgError: 'El usuario a verificar no existe'});
+          return res.render('users/verifyAccount', { msgError: 'La cuenta que quieres verificar no existe'});
         }
 
         //Verificacion de email ya registrado

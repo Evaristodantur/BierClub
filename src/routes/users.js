@@ -12,7 +12,8 @@ let authMiddleware = require('../middlewares/authMiddleware');                  
 let guestMiddleware = require('../middlewares/guestMiddleware');                //Middleware de invitado, sin usuario
 let logUsersMiddleware = require('../middlewares/logUsersMiddleware');          //Middleware de usuarios registrados (LOG)
 let authAdminMiddleware = require("../middlewares/authAdminMiddleware");        //Middleware de administradores
-let perfilOrAdminMiddleware = require("../middlewares/perfilOrAdminMiddleware");//Middleware de administradores
+let perfilOrAdminMiddleware = require("../middlewares/perfilOrAdminMiddleware");//Middleware de administradores o perfil logueado
+let verifyAccountMiddleware = require("../middlewares/verifyAccountMiddleware");//Middleware de verified
 let contactMiddleware = require("../middlewares/contactMiddleware");            //Assets de contacto
 
 /********************************ADMINISTRADOR******************
@@ -68,6 +69,7 @@ router.post('/login',
 /* GET     /users/perfil/:id      page. */
 router.get('/perfil/:id', 
                 guestMiddleware, 
+                verifyAccountMiddleware,
                 perfilOrAdminMiddleware,
                                 usersController.perfilEdit);
 

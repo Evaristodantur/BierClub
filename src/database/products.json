@@ -59,17 +59,5 @@
         "imagen": [
             "producto-5.jpg"
         ]
-    },
-    {
-        "id": 6,
-        "nombre": "dfsfdsdfs",
-        "precio": 0,
-        "descuento": 0,
-        "stock": 0,
-        "categoria": "cerveza",
-        "descripcion": "",
-        "imagen": [
-            "product-image-not-available.jpg"
-        ]
     }
 ]
