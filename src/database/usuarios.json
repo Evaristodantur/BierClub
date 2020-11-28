@@ -4,13 +4,23 @@
         "nombre": "ADMIN",
         "email": "admin@admin.com",
         "contrasenia": "$2a$10$QgUgRmSNOlDePpbdBtw68enJzYPgGU3NDANYj07EKkGEiyVkfAjyq",
-        "admin": false
+        "admin": false,
+        "verify": false
     },
     {
         "id": 2,
         "nombre": "User COMUN",
         "email": "user@user.com",
         "contrasenia": "$2a$10$uyY0cHsOEeKRjZ/QJsuH9ulMZw7X5.RKwm75vD1hKRaE21cTA8eBG",
-        "admin": false
+        "admin": false,
+        "verify": false
+    },
+    {
+        "id": 3,
+        "nombre": "KIPPES",
+        "email": "kippes.diego@gmail.com",
+        "contrasenia": "$2a$10$GTES2mho/IDlbvs/QwraceTXU/m.YhwKVjEZW0/ggqoVCjjg.JxbG",
+        "admin": false,
+        "verify": false
     }
 ]

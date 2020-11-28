@@ -3,6 +3,7 @@ const fs = require('fs');
 const bcrypt = require('bcryptjs');
 const {validationResult} = require("express-validator");
 const nodemailer = require("nodemailer");
+const { verify } = require('crypto');
 require("dotenv").config();
 
 //Agregado database JSON
@@ -87,7 +88,8 @@ let usersController = {
         nombre : req.body.nombre,
         email : req.body.email,
         contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
-        admin: false
+        admin: false,
+        verify: false
       }
 
       //Sumar el usuario al array

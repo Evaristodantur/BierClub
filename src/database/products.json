@@ -45,7 +45,8 @@
         "descripcion": "Es la descripcion de prueba 4",
         "imagen": [
             "producto-4.jpg"
-        ]
+        ],
+        "_locals": {}
     },
     {
         "id": 5,
@@ -57,6 +58,18 @@
         "descripcion": "Es la descripcion de prueba 5",
         "imagen": [
             "producto-5.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "dfsfdsdfs",
+        "precio": 0,
+        "descuento": 0,
+        "stock": 0,
+        "categoria": "cerveza",
+        "descripcion": "",
+        "imagen": [
+            "product-image-not-available.jpg"
         ]
     }
 ]
