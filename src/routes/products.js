@@ -5,7 +5,7 @@ let router = express.Router();
 let productsController = require('../controllers/productsController');
 
 //Middleware
-let multerUpload = require('../middlewares/multer');  //Multer
+let multerUpload = require('../middlewares/multerMiddleware');  //Multer
 let productMiddleware = require('../middlewares/productosMiddleware');
 let logProductsMiddleware = require('../middlewares/logProductsMiddleware');
 let guestMiddleware = require('../middlewares/guestMiddleware');                //Middleware de invitado, sin usuario

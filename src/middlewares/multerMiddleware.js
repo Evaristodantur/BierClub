@@ -1,6 +1,5 @@
 let path = require('path');
 let multer = require('multer');
-let fs = require('fs');
 
 //Almacenamiento de las imagenes
 var storage = multer.diskStorage({
