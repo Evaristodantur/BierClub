@@ -1,26 +1,26 @@
 # Usuarios
 
 ## ¡Advertencia!
-  - Para registrarte correctamente en la pagina, debes ingresar un email al que tengas acceso.
-  - Se te enviará un email de verificación a tu correo, una vez actives la cuenta, podras usarla correctamente.
+  - Para registrarte correctamente en la página, debes ingresar un email al que tengas acceso.
+  - Se te enviará un email de verificación a tu correo, una vez actives la cuenta, podrás usarla correctamente.
 
-## Usuario comun:
+## Usuario común:
   - Email user@user.com
   - Contraseña: usuario-comun
-### Paginas afectadas al estar logueado como usuario comun:
+### Páginas afectadas al estar logueado como usuario comun:
   - /users/usersAdmin:
-    - Si no estas logueado, te envia al form de login
-    - No te deja entrar siendo usuario comun 
+    - Si no estás logueado, te envia al form de login
+    - No te deja entrar siendo usuario común 
   - /users/usersAdmin/:id
     - Si no estas logueado, te envia al form de login
-    - No te deja entrar siendo usuario comun
+    - No te deja entrar siendo usuario común
   - /users/register
-    - Si estas logueado, te redirecciona a tu perfil
+    - Si estás logueado, te redirecciona a tu perfil
   - /users/login
-    - Si estas logueado, te redirecciona a tu perfil
+    - Si estás logueado, te redirecciona a tu perfil
   - /users/perfil/:id
-    - Si no estas logueado e intentas entrar a un perfil, te envia al form de login
-    - Si entras a un perfil que no es el tuyo, te envia a la vista "No tienes permisos para entrar a esta pagina" (es necesario para nuestro proyecto)
+    - Si no estas logueado e intentas entrar a un perfil, te envía al form de login
+    - Si entras a un perfil que no es el tuyo, te envia a la vista "No tienes permisos para entrar a esta página" (es necesario para nuestro proyecto)
   - /users/perfil/eliminar/:id
     - Si intentas eliminar un perfil y no es el perfil del usuario logueado, no te deja eliminarlo
   - /products/productAdmin
@@ -38,22 +38,44 @@
 ## Administrador:
   - Email: admin@admin.com
   - Contraseña: administrador
-### Paginas afectadas al estar logueado como administrador:
+### Páginas afectadas al estar logueado como administrador:
   - /users/usersAdmin:
-    - Solo podes iniciar siendo administrador
+    - Solo podés iniciar siendo administrador
   - /users/usersAdmin/:id
-    - Solo podes iniciar siendo administrador
+    - Solo podés iniciar siendo administrador
   - /users/perfil/:id
     - El administrador puede entrar a todos los perfiles, de todos los usuarios, ya sean usuarios comunes o administradores
   - /users/perfil/eliminar/:id
     - El administrador puede eliminar cualquier perfil
   - /products/productAdmin
-    - Solo podes iniciar siendo administrador
+    - Solo podés iniciar siendo administrador
   - /products/productAdd
-    - Solo podes iniciar siendo administrador
+    - Solo podés iniciar siendo administrador
   - /products/productEdit/:id
-    - Solo podes iniciar siendo administrador
+    - Solo podés iniciar siendo administrador
   - /products/productEdit/delete/:id
     - El administrador puede eliminar cualquier producto
 
+## Usuario sin verificar email:
+  - Email user-no-verificado@user.com
+  - Contraseña: usuario-no-verificado
+### Páginas afectadas al no estar verificado (un admin no puede no estar verificado):
+  - /users/usersAdmin:
+    - Si no estas verificado, muestra la vista "sin permisos"
+  - /users/usersAdmin/:id
+    - Si no estas verificado, muestra la vista "sin permisos"
+  - /users/register
+    - Si estás logueado pero no verificado, te pide verificacion de cuenta
+  - /users/login
+    - Si estás logueado pero no verificado, te pide verificacion de cuenta
+  - /users/perfil/eliminar/:id
+    - Si intentas eliminar un perfil y no es el perfil del usuario logueado, no te deja eliminarlo
+  - /products/productAdmin
+    - Si no estas verificado, muestra la vista "sin permisos"
+  - /products/productAdd
+    - Si no estas verificado, muestra la vista "sin permisos"
+  - /products/productEdit/:id
+    - Si no estas verificado, muestra la vista "sin permisos"
+  - /products/productEdit/delete/:id
+    - Si no estas verificado, muestra la vista "error"
   
