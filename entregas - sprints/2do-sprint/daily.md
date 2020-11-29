@@ -11,6 +11,7 @@
   - Acomodar agregado-modificación de imagen en home
   - sinPermisos CSS arreglado
   - usersVerifyMiddleware agregado en todas las vistas que sea necesario
+  - /users/login, /users/register y /contacto ahora vuelve a poner los datos en los input si hay algun error
   
   Para hacer hoy:
   - Checkeo general para entrega de sprint 4
