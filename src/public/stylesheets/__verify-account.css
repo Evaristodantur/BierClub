@@ -1,6 +1,3 @@
-.verify-account-body{
-    overflow: hidden;
-}
 div.verify-account{
     display: flex;
     flex-direction: column;
@@ -67,7 +64,12 @@ div.verify-account{
     padding-right: 4px;
 } 
 
-
+   @media (max-width: 1600px){
+    .verify-account .button-redirect-home{
+        /* Display & Box Model */
+        width: 21%;
+    }
+}
    @media (max-width: 949px){
     div.verify-account{
         padding-top: 70px;
@@ -78,11 +80,11 @@ div.verify-account{
     .verify-account img{
         width: 500px;
     }
-    .verify-account button{
+    .verify-account .button-redirect-home{
         /* Display & Box Model */
         width: 180px;
     }
-    .verify-account button:hover .fa-chevron-left{
+    .verify-account .button-redirect-home:hover .fa-chevron-left{
         padding-right: 0px;
     }
 }
@@ -90,7 +92,7 @@ div.verify-account{
         .verify-account img{
             width: 300px;
         }
-        .verify-account button{
+        .verify-account .button-redirect-home{
             margin-bottom: 30px;
         }
         .verify-account-body{
@@ -103,5 +105,9 @@ div.verify-account{
     @media (max-width: 350px){
         .verify-account img{
             width: 250px;
+        }
+        .verify-account .verifyButton p,
+        .verify-account .verify-button{
+            font-size:14px;
         }
     }
