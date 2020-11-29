@@ -144,9 +144,9 @@ let usersController = {
     loginIniciar : (req, res, next) => {
       // Enviar errores express-validator
       let errores = validationResult(req);
-
+      errores.reqEmail = req.body.email;
       if (!errores.isEmpty()){
-        return res.render("users/login", {errors : errores.errors})
+        return res.render("users/login", {errors : errores})
       }
 
       let buscarUsuario = usuariosJson.find(usuario => usuario.email == req.body.email);

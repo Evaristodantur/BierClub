@@ -22,8 +22,8 @@
 				
 			<!-- NOMBRE -->
 			<div class="campo-input">
-				<input class="input-registro" type="text" id="nombre" name="nombre" placeholder="Nombre" 
-				<%if(typeof errors.errors != "undefined"){%>
+				<input class="input-registro" type="text" id="nombre" name="nombre" placeholder="Nombre"
+				<% if(typeof errors.errors != "undefined"){%>
 					value="<%= errors.reqNombre %>"
 				<%}%>>
 				<%if(typeof errors.errors != "undefined"){%>
@@ -39,8 +39,8 @@
 			<!-- MAIL -->
 			<div class="campo-input">
 				<input class="input-registro" type="email"  id="email" name="email" placeholder="Email"
-				<%if(typeof errors.errors != "undefined"){%>
-					value="<%= errors.errors.reqEmail %>"
+				<% if(typeof errors.errors != "undefined"){%>
+					value="<%= errors.reqEmail %>"
 				<%}%>>
 				<%if(typeof errors.errors != "undefined"){%>
 					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
