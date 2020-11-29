@@ -1,4 +1,4 @@
-// Verificacion de si es el usuario es ADMIN
+// Verificación de si es el usuario es ADMIN
 
 let authAdminMiddleware = (req, res, next) => {
     if (req.session.usuarioLogueado.admin == true) {

@@ -5,8 +5,7 @@ let verifyAccountMiddleware = (req, res, next) => {
     if (usuarioSinVerificar.verify[0] == true) {
         next();
     } else {
-        usuarioSinVerificar.msgErrorVerify = "Por favor verifica tu cuenta antes de entrar a esta pagina";
-        console.log(usuarioSinVerificar);
+        usuarioSinVerificar.msgErrorVerify = "Por favor verifica tu cuenta antes de entrar a esta página";
         res.render('users/verifyAccount', { usuarioSinVerificar : usuarioSinVerificar })
     }
 }

@@ -1,4 +1,4 @@
-// Verificacion de campos en los productos
+// Verificación de campos en los productos
 
 const { check, checkSchema } = require('express-validator'); //Express-validator
 

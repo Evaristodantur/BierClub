@@ -1,4 +1,4 @@
-// Routa de pagina de productos "bierclub.com/products/"
+// Routa de página de productos "bierclub.com/products/"
 
 let express = require('express');
 let router = express.Router();
