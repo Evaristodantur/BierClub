@@ -9,7 +9,9 @@
   - Arreglar users/perfil incorrecto al tener un email que no esta verificado
   - Acomodar agregado-modificación de imagen en productAdmin/products
   - Acomodar agregado-modificación de imagen en home
-    
+  - sinPermisos CSS arreglado
+  - usersVerifyMiddleware agregado en todas las vistas que sea necesario
+  
   Para hacer hoy:
   - Checkeo general para entrega de sprint 4
 
