@@ -61,21 +61,13 @@
   - Contraseña: usuario-no-verificado
 ### Páginas afectadas al no estar verificado (un admin no puede no estar verificado):
   - /users/usersAdmin:
-    - Si no estas verificado, muestra la vista "sin permisos"
+    - Si no estas verificado, pide verificar cuenta
   - /users/usersAdmin/:id
-    - Si no estas verificado, muestra la vista "sin permisos"
-  - /users/register
-    - Si estás logueado pero no verificado, te pide verificacion de cuenta
-  - /users/login
-    - Si estás logueado pero no verificado, te pide verificacion de cuenta
-  - /users/perfil/eliminar/:id
-    - Si intentas eliminar un perfil y no es el perfil del usuario logueado, no te deja eliminarlo
+    - Si no estas verificado, pide verificar cuenta
   - /products/productAdmin
-    - Si no estas verificado, muestra la vista "sin permisos"
+    - Si no estas verificado, pide verificar cuenta
   - /products/productAdd
-    - Si no estas verificado, muestra la vista "sin permisos"
+    - Si no estas verificado, pide verificar cuenta
   - /products/productEdit/:id
-    - Si no estas verificado, muestra la vista "sin permisos"
-  - /products/productEdit/delete/:id
-    - Si no estas verificado, muestra la vista "error"
+    - Si no estas verificado, pide verificar cuenta
   
