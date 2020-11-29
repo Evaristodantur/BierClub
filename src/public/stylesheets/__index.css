@@ -34,11 +34,13 @@
 .home main section.productos article.producto {
     /* Display & Box Model */
     width: 22%;
+    
     margin: 1% 0.5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    
 
     /* Otras */
     background-color: white;
@@ -47,6 +49,13 @@
     border-radius: 15px;
     box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
     transition: 0.3s;
+}
+
+.home main section.productos article.producto img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 300px;
 }
 
 .home main section.productos div.btnAnt {
@@ -59,12 +68,6 @@
     align-self: center;
     margin-right: 1%;
     display: inline-block;
-}
-
-.home main section.productos article.producto img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    width: 100%;
 }
 
 /* ==========================================================================
@@ -283,13 +286,28 @@
 }
 
 
+
+
+
 /* ==========================================================================
-   RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
+   RESOLUCION: 1600 hacia abajo
    ========================================================================== */
-@media (max-width: 950px) {
-    /*BUTTON - AÑADIR AL CARRITO*/
-    .home main section.productos article.producto button.hoverproducto{
-        opacity: 1;
+   @media (max-width: 1600px) {
+    .home main section.productos article.producto img {
+        height: 275px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 1500 hacia abajo
+   ========================================================================== */
+   @media (max-width: 1500px) {
+    .home main section.productos article.producto img {
+        height: 255px;
     }
 }
 
@@ -306,6 +324,10 @@
         display: none;
     }
 
+    .home main section.productos article.producto img {
+        height: 305px;
+    }
+
     /*NAV - MEJORES PRODUCTOS*/
     .home section.nav-MejoresProductos ul.mejores-productos li {
         padding-right: 1%;
@@ -315,6 +337,19 @@
     /*NEWSLETTER*/
     .home section.newsletter-background input.newsletter {
         width: 70%;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 1300 hacia abajo
+   ========================================================================== */
+   @media (max-width: 1300px) {
+    .home main section.productos article.producto img {
+        height: 275px;
     }
 }
 
@@ -337,6 +372,10 @@
         margin-bottom: 5%;
     }
 
+    .home main section.productos article.producto img {
+        height: 250px;
+    }
+
     /*NAV - MEJORES PRODUCTOS*/
     .home section.nav-MejoresProductos ul.mejores-productos li {
         padding-left: 0;
@@ -348,6 +387,19 @@
         width: 70%;
     }
 
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 1100 hacia abajo
+   ========================================================================== */
+   @media (max-width: 1100px) {
+    .home main section.productos article.producto img {
+        height: 225px;
+    }
 }
 
 
@@ -377,6 +429,10 @@
         margin-bottom: 3%;
     }
 
+    .home main section.productos article.producto img {
+        height: 285px;
+    }
+
     /*NAV - MEJORES PRODUCTOS*/
     .home section.nav-MejoresProductos ul.mejores-productos {
         display: flex;
@@ -401,9 +457,106 @@
 
 
 
+
+/* ==========================================================================
+   RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
+   ========================================================================== */
+   @media (max-width: 950px) {
+
+    .home main section.productos article.producto img {
+        height: 258px;
+    }
+
+    /*BUTTON - AÑADIR AL CARRITO*/
+    .home main section.productos article.producto button.hoverproducto{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 900 hacia abajo
+   ========================================================================== */
+   @media (max-width: 900px) {
+    .home main section.productos article.producto img {
+        height: 240px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 850 hacia abajo
+   ========================================================================== */
+   @media (max-width: 850px) {
+    .home main section.productos article.producto img {
+        height: 230px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 768 hacia abajo
+   ========================================================================== */
+   @media (max-width: 768px) {
+    .home main section.productos article.producto img {
+        height: 317px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 700 hacia abajo
+   ========================================================================== */
+   @media (max-width: 700px) {
+    .home main section.productos article.producto img {
+        height: 284px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 600 hacia abajo
+   ========================================================================== */
+   @media (max-width: 600px) {
+    .home main section.productos article.producto img {
+        height: 235px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 550 hacia abajo
+   ========================================================================== */
+   @media (max-width: 550px) {
+    .home main section.productos article.producto img {
+        height: 209px;
+    }
+}
+
+
+
+
   
 /* ==========================================================================
-   RESOLUCION: 480 a 768
+   RESOLUCION: 525 a 768
    ========================================================================== */
 @media (min-width: 525px) and (max-width: 768px) {
     .home {
@@ -488,7 +641,7 @@
 
 
 /* ==========================================================================
-   RESOLUCION: 480 hacia abajo
+   RESOLUCION: 524 hacia abajo
    ========================================================================== */
 @media (max-width: 524px) {
     .home {
@@ -521,6 +674,10 @@
         margin: 0% 0px;
         width: 70%;
         align-self: center;
+    }
+
+    .home main section.productos article.producto img {
+        height: 354px;
     }
 
     .home main section.productos article.producto button.btn-producto {
@@ -562,5 +719,44 @@
     }
     .home section.nav-MejoresProductos div.titulo-mejores-productos{
         margin-top: 20px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 450 hacia abajo
+   ========================================================================== */
+   @media (max-width: 450px) {
+    .home main section.productos article.producto img {
+        height: 298px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 400 hacia abajo
+   ========================================================================== */
+   @media (max-width: 400px) {
+    .home main section.productos article.producto img {
+        height: 261px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 350 hacia abajo
+   ========================================================================== */
+   @media (max-width: 350px) {
+    .home main section.productos article.producto img {
+        height: 227px;
     }
 }

@@ -125,3 +125,11 @@ Stock: 0
 Categoria: cerveza
 Descripcion: 
 *************************************************************
+Fecha de creacion/modificacion del producto: 29/11/2020 05:34:37
+Producto: dfsdfsdsf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************
