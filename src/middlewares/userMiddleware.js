@@ -1,4 +1,4 @@
-// Validacion de campos en la creacion de usuarios
+// Validación de campos en la creación de usuarios
 
 const {check, checkSchema} = require("express-validator");
 const fs = require('fs');

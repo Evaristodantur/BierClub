@@ -19,7 +19,7 @@ Precio: ${req.body.precio}
 Descuento: ${req.body.descuento}
 Stock: ${req.body.stock}
 Categoria: ${req.body.categoria}
-Descripcion: ${req.body.descripcion}
+Descripción: ${req.body.descripcion}
 *************************************************************
 `)            
     }
@@ -27,13 +27,13 @@ Descripcion: ${req.body.descripcion}
     
     //El producto fue creado exitosamente
     fs.appendFileSync('./logs/logProducts.txt',
-`Fecha de creacion/modificacion del producto: ${new Date().toLocaleString()}
+`Fecha de creacion/modificación del producto: ${new Date().toLocaleString()}
 Producto: ${req.body.nombre}
 Precio: ${req.body.precio}
 Descuento: ${req.body.descuento}
 Stock: ${req.body.stock}
 Categoria: ${req.body.categoria}
-Descripcion: ${req.body.descripcion}
+Descripción: ${req.body.descripcion}
 *************************************************************
 `);
 

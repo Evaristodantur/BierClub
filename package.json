@@ -2,7 +2,7 @@
   "name": "bierclub",
   "version": "0.0.0",
   "private": true,
-  "description": "BierClub es un E-Commerce de cervezas artesanales. Este proyecto se basa en muchos tipos de cervezas al rededor de todo el país.",
+  "description": "BierClub es un E-Commerce de cervezas artesanales. Este proyecto se basa en muchos tipos de cervezas alrededor de todo el país.",
   "scripts": {
     "start": "nodemon ./bin/www"
   },

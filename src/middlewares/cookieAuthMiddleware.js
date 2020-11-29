@@ -1,4 +1,4 @@
-// Verificacion de usuario "recordarme", para mantenerse logueado
+// Verificación de usuario "recordarme", para mantenerse logueado
 
 const fs = require("fs");
 const path = require("path");

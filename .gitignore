@@ -2,5 +2,5 @@
 # Código gitignore para evitar procesar los directorios de las dependencias
 node_modules/*
 .env
-# Archivos generados automaticamente
+# Archivos generados automáticamente
 .DS_Store

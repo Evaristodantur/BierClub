@@ -1,4 +1,4 @@
-// Log de Usuarios al registrase
+// Log de Usuarios al registrarse
 const fs = require('fs');
 let { validationResult } = require('express-validator');
 
