@@ -98,6 +98,7 @@
             <div class="fileImagenes">
               <input type="file" name="imagen" multiple="multiple">
               <p class="errorDeCarga">*Se permite subir hasta 4 imágenes*</p>
+              <p class="errorDeCarga">*Es recomendable subir imagenes cuadradas (ej: 300x300)*</p>
               <% if (typeof errors != 'undefined') { %>
                 <% for(let i=0; i < errors.length; i++)  { %>
                   <% if (errors[i].param == "imagen") {  %>

@@ -58,31 +58,5 @@
         "imagen": [
             "producto-5.jpg"
         ]
-    },
-    {
-        "id": 6,
-        "nombre": "dsfsdf",
-        "precio": 0,
-        "descuento": 0,
-        "stock": 0,
-        "categoria": "cerveza",
-        "descripcion": "",
-        "imagen": [
-            "producto-1606628163040.jpg"
-        ]
-    },
-    {
-        "id": 7,
-        "nombre": "fdsfdsdfs",
-        "precio": 0,
-        "descuento": 0,
-        "stock": 0,
-        "categoria": "cerveza",
-        "descripcion": "",
-        "imagen": [
-            "producto-1606628689504.jpg",
-            "producto-1606628689520.jpg",
-            "producto-1606628689528.jpg"
-        ]
     }
 ]
