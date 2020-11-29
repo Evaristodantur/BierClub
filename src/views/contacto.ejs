@@ -28,11 +28,14 @@
 				<% if (typeof success != "undefined") {%>
 					<p class="success-message"><%= success %></p>
 				<%} %>
-				<input class="input-registro" type="text" name="nombre" placeholder="Nombre"> 
-				<%if(typeof errors != "undefined"){%>
-					<% for(let i = 0 ; i < errors.length ; i++){ %>
-						<%if(errors[i].param == "nombre"){%>
-							<p class="error-total">* <%= errors[i].msg %></p>
+				<input class="input-registro" type="text" name="nombre" placeholder="Nombre"
+				<% if(typeof errors.errors != "undefined"){%>
+					value="<%= errors.reqNombre %>"
+				<%}%>> 
+				<%if(typeof errors.errors != "undefined"){%>
+					<% for(let i = 0 ; i < errors.errors.length ; i++){ %>
+						<%if(errors.errors[i].param == "nombre"){%>
+							<p class="error-total">* <%= errors.errors[i].msg %></p>
 							<% break; %>
 						<%}%>
 					<%}%>
@@ -41,11 +44,14 @@
 	
 			<!-- EMAIL -->
 			<div class="campo-input">
-				<input class="input-registro" type="email" name="email" placeholder="Email">
-				<%if(typeof errors != "undefined"){%>
-					<%for(let i = 0 ; i < errors.length ; i++){%>
-						<%if(errors[i].param == "email"){%>
-							<p class="error-total">* <%= errors[i].msg %></p>
+				<input class="input-registro" type="email" name="email" placeholder="Email"
+				<% if(typeof errors.errors != "undefined"){%>
+					value="<%= errors.reqEmail %>"
+				<%}%>> 
+				<%if(typeof errors.errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
+						<%if(errors.errors[i].param == "email"){%>
+							<p class="error-total">* <%= errors.errors[i].msg %></p>
 							<% break; %>
 						<%}%>
 					<%}%>
@@ -54,22 +60,25 @@
 
 			<!-- Asunto -->
 			<div class="campo-input">
-				<input class="input-registro" type="text" name="subject" placeholder="Asunto del mensaje">
-				<%if(typeof errors != "undefined"){%>
-					<%for(let i = 0 ; i < errors.length ; i++){%>
-						<%if(errors[i].param == "subject"){%>
-							<p class="error-total">* <%= errors[i].msg %></p>
+				<input class="input-registro" type="text" name="subject" placeholder="Asunto del mensaje"
+				<% if(typeof errors.errors != "undefined"){%>
+					value="<%= errors.reqSubject %>"
+				<%}%>> 
+				<%if(typeof errors.errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
+						<%if(errors.errors[i].param == "subject"){%>
+							<p class="error-total">* <%= errors.errors[i].msg %></p>
 							<% break; %>
 						<%}%>
 					<%}%>
 				<%}%>
 			</div>		
 			<div class="campo-input">
-				<textarea name="message" placeholder="Escribe tu mensaje"></textarea>
-				<%if(typeof errors != "undefined"){%>
-					<%for(let i = 0 ; i < errors.length ; i++){%>
-						<%if(errors[i].param == "message"){%>
-							<p class="error-total">* <%= errors[i].msg %></p>
+				<textarea name="message" placeholder="Escribe tu mensaje"><% if(typeof errors.errors != "undefined"){%><%= errors.reqMessage %><%}%></textarea>
+				<%if(typeof errors.errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
+						<%if(errors.errors[i].param == "message"){%>
+							<p class="error-total">* <%= errors.errors[i].msg %></p>
 							<% break; %>
 						<%}%>
 					<%}%>

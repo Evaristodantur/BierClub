@@ -74,8 +74,12 @@ let mainController = {
     contactoSend : (req, res, next) => {
     // Enviar errores express-validator
     let errores = validationResult(req);
+    errores.reqNombre = req.body.nombre;
+    errores.reqEmail = req.body.email;
+    errores.reqSubject = req.body.subject;
+    errores.reqMessage = req.body.message;
     if (!errores.isEmpty()){
-        return res.render("contacto", {errors : errores.errors})
+        return res.render("contacto", {errors : errores})
     }
 
     let nodemailerAssets = require("../assets/nodemailerAssets");
