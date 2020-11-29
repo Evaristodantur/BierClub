@@ -26,12 +26,14 @@ let verifyAccountMiddleware = require("../middlewares/verifyAccountMiddleware");
 /* GET     /users/usersAdmin            page. */
 router.get('/usersAdmin',
                 guestMiddleware,
+                verifyAccountMiddleware,
                 authAdminMiddleware,
                                  usersController.usersAdminList);
 
 /* GET     /users/usersAdmin             page. */
 router.get('/usersAdmin/:id',
                 guestMiddleware,
+                verifyAccountMiddleware,
                 authAdminMiddleware,
                                  usersController.usersAdminEditView);
 
@@ -74,8 +76,8 @@ router.post('/login',
 /* GET     /users/perfil/:id             page. */
 router.get('/perfil/:id', 
                 guestMiddleware, 
-                perfilOrAdminMiddleware,
                 verifyAccountMiddleware,
+                perfilOrAdminMiddleware,
                                 usersController.perfilEdit);
 
 /* POST     /users/perfil/:id            page. */

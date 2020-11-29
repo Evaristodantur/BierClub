@@ -12,6 +12,7 @@ let productMiddleware = require('../middlewares/productosMiddleware');          
 let logProductsMiddleware = require('../middlewares/logProductsMiddleware');    //Log de product Middleware
 let guestMiddleware = require('../middlewares/guestMiddleware');                //Middleware de invitado, sin usuario
 let authAdminMiddleware = require('../middlewares/authAdminMiddleware');        //Admin Middleware
+let verifyAccountMiddleware = require("../middlewares/verifyAccountMiddleware");//Middleware de verified
 
 
 
@@ -38,6 +39,7 @@ router.get('/productCart', productsController.productCart);
 /* GET     /products/productAdmin                                       page. */
 router.get('/productAdmin', 
                     guestMiddleware,
+                    verifyAccountMiddleware,
                     authAdminMiddleware, 
                                         productsController.productAdmin);
 
@@ -46,6 +48,7 @@ router.get('/productAdmin',
 /* GET     /products/productAdd - Pagina Visual de create               page. */
 router.get('/productAdd',  
                     guestMiddleware,
+                    verifyAccountMiddleware,
                     authAdminMiddleware, 
                                         productsController.createProduct);
 
@@ -61,6 +64,7 @@ router.post('/productAdd',
 /* GET     /products/productEdit/:id - Pagina Visual de productEdit     page. */
 router.get('/productEdit/:id',
                     guestMiddleware,
+                    verifyAccountMiddleware,
                     authAdminMiddleware, 
                                         productsController.editProduct);
 
