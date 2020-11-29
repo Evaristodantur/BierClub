@@ -21,7 +21,25 @@ div.verify-account{
     width: 550px;
     margin-bottom: 50px;
 }
-.verify-account button{
+
+.verify-account .button-redirect-home{
+        /* Display & Box Model */
+        padding: 10px;
+        display: block;
+        height: 40px;
+        width: 12%;
+        
+    
+        /* Otras */
+        cursor: pointer;
+        background-color: #DAA520;
+        border: 0px solid black;
+        font-size: large;
+        border-radius: 5px;
+        color: white;
+}
+
+.verify-account .verify-button{
     /* Display & Box Model */
     margin-block-start: 1em;
     margin-block-end: 1em;
