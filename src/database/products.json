@@ -1,1 +1,62 @@
-[{"id":1,"nombre":"ippa Sippa (TDH Imperial Aussie IPA)","precio":90,"descuento":10,"stock":645645,"categoria":"cerveza","descripcion":"Es la descripcion de prueba 1","imagen":["producto-1.jpg"]},{"id":2,"nombre":"Saison de Triomphe - Hoppy Saison","precio":115,"descuento":0,"stock":0,"categoria":"Lupuladas","descripcion":"Es la descripcion de prueba 2","imagen":["producto-2.jpg"]},{"id":3,"nombre":"William Wallace Scottish","precio":82,"descuento":5,"stock":883,"categoria":"No Lupuladas","descripcion":"Es la descripcion de prueba 3","imagen":["producto-3.jpg"]},{"id":4,"nombre":"Mumbai 1947","precio":99,"descuento":20,"stock":10,"categoria":"No Lupuladas","descripcion":"Es la descripcion de prueba 4","imagen":["producto-4.jpg"]},{"id":5,"nombre":"German Pils","precio":125,"descuento":10,"stock":45,"categoria":"cerveza","descripcion":"Es la descripcion de prueba 5","imagen":["producto-5.jpg"]},{"id":6,"nombre":"fsdfds","precio":0,"descuento":0,"stock":0,"categoria":"cerveza","descripcion":"","imagen":["producto-1606611837445.png"]},{"id":7,"nombre":"dfssdf","precio":0,"descuento":0,"stock":0,"categoria":"cerveza","descripcion":"","imagen":["producto-1606611856726.png"]},{"id":8,"nombre":"werrew","precio":0,"descuento":0,"stock":0,"categoria":"cerveza","descripcion":"","imagen":["producto-1606611904763.png"]},{"id":9,"nombre":"fdsdfsdfs","precio":0,"descuento":0,"stock":0,"categoria":"cerveza","descripcion":"","imagen":["product-image-not-available.jpg"]},{"id":10,"nombre":"dsffdssdf","precio":0,"descuento":0,"stock":0,"categoria":"cerveza","descripcion":"","imagen":["product-image-not-available.jpg"]},{"id":11,"nombre":"gfdgdf","precio":0,"descuento":0,"stock":0,"categoria":"cerveza","descripcion":"","imagen":["producto-1606612023005.png"]},{"id":12,"nombre":"dsffdssfd","precio":0,"descuento":0,"stock":0,"categoria":"cerveza","descripcion":"","imagen":["producto-1606612149967.png"]},{"id":13,"nombre":"asddsaasd","precio":0,"descuento":0,"stock":0,"categoria":"cerveza","descripcion":"","imagen":["producto-1606612231885.png"]},{"id":14,"nombre":"dsfsdfsdf","precio":0,"descuento":0,"stock":0,"categoria":"cerveza","descripcion":"","imagen":["producto-1606612237576.jpg"]},{"id":15,"nombre":"fdsfds","precio":0,"descuento":0,"stock":0,"categoria":"cerveza","descripcion":"","imagen":["producto-1606612329053.jpg","producto-1606612329068.jpg"]},{"id":16,"nombre":"fsdfdsfds","precio":0,"descuento":0,"stock":0,"categoria":"cerveza","descripcion":"","imagen":["producto-1606612340127.png","producto-1606612340128.jpg","producto-1606612340146.jpg"]},{"id":17,"nombre":"sdffsd","precio":0,"descuento":0,"stock":0,"categoria":"cerveza","descripcion":"","imagen":["producto-1606612399502.jpg","producto-1606612399517.jpg","producto-1606612399525.jpg"]}]
+[
+    {
+        "id": 1,
+        "nombre": "ippa Sippa (TDH Imperial Aussie IPA)",
+        "precio": 90,
+        "descuento": 10,
+        "stock": 645645,
+        "categoria": "cerveza",
+        "descripcion": "Es la descripcion de prueba 1",
+        "imagen": [
+            "producto-1.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Saison de Triomphe - Hoppy Saison",
+        "precio": 115,
+        "descuento": 0,
+        "stock": 0,
+        "categoria": "Lupuladas",
+        "descripcion": "Es la descripcion de prueba 2",
+        "imagen": [
+            "producto-2.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "William Wallace Scottish",
+        "precio": 82,
+        "descuento": 5,
+        "stock": 883,
+        "categoria": "No Lupuladas",
+        "descripcion": "Es la descripcion de prueba 3",
+        "imagen": [
+            "producto-3.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "Mumbai 1947",
+        "precio": 99,
+        "descuento": 20,
+        "stock": 10,
+        "categoria": "No Lupuladas",
+        "descripcion": "Es la descripcion de prueba 4",
+        "imagen": [
+            "producto-4.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "German Pils",
+        "precio": 125,
+        "descuento": 10,
+        "stock": 45,
+        "categoria": "cerveza",
+        "descripcion": "Es la descripcion de prueba 5",
+        "imagen": [
+            "producto-5.jpg"
+        ]
+    }
+]
