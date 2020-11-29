@@ -2,6 +2,17 @@
 
 ## 📈 Sprint 4
 
+### 🗓️ 30/11/20
+  Terminado:
+  - Reenviar email si el usuario no verifico la cuenta
+  - Actualizar modificación de usuario con la verificación (email verify)
+  - Arreglar users/perfil incorrecto al tener un email que no esta verificado
+  - Acomodar agregado-modificación de imagen en productAdmin/products
+  - Acomodar agregado-modificación de imagen en home
+    
+  Para hacer hoy:
+  - Checkeo general para entrega de sprint 4
+
 ### 🗓️ 29/11/20
   Terminado:
   - Readme de usuarios (user comun y administrador)
