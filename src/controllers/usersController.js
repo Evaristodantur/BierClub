@@ -255,8 +255,37 @@ let usersController = {
 
         return res.render('users/verifyAccount', { usuario : usuarioAVerificar });
 
-      }
+      },
+      reenviarEmail: (req, res, next) =>{
+        let idUrl = req.params.id;
 
+        let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
+        let transporter = nodemailer.createTransport({
+          service: "gmail",
+          auth: {
+            user: process.env.email,
+            pass: process.env.password
+          }
+        });
+        const output = `
+        <h3>¡Gracias por registrarte en BierClub!:</h3> 
+        <p>Por favor haz click en <a href="http://localhost:3000/users/verifyAccount/${usuarioBuscado.verify[1]}">este</a> link para activar tu cuenta</p>
+        `;
+        let mailOptions = {
+          from: process.env.email, 
+          to: usuarioBuscado.email,
+          subject: "Verificacion de la cuenta de BierClub",
+          html: output
+        }
+        transporter.sendMail(mailOptions, function(err, data){
+          if(err){
+            console.log("ERROR");
+          }else{
+            console.log("Mensaje enviado!");
+          }
+        });
+        res.render('users/verifyAccount', { msgErrorReenviado : "El codigo de verificación ha sido reenviado a tu dirección de correo electronico." })
+      }
 }
 
 module.exports = usersController;

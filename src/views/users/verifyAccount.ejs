@@ -26,11 +26,19 @@
             <img src="/images/home/verify-denied.png" alt="">
         <% } %>
         
-        <% if (typeof msgErrorVerify != 'undefined') { %>
-              <h1><%= msgErrorVerify %></h1>
+        <% if (typeof usuarioSinVerificar != 'undefined') { %>
+              <h1><%= usuarioSinVerificar.msgErrorVerify %></h1>
+              <form action="/users/verifyAccount/<%= usuarioSinVerificar.id %>" method="POST">
+                <p>Haz click <button type="submit">aquí</button> para reenviar el email</p>
+              </form>
               <img src="/images/home/verify-denied.png" alt="">
         <% } %>
 
+        <% if (typeof msgErrorReenviado != 'undefined') { %>
+          <h3><%= msgErrorReenviado %></h3>
+          <img src="/images/home/verify-denied.png" alt="">
+    <% } %>
+        
         <% if (typeof msgErrorUsuarioInexistente != 'undefined') { %>
           <h1><%= msgErrorUsuarioInexistente %></h1>
           <img src="/images/home/verify-denied.png" alt="">

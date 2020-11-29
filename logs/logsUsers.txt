@@ -360,3 +360,13 @@ Nombre: KIPPES
 Email: kippes.diego@gmail.com
 >>>>>>> 72b4dbea24dc572611f3ea59199c906bedc752ed
 *************************************************************
+Se registró un usuario el 2020-11-29 3:56:33
+El usuario registrado es:
+Nombre: evaristo@dantur.com
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-11-29 4:30:17
+El usuario registrado es:
+Nombre: evaristo@dantur.com
+Email: evaristo@dantur.com
+*************************************************************

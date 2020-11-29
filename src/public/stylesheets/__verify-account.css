@@ -13,6 +13,10 @@ div.verify-account{
     margin-block-end: 0em;
     text-align: center;
 }
+.verify-account h3{
+    text-align: center;
+    color: green;
+}
 .verify-account img{
     width: 550px;
     margin-bottom: 50px;
