@@ -4,6 +4,20 @@
 
 ### 🗓️ 28/11/20
   Terminado:
+  - Readme de usuarios (user comun y administrador)
+  - Register: Pedir verificación por email para activar cuenta
+  - Multer funcionando, se encontro error en el Middleware de products
+  - Imagen de user-verify con background en rgb 228
+  - Hasheo de verifyAccount
+    
+  Para hacer hoy:
+  - Reenviar email si el usuario no verifico la cuenta
+  - Actualizar modificación de usuario con la verificación (email verify)
+  - Arreglar users/perfil incorrecto al tener un email que no esta verificado
+  - Acomodar agregado-modificacion de imagen en productAdmin
+
+### 🗓️ 28/11/20
+  Terminado:
   - Contacto: Implementación de middleware de error
   - Log:
     - Mejorar para que esté más limpio
