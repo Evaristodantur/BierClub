@@ -55,7 +55,7 @@ router.post('/register',
 
 /* GET     /users/verifyAccount          page. */
 router.get('/verifyAccount/:id', usersController.verifyAccount);
-
+router.post("/verifyAccount/:id", usersController.reenviarEmail)
 
 /*********************************LOGIN***********************************************/
 
@@ -74,8 +74,8 @@ router.post('/login',
 /* GET     /users/perfil/:id             page. */
 router.get('/perfil/:id', 
                 guestMiddleware, 
-                verifyAccountMiddleware,
                 perfilOrAdminMiddleware,
+                verifyAccountMiddleware,
                                 usersController.perfilEdit);
 
 /* POST     /users/perfil/:id            page. */

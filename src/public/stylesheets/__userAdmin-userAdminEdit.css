@@ -18,7 +18,7 @@
 .container-users .usuarios-listaCompleta{
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .container-users .button-enteros{
     color: white;
