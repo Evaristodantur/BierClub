@@ -25,14 +25,14 @@ let verifyAccountMiddleware = require("../middlewares/verifyAccountMiddleware");
 
 /* GET     /users/usersAdmin            page. */
 router.get('/usersAdmin',
-/*                 guestMiddleware,
-                authAdminMiddleware, */
+                guestMiddleware,
+                authAdminMiddleware,
                                  usersController.usersAdminList);
 
 /* GET     /users/usersAdmin             page. */
 router.get('/usersAdmin/:id',
-/*                 guestMiddleware,
-                authAdminMiddleware, */
+                guestMiddleware,
+                authAdminMiddleware,
                                  usersController.usersAdminEditView);
 
 /* POST     /users/usersAdmin            page. */
@@ -90,8 +90,8 @@ router.get('/perfil/pedidos/:id', usersController.pedidos);
 
 /* DELETE     /users/perfil/:id          page. */
 router.delete('/perfil/eliminar/:id', 
-/*                 guestMiddleware, 
-                perfilOrAdminMiddleware, */
+                guestMiddleware, 
+                perfilOrAdminMiddleware,
                                 usersController.eliminar);
 
 
