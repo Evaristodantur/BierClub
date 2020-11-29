@@ -13,17 +13,17 @@
       <div class="verify-account">
         <% if (typeof msgError != 'undefined') { %>
             <h1><%= msgError %></h1>
-            <img src="/images/home/verify-denied.png" alt="">
+            <img src="/images/ilustrations/verify-denied.png" alt="">
         <% } %>
 
         <% if (typeof usuario != 'undefined') { %>
             <h1>Tu email: <%= usuario.email %> ha sido verificado</h1>
-            <img src="/images/home/verify.png" alt="">
+            <img src="/images/ilustrations/verify.png" alt="">
         <% } %>
 
         <% if (typeof msgErrorYaVerificado != 'undefined') { %>
             <h1><%= msgErrorYaVerificado %></h1>
-            <img src="/images/home/verify-denied.png" alt="">
+            <img src="/images/ilustrations/verify-denied.png" alt="">
         <% } %>
         
         <% if (typeof usuarioSinVerificar != 'undefined') { %>
@@ -31,17 +31,17 @@
               <form action="/users/verifyAccount/<%= usuarioSinVerificar.id %>" method="POST">
                 <p>Haz click <button type="submit">aquí</button> para reenviar el email</p>
               </form>
-              <img src="/images/home/verify-denied.png" alt="">
+              <img src="/images/ilustrations/verify-denied.png" alt="">
         <% } %>
 
         <% if (typeof msgErrorReenviado != 'undefined') { %>
           <h3><%= msgErrorReenviado %></h3>
-          <img src="/images/home/verify-denied.png" alt="">
+          <img src="/images/ilustrations/verify.png" alt="">
     <% } %>
         
         <% if (typeof msgErrorUsuarioInexistente != 'undefined') { %>
           <h1><%= msgErrorUsuarioInexistente %></h1>
-          <img src="/images/home/verify-denied.png" alt="">
+          <img src="/images/ilustrations/verify-denied.png" alt="">
         <% } %>
         
         <button onclick="window.location.href='/'"><i class="fas fa-chevron-left"></i> Volver al Home</button>
