@@ -1,4 +1,4 @@
-// Routa de pagina general "bierclub.com/"
+// Routa de página general "bierclub.com/"
 
 var express = require('express');
 var router = express.Router();

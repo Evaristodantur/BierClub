@@ -133,3 +133,90 @@ Stock: 0
 Categoria: cerveza
 Descripcion: 
 *************************************************************
+Fecha de creacion/modificación del producto: 29/11/2020 18:39:13
+Producto: ippa Sippa (TDH Imperial Aussie IPA)
+Precio: 90
+Descuento: 10
+Stock: 645645
+Categoria: cerveza
+Descripción: Amarillo pálido, algo turbia y muy refrescante! Este híbrido entre una West Coast y una East Coast IPA tiene lo mejor de los dos mundos: de cuerpo medio, con aromas y sabores cítricos tropicales (ananá 🍍, maracuyá y mandarina 🍊).
+*************************************************************
+Fecha de creacion/modificación del producto: 29/11/2020 18:41:53
+Producto: Saison de Triomphe - Hoppy Saison
+Precio: 115
+Descuento: 0
+Stock: 0
+Categoria: lupulada
+Descripción: Fermentada con un blend de 4 levaduras rurales, con maltas de cebada artesanales de La Plata y granos sin maltear de trigo y avena que le dan esa rusticidad típica del estilo, esta saison fue ademas lupulada con Enigma 🇦🇺Australiano! 
+*************************************************************
+Hubo un intento de subir/modificar a las 29/11/2020 18:57:16
+El producto es:
+Producto: William Wallace Scottish
+Precio: 82
+Descuento: 5
+Stock: 883
+Categoria: no lupulada
+Descripción: Una verdadera IPA de la costa oeste, inundación de lupulina americana en tus papilas gustativas con intensos sabores y aromas resinosos y cítricos (pino húmedo, cáscara de naranja 🍊, lima/limón 🍋y pomelo).
+*************************************************************
+Hubo un intento de subir/modificar a las 29/11/2020 18:58:49
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 29/11/2020 18:59:22
+Producto: William Wallace Scottish
+Precio: 82
+Descuento: 5
+Stock: 663
+Categoria: no lupulada
+Descripción: Una verdadera IPA de la costa oeste, inundación de lupulina americana en tus papilas gustativas con intensos sabores y aromas resinosos y cítricos (pino húmedo, cáscara de naranja 🍊, lima/limón 🍋y pomelo).
+*************************************************************
+Fecha de creacion/modificación del producto: 29/11/2020 19:00:51
+Producto: Mumbai 1947
+Precio: 99
+Descuento: 20
+Stock: 10
+Categoria: vino
+Descripción: Una birra purasangre, muscular hasta explotar con ridículas cantidades de Galaxy y Cashmere.
+De color amarillo pálido, turbia, jugosa, espesa e hiper lupulada, con intensas notas a maracuyá, mango, lima-limón, durazno y cascara de sandia #neverpony.
+*************************************************************
+Hubo un intento de subir/modificar a las 29/11/2020 19:02:00
+El producto es:
+Producto: German Pills
+Precio: 125
+Descuento: 5
+Stock: 45
+Categoria: lupulada
+Descripción: Esta IIPA esta cargada a tope con cantidades copiosas de los lupulos Vic Secret y Galaxy.
+De color naranja intenso, turbia, jugosa, estimula tus papilas gustativas con intensas notas a naranja, durazno, mango, ananá. Sabores Cítricos/Tropicales brillan sobre la base maltosa y con un amargor que te limpia el paladar y te deja pidiendo mas.
+*************************************************************
+Fecha de creacion/modificación del producto: 29/11/2020 19:02:44
+Producto: German Pills
+Precio: 125
+Descuento: 10
+Stock: 45
+Categoria: lupulada
+Descripción: Esta IIPA esta cargada a tope con cantidades copiosas de los lupulos Vic Secret y Galaxy.
+De color naranja intenso, turbia, jugosa, estimula tus papilas gustativas con intensas notas a naranja, durazno, mango, ananá. Sabores Cítricos/Tropicales brillan sobre la base maltosa.
+*************************************************************
+Fecha de creacion/modificación del producto: 29/11/2020 19:04:21
+Producto: Rippa Sippa (TDH Imperial Aussie IPA)
+Precio: 150
+Descuento: 0
+Stock: 0
+Categoria: vino
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 29/11/2020 19:05:52
+Producto: Prickly Dingo - Catharina Sour con Cactus
+Precio: 110
+Descuento: 50
+Stock: 2
+Categoria: no lupulada
+Descripción: De color naranja intenso, cual noctiluca rabiosa, la prickly dingo es una catharina sour con cactus.
+Una cerveza acida, balanceada por el dulzor del cactus que le da sabores y aromas a chicle de tutti-frutti, sandia y kiwi.
+*************************************************************
