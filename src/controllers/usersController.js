@@ -3,7 +3,6 @@ const fs = require('fs');
 const bcrypt = require('bcryptjs');
 const {validationResult} = require("express-validator");
 const nodemailer = require("nodemailer");
-const { verify } = require('crypto');
 require("dotenv").config();
 
 //Agregado database JSON
@@ -42,7 +41,8 @@ let usersController = {
             nombre : req.body.nombre,
             email : req.body.email,
             contrasenia : req.body.contrasenia,
-            admin : admin
+            admin : admin,
+            verify : usuario.verify
           }
         }
         return usuario;
@@ -184,7 +184,8 @@ let usersController = {
             nombre : req.body.nombre,
             email : req.body.email,
             contrasenia : req.body.contrasenia,
-            admin
+            admin,
+            verify
           }
         }
         return usuario;

@@ -278,3 +278,8 @@ El usuario registrado es:
 Nombre: Evaristo Dantur
 Email: evaristo@dantur.com
 *************************************************************
+Se registró un usuario el 2020-11-28 6:06:25
+El usuario registrado es:
+Nombre: Nacho perez
+Email: Na_cho23@hotmail.com
+*************************************************************

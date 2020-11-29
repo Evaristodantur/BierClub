@@ -21,14 +21,14 @@ let contactMiddleware = require("../middlewares/contactMiddleware");            
 
 /* GET     /users/usersAdmin     page. */
 router.get('/usersAdmin',
-                guestMiddleware,
-                authAdminMiddleware,
+/*                 guestMiddleware,
+                authAdminMiddleware, */
                                  usersController.usersAdminList);
 
 /* GET     /users/usersAdmin     page. */
 router.get('/usersAdmin/:id',
-                guestMiddleware,
-                authAdminMiddleware,
+/*                 guestMiddleware,
+                authAdminMiddleware, */
                                  usersController.usersAdminEditView);
 
 /* GET     /users/usersAdmin     page. */
@@ -82,8 +82,8 @@ router.post('/perfil/:id',
 
 /* GET     /users/perfil/:id      page. */
 router.delete('/perfil/eliminar/:id', 
-                guestMiddleware, 
-                perfilOrAdminMiddleware,
+/*                 guestMiddleware, 
+                perfilOrAdminMiddleware, */
                                 usersController.eliminar);
 
 /* GET     /users/perfil/pedidos/:id      page. */
