@@ -2,7 +2,7 @@
 
 ## 📈 Sprint 4
 
-### 🗓️ 28/11/20
+### 🗓️ 29/11/20
   Terminado:
   - Readme de usuarios (user comun y administrador)
   - Register: Pedir verificación por email para activar cuenta
