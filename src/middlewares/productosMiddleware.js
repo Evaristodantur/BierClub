@@ -1,6 +1,5 @@
 // Verificacion de campos en los productos
 
-let path = require('path');
 const { check, checkSchema } = require('express-validator'); //Express-validator
 
 let productMiddleware =  [
@@ -21,13 +20,6 @@ let productMiddleware =  [
                                 options: (value, { req, errorMessage, files, paths }) => {
                                         if(req.imagenGuardada == undefined) {
                                                 return true;
-                                        }
-
-                                        let extensionesValidas = ['.png', '.jpeg', 'jpg']
-                                        for(let i=0; i < req.imagenGuardada.length; i++) {
-                                                if ( !extensionesValidas.includes(path.extname(req.imagenGuardada[i].originalname))) {
-                                                        return false;
-                                                }
                                         }
 
                                         if(typeof req.files[0] == "undefined") {

@@ -31,11 +31,15 @@ var storage = multer.diskStorage({
         }
 
         //Recorro y verifico si alguna de las imagenes no es .png, jpeg o .jpg
-        let extensionesValidas = ['.png', '.jpeg', 'jpg']
+        
         for(let i=0; i < req.imagenGuardada.length; i++) {
-          if ( !extensionesValidas.includes(path.extname(req.imagenGuardada[i].originalname))) {
+
+          if(path.extname(req.imagenGuardada[i].originalname) != '.png' &&
+          path.extname(req.imagenGuardada[i].originalname) != '.jpeg' && 
+          path.extname(req.imagenGuardada[i].originalname) != '.jpg' ) {
             return cb(null, false);
-          }
+          } 
+
         }
 
         cb(null, true);

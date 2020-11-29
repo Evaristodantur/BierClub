@@ -348,3 +348,8 @@ El usuario registrado es:
 Nombre: User No Verificado
 Email: user-no-verificado@user.com
 *************************************************************
+Se registró un usuario el 28/11/2020 21:54:52
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
