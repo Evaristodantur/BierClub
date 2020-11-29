@@ -118,7 +118,7 @@ body .products-catalogo{
    ========================================================================== */
 .products-catalogo .seccion-filtro-muestra-productos .columna-productos article.producto {
     /* Display & Box Model */
-    width: 19%;
+    width: 310px;
     margin-top: 5px;
     margin-right: 10px;
     display: flex;
@@ -132,11 +132,13 @@ body .products-catalogo{
     /* Otras */
     border: 1px solid rgb(184, 184, 184);
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
     /* Display & Box Model */
     width: 100%;
+    height: 310px;
 
     /* Otras */
     border-top-left-radius: 8px;
@@ -202,6 +204,7 @@ body .products-catalogo{
 .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.modificar-producto {
     /* Posicionamiento */
     position: absolute;
+    z-index: 9;
 }
 
 /* ==========================================================================
@@ -255,29 +258,85 @@ body .products-catalogo{
 
 
 
+
 /* ==========================================================================
-   RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
+   RESOLUCION: 1700 hacia abajo
    ========================================================================== */
-@media (max-width: 950px) {
+   @media (max-width: 1700px) {
     /*BUTTON - AÑADIR AL CARRITO*/
-    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.btn-agregarAlCarrito {
-        opacity: 1;
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos article.producto {
+        /* Display & Box Model */
+        width: 19%;
+    }
+    
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 270px;
     }
 }
 
 
 
 
+/* ==========================================================================
+   RESOLUCION: 1600 hacia abajo
+   ========================================================================== */
+   @media (max-width: 1600px) {
+    /*BUTTON - AÑADIR AL CARRITO*/
+    
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 260px;
+    }
+}
+
+
+
 
 /* ==========================================================================
-   RESOLUCION: 1200 a 1450
+   RESOLUCION: 1500 hacia abajo
    ========================================================================== */
-@media (max-width: 1450px) {
+   @media (max-width: 1500px) {
+    /*BUTTON - AÑADIR AL CARRITO*/
+    
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 240px;
+    }
+}
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 1450 hacia abajo
+   ========================================================================== */
+   @media (max-width: 1450px) {
     /* ARTICLE - PRODUCTO */
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos article.producto {
         width: 23%;
     }
 
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 280px;
+    }
+
+}
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 1400 hacia abajo
+   ========================================================================== */
+   @media (max-width: 1400px) {
+    /*BUTTON - AÑADIR AL CARRITO*/
+    
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 270px;
+    }
 }
 
 
@@ -285,12 +344,32 @@ body .products-catalogo{
 
 
 /* ==========================================================================
-   RESOLUCION: 1024 a 1200
+   RESOLUCION: 1300 hacia abajo
    ========================================================================== */
-@media (max-width: 1200px) {
+   @media (max-width: 1300px) {
+    /*BUTTON - AÑADIR AL CARRITO*/
+    
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 255px;
+    }
+}
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 1200 hacia abajo
+   ========================================================================== */
+   @media (max-width: 1200px) {
     /* SECCION PRODUCTOS*/
     .products-catalogo .seccion-filtro-muestra-productos section.columna-productos {
         margin-left: 3%;
+    }
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 230px;
     }
 
     /* BUTTON, ELIMINAR - MODIFICAR */
@@ -308,9 +387,25 @@ body .products-catalogo{
 
 
 /* ==========================================================================
-   RESOLUCION: 768 a 1024
+   RESOLUCION: 1100 hacia abajo
    ========================================================================== */
-@media (max-width: 1024px) {
+   @media (max-width: 1100px) {
+    /*BUTTON - AÑADIR AL CARRITO*/
+    
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 210px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 1024 hacia abajo
+   ========================================================================== */
+   @media (max-width: 1024px) {
     /* SELECTOR DE FILTRO */
     .products-catalogo .seccion-filtro-muestra-productos .columna-filtro .filtro select.select-ordenar {
         font-size: 12px;
@@ -330,6 +425,11 @@ body .products-catalogo{
     /* ARTICLE - PRODUCTO */
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos article.producto {
         width: 31%;
+    }
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 260px;
     }
 
     /* BUTTON, ELIMINAR - MODIFICAR */
@@ -363,7 +463,39 @@ body .products-catalogo{
 
 
 /* ==========================================================================
-   RESOLUCION: 480 a 768
+   RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
+   ========================================================================== */
+   @media (max-width: 950px) {
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 260px;
+    }
+
+    /*BUTTON - AÑADIR AL CARRITO*/
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.btn-agregarAlCarrito {
+        opacity: 1;
+    }
+}
+
+
+/* ==========================================================================
+   RESOLUCION: 850 hacia abajo - HOVER, ANIMACIONES
+   ========================================================================== */
+   @media (max-width: 850px) {
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 215px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 768 hacia abajo
    ========================================================================== */
 @media (max-width: 768px) {
     /* BODY */
@@ -412,6 +544,12 @@ body .products-catalogo{
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos article.producto {
         width: 45%;
     }
+    
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 320px;
+    }
+
 
     /* BUTTON, ELIMINAR - MODIFICAR */
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto {
@@ -428,12 +566,47 @@ body .products-catalogo{
 
 
 /* ==========================================================================
+   RESOLUCION: 650 hacia abajo - HOVER, ANIMACIONES
+   ========================================================================== */
+   @media (max-width: 650px) {
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 270px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 550 hacia abajo - HOVER, ANIMACIONES
+   ========================================================================== */
+   @media (max-width: 550px) {
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 225px;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
    RESOLUCION: 480 hacia abajo
    ========================================================================== */
 @media (max-width: 480px) {
     /* ARTICLE - PRODUCTO */
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos article.producto {
         width: 95%;
+    }
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 415px;
     }
 
     /* BUTTON, ELIMINAR - MODIFICAR */
@@ -444,4 +617,52 @@ body .products-catalogo{
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
         margin-top: 200px;
     }
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 400 hacia abajo
+   ========================================================================== */
+   @media (max-width: 400px) {
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 345px;
+    }
+
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 350 hacia abajo
+   ========================================================================== */
+   @media (max-width: 350px) {
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 300px;
+    }
+
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 300 hacia abajo
+   ========================================================================== */
+   @media (max-width: 300px) {
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
+        /* Display & Box Model */
+        height: 250px;
+    }
+
 }

@@ -101,3 +101,35 @@ Stock: 0
 Categoria: cerveza
 Descripcion: 
 *************************************************************
+Fecha de creacion/modificacion del producto: 29/11/2020 02:36:03
+Producto: dsfsdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************
+Fecha de creacion/modificacion del producto: 29/11/2020 02:36:12
+Producto: dasdsadsa
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************
+Fecha de creacion/modificacion del producto: 29/11/2020 02:44:49
+Producto: fdsfdsdfs
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************
+Fecha de creacion/modificacion del producto: 29/11/2020 05:34:37
+Producto: dfsdfsdsf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************
