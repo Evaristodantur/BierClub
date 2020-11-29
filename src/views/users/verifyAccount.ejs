@@ -29,7 +29,19 @@
         <% if (typeof usuarioSinVerificar != 'undefined') { %>
               <h1><%= usuarioSinVerificar.msgErrorVerify %></h1>
               <form action="/users/verifyAccount/<%= usuarioSinVerificar.id %>" method="POST">
-                <p>Haz click <button type="submit">aquí</button> para reenviar el email</p>
+                <div class="verifyButton">
+                  <div>
+                    <p>Haz click </p>
+                  </div>
+
+                  <div>
+                    <button type="submit">aquí</button>
+                  </div>
+
+                  <div>
+                    <p> para reenviar el email</p>
+                  </div>
+                </div>
               </form>
               <img src="/images/ilustrations/verify-denied.png" alt="">
         <% } %>

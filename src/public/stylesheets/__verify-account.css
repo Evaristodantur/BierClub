@@ -22,20 +22,24 @@ div.verify-account{
     margin-bottom: 50px;
 }
 .verify-account button{
-        /* Display & Box Model */
-        padding: 10px;
-        display: block;
-        height: 40px;
-        width: 12%;
+    /* Display & Box Model */
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
         
     
-        /* Otras */
-        cursor: pointer;
-        background-color: #DAA520;
-        border: 0px solid black;
-        font-size: large;
-        border-radius: 5px;
-        color: white;
+    /* Otras */
+    cursor: pointer;
+    background-color: #DAA520;
+    border: 0px solid black;
+    font-size: large;
+    border-radius: 5px;
+    color: white;
+}
+.verify-account .verifyButton{
+    display:flex;
+    flex-direction: 
 }
 .verify-account .fa-chevron-left{
     font-size: medium;
@@ -44,12 +48,6 @@ div.verify-account{
 .verify-account button:hover .fa-chevron-left{
     padding-right: 4px;
 } 
-@media (max-width: 1600px){
-    .verify-account button{
-        /* Display & Box Model */
-        width: 21%;
-    }
-}
 
 
    @media (max-width: 949px){
