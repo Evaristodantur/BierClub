@@ -6,12 +6,12 @@
   Terminado:
   - Contacto: Implementación de middleware de error
   - Log:
-    - Mejorar para que esté mas limpio
+    - Mejorar para que esté más limpio
     - Hacer log de errores en register y en products
     
   Para hacer hoy:
   - Readme de usuarios (user comun y administrador)
-  - Register: Pedir verificacion por email para activar cuenta
+  - Register: Pedir verificación por email para activar cuenta
 
 ### 🗓️ 27/11/20
   Terminado:
@@ -23,16 +23,16 @@
   Para hacer hoy:
   - Contacto: Implementación de middleware de error
   - Log:
-    - Mejorar para que esté mas limpio
+    - Mejorar para que esté más limpio
     - Hacer log de errores
 
 ### 🗓️ 26/11/20
   Terminado:
   - Contacto HTML y CSS, responsive
-  - usersAdmin: Implementación del metodo Delete
+  - usersAdmin: Implementación del método Delete
   - productAdmin:
-    - Implementación del metodo Delete
-    - Arreglo del boton "eliminar" (CSS)
+    - Implementación del método Delete
+    - Arreglo del botón "eliminar" (CSS)
     
   Para hacer hoy:
   - Contacto - nodemailer:
@@ -44,25 +44,25 @@
   Terminado:
   - Problemas solucionados en Multer
   - Cambio del nombre del logo
-  - Productos: Ahora todos los numeros con parseInt
+  - Productos: Ahora todos los números con parseInt
   - Modificar usuarios:
     - Contraseña se hasheaba 2 veces (solucionado)
     - ID del usuario se pasaba como String (Ahora como number)
     - Eliminar usuarios problema del OnClick solucionado
     
   Para hacer hoy:
-  - Chequeo general del sitio para presentacion del Sprint y agregar tareas necesarias en Trello
+  - Chequeo general del sitio para presentación del Sprint y agregar tareas necesarias en Trello
 
 ### 🗓️ 24/11/20
   Terminado:
-  - Perfil: Boton "no" en ¿Seguro que desea eliminar este usuario? funcional (js)
+  - Perfil: Botón "no" en ¿Seguro que desea eliminar este usuario? funcional (js)
   - usersAdmin:
     - Cortar palabra (contraseña) si es muy larga
-    - Invertir flex, para que muestre los usuarios mas nuevos primero
+    - Invertir flex, para que muestre los usuarios más nuevos primero
     - ¿Seguro que desea eliminar este usuario? Agregar funcionalidad
     
   Para hacer hoy:
-  - Chequeo general del sitio para presentacion del Sprint y agregar tareas necesarias en Trello
+  - Chequeo general del sitio para presentación del Sprint y agregar tareas necesarias en Trello
   
 ### 🗓️ 23/11/20
   Terminado:
@@ -70,7 +70,7 @@
   - Home, border on click email y texto wrap en los productos
     
   Para hacer hoy:
-  - Chequeo general del sitio para presentacion del Sprint y agregar tareas necesarias en Trello
+  - Chequeo general del sitio para presentación del Sprint y agregar tareas necesarias en Trello
 
 ### 🗓️ 22/11/20
 
@@ -87,7 +87,7 @@
 
   Terminado:
   - home.css cambiado a index.css e implementado en styles.css
-  - Session y Cookies funcionales (funcionalidad de recordame en login implementada)
+  - Session y Cookies funcionales (funcionalidad de recordarme en login implementada)
   - Middlewares guest y auth creados
   - Permisos de administrador (userAdmin y productAdmin funcionales)
   - Perfil:
@@ -108,25 +108,25 @@
 
   Para hacer hoy:
   - Cambiar home.css a index.css
-  - Implementar Session (creacion de middlewares y uso en login)
-  - Implementar Cookies (creacion de middlewares y uso en login)
+  - Implementar Session (creación de middlewares y uso en login)
+  - Implementar Cookies (creación de middlewares y uso en login)
   - Crear middlewares guest y auth
  
 ### 🗓️ 19/11/20
   
   Terminado:
   - Errores en ProductAdd responsive
-  - Arreglar CSS del Login y Register (titulo)
+  - Arreglar CSS del Login y Register (título)
   - logMiddleware
   - Agregar imagenes multiples con Multer
-  - productDetail dinamico con las nuevas imagenes
+  - productDetail dinámico con las nuevas imagenes
   - Login y Register
     - Letra achicada en los errores
     - Footer alejado
-    - Titulo alejado del nav
+    - Título alejado del nav
   
   Para hacer hoy:
-  - Chequeo general de la pagina para buscar errores
+  - Chequeo general de la página para buscar errores
   - Parallax background en el home
   - Perfil (HTML y CSS responsive)
   - Nav y nav2:
@@ -142,7 +142,7 @@
   
   Para hacer hoy:
   - Errores en ProductAdd responsive
-  - Arreglar CSS del Login y Register (titulo)
+  - Arreglar CSS del Login y Register (título)
   - Errores en Login y Register responsive
   
 ### 🗓️ 17/11/20

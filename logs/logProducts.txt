@@ -23,3 +23,81 @@ Stock: 0
 Categoria: cerveza
 Descripcion: 
 *************************************************************
+Hubo un intento de subir/modificar a las 28/11/2020 22:02:07
+El producto es:
+Producto: dfgfdgdfg
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************
+Hubo un intento de subir/modificar a las 28/11/2020 22:02:20
+El producto es:
+Producto: fgddgf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************
+Hubo un intento de subir/modificar a las 28/11/2020 22:02:29
+El producto es:
+Producto: dfgfd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************
+Hubo un intento de subir/modificar a las 28/11/2020 22:02:35
+El producto es:
+Producto: gdfdgffgd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************
+Fecha de creacion/modificacion del producto: 28/11/2020 22:03:57
+Producto: fsdfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************
+Fecha de creacion/modificacion del producto: 28/11/2020 22:04:16
+Producto: dfssdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************
+Hubo un intento de subir/modificar a las 28/11/2020 22:04:48
+El producto es:
+Producto: fdsfdsdfs
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************
+Hubo un intento de subir/modificar a las 28/11/2020 22:05:00
+El producto es:
+Producto: ewrwer
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************
+Fecha de creacion/modificacion del producto: 28/11/2020 22:05:04
+Producto: werrew
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripcion: 
+*************************************************************

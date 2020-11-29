@@ -82,6 +82,17 @@ let usersController = {
       //Sumarle 1 al ID mas alto, para crear un producto nuevo
       idMax = idMax + 1;
 
+      //Hacer objeto completo, con el ID primero para mas comodidad
+      let usuarioNuevo = {
+        id : idMax,
+        nombre : req.body.nombre,
+        email : req.body.email,
+        contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
+        admin : false,
+        verify: [false, (Math.random()*15).toString(36).substring(2)]
+      } 
+
+      //Manda mail de verificacion
       let transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
@@ -91,7 +102,7 @@ let usersController = {
       });
       const output = `
       <h3>¡Gracias por registrarte en BierClub!:</h3> 
-      <p>Por favor haz click en <a href="http://localhost:3000/users/verifyAccount/${idMax}">este</a> link para activar tu cuenta</p>
+      <p>Por favor haz click en <a href="http://localhost:3000/users/verifyAccount/${usuarioNuevo.verify[1]}">este</a> link para activar tu cuenta</p>
       `;
       let mailOptions = {
         from: process.env.email, 
@@ -105,15 +116,7 @@ let usersController = {
         }else{
           console.log("Mensaje enviado!");
 
-      //Hacer objeto completo, con el ID primero para mas comodidad
-      let usuarioNuevo = {
-        id : idMax,
-        nombre : req.body.nombre,
-        email : req.body.email,
-        contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
-        admin : false,
-        verify: false
-      } 
+      
 
       //Sumar el usuario al array
       usuariosJson.push(usuarioNuevo);
@@ -216,24 +219,7 @@ let usersController = {
         usuarioBuscado ? (res.render("users/pedidos", usuarioBuscado)) : res.render("error")
       },
 
-      contactoRender : (req, res, next) => {
-        res.render("users/contacto")
-      },
-
-      contactoSend : (req, res, next) => {
-        // Enviar errores express-validator
-        let errores = validationResult(req);
-        if (!errores.isEmpty()){
-          return res.render("users/contacto", {errors : errores.errors})
-        }
-        let nodemailerAssets = require("../assets/nodemailerAssets");
-
-        nodemailerAssets(req).transporter.sendMail(nodemailerAssets(req).mailOptions, function(err, data){
-          if(!err){
-            res.render("users/contacto", { success : "Tu mensaje fue enviado con exito!" })
-          }
-        })
-      },
+      
 
 
 
@@ -241,7 +227,7 @@ let usersController = {
       verifyAccount: (req, res, next) => {
         let idUrl = req.params.id;
 
-        let usuarioAVerificar = usuariosJson.find( usuario => usuario.id == idUrl );
+        let usuarioAVerificar = usuariosJson.find( usuario => usuario.verify[1] == idUrl );
 
         //Verificacion de email inexistente
         if (usuarioAVerificar == undefined) {
@@ -249,12 +235,11 @@ let usersController = {
         }
 
         //Verificacion de email ya registrado
-        if (usuarioAVerificar.verify == true) {
+        if (usuarioAVerificar.verify[0] == true) {
           return res.render('users/verifyAccount', { msgErrorYaVerificado: 'Este email ya ha sido verificado'} )
         }
 
-
-        usuarioAVerificar.verify = true;
+        usuarioAVerificar.verify[0] = true;
 
         //Agrego el email al array
         let usuariosAVerificar = usuariosJson.map(function(usuario){
@@ -264,6 +249,7 @@ let usersController = {
           return usuario;
         });
   
+        //Lo guardo en el JSON
         let usuariosCambiadosJSON = JSON.stringify(usuariosAVerificar);
         fs.writeFileSync(dbDirectory, usuariosCambiadosJSON);
 

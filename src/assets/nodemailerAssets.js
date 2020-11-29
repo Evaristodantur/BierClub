@@ -1,3 +1,5 @@
+// Nodemailer, envio de mails
+
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 

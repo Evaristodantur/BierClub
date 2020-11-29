@@ -2,9 +2,17 @@
   "name": "bierclub",
   "version": "0.0.0",
   "private": true,
+  "description": "BierClub es un E-Commerce de cervezas artesanales. Este proyecto se basa en muchos tipos de cervezas al rededor de todo el país.",
   "scripts": {
     "start": "nodemon ./bin/www"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Evaristodantur/BierClub"
+  },
+  "keywords": [],
+  "author": "Evaristo Dantur, Santiago Terejina y Diego Kippes",
+  "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "~1.4.4",

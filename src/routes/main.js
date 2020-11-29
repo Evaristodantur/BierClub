@@ -1,27 +1,47 @@
+// Routa de pagina general "bierclub.com/"
+
 var express = require('express');
 var router = express.Router();
 
 //Controller
 let mainController = require('../controllers/mainController');
 
+//Middlewares
+let contactMiddleware = require("../middlewares/contactMiddleware");            //Assets de contacto
 
 
-/* GET    bierclub.com/      page. */
+/**********************************HOME*******************************************/
+/* GET    bierclub.com/         page. */
 router.get('/', mainController.index);
-router.get('/sinPermisos', function(req,res,next){
-    res.render("sinPermisos")
-});
 
-/* GET    /about-us       page. */
+/**********************************ABOUT US***************************************/
+
+/* GET    /about-us             page. */
 router.get('/about-us', mainController.aboutUs);
+
+/**********************************PROMOCIONES************************************/
 
 /* GET    /promociones          page. */
 router.get('/promociones', mainController.promociones);
 
-/* GET     /suscripcion      page. */
+/**********************************SUSCRIPCION************************************/
+
+/* GET     /suscripcion         page. */
 router.get('/suscripcion', mainController.suscripcion);
 
-/* GET ENVIOS page.*/
+/**********************************ENVIOS******************************************/
+
+/* GET     /envios              page.*/
 router.get("/envios", mainController.envios);
+
+/**********************************CONTACTO*******************************************/
+
+/* GET     /contacto            page.*/
+router.get('/contacto', mainController.contactoRender);
+
+/* POST     /contacto           page.*/
+router.post('/contacto',
+                contactMiddleware,
+                        mainController.contactoSend);
 
 module.exports = router;
