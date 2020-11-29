@@ -375,3 +375,208 @@ El usuario a registrarse fue:
 Nombre: evaristo@dantur.com
 Email: evaristo@dantur.com
 *************************************************************
+Se registró un usuario el 2020-11-29 19:43:39
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-11-29 19:43:51
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.coms
+*************************************************************
+Se registró un usuario el 2020-11-29 19:43:59
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: essvaristo@dantur.coms
+*************************************************************
+Se registró un usuario el 2020-11-29 19:44:08
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: essvaristo@dssantur.coms
+*************************************************************
+Se registró un usuario el 2020-11-29 19:44:21
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: ayasd@asiydf.cim
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:46:24
+El usuario a registrarse fue:
+Nombre: Evaristo Dantur
+Email: ayasd@asiydf.cim
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:46:30
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:46:39
+El usuario a registrarse fue:
+Nombre: ayasd@asiydf.cim
+Email: ayasd@asissssydf.cim
+*************************************************************
+Se registró un usuario el 2020-11-29 19:46:44
+El usuario registrado es:
+Nombre: ayasd@asiydf.cim
+Email: ayasd@asiaaaaaaydf.cim
+*************************************************************
+Se registró un usuario el 2020-11-29 19:46:59
+El usuario registrado es:
+Nombre: ayasd@asiydf.cim
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:47:03
+El usuario a registrarse fue:
+Nombre: ayasd@asiydf.cim
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:47:05
+El usuario a registrarse fue:
+Nombre: ayasd@asiydf.cim
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:47:07
+El usuario a registrarse fue:
+Nombre: ayasd@asiydf.cim
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:47:08
+El usuario a registrarse fue:
+Nombre: ayasd@asiydf.cim
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:47:12
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:47:16
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:47:17
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:47:17
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:47:17
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:51:21
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:51:25
+El usuario a registrarse fue:
+Nombre: asdasdas
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:52:22
+El usuario a registrarse fue:
+Nombre: asdasdasd
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:53:20
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:53:40
+El usuario a registrarse fue:
+Nombre: aAAAA
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:54:31
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:57:15
+El usuario a registrarse fue:
+Nombre: aaaaa
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:59:15
+El usuario a registrarse fue:
+Nombre: asdasd
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 19:59:19
+El usuario a registrarse fue:
+Nombre: asdasd
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:00:45
+El usuario a registrarse fue:
+Nombre: asdasd
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:01:36
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:01:54
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:02:04
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:02:27
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:02:37
+El usuario a registrarse fue:
+Nombre: 
+Email: asd@asd
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:03:25
+El usuario a registrarse fue:
+Nombre: Evaristo
+Email: asd@asd
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:03:29
+El usuario a registrarse fue:
+Nombre: Evaristo
+Email: asd@asd
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:03:54
+El usuario a registrarse fue:
+Nombre: Evaristo
+Email: asd@asd
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:03:59
+El usuario a registrarse fue:
+Nombre: asd
+Email: evaristo@dantur.com
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:04:34
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:06:48
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:06:52
+El usuario a registrarse fue:
+Nombre: Evaristo Dantur
+Email: 
+*************************************************************

@@ -65,8 +65,10 @@ let usersController = {
     store : (req, res, next) => {
       // Enviar errores express-validator
       let errores = validationResult(req);
+      errores.reqNombre = req.body.nombre;
+      errores.reqEmail = req.body.email;
       if (!errores.isEmpty()){
-        return res.render("users/register", {errors : errores.errors})
+        return res.render("users/register", {errors : errores})
       }
 
       // ID maximo para reemplazar
