@@ -1,1 +1,35 @@
-[{"id":1,"nombre":"ADMIN","email":"admin@admin.com","contrasenia":"$2a$10$uQqmgVw8/xtN4Bpt72plduzgGYIQoZsnHX0B3lPVpX2z.M9.7fbgC","admin":true,"verify":[true,"g9b9451n13"]},{"id":2,"nombre":"User COMUN","email":"user@user.com","contrasenia":"$2a$10$wtyrxCfxgiNgaq6SYlQYSuvHsbsBsepBc7R6y3f2yAKyauUCzpa4K","admin":false,"verify":[true,"6ywo4pf3ud"]},{"id":3,"nombre":"User No Verificado","email":"user-no-verificado@user.com","contrasenia":"$2a$10$LxvLnnKtO/HJmt2wmY9yteqbDCnwU7vaCLHLRjv8cgzVh70A5943O","admin":false,"verify":[false,"lvzdrgx5w5"]},{"id":4,"nombre":"Evaristo Dantur","email":"evaristo@dantur.com","contrasenia":"$2a$10$rsDUg79LydtbmGTUxPelquTlGZN5B1UptR7ZN3PbYX0qNGNNAcZAu","admin":false,"verify":[false,"p8vdhhpzl6"]},{"id":5,"nombre":"Evaristo Dantur","email":"evaristo@dantur.coms","contrasenia":"$2a$10$fob00Fu3443IoP491ayT8e6rX4Y5y6pV9BKHkuBY.IErbXGY5CRte","admin":false,"verify":[false,"cybtvmkwbn"]},{"id":6,"nombre":"Evaristo Dantur","email":"essvaristo@dantur.coms","contrasenia":"$2a$10$TkykNVEBdXsbUKUlJZVcPuCftxuz2i9Cij2mr2Xjr/QM5UI39sNWq","admin":false,"verify":[false,"hr6bgdnzup"]},{"id":7,"nombre":"Evaristo Dantur","email":"essvaristo@dssantur.coms","contrasenia":"$2a$10$6uT78T32bUYeOvQI/pPZ.eq6bj03zVOpfkydzckBHtacWVmJyBesi","admin":false,"verify":[false,"wm93sg2zk4"]},{"id":8,"nombre":"Evaristo Dantur","email":"ayasd@asiydf.cim","contrasenia":"$2a$10$YTpgRjqoXQ7PyDoeVUbKV.C6qaRA7zotQ9nmtF3AnLW0w00HnVc56","admin":false,"verify":[false,"gcwjtcghgg"]},{"id":9,"nombre":"ayasd@asiydf.cim","email":"ayasd@asiaaaaaaydf.cim","contrasenia":"$2a$10$USTitckRbpovLcpJUthhium8petdlYGtFYc0hwxVMh607vgM4gEfG","admin":false,"verify":[false,"vhi8451cqu"]},{"id":10,"nombre":"ayasd@asiydf.cim","email":"kippes.diego@gmail.com","contrasenia":"$2a$10$XwFW9tJ.HFH0yuxai8k5nuAlP6r23YxfxJXurKwlGJOkI48FuuCCm","admin":false,"verify":[false,"vrtiy5afz8"]}]
+[
+    {
+        "id": 1,
+        "nombre": "ADMIN",
+        "email": "admin@admin.com",
+        "contrasenia": "$2a$10$uQqmgVw8/xtN4Bpt72plduzgGYIQoZsnHX0B3lPVpX2z.M9.7fbgC",
+        "admin": true,
+        "verify": [
+            true,
+            "g9b9451n13"
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "User COMUN",
+        "email": "user@user.com",
+        "contrasenia": "$2a$10$wtyrxCfxgiNgaq6SYlQYSuvHsbsBsepBc7R6y3f2yAKyauUCzpa4K",
+        "admin": false,
+        "verify": [
+            true,
+            "6ywo4pf3ud"
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "User No Verificado",
+        "email": "user-no-verificado@user.com",
+        "contrasenia": "$2a$10$LxvLnnKtO/HJmt2wmY9yteqbDCnwU7vaCLHLRjv8cgzVh70A5943O",
+        "admin": false,
+        "verify": [
+            false,
+            "lvzdrgx5w5"
+        ]
+    }
+]
