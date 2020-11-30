@@ -23,10 +23,10 @@
 			<!-- NOMBRE -->
 			<div class="campo-input">
 				<input class="input-registro" type="text" id="nombre" name="nombre" placeholder="Nombre"
-				<% if(typeof errors.errors != "undefined"){%>
+				<% if(typeof errors != "undefined"){%>
 					value="<%= errors.reqNombre %>"
 				<%}%>>
-				<%if(typeof errors.errors != "undefined"){%>
+				<%if(typeof errors != "undefined"){%>
 					<% for(let i = 0 ; i < errors.errors.length ; i++){ %>
 						<%if(errors.errors[i].param == "nombre"){%>
 							<p class="error-total">* <%= errors.errors[i].msg %></p>
@@ -39,10 +39,10 @@
 			<!-- MAIL -->
 			<div class="campo-input">
 				<input class="input-registro" type="email"  id="email" name="email" placeholder="Email"
-				<% if(typeof errors.errors != "undefined"){%>
+				<% if(typeof errors != "undefined"){%>
 					value="<%= errors.reqEmail %>"
 				<%}%>>
-				<%if(typeof errors.errors != "undefined"){%>
+				<%if(typeof errors != "undefined"){%>
 					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
 						<%if(errors.errors[i].param == "email"){%>
 							<p class="error-total">* <%= errors.errors[i].msg %></p>
@@ -55,7 +55,7 @@
 			<!-- CONTRASEÑA -->
 			<div class="campo-input">
 				<input class="input-registro" type="password" id="Contrasenia" name="contrasenia" placeholder="Contraseña"> 
-				<%if(typeof errors.errors != "undefined"){%>
+				<%if(typeof errors != "undefined"){%>
 					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
 						<%if(errors.errors[i].param == "contrasenia"){%>
 							<p class="error-total">* <%= errors.errors[i].msg %></p>
@@ -68,7 +68,7 @@
 			<!-- CONFIRMAR CONTRASEÑA -->
 			<div class="campo-input">
 				<input class="input-registro" type="password" id="confirmarContrasenia" name="confirmarContrasenia" placeholder="Confirmar contraseña"> 
-				<%if(typeof errors.errors != "undefined"){%>
+				<%if(typeof errors != "undefined"){%>
 					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
 						<%if(errors.errors[i].param == "confirmarContrasenia"){%>
 							<p class="error-total">* <%= errors.errors[i].msg %></p>
@@ -82,7 +82,7 @@
 			<div class="terminos">
 				<input type="checkbox" id="terminosCondiciones" name="terminosCondiciones">
 				<label for="terminos-condiciones">Acepto los <a href="#">Términos y Condiciones</a> de BierClub </label>
-				<%if(typeof errors.errors != "undefined"){%>
+				<%if(typeof errors != "undefined"){%>
 					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
 						<%if(errors.errors[i].param == "terminosCondiciones"){%>
 							<p class="error-terminosCondiciones">* <%= errors.errors[i].msg %></p>

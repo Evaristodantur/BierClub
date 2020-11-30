@@ -26,10 +26,10 @@
 			<!-- EMAIL -->
 			<div class="campo-input">
 				<input class="input-registro" type="email" id="email" name="email" placeholder="Email"
-				<% if(typeof errors.errors != "undefined"){%>
+				<% if(typeof errors != "undefined"){%>
 					value="<%= errors.reqEmail %>"
 				<%}%>>
-				<%if(typeof errors.errors != "undefined"){%>
+				<%if(typeof errors != "undefined"){%>
 					<% for(let i = 0 ; i < errors.errors.length ; i++){ %>
 						<%if(errors.errors[i].param == "email"){%>
 							<p class="error-total">* <%= errors.errors[i].msg %></p>
@@ -42,7 +42,7 @@
 			<!-- CONTRASEÑA -->
 			<div class="campo-input">
 				<input class="input-registro" type="password" id="contraseña" name="contrasenia" placeholder="Contraseña"> 
-				<%if(typeof errors.errors != "undefined"){%>
+				<%if(typeof errors != "undefined"){%>
 					<% for(let i = 0 ; i < errors.errors.length ; i++){ %>
 						<% if(errors.errors[i].param == "email") {%>
 							<% break; %>

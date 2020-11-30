@@ -615,3 +615,28 @@ El usuario a registrarse fue:
 Nombre: asdasd
 Email: evaristo@dantur.com
 *************************************************************
+Hubo un intento de registro el 2020-11-30 4:32:44
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-30 4:33:00
+El usuario a registrarse fue:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Hubo un intento de registro el 2020-11-30 4:34:27
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-30 4:36:48
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-30 4:39:24
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
