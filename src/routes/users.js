@@ -57,7 +57,8 @@ router.post('/register',
 
 /* GET     /users/verifyAccount          page. */
 router.get('/verifyAccount/:id', usersController.verifyAccount);
-router.post("/verifyAccount/:id", usersController.reenviarEmail)
+
+router.post("/verifyAccount/:id", usersController.reenviarEmail);
 
 /*********************************LOGIN***********************************************/
 

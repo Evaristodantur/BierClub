@@ -22,6 +22,9 @@
 				
 			<!-- NOMBRE -->
 			<div class="campo-input">
+				<%if(typeof verificarUsuario != "undefined"){%>
+					<p class="success-message"><%= verificarUsuario %></p>
+				<%}%>
 				<input class="input-registro" type="text" id="nombre" name="nombre" placeholder="Nombre"
 				<% if(typeof errors != "undefined"){%>
 					value="<%= errors.reqNombre %>"

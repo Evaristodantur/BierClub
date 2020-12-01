@@ -128,7 +128,7 @@ let usersController = {
 
       //Te envia a la vista una vez el form fue completado
       
-      res.redirect("../");
+      res.render("users/register", { verificarUsuario : "¡Te registraste! Por favor verifica tu dirección email."});
         }
       })
     },
