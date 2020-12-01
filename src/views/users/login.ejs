@@ -37,11 +37,6 @@
 						<%}%>
 					<%}%>
 				<%}%>
-			</div>
-
-			<!-- CONTRASEÑA -->
-			<div class="campo-input">
-				<input class="input-registro" type="password" id="contraseña" name="contrasenia" placeholder="Contraseña"> 
 				<%if(typeof errors != "undefined"){%>
 					<% for(let i = 0 ; i < errors.errors.length ; i++){ %>
 						<% if(errors.errors[i].param == "email") {%>
@@ -53,6 +48,11 @@
 						<%}%>
 					<%}%>
 				<%}%>
+			</div>
+
+			<!-- CONTRASEÑA -->
+			<div class="campo-input">
+				<input class="input-registro" type="password" id="contraseña" name="contrasenia" placeholder="Contraseña"> 
 			</div>
 
 			<div class="campo-input">

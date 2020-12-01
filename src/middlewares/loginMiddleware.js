@@ -27,7 +27,7 @@ let loginMiddleware = [
                         return true
                     }
             },
-            errorMessage : 'El email no existe'
+            errorMessage : 'Dirección email y/o contraseña incorrectos'
     }
     }),
     checkSchema({
@@ -44,7 +44,7 @@ let loginMiddleware = [
                         return false
                     }
             },
-            errorMessage : 'La contraseña es incorrecta'
+            errorMessage : 'Dirección email y/o contraseña incorrectos'
     }
     })
 ]
