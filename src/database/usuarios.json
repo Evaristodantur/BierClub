@@ -1,1 +1,35 @@
-[{"id":1,"nombre":"ADMIN","email":"admin@admin.com","contrasenia":"$2a$10$uQqmgVw8/xtN4Bpt72plduzgGYIQoZsnHX0B3lPVpX2z.M9.7fbgC","admin":true,"verify":[true,"g9b9451n13"]},{"id":2,"nombre":"User COMUN","email":"user@user.com","contrasenia":"$2a$10$wtyrxCfxgiNgaq6SYlQYSuvHsbsBsepBc7R6y3f2yAKyauUCzpa4K","admin":false,"verify":[true,"6ywo4pf3ud"]},{"id":3,"nombre":"User No Verificado","email":"user-no-verificado@user.com","contrasenia":"$2a$10$LxvLnnKtO/HJmt2wmY9yteqbDCnwU7vaCLHLRjv8cgzVh70A5943O","admin":false,"verify":[false,"lvzdrgx5w5"]},{"id":4,"nombre":"Evaristo Dantur","email":"evaristo@dantur.com","contrasenia":"$2a$10$m4aBvE3a7Q9FDD2nGz/VmOVVVKMvAyZS.xAuZ38Gm5yBJWITfl/fW","admin":false,"verify":[false,"n4qwmesfjh"]},{"id":5,"nombre":"Evaristo Dantur","email":"kippes.diego@gmail.com","contrasenia":"$2a$10$c87RnwxVcWLiy43L2a/74e72zybn4wbGzgYI4fxjZqV9989/PxYpW","admin":false,"verify":[false,"rzpnh7zww4"]},{"id":6,"nombre":"Evaristo Dantur","email":"kippes.diego@gmsail.com","contrasenia":"$2a$10$B/13IY9jrwkH/LrG0b9gO.bstM0Dmzrg0GxtzE.6uOMDdy7n5//8K","admin":false,"verify":[false,"rksne95s3m"]},{"id":7,"nombre":"adsawdwadads","email":"adw@dwa.com","contrasenia":"$2a$10$H4ZSMbFttjmrrDUxlVSKd.iK/SqWx4DHnlQZZGyj3baG3DtF64VTi","admin":false,"verify":[false,"auwiyopp98"]},{"id":8,"nombre":"adsawdwadads","email":"adw@dwa.comaa","contrasenia":"$2a$10$QWhLnRRUyOkCIHNXjzJFs.ur/5XjdNzWXx7qVKeyB83vrCTtny582","admin":false,"verify":[false,"0fjvu3cvrj"]}]
+[
+    {
+        "id": 1,
+        "nombre": "ADMIN",
+        "email": "admin@admin.com",
+        "contrasenia": "$2a$10$uQqmgVw8/xtN4Bpt72plduzgGYIQoZsnHX0B3lPVpX2z.M9.7fbgC",
+        "admin": true,
+        "verify": [
+            true,
+            "g9b9451n13"
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "User COMUN",
+        "email": "user@user.com",
+        "contrasenia": "$2a$10$wtyrxCfxgiNgaq6SYlQYSuvHsbsBsepBc7R6y3f2yAKyauUCzpa4K",
+        "admin": false,
+        "verify": [
+            true,
+            "6ywo4pf3ud"
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "User No Verificado",
+        "email": "user-no-verificado@user.com",
+        "contrasenia": "$2a$10$LxvLnnKtO/HJmt2wmY9yteqbDCnwU7vaCLHLRjv8cgzVh70A5943O",
+        "admin": false,
+        "verify": [
+            false,
+            "lvzdrgx5w5"
+        ]
+    }
+]
