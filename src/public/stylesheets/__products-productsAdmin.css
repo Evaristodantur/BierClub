@@ -529,6 +529,11 @@ body .products-catalogo{
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.btn-agregarAlCarrito {
         opacity: 1;
     }
+
+    /*MODAL*/
+    .invisible{
+        width: 150vw;
+    }
 }
 
 
@@ -540,6 +545,11 @@ body .products-catalogo{
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
         /* Display & Box Model */
         height: 215px;
+    }
+
+    /*MODAL*/
+    .invisible{
+        width: 155vw;
     }
 }
 
@@ -618,6 +628,32 @@ body .products-catalogo{
         /* Display & Box Model */
         height: 270px;
     }
+
+    /*MODAL*/
+    .no-yes-button {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .modalEliminarProducto {
+        width: 278px;
+        height: 140px;
+    }
+
+    #eliminarProducto {
+        margin-bottom: 2px;
+    }
+
+    #noBorrarProducto {
+        padding: 5px;
+    }
+
+    .invisible{
+        width: 165vw;
+    }
 }
 
 
@@ -691,6 +727,12 @@ body .products-catalogo{
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
         /* Display & Box Model */
         height: 300px;
+    }
+
+    /*MODAL*/
+    .modalEliminarProducto {
+        width: 250px;
+        height: 140px;
     }
 
 }
