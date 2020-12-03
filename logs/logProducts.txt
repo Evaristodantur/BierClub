@@ -848,3 +848,19 @@ Stock: 645645
 Categoria: cerveza
 Descripción: Amarillo pálido, algo turbia y muy refrescante! Este híbrido entre una West Coast y una East Coast IPA tiene lo mejor de los dos mundos: de cuerpo medio, con aromas y sabores cítricos tropicales (ananá 🍍, maracuyá y mandarina 🍊).
 *************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 05:39:24
+Producto: dfggfdgf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 05:41:56
+Producto: dsfdsfdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
