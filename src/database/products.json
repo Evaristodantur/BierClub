@@ -1,1 +1,97 @@
-[{"id":2,"nombre":"Saison de Triomphe - Hoppy Saison","precio":115,"descuento":0,"stock":0,"categoria":"lupulada","descripcion":"Fermentada con un blend de 4 levaduras rurales, con maltas de cebada artesanales de La Plata y granos sin maltear de trigo y avena que le dan esa rusticidad típica del estilo, esta saison fue ademas lupulada con Enigma 🇦🇺Australiano! ","imagen":["producto-1606686113159.jpg"]},{"id":3,"nombre":"William Wallace Scottish","precio":82,"descuento":5,"stock":663,"categoria":"no lupulada","descripcion":"Una verdadera IPA de la costa oeste, inundación de lupulina americana en tus papilas gustativas con intensos sabores y aromas resinosos y cítricos (pino húmedo, cáscara de naranja 🍊, lima/limón 🍋y pomelo).","imagen":["producto-1606687162523.jpg","producto-1606687162528.jpg","producto-1606687162537.jpg","producto-1606687162548.jpg"]},{"id":4,"nombre":"Mumbai 1947","precio":99,"descuento":20,"stock":10,"categoria":"vino","descripcion":"Una birra purasangre, muscular hasta explotar con ridículas cantidades de Galaxy y Cashmere.\r\nDe color amarillo pálido, turbia, jugosa, espesa e hiper lupulada, con intensas notas a maracuyá, mango, lima-limón, durazno y cascara de sandia #neverpony.","imagen":["producto-1606687251584.jpg","producto-1606687251586.jpg"]},{"id":5,"nombre":"German Pills","precio":125,"descuento":10,"stock":45,"categoria":"lupulada","descripcion":"Esta IIPA esta cargada a tope con cantidades copiosas de los lupulos Vic Secret y Galaxy.\r\nDe color naranja intenso, turbia, jugosa, estimula tus papilas gustativas con intensas notas a naranja, durazno, mango, ananá. Sabores Cítricos/Tropicales brillan sobre la base maltosa.","imagen":["producto-1606687364210.jpg","producto-1606687364218.jpg","producto-1606687364218.jpg","producto-1606687364229.jpg"]},{"id":6,"nombre":"Rippa Sippa (TDH Imperial Aussie IPA)","precio":150,"descuento":0,"stock":0,"categoria":"vino","descripcion":"","imagen":["product-image-not-available.jpg"]},{"id":7,"nombre":"Prickly Dingo - Catharina Sour con Cactus","precio":110,"descuento":50,"stock":2,"categoria":"no lupulada","descripcion":"De color naranja intenso, cual noctiluca rabiosa, la prickly dingo es una catharina sour con cactus.\r\nUna cerveza acida, balanceada por el dulzor del cactus que le da sabores y aromas a chicle de tutti-frutti, sandia y kiwi.","imagen":["producto-1606687552374.jpg","producto-1606687552388.jpg","producto-1606687552404.jpg","producto-1606687552431.jpg"]},{"id":8,"nombre":"dsfdsfdsfds","precio":0,"descuento":0,"stock":0,"categoria":"cerveza","descripcion":"","imagen":["product-image-not-available.jpg"]}]
+[
+    {
+        "id": 1,
+        "nombre": "ippa Sippa (TDH Imperial Aussie IPA)",
+        "precio": 90,
+        "descuento": 10,
+        "stock": 645645,
+        "categoria": "cerveza",
+        "descripcion": "Amarillo pálido, algo turbia y muy refrescante! Este híbrido entre una West Coast y una East Coast IPA tiene lo mejor de los dos mundos: de cuerpo medio, con aromas y sabores cítricos tropicales (ananá 🍍, maracuyá y mandarina 🍊).",
+        "imagen": [
+            "producto-1606685953353.jpg",
+            "producto-1606685953341.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Saison de Triomphe - Hoppy Saison",
+        "precio": 115,
+        "descuento": 0,
+        "stock": 0,
+        "categoria": "lupulada",
+        "descripcion": "Fermentada con un blend de 4 levaduras rurales, con maltas de cebada artesanales de La Plata y granos sin maltear de trigo y avena que le dan esa rusticidad típica del estilo, esta saison fue ademas lupulada con Enigma 🇦🇺Australiano! ",
+        "imagen": [
+            "producto-1606686113159.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "William Wallace Scottish",
+        "precio": 82,
+        "descuento": 5,
+        "stock": 663,
+        "categoria": "no lupulada",
+        "descripcion": "Una verdadera IPA de la costa oeste, inundación de lupulina americana en tus papilas gustativas con intensos sabores y aromas resinosos y cítricos (pino húmedo, cáscara de naranja 🍊, lima/limón 🍋y pomelo).",
+        "imagen": [
+            "producto-1606687162523.jpg",
+            "producto-1606687162528.jpg",
+            "producto-1606687162537.jpg",
+            "producto-1606687162548.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "Mumbai 1947",
+        "precio": 99,
+        "descuento": 20,
+        "stock": 10,
+        "categoria": "vino",
+        "descripcion": "Una birra purasangre, muscular hasta explotar con ridículas cantidades de Galaxy y Cashmere.\r\nDe color amarillo pálido, turbia, jugosa, espesa e hiper lupulada, con intensas notas a maracuyá, mango, lima-limón, durazno y cascara de sandia #neverpony.",
+        "imagen": [
+            "producto-1606687251584.jpg",
+            "producto-1606687251586.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "German Pills",
+        "precio": 125,
+        "descuento": 10,
+        "stock": 45,
+        "categoria": "lupulada",
+        "descripcion": "Esta IIPA esta cargada a tope con cantidades copiosas de los lupulos Vic Secret y Galaxy.\r\nDe color naranja intenso, turbia, jugosa, estimula tus papilas gustativas con intensas notas a naranja, durazno, mango, ananá. Sabores Cítricos/Tropicales brillan sobre la base maltosa.",
+        "imagen": [
+            "producto-1606687364210.jpg",
+            "producto-1606687364218.jpg",
+            "producto-1606687364218.jpg",
+            "producto-1606687364229.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "Rippa Sippa (TDH Imperial Aussie IPA)",
+        "precio": 150,
+        "descuento": 0,
+        "stock": 0,
+        "categoria": "vino",
+        "descripcion": "",
+        "imagen": [
+            "product-image-not-available.jpg"
+        ]
+    },
+    {
+        "id": 7,
+        "nombre": "Prickly Dingo - Catharina Sour con Cactus",
+        "precio": 110,
+        "descuento": 50,
+        "stock": 2,
+        "categoria": "no lupulada",
+        "descripcion": "De color naranja intenso, cual noctiluca rabiosa, la prickly dingo es una catharina sour con cactus.\r\nUna cerveza acida, balanceada por el dulzor del cactus que le da sabores y aromas a chicle de tutti-frutti, sandia y kiwi.",
+        "imagen": [
+            "producto-1606687552374.jpg",
+            "producto-1606687552388.jpg",
+            "producto-1606687552404.jpg",
+            "producto-1606687552431.jpg"
+        ]
+    }
+]
