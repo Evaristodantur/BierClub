@@ -2,10 +2,11 @@
 <%- include('../partials/head.ejs') %>
 </head>
 
-<body>
+<body id="body">
 	<!-- NAV -->
 	<header>
 		<%- include('../partials/nav.ejs') %>
+		<script src="/js/register.js" type="text/javascript"></script>
 	</header>
 	
 		<!-- CONTAINER REGISTER -->
@@ -84,7 +85,7 @@
 			<!-- TERMINOS Y CONDICIONES -->
 			<div class="terminos">
 				<input type="checkbox" id="terminosCondiciones" name="terminosCondiciones">
-				<label for="terminos-condiciones">Acepto los <a href="#">Términos y Condiciones</a> de BierClub </label>
+				<label for="terminos-condiciones">Acepto los <a onClick="modificarPerfil()" class="terminos-modal-color">Términos y Condiciones</a> de BierClub </label>
 				<%if(typeof errors != "undefined"){%>
 					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
 						<%if(errors.errors[i].param == "terminosCondiciones"){%>
@@ -99,9 +100,29 @@
 			<div class="campo-input">
 				<button class="input-button" type="submit", id="registrar", value="registrar"> Registrarse </button>
 			</div>
-			
-			
 			</form>
+
+
+			<div class="termsModal" id="modificar">
+				<div class="invisible" onclick="divTransparencia()"></div>
+					<div class="terms-modal">
+						<div class="cerrar-modificar"><a onclick="modificarPerfil()"><i class="far fa-times-circle"></i></a></div>
+						<h3>Términos y condiciones</h3>
+						<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+						</p>
+					</div>
+			</div>
+
+
+
+
 			<!-- INICIAR SESION -->
 			<p class="iniciar-sesion">¿Ya sos cliente? <a href="/users/login">Inicia Sesión</a></p>
 		</div>

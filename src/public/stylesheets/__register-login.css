@@ -7,6 +7,11 @@ body .login-register{
     padding-bottom: 3%;
 }
 
+.hideOverflow{
+    height:100%;
+    overflow: hidden;
+}
+
 /* ==========================================================================
    TITULO
    ========================================================================== */
@@ -154,8 +159,63 @@ body .login-register{
     font-size: small;
     text-align: center;
 }
-
-
+.showModificar {
+    display: inline-block;
+}
+.terms-modal h3{
+    text-align:center;
+}
+.terms-modal p{
+    width: 90%;
+    margin-left: 5%;
+}
+.terms-modal{
+    width: 100%;
+    height: 600px;
+    position:absolute;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+.termsModal{
+    display:none;
+    width:40%;
+    max-height: 50%;
+    position:fixed;
+    left:50%;
+    top:17%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    background-color: transparent;
+}
+.invisible{
+    height: 125vh;
+    width: 127vw;
+    background-color: black;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: -1;
+    opacity: .5;
+    margin-top: -30vh;
+    margin-left: -30vw;
+}
+.cerrar-modificar{
+    display: inline-block;
+    float:right;
+    margin-right: 12px;
+    margin-top: 12px;
+}
+.fa-times-circle{
+    color: #DAA520;
+    font-size: 24px;
+}
+.terminos-modal-color{
+    color: blue;
+}
+.terminos-modal-color:hover{
+    cursor: pointer;
+}
 
 /* ==========================================================================
    RESOLUCION: 768 a 1200
