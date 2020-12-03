@@ -174,23 +174,16 @@ let usersController = {
     // Modificacion del producto
     perfilUpdate : (req, res, next) => {
       let idUrl = req.params.id;
-      let errores = validationResult(req);
       let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
-      let admin = usuarioBuscado.admin;
-      if (!errores.isEmpty()){
-        usuarioBuscado.errors = errores.errors;
-        return res.render("users/perfil", { usuario : usuarioBuscado })
-      }
-
-       let usuarioCambiado = usuariosJson.map(function(usuario){
+      let usuarioCambiado = usuariosJson.map(function(usuario){
         if(usuario.id == idUrl){
            usuario = {
             id : parseInt(idUrl),
             nombre : req.body.nombre,
             email : req.body.email,
-            contrasenia : req.body.contrasenia,
-            admin,
-            verify
+            contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
+            admin : usuarioBuscado.admin,
+            verify : usuarioBuscado.verify[0]
           }
         }
         return usuario;

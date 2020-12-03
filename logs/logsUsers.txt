@@ -118,3 +118,28 @@ El usuario registrado es:
 Nombre: adsawdwadads
 Email: adw@dwa.comaa
 *************************************************************
+Hubo un intento de registro el 2020-12-2 18:53:38
+El usuario a registrarse fue:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-12-2 18:53:44
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-12-2 22:15:10
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-12-2 22:16:25
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-12-2 22:50:31
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
