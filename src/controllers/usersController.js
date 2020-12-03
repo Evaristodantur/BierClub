@@ -183,7 +183,7 @@ let usersController = {
             email : req.body.email,
             contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
             admin : usuarioBuscado.admin,
-            verify : usuarioBuscado.verify[0]
+            verify : usuarioBuscado.verify
           }
         }
         return usuario;
