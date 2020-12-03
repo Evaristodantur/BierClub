@@ -253,6 +253,7 @@ body .products-catalogo{
 .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.btn-agregarAlCarrito{
     opacity: 1;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 
