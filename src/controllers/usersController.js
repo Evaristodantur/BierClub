@@ -160,8 +160,6 @@ let usersController = {
     },
 
 
-
-
     //  /users/perfil/:id (PAGINA VISUAL)
     perfilEdit : (req, res, next) => {
       let idUrl = req.params.id;
@@ -171,7 +169,8 @@ let usersController = {
         usuarioBuscado ? (res.render("users/perfil", { usuario : usuarioBuscado })) : res.render("error")
     },
 
-    // Modificacion del producto
+
+    // Modificacion del perfil
     perfilUpdate : (req, res, next) => {
       let idUrl = req.params.id;
       let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
