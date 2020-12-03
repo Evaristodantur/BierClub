@@ -79,6 +79,7 @@ body .login-register{
     /* Display & Box Model */
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 10px;
 
     /* Otras */
     font-size: small;
@@ -171,7 +172,7 @@ body .login-register{
 }
 .terms-modal{
     width: 100%;
-    height: 600px;
+    height: 70vh;
     position:absolute;
     background-color: whitesmoke;
     border-radius: 10px;
@@ -179,16 +180,15 @@ body .login-register{
 }
 .termsModal{
     display:none;
-    width:40%;
-    max-height: 50%;
+    width:45%;
     position:fixed;
     left:50%;
-    top:17%;
+    top: 15vh;
     transform: translate(-50%, -50%);
     z-index: 9;
     background-color: transparent;
 }
-.invisible{
+.termsModal .invisible{
     height: 125vh;
     width: 127vw;
     background-color: black;
@@ -201,12 +201,13 @@ body .login-register{
     margin-left: -30vw;
 }
 .cerrar-modificar{
+    position: absolute;
     display: inline-block;
-    float:right;
+    right:-8px;
     margin-right: 12px;
     margin-top: 12px;
 }
-.fa-times-circle{
+.cerrar-modificar .fa-times-circle{
     color: #DAA520;
     font-size: 24px;
 }
@@ -217,6 +218,16 @@ body .login-register{
     cursor: pointer;
 }
 
+
+
+/* ==========================================================================
+   RESOLUCION: 1400PX
+   ========================================================================== */
+@media (max-width: 1400px){
+    .termsModal{
+        width:60%;
+    }
+}
 /* ==========================================================================
    RESOLUCION: 768 a 1200
    ========================================================================== */
@@ -269,6 +280,9 @@ body .login-register{
    RESOLUCION: 480 hacia abajo
    ========================================================================== */
 @media (max-width: 480px) {
+    .termsModal{
+        width:85%;
+    }
     .login-register {
         margin-bottom: 5%;
     }
