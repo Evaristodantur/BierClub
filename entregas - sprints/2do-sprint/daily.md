@@ -10,7 +10,7 @@
     - Eliminar producto
   
   Para hacer hoy:
-  - Checkeo general para entrega de sprint 4
+  - Mejorar CSS de eliminar producto (modal)
 
 ## 📈 Sprint 4
 
