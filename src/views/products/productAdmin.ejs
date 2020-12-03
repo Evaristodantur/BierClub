@@ -101,8 +101,8 @@
 								<div class="invisible" onclick="divTransparencia(<%= producto.id %>)"></div>
 								<p>¿Desea eliminar el producto?</p>
 								<div class="no-yes-button">
-									<button onclick="divTransparencia(<%= producto.id %>)" class="borrarProducto-choice">Nuw</button>
-									<form class="borrarProducto-choice" action="/products/productEdit/delete/<%= producto.id %>?_method=DELETE" method="POST">
+									<button id="noBorrarProducto" onclick="divTransparencia(<%= producto.id %>)">No</button>
+									<form class="borrarProducto-form" action="/products/productEdit/delete/<%= producto.id %>?_method=DELETE" method="POST">
 										<button type="submit" id="eliminarProducto" class="eliminar-producto">Si</button>	
 									</form>
 								</div>

@@ -269,7 +269,8 @@ body .products-catalogo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: green;
+    background-color: rgb(73, 73, 73);
+    border-radius: 8px;
     height: 130px;
     width: 450px;
 }
@@ -277,6 +278,8 @@ body .products-catalogo{
 .no-yes-button {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .invisible{
@@ -291,6 +294,35 @@ body .products-catalogo{
     margin-top: -30vh;
     margin-left: -30vw;
 }
+
+.modal-eliminar-producto p {
+    color: white;
+    margin-bottom: 7%;
+}
+#noBorrarProducto {
+    background: rgb(71, 73, 211);
+    color: white;
+    width: 40%;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.borrarProducto-form {
+    width: 40%;
+}
+
+#eliminarProducto {
+    background: rgb(184, 20, 20);
+    color: white;
+    padding: 5px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 
 
 
