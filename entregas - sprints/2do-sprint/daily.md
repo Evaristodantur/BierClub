@@ -1,5 +1,17 @@
 # Dailies
 
+### 🗓️ 3/12/20
+  Terminado:
+  - Multer arreglado
+  - Suscripción (HTML y CSS comenzado)
+  - Eliminar user problema arreglado
+  - Modals:
+    - Register (Terms & Conditions)
+    - Eliminar producto
+  
+  Para hacer hoy:
+  - Checkeo general para entrega de sprint 4
+
 ## 📈 Sprint 4
 
 ### 🗓️ 30/11/20
