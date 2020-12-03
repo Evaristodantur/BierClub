@@ -44,7 +44,7 @@
                 <div class="invisible-eliminar-usuario invisible-eliminar-usuario-userAdmin" id="eliminar-user-<%= usuarios.id %>">
                     <p>¿Está seguro que desea eliminar este usuario?</p>
                     <div class="eliminar-usuario-container">
-                        <button onclick="eliminarUsuario()" class="input-button button-enteros button-modificar">No</button>
+                        <button onclick="eliminarUsuario(<%=usuarios.id%>)" class="input-button button-enteros button-modificar">No</button>
                         <form class="jaja"action="/users/perfil/eliminar/<%= usuarios.id %>?_method=DELETE" method="POST">
                             <button type="submit" class="input-button button-enteros button-eliminar">Si</button>
                         </form>
