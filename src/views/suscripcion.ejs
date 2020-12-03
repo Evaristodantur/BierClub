@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BierClub - Suscripción</title>
 	<link rel="icon" href="/images/faviconLogo.ico"/>
-	<link rel='stylesheet' href='/stylesheets/styles.css'/>
-	<link rel='stylesheet' href='/stylesheets/footer.css'/>
+	<link rel='stylesheet' href='/stylesheets/__nav.css'/>
+	<link rel="stylesheet" href="/stylesheets/suscripcion.css"/>
+	<link rel="stylesheet" href="/stylesheets/styles.css"/>
+	<link rel='stylesheet' href='/stylesheets/__footer.css'/>
 </head>
 
 <body>
@@ -14,7 +16,78 @@
 		<%- include('./partials/nav.ejs') %>
 	</header>
 	
+	<div class="productDetail suscripcion">
+
+		<!-- SECCION DETALLE DEL PRODUCTO/IMAGEN -->
+		<section class="seccion-producto">
+	
+		  <!-- IMAGEN-PREVIEWS -->
+		  <div class="imagen-producto-previews">
+			
+			  <img class="imagen-previews" src="/images/suscripcion/prueba-2.jpg" alt="Imagenes de ">
+			  <img class="imagen-previews" src="/images/suscripcion/prueba-3.jpg" alt="Imagenes de ">
+
+		  </div>
+		  
+		  <!-- IMAGEN -->
+		  <div class="imagen-producto">
+			  <img class="imagen-producto-principal" src="/images/suscripcion/prueba-1.jpg" alt="">
+		  </div>
+	
+		  <!-- DETALLE -->
+		  <section class="detalle-producto">
+  
+			<!-- TITULO -->
+			<div class="titulo-producto">
+			  <h1>The U.S. Microbrewed Beer Clube</h1>
+			  <p>Quality Craft Beers from America’s Best Brewers</p>
+			</div>
+
+			<div>
+				<h3>$400 por Mes + 1 cerveza gratis</h3>
+			</div>
+	
+			<!-- DESCRIPCION DE LA IMAGEN -->
+			<div class="descripcion-producto">
+				<p>Your membership will include:</p>
+				<ul>
+					<li>Twelve, 12 oz. hand-crafted beers each month from two different lightly distributed U.S. Microbreweries. You'll get four different beer styles, three of each style.</li>
+					<li>Our Monthly Newsletter with detailed tasting notes, beer profiles, brewery histories, and suggested food pairings.</li>
+					<li>FREE bartender's bottle opener with all orders of 3 shipments or more.</li>
+					<li>No auto-renewal when you choose a fixed-duration between 2-12 shipments.</li>
+				</ul>
+			</div>
+	
+			<!-- AGREGAR AL CARRITO -->
+			<div class="agregarAlcarrito">
+			  <button class="btn-agregarAlCarrito" type="button">Agregar al carrito <i class="fas fa-plus"></i></button>
+			</div>
+  
+			<!-- COMPRAR AHORA -->
+			<div class="comprarAhora">
+			  <button class="btn-comprarAhora" type="button">¡Ser Miembro Ahora!</button>
+			</div>
+
+		  </section>
+		  
+		</section>
+
+		<section>
+			<div>
+				productos relacionados
+			</div>
+			<div>
+				Sobre la membrecia
+			</div>
+			<div>
+				El regalo perfecto
+			</div>
+			<div>
+				Que elegimos
+			</div>
+		</section>
 		
+	  </div>
 
 	<footer>
 		<%- include('./partials/footer.ejs') %>

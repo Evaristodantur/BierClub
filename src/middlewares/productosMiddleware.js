@@ -22,6 +22,12 @@ let productMiddleware =  [
                                                 return true;
                                         }
 
+                                        if(typeof req.imagenGuardada.length != "undefined" && req.imagenGuardada.length < req.files) {
+                                                return false;
+                                        }
+
+
+
                                         if(typeof req.files[0] == "undefined") {
                                                 return false;
                                         }

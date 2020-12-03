@@ -85,3 +85,104 @@ Categoria: no lupulada
 Descripción: De color naranja intenso, cual noctiluca rabiosa, la prickly dingo es una catharina sour con cactus.
 Una cerveza acida, balanceada por el dulzor del cactus que le da sabores y aromas a chicle de tutti-frutti, sandia y kiwi.
 *************************************************************
+Hubo un intento de subir/modificar a las 30/11/2020 04:34:29
+El producto es:
+Producto: dassdaasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 30/11/2020 04:35:07
+Producto: dsfsdfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 30/11/2020 04:35:36
+Producto: lucas
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 03:32:25
+Producto: asdasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:32:34
+El producto es:
+Producto: fdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:33:17
+El producto es:
+Producto: dassad
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 03:33:31
+Producto: dsasad
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:33:40
+El producto es:
+Producto: fdsfdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:33:57
+El producto es:
+Producto: fdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 03:34:10
+Producto: fdsfdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 03:34:19
+Producto: gdfgfd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 03:37:00
+Producto: dfgdfg
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
