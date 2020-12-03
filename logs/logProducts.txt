@@ -832,3 +832,19 @@ Stock: 0
 Categoria: cerveza
 Descripción: 
 *************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:47:05
+Producto: ippa Sippa (TDH Imperial Aussie IPA)
+Precio: 90
+Descuento: 10
+Stock: 645645
+Categoria: cerveza
+Descripción: Amarillo pálido, algo turbia y muy refrescante! Este híbrido entre una West Coast y una East Coast IPA tiene lo mejor de los dos mundos: de cuerpo medio, con aromas y sabores cítricos tropicales (ananá 🍍, maracuyá y mandarina 🍊).
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:47:15
+Producto: ippa Sippa (TDH Imperial Aussie IPA)
+Precio: 90
+Descuento: 10
+Stock: 645645
+Categoria: cerveza
+Descripción: Amarillo pálido, algo turbia y muy refrescante! Este híbrido entre una West Coast y una East Coast IPA tiene lo mejor de los dos mundos: de cuerpo medio, con aromas y sabores cítricos tropicales (ananá 🍍, maracuyá y mandarina 🍊).
+*************************************************************

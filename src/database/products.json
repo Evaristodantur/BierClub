@@ -93,17 +93,5 @@
             "producto-1606687552404.jpg",
             "producto-1606687552431.jpg"
         ]
-    },
-    {
-        "id": 8,
-        "nombre": "lucas",
-        "precio": 0,
-        "descuento": 0,
-        "stock": 0,
-        "categoria": "cerveza",
-        "descripcion": "",
-        "imagen": [
-            "producto-1606721707068.jpg"
-        ]
     }
 ]
