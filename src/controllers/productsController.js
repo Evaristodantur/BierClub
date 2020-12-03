@@ -48,11 +48,6 @@ let productsController = {
 
         if (!errores.isEmpty()) {
             
-            for(let i=0; i < req.files.length; i++) {
-                let borrandoElArchivo = `./src/public/images/productos/${req.files[i].filename}`
-                fs.unlinkSync(borrandoElArchivo);
-            }
-
             return res.render('products/productAdd', {errors: errores.errors});
         }
 
@@ -121,11 +116,6 @@ let productsController = {
         //Validacion
         let errores = validationResult(req);
         if (!errores.isEmpty()) {
-
-            for(let i=0; i < req.files.length; i++) {
-                let borrandoElArchivo = `./src/public/images/productos/${req.files[i].filename}`
-                fs.unlinkSync(borrandoElArchivo)
-            }
 
             let productoEncontrado = productsJson.find( producto => producto.id == idUrl );
             productoEncontrado.errors = errores.errors

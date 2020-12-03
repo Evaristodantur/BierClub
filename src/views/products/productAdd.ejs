@@ -102,7 +102,7 @@
               <% if (typeof errors != 'undefined') { %>
                 <% for(let i=0; i < errors.length; i++)  { %>
                   <% if (errors[i].param == "imagen") {  %>
-                    <p class="errorDeCarga">* El campo <%=`"${errors[i].param}" ` + errors[i].msg %></p>
+                    <p class="errorDeCarga">* <%= errors[i].msg %></p>
                     <% break; %>
                   <% } %>
                 <% } %>

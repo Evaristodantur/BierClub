@@ -185,7 +185,7 @@ body .products-catalogo{
 .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
     /* Posicionamiento */
     margin-top: 171px;
-    margin-left: 5%;
+    top: 0px;
 
     /* Otras */
     background: rgb(184, 20, 20);
@@ -201,10 +201,10 @@ body .products-catalogo{
     transition: 1;
 }
 
-.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.modificar-producto {
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.modificar-producto,
+.products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.eliminar-producto {
     /* Posicionamiento */
     position: absolute;
-    z-index: 9;
 }
 
 /* ==========================================================================
@@ -253,8 +253,44 @@ body .products-catalogo{
 .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto:hover button.btn-agregarAlCarrito{
     opacity: 1;
     transition: 0.2s;
+    cursor: pointer;
 }
 
+.modal-eliminar-producto {
+    position: fixed;
+    display: none;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    top: 45%;
+}
+
+.modalEliminarProducto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+    height: 130px;
+    width: 450px;
+}
+
+.no-yes-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.invisible{
+    height: 125vh;
+    width: 127vw;
+    background-color: black;
+    position: absolute;
+    left: -45%;
+    top: -65%;
+    z-index: -1;
+    opacity: .5;
+    margin-top: -30vh;
+    margin-left: -30vw;
+}
 
 
 

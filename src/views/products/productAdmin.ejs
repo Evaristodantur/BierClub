@@ -9,7 +9,7 @@
 	<%- include('../partials/head.ejs') %>
 </head>
 
-<body>
+<body id="body">
 	<!-- NAV -->
 	<header>
 		<%- include('../partials/nav.ejs') %>
@@ -93,11 +93,25 @@
 								<img src="/images/productos/<%= producto.imagen[0] %>" alt="<%= producto.nombre %>">
 									<h4 class="nombre-producto-productAdmin"><%= producto.nombre %></h4>
 								<button onclick="window.location.href='/products/productEdit/<%= producto.id %>'" id="modificarProducto" class="modificar-producto">Modificar Producto</button>
-								<form class="borrarProducto" action="/products/productEdit/delete/<%= producto.id %>?_method=DELETE" method="POST">
-									<button type="submit" id="eliminarProducto" class="eliminar-producto">Eliminar Producto</button>	
-								</form>
+								<button class="eliminar-producto" onclick="eliminarProducto(<%= producto.id %>)">Eliminar Producto</button>
+
 							</article>
+
+							<div class="modal-eliminar-producto" id="eliminar-<%= producto.id %>">
+								<div class="invisible" onclick="divTransparencia(<%= producto.id %>)"></div>
+								<p>¿Desea eliminar el producto?</p>
+								<div class="no-yes-button">
+									<button onclick="divTransparencia(<%= producto.id %>)" class="borrarProducto-choice">Nuw</button>
+									<form class="borrarProducto-choice" action="/products/productEdit/delete/<%= producto.id %>?_method=DELETE" method="POST">
+										<button type="submit" id="eliminarProducto" class="eliminar-producto">Si</button>	
+									</form>
+								</div>
+								
+							</div>
+
+							
 						<% }); %>		
+						
 					
 				</section>
 			</main>
