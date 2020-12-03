@@ -22,12 +22,6 @@ let productMiddleware =  [
                                                 return true;
                                         }
 
-                                        if(typeof req.imagenGuardada.length != "undefined" && req.imagenGuardada.length < req.files) {
-                                                return false;
-                                        }
-
-
-
                                         if(typeof req.files[0] == "undefined") {
                                                 return false;
                                         }
@@ -35,6 +29,22 @@ let productMiddleware =  [
                                 }
                         }, errorMessage : 'las imágenes deben ser .jpg, .png o .jpeg'
                 }
+        }),
+        checkSchema({
+                imagen: {
+                                custom: {
+                                                 
+                                        options: (value, { req, errorMessage, files, paths }) => {
+                                                if(typeof req.imagenGuardada != "undefined") {
+                                                        if(req.imagenGuardada.length > req.files.length) {
+                                                                return false;
+                                                        }
+                                                }
+
+                                                return true;
+                                        }
+                                }, errorMessage : 'hay archivos que se intentaron subir que no son imagenes'
+                        }
         }),
         checkSchema({
                 imagen: {

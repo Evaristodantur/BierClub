@@ -186,3 +186,649 @@ Stock: 0
 Categoria: cerveza
 Descripción: 
 *************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:43:01
+El producto es:
+Producto: asdasdasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:43:08
+El producto es:
+Producto: fdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:43:54
+El producto es:
+Producto: fdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:44:29
+El producto es:
+Producto: fdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:44:41
+El producto es:
+Producto: dsadsa
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:45:35
+El producto es:
+Producto: dsadsadsadassda
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:46:28
+El producto es:
+Producto: fdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:47:07
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:55:21
+El producto es:
+Producto: fsdfsdfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:55:24
+El producto es:
+Producto: fsdfd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:56:03
+El producto es:
+Producto: dfgfdg
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:56:05
+El producto es:
+Producto: sadasasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:56:19
+El producto es:
+Producto: hfgghf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:56:21
+El producto es:
+Producto: dgfdgf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 03:56:54
+Producto: fdssdfdfs
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 03:57:02
+El producto es:
+Producto: dfggdfdfg
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 03:57:15
+Producto: sdfdfssdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 03:57:23
+Producto: dfsdfsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 03:57:36
+Producto: fdssfddsf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:00:08
+Producto: dsffdsfdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:02:37
+Producto: sdffdsfsd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:03:07
+El producto es:
+Producto: fsdfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:03:20
+El producto es:
+Producto: dsffdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:03:25
+El producto es:
+Producto: dfsfsdfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:10:52
+El producto es:
+Producto: fgddgf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:11:07
+El producto es:
+Producto: ddd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:11:41
+Producto: dsdsa
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:12:19
+Producto: fdsdfssdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:13:00
+El producto es:
+Producto: fdssdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:13:30
+El producto es:
+Producto: dsadas
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:14:32
+El producto es:
+Producto: dassda
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:14:54
+El producto es:
+Producto: dsasadsda
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:15:30
+El producto es:
+Producto: dassaddsa
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:17:27
+Producto: sdasdaasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:17:40
+El producto es:
+Producto: fdsfdssdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:17:47
+Producto: asddsa
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:18:19
+Producto: sdadsaasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:18:31
+El producto es:
+Producto: fdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:19:06
+El producto es:
+Producto: fdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:19:13
+El producto es:
+Producto: fdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:22:03
+El producto es:
+Producto: fdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:22:09
+El producto es:
+Producto: sadsadasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:22:21
+Producto: dsaasdasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:22:27
+Producto: fdsdfssdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:23:07
+Producto: dasasdasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:23:51
+Producto: dfggfddfg
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:27:13
+Producto: dasdasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:27:19
+Producto: fsdfsdfsdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:27:34
+El producto es:
+Producto: fdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:27:39
+El producto es:
+Producto: dsadsad
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:28:18
+Producto: fdsfdsf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:28:33
+El producto es:
+Producto: fsdfsdfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:28:45
+El producto es:
+Producto: fdsfdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:29:36
+El producto es:
+Producto: dasdassda
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:30:36
+Producto: fdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:31:31
+Producto: dsadsa
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:31:40
+El producto es:
+Producto: fdsfdssdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:32:02
+El producto es:
+Producto: fdsfdssdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:32:47
+El producto es:
+Producto: fdsfdssdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:33:26
+El producto es:
+Producto: fdsfdssdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:34:08
+El producto es:
+Producto: fdsfdssdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:34:37
+El producto es:
+Producto: fdsfdssdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:34:57
+El producto es:
+Producto: fdsfdssdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:35:06
+Producto: dsadsaasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:35:16
+Producto: dfsfdsdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:36:47
+El producto es:
+Producto: fdsfdsfd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:38:01
+El producto es:
+Producto: fdsfdsfd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:38:15
+Producto: fdsfdsfd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:38:47
+Producto: fsdfdsdsf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:38:53
+Producto: gfdgdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:39:01
+Producto: gfdgfdgfd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:39:51
+Producto: fdsfdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:40:06
+Producto: fdsdsfdfs
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 04:40:11
+Producto: gfdgdfdgf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 3/12/2020 04:40:17
+El producto es:
+Producto: gdfgfdgdf
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
