@@ -95,6 +95,9 @@
 .form-eliminar{
     width:45%;
 }
+.button-eliminar:hover{
+    cursor: pointer;
+}
 .form-eliminar .button-eliminar{
     width: 100%;
     background-color: red;
