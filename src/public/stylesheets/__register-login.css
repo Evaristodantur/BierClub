@@ -195,14 +195,14 @@ body .login-register{
     margin-top: -30vh;
     margin-left: -30vw;
 }
-.cerrar-modificar{
+.terms-modal .cerrar-modificar{
     position: absolute;
     display: inline-block;
     right:-8px;
     margin-right: 12px;
     margin-top: 12px;
 }
-.cerrar-modificar .fa-times-circle{
+.terms-modal .cerrar-modificar .fa-times-circle{
     color: #DAA520;
     font-size: 24px;
 }

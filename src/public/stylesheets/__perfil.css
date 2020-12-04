@@ -111,6 +111,9 @@
     width: 45%;
     background-color: blue;
 }
+.boton-eliminar:hover{
+    cursor: pointer;
+}
 .showModificar {
     display: inline-block;
   }

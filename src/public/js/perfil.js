@@ -3,6 +3,7 @@
 function modificarPerfil() {
   document.getElementById("modificar").classList.toggle("showModificar");
   document.getElementById("body").classList.toggle("hideOverflow");
+  usuario.errors = "undefined";
 }
 
 /* ¿Seguro que desea eliminar este usuario? OnClick */
@@ -14,5 +15,6 @@ function eliminarPerfil() {
 function divTransparencia() {
   document.getElementById("modificar").classList.toggle("showModificar");
   document.getElementById("body").classList.toggle("hideOverflow");
+  usuario.errors = "undefined";
 }
 

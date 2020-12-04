@@ -60,7 +60,9 @@
 
 			</div>
 			<!-- FORMULARIO -->
-			<div class="formulario-perfil" id="modificar">
+			<div class="formulario-perfil<%if(typeof usuario.errors != "undefined"){%>
+				showModificar
+			<%}%>" id="modificar">
 				<div class="invisible" onclick="divTransparencia()"></div>
 				
 				<form class="formulario form-perfil" action="/users/perfil/<%= usuario.id %>" method="POST">
@@ -145,7 +147,7 @@
 					<div class="invisible-eliminar-usuario" id="eliminar-user">
 						<p>¿Está seguro que desea eliminar este usuario?</p>
 						<div class="eliminar-usuario-container">
-							<button class="input-button modificar-datos boton-eliminar" type="reset">No</button>
+							<button onclick="eliminarPerfil()" class="input-button modificar-datos boton-eliminar" type="reset">No</button>
 							<form class="form-eliminar"action="/users/perfil/eliminar/<%= usuario.id %>?_method=DELETE" method="POST">
 								<button type="submit" class="input-button button-enteros button-eliminar">Si</button>
 							</form>

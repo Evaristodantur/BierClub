@@ -162,3 +162,8 @@ El usuario registrado es:
 Nombre: Evaristo Dantur
 Email: evaristo@dantur.com
 *************************************************************
+Se registró un usuario el 2020-12-4 3:22:54
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
