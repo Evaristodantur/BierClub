@@ -1,5 +1,14 @@
 # Dailies
 
+### 🗓️ 4/12/20
+  Terminado:
+  - CSS de eliminar producto (modal)
+  - productAdmin especificado
+  - Perfil arreglado (actualizacion de usuarios)
+  
+  Para hacer hoy:
+  - Firefox: Arreglar nav del home
+
 ### 🗓️ 3/12/20
   Terminado:
   - Multer arreglado
