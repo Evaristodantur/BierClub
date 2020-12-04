@@ -23,17 +23,30 @@ let usersController = {
       res.render('users/usersAdmin', { usuarios : usuariosJson });
     },
 
+    //    /users/usersAdminEdit/:id  (POST)
     usersAdminEditView : (req, res, next) => {
+      // Busca el id por parametro 
       let idUrl = req.params.id;
 
+      // Busca el id del usuario enviado por parametro
       let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
+
+      // Si el id del usuario enviado por parametro existe, envia la vista. Si no existe, da error.
       usuarioBuscado ? (res.render("users/usersAdminEdit", { usuarios : usuarioBuscado })) : res.render('users/verifyAccount', { msgErrorUsuarioInexistente: 'Este usuario no existe'});
     },
 
+    //    /users/usersAdminEdit/:id  (POST)
     usersAdminEdit : (req,res,next) =>{
+      // Busca el id por parametro 
       let idUrl = req.params.id;
+
+      // Crea variable admin
       let admin;
+
+      // Verifica si el user a editar es admin y le aplica la propiedad a esa variable
       req.body.admin ?  admin = true : admin = false;
+
+      // Mapeo del usuario con los cambios
        let usuarioCambiado = usuariosJson.map(function(usuario){
         if(usuario.id == idUrl){
            usuario = {
@@ -48,6 +61,7 @@ let usersController = {
         return usuario;
       });
 
+      // Usuario agregado al JSON
       let usuariosCambiadosJSON = JSON.stringify(usuarioCambiado);
       fs.writeFileSync(dbDirectory, usuariosCambiadosJSON);
       res.redirect("/users/usersAdmin");
@@ -61,8 +75,9 @@ let usersController = {
     },
 
 
-    //  /users/register
+    //  /users/register (POST)
     store : (req, res, next) => {
+
       // Enviar errores express-validator
       let errores = validationResult(req);
       errores.reqNombre = req.body.nombre;
@@ -71,20 +86,20 @@ let usersController = {
         return res.render("users/register", {errors : errores})
       }
 
-      // ID maximo para reemplazar
+      // Crea variable del ID maximo para reemplazarlo luego.
       let idMax = 0;
 
-      //For para buscar el ID mas alto, y reemplazar idMax por el ID mas alto
+      // For para buscar el ID mas alto, y reemplazar idMax por el ID mas alto
       for(let i = 0 ; i < usuariosJson.length ; i++){
         if(usuariosJson[i].id > idMax){
           idMax = usuariosJson[i].id;
         }
       }
       
-      //Sumarle 1 al ID mas alto, para crear un producto nuevo
+      // Sumarle 1 al ID mas alto, para crear un usuario nuevo con un ID unico
       idMax = idMax + 1;
 
-      //Hacer objeto completo, con el ID primero para mas comodidad
+      // Hacer objeto completo, con el ID primero para mas comodidad
       let usuarioNuevo = {
         id : idMax,
         nombre : req.body.nombre,
@@ -94,7 +109,7 @@ let usersController = {
         verify: [false, (Math.random()*15).toString(36).substring(2)]
       } 
 
-      //Manda mail de verificacion
+      // Manda mail de verificacion
       let transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
@@ -102,16 +117,19 @@ let usersController = {
           pass: process.env.password
         }
       });
+
       const output = `
       <h3>¡Gracias por registrarte en BierClub!:</h3> 
       <p>Por favor haz click en <a href="http://localhost:3000/users/verifyAccount/${usuarioNuevo.verify[1]}">este</a> link para activar tu cuenta</p>
       `;
+
       let mailOptions = {
         from: process.env.email, 
         to: req.body.email,
         subject: "Verificacion de la cuenta de BierClub",
         html: output
       }
+
       transporter.sendMail(mailOptions, function(err, data){
         if(err){
           console.log("ERROR");
@@ -120,13 +138,13 @@ let usersController = {
 
       
 
-      //Sumar el usuario al array
+      // Sumar el usuario al array
       usuariosJson.push(usuarioNuevo);
       
-      //Sobreescribe el archivo
+      // Sobreescribe el archivo
       fs.writeFileSync(dbDirectory, JSON.stringify(usuariosJson));
 
-      //Te envia a la vista una vez el form fue completado
+      // Te envia a la vista una vez el form fue completado
       
       res.render("users/register", { verificarUsuario : "¡Te registraste! Por favor verifica tu dirección email."});
         }
@@ -141,18 +159,22 @@ let usersController = {
       res.render('users/login');
     },
 
+    //  /users/login (POST)
     loginIniciar : (req, res, next) => {
+
       // Enviar errores express-validator
       let errores = validationResult(req);
       errores.reqEmail = req.body.email;
       if (!errores.isEmpty()){
         return res.render("users/login", {errors : errores})
       }
-
+      // Busca el email ingresado en el json
       let buscarUsuario = usuariosJson.find(usuario => usuario.email == req.body.email);
 
+      // Hace la session del usuario buscado (Si o si lo encuentra, porque si no existe, el middleware tira error. Por eso no hace falta un if)
       req.session.usuarioLogueado = buscarUsuario;
 
+      // Si el "Recordarme" esta marcado, crea la cookie para mantener la sesion iniciada
       if(req.body.recordameLogin != undefined){
         res.cookie('recordame', buscarUsuario.email,{ maxAge: 1000*60*60*24*365*3 })
       }
@@ -166,20 +188,28 @@ let usersController = {
       let idUrl = req.params.id;
 
         let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
+
+        // Esto es para arreglar error de recargar la pagina
+        usuarioBuscado.errors = undefined;
         
         usuarioBuscado ? (res.render("users/perfil", { usuario : usuarioBuscado })) : res.render("error")
     },
 
 
-    // Modificacion del perfil
+    //  /users/perfil/:id (POST)
     perfilUpdate : (req, res, next) => {
+      // Busca la URL del parametro
       let idUrl = req.params.id;
+
+      // Hay errores? Esta es la logica de los errores. (check en los middlewares)
       let errores = validationResult(req);
       let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
       if (!errores.isEmpty()){
         usuarioBuscado.errors = errores.errors;
         return res.render("users/perfil", { usuario : usuarioBuscado })
       }
+
+      // Cambios en el usuario si no hay ningun error
       let usuarioCambiado = usuariosJson.map(function(usuario){
         if(usuario.id == idUrl){
            usuario = {
@@ -194,24 +224,32 @@ let usersController = {
         return usuario;
       });
 
+      // Usuario agregado al JSON
       let usuariosCambiadosJSON = JSON.stringify(usuarioCambiado);
       fs.writeFileSync(dbDirectory, usuariosCambiadosJSON);
       res.redirect("/");
       },
 
-
+      // users/perfil/eliminar/:id (POST)
       eliminar : (req, res, next) => {
+
+        // Busca el id enviado por parametro
         let idUrl = req.params.id;
 
+        // Hace un filter para eliminar al usuario directamente
         let eliminarUsuario = usuariosJson.filter(function(usuario){
           return usuario.id != idUrl;
         });
+
+        // Incluye la lista actualizada al JSON
         let usuarioEliminadoJSON = JSON.stringify(eliminarUsuario);
         fs.writeFileSync(dbDirectory, usuarioEliminadoJSON);
         res.redirect("/");
       },
 
+      // users/perfil/pedidos/:id
       pedidos : (req, res, next) => {
+        // Guarda el ID del parametro
         let idUrl = req.params.id;
 
         let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
@@ -219,14 +257,13 @@ let usersController = {
         usuarioBuscado ? (res.render("users/pedidos", usuarioBuscado)) : res.render("error")
       },
 
-      
-
-
-
-
+      // users/verifyAccount/:id 
       verifyAccount: (req, res, next) => {
+
+        // Guarda el ID del parametro
         let idUrl = req.params.id;
 
+        // Busca el usuario con el ID pasado por parametro
         let usuarioAVerificar = usuariosJson.find( usuario => usuario.verify[1] == idUrl );
 
         //Verificacion de email inexistente
@@ -256,10 +293,17 @@ let usersController = {
         return res.render('users/verifyAccount', { usuario : usuarioAVerificar });
 
       },
+
+      // users/verifyAccount/:id (POST)
       reenviarEmail: (req, res, next) =>{
+
+        // Guardo el ID pasado por parametro
         let idUrl = req.params.id;
 
+        // Busca el ID pasado por parametro en el json
         let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
+
+        // Reenvia el email
         let transporter = nodemailer.createTransport({
           service: "gmail",
           auth: {
