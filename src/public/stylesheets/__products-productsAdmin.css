@@ -256,6 +256,11 @@ body .products-catalogo{
     cursor: pointer;
 }
 
+/* ==========================================================================
+   MODAL - Eliminar producto
+   ========================================================================== */
+
+/*Div contenerdor del container a cambiar*/
 .modal-eliminar-producto {
     position: fixed;
     display: none;
@@ -265,21 +270,25 @@ body .products-catalogo{
     top: 45%;
 }
 
+/*Se encuentra dentro del .js*/
 .modalEliminarProducto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: green;
+    background-color: rgb(73, 73, 73);
+    border-radius: 8px;
     height: 130px;
     width: 450px;
 }
 
-.no-yes-button {
+.modal-eliminar-producto .no-yes-button {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-.invisible{
+.modal-eliminar-producto .containerChoiceProdutoAEliminar{
     height: 125vh;
     width: 127vw;
     background-color: black;
@@ -291,6 +300,36 @@ body .products-catalogo{
     margin-top: -30vh;
     margin-left: -30vw;
 }
+
+.columna-productos .modal-eliminar-producto p {
+    color: white;
+    margin-bottom: 7%;
+}
+
+.modal-eliminar-producto .no-yes-button button#noBorrarProducto {
+    background: rgb(71, 73, 211);
+    color: white;
+    width: 40%;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-eliminar-producto .no-yes-button form.borrarProducto-form {
+    width: 40%;
+}
+
+.modal-eliminar-producto .no-yes-button .borrarProducto-form button#eliminarProducto {
+    background: rgb(184, 20, 20);
+    color: white;
+    padding: 5px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 
 
 
@@ -408,14 +447,6 @@ body .products-catalogo{
         height: 230px;
     }
 
-    /* BUTTON, ELIMINAR - MODIFICAR */
-    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto {
-        top: 103px;
-    }
-
-    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
-        margin-top: 141px;
-    }
 }
 
 
@@ -468,25 +499,6 @@ body .products-catalogo{
         height: 260px;
     }
 
-    /* BUTTON, ELIMINAR - MODIFICAR */
-    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto, 
-    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
-        /* Display & Box Model */
-        display: inline-block;
-        width: 90%;
-        padding: 5px;
-
-        /* Otras */
-        color: white;
-        border-radius: 9px;
-        border: 0;
-    }
-
-    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto {
-        position: absolute;
-        top: 113px;
-    }
-
     /* BUTTON, AGREGAR AL CARRITO */
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.agregarProducto {
         width: 100%;
@@ -508,9 +520,21 @@ body .products-catalogo{
         height: 260px;
     }
 
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto, 
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
+        /* Display & Box Model */
+        display: inline-block;
+        position: absolute;
+    }
+
     /*BUTTON - AÑADIR AL CARRITO*/
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.btn-agregarAlCarrito {
         opacity: 1;
+    }
+
+    /*MODAL*/
+    .modal-eliminar-producto .containerChoiceProdutoAEliminar{
+        width: 150vw;
     }
 }
 
@@ -523,6 +547,11 @@ body .products-catalogo{
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
         /* Display & Box Model */
         height: 215px;
+    }
+
+    /*MODAL*/
+    .modal-eliminar-producto .containerChoiceProdutoAEliminar{
+        width: 155vw;
     }
 }
 
@@ -586,15 +615,6 @@ body .products-catalogo{
         height: 320px;
     }
 
-
-    /* BUTTON, ELIMINAR - MODIFICAR */
-    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto {
-        top: 143px;
-    }
-
-    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
-        margin-top: 171px;
-    }
 }
 
 
@@ -609,6 +629,32 @@ body .products-catalogo{
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
         /* Display & Box Model */
         height: 270px;
+    }
+
+    /*MODAL*/
+    .modal-eliminar-producto .no-yes-button {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .modalEliminarProducto {
+        width: 278px;
+        height: 140px;
+    }
+
+    .modal-eliminar-producto .no-yes-button .borrarProducto-form button#eliminarProducto {
+        margin-bottom: 2px;
+    }
+
+    .modal-eliminar-producto .no-yes-button button#noBorrarProducto {
+        padding: 5px;
+    }
+
+    .modal-eliminar-producto .containerChoiceProdutoAEliminar{
+        width: 165vw;
     }
 }
 
@@ -645,13 +691,13 @@ body .products-catalogo{
         height: 415px;
     }
 
-    /* BUTTON, ELIMINAR - MODIFICAR */
+
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto {
-        top: 173px;
+        top: 190px;
     }
 
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
-        margin-top: 200px;
+        margin-top: 228px;
     }
 }
 
@@ -685,6 +731,12 @@ body .products-catalogo{
         height: 300px;
     }
 
+    /*MODAL*/
+    .modalEliminarProducto {
+        width: 250px;
+        height: 140px;
+    }
+
 }
 
 
@@ -701,4 +753,11 @@ body .products-catalogo{
         height: 250px;
     }
 
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.modificar-producto {
+        top: 146px;
+    }
+
+    .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto button.eliminar-producto {
+        margin-top: 184px;
+    }
 }

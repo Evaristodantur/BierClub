@@ -38,7 +38,7 @@ router.get('/productCart', productsController.productCart);
 
 /* GET     /products/productAdmin                                       page. */
 router.get('/productAdmin', 
-                    /* guestMiddleware,
+                   /*  guestMiddleware,
                     verifyAccountMiddleware,
                     authAdminMiddleware,  */
                                         productsController.productAdmin);
@@ -47,9 +47,9 @@ router.get('/productAdmin',
 
 /* GET     /products/productAdd - Pagina Visual de create               page. */
 router.get('/productAdd',  
-                    /* guestMiddleware,
+                    guestMiddleware,
                     verifyAccountMiddleware,
-                    authAdminMiddleware,  */
+                    authAdminMiddleware, 
                                         productsController.createProduct);
 
 /* POST     /products/productAdd - Crea/almacena el producto             page. */
@@ -63,9 +63,9 @@ router.post('/productAdd',
 
 /* GET     /products/productEdit/:id - Pagina Visual de productEdit     page. */
 router.get('/productEdit/:id',
-                   /*  guestMiddleware,
+                    guestMiddleware,
                     verifyAccountMiddleware,
-                    authAdminMiddleware,  */
+                    authAdminMiddleware, 
                                         productsController.editProduct);
 
 /* PUT     /products/productEdit/:id - Modifica el producto             page. */
@@ -79,8 +79,8 @@ router.put('/productEdit/:id',
 
 /* DELETE     /products/productEdit/borrar/:id - Borra el producto      page. */
 router.delete('/productEdit/delete/:id',
-                  /*   guestMiddleware,
-                    authAdminMiddleware,  */
+                    guestMiddleware,
+                    authAdminMiddleware, 
                                         productsController.deleteProduct);
 
 

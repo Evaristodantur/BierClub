@@ -22,8 +22,8 @@ Hubo un intento de registro el 2020-11-29 20:18:09
 El usuario a registrarse fue:
 Nombre: 
 Email: 
-<<<<<<< HEAD
 *************************************************************
+<<<<<<< HEAD
 Hubo un intento de registro el 2020-11-29 20:18:13
 El usuario a registrarse fue:
 Nombre: asdasd
@@ -167,3 +167,5 @@ El usuario registrado es:
 Nombre: Evaristo Dantur
 Email: evaristo@dantur.com
 *************************************************************
+=======
+>>>>>>> 50e31ddbfe13eead12e292de13d62d0a02353219
