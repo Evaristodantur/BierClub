@@ -76,14 +76,16 @@ router.post('/login',
 
 /* GET     /users/perfil/:id             page. */
 router.get('/perfil/:id', 
-                guestMiddleware, 
+/*                 guestMiddleware, 
                 verifyAccountMiddleware,
-                perfilOrAdminMiddleware,
+                perfilOrAdminMiddleware, */
                                 usersController.perfilEdit);
 
 /* POST     /users/perfil/:id            page. */
 router.post('/perfil/:id', 
                 modificarUserMiddleware, 
+/*                 verifyAccountMiddleware,
+                perfilOrAdminMiddleware, */
                                 usersController.perfilUpdate);
 
 /**********************************ELIMINAR*******************************************/

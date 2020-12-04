@@ -173,7 +173,12 @@ let usersController = {
     // Modificacion del perfil
     perfilUpdate : (req, res, next) => {
       let idUrl = req.params.id;
+      let errores = validationResult(req);
       let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
+      if (!errores.isEmpty()){
+        usuarioBuscado.errors = errores.errors;
+        return res.render("users/perfil", { usuario : usuarioBuscado })
+      }
       let usuarioCambiado = usuariosJson.map(function(usuario){
         if(usuario.id == idUrl){
            usuario = {

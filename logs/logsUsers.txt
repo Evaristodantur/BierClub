@@ -157,3 +157,8 @@ Email: evaristo@dantur.com
 =======
 *************************************************************
 >>>>>>> 110ad6fb96937d7623772f9da137f8d96afb0c51
+Se registró un usuario el 2020-12-3 21:22:21
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
