@@ -156,7 +156,8 @@ let usersController = {
       if(req.body.recordameLogin != undefined){
         res.cookie('recordame', buscarUsuario.email,{ maxAge: 1000*60*60*24*365*3 })
       }
-      res.redirect("/")
+
+      res.redirect('back');
     },
 
 

@@ -260,6 +260,7 @@ body .products-catalogo{
    MODAL - Eliminar producto
    ========================================================================== */
 
+/*Div contenerdor del container a cambiar*/
 .modal-eliminar-producto {
     position: fixed;
     display: none;
@@ -269,6 +270,7 @@ body .products-catalogo{
     top: 45%;
 }
 
+/*Se encuentra dentro del .js*/
 .modalEliminarProducto {
     display: flex;
     flex-direction: column;
@@ -279,14 +281,14 @@ body .products-catalogo{
     width: 450px;
 }
 
-.no-yes-button {
+.modal-eliminar-producto .no-yes-button {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
 }
 
-.invisible{
+.modal-eliminar-producto .containerChoiceProdutoAEliminar{
     height: 125vh;
     width: 127vw;
     background-color: black;
@@ -299,12 +301,12 @@ body .products-catalogo{
     margin-left: -30vw;
 }
 
-.modal-eliminar-producto p {
+.columna-productos .modal-eliminar-producto p {
     color: white;
     margin-bottom: 7%;
 }
 
-#noBorrarProducto {
+.modal-eliminar-producto .no-yes-button button#noBorrarProducto {
     background: rgb(71, 73, 211);
     color: white;
     width: 40%;
@@ -313,11 +315,11 @@ body .products-catalogo{
     cursor: pointer;
 }
 
-.borrarProducto-form {
+.modal-eliminar-producto .no-yes-button form.borrarProducto-form {
     width: 40%;
 }
 
-#eliminarProducto {
+.modal-eliminar-producto .no-yes-button .borrarProducto-form button#eliminarProducto {
     background: rgb(184, 20, 20);
     color: white;
     padding: 5px;
@@ -531,7 +533,7 @@ body .products-catalogo{
     }
 
     /*MODAL*/
-    .invisible{
+    .modal-eliminar-producto .containerChoiceProdutoAEliminar{
         width: 150vw;
     }
 }
@@ -548,7 +550,7 @@ body .products-catalogo{
     }
 
     /*MODAL*/
-    .invisible{
+    .modal-eliminar-producto .containerChoiceProdutoAEliminar{
         width: 155vw;
     }
 }
@@ -630,7 +632,7 @@ body .products-catalogo{
     }
 
     /*MODAL*/
-    .no-yes-button {
+    .modal-eliminar-producto .no-yes-button {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -643,15 +645,15 @@ body .products-catalogo{
         height: 140px;
     }
 
-    #eliminarProducto {
+    .modal-eliminar-producto .no-yes-button .borrarProducto-form button#eliminarProducto {
         margin-bottom: 2px;
     }
 
-    #noBorrarProducto {
+    .modal-eliminar-producto .no-yes-button button#noBorrarProducto {
         padding: 5px;
     }
 
-    .invisible{
+    .modal-eliminar-producto .containerChoiceProdutoAEliminar{
         width: 165vw;
     }
 }

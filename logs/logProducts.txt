@@ -93,4 +93,19 @@ Descuento: 0
 Stock: 0
 Categoria: cerveza
 Descripción: 
+*************************************************************Fecha de creacion/modificación del producto: 3/12/2020 20:40:39
+Producto: dsaasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 3/12/2020 21:59:42
+Producto: dfgfdg
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: cerveza
+Descripción: 
 *************************************************************
