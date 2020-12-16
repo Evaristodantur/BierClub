@@ -1,5 +1,7 @@
 const path = require('path');
 const fs = require('fs');
+let db = require("../database/models");
+let sequelize = db.sequelize;
 
 //Middleware
 let { validationResult } = require('express-validator');
@@ -15,7 +17,12 @@ productsJson == "" ?
 
 let productsController = {
 
-
+    prueba : (req, res, next) => {
+        db.Peliculas.findAll()
+            .then(function(peliculas) {
+                res.render("prueba", {peliculas:peliculas});
+            });
+    },
     
 
     //  /products - Vista Home
