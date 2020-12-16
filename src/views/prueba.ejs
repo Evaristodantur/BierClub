@@ -8,9 +8,9 @@
 <body>
     <h1>Listado de peliculas</h1>
     <ul>
-        <% for (let i = 0; i < peliculas.length; i++) { %>
+        <% for (let i = 0; i < productos.length; i++) { %>
             <li>
-                <a href="/movies/<%=peliculas[i].id%>"><%=peliculas[i].title%></a>
+                <a href="/movies/<%=productos[i].id%>"><%=productos[i].nombre%></a>
             </li>            
         <% } %>
     </ul>

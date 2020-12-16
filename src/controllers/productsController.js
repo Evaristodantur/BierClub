@@ -18,9 +18,9 @@ productsJson == "" ?
 let productsController = {
 
     prueba : (req, res, next) => {
-        db.Peliculas.findAll()
-            .then(function(peliculas) {
-                res.render("prueba", {peliculas:peliculas});
+        db.Productos.findAll()
+            .then(function(productos) {
+                res.render("prueba", {productos:productos});
             });
     },
     
