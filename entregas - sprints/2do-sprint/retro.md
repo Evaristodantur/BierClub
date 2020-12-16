@@ -1,16 +1,29 @@
-# Retrospectiva - 4to Sprint
+# Retrospectiva - 4to (JSON) y 5to (Middlewares) Sprint
 
 ### Start Doing:
+  - Actualmente no hay ninguna consideración respecto a empezar hacer algo nuevo, ya que nuestras acciones cumple el proposito de todo el sprint
 
 ### More of:
+  - Ponernos al dia, en PlayGround y en las nuevas herramientas
   
 ### Keep doing:
+  - Al empezar un sprint, juntarnos y hacer la primera parte juntos. De ese modo, vamos a poder guiarnos de una mejor forma
+  - Detallar y mejorar la planificación de Trello, agregando o sacando tareas de las mismas etiquetas
+  - Mantener el ritmo de codeo individual, y la proactividad del grupo
+  - Seguir ayudando a nuestros compañeros con las dudas o consultas
+  - Continuar usando Trello para mantener al día al grupo
+  - Mantener la eficiencia de los commits, y su clasificación de los nombre
+  - Mantener el diálogo abierto en el grupo, su confianza y dinamismo
+  - Terminar la deadline antes de tiempo
   
 ### Less of:
+  - Por ahora nada
 
 ### Stop Doing:
+  - Por ahora nada
 
 ### Conclusiones:
+El equipo ya esta acentado, con buena predisposicion y ganas de aprender, mejorar y superarnos. Los sprints son cumplidos en un 100%, y si es posible hacemos aun mas para no tener ninguna continguencia en el futuro.
 
 -------------------------
 
