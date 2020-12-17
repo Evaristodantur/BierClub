@@ -1,5 +1,16 @@
 # Dailies
 
+### 🗓️ 17/12/20
+  Terminado:
+  - Diseño de la base de datos creados (DER)
+  
+  Para hacer hoy:
+  - Incluir Imagenes en el DER
+  - Implementar la base de datos en MySql
+  - Implementar las tablas
+  - Implementar los datos y tipos de datos
+  - Vincularla en Sequelizer
+
 ### 🗓️ 16/12/20
   Terminado:
   - Agregado bierclub_db
