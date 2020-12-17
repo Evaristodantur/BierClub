@@ -1,5 +1,25 @@
 # Dailies
 
+### 🗓️ 16/12/20
+  Terminado:
+  - Agregado bierclub_db
+  - Incluye Sequelize
+  - Configurado la base de datos
+  
+  Para hacer hoy:
+  - Crear el diseño de la base de datos
+
+### 🗓️ 14/12/20
+  Terminado:
+  - Suscripción: Pagina avanzada - agregado de detalles en la membrecia
+  
+  Para hacer hoy:
+  - Agregar bierclub_db
+  - Incluir Sequelize
+  - Configurar la base de datos
+  - Escribir la retrospectiva del sprint anterior
+  - Agregar al Trello las nuevas tareas respecto a este Sprint
+
 ### 🗓️ 4/12/20
   Terminado:
   - CSS de eliminar producto (modal)
@@ -7,6 +27,7 @@
   - Perfil arreglado (actualizacion de usuarios)
   
   Para hacer hoy:
+  - Suscripción: Pagina
   - Firefox: Arreglar nav del home
 
 ### 🗓️ 3/12/20
