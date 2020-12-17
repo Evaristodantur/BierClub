@@ -1,0 +1,7 @@
+CREATE DATABASE bierclub_db;
+
+CREATE TABLE `bierclub_db`.`productos` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(60) NOT NULL,
+  PRIMARY KEY (`id`),
+);
