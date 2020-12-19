@@ -3,5 +3,9 @@ CREATE DATABASE bierclub_db;
 CREATE TABLE `bierclub_db`.`productos` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(60) NOT NULL,
+  `precio` INT NOT NULL,
+  `descuento` INT NOT NULL,
+  `stock` INT NOT NULL,
+  `descripcion` VARCHAR(280),
   PRIMARY KEY (`id`),
 );
