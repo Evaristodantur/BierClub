@@ -55,7 +55,6 @@ let productsController = {
                 console.log("Error");
                 res.send(error);
             });
-        
       },
   
     // /products/productAdd - Almacenamiento del producto en el JSON
@@ -124,7 +123,15 @@ let productsController = {
 
         let productoEncontrado = productsJson.find( producto => producto.id == idUrl );
 
-        productoEncontrado ? (res.render('products/productEdit', {producto: productoEncontrado})) : res.render('error')
+        db.Categories.findAll()
+            .then(function(categories) {
+                productoEncontrado ? (res.render('products/productEdit', {producto: productoEncontrado, categories: categories})) : res.render('error')
+            }).catch(function(error){
+                console.log("Error");
+                res.send(error);
+            });
+
+        //productoEncontrado ? (res.render('products/productEdit', {producto: productoEncontrado})) : res.render('error')
     },
 
     // /products/productEdit/:id - Actualizacion/Modificacion del producto en el JSON

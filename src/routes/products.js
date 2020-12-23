@@ -66,24 +66,24 @@ router.post('/productAdd',
 
 /* GET     /products/productEdit/:id - Pagina Visual de productEdit     page. */
 router.get('/productEdit/:id',
-                    guestMiddleware,
+                   /*  guestMiddleware,
                     verifyAccountMiddleware,
-                    authAdminMiddleware, 
+                    authAdminMiddleware,  */
                                         productsController.editProduct);
 
 /* PUT     /products/productEdit/:id - Modifica el producto             page. */
 router.put('/productEdit/:id', 
                     multerUpload.any(), 
-                    productMiddleware, 
-                    logProductsMiddleware, 
+                    /* productMiddleware, 
+                    logProductsMiddleware,  */
                                         productsController.updateProduct);
 
 /**********************************BORRAR*********************************************/
 
 /* DELETE     /products/productEdit/borrar/:id - Borra el producto      page. */
 router.delete('/productEdit/delete/:id',
-                    guestMiddleware,
-                    authAdminMiddleware, 
+                  /*   guestMiddleware,
+                    authAdminMiddleware,  */
                                         productsController.deleteProduct);
 
 
