@@ -30,7 +30,7 @@ module.exports = (sequelize, dataTypes) => {
         verify_code: {
             type: dataTypes.STRING(50)
         },
-        createAt: {
+        createdAt: {
             type: dataTypes.DATE
         },
         updatedAt: {
@@ -43,6 +43,13 @@ module.exports = (sequelize, dataTypes) => {
     };
 
     const User = sequelize.define(alias, cols, config);
+
+    User.associate = function(models) {
+        User.belongsTo(models.Carts, {
+            as: "carts",
+            foreignKey: "cart_id"
+        });
+    }
 
     return User;
 }

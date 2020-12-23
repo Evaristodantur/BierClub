@@ -9,7 +9,7 @@ module.exports = (sequelize, dataTypes) => {
         name: {
             type: dataTypes.STRING(61)
         },
-        createAt: {
+        createdAt: {
             type: dataTypes.DATE
         },
         updatedAt: {
@@ -22,6 +22,16 @@ module.exports = (sequelize, dataTypes) => {
     };
 
     const Image = sequelize.define(alias, cols, config);
+
+    Image.associate = function(models) {
+        Image.belongsToMany(models.Products, {
+            as: "products",
+            through: "image_product",
+            foreignKey: "image_id",
+            otherKey: "product_id",
+            timestamps: false
+        });
+    }
 
     return Image;
 }

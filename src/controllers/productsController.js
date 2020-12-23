@@ -18,12 +18,14 @@ productsJson == "" ?
 let productsController = {
 
     prueba : (req, res, next) => {
-        db.Products.findAll()
-            .then(function(productos) {
-                res.send(productos);
+        db.Products.findAll({
+            include: [{association: "images"}]
+        })
+            .then(function(products) {
+                res.send(products);
             }).catch(function(error){
                 console.log("Error");
-                res.send("Error");
+                res.send(error);
             });
     },
     

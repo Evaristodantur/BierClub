@@ -21,7 +21,7 @@ module.exports = (sequelize, dataTypes) => {
         description: {
             type: dataTypes.STRING(280)
         },
-        createAt: {
+        createdAt: {
             type: dataTypes.DATE
         },
         updatedAt: {
@@ -34,6 +34,29 @@ module.exports = (sequelize, dataTypes) => {
     };
 
     const Product = sequelize.define(alias, cols, config);
+
+    Product.associate = function(models) {
+        Product.belongsTo(models.Categories, {
+            as: "categories",
+            foreignKey: "category_id"
+        });
+
+        Product.belongsToMany(models.Carts, {
+            as: "carts",
+            through: "cart_product",
+            foreignKey: "product_id",
+            otherKey: "cart_id",
+            timestamps: false
+        });
+
+        Product.belongsToMany(models.Images, {
+            as: "images",
+            through: "image_product",
+            foreignKey: "product_id",
+            otherKey: "image_id",
+            timestamps: false
+        });
+    }
 
     return Product;
 }
