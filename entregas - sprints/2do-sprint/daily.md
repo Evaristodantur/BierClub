@@ -1,5 +1,27 @@
 # Dailies
 
+### 🗓️ 22/12/20
+  Terminado:
+  - Vincularla en Sequelizer
+  - Vinculacion de relaciones en Sequelize
+  
+  Para hacer hoy:
+  - Productos:
+   - Crear
+   - Modificar
+   - Eliminar
+
+### 🗓️ 20/12/20
+  Terminado:
+  - Implementar la base de datos en MySql
+  - Implementar las tablas
+  - Implementar los datos y tipos de datos
+  - Incluir Imagenes en el DER
+  
+  Para hacer hoy:
+  - Vincularla en Sequelizer
+  - Vinculacion de relaciones en Sequelize
+
 ### 🗓️ 17/12/20
   Terminado:
   - Diseño de la base de datos creados (DER)
