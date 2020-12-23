@@ -50,16 +50,16 @@ router.get('/productAdmin',
 
 /* GET     /products/productAdd - Pagina Visual de create               page. */
 router.get('/productAdd',  
-                    guestMiddleware,
+                   /*  guestMiddleware,
                     verifyAccountMiddleware,
-                    authAdminMiddleware, 
+                    authAdminMiddleware,  */
                                         productsController.createProduct);
 
 /* POST     /products/productAdd - Crea/almacena el producto             page. */
 router.post('/productAdd', 
                     multerUpload.any(),
-                    productMiddleware, 
-                    logProductsMiddleware, 
+                    /* productMiddleware, 
+                    logProductsMiddleware,  */
                                         productsController.storeProduct);
 
 /**********************************PRODUCT EDIT***************************************/

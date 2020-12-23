@@ -122,10 +122,12 @@
           <div class="categoria">
             <label for="categoria">Categoria:</label>
             <select class="select-categoria" name="categoria" id="categoria">
-              <option value="cerveza">Cerveza</option>
-              <option value="vino">Vino</option>
-              <option value="lupulada">Lupulada</option>
-              <option value="no lupulada">No Lupulada</option>
+              <% categories.forEach(category => { %>
+                <% if(category.status == 1) { %>
+                  <option value=""><%=category.name%></option>  
+                <% } %>
+              <% }); %>
+              
             </select>
           </div>
 

@@ -18,11 +18,9 @@ productsJson == "" ?
 let productsController = {
 
     prueba : (req, res, next) => {
-        db.Products.findAll({
-            include: [{association: "images"}]
-        })
-            .then(function(products) {
-                res.send(products);
+        db.Categories.findAll()
+            .then(function(categories) {
+                res.send(categories);
             }).catch(function(error){
                 console.log("Error");
                 res.send(error);
@@ -50,13 +48,22 @@ let productsController = {
 
     // /products/productAdd - Vista productAdd
     createProduct : (req, res, next) => {
-        res.render('products/productAdd');
+        db.Categories.findAll()
+            .then(function(categories) {
+                res.render('products/productAdd', {categories: categories});
+            }).catch(function(error){
+                console.log("Error");
+                res.send(error);
+            });
+        
       },
   
     // /products/productAdd - Almacenamiento del producto en el JSON
     storeProduct : (req, res, next) => {
 
-        let errores = validationResult(req);      
+
+
+        /* let errores = validationResult(req);      
 
         if (!errores.isEmpty()) {
             
@@ -102,7 +109,7 @@ let productsController = {
             //Lo guarda en el array Json
             productsJson.push(productoNuevo);
             
-            fs.writeFileSync(dbDirectory, JSON.stringify(productsJson));
+            fs.writeFileSync(dbDirectory, JSON.stringify(productsJson)); */
             res.redirect('/products/productAdmin');
     },
 
