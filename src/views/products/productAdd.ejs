@@ -124,7 +124,7 @@
             <select class="select-categoria" name="categoria" id="categoria">
               <% categories.forEach(category => { %>
                 <% if(category.status == 1) { %>
-                  <option value=""><%=category.name%></option>  
+                  <option value="<%=category.name%>"><%=category.name%></option>  
                 <% } %>
               <% }); %>
             </select>

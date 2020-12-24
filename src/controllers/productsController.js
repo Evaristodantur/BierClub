@@ -18,9 +18,10 @@ productsJson == "" ?
 let productsController = {
 
     prueba : (req, res, next) => {
-        db.Categories.findAll()
-            .then(function(categories) {
-                res.send(categories);
+
+        db.Images.findAll()
+            .then(function(products) {
+                res.send(products);
             }).catch(function(error){
                 console.log("Error");
                 res.send(error);
@@ -54,13 +55,66 @@ let productsController = {
             }).catch(function(error){
                 console.log("Error");
                 res.send(error);
-            });
+            }); 
       },
   
     // /products/productAdd - Almacenamiento del producto en el JSON
     storeProduct : (req, res, next) => {
 
+        console.log(req.body);
 
+        db.Categories.findOne({
+            where: {
+                name: req.body.categoria
+            }
+        })
+            .then(function(categories) {
+                if(typeof req.files[0] != "undefined") {
+
+                    let imagenes = [];                
+                    for(let i=0; i < 4; i++) {
+                        if(typeof req.files[i] != "undefined") {
+                            imagenes.push({
+                                name: req.files[i].filename
+                            })
+                        }
+                    }
+                    db.Products.create({
+                        name: req.body.nombre,
+                        price: req.body.precio,
+                        discount: req.body.descuento,
+                        stock: req.body.stock,
+                        description: req.body.descripcion,
+                        category_id: categories.dataValues.id,
+                        images: imagenes
+                    }, {
+                        include: [{association: "images"}]
+                    });
+                } else {
+                    db.Products.create({
+                        name: req.body.nombre,
+                        price: req.body.precio,
+                        discount: req.body.descuento,
+                        stock: req.body.stock,
+                        description: req.body.descripcion,
+                        category_id: categories.dataValues.id
+                    });
+                }
+                res.redirect('/products/productAdmin');
+            }).catch(function(error){
+                console.log("Error");
+                res.send(error);
+            });
+
+       
+        /* db.Products.create({
+            name: req.body.nombre,
+            price: req.body.precio,
+            discount: req.body.descuento,
+            stock: req.body.stock,
+            description: req.body.descripcion,
+            category_id: 1
+        }); */
 
         /* let errores = validationResult(req);      
 
@@ -130,8 +184,6 @@ let productsController = {
                 console.log("Error");
                 res.send(error);
             });
-
-        //productoEncontrado ? (res.render('products/productEdit', {producto: productoEncontrado})) : res.render('error')
     },
 
     // /products/productEdit/:id - Actualizacion/Modificacion del producto en el JSON
