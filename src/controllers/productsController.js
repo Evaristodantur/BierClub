@@ -19,13 +19,10 @@ let productsController = {
 
     prueba : (req, res, next) => {
 
-        db.Images.findAll()
+        sequelize.query("SELECT * FROM products")
             .then(function(products) {
-                res.send(products);
-            }).catch(function(error){
-                console.log("Error");
-                res.send(error);
-            });
+                res.send(products)
+            })
     },
     
 
@@ -374,9 +371,15 @@ let productsController = {
     deleteProduct : (req, res, next) => {
         let idUrl = req.params.id;
 
-        let borrarProducto = productsJson.filter( producto => producto.id != idUrl );
+        db.Products.destroy({
+            where: {
+                id: idUrl
+            }
+        })
 
-        fs.writeFileSync(dbDirectory, JSON.stringify(borrarProducto));
+        /* let borrarProducto = productsJson.filter( producto => producto.id != idUrl );
+
+        fs.writeFileSync(dbDirectory, JSON.stringify(borrarProducto)); */
 
         res.redirect('/products/productAdmin');
     },

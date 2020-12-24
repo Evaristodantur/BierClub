@@ -683,3 +683,35 @@ Stock: 0
 Categoria: Lupuladas
 Descripción: BBB
 *************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 05:18:15
+Producto: dfgdffg
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 05:19:04
+Producto: hjkjhhjk
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 05:19:20
+Producto: uytuytut
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 05:20:05
+Producto: uytuytut
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
