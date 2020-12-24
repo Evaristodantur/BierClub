@@ -58,8 +58,8 @@ router.get('/productAdd',
 /* POST     /products/productAdd - Crea/almacena el producto             page. */
 router.post('/productAdd', 
                     multerUpload.any(),
-                    /* productMiddleware, 
-                    logProductsMiddleware,  */
+                    productMiddleware, 
+                    logProductsMiddleware, 
                                         productsController.storeProduct);
 
 /**********************************PRODUCT EDIT***************************************/

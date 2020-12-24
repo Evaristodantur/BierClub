@@ -109,3 +109,278 @@ Stock: 0
 Categoria: cerveza
 Descripción: 
 *************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:11:28
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:12:24
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:13:08
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:13:22
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:14:38
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: undefined
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:15:26
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: undefined
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:15:38
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 03:16:13
+Producto: asd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: undefined
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 03:16:55
+Producto: KIPPES
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:17:07
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 03:17:10
+Producto: KIPPES
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: undefined
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:18:22
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:18:57
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:19:37
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:21:03
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:22:04
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:22:22
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:23:25
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:25:27
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:25:57
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:26:48
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:27:13
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:27:20
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:28:02
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:28:25
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:29:15
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:31:00
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:31:19
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:31:27
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:32:04
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 03:32:08
+Producto: asdasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************

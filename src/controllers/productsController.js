@@ -60,8 +60,19 @@ let productsController = {
   
     // /products/productAdd - Almacenamiento del producto en el JSON
     storeProduct : (req, res, next) => {
+     
+        const errores = validationResult(req);
+        if (!errores.isEmpty()) {
 
-        console.log(req.body);
+            db.Categories.findAll()
+            .then(function(categories) {               
+                return res.render('products/productAdd', {errors: errores.errors, categories: categories});
+            }).catch(function(error){
+                console.log("Error");
+                res.send(error);
+            });
+            
+        } else {
 
         db.Categories.findOne({
             where: {
@@ -69,6 +80,8 @@ let productsController = {
             }
         })
             .then(function(categories) {
+                
+
                 if(typeof req.files[0] != "undefined") {
 
                     let imagenes = [];                
@@ -100,22 +113,14 @@ let productsController = {
                         category_id: categories.dataValues.id
                     });
                 }
-                res.redirect('/products/productAdmin');
+                
             }).catch(function(error){
                 console.log("Error");
                 res.send(error);
             });
 
-       
-        /* db.Products.create({
-            name: req.body.nombre,
-            price: req.body.precio,
-            discount: req.body.descuento,
-            stock: req.body.stock,
-            description: req.body.descripcion,
-            category_id: 1
-        }); */
-
+            res.redirect('/products/productAdmin');
+        }
         /* let errores = validationResult(req);      
 
         if (!errores.isEmpty()) {
@@ -163,7 +168,6 @@ let productsController = {
             productsJson.push(productoNuevo);
             
             fs.writeFileSync(dbDirectory, JSON.stringify(productsJson)); */
-            res.redirect('/products/productAdmin');
     },
 
 

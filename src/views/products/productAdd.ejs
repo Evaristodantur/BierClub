@@ -122,11 +122,13 @@
           <div class="categoria">
             <label for="categoria">Categoria:</label>
             <select class="select-categoria" name="categoria" id="categoria">
-              <% categories.forEach(category => { %>
-                <% if(category.status == 1) { %>
-                  <option value="<%=category.name%>"><%=category.name%></option>  
-                <% } %>
-              <% }); %>
+              
+                <% categories.forEach(category => { %>
+                  <% if(category.status == 1) { %>
+                    <option value="<%=category.name%>"><%=category.name%></option>  
+                  <% } %>
+                <% }); %>
+              
             </select>
           </div>
 
