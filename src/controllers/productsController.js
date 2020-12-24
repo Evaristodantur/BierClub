@@ -61,7 +61,7 @@ let productsController = {
     // /products/productAdd - Almacenamiento del producto en el JSON
     storeProduct : (req, res, next) => {
      
-        const errores = validationResult(req);
+        let errores = validationResult(req);
         if (!errores.isEmpty()) {
 
             db.Categories.findAll()
@@ -179,11 +179,19 @@ let productsController = {
 
         let idUrl = req.params.id;
 
-        let productoEncontrado = productsJson.find( producto => producto.id == idUrl );
+        //let productoEncontrado = productsJson.find( producto => producto.id == idUrl );
 
         db.Categories.findAll()
             .then(function(categories) {
-                productoEncontrado ? (res.render('products/productEdit', {producto: productoEncontrado, categories: categories})) : res.render('error')
+                db.Products.findByPk(idUrl)
+                    .then(function(product){
+                        product ? (res.render('products/productEdit', {producto: product, categories: categories})) : res.render('error')
+                    })
+                    .catch(function(error){
+                        console.log("Error");
+                        res.send(error);
+                    })
+                
             }).catch(function(error){
                 console.log("Error");
                 res.send(error);
@@ -194,6 +202,116 @@ let productsController = {
     updateProduct : (req, res, next) => {
 
         let idUrl = req.params.id;
+
+        /* db.Categories.findOne({
+            where: {
+                name: req.body.categoria
+            }
+        })
+            .then(function(categories) {
+                db.Products.update({
+                    name: req.body.nombre,
+                    price: req.body.precio,
+                    discount: req.body.ddescuento,
+                    stock: req.body.stock,
+                    description: req.body.descripcion,
+                    category_id: categories.dataValues.id
+                }, {
+                    where: {
+                        id: req.params.id
+                    }
+                });
+            }) */
+
+            
+
+            
+        let errores = validationResult(req);
+        if (!errores.isEmpty()) {
+            db.Categories.findAll()
+            .then(function(categories) {
+                db.Products.findByPk(idUrl)
+                    .then(function(product){
+                        console.log(errores);
+                        product.errors = errores.errors
+                        console.log(product);
+                        return res.render('products/productEdit', {producto: product, errors: errores.errors, categories: categories});
+                    })
+                    .catch(function(error){
+                        console.log("Error");
+                        res.send(error);
+                    })
+                
+            }).catch(function(error){
+                console.log("Error");
+                res.send(error);
+            });
+        } else {
+
+
+
+            db.Categories.findOne({
+                where: {
+                    name: req.body.categoria
+                }
+            })
+                .then(function(categories) {
+    
+                     if(typeof req.files[0] != "undefined") {
+    
+                        let imagenes = [];                
+                        for(let i=0; i < 4; i++) {
+                            if(typeof req.files[i] != "undefined") {
+                                imagenes.push({
+                                    name: req.files[i].filename
+                                })
+                            }
+                        }
+
+                        db.Products.create({
+                            name: req.body.nombre,
+                            price: req.body.precio,
+                            discount: req.body.descuento,
+                            stock: req.body.stock,
+                            description: req.body.descripcion,
+                            category_id: categories.dataValues.id,
+                            images: imagenes
+                        }, {
+                            include: [{association: "images"}]
+                        });
+
+                        db.Products.destroy({
+                            where: {
+                                id: idUrl
+                            }
+                        })
+
+                    } else {
+                        db.Products.update({
+                            name: req.body.nombre,
+                            price: req.body.precio,
+                            discount: req.body.descuento,
+                            stock: req.body.stock,
+                            description: req.body.descripcion,
+                            category_id: categories.dataValues.id
+                        }, {
+                            where: {
+                                id: idUrl
+                            }
+                        });
+                    }
+                    
+                }).catch(function(error){
+                    console.log("Error en la actualizacion del producto");
+                    res.send(error);
+                }); 
+    
+                
+
+                res.redirect('/products/productAdmin');
+        }
+        
+        /* let idUrl = req.params.id;
 
         //Validacion
         let errores = validationResult(req);
@@ -245,7 +363,7 @@ let productsController = {
 
         fs.writeFileSync(dbDirectory, JSON.stringify(productosModificado));
 
-        res.redirect('/products/productAdmin');
+        res.redirect('/products/productAdmin'); */
     },
 
 

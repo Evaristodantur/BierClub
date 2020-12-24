@@ -74,8 +74,8 @@ router.get('/productEdit/:id',
 /* PUT     /products/productEdit/:id - Modifica el producto             page. */
 router.put('/productEdit/:id', 
                     multerUpload.any(), 
-                    /* productMiddleware, 
-                    logProductsMiddleware,  */
+                    productMiddleware, 
+                    logProductsMiddleware, 
                                         productsController.updateProduct);
 
 /**********************************BORRAR*********************************************/

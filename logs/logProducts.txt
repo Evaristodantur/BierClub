@@ -384,3 +384,302 @@ Stock: 0
 Categoria: Lupuladas
 Descripción: 
 *************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:35:19
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:35:48
+El producto es:
+Producto: KIPPES
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 03:36:11
+Producto: KIPPES
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:36:44
+El producto es:
+Producto: KIPPES
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:52:45
+El producto es:
+Producto: 
+Precio: 123
+Descuento: 10
+Stock: 3
+Categoria: 
+Descripción: descripcion 1
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:53:21
+El producto es:
+Producto: 
+Precio: 123
+Descuento: 10
+Stock: 3
+Categoria: 
+Descripción: descripcion 1
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:53:57
+El producto es:
+Producto: 
+Precio: 123
+Descuento: 10
+Stock: 3
+Categoria: 
+Descripción: descripcion 1
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 03:55:07
+El producto es:
+Producto: 
+Precio: 123
+Descuento: 10
+Stock: 3
+Categoria: 
+Descripción: descripcion 1
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 03:55:15
+Producto: Producto 30
+Precio: 123
+Descuento: 10
+Stock: 3
+Categoria: 
+Descripción: descripcion 1
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 03:57:06
+Producto: Producto 30
+Precio: 123
+Descuento: 10
+Stock: 3
+Categoria: 
+Descripción: descripcion 1
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 03:58:23
+Producto: KIPPE
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: 
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 03:59:51
+Producto: KIPPE
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: 
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:02:31
+Producto: KIPPE
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: 
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:03:19
+Producto: KIPPE
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: 
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:04:08
+Producto: KIPPE
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: 
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:10:58
+Producto: KIPPES
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:11:07
+Producto: KIP
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 04:11:13
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 04:13:11
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 04:16:04
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:16:10
+Producto: KIPP
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:16:34
+Producto: KIPPES
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Hubo un intento de subir/modificar a las 24/12/2020 04:17:43
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:17:47
+Producto: KIP
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:18:02
+Producto: KIPPP
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:18:53
+Producto: KIPPPPPPP
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:19:33
+Producto: KIP
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:26:43
+Producto: KIPPIPI
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:28:34
+Producto: KIPPIP
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:30:21
+Producto: KIP
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:47:14
+Producto: KIP
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:47:57
+Producto: KIP
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:48:30
+Producto: KIP
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:49:52
+Producto: KIP
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:52:18
+Producto: KIP
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: AAAAAAAAAA
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 04:52:37
+Producto: KIPPEPAPU
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: BBB
+*************************************************************
