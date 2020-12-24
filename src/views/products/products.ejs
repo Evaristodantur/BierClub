@@ -105,6 +105,26 @@
 									</div>
 									<button class="btn-agregarAlCarrito" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
 							</article>
+								<% } else { %>
+									<a href="/products/productDetail/<%= producto.id %>">
+										<img src="/images/productos/<%= producto.images[0].name %>" alt="<%= producto.name %>">
+									</a>
+										<h4 class="nombre-producto-collection"><%= producto.name %></h4>
+										<div class="precio-stock">
+											<div>
+											  <h4 class="precio">$ <%= producto.price %> </h4>
+											</div>
+											<div>
+											<% if (producto.stock > 0) { %>
+												<h5 class="stock">Stock Disponible</h5>
+											<% } else { %>
+												<h5 class="stock noHay-stock">Sin Stock</h5>
+											<% } %>
+										  
+											</div>
+										</div>
+										<button class="btn-agregarAlCarrito" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
+								</article>
 								<% } %>
 
 						<% }); %>		

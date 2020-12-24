@@ -95,6 +95,11 @@
 									<h4 class="nombre-producto-productAdmin"><%= producto.name %></h4>
 									<button onclick="window.location.href='/products/productEdit/<%= producto.id %>'" id="modificarProducto" class="modificar-producto">Modificar Producto</button>
 									<button class="eliminar-producto" onclick="eliminarProducto(<%= producto.id %>)">Eliminar Producto</button>
+								<% } else { %>
+									<img src="/images/productos/<%= producto.images[0].name %>" alt="<%= producto.name %>">
+									<h4 class="nombre-producto-productAdmin"><%= producto.name %></h4>
+									<button onclick="window.location.href='/products/productEdit/<%= producto.id %>'" id="modificarProducto" class="modificar-producto">Modificar Producto</button>
+									<button class="eliminar-producto" onclick="eliminarProducto(<%= producto.id %>)">Eliminar Producto</button>
 								<% } %>
 
 							</article>

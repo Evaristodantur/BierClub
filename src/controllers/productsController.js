@@ -33,7 +33,7 @@ let productsController = {
             include: [{association: "images"}]
         }).then(function(products){
             console.log(products[0].images[0].dataValues.name);
-            res.render('products/productAdmin', { productos : products });
+            res.render('products/products', { productos : products });
         })
     },
 
@@ -41,9 +41,17 @@ let productsController = {
     productDetail : (req, res, next) => {
         let idUrl = req.params.id;
 
-        let productoBuscado = productsJson.find(producto => producto.id == idUrl);
+        /* let productoBuscado = productsJson.find(producto => producto.id == idUrl); */
 
-        productoBuscado ? (res.render("products/productDetail", productoBuscado)) : (res.render("error"));
+        db.Products.findByPk(idUrl, {
+            include: [{association: "images"}]
+        }).then(function(product){
+            console.log(product);
+            product ? (res.render("products/productDetail", {producto: product})) : (res.render("error"));
+            /* res.render('products/products', { productos : products }); */
+        })
+        //product ? (res.render("products/productDetail", {producto: product})) : (res.render("error"));
+        /* productoBuscado ? (res.render("products/productDetail", productoBuscado)) : (res.render("error")); */
     },
     
 
