@@ -2,12 +2,13 @@
 
 ### 🗓️ 25/12/20
   Terminado:
+  - Home vincularlo con base de datos
   - Agregar productos de prueba a la base de datos, con imagenes
   - ProductDetail vincularlo con base de datos
+  - Arreglar el boton delete de productEdit, colocarle un form
   
   Para hacer hoy:
-  - Home vincularlo con base de datos
-  - Arreglar el boton delete de productEdit, colocarle un form
+  
 
 ### 🗓️ 24/12/20
   Terminado:
