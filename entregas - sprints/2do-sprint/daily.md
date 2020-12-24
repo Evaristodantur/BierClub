@@ -1,5 +1,18 @@
 # Dailies
 
+### 🗓️ 24/12/20
+  Terminado:
+  - Productos:
+    - Crear
+    - Modificar
+    - Eliminar
+  
+  Para hacer hoy:
+  - ProductDetail vincularlo con base de datos
+  - Home vincularlo con base de datos
+  - Agregar productos de prueba a la base de datos, con imagenes
+  - Arreglar el boton delete de productEdit, colocarle un form
+
 ### 🗓️ 22/12/20
   Terminado:
   - Vincularla en Sequelizer
