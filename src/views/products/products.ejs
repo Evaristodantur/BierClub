@@ -85,13 +85,14 @@
 						<!-- PRODUCTO -->
 						<% productos.forEach(producto => { %>
 							<article class="producto">
+								<% if(producto.images[0] == undefined) { %>
 								<a href="/products/productDetail/<%= producto.id %>">
-									<img src="/images/productos/<%= producto.imagen[0] %>" alt="<%= producto.nombre %>">
+									<img src="/images/productos/product-image-not-available.jpg" alt="<%= producto.name %>">
 								</a>
-									<h4 class="nombre-producto-collection"><%= producto.nombre %></h4>
+									<h4 class="nombre-producto-collection"><%= producto.name %></h4>
 									<div class="precio-stock">
 										<div>
-										  <h4 class="precio">$ <%= producto.precio %> </h4>
+										  <h4 class="precio">$ <%= producto.price %> </h4>
 										</div>
 										<div>
 										<% if (producto.stock > 0) { %>
@@ -99,11 +100,13 @@
 										<% } else { %>
 											<h5 class="stock noHay-stock">Sin Stock</h5>
 										<% } %>
-										  
+									  
 										</div>
 									</div>
 									<button class="btn-agregarAlCarrito" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
 							</article>
+								<% } %>
+
 						<% }); %>		
 					
 				</section>

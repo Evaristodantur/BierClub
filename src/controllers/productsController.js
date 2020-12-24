@@ -19,16 +19,22 @@ let productsController = {
 
     prueba : (req, res, next) => {
 
-        sequelize.query("SELECT * FROM products")
-            .then(function(products) {
-                res.send(products)
-            })
+        db.Products.findAll({
+            include: [{association: "images"}]
+        }).then(function(products){
+            res.send({ productos : products });
+        })
     },
     
 
     //  /products - Vista Home
     index : (req, res, next) => {
-        res.render('products/products', { productos : productsJson });
+        db.Products.findAll({
+            include: [{association: "images"}]
+        }).then(function(products){
+            console.log(products[0].images[0].dataValues.name);
+            res.render('products/productAdmin', { productos : products });
+        })
     },
 
     //  /products/productDetail/:id - Vista productDetail
@@ -389,7 +395,15 @@ let productsController = {
 
     //  /products/productAdmin - Vista de productAdmin
     productAdmin : (req, res, next) => {
-        res.render('products/productAdmin', { productos : productsJson });
+
+        db.Products.findAll({
+            include: [{association: "images"}]
+        }).then(function(products){
+            console.log(products[0].images[0].dataValues.name);
+            res.render('products/productAdmin', { productos : products });
+        })
+
+        
     },
 
     //  /products/productCart - Vista de proudctCart
