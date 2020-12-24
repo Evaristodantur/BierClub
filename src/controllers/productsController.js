@@ -389,6 +389,8 @@ let productsController = {
             where: {
                 id: idUrl
             }
+        }).catch(function(error){
+            console.log(error);
         })
 
         /* let borrarProducto = productsJson.filter( producto => producto.id != idUrl );

@@ -144,11 +144,17 @@
         <% } %>
 
           <div class="flex-botones-publicar">
-              <button class="btn-publicar" type="submit" , id="publicar" , value="guardar"> Guardar Modificaciones  
-              <button onclick="window.location.href='/products/productEdit/delete/<%= producto.id %>'" class="btn-publicar btn-reset" type="reset" , id="reset" , value="reset">Borrar Producto</button>
-          </div>
+              <button class="btn-publicar" type="submit" , id="publicar" , value="guardar"> Guardar Modificaciones 
+                
+          
         
       </form>
+
+            <form action="/products/productEdit/delete/<%= producto.id %>?_method=DELETE" method="POST">
+              <button type="submit" class="btn-publicar btn-reset">Borrar Producto</button>	
+            </form>
+
+          </div>
       
       
     </div>

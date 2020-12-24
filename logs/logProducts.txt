@@ -771,3 +771,51 @@ Stock: 2
 Categoria: No Lupuladas
 Descripción: De color naranja intenso, cual noctiluca rabiosa, la prickly dingo es una catharina sour con cactus.\r\nUna cerveza acida, balanceada por el dulzor del cactus que le da sabores y aromas a chicle de tutti-frutti, sandia y kiwi.
 *************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 15:19:29
+Producto: asdasdasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 15:19:45
+Producto: asdasdasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 15:20:42
+Producto: asdasdasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 15:23:12
+Producto: asdasdasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 15:24:41
+Producto: fdsdfs
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/12/2020 15:24:49
+Producto: rere
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
