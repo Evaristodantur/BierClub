@@ -3,6 +3,8 @@ const fs = require('fs');
 const {validationResult} = require("express-validator");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
+let db = require("../database/models");
+let sequelize = db.sequelize;
 
 //Agregado database JSON
 let productsJson = fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8');
@@ -18,7 +20,13 @@ let mainController = {
     //  Home
     index : (req, res, next) => {
 
-        function arrayDesordenado(array) {
+        db.Products.findAll({
+            include: [{association: "images"}]
+        }).then(function(products){
+            res.render('index', { productos : products });
+        })
+
+        /* function arrayDesordenado(array) {
             let elementoActual = array.length, almacenamientoTemporal, random;
           
             // Mientras queden elementos sin desordenar
@@ -34,9 +42,9 @@ let mainController = {
               array[random] = almacenamientoTemporal;
             }
             return array;
-          }
+          } */
 
-        res.render('index', {productos : arrayDesordenado(productsJson)});
+        //res.render('index', {productos : arrayDesordenado(productsJson)});
     },
 
     //  /about-us

@@ -43,34 +43,14 @@
           <% let arrayResponsive = ['', 'resolucionMenorA320', 'resolucionMenorA768', 'resolucionMenorA1024', 'resolucionMenorA1200'] %>
           <% for (let i=0; i < arrayResponsive.length ; i++) { %>
 
-          <% if (productos[i] == undefined) { %>
-
-            <article class="producto <%= arrayResponsive[i] %>">
-              <a href="#">
-                <img src="/images/productos/product-image-not-available.jpg" alt="Imagen de producto inexistente">
-              </a>
-              <h2 class="producto-titulo">No hay producto</h2>
-              <div class="precio-stock">
-                <div>
-                  <h4 class="etiqueta-precio">$</h4>
-                </div>
-                <div>
-                    <h5 class="stock sinStock">Sin Stock</h5>
-                </div>
-              </div>
-              <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-            </article>
-
-          <% } else { %>
-
             <article class="producto <%= arrayResponsive[i] %>">
               <a href="/products/productDetail/<%= productos[i].id %>">
-                <img src="/images/productos/<%= productos[i].imagen[0] %>" alt="<%= productos[i].nombre %>">
+                <img src="/images/productos/<%= productos[i].images[0].name %>" alt="<%= productos[i].name %>">
               </a>
-              <h2 class="producto-titulo"><%= productos[i].nombre %></h2>
+              <h2 class="producto-titulo"><%= productos[i].name %></h2>
               <div class="precio-stock">
                 <div>
-                  <h4 class="etiqueta-precio">$<%= productos[i].precio %></h4>
+                  <h4 class="etiqueta-precio">$<%= productos[i].price %></h4>
                 </div>
                 <div>
                   <% if (productos[i].stock > 0) { %>
@@ -84,7 +64,6 @@
               <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
             </article>
           <% } %>
-        <% } %>
         
           <div class="btnSig">
             <a href="#">
@@ -128,70 +107,49 @@
 
         <!-- PRODUCTOS -->
         <main>
-        <section class="productos">
-          <div class="btnAnt">
-            <a href="#">
-              <div class="button-pass">
-                <i class="fas fa-chevron-circle-left"></i>
-              </div>
-            </a>
-          </div>
-    
-          <% for (let i=0; i < arrayResponsive.length ; i++) { %>
-
-          <% if (productos[i] == undefined) { %>
-
-            <article class="producto <%= arrayResponsive[i] %>">
+          <section class="productos">
+            <div class="btnAnt">
               <a href="#">
-                <img src="/images/productos/product-image-not-available.jpg" alt="Imagen de producto inexistente">
+                <div class="button-pass">
+                  <i class="fas fa-chevron-circle-left"></i>
+                </div>
               </a>
-              <h2 class="producto-titulo">No hay producto</h2>
-              <div class="precio-stock">
-                <div>
-                  <h4 class="etiqueta-precio">$</h4>
-                </div>
-                <div>
-                    <h5 class="stock sinStock">Sin Stock</h5>
-                </div>
-              </div>
-              <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-            </article>
+            </div>
 
-          <% } else { %>
+            <% for (let i=0; i < arrayResponsive.length ; i++) { %>
 
-            <article class="producto <%= arrayResponsive[i] %>">
-              <a href="/products/productDetail/<%= productos[i].id %>">
-                <img src="/images/productos/<%= productos[i].imagen[0] %>" alt="<%= productos[i].nombre %>">
+              <article class="producto <%= arrayResponsive[i] %>">
+                <a href="/products/productDetail/<%= productos[i].id %>">
+                  <img src="/images/productos/<%= productos[i].images[0].name %>" alt="<%= productos[i].name %>">
+                </a>
+                <h2 class="producto-titulo"><%= productos[i].name %></h2>
+                <div class="precio-stock">
+                  <div>
+                    <h4 class="etiqueta-precio">$<%= productos[i].price %></h4>
+                  </div>
+                  <div>
+                    <% if (productos[i].stock > 0) { %>
+                      <h5 class="etiqueta-stock">Stock Disponible</h5>
+                    <% } else { %>
+                      <h5 class="stock sinStock">Sin Stock</h5>
+                    <% } %>
+                    
+                  </div>
+                </div>
+                <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
+              </article>
+            <% } %>
+
+            <div class="btnSig">
+              <a href="#">
+                <div class="button-pass">
+                  <i class="fas fa-chevron-circle-right"></i>
+                </div>
               </a>
-              <h2 class="producto-titulo"><%= productos[i].nombre %></h2>
-              <div class="precio-stock">
-                <div>
-                  <h4 class="etiqueta-precio">$<%= productos[i].precio %></h4>
-                </div>
-                <div>
-                  <% if (productos[i].stock > 0) { %>
-                    <h5 class="etiqueta-stock">Stock Disponible</h5>
-                  <% } else { %>
-                    <h5 class="stock sinStock">Sin Stock</h5>
-                  <% } %>
-                  
-                </div>
-              </div>
-              <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-            </article>
-          <% } %>
-        <% } %>
-        
-          <div class="btnSig">
-            <a href="#">
-              <div class="button-pass">
-                <i class="fas fa-chevron-circle-right"></i>
-              </div>
-            </a>
-          </div>
-
-        </section>
-      </main>
+            </div>
+  
+          </section>
+        </main>
 
 
         <!-- NEWSLETTER-->
