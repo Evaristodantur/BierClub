@@ -5,6 +5,8 @@ const fs = require('fs');
 const path = require('path');
 let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
 let dbDirectory = path.resolve(__dirname, '../database/usuarios.json')
+let db = require("../database/models");
+let sequelize = db.sequelize;
 
 usuariosJson == "" ?
     fs.writeFileSync(dbDirectory, JSON.stringify(usuariosJson = [])) :
@@ -23,12 +25,54 @@ let userMiddleware = [
             email: {
                 custom: {
                         options: (value, { req }) => {
+
+                            
+
+                            
+                            
+
+                            /* if(valor == []) {
+                                return false;
+                            } else {
+                                return false;
+                            } */
+/* 
+                            async function wait() {
+                                try {
+                                    //update 
+                                    let result = await db.Users.findAll({where: {email: req.body.email}})
+                                    return result
+                                } catch (error) {
+                                    console.log(error);
+                                }
+                            }  */
+
+                            return true;
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                            
+
+
+
+                            
+
+                            //return true;
+/* 
                             for(let i = 0 ; i < usuariosJson.length ; i++){
                                 if(req.body.email == usuariosJson[i].email){
                                     return false;
                                 }
                                 }
-                                return true;                                
+                                return true;                                 */
                         }
                     },
                 errorMessage : 'Esta dirección email ya esta registrada'

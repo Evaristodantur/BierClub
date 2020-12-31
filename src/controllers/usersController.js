@@ -4,6 +4,8 @@ const bcrypt = require('bcryptjs');
 const {validationResult} = require("express-validator");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
+let db = require("../database/models");
+let sequelize = db.sequelize;
 
 //Agregado database JSON
 
@@ -86,6 +88,56 @@ let usersController = {
         return res.render("users/register", {errors : errores})
       }
 
+      db.Users.create({
+        name: req.body.nombre,
+        email: req.body.email,
+        password: bcrypt.hashSync(req.body.contrasenia,10),
+        suscription_status: 0,
+        admin: 0,
+        verify: 0,
+        verify_code: (Math.random()*15).toString(36).substring(2)
+      });
+
+      
+       let transporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+          user: process.env.email,
+          pass: process.env.password
+        }
+      });
+
+      let pepeprueba = "eaeaea"
+
+      const output = `
+      <h3>¡Gracias por registrarte en BierClub!:</h3> 
+      <p>Por favor haz click en <a href="http://localhost:3000/users/verifyAccount/${pepeprueba}">este</a> link para activar tu cuenta</p>
+      `;
+
+      let mailOptions = {
+        from: process.env.email, 
+        to: req.body.email,
+        subject: "Verificacion de la cuenta de BierClub",
+        html: output
+      }
+
+      transporter.sendMail(mailOptions, function(err, data){
+        if(err){
+          console.log("ERROR");
+        }else{
+          console.log("Mensaje enviado!");
+
+      // Te envia a la vista una vez el form fue completado
+      
+      res.render("users/register", { verificarUsuario : "¡Te registraste! Por favor verifica tu dirección email."});
+        }
+      });
+
+
+      //res.render("users/register", { verificarUsuario : "¡Te registraste! Por favor verifica tu dirección email."});
+
+       
+/*
       // Crea variable del ID maximo para reemplazarlo luego.
       let idMax = 0;
 
@@ -148,7 +200,7 @@ let usersController = {
       
       res.render("users/register", { verificarUsuario : "¡Te registraste! Por favor verifica tu dirección email."});
         }
-      })
+      }) */
     },
 
 
