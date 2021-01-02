@@ -1,5 +1,45 @@
 # Dailies
 
+### 🗓️ 2/1/21
+  Terminado:
+  - userController
+    - userAdminList
+    - create
+    - store
+    - loginRender
+    - loginIniciar
+    - perfilEdit
+    - verifyAccount
+    - reenviarEmail
+  - Middlewares
+    - authAdminMiddleware
+    - authMiddleware
+    - contactMiddleware
+    - guestMiddleware
+    - logProductsMiddleware
+    - logUsersMiddleware
+    - multerMiddleware
+    - perfilOrAdminMiddleware
+    - productsMiddleware
+    - verifyAccountMiddleware
+  
+  Para hacer hoy:
+  - userController
+    - userAdminEditView
+    - perfilUpdate
+    - eliminar
+    - perdidos
+  - Middlwares
+    - loginMiddleware
+    - modificarUserMiddleware
+    - userMiddleware
+  - Arreglar:
+    - userMiddleware
+    - loginMiddlware
+    
+    
+
+
 ### 🗓️ 25/12/20
   Terminado:
   - Home vincularlo con base de datos
@@ -8,6 +48,26 @@
   - Arreglar el boton delete de productEdit, colocarle un form
   
   Para hacer hoy:
+  - userController
+    - userAdminList
+    - create
+    - store
+    - loginRender
+    - loginIniciar
+    - perfilEdit
+    - verifyAccount
+    - reenviarEmail
+  - Middlewares
+    - authAdminMiddleware
+    - authMiddleware
+    - contactMiddleware
+    - guestMiddleware
+    - logProductsMiddleware
+    - logUsersMiddleware
+    - multerMiddleware
+    - perfilOrAdminMiddleware
+    - productsMiddleware
+    - verifyAccountMiddleware
   
 
 ### 🗓️ 24/12/20
