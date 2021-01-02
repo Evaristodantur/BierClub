@@ -1,7 +1,7 @@
 // Verificación de si es el usuario es ADMIN
 
 let authAdminMiddleware = (req, res, next) => {
-    if (req.session.usuarioLogueado.admin == true) {
+    if (req.session.usuarioLogueado.admin == 1) {
         next();
     } else {
         res.render("sinPermisos");

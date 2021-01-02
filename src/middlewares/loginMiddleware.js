@@ -4,6 +4,8 @@ const { check, checkSchema } = require("express-validator");
 const fs = require("fs");
 const bcrypt = require('bcryptjs');
 const path = require("path");
+let db = require("../database/models");
+let sequelize = db.sequelize;
 
 let dbDirectory = path.resolve(__dirname, '../database/usuarios.json')
 let usuariosJson = JSON.parse(fs.readFileSync(dbDirectory), 'utf-8');
@@ -17,14 +19,28 @@ let loginMiddleware = [
         email: {
             custom: {
                     options: (value, { req }) => {
-                        let email = req.body.email;
+                        
 
-                        let buscarUsuario = usuariosJson.find(usuario => usuario.email == email)
+                        return db.Users.findOne({
+                            where: {
+                                email: req.body.email
+                            }
+                        }).then((user) => {
+                            if(user == null) {
+                                return false
+                            } else {
+                                return true
+                            }
+                        })
+                        
+                        /*let email = req.body.email;
+
+                         let buscarUsuario = usuariosJson.find(usuario => usuario.email == email)
 
                         if(buscarUsuario == undefined){
                             return false 
                         }
-                        return true
+                        return true */
                     }
             },
             errorMessage : 'Dirección email y/o contraseña incorrectos'
@@ -34,14 +50,28 @@ let loginMiddleware = [
         contrasenia: {
             custom: {
                     options: (value, { req }) => {
-                        let email = req.body.email;
+
+                        return db.Users.findOne({
+                            where: {
+                                email: req.body.email
+                            }
+                        }).then((user) => {
+                            if(user != null && bcrypt.compareSync(req.body.contrasenia, user.password)) {
+                                return true
+                            } else {
+                                return false
+                            }
+                        })
+
+
+                        /* let email = req.body.email;
 
                         let buscarUsuario = usuariosJson.find(usuario => usuario.email == email)
 
                         if(req.body.email == buscarUsuario.email && bcrypt.compareSync(req.body.contrasenia,buscarUsuario.contrasenia)){
                             return true
                         }
-                        return false
+                        return false */
                     }
             },
             errorMessage : 'Dirección email y/o contraseña incorrectos'

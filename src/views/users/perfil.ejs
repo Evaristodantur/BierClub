@@ -21,7 +21,7 @@
 
 			<!-- TITULO -->
 			<div class="titulo-perfil">
-				<h1> ¡Bienvenido, <%= usuario.nombre %>! </h1>
+				<h1> ¡Bienvenido, <%= usuario.name %>! </h1>
 			</div>
 			<div class="perfil-total">
 				<div class="perfil-izquierda">
@@ -29,7 +29,7 @@
 					<hr>
 					<ul class="datos-personales">
 						<li>Nombre:</li>
-						<li><%= usuario.nombre %></li>
+						<li><%= usuario.name %></li>
 					</ul>
 					<ul class="datos-personales">
 						<li>Email:</li>
@@ -71,7 +71,7 @@
 
 					<!-- NOMBRE -->
 					<div class="campo-input campo1">
-						<input class="input-registro" type="text" id="nombre" name="nombre" value="<%= usuario.nombre %>">
+						<input class="input-registro" type="text" id="nombre" name="nombre" value="<%= usuario.name %>">
 						<%if(typeof usuario.errors != "undefined"){%>
 							<% for(let i = 0 ; i < usuario.errors.length ; i++){ %>
 								<%if(usuario.errors[i].param == "nombre"){%>

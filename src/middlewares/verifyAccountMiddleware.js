@@ -2,7 +2,7 @@
 
 let verifyAccountMiddleware = (req, res, next) => {
     let usuarioSinVerificar = req.session.usuarioLogueado;
-    if (usuarioSinVerificar.verify[0] == true) {
+    if (usuarioSinVerificar.verify == 1) {
         next();
     } else {
         usuarioSinVerificar.msgErrorVerify = "Por favor verifica tu cuenta antes de entrar a esta página";

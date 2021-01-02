@@ -22,7 +22,11 @@ let usersController = {
 
     //    /users/usersAdmin
     usersAdminList : (req, res, next) => {
-      res.render('users/usersAdmin', { usuarios : usuariosJson });
+      db.Users.findAll()
+        .then(users => {
+          res.render('users/usersAdmin', { usuarios : users });
+        })
+      
     },
 
     //    /users/usersAdminEdit/:id  (POST)
@@ -88,6 +92,7 @@ let usersController = {
         return res.render("users/register", {errors : errores})
       }
 
+      let codigoDeVerificacion = (Math.random()*15).toString(36).substring(2);
       db.Users.create({
         name: req.body.nombre,
         email: req.body.email,
@@ -95,7 +100,7 @@ let usersController = {
         suscription_status: 0,
         admin: 0,
         verify: 0,
-        verify_code: (Math.random()*15).toString(36).substring(2)
+        verify_code: codigoDeVerificacion
       });
 
       
@@ -107,11 +112,9 @@ let usersController = {
         }
       });
 
-      let pepeprueba = "eaeaea"
-
       const output = `
       <h3>¡Gracias por registrarte en BierClub!:</h3> 
-      <p>Por favor haz click en <a href="http://localhost:3000/users/verifyAccount/${pepeprueba}">este</a> link para activar tu cuenta</p>
+      <p>Por favor haz click en <a href="http://localhost:3000/users/verifyAccount/${codigoDeVerificacion}">este</a> link para activar tu cuenta</p>
       `;
 
       let mailOptions = {
@@ -127,9 +130,8 @@ let usersController = {
         }else{
           console.log("Mensaje enviado!");
 
-      // Te envia a la vista una vez el form fue completado
-      
-      res.render("users/register", { verificarUsuario : "¡Te registraste! Por favor verifica tu dirección email."});
+        // Te envia a la vista una vez el form fue completado
+          res.render("users/register", { verificarUsuario : "¡Te registraste! Por favor verifica tu dirección email."});
         }
       });
 
@@ -214,7 +216,29 @@ let usersController = {
     //  /users/login (POST)
     loginIniciar : (req, res, next) => {
 
-      // Enviar errores express-validator
+      let errores = validationResult(req);
+      errores.reqEmail = req.body.email;
+      if (!errores.isEmpty()){
+        return res.render("users/login", {errors : errores})
+      }
+
+      db.Users.findOne({
+        where: {
+          email: req.body.email
+        }
+      }).then((user) => {
+        req.session.usuarioLogueado = user;
+
+        if(req.body.recordameLogin != undefined){
+          res.cookie('recordame', user.email,{ maxAge: 1000*60*60*24*365*3 })
+        }
+        console.log(user);
+  
+        res.redirect('back');
+      })
+
+
+     /*  // Enviar errores express-validator
       let errores = validationResult(req);
       errores.reqEmail = req.body.email;
       if (!errores.isEmpty()){
@@ -231,20 +255,35 @@ let usersController = {
         res.cookie('recordame', buscarUsuario.email,{ maxAge: 1000*60*60*24*365*3 })
       }
 
-      res.redirect('back');
+      res.redirect('back'); */
     },
 
 
     //  /users/perfil/:id (PAGINA VISUAL)
     perfilEdit : (req, res, next) => {
+
       let idUrl = req.params.id;
+
+      
+      db.Users.findByPk(idUrl)
+        .then((user) => {
+          if(user != null) {
+            user.errors = undefined;
+            res.render("users/perfil", { usuario : user })
+          } else {
+            res.render("error")
+          }
+        })
+      
+
+       /* let idUrl = req.params.id;
 
         let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
 
         // Esto es para arreglar error de recargar la pagina
         usuarioBuscado.errors = undefined;
         
-        usuarioBuscado ? (res.render("users/perfil", { usuario : usuarioBuscado })) : res.render("error")
+        usuarioBuscado ? (res.render("users/perfil", { usuario : usuarioBuscado })) : res.render("error")  */
     },
 
 
@@ -274,7 +313,7 @@ let usersController = {
           }
         }
         return usuario;
-      });
+    });
 
       // Usuario agregado al JSON
       let usuariosCambiadosJSON = JSON.stringify(usuarioCambiado);
@@ -283,7 +322,7 @@ let usersController = {
       },
 
       // users/perfil/eliminar/:id (POST)
-      eliminar : (req, res, next) => {
+    eliminar : (req, res, next) => {
 
         // Busca el id enviado por parametro
         let idUrl = req.params.id;
@@ -297,25 +336,46 @@ let usersController = {
         let usuarioEliminadoJSON = JSON.stringify(eliminarUsuario);
         fs.writeFileSync(dbDirectory, usuarioEliminadoJSON);
         res.redirect("/");
-      },
+    },
 
       // users/perfil/pedidos/:id
-      pedidos : (req, res, next) => {
+    pedidos : (req, res, next) => {
         // Guarda el ID del parametro
         let idUrl = req.params.id;
 
         let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
         
         usuarioBuscado ? (res.render("users/pedidos", usuarioBuscado)) : res.render("error")
-      },
+    },
 
       // users/verifyAccount/:id 
-      verifyAccount: (req, res, next) => {
+    verifyAccount: (req, res, next) => {
 
         // Guarda el ID del parametro
-        let idUrl = req.params.id;
+        let codeUrl = req.params.id;
+        console.log(codeUrl);
 
-        // Busca el usuario con el ID pasado por parametro
+        db.Users.findOne({
+          where: {
+            verify_code: codeUrl
+          }
+        })
+          .then((user) => {
+            console.log(user);
+            if (user == null) {
+              return res.render('users/verifyAccount', { msgError: 'La cuenta que quieres verificar no existe'});
+            }
+            console.log(user.verify);
+            if (user.verify == 1) {
+              return res.render('users/verifyAccount', { msgErrorYaVerificado: 'Este email ya ha sido verificado'} )
+            }
+
+            console.log(`UPDATE users SET verify = '1' WHERE users.id = ${user.id}`);
+            db.sequelize.query(`UPDATE users SET verify = '1' WHERE users.id = ${user.id}`);
+            return res.render('users/verifyAccount', { usuario : user });
+          });
+
+        /* // Busca el usuario con el ID pasado por parametro
         let usuarioAVerificar = usuariosJson.find( usuario => usuario.verify[1] == idUrl );
 
         //Verificacion de email inexistente
@@ -342,13 +402,49 @@ let usersController = {
         let usuariosCambiadosJSON = JSON.stringify(usuariosAVerificar);
         fs.writeFileSync(dbDirectory, usuariosCambiadosJSON);
 
-        return res.render('users/verifyAccount', { usuario : usuarioAVerificar });
+        return res.render('users/verifyAccount', { usuario : usuarioAVerificar }); */
 
-      },
+    },
 
       // users/verifyAccount/:id (POST)
-      reenviarEmail: (req, res, next) =>{
+    reenviarEmail: (req, res, next) =>{
 
+      // Guardo el ID pasado por parametro
+      let idUrl = req.params.id;
+
+      db.Users.findByPk(idUrl)
+        .then((user) => {
+          console.log(user.verify_code);
+          let transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: {
+              user: process.env.email,
+              pass: process.env.password
+            }
+          });
+          const output = `
+          <h3>¡Gracias por registrarte en BierClub!:</h3> 
+          <p>Por favor haz click en <a href="http://localhost:3000/users/verifyAccount/${user.verify_code}">este</a> link para activar tu cuenta</p>
+          `;
+          let mailOptions = {
+            from: process.env.email, 
+            to: user.email,
+            subject: "Verificacion de la cuenta de BierClub",
+            html: output
+          }
+          transporter.sendMail(mailOptions, function(err, data){
+            if(err){
+              console.log("ERROR");
+            }else{
+              console.log("Mensaje enviado!");
+            }
+          });
+          res.render('users/verifyAccount', { msgErrorReenviado : "El codigo de verificación ha sido reenviado a tu dirección de correo electronico." })
+        })
+
+
+
+/* 
         // Guardo el ID pasado por parametro
         let idUrl = req.params.id;
 
@@ -380,8 +476,8 @@ let usersController = {
             console.log("Mensaje enviado!");
           }
         });
-        res.render('users/verifyAccount', { msgErrorReenviado : "El codigo de verificación ha sido reenviado a tu dirección de correo electronico." })
-      }
+        res.render('users/verifyAccount', { msgErrorReenviado : "El codigo de verificación ha sido reenviado a tu dirección de correo electronico." }) */
+    }
 }
 
 module.exports = usersController;

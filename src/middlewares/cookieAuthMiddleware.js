@@ -6,6 +6,7 @@ const path = require("path");
 let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
 
 let cookieAuthMiddleware = (req, res, next) => {
+
     if (req.cookies.recordame != undefined && 
         req.session.usuarioLogueado == undefined) {
 
