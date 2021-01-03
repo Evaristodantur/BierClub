@@ -343,6 +343,8 @@ let usersController = {
             id: idUrl
           }
         })
+
+        res.redirect("/users/usersAdmin");
         /* // Hace un filter para eliminar al usuario directamente
         let eliminarUsuario = usuariosJson.filter(function(usuario){
           return usuario.id != idUrl;
@@ -351,7 +353,7 @@ let usersController = {
         // Incluye la lista actualizada al JSON
         let usuarioEliminadoJSON = JSON.stringify(eliminarUsuario);
         fs.writeFileSync(dbDirectory, usuarioEliminadoJSON); */
-        res.redirect("/users/usersAdmin");
+        
     },
 
       // users/perfil/pedidos/:id
@@ -359,9 +361,18 @@ let usersController = {
         // Guarda el ID del parametro
         let idUrl = req.params.id;
 
-        let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
+        db.Users.findByPk(idUrl)
+          .then(user => {
+            if(user != null) {
+              res.render("users/pedidos", user)
+            } else {
+              res.render("error")
+            }
+          })
+
+        /* let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
         
-        usuarioBuscado ? (res.render("users/pedidos", usuarioBuscado)) : res.render("error")
+        usuarioBuscado ? (res.render("users/pedidos", usuarioBuscado)) : res.render("error") */
     },
 
       // users/verifyAccount/:id 
