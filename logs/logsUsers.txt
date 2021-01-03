@@ -1124,3 +1124,8 @@ El usuario registrado es:
 Nombre: KIPPES
 Email: kippes.diego@gmail.com
 *************************************************************
+Se registró un usuario el 2/1/2021 21:11:21
+El usuario registrado es:
+Nombre: KIPPES
+Email: asdd@gdasg.com
+*************************************************************

@@ -34,17 +34,28 @@ let usersController = {
       // Busca el id por parametro 
       let idUrl = req.params.id;
 
-      // Busca el id del usuario enviado por parametro
+      db.Users.findByPk(idUrl)
+        .then(user => {
+          console.log(user);
+          if(user != null) {
+            res.render("users/usersAdminEdit", { usuarios : user })
+          } else {
+            res.render('users/verifyAccount', { msgErrorUsuarioInexistente: 'Este usuario no existe'})
+          }          
+        })
+
+      /* // Busca el id del usuario enviado por parametro
       let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
 
       // Si el id del usuario enviado por parametro existe, envia la vista. Si no existe, da error.
-      usuarioBuscado ? (res.render("users/usersAdminEdit", { usuarios : usuarioBuscado })) : res.render('users/verifyAccount', { msgErrorUsuarioInexistente: 'Este usuario no existe'});
+      usuarioBuscado ? (res.render("users/usersAdminEdit", { usuarios : usuarioBuscado })) : res.render('users/verifyAccount', { msgErrorUsuarioInexistente: 'Este usuario no existe'}); */
     },
 
     //    /users/usersAdminEdit/:id  (POST)
     usersAdminEdit : (req,res,next) =>{
       // Busca el id por parametro 
       let idUrl = req.params.id;
+
 
       // Crea variable admin
       let admin;
@@ -327,15 +338,20 @@ let usersController = {
         // Busca el id enviado por parametro
         let idUrl = req.params.id;
 
-        // Hace un filter para eliminar al usuario directamente
+        db.Users.destroy({
+          where: {
+            id: idUrl
+          }
+        })
+        /* // Hace un filter para eliminar al usuario directamente
         let eliminarUsuario = usuariosJson.filter(function(usuario){
           return usuario.id != idUrl;
         });
 
         // Incluye la lista actualizada al JSON
         let usuarioEliminadoJSON = JSON.stringify(eliminarUsuario);
-        fs.writeFileSync(dbDirectory, usuarioEliminadoJSON);
-        res.redirect("/");
+        fs.writeFileSync(dbDirectory, usuarioEliminadoJSON); */
+        res.redirect("/users/usersAdmin");
     },
 
       // users/perfil/pedidos/:id
