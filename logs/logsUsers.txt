@@ -1129,3 +1129,78 @@ El usuario registrado es:
 Nombre: KIPPES
 Email: asdd@gdasg.com
 *************************************************************
+Hubo un intento de registro el 4/1/2021 15:33:21
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:33:34
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: diego@diego.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:35:12
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:35:20
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: asddsa@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:35:38
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: asddsa@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:36:07
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: asddsa@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:36:56
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:37:20
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: sdasda@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:38:38
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: asdasd@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:41:26
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: iego@gmail.com
+*************************************************************
+Se registró un usuario el 4/1/2021 15:43:35
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:45:16
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:45:28
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: asd@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:49:42
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 4/1/2021 15:49:56
+El usuario registrado es:
+Nombre: KIPPESd
+Email: asdsad@gmail.com
+*************************************************************

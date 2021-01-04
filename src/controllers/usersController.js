@@ -229,6 +229,7 @@ let usersController = {
 
       let errores = validationResult(req);
       errores.reqEmail = req.body.email;
+
       if (!errores.isEmpty()){
         return res.render("users/login", {errors : errores})
       }
@@ -238,14 +239,20 @@ let usersController = {
           email: req.body.email
         }
       }).then((user) => {
-        req.session.usuarioLogueado = user;
+        if(user != null && bcrypt.compareSync(req.body.contrasenia, user.password)) {
+          req.session.usuarioLogueado = user;
 
         if(req.body.recordameLogin != undefined){
           res.cookie('recordame', user.email,{ maxAge: 1000*60*60*24*365*3 })
         }
-        console.log(user);
-  
+
         res.redirect('back');
+
+        } else {
+          let password_Email = "El usuario/contraseña son incorrectos"
+          return res.render("users/login", {password_Email : password_Email});
+        }
+
       })
 
 

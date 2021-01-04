@@ -52,7 +52,10 @@
 
 			<!-- CONTRASEÑA -->
 			<div class="campo-input">
-				<input class="input-registro" type="password" id="contraseña" name="contrasenia" placeholder="Contraseña"> 
+				<input class="input-registro" type="password" id="contraseña" name="contrasenia" placeholder="Contraseña">
+				<% if(typeof password_Email != "undefined"){ %>
+					<p class="error-total">* <%= password_Email %></p>
+				<% } %>
 			</div>
 
 			<div class="campo-input">

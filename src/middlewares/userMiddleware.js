@@ -1,6 +1,6 @@
 // Validación de campos en la creación de usuarios
 
-const {check, checkSchema} = require("express-validator");
+const {check, checkSchema, body} = require("express-validator");
 const fs = require('fs');
 const path = require('path');
 let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
@@ -21,62 +21,16 @@ let userMiddleware = [
         .isLength({min:8}).withMessage("La contraseña debe tener al menos 8 caracteres"),
     check("confirmarContrasenia").notEmpty().withMessage("Este campo no puede estar vacío")
         .isLength({min:8}).withMessage("Este campo debe tener al menos 8 caracteres"),
-        checkSchema({
-            email: {
-                custom: {
-                        options: (value, { req }) => {
-
-                            
-                            //ARREGLAR
-                            
-                            
-
-                            /* if(valor == []) {
-                                return false;
-                            } else {
-                                return false;
-                            } */
-/* 
-                            async function wait() {
-                                try {
-                                    //update 
-                                    let result = await db.Users.findAll({where: {email: req.body.email}})
-                                    return result
-                                } catch (error) {
-                                    console.log(error);
-                                }
-                            }  */
-
-                            return true;
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                            
-
-
-
-                            
-
-                            //return true;
-/* 
-                            for(let i = 0 ; i < usuariosJson.length ; i++){
-                                if(req.body.email == usuariosJson[i].email){
-                                    return false;
-                                }
-                                }
-                                return true;                                 */
-                        }
-                    },
-                errorMessage : 'Esta dirección email ya esta registrada'
-            }
+        body('email').custom(value => {
+            return db.Users.findOne({
+                where: {
+                    email: value
+                }
+            }).then(user => {
+                if (user) {
+                  return Promise.reject('Esta dirección email ya esta registrada');
+                }
+              });
         }),
         checkSchema({
             contrasenia: {
