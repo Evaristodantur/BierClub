@@ -1,5 +1,28 @@
 # Dailies
 
+### 🗓️ 4/1/21
+  Terminado:
+  - Middlwares
+    - userMiddleware
+    - loginMiddleware
+  - Arreglado:
+    - userMiddleware
+    - loginMiddlware
+    
+   Para hacer hoy:
+  - userController
+    - userAdminEditView
+    - perfilUpdate
+    - eliminar
+    - perdidos
+  - Middlwares
+    - modificarUserMiddleware
+  - Arreglar:
+    - Arreglar form de "eliminar en userAdminEdit.ejs
+  - Otros:
+    - Sacar screen al diagrama de la base de datos
+    
+
 ### 🗓️ 2/1/21
   Terminado:
   - userController
