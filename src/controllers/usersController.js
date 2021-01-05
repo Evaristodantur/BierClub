@@ -56,6 +56,29 @@ let usersController = {
       // Busca el id por parametro 
       let idUrl = req.params.id;
 
+      console.log(req.body);
+
+      let adminStatus;
+
+      if(req.body.admin == 'on') {
+        adminStatus = 1;
+      } else {
+        adminStatus = 0;
+      }
+
+      db.Users.update({
+        name: req.body.nombre,
+        email: req.body.email,
+        admin: adminStatus  
+      },{
+        where: {
+          id: idUrl
+        }
+      })
+
+      res.redirect("/users/usersAdmin");
+      
+/* 
 
       // Crea variable admin
       let admin;
@@ -81,7 +104,7 @@ let usersController = {
       // Usuario agregado al JSON
       let usuariosCambiadosJSON = JSON.stringify(usuarioCambiado);
       fs.writeFileSync(dbDirectory, usuariosCambiadosJSON);
-      res.redirect("/users/usersAdmin");
+      res.redirect("/users/usersAdmin"); */
       },
 
 
@@ -249,8 +272,8 @@ let usersController = {
         res.redirect('back');
 
         } else {
-          let password_Email = "El usuario/contraseña son incorrectos"
-          return res.render("users/login", {password_Email : password_Email});
+          let credencialesInvalidas = "El usuario/contraseña son incorrectos"
+          return res.render("users/login", {credencialesInvalidas : credencialesInvalidas});
         }
 
       })
@@ -310,7 +333,35 @@ let usersController = {
       // Busca la URL del parametro
       let idUrl = req.params.id;
 
-      // Hay errores? Esta es la logica de los errores. (check en los middlewares)
+      let errores = validationResult(req);
+
+      if (!errores.isEmpty()){
+      db.Users.findByPk(idUrl)
+        .then(user => {
+          user.errors = errores.errors;
+          console.log(user);
+          return res.render("users/perfil", { usuario : user })
+        })
+      } else {
+        db.Users.update({
+          name: req.body.nombre,
+          email: req.body.email,
+          password: bcrypt.hashSync(req.body.contrasenia,10)
+        },{
+          where: {
+            id: idUrl
+          }
+        })
+  
+        res.redirect("/");
+      }
+      
+      
+      
+
+      
+
+      /* // Hay errores? Esta es la logica de los errores. (check en los middlewares)
       let errores = validationResult(req);
       let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
       if (!errores.isEmpty()){
@@ -336,8 +387,12 @@ let usersController = {
       // Usuario agregado al JSON
       let usuariosCambiadosJSON = JSON.stringify(usuarioCambiado);
       fs.writeFileSync(dbDirectory, usuariosCambiadosJSON);
-      res.redirect("/");
+      res.redirect("/"); */
       },
+
+
+
+
 
       // users/perfil/eliminar/:id (POST)
     eliminar : (req, res, next) => {

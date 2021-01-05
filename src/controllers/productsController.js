@@ -20,10 +20,11 @@ let productsController = {
     prueba : (req, res, next) => {
 
         db.Products.findAll({
-            include: [{association: "images"}]
-        }).then(function(products){
-            res.send({ productos : products });
+            include: [{association: 'images'}]
         })
+            .then(products => {
+                res.send(products);
+            })
     },
     
 
@@ -62,7 +63,7 @@ let productsController = {
                 res.render('products/productAdd', {categories: categories});
             }).catch(function(error){
                 console.log(error);
-            }); 
+            });
       },
   
     // /products/productAdd - Almacenamiento del producto en el JSON

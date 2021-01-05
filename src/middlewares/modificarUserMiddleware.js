@@ -1,9 +1,11 @@
 // Validación de campos al modificar usuarios en userAdmin
 
-const { check, checkSchema } = require("express-validator");
+const { check, checkSchema, body } = require("express-validator");
 const fs = require("fs");
 const bcrypt = require('bcryptjs');
 const path = require("path");
+let db = require("../database/models");
+let sequelize = db.sequelize;
 
 let dbDirectory = path.resolve(__dirname, '../database/usuarios.json')
 let usuariosJson = JSON.parse(fs.readFileSync(dbDirectory), 'utf-8');
@@ -17,7 +19,18 @@ let modificarUserMiddleware = [
         .isLength({min:8}).withMessage("La contraseña debe tener al menos 8 caracteres"),
     check("confirmarContrasenia").notEmpty().withMessage("Este campo no puede estar vacío")
         .isLength({min:8}).withMessage("Este campo debe tener al menos 8 caracteres"),
-        checkSchema({
+        body('email').custom(value => {
+            return db.Users.findOne({
+                where: {
+                    email: value
+                }
+            }).then(user => {
+                if (user) {
+                  return Promise.reject('Esta dirección email ya esta registrada');
+                }
+              });
+        }),
+        /* checkSchema({
             email: {
                 custom: {
                         options: (value, { req }) => {
@@ -34,7 +47,7 @@ let modificarUserMiddleware = [
                     },
                 errorMessage : 'Esta dirección email ya esta registrada'
             }
-        }),
+        }), */
         checkSchema({
             contrasenia: {
                 custom: {

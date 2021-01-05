@@ -819,3 +819,11 @@ Stock: 0
 Categoria: Lupuladas
 Descripción: 
 *************************************************************
+Fecha de creacion/modificación del producto: 4/1/2021 16:26:45
+Producto: ippa Sippa (TDH Imperial Aussie IP)
+Precio: 90
+Descuento: 10
+Stock: 645645
+Categoria: Lupuladas
+Descripción: Amarillo pálido, algo turbia y muy refrescante! Este híbrido entre una West Coast y una East Coast IPA tiene lo mejor de los dos mundos: de cuerpo medio, con aromas y sabores cítricos tropicales (ananá 🍍, maracuyá y mandarina 🍊).
+*************************************************************

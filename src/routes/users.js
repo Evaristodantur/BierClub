@@ -83,9 +83,9 @@ router.get('/perfil/:id',
 
 /* POST     /users/perfil/:id            page. */
 router.post('/perfil/:id', 
-               /*  modificarUserMiddleware, 
+                modificarUserMiddleware,
                 verifyAccountMiddleware,
-                perfilOrAdminMiddleware, */
+                perfilOrAdminMiddleware,
                                 usersController.perfilUpdate);
 
 /**********************************ELIMINAR*******************************************/
