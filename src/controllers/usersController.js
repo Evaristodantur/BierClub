@@ -6,66 +6,66 @@ const nodemailer = require("nodemailer");
 require("dotenv").config();
 let db = require("../database/models");
 let sequelize = db.sequelize;
-
-//Agregado database JSON
-
-let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
-let dbDirectory = path.resolve(__dirname, '../database/usuarios.json')
-
-usuariosJson == "" ?
-    fs.writeFileSync(dbDirectory, JSON.stringify(usuariosJson = [])) :
-    usuariosJson = JSON.parse(fs.readFileSync(dbDirectory), 'utf-8');
-
     
 let usersController = {
 
 
+
+
     //    /users/usersAdmin
     usersAdminList : (req, res, next) => {
+
+      //Busca todos los usuarios y los renderiza en la vista
       db.Users.findAll()
         .then(users => {
           res.render('users/usersAdmin', { usuarios : users });
-        })
-      
+        }).catch(error => {
+          console.log(error);
+        });
     },
+
+
+
+
 
     //    /users/usersAdminEdit/:id  (POST)
     usersAdminEditView : (req, res, next) => {
       // Busca el id por parametro 
       let idUrl = req.params.id;
 
+      //Busca el usuario en especifico y se fija si existe o no
       db.Users.findByPk(idUrl)
         .then(user => {
-          console.log(user);
           if(user != null) {
             res.render("users/usersAdminEdit", { usuarios : user })
           } else {
             res.render('users/verifyAccount', { msgErrorUsuarioInexistente: 'Este usuario no existe'})
           }          
-        })
-
-      /* // Busca el id del usuario enviado por parametro
-      let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
-
-      // Si el id del usuario enviado por parametro existe, envia la vista. Si no existe, da error.
-      usuarioBuscado ? (res.render("users/usersAdminEdit", { usuarios : usuarioBuscado })) : res.render('users/verifyAccount', { msgErrorUsuarioInexistente: 'Este usuario no existe'}); */
+        }).catch(error => {
+          console.log(error);
+        });
     },
+
+
+
+
 
     //    /users/usersAdminEdit/:id  (POST)
     usersAdminEdit : (req,res,next) =>{
       // Busca el id por parametro 
       let idUrl = req.params.id;
 
-      console.log(req.body);
 
       let adminStatus;
 
+      //Cambia el estado de "admin" del usuario
       if(req.body.admin == 'on') {
         adminStatus = 1;
       } else {
         adminStatus = 0;
       }
 
+      //Actualiza el usuario
       db.Users.update({
         name: req.body.nombre,
         email: req.body.email,
@@ -74,45 +74,25 @@ let usersController = {
         where: {
           id: idUrl
         }
-      })
+      }).catch(error => {
+        console.log(error);
+      });
 
       res.redirect("/users/usersAdmin");
       
-/* 
-
-      // Crea variable admin
-      let admin;
-
-      // Verifica si el user a editar es admin y le aplica la propiedad a esa variable
-      req.body.admin ?  admin = true : admin = false;
-
-      // Mapeo del usuario con los cambios
-       let usuarioCambiado = usuariosJson.map(function(usuario){
-        if(usuario.id == idUrl){
-           usuario = {
-            id : parseInt(idUrl),
-            nombre : req.body.nombre,
-            email : req.body.email,
-            contrasenia : req.body.contrasenia,
-            admin : admin,
-            verify : usuario.verify
-          }
-        }
-        return usuario;
-      });
-
-      // Usuario agregado al JSON
-      let usuariosCambiadosJSON = JSON.stringify(usuarioCambiado);
-      fs.writeFileSync(dbDirectory, usuariosCambiadosJSON);
-      res.redirect("/users/usersAdmin"); */
-      },
+    },
 
 
     
+
+
     //  /users/register
     create : (req, res, next) => {
       res.render('users/register');
     },
+
+
+
 
 
     //  /users/register (POST)
@@ -126,7 +106,10 @@ let usersController = {
         return res.render("users/register", {errors : errores})
       }
 
+      //Codifco de "verify_code"
       let codigoDeVerificacion = (Math.random()*15).toString(36).substring(2);
+
+      //Crea el usuario en la base de datos
       db.Users.create({
         name: req.body.nombre,
         email: req.body.email,
@@ -135,10 +118,13 @@ let usersController = {
         admin: 0,
         verify: 0,
         verify_code: codigoDeVerificacion
+      }).catch(error => {
+        console.log(error);
       });
 
-      
-       let transporter = nodemailer.createTransport({
+
+      //Manda un mail al usuario
+      let transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
           user: process.env.email,
@@ -164,80 +150,13 @@ let usersController = {
         }else{
           console.log("Mensaje enviado!");
 
-        // Te envia a la vista una vez el form fue completado
+          // Te envia a la vista una vez el form fue completado
           res.render("users/register", { verificarUsuario : "¡Te registraste! Por favor verifica tu dirección email."});
         }
       });
 
-
-      //res.render("users/register", { verificarUsuario : "¡Te registraste! Por favor verifica tu dirección email."});
-
-       
-/*
-      // Crea variable del ID maximo para reemplazarlo luego.
-      let idMax = 0;
-
-      // For para buscar el ID mas alto, y reemplazar idMax por el ID mas alto
-      for(let i = 0 ; i < usuariosJson.length ; i++){
-        if(usuariosJson[i].id > idMax){
-          idMax = usuariosJson[i].id;
-        }
-      }
-      
-      // Sumarle 1 al ID mas alto, para crear un usuario nuevo con un ID unico
-      idMax = idMax + 1;
-
-      // Hacer objeto completo, con el ID primero para mas comodidad
-      let usuarioNuevo = {
-        id : idMax,
-        nombre : req.body.nombre,
-        email : req.body.email,
-        contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
-        admin : false,
-        verify: [false, (Math.random()*15).toString(36).substring(2)]
-      } 
-
-      // Manda mail de verificacion
-      let transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-          user: process.env.email,
-          pass: process.env.password
-        }
-      });
-
-      const output = `
-      <h3>¡Gracias por registrarte en BierClub!:</h3> 
-      <p>Por favor haz click en <a href="http://localhost:3000/users/verifyAccount/${usuarioNuevo.verify[1]}">este</a> link para activar tu cuenta</p>
-      `;
-
-      let mailOptions = {
-        from: process.env.email, 
-        to: req.body.email,
-        subject: "Verificacion de la cuenta de BierClub",
-        html: output
-      }
-
-      transporter.sendMail(mailOptions, function(err, data){
-        if(err){
-          console.log("ERROR");
-        }else{
-          console.log("Mensaje enviado!");
-
-      
-
-      // Sumar el usuario al array
-      usuariosJson.push(usuarioNuevo);
-      
-      // Sobreescribe el archivo
-      fs.writeFileSync(dbDirectory, JSON.stringify(usuariosJson));
-
-      // Te envia a la vista una vez el form fue completado
-      
-      res.render("users/register", { verificarUsuario : "¡Te registraste! Por favor verifica tu dirección email."});
-        }
-      }) */
     },
+
 
 
 
@@ -247,24 +166,33 @@ let usersController = {
       res.render('users/login');
     },
 
+
+
+
+
     //  /users/login (POST)
     loginIniciar : (req, res, next) => {
 
+      //Toma los errores
       let errores = validationResult(req);
       errores.reqEmail = req.body.email;
 
+      //Renderiza la vista con los errores
       if (!errores.isEmpty()){
         return res.render("users/login", {errors : errores})
       }
 
+      //Busca el usuario a iniciar
       db.Users.findOne({
         where: {
           email: req.body.email
         }
       }).then((user) => {
+        //Se fija si el usuario existe y la contraseña es valida
         if(user != null && bcrypt.compareSync(req.body.contrasenia, user.password)) {
           req.session.usuarioLogueado = user;
 
+        //Activa la cookie si el usuario tildo "recordarme"
         if(req.body.recordameLogin != undefined){
           res.cookie('recordame', user.email,{ maxAge: 1000*60*60*24*365*3 })
         }
@@ -272,32 +200,19 @@ let usersController = {
         res.redirect('back');
 
         } else {
+
+          //Renderiza la vista de inicio de session con el error de contraseña o mail incorrectos
           let credencialesInvalidas = "El usuario/contraseña son incorrectos"
           return res.render("users/login", {credencialesInvalidas : credencialesInvalidas});
         }
 
-      })
-
-
-     /*  // Enviar errores express-validator
-      let errores = validationResult(req);
-      errores.reqEmail = req.body.email;
-      if (!errores.isEmpty()){
-        return res.render("users/login", {errors : errores})
-      }
-      // Busca el email ingresado en el json
-      let buscarUsuario = usuariosJson.find(usuario => usuario.email == req.body.email);
-
-      // Hace la session del usuario buscado (Si o si lo encuentra, porque si no existe, el middleware tira error. Por eso no hace falta un if)
-      req.session.usuarioLogueado = buscarUsuario;
-
-      // Si el "Recordarme" esta marcado, crea la cookie para mantener la sesion iniciada
-      if(req.body.recordameLogin != undefined){
-        res.cookie('recordame', buscarUsuario.email,{ maxAge: 1000*60*60*24*365*3 })
-      }
-
-      res.redirect('back'); */
+      }).catch(error => {
+          console.log(error);
+      });
     },
+
+
+
 
 
     //  /users/perfil/:id (PAGINA VISUAL)
@@ -305,7 +220,7 @@ let usersController = {
 
       let idUrl = req.params.id;
 
-      
+      //Entra al perfil del usuario
       db.Users.findByPk(idUrl)
         .then((user) => {
           if(user != null) {
@@ -314,18 +229,13 @@ let usersController = {
           } else {
             res.render("error")
           }
-        })
-      
-
-       /* let idUrl = req.params.id;
-
-        let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
-
-        // Esto es para arreglar error de recargar la pagina
-        usuarioBuscado.errors = undefined;
-        
-        usuarioBuscado ? (res.render("users/perfil", { usuario : usuarioBuscado })) : res.render("error")  */
+        }).catch(error => {
+          console.log(error);
+        });
     },
+
+
+
 
 
     //  /users/perfil/:id (POST)
@@ -333,10 +243,14 @@ let usersController = {
       // Busca la URL del parametro
       let idUrl = req.params.id;
 
+      //Toma los errores
       let errores = validationResult(req);
 
+      //Busca el usuario
       db.Users.findByPk(idUrl)
         .then(user => {
+
+          //Comparacion de la contraseña antigua con la puesta en el formulario
           if(!bcrypt.compareSync(req.body.antiguaContrasenia, user.password)){
             errores.errors.push({
               msg: 'La antigua contraseña no coincide',
@@ -344,13 +258,15 @@ let usersController = {
             })
           }
 
+          //Validacion de que el mail fue cambiado
           if(req.body.email != user.email) {
             db.Users.findOne({
               where: {
                 email: req.body.email
               }
             }).then(userMailYaRegistrado => {
-              console.log(userMailYaRegistrado);
+
+              //Validacion de que el email no exista en la base de datos
               if(userMailYaRegistrado) {
                 errores.errors.push({
                   msg: 'El email actual ya esta registrado',
@@ -358,14 +274,47 @@ let usersController = {
                 })
               }
 
+              //Se fija si hay errores
               if (!errores.isEmpty()){
             
                 user.errors = errores.errors;
                 
                 return res.render("users/perfil", { usuario : user })
-          } else {
+              } else {
   
-      
+                //Actualiza el usuario
+                db.Users.update({
+                  name: req.body.nombre,
+                  email: req.body.email,
+                  password: bcrypt.hashSync(req.body.contrasenia,10)
+                },{
+                  where: {
+                    id: idUrl
+                  }
+                }).catch(error => {
+                  console.log(error);
+                });
+        
+                res.redirect("/");
+              }
+
+            }).catch(error => {
+              console.log(error);
+            });
+
+
+          } else {
+
+            //En esta condicion el mail no fue cambiado
+            //Se fija si no hay errores
+            if (!errores.isEmpty()){
+            
+              user.errors = errores.errors;
+              
+              return res.render("users/perfil", { usuario : user })
+            } else {
+
+              //Actualiza el perfil den usuario
               db.Users.update({
                 name: req.body.nombre,
                 email: req.body.email,
@@ -374,115 +323,51 @@ let usersController = {
                 where: {
                   id: idUrl
                 }
-              })
-        
+              }).catch(error => {
+                console.log(error);
+              });
+      
               res.redirect("/");
             }
-
-            })
-
-
-          } else {
-
-            if (!errores.isEmpty()){
-            
-              user.errors = errores.errors;
-              
-              return res.render("users/perfil", { usuario : user })
-        } else {
-
-    
-            db.Users.update({
-              name: req.body.nombre,
-              email: req.body.email,
-              password: bcrypt.hashSync(req.body.contrasenia,10)
-            },{
-              where: {
-                id: idUrl
-              }
-            })
-      
-            res.redirect("/");
           }
 
-
-          }
-          
-
-
-          
-        })
-
-
-      
-      
-      
-      
-
-      
-
-      /* // Hay errores? Esta es la logica de los errores. (check en los middlewares)
-      let errores = validationResult(req);
-      let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
-      if (!errores.isEmpty()){
-        usuarioBuscado.errors = errores.errors;
-        return res.render("users/perfil", { usuario : usuarioBuscado })
-      }
-
-      // Cambios en el usuario si no hay ningun error
-      let usuarioCambiado = usuariosJson.map(function(usuario){
-        if(usuario.id == idUrl){
-           usuario = {
-            id : parseInt(idUrl),
-            nombre : req.body.nombre,
-            email : req.body.email,
-            contrasenia : bcrypt.hashSync(req.body.contrasenia,10),
-            admin : usuarioBuscado.admin,
-            verify : usuarioBuscado.verify
-          }
-        }
-        return usuario;
-    });
-
-      // Usuario agregado al JSON
-      let usuariosCambiadosJSON = JSON.stringify(usuarioCambiado);
-      fs.writeFileSync(dbDirectory, usuariosCambiadosJSON);
-      res.redirect("/"); */
+        }).catch(error => {
+          console.log(error);
+        });
       },
 
 
 
 
 
-      // users/perfil/eliminar/:id (POST)
+    // users/perfil/eliminar/:id (POST)
     eliminar : (req, res, next) => {
 
         // Busca el id enviado por parametro
         let idUrl = req.params.id;
 
+        //Lo borra de la base de datos
         db.Users.destroy({
           where: {
             id: idUrl
           }
-        })
-
-        res.redirect("/users/usersAdmin");
-        /* // Hace un filter para eliminar al usuario directamente
-        let eliminarUsuario = usuariosJson.filter(function(usuario){
-          return usuario.id != idUrl;
+        }).catch(error => {
+          console.log(error);
         });
 
-        // Incluye la lista actualizada al JSON
-        let usuarioEliminadoJSON = JSON.stringify(eliminarUsuario);
-        fs.writeFileSync(dbDirectory, usuarioEliminadoJSON); */
-        
+        res.redirect("/users/usersAdmin");        
     },
 
-      // users/perfil/pedidos/:id
+
+
+
+
+    // users/perfil/pedidos/:id
     pedidos : (req, res, next) => {
         // Guarda el ID del parametro
         let idUrl = req.params.id;
 
+        //Renderiza la vista con los pedidos del usuario
         db.Users.findByPk(idUrl)
           .then(user => {
             if(user != null) {
@@ -490,80 +375,59 @@ let usersController = {
             } else {
               res.render("error")
             }
-          })
+          }).catch(error => {
+            console.log(error);
+          });
 
-        /* let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
-        
-        usuarioBuscado ? (res.render("users/pedidos", usuarioBuscado)) : res.render("error") */
     },
 
-      // users/verifyAccount/:id 
+
+
+
+    // users/verifyAccount/:id 
     verifyAccount: (req, res, next) => {
 
         // Guarda el ID del parametro
         let codeUrl = req.params.id;
-        console.log(codeUrl);
 
+        //Busca el usuario con el codigo de verificacion
         db.Users.findOne({
           where: {
             verify_code: codeUrl
           }
-        })
-          .then((user) => {
-            console.log(user);
+        }).then((user) => {
+
+            //Renderiza la vista "la cuenta no existe"
             if (user == null) {
               return res.render('users/verifyAccount', { msgError: 'La cuenta que quieres verificar no existe'});
             }
-            console.log(user.verify);
+            
+            //Renderiza la vista "la cuenta ya fue verificada"
             if (user.verify == 1) {
               return res.render('users/verifyAccount', { msgErrorYaVerificado: 'Este email ya ha sido verificado'} )
             }
 
-            console.log(`UPDATE users SET verify = '1' WHERE users.id = ${user.id}`);
+            //Renderiza la vista con la cuenta ya verificada
             db.sequelize.query(`UPDATE users SET verify = '1' WHERE users.id = ${user.id}`);
             return res.render('users/verifyAccount', { usuario : user });
+          }).catch(error => {
+            console.log(error);
           });
-
-        /* // Busca el usuario con el ID pasado por parametro
-        let usuarioAVerificar = usuariosJson.find( usuario => usuario.verify[1] == idUrl );
-
-        //Verificacion de email inexistente
-        if (usuarioAVerificar == undefined) {
-          return res.render('users/verifyAccount', { msgError: 'La cuenta que quieres verificar no existe'});
-        }
-
-        //Verificacion de email ya registrado
-        if (usuarioAVerificar.verify[0] == true) {
-          return res.render('users/verifyAccount', { msgErrorYaVerificado: 'Este email ya ha sido verificado'} )
-        }
-
-        usuarioAVerificar.verify[0] = true;
-
-        //Agrego el email al array
-        let usuariosAVerificar = usuariosJson.map(function(usuario){
-          if(usuario.id == usuarioAVerificar.id){
-            usuario = usuarioAVerificar;
-          }
-          return usuario;
-        });
-  
-        //Lo guardo en el JSON
-        let usuariosCambiadosJSON = JSON.stringify(usuariosAVerificar);
-        fs.writeFileSync(dbDirectory, usuariosCambiadosJSON);
-
-        return res.render('users/verifyAccount', { usuario : usuarioAVerificar }); */
-
     },
 
-      // users/verifyAccount/:id (POST)
+
+
+
+
+    // users/verifyAccount/:id (POST)
     reenviarEmail: (req, res, next) =>{
 
       // Guardo el ID pasado por parametro
       let idUrl = req.params.id;
 
+      //Busca el usuario para reenviar el email
       db.Users.findByPk(idUrl)
         .then((user) => {
-          console.log(user.verify_code);
           let transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
@@ -589,43 +453,10 @@ let usersController = {
             }
           });
           res.render('users/verifyAccount', { msgErrorReenviado : "El codigo de verificación ha sido reenviado a tu dirección de correo electronico." })
-        })
-
-
-
-/* 
-        // Guardo el ID pasado por parametro
-        let idUrl = req.params.id;
-
-        // Busca el ID pasado por parametro en el json
-        let usuarioBuscado = usuariosJson.find( usuario => usuario.id == idUrl );
-
-        // Reenvia el email
-        let transporter = nodemailer.createTransport({
-          service: "gmail",
-          auth: {
-            user: process.env.email,
-            pass: process.env.password
-          }
+        }).catch(error => {
+          console.log(error);
         });
-        const output = `
-        <h3>¡Gracias por registrarte en BierClub!:</h3> 
-        <p>Por favor haz click en <a href="http://localhost:3000/users/verifyAccount/${usuarioBuscado.verify[1]}">este</a> link para activar tu cuenta</p>
-        `;
-        let mailOptions = {
-          from: process.env.email, 
-          to: usuarioBuscado.email,
-          subject: "Verificacion de la cuenta de BierClub",
-          html: output
-        }
-        transporter.sendMail(mailOptions, function(err, data){
-          if(err){
-            console.log("ERROR");
-          }else{
-            console.log("Mensaje enviado!");
-          }
-        });
-        res.render('users/verifyAccount', { msgErrorReenviado : "El codigo de verificación ha sido reenviado a tu dirección de correo electronico." }) */
+
     }
 }
 

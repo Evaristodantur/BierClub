@@ -6,48 +6,50 @@ let sequelize = db.sequelize;
 //Middleware
 let { validationResult } = require('express-validator');
 
-//Agregado database JSON
-let productsJson = fs.readFileSync(path.resolve(__dirname, '../database/products.json'), 'utf-8');
-let dbDirectory = path.resolve(__dirname, '../database/products.json');
-
-productsJson == "" ?
-    fs.writeFileSync(dbDirectory, JSON.stringify(productsJson = [])) :
-    productsJson = JSON.parse(fs.readFileSync(dbDirectory, 'utf-8'));
-
 
 let productsController = {
 
+    //Para realizar pruebas
     prueba : (req, res, next) => {
 
         db.Products.findAll({
             include: [{association: 'images'}]
-        })
-            .then(products => {
+        }).then(products => {
                 res.send(products);
-            })
+            }).catch(error => {
+                console.log(error);
+            });
     },
     
 
+
+
     //  /products - Vista Home
     index : (req, res, next) => {
+
+        //Home - Encuentra todos los productos con sus imagenes y las renderiza
         db.Products.findAll({
             include: [{association: "images"}]
-        }).then(function(products){
+        }).then(products => {
             res.render('products/products', { productos : products });
-        }).catch(function(error){
+        }).catch(error  => {
             console.log(error);
         });
     },
+
+
+
 
     //  /products/productDetail/:id - Vista productDetail
     productDetail : (req, res, next) => {
         let idUrl = req.params.id;
 
+        //Renderiza el producto por el ID
         db.Products.findByPk(idUrl, {
             include: [{association: "images"}]
-        }).then(function(product){
+        }).then(product => {
             product ? (res.render("products/productDetail", {producto: product})) : (res.render("error"));
-        }).catch(function(error){
+        }).catch(error => {
             console.log(error);
         });
     },
@@ -58,37 +60,45 @@ let productsController = {
 
     // /products/productAdd - Vista productAdd
     createProduct : (req, res, next) => {
+
+        //Renderiza la tabla categorias en /productAdd
         db.Categories.findAll()
-            .then(function(categories) {
+            .then(categorieserror => {
                 res.render('products/productAdd', {categories: categories});
-            }).catch(function(error){
+            }).catch(error => {
                 console.log(error);
             });
-      },
+    },
   
+
+
+
     // /products/productAdd - Almacenamiento del producto en el JSON
     storeProduct : (req, res, next) => {
      
+        //Toma los errores
         let errores = validationResult(req);
         if (!errores.isEmpty()) {
 
+            //Renderiza las categorias con los errores en /productAdd
             db.Categories.findAll()
-            .then(function(categories) {               
+            .then(categories => {               
                 return res.render('products/productAdd', {errors: errores.errors, categories: categories});
-            }).catch(function(error){
+            }).catch(error => {
                 console.log(error);
             });
             
+
         } else {
 
-        db.Categories.findOne({
-            where: {
-                name: req.body.categoria
-            }
-        })
-            .then(function(categories) {
+            //Toma la tabla de categorias
+            db.Categories.findOne({
+                where: {
+                    name: req.body.categoria
+                }
+            }).then(categories => {
                 
-
+                //Si encuentra imagenes cargadas, las guarda
                 if(typeof req.files[0] != "undefined") {
 
                     let imagenes = [];                
@@ -99,6 +109,8 @@ let productsController = {
                             })
                         }
                     }
+
+                    //Crea el producto con sus respectivas imagenes cargadas
                     db.Products.create({
                         name: req.body.nombre,
                         price: req.body.precio,
@@ -109,8 +121,14 @@ let productsController = {
                         images: imagenes
                     }, {
                         include: [{association: "images"}]
+                    }).catch(error => {
+                        console.log(error);
                     });
+
+
                 } else {
+
+                    //Crea el producto pero sin las imagenes
                     db.Products.create({
                         name: req.body.nombre,
                         price: req.body.precio,
@@ -118,10 +136,12 @@ let productsController = {
                         stock: req.body.stock,
                         description: req.body.descripcion,
                         category_id: categories.dataValues.id
+                    }).catch(error => {
+                        console.log(error);
                     });
                 }
                 
-            }).catch(function(error){
+            }).catch(error => {
                 console.log(error);
             });
 
@@ -138,16 +158,17 @@ let productsController = {
 
         let idUrl = req.params.id;
 
+        //Busca todas las categorias, y el producto - los renderiza junto a la vista /productEdit/:id
         db.Categories.findAll()
-            .then(function(categories) {
+            .then(categories => {
                 db.Products.findByPk(idUrl)
-                    .then(function(product){
+                    .then(product => {
                         product ? (res.render('products/productEdit', {producto: product, categories: categories})) : res.render('error')
-                    }).catch(function(error){
+                    }).catch(error => {
                         console.log(error);
                     });
                 
-            }).catch(function(error){
+            }).catch(error => {
                 console.log(error);
             });
     },
@@ -157,34 +178,41 @@ let productsController = {
 
         let idUrl = req.params.id;   
             
+        //Toma los errores
         let errores = validationResult(req);
 
+        //Se fija si hay errores
         if (!errores.isEmpty()) {
+
+            //Busca las categorias
             db.Categories.findAll()
-            .then(function(categories) {
+            .then(categories => {
+
+                //Busca el producto
                 db.Products.findByPk(idUrl)
-                    .then(function(product){
+                    .then(product => {
                         product.errors = errores.errors
                         return res.render('products/productEdit', {producto: product, errors: errores.errors, categories: categories});
-                    }).catch(function(error){
+                    }).catch(error => {
                         console.log(error);
                     });
                 
-            }).catch(function(error){
+            }).catch(error => {
                 console.log(error);
             });
 
 
         } else {
 
-
+            //Busca las categorias
             db.Categories.findOne({
                 where: {
                     name: req.body.categoria
                 }
             })
-                .then(function(categories) {
+                .then(categories => {
     
+                    //Se fija si se cargaron imagenes
                      if(typeof req.files[0] != "undefined") {
     
                         let imagenes = [];                
@@ -196,6 +224,7 @@ let productsController = {
                             }
                         }
 
+                        //Modifica el producto con las imagenes
                         db.Products.create({
                             name: req.body.nombre,
                             price: req.body.precio,
@@ -206,15 +235,21 @@ let productsController = {
                             images: imagenes
                         }, {
                             include: [{association: "images"}]
+                        }).catch(error => {
+                            console.log(error);
                         });
 
                         db.Products.destroy({
                             where: {
                                 id: idUrl
                             }
-                        })
+                        }).catch(error => {
+                            console.log(error);
+                        });
 
                     } else {
+
+                        //Modifica el producto sin imagenes, si es que no se cargo ninguna
                         db.Products.update({
                             name: req.body.nombre,
                             price: req.body.precio,
@@ -226,10 +261,12 @@ let productsController = {
                             where: {
                                 id: idUrl
                             }
+                        }).catch(error => {
+                            console.log(error);
                         });
                     }
                     
-                }).catch(function(error){
+                }).catch(error => {
                     console.log(error);
                 });
 
@@ -246,11 +283,12 @@ let productsController = {
     deleteProduct : (req, res, next) => {
         let idUrl = req.params.id;
 
+        //Borra el producto de la base de datos
         db.Products.destroy({
             where: {
                 id: idUrl
             }
-        }).catch(function(error){
+        }).catch(error  => {
             console.log(error);
         });
 
@@ -259,23 +297,26 @@ let productsController = {
 
 
 
+    
 
     //  /products/productAdmin - Vista de productAdmin
     productAdmin : (req, res, next) => {
 
+        //Muestra todos los productos con sus imagenes
         db.Products.findAll({
             include: [{association: "images"}]
-        }).then(function(products){
-            console.log(products[0].images[0].dataValues.name);
+        }).then(products => {
             res.render('products/productAdmin', { productos : products });
-        }).catch(function(error){
+        }).catch(error => {
             console.log(error);
-        });
-
-        
+        });    
     },
 
-    //  /products/productCart - Vista de proudctCart
+
+
+
+
+    //  /products/productCart - Vista de productCart
     productCart : (req, res, next) => {
         res.render('products/productCart');
     }
