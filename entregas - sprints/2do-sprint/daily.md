@@ -1,5 +1,18 @@
 # Dailies
 
+### 🗓️ 6/1/21
+  Terminado:
+  - Otros:
+    - Sacar screen al diagrama de la base de datos
+    - Actualizar Script de datos
+    - Actualizar Script de Estructura
+    - Verificar la estructura de la base de datos
+    
+   Para hacer hoy:
+  - Arreglar:
+    - Arreglar form de "eliminar en userAdminEdit.ejs
+    
+
 ### 🗓️ 5/1/21
   Terminado:
   - userController
