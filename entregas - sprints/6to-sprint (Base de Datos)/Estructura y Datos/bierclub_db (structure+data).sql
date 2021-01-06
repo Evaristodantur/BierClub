@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-12-2020 a las 05:04:59
+-- Tiempo de generación: 06-01-2021 a las 21:06:12
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.9
 
@@ -30,8 +30,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `carts` (
   `id` int(11) NOT NULL,
   `status` tinyint(4) NOT NULL,
-  `createdAt` timestamp NULL DEFAULT current_timestamp(),
-  `updatedAt` timestamp NULL DEFAULT current_timestamp()
+  `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updatedAt` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -51,10 +51,10 @@ INSERT INTO `carts` (`id`, `status`, `createdAt`, `updatedAt`) VALUES
 
 CREATE TABLE `cart_product` (
   `id` int(11) NOT NULL,
-  `product_id` int(11) DEFAULT NULL,
+  `product_id` int(11) NOT NULL,
   `cart_id` int(11) NOT NULL,
-  `createdAt` timestamp NULL DEFAULT current_timestamp(),
-  `updatedAt` timestamp NULL DEFAULT current_timestamp()
+  `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updatedAt` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -81,7 +81,8 @@ INSERT INTO `categories` (`id`, `name`, `status`, `createdAt`, `updatedAt`) VALU
 (3, 'Cerveza', 1, '2020-12-23 02:19:44', '2020-12-23 02:19:44'),
 (4, 'Vino', 1, '2020-12-23 02:20:04', '2020-12-23 02:20:04'),
 (5, 'asdasd', 0, '2020-12-23 04:42:58', '2020-12-23 04:42:58'),
-(6, 'KIPPES', 0, '2020-12-23 04:44:22', '2020-12-23 04:44:22');
+(6, 'KIPPES', 0, '2020-12-23 04:44:22', '2020-12-23 04:44:22'),
+(7, 'pepito clavo 3 clavitos', 0, '2021-01-04 19:28:39', '2021-01-04 19:28:39');
 
 -- --------------------------------------------------------
 
@@ -145,10 +146,10 @@ INSERT INTO `images` (`id`, `name`, `createdAt`, `updatedAt`) VALUES
 
 CREATE TABLE `image_product` (
   `id` int(11) NOT NULL,
-  `product_id` int(11) DEFAULT NULL,
-  `image_id` int(11) DEFAULT NULL,
-  `createdAt` timestamp NULL DEFAULT current_timestamp(),
-  `updatedAt` timestamp NULL DEFAULT current_timestamp()
+  `product_id` int(11) NOT NULL,
+  `image_id` int(11) NOT NULL,
+  `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updatedAt` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -197,7 +198,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `price`, `discount`, `stock`, `description`, `category_id`, `createdAt`, `updatedAt`) VALUES
-(55, 'ippa Sippa (TDH Imperial Aussie IPA)', 90, 10, 645645, 'Amarillo pálido, algo turbia y muy refrescante! Este híbrido entre una West Coast y una East Coast IPA tiene lo mejor de los dos mundos: de cuerpo medio, con aromas y sabores cítricos tropicales (ananá 🍍, maracuyá y mandarina 🍊).', 3, '2020-12-24 17:40:30', '2020-12-24 17:40:30'),
+(55, 'ippa Sippa (TDH Imperial Aussie IP)', 90, 10, 645645, 'Amarillo pálido, algo turbia y muy refrescante! Este híbrido entre una West Coast y una East Coast IPA tiene lo mejor de los dos mundos: de cuerpo medio, con aromas y sabores cítricos tropicales (ananá 🍍, maracuyá y mandarina 🍊).', 1, '2020-12-24 17:40:30', '2020-12-24 17:40:30'),
 (56, 'Saison de Triomphe - Hoppy Saison', 115, 0, 0, 'Fermentada con un blend de 4 levaduras rurales, con maltas de cebada artesanales de La Plata y granos sin maltear de trigo y avena que le dan esa rusticidad típica del estilo, esta saison fue ademas lupulada con Enigma 🇦🇺Australiano!', 1, '2020-12-24 17:58:57', '2020-12-24 17:58:57'),
 (57, 'William Wallace Scottish', 82, 5, 663, 'Una verdadera IPA de la costa oeste, inundación de lupulina americana en tus papilas gustativas con intensos sabores y aromas resinosos y cítricos (pino húmedo, cáscara de naranja 🍊, lima/limón 🍋y pomelo).', 2, '2020-12-24 17:59:34', '2020-12-24 17:59:34'),
 (58, 'Mumbai 1947', 99, 20, 10, 'Una birra purasangre, muscular hasta explotar con ridículas cantidades de Galaxy y Cashmere.\\r\\nDe color amarillo pálido, turbia, jugosa, espesa e hiper lupulada, con intensas notas a maracuyá, mango, lima-limón, durazno y cascara de sandia #neverpony.', 3, '2020-12-24 18:00:02', '2020-12-24 18:00:02'),
@@ -220,19 +221,41 @@ CREATE TABLE `users` (
   `admin` tinyint(4) NOT NULL,
   `verify` tinyint(4) NOT NULL,
   `verify_code` varchar(50) NOT NULL,
-  `cart_id` int(11) DEFAULT NULL,
-  `createdAt` timestamp NULL DEFAULT current_timestamp(),
-  `updatedAt` timestamp NULL DEFAULT current_timestamp()
+  `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updatedAt` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `suscription_status`, `admin`, `verify`, `verify_code`, `cart_id`, `createdAt`, `updatedAt`) VALUES
-(1, 'diego', 'diego@diego.com', '12345678', 1, 1, 1, 'aaaa', 1, '2020-12-23 01:51:46', '2020-12-23 01:51:46'),
-(2, 'pablo', 'pablo@pablo.com', '12345679', 0, 0, 1, 'bbbb', 2, '2020-12-23 01:52:19', '2020-12-23 01:52:19'),
-(3, 'raul', 'raul@raul.com', '12345673', 1, 0, 1, 'cccc', 3, '2020-12-23 01:52:59', '2020-12-23 01:52:59');
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `suscription_status`, `admin`, `verify`, `verify_code`, `createdAt`, `updatedAt`) VALUES
+(77, 'KIPPES', 'kippes.diego@gmail.com', '$2a$10$PI/p3ov/fTlTGIOe0jpxR.XsvxdYlERMp6KMRQe8/F1YN02Kd7e5a', 0, 1, 1, '61kghn6hcs', '2021-01-06 19:28:45', '2021-01-06 19:28:45'),
+(78, 'User-comun', 'user@user.com', '$2a$10$9z6neGiOZKrB2EuJyRyYiOC2v0301XZaxIS8HgY2Bp.MtDf9kBgL.', 0, 0, 1, '7gi440yh3w', '2021-01-06 20:02:08', '2021-01-06 20:02:08'),
+(79, 'admin', 'admin@admin.com', '$2a$10$n2FSwB7/AaBfK.GXv.dWo.LK3mu/GJqKkCeNobUTvc0u8jwvGwvkS', 0, 1, 1, 'pr6kf9s33f', '2021-01-06 20:02:26', '2021-01-06 20:02:26'),
+(80, 'usuario-no-verificado', 'user-no-verificado@user.com', '$2a$10$F1.x741JLTWIQbTrpJroCekqGMNSVjPcTvLBxVjeT013X3txavS2O', 0, 0, 0, 'j6sdmgsvj5', '2021-01-06 20:02:56', '2021-01-06 20:02:56');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `user_cart`
+--
+
+CREATE TABLE `user_cart` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `cart_id` int(11) NOT NULL,
+  `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updatedAt` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `user_cart`
+--
+
+INSERT INTO `user_cart` (`id`, `user_id`, `cart_id`, `createdAt`, `updatedAt`) VALUES
+(1, 77, 2, '2021-01-06 19:46:00', '2021-01-06 19:46:00'),
+(2, 77, 3, '2021-01-06 19:46:07', '2021-01-06 19:46:07');
 
 --
 -- Índices para tablas volcadas
@@ -283,8 +306,15 @@ ALTER TABLE `products`
 -- Indices de la tabla `users`
 --
 ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `user_cart`
+--
+ALTER TABLE `user_cart`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_users-carts_idx` (`cart_id`);
+  ADD KEY `fk_users-carts_idx` (`user_id`),
+  ADD KEY `fk_carts-users_idx` (`cart_id`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -306,7 +336,7 @@ ALTER TABLE `cart_product`
 -- AUTO_INCREMENT de la tabla `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `images`
@@ -330,7 +360,13 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+
+--
+-- AUTO_INCREMENT de la tabla `user_cart`
+--
+ALTER TABLE `user_cart`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas
@@ -357,10 +393,11 @@ ALTER TABLE `products`
   ADD CONSTRAINT `fk_products-categories` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Filtros para la tabla `users`
+-- Filtros para la tabla `user_cart`
 --
-ALTER TABLE `users`
-  ADD CONSTRAINT `fk_users-carts` FOREIGN KEY (`cart_id`) REFERENCES `carts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `user_cart`
+  ADD CONSTRAINT `fk_carts-users` FOREIGN KEY (`cart_id`) REFERENCES `carts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_users-carts` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
