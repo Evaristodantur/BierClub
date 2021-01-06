@@ -37,9 +37,9 @@ let usersController = {
       db.Users.findByPk(idUrl)
         .then(user => {
           if(user != null) {
-            res.render("users/usersAdminEdit", { usuarios : user })
+            res.render("users/usersAdminEdit", { usuarios : user });
           } else {
-            res.render('users/verifyAccount', { msgErrorUsuarioInexistente: 'Este usuario no existe'})
+            res.render('users/verifyAccount', { msgErrorUsuarioInexistente: 'Este usuario no existe'});
           }          
         }).catch(error => {
           console.log(error);
@@ -102,8 +102,10 @@ let usersController = {
       let errores = validationResult(req);
       errores.reqNombre = req.body.nombre;
       errores.reqEmail = req.body.email;
+
+      //Verifica los errores y los renderiza
       if (!errores.isEmpty()){
-        return res.render("users/register", {errors : errores})
+        return res.render("users/register", {errors : errores});
       }
 
       //Codifco de "verify_code"
@@ -179,7 +181,7 @@ let usersController = {
 
       //Renderiza la vista con los errores
       if (!errores.isEmpty()){
-        return res.render("users/login", {errors : errores})
+        return res.render("users/login", {errors : errores});
       }
 
       //Busca el usuario a iniciar
@@ -194,7 +196,7 @@ let usersController = {
 
         //Activa la cookie si el usuario tildo "recordarme"
         if(req.body.recordameLogin != undefined){
-          res.cookie('recordame', user.email,{ maxAge: 1000*60*60*24*365*3 })
+          res.cookie('recordame', user.email,{ maxAge: 1000*60*60*24*365*3 });
         }
 
         res.redirect('back');
@@ -202,7 +204,7 @@ let usersController = {
         } else {
 
           //Renderiza la vista de inicio de session con el error de contraseña o mail incorrectos
-          let credencialesInvalidas = "El usuario/contraseña son incorrectos"
+          let credencialesInvalidas = "El usuario/contraseña son incorrectos";
           return res.render("users/login", {credencialesInvalidas : credencialesInvalidas});
         }
 
@@ -225,9 +227,9 @@ let usersController = {
         .then((user) => {
           if(user != null) {
             user.errors = undefined;
-            res.render("users/perfil", { usuario : user })
+            res.render("users/perfil", { usuario : user });
           } else {
-            res.render("error")
+            res.render("error");
           }
         }).catch(error => {
           console.log(error);
@@ -255,7 +257,7 @@ let usersController = {
             errores.errors.push({
               msg: 'La antigua contraseña no coincide',
               param: 'antiguaContrasenia'
-            })
+            });
           }
 
           //Validacion de que el mail fue cambiado
@@ -271,7 +273,7 @@ let usersController = {
                 errores.errors.push({
                   msg: 'El email actual ya esta registrado',
                   param: 'email'
-                })
+                });
               }
 
               //Se fija si hay errores
@@ -279,7 +281,7 @@ let usersController = {
             
                 user.errors = errores.errors;
                 
-                return res.render("users/perfil", { usuario : user })
+                return res.render("users/perfil", { usuario : user });
               } else {
   
                 //Actualiza el usuario
@@ -311,7 +313,7 @@ let usersController = {
             
               user.errors = errores.errors;
               
-              return res.render("users/perfil", { usuario : user })
+              return res.render("users/perfil", { usuario : user });
             } else {
 
               //Actualiza el perfil den usuario
@@ -370,11 +372,13 @@ let usersController = {
         //Renderiza la vista con los pedidos del usuario
         db.Users.findByPk(idUrl)
           .then(user => {
+
             if(user != null) {
-              res.render("users/pedidos", user)
+              res.render("users/pedidos", user);
             } else {
-              res.render("error")
+              res.render("error");
             }
+
           }).catch(error => {
             console.log(error);
           });
@@ -404,12 +408,13 @@ let usersController = {
             
             //Renderiza la vista "la cuenta ya fue verificada"
             if (user.verify == 1) {
-              return res.render('users/verifyAccount', { msgErrorYaVerificado: 'Este email ya ha sido verificado'} )
+              return res.render('users/verifyAccount', { msgErrorYaVerificado: 'Este email ya ha sido verificado'} );
             }
 
             //Renderiza la vista con la cuenta ya verificada
             db.sequelize.query(`UPDATE users SET verify = '1' WHERE users.id = ${user.id}`);
             return res.render('users/verifyAccount', { usuario : user });
+
           }).catch(error => {
             console.log(error);
           });
@@ -428,6 +433,7 @@ let usersController = {
       //Busca el usuario para reenviar el email
       db.Users.findByPk(idUrl)
         .then((user) => {
+
           let transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
@@ -435,16 +441,19 @@ let usersController = {
               pass: process.env.password
             }
           });
+
           const output = `
           <h3>¡Gracias por registrarte en BierClub!:</h3> 
           <p>Por favor haz click en <a href="http://localhost:3000/users/verifyAccount/${user.verify_code}">este</a> link para activar tu cuenta</p>
           `;
+
           let mailOptions = {
             from: process.env.email, 
             to: user.email,
             subject: "Verificacion de la cuenta de BierClub",
             html: output
           }
+
           transporter.sendMail(mailOptions, function(err, data){
             if(err){
               console.log("ERROR");
@@ -452,7 +461,9 @@ let usersController = {
               console.log("Mensaje enviado!");
             }
           });
-          res.render('users/verifyAccount', { msgErrorReenviado : "El codigo de verificación ha sido reenviado a tu dirección de correo electronico." })
+
+          res.render('users/verifyAccount', { msgErrorReenviado : "El codigo de verificación ha sido reenviado a tu dirección de correo electronico." });
+          
         }).catch(error => {
           console.log(error);
         });

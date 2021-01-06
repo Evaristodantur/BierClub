@@ -15,12 +15,12 @@ let mainController = {
 
         //Muestra todos los productos en el home
         db.Products.findAll({
-            include: [{association: "images"}]
-        }).then(products => {
-            res.render('index', { productos : products });
-        }).catch(error => {
-            console.log(error);
-        });
+                include: [{association: "images"}]
+            }).then(products => {
+                res.render('index', { productos : products });
+            }).catch(error => {
+                console.log(error);
+            });
     },
 
 
@@ -29,7 +29,7 @@ let mainController = {
 
     //  /about-us
     aboutUs : (req, res, next) => {
-        res.render('aboutUs', {title : "hola"});
+        res.render('aboutUs');
     },
 
 
@@ -73,15 +73,15 @@ let mainController = {
 
 
     // /contacto
-    contactoRender : (req, res, next) => {
-        res.render("contacto")
+    contactRender : (req, res, next) => {
+        res.render("contact");
     },
 
 
 
 
     // Post de Contacto
-    contactoSend : (req, res, next) => {
+    contactSend : (req, res, next) => {
 
         // Enviar errores express-validator
         let errores = validationResult(req);
@@ -93,7 +93,7 @@ let mainController = {
 
         //Verifica si hay errores
         if (!errores.isEmpty()){
-            return res.render("contacto", {errors : errores})
+            return res.render("contact", {errors : errores});
         }
 
         //Manda el mensaje de contacto a bierclub
@@ -101,7 +101,7 @@ let mainController = {
 
         nodemailerAssets(req).transporter.sendMail(nodemailerAssets(req).mailOptions, function(err, data){
             if(!err){
-                res.render("contacto", { success : "Tu mensaje fue enviado con exito!" })
+                res.render("contact", { success : "Tu mensaje fue enviado con exito!" })
             }
         });
     }

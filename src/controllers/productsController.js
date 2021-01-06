@@ -13,8 +13,8 @@ let productsController = {
     prueba : (req, res, next) => {
 
         db.Products.findAll({
-            include: [{association: 'images'}]
-        }).then(products => {
+                include: [{association: 'images'}]
+            }).then(products => {
                 res.send(products);
             }).catch(error => {
                 console.log(error);
@@ -29,12 +29,12 @@ let productsController = {
 
         //Home - Encuentra todos los productos con sus imagenes y las renderiza
         db.Products.findAll({
-            include: [{association: "images"}]
-        }).then(products => {
-            res.render('products/products', { productos : products });
-        }).catch(error  => {
-            console.log(error);
-        });
+                include: [{association: "images"}]
+            }).then(products => {
+                res.render('products/products', { productos : products });
+            }).catch(error  => {
+                console.log(error);
+            });
     },
 
 
@@ -46,12 +46,12 @@ let productsController = {
 
         //Renderiza el producto por el ID
         db.Products.findByPk(idUrl, {
-            include: [{association: "images"}]
-        }).then(product => {
-            product ? (res.render("products/productDetail", {producto: product})) : (res.render("error"));
-        }).catch(error => {
-            console.log(error);
-        });
+                include: [{association: "images"}]
+            }).then(product => {
+                product ? (res.render("products/productDetail", {producto: product})) : (res.render("error"));
+            }).catch(error => {
+                console.log(error);
+            });
     },
     
 
@@ -106,7 +106,7 @@ let productsController = {
                         if(typeof req.files[i] != "undefined") {
                             imagenes.push({
                                 name: req.files[i].filename
-                            })
+                            });
                         }
                     }
 
@@ -128,6 +128,7 @@ let productsController = {
 
                 } else {
 
+
                     //Crea el producto pero sin las imagenes
                     db.Products.create({
                         name: req.body.nombre,
@@ -139,6 +140,7 @@ let productsController = {
                     }).catch(error => {
                         console.log(error);
                     });
+
                 }
                 
             }).catch(error => {
@@ -163,7 +165,7 @@ let productsController = {
             .then(categories => {
                 db.Products.findByPk(idUrl)
                     .then(product => {
-                        product ? (res.render('products/productEdit', {producto: product, categories: categories})) : res.render('error')
+                        product ? (res.render('products/productEdit', {producto: product, categories: categories})) : res.render('error');
                     }).catch(error => {
                         console.log(error);
                     });
@@ -191,7 +193,7 @@ let productsController = {
                 //Busca el producto
                 db.Products.findByPk(idUrl)
                     .then(product => {
-                        product.errors = errores.errors
+                        product.errors = errores.errors;
                         return res.render('products/productEdit', {producto: product, errors: errores.errors, categories: categories});
                     }).catch(error => {
                         console.log(error);
@@ -220,7 +222,7 @@ let productsController = {
                             if(typeof req.files[i] != "undefined") {
                                 imagenes.push({
                                     name: req.files[i].filename
-                                })
+                                });
                             }
                         }
 
@@ -297,7 +299,7 @@ let productsController = {
 
 
 
-    
+
 
     //  /products/productAdmin - Vista de productAdmin
     productAdmin : (req, res, next) => {

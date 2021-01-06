@@ -37,11 +37,11 @@ router.get("/envios", mainController.envios);
 /**********************************CONTACTO*******************************************/
 
 /* GET     /contacto            page.*/
-router.get('/contacto', mainController.contactoRender);
+router.get('/contact', mainController.contactRender);
 
 /* POST     /contacto           page.*/
-router.post('/contacto',
+router.post('/contact',
                 contactMiddleware,
-                        mainController.contactoSend);
+                        mainController.contactSend);
 
 module.exports = router;
