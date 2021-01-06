@@ -335,26 +335,86 @@ let usersController = {
 
       let errores = validationResult(req);
 
-      if (!errores.isEmpty()){
       db.Users.findByPk(idUrl)
         .then(user => {
-          user.errors = errores.errors;
-          console.log(user);
-          return res.render("users/perfil", { usuario : user })
-        })
-      } else {
-        db.Users.update({
-          name: req.body.nombre,
-          email: req.body.email,
-          password: bcrypt.hashSync(req.body.contrasenia,10)
-        },{
-          where: {
-            id: idUrl
+          if(!bcrypt.compareSync(req.body.antiguaContrasenia, user.password)){
+            errores.errors.push({
+              msg: 'La antigua contraseña no coincide',
+              param: 'antiguaContrasenia'
+            })
           }
-        })
+
+          if(req.body.email != user.email) {
+            db.Users.findOne({
+              where: {
+                email: req.body.email
+              }
+            }).then(userMailYaRegistrado => {
+              console.log(userMailYaRegistrado);
+              if(userMailYaRegistrado) {
+                errores.errors.push({
+                  msg: 'El email actual ya esta registrado',
+                  param: 'email'
+                })
+              }
+
+              if (!errores.isEmpty()){
+            
+                user.errors = errores.errors;
+                
+                return res.render("users/perfil", { usuario : user })
+          } else {
   
-        res.redirect("/");
-      }
+      
+              db.Users.update({
+                name: req.body.nombre,
+                email: req.body.email,
+                password: bcrypt.hashSync(req.body.contrasenia,10)
+              },{
+                where: {
+                  id: idUrl
+                }
+              })
+        
+              res.redirect("/");
+            }
+
+            })
+
+
+          } else {
+
+            if (!errores.isEmpty()){
+            
+              user.errors = errores.errors;
+              
+              return res.render("users/perfil", { usuario : user })
+        } else {
+
+    
+            db.Users.update({
+              name: req.body.nombre,
+              email: req.body.email,
+              password: bcrypt.hashSync(req.body.contrasenia,10)
+            },{
+              where: {
+                id: idUrl
+              }
+            })
+      
+            res.redirect("/");
+          }
+
+
+          }
+          
+
+
+          
+        })
+
+
+      
       
       
       
