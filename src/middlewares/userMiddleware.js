@@ -27,9 +27,7 @@ let userMiddleware = [
                 if (user) {
                   return Promise.reject('Esta dirección email ya esta registrada');
                 }
-              }).catch(error => {
-                console.log(error);
-                });;
+              })
         }),
         checkSchema({
             contrasenia: {

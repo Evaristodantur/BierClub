@@ -26,7 +26,7 @@ let nodemailerAssets = (req) => {
                 subject: req.body.subject,
                 html: output
                 } 
-                return({transporter, mailOptions})
+                return({transporter, mailOptions});
 }
 
 module.exports = nodemailerAssets;

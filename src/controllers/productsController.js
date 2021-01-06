@@ -63,7 +63,7 @@ let productsController = {
 
         //Renderiza la tabla categorias en /productAdd
         db.Categories.findAll()
-            .then(categorieserror => {
+            .then(categories => {
                 res.render('products/productAdd', {categories: categories});
             }).catch(error => {
                 console.log(error);

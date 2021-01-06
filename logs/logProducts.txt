@@ -827,3 +827,12 @@ Stock: 645645
 Categoria: Lupuladas
 Descripción: Amarillo pálido, algo turbia y muy refrescante! Este híbrido entre una West Coast y una East Coast IPA tiene lo mejor de los dos mundos: de cuerpo medio, con aromas y sabores cítricos tropicales (ananá 🍍, maracuyá y mandarina 🍊).
 *************************************************************
+Hubo un intento de subir/modificar a las 6/1/2021 03:24:43
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
