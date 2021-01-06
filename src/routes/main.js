@@ -10,6 +10,11 @@ let mainController = require('../controllers/mainController');
 let contactMiddleware = require("../middlewares/contactMiddleware");            //Assets de contacto
 
 
+
+
+
+// Routes
+
 /**********************************HOME*******************************************/
 /* GET    bierclub.com/         page. */
 router.get('/', mainController.index);

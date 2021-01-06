@@ -4,8 +4,6 @@ const fs = require("fs");
 const path = require("path");
 const db = require("../database/models");
 
-let usuariosJson = fs.readFileSync(path.resolve(__dirname, '../database/usuarios.json'), 'utf-8');
-
 let cookieAuthMiddleware = (req, res, next) => {
 
     if (req.cookies.recordame != undefined && 
@@ -17,11 +15,11 @@ let cookieAuthMiddleware = (req, res, next) => {
                 }
             }).then(user => {
                 req.session.usuarioLogueado = user
-            })
-            /* let usuarioALoguearse = usuariosJson.find(usuario => usuario.email == req.cookies.recordame);
-
-            req.session.usuarioLogueado = usuarioALoguearse; */
+            }).catch(error => {
+                console.log(error);
+            });
     }
+
     next();
 }
 

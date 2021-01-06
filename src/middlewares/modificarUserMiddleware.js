@@ -7,8 +7,6 @@ const path = require("path");
 let db = require("../database/models");
 let sequelize = db.sequelize;
 
-let dbDirectory = path.resolve(__dirname, '../database/usuarios.json')
-let usuariosJson = JSON.parse(fs.readFileSync(dbDirectory), 'utf-8');
 
 let modificarUserMiddleware = [
     check("nombre").notEmpty().withMessage("El nombre no puede estar vacío")
@@ -49,4 +47,4 @@ let modificarUserMiddleware = [
         })
 ]
 
-module.exports = modificarUserMiddleware
+module.exports = modificarUserMiddleware;

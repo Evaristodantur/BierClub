@@ -21,7 +21,7 @@ Stock: ${req.body.stock}
 Categoria: ${req.body.categoria}
 Descripción: ${req.body.descripcion}
 *************************************************************
-`)            
+`);            
     }
 
     

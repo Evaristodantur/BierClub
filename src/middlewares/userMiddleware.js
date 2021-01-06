@@ -8,9 +8,6 @@ let dbDirectory = path.resolve(__dirname, '../database/usuarios.json')
 let db = require("../database/models");
 let sequelize = db.sequelize;
 
-usuariosJson == "" ?
-    fs.writeFileSync(dbDirectory, JSON.stringify(usuariosJson = [])) :
-    usuariosJson = JSON.parse(fs.readFileSync(dbDirectory), 'utf-8');
 
 let userMiddleware = [
     check("nombre").notEmpty().withMessage("El nombre no puede estar vacío")
@@ -30,7 +27,9 @@ let userMiddleware = [
                 if (user) {
                   return Promise.reject('Esta dirección email ya esta registrada');
                 }
-              });
+              }).catch(error => {
+                console.log(error);
+                });;
         }),
         checkSchema({
             contrasenia: {

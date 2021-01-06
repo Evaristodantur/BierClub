@@ -14,6 +14,8 @@ Nombre: ${req.body.nombre}
 Email: ${req.body.email}
 *************************************************************` + "\n");
     }
+
+    
     fs.appendFileSync('./logs/logsUsers.txt',
 `Se registró un usuario el ${(new Date().toLocaleString())}
 El usuario registrado es:
