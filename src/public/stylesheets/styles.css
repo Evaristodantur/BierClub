@@ -1,0 +1,15 @@
+@import '__general.css';
+@import '__nav.css';
+@import '__nav2.css';
+@import '__index.css';
+@import '__about-us.css';
+@import '__productCart.css';
+@import '__productDetail.css';
+@import '__register-login.css';
+@import '__perfil.css';
+@import '__products-productsAdmin.css';
+@import '__productAdd-productEdit.css';
+@import '__userAdmin-userAdminEdit.css';
+@import '__footer.css';
+@import '__error.css';
+@import '__verify-account.css'

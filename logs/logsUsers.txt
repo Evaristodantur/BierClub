@@ -1,0 +1,1276 @@
+Hubo un intento de registro el 2020-11-29 20:09:01
+El usuario a registrarse fue:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:09:18
+El usuario a registrarse fue:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:16:08
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:16:36
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:18:09
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+<<<<<<< HEAD
+Hubo un intento de registro el 2020-11-29 20:18:13
+El usuario a registrarse fue:
+Nombre: asdasd
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-29 20:18:43
+El usuario a registrarse fue:
+Nombre: asdasd
+Email: evaristo@dantur.com
+*************************************************************
+Hubo un intento de registro el 2020-11-30 4:32:44
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-30 4:33:00
+El usuario a registrarse fue:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Hubo un intento de registro el 2020-11-30 4:34:27
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-30 4:36:48
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-30 4:39:24
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-30 4:41:27
+El usuario a registrarse fue:
+Nombre: Evaristo Dantur
+Email: 
+*************************************************************
+Hubo un intento de registro el 2020-11-30 4:41:34
+El usuario a registrarse fue:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-11-30 4:44:07
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Hubo un intento de registro el 2020-11-30 4:44:29
+El usuario a registrarse fue:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-11-30 4:47:10
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-12-1 16:13:45
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-12-1 16:20:48
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 2020-12-1 16:21:08
+El usuario a registrarse fue:
+Nombre: Evaristo Dantur
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 2020-12-1 16:21:15
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: kippes.diego@gmsail.com
+*************************************************************
+Se registró un usuario el 2020-12-1 16:27:09
+El usuario registrado es:
+Nombre: adsawdwadads
+Email: adw@dwa.com
+*************************************************************
+Hubo un intento de registro el 2020-12-1 16:27:44
+El usuario a registrarse fue:
+Nombre: adsawdwadads
+Email: adw@dwa.com
+*************************************************************
+Se registró un usuario el 2020-12-1 16:27:52
+El usuario registrado es:
+Nombre: adsawdwadads
+Email: adw@dwa.comaa
+*************************************************************
+Hubo un intento de registro el 2020-12-2 18:53:38
+El usuario a registrarse fue:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-12-2 18:53:44
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-12-2 22:15:10
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-12-2 22:16:25
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-12-2 22:50:31
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-12-2 22:53:48
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-12-3 4:19:18
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+=======
+*************************************************************
+>>>>>>> 110ad6fb96937d7623772f9da137f8d96afb0c51
+Se registró un usuario el 2020-12-3 21:22:21
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Se registró un usuario el 2020-12-4 3:22:54
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+=======
+>>>>>>> 50e31ddbfe13eead12e292de13d62d0a02353219
+Se registró un usuario el 2020-12-4 4:17:14
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo@dantur.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:32:25
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:33:13
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:33:24
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Se registró un usuario el 31/12/2020 17:37:26
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 17:40:06
+El usuario registrado es:
+Nombre: asdasd
+Email: ea@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:40:54
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:41:52
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:42:11
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:43:25
+El usuario a registrarse fue:
+Nombre: 
+Email: 
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:43:39
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 17:43:53
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 17:45:17
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 17:46:23
+El usuario registrado es:
+Nombre: kippes
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 17:46:35
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:47:19
+El usuario a registrarse fue:
+Nombre: kippes.diego@gmail.com
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:47:27
+El usuario a registrarse fue:
+Nombre: kippes.diego@gmail.com
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 17:51:00
+El usuario registrado es:
+Nombre: kippes.diego@gmail.com
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:51:56
+El usuario a registrarse fue:
+Nombre: kippes.diego@gmail.com
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:57:03
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:57:33
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:58:24
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 17:58:50
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:00:09
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:01:16
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:01:37
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:01:57
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:02:36
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:02:57
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:03:05
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:03:15
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:03:21
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:03:38
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: agata@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:04:05
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: agata@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:04:26
+El usuario a registrarse fue:
+Nombre: asd
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:04:49
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:09:01
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:09:18
+El usuario registrado es:
+Nombre: kippes.diego@gmail.com
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:10:00
+El usuario registrado es:
+Nombre: kippes.diego@gmail.com
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:10:24
+El usuario registrado es:
+Nombre: kippes.diego@gmail.com
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:10:48
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:11:12
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:11:29
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:11:52
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:12:07
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:14:32
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:15:13
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:16:31
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:16:45
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:19:56
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:20:03
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:20:34
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:21:54
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:22:18
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:24:20
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:24:56
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:25:56
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:26:06
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:26:54
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:27:12
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:28:34
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:30:53
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:31:03
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:36:51
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:37:03
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:40:28
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:40:37
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:43:24
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:43:40
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:44:13
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:45:23
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:45:37
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:45:57
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:46:10
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:46:17
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:46:50
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:46:54
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 18:47:05
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:47:14
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:47:28
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:47:58
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:51:27
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:52:19
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:52:42
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:52:51
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:53:06
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:54:19
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:56:25
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 18:56:51
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:07:14
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:07:23
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:08:08
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:09:08
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:09:55
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:10:07
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:10:19
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:10:37
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:10:55
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:12:32
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:12:48
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:18:36
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:18:52
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:19:43
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:20:07
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:20:33
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:27:32
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:27:49
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:28:05
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:28:24
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:28:48
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:29:10
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:29:19
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:29:49
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:30:02
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:30:26
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:30:52
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:31:06
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:31:27
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:32:05
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:32:47
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:32:52
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:33:34
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:33:45
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:34:29
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:34:53
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:35:46
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:35:55
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:36:13
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:36:48
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:37:01
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:37:20
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:37:29
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:37:59
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:38:12
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:38:21
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:38:38
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:39:02
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:39:21
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:39:35
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:39:45
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:41:52
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:42:52
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:43:04
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:43:19
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:44:43
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:45:15
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:46:03
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:46:14
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:46:20
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:46:39
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:46:49
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:47:01
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:48:16
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:48:51
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:48:57
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:49:26
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:49:47
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:50:06
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:50:18
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:50:23
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:52:00
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:52:27
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:53:52
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:54:03
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:54:29
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:54:46
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:55:16
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:55:31
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:55:49
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:56:01
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:56:55
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:57:02
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:57:15
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:58:00
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:58:22
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:58:51
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:58:57
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 31/12/2020 19:59:32
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 19:59:53
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 20:00:09
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 20:00:37
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 20:00:45
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 20:01:06
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 20:01:12
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 20:10:32
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 20:12:01
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 31/12/2020 20:13:05
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 2/1/2021 15:34:53
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 2/1/2021 15:35:09
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 2/1/2021 16:02:26
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 2/1/2021 16:03:16
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 2/1/2021 21:11:21
+El usuario registrado es:
+Nombre: KIPPES
+Email: asdd@gdasg.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:33:21
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:33:34
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: diego@diego.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:35:12
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:35:20
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: asddsa@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:35:38
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: asddsa@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:36:07
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: asddsa@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:36:56
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:37:20
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: sdasda@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:38:38
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: asdasd@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:41:26
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: iego@gmail.com
+*************************************************************
+Se registró un usuario el 4/1/2021 15:43:35
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:45:16
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:45:28
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: asd@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 15:49:42
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 4/1/2021 15:49:56
+El usuario registrado es:
+Nombre: KIPPESd
+Email: asdsad@gmail.com
+*************************************************************
+Se registró un usuario el 4/1/2021 23:10:58
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 4/1/2021 23:24:26
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 4/1/2021 23:24:43
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 5/1/2021 23:37:36
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 6/1/2021 03:08:59
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 6/1/2021 03:09:19
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 6/1/2021 03:10:31
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 6/1/2021 03:10:58
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 6/1/2021 16:27:22
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Hubo un intento de registro el 6/1/2021 16:27:43
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 6/1/2021 16:28:45
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 6/1/2021 17:02:07
+El usuario registrado es:
+Nombre: User-comun
+Email: user@user.com
+*************************************************************
+Se registró un usuario el 6/1/2021 17:02:26
+El usuario registrado es:
+Nombre: admin
+Email: admin@admin.com
+*************************************************************
+Se registró un usuario el 6/1/2021 17:02:56
+El usuario registrado es:
+Nombre: usuario-no-verificado
+Email: user-no-verificado@user.com
+*************************************************************

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>BierClub - Detalle del producto</title>
+    <%- include('../partials/head.ejs') %>
+  </head>
+  
+
+  <body>
+
+    <!-- NAV -->
+    <header>
+      <%- include('../partials/nav.ejs') %>
+    </header>
+
+    <!-- CONTAINER PRODUCTDETAIL -->
+    <div class="productDetail">
+
+      <!-- SECCION DETALLE DEL PRODUCTO/IMAGEN -->
+      <section class="seccion-producto">
+  
+        <!-- IMAGEN-PREVIEWS -->
+        <div class="imagen-producto-previews">
+          <% for(let i=1; i < producto.images.length; i++) { %>
+            <img class="imagen-previews" src="/images/productos/<%=producto.images[i].name%>" alt="Imagenes de <%=producto.images[i].name%>">
+          <% } %>
+        </div>
+        
+        <!-- IMAGEN -->
+        <div class="imagen-producto">
+            <img class="imagen-producto-principal" src="/images/productos/<%=producto.images[0].name%>" alt="<%=producto.name%>">
+
+            <!-- DESCRIPCION DE LA IMAGEN -->
+            <div class="descripcion-producto">
+              <p><%= producto.description %></p>
+            </div>
+        </div>
+  
+        <!-- DETALLE -->
+        <section class="detalle-producto">
+
+          <!-- TITULO -->
+          <div class="titulo-producto">
+            <h1><%=producto.name%></h1>
+          </div>
+  
+          <!-- PRECIO NORMAL, DESCONTADO Y DESCUENTO -->
+          <div class="fila-precio">
+            <div class="precio-flex">
+              <h5 class="precio-item">Individual</h5>
+              <% if (producto.discount != 0) { %>
+                <h5 class="precio-item">$<%= ((producto.price)-(producto.price/producto.discount )).toFixed(0) %></h5>
+              <% } else { %>
+                <h5 class="precio-item">$<%=producto.price%></h5>
+              <% } %>
+              
+              <div><h5 class="texto-invisible">¡10%  off comprando 3 cervezas!</h5></div>
+              <div><h5 class="texto-invisible-mobile">¡10% off!</h5></div>
+            </div>
+            <div class="precio-flex">
+              <h5 class="precio-item">3 cervezas</h5>
+              
+              <% if (producto.discount != 0) { %>
+                <h5 class="precio-item">$<%= ((producto.price*3)-(producto.price*3/(producto.discount + 5))).toFixed(0) %></h5>
+              <% } else { %>
+                <h5 class="precio-item">$<%= producto.price*3%></h5>
+              <% } %>
+              
+              <div><h5 class="texto-descuento">¡<%= producto.discount + 5 %> % off comprando 3 cervezas!</h5></div>
+              <div><h5 class="texto-descuento-mobile">¡<%= producto.discount + 5 %>% off!</h5></div>
+            </div>
+            <div class="precio-flex">
+              <h5 class="precio-item">6 cervezas</h5>
+              <% if (producto.discount != 0) { %>
+                <h5 class="precio-item">$<%=((producto.price*6)-(producto.price*6/(producto.discount + 10))).toFixed(0)%></h5>
+              <% } else { %>
+                <h5 class="precio-item">$<%=(producto.price*6)%></h5>
+              <% } %>
+
+              <div><h5 class="texto-descuento">¡<%= producto.discount + 10 %>% off comprando 6 cervezas!</h5></div>
+              <div><h5 class="texto-descuento-mobile">¡<%= producto.discount + 10 %>% off!</h5></div>
+            </div>
+          </div>
+
+          
+          
+          <!-- CANTIDAD -->
+          <div class="cantidad">
+            <div class="cantidad-label">
+              <label for="cantidad">Cantidad:</label>
+            </div>
+            <div class="cantidad-input">
+              <a href=""><span><i class="fas fa-minus"></i></span></a>
+              <input type="text" name="cantidad" placeholder="<%=producto.stock%>">
+              <a href=""><span><i class="fas fa-plus"></i></span></a>
+            </div>
+          </div>
+  
+          <!-- AGREGAR AL CARRITO -->
+          <div class="agregarAlcarrito">
+            <button class="btn-agregarAlCarrito" type="button">Agregar al carrito <i class="fas fa-plus"></i></button>
+          </div>
+
+          <!-- COMPRAR AHORA -->
+          <div class="comprarAhora">
+            <button class="btn-comprarAhora" type="button">Comprar Ahora</button>
+          </div>
+
+          <!-- PERDIR -->
+          <div class="pedirElProducto">
+            <button class="btn-pedirElProducto" type="button">Pedir el Producto <i class="fab fa-whatsapp"></i></button>
+          </div>
+ 
+        </section>
+        <div class="descripcion-producto-mobile">
+          <h2>Descripción:</h2>
+          <p><%= producto.description %></p>
+        </div>
+      </section>
+    </div>
+
+    
+        <!-- PRODUCTOS RELACIONADOS -->
+        <div>
+          <h1 class="titulo-productosRelacionado">Productos Relacionados</h1>
+        </div>
+        <%- include('../partials/productosRelacionados.ejs') %>
+
+    <!-- FOOTER -->
+    <footer>
+      <%- include('../partials/footer.ejs') %>
+    </footer>
+  </body>
+</html>

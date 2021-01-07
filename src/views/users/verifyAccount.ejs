@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>   
+   <title>BierClub</title>
+    <%- include('../partials/head.ejs') %>
+  </head>
+
+  <header>
+    <%- include('../partials/nav.ejs') %>
+    <br>
+  </header>
+  <body>
+      <div class="verify-account">
+
+        <% if (typeof msgError != 'undefined') { %>
+            <h1><%= msgError %></h1>
+            <img src="/images/ilustrations/verify-denied.png" alt="">
+        <% } %>
+
+        <% if (typeof usuario != 'undefined') { %>
+            <h1>Tu email: <%= usuario.email %> ha sido verificado</h1>
+            <img src="/images/ilustrations/verify.png" alt="">
+        <% } %>
+
+        <% if (typeof msgErrorYaVerificado != 'undefined') { %>
+            <h1><%= msgErrorYaVerificado %></h1>
+            <img src="/images/ilustrations/verify-denied.png" alt="">
+        <% } %>
+        
+        <% if (typeof usuarioSinVerificar != 'undefined') { %>
+              <h1><%= usuarioSinVerificar.msgErrorVerify %></h1>
+              <form action="/users/verifyAccount/<%= usuarioSinVerificar.id %>" method="POST">
+                <div class="verifyButton">
+                  <div>
+                    <p>Haz click </p>
+                  </div>
+
+                  <div>
+                    <button class="verify-button" type="submit">aquí</button>
+                  </div>
+
+                  <div>
+                    <p> para reenviar el email</p>
+                  </div>
+                </div>
+              </form>
+              <img src="/images/ilustrations/verify-denied.png" alt="">
+        <% } %>
+
+        <% if (typeof msgErrorReenviado != 'undefined') { %>
+          <h3><%= msgErrorReenviado %></h3>
+          <img src="/images/ilustrations/verify.png" alt="">
+    <% } %>
+        
+        <% if (typeof msgErrorUsuarioInexistente != 'undefined') { %>
+          <h1><%= msgErrorUsuarioInexistente %></h1>
+          <img src="/images/ilustrations/verify-denied.png" alt="">
+        <% } %>
+        
+        <button class="button-redirect-home" onclick="window.location.href='/'"><i class="fas fa-chevron-left"></i> Volver al Home</button>
+          
+      </div>
+        
+</body>
+</html>

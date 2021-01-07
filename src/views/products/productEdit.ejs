@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>BierClub - Editar producto</title>
+    <%- include('../partials/head.ejs') %>
+  </head>
+
+  <body>
+
+    <header>
+      <!-- NAV -->
+      <%- include('../partials/nav.ejs') %>
+    </header>
+
+    <!-- ESPACIADO DESDE EL TOP DE LA PAGINA -->
+    <div class="productAddtop"></div>
+
+    <!-- CONTAINER PRODUCTADD -->
+    <div class="productAdd">
+
+      <!-- TITULO -->
+      <h1>Edite su producto</h1>
+
+      <!-- FORMULARIO -->
+      <form class="formulario-carga" action="/products/productEdit/<%= producto.id %>/?_method=PUT" method="POST" enctype="multipart/form-data">
+
+        
+        
+
+        <!-- BLOQUE DE IMAGEN, NOMBRE, PRECIO Y CANTIDAD -->
+        <div class="flex-imgPrev-detalle">
+          <div class="campo-nombre-precio-cantidad">
+
+            <!-- NOMBRE -->
+            <div class="nombre">
+              <label for="nombreProducto">Nombre del producto:</label>
+              <input id="nombreProducto" type="text" name="nombre" placeholder="Nombre" value="<%= producto.name %>">
+              <% if (typeof producto.errors != 'undefined') { %>
+                <% for(let i=0; i < producto.errors.length; i++)  { %>
+                  <% if (producto.errors[i].param == "nombre") {  %>
+                    <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                    <% break; %>
+                  <% } %>
+                <% } %>
+              <% } %>
+            </div>
+            
+            <div class="precio-descuento">
+              <!-- PRECIO -->
+              <div class="precio">
+                <label for="precio">Precio:</label>
+                <input id="precio" type="text" name="precio" placeholder="Precio" value="<%=producto.price%>">
+                <% if (typeof producto.errors != 'undefined') { %>
+                  <% for(let i=0; i < producto.errors.length; i++)  { %>
+                    <% if (producto.errors[i].param == "precio") {  %>
+                      <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                      <% break; %>
+                    <% } %>
+                  <% } %>
+                <% } %>
+              </div>
+
+              <!-- DESCUENTO -->
+              <div class="descuento">
+                <label for="descuento">Descuento:</label>
+                <input id="descuento" type="text" name="descuento" placeholder="Descuento" value="<%=producto.discount%>">
+                <% if (typeof producto.errors != 'undefined') { %>
+                  <% for(let i=0; i < producto.errors.length; i++)  { %>
+                    <% if (producto.errors[i].param == "descuento") {  %>
+                      <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                      <% break; %>
+                    <% } %>
+                  <% } %>
+                <% } %>
+              </div>
+            </div>
+            
+            <!-- CANTIDAD -->
+            <div class="cantidad">
+              <label for="cantidad">Cantidad:</label>
+              <input id="cantidad" type="text" name="stock" placeholder="Cantidad" value="<%= producto.stock %>">
+              <% if (typeof producto.errors != 'undefined') { %>
+                <% for(let i=0; i < producto.errors.length; i++)  { %>
+                  <% if (producto.errors[i].param == "cantidad") {  %>
+                    <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                    <% break; %>
+                  <% } %>
+                <% } %>
+              <% } %>
+            </div>
+  
+          </div>
+
+          <!-- IMAGEN -->
+          <div class="imagenPrev">
+            <img src="/images/productos/product-image-not-available.jpg" alt="muestra de producto">
+            <div class="fileImagenes">
+              <input type="file" name="imagen" multiple="multiple">
+              <p class="errorDeCarga">*Se permite subir hasta 4 imágenes*</p>
+              <p class="errorDeCarga">*Es recomendable subir imágenes cuadradas (ej: 300x300)*</p>
+              <% if (typeof producto.errors != 'undefined') { %>
+                <% for(let i=0; i < producto.errors.length; i++)  { %>
+                  <% if (producto.errors[i].param == "imagen") {  %>
+                    <p class="errorDeCarga">* <%= producto.errors[i].msg %></p>
+                    <% break; %>
+                  <% } %>
+                <% } %>
+              <% } %>
+            </div>
+          </div>
+        </div>
+
+        
+
+        
+
+        <!-- CATEGORIA -->
+        <div class="flex-categoria-imgFile">
+
+          <div class="categoria">
+            <label for="categoria">Categoria:</label>
+            <select class="select-categoria" name="categoria" id="categoria">
+              <% categories.forEach(category => { %>
+                <% if(category.status == 1) { %>
+                  <option value="<%=category.name%>"><%=category.name%></option>  
+                <% } %>
+              <% }); %>
+            </select>
+          </div>
+
+        </div>
+
+        
+
+        <!-- DESCRIPCION -->
+        <textarea class="descripcionDelProducto" name="descripcion" placeholder="Describa el producto"><%=producto.description%></textarea>
+        <% if (typeof producto.errors != 'undefined') { %>
+          <% for(let i=0; i < producto.errors.length; i++)  { %>
+            <% if (producto.errors[i].param == "descripcion") {  %>
+              <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+              <% break; %>
+            <% } %>
+          <% } %>
+        <% } %>
+
+          <div class="flex-botones-publicar">
+              <button class="btn-publicar" type="submit" , id="publicar" , value="guardar"> Guardar Modificaciones 
+                
+          
+        
+      </form>
+
+            <form action="/products/productEdit/delete/<%= producto.id %>?_method=DELETE" method="POST">
+              <button type="submit" class="btn-publicar btn-reset">Borrar Producto</button>	
+            </form>
+
+          </div>
+      
+      
+    </div>
+
+    
+    
+</body>
+</html>

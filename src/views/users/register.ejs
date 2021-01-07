@@ -1,0 +1,142 @@
+<title>BierClub - Registrarse</title>
+<%- include('../partials/head.ejs') %>
+</head>
+
+<body id="body">
+	<!-- NAV -->
+	<header>
+		<%- include('../partials/nav.ejs') %>
+		<script src="/js/register.js" type="text/javascript"></script>
+	</header>
+	
+		<!-- CONTAINER REGISTER -->
+		<div class="login-register">
+
+			<!-- TITULO -->
+			<div class="login-register-titulo">
+				<h1>Regístrate con tu Dirección Email</h1>	
+			</div>
+			
+		
+			<!-- FORMULARIO -->
+			<form class="formulario" action="/users/register" method="POST">
+				
+			<!-- NOMBRE -->
+			<div class="campo-input">
+				<%if(typeof verificarUsuario != "undefined"){%>
+					<p class="success-message"><%= verificarUsuario %></p>
+				<%}%>
+				<input class="input-registro" type="text" id="nombre" name="nombre" placeholder="Nombre"
+				<% if(typeof errors != "undefined"){%>
+					value="<%= errors.reqNombre %>"
+				<%}%>>
+				<%if(typeof errors != "undefined"){%>
+					<% for(let i = 0 ; i < errors.errors.length ; i++){ %>
+						<%if(errors.errors[i].param == "nombre"){%>
+							<p class="error-total">* <%= errors.errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
+			</div>
+
+			<!-- MAIL -->
+			<div class="campo-input">
+				<input class="input-registro" type="email"  id="email" name="email" placeholder="Email"
+				<% if(typeof errors != "undefined"){%>
+					value="<%= errors.reqEmail %>"
+				<%}%>>
+				<%if(typeof errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
+						<%if(errors.errors[i].param == "email"){%>
+							<p class="error-total">* <%= errors.errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
+			</div>
+
+			<!-- CONTRASEÑA -->
+			<div class="campo-input">
+				<input class="input-registro" type="password" id="Contrasenia" name="contrasenia" placeholder="Contraseña"> 
+				<%if(typeof errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
+						<%if(errors.errors[i].param == "contrasenia"){%>
+							<p class="error-total">* <%= errors.errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
+			</div>
+
+			<!-- CONFIRMAR CONTRASEÑA -->
+			<div class="campo-input">
+				<input class="input-registro" type="password" id="confirmarContrasenia" name="confirmarContrasenia" placeholder="Confirmar contraseña"> 
+				<%if(typeof errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
+						<%if(errors.errors[i].param == "confirmarContrasenia"){%>
+							<p class="error-total">* <%= errors.errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
+			</div> 
+
+			<!-- TERMINOS Y CONDICIONES -->
+			<div class="terminos">
+				<input type="checkbox" id="terminosCondiciones" name="terminosCondiciones">
+				<label for="terminos-condiciones">Acepto los <a onClick="modificarPerfil()" class="terminos-modal-color">Términos y Condiciones</a> de BierClub </label>
+				<%if(typeof errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
+						<%if(errors.errors[i].param == "terminosCondiciones"){%>
+							<p class="error-terminosCondiciones">* <%= errors.errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
+			</div>
+
+			<!-- BOTON REGISTRARSE -->
+			<div class="campo-input">
+				<button class="input-button" type="submit", id="registrar", value="registrar"> Registrarse </button>
+			</div>
+			</form>
+
+
+			<div class="termsModal" id="modificar">
+				<div class="invisible" onclick="divTransparencia()"></div>
+					<div class="terms-modal">
+						<div class="cerrar-modificar"><a onclick="modificarPerfil()"><i class="far fa-times-circle"></i></a></div>
+						<h3>Términos y condiciones</h3>
+						<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam harum repudiandae omnis minima recusandae asperiores debitis cum quam praesentium quo a voluptatibus, sequi fugiat beatae laborum, alias neque numquam?
+						</p>
+					</div>
+			</div>
+
+
+
+
+			<!-- INICIAR SESION -->
+			<p class="iniciar-sesion">¿Ya sos cliente? <a href="/users/login">Inicia Sesión</a></p>
+		</div>
+				<!-- FOOTER -->
+			<footer>
+				<%- include('../partials/footer.ejs') %>
+			</footer>
+
+
+</body>
+</html>

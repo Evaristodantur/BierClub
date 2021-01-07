@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">  
+	<head>
+		<title>BierClub - Contactanos!</title>
+		<%- include('./partials/head.ejs') %>
+</head>
+
+<body>
+
+	<!-- NAV -->
+	<header>
+		<%- include('./partials/nav.ejs') %>
+	</header>
+
+		<!-- CONTAINER LOGIN -->
+		<div class="login-register">
+
+			<!-- TITULO -->
+			<div class="login-register-titulo">
+				<h1>Contáctanos</h1>	
+			</div>
+		
+			<!-- FORMULARIO -->
+			<form class="formulario" action="/contact" method="POST">
+
+			<!-- NOMBRE -->
+			<div class="campo-input">
+				<% if (typeof success != "undefined") {%>
+					<p class="success-message"><%= success %></p>
+				<%} %>
+				<input class="input-registro" type="text" name="nombre" placeholder="Nombre"
+				<% if(typeof errors != "undefined"){%>
+					value="<%= errors.reqNombre %>"
+				<%}%>> 
+				<%if(typeof errors != "undefined"){%>
+					<% for(let i = 0 ; i < errors.errors.length ; i++){ %>
+						<%if(errors.errors[i].param == "nombre"){%>
+							<p class="error-total">* <%= errors.errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
+			</div>
+	
+			<!-- EMAIL -->
+			<div class="campo-input">
+				<input class="input-registro" type="email" name="email" placeholder="Email"
+				<% if(typeof errors != "undefined"){%>
+					value="<%= errors.reqEmail %>"
+				<%}%>> 
+				<%if(typeof errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
+						<%if(errors.errors[i].param == "email"){%>
+							<p class="error-total">* <%= errors.errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
+			</div>
+
+			<!-- Asunto -->
+			<div class="campo-input">
+				<input class="input-registro" type="text" name="subject" placeholder="Asunto del mensaje"
+				<% if(typeof errors != "undefined"){%>
+					value="<%= errors.reqSubject %>"
+				<%}%>> 
+				<%if(typeof errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
+						<%if(errors.errors[i].param == "subject"){%>
+							<p class="error-total">* <%= errors.errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
+			</div>		
+			<div class="campo-input">
+				<textarea name="message" placeholder="Escribe tu mensaje"><% if(typeof errors != "undefined"){%><%= errors.reqMessage %><%}%></textarea>
+				<%if(typeof errors != "undefined"){%>
+					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
+						<%if(errors.errors[i].param == "message"){%>
+							<p class="error-total">* <%= errors.errors[i].msg %></p>
+							<% break; %>
+						<%}%>
+					<%}%>
+				<%}%>
+			</div>
+			
+			<!-- BOTON ENVIAR -->
+			<div class="campo-input">
+				<button class="input-button" type="submit">Enviar mensaje</button>
+			</div>
+			</form>
+		</div>
+				<!-- FOOTER -->
+				<footer class="login-footer">
+					<%- include('./partials/footer.ejs') %>
+				</footer>
+
+</body>
+</html>

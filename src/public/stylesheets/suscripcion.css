@@ -1,0 +1,19 @@
+/* ==========================================================================
+   RESET GENERAL
+   ========================================================================== */
+body {
+    /* Display & Box Model */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    /* Otras */
+    background-color: rgb(228, 228, 228);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.menu-suscripcion {
+    display: flex;
+    justify-content: space-evenly;
+}
