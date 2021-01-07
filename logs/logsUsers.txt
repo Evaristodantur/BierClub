@@ -1324,3 +1324,13 @@ El usuario registrado es:
 Nombre: KIPPES
 Email: kippes.diego@gmail.com
 *************************************************************
+Hubo un intento de registro el 7/1/2021 20:46:42
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 7/1/2021 20:46:49
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************

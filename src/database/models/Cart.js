@@ -32,12 +32,9 @@ module.exports = (sequelize, dataTypes) => {
             timestamps: false
         });
 
-        Cart.belongsToMany(models.Users, {
+        Cart.belongsTo(models.Users, {
             as: "users",
-            through: "user_cart",
-            foreignKey: "cart_id",
-            otherKey: "user_id",
-            timestamps: false
+            foreignKey: "user_id"
         });
     }
 

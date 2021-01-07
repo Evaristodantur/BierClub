@@ -12,11 +12,11 @@ let productsController = {
     //Para realizar pruebas
     prueba : (req, res, next) => {
 
-        db.Users.findAll({
-            include: [{association: "carts"}]
+        db.Carts.findAll({
+            include: [{association: "users"}]
         })
-            .then(users => {
-                res.send(users);
+            .then(carts => {
+                res.send(carts);
             })
     },
     
