@@ -1,5 +1,14 @@
 # Dailies
 
+### 🗓️ 7/1/21
+  Terminado:
+  - Arreglar:
+    - Arreglar form de "eliminar en userAdminEdit.ejs
+    
+   Para hacer hoy:
+  - Testeo general de la aplicación para entrega de sprint 5 y 6
+    
+
 ### 🗓️ 6/1/21
   Terminado:
   - Otros:
