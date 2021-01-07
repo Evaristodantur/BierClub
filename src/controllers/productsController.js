@@ -31,8 +31,6 @@ let productsController = {
                 include: [{association: "images"}]
             }).then(products => {
                 res.render('products/products', { productos : products });
-            }).catch(error  => {
-                console.log(error);
             });
     },
 
@@ -48,8 +46,6 @@ let productsController = {
                 include: [{association: "images"}]
             }).then(product => {
                 product ? (res.render("products/productDetail", {producto: product})) : (res.render("error"));
-            }).catch(error => {
-                console.log(error);
             });
     },
     
@@ -83,8 +79,6 @@ let productsController = {
             db.Categories.findAll()
             .then(categories => {               
                 return res.render('products/productAdd', {errors: errores.errors, categories: categories});
-            }).catch(error => {
-                console.log(error);
             });
             
 
@@ -120,8 +114,6 @@ let productsController = {
                         images: imagenes
                     }, {
                         include: [{association: "images"}]
-                    }).catch(error => {
-                        console.log(error);
                     });
 
 
@@ -136,14 +128,10 @@ let productsController = {
                         stock: req.body.stock,
                         description: req.body.descripcion,
                         category_id: categories.dataValues.id
-                    }).catch(error => {
-                        console.log(error);
                     });
 
                 }
                 
-            }).catch(error => {
-                console.log(error);
             });
 
             res.redirect('/products/productAdmin');
@@ -165,12 +153,8 @@ let productsController = {
                 db.Products.findByPk(idUrl)
                     .then(product => {
                         product ? (res.render('products/productEdit', {producto: product, categories: categories})) : res.render('error');
-                    }).catch(error => {
-                        console.log(error);
                     });
                 
-            }).catch(error => {
-                console.log(error);
             });
     },
 
@@ -194,12 +178,8 @@ let productsController = {
                     .then(product => {
                         product.errors = errores.errors;
                         return res.render('products/productEdit', {producto: product, errors: errores.errors, categories: categories});
-                    }).catch(error => {
-                        console.log(error);
                     });
                 
-            }).catch(error => {
-                console.log(error);
             });
 
 
@@ -236,16 +216,12 @@ let productsController = {
                             images: imagenes
                         }, {
                             include: [{association: "images"}]
-                        }).catch(error => {
-                            console.log(error);
                         });
 
                         db.Products.destroy({
                             where: {
                                 id: idUrl
                             }
-                        }).catch(error => {
-                            console.log(error);
                         });
 
                     } else {
@@ -262,13 +238,9 @@ let productsController = {
                             where: {
                                 id: idUrl
                             }
-                        }).catch(error => {
-                            console.log(error);
                         });
                     }
                     
-                }).catch(error => {
-                    console.log(error);
                 });
 
                 res.redirect('/products/productAdmin');
@@ -289,8 +261,6 @@ let productsController = {
             where: {
                 id: idUrl
             }
-        }).catch(error  => {
-            console.log(error);
         });
 
         res.redirect('/products/productAdmin');
@@ -308,8 +278,6 @@ let productsController = {
             include: [{association: "images"}]
         }).then(products => {
             res.render('products/productAdmin', { productos : products });
-        }).catch(error => {
-            console.log(error);
         });    
     },
 

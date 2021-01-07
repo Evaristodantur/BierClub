@@ -18,8 +18,6 @@ let mainController = {
                 include: [{association: "images"}]
             }).then(products => {
                 res.render('index', { productos : products });
-            }).catch(error => {
-                console.log(error);
             });
     },
 

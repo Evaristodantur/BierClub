@@ -19,8 +19,6 @@ let usersController = {
       db.Users.findAll()
         .then(users => {
           res.render('users/usersAdmin', { usuarios : users });
-        }).catch(error => {
-          console.log(error);
         });
     },
 
@@ -41,8 +39,6 @@ let usersController = {
           } else {
             res.render('users/verifyAccount', { msgErrorUsuarioInexistente: 'Este usuario no existe'});
           }          
-        }).catch(error => {
-          console.log(error);
         });
     },
 
@@ -74,8 +70,6 @@ let usersController = {
         where: {
           id: idUrl
         }
-      }).catch(error => {
-        console.log(error);
       });
 
       res.redirect("/users/usersAdmin");
@@ -120,8 +114,6 @@ let usersController = {
         admin: 0,
         verify: 0,
         verify_code: codigoDeVerificacion
-      }).catch(error => {
-        console.log(error);
       });
 
 
@@ -208,8 +200,6 @@ let usersController = {
           return res.render("users/login", {credencialesInvalidas : credencialesInvalidas});
         }
 
-      }).catch(error => {
-          console.log(error);
       });
     },
 
@@ -231,8 +221,6 @@ let usersController = {
           } else {
             res.render("error");
           }
-        }).catch(error => {
-          console.log(error);
         });
     },
 
@@ -293,15 +281,11 @@ let usersController = {
                   where: {
                     id: idUrl
                   }
-                }).catch(error => {
-                  console.log(error);
                 });
         
                 res.redirect("/");
               }
 
-            }).catch(error => {
-              console.log(error);
             });
 
 
@@ -325,16 +309,12 @@ let usersController = {
                 where: {
                   id: idUrl
                 }
-              }).catch(error => {
-                console.log(error);
               });
       
               res.redirect("/");
             }
           }
 
-        }).catch(error => {
-          console.log(error);
         });
       },
 
@@ -353,8 +333,6 @@ let usersController = {
           where: {
             id: idUrl
           }
-        }).catch(error => {
-          console.log(error);
         });
 
         res.redirect("/users/usersAdmin");        
@@ -379,8 +357,6 @@ let usersController = {
               res.render("error");
             }
 
-          }).catch(error => {
-            console.log(error);
           });
 
     },
@@ -415,8 +391,6 @@ let usersController = {
             db.sequelize.query(`UPDATE users SET verify = '1' WHERE users.id = ${user.id}`);
             return res.render('users/verifyAccount', { usuario : user });
 
-          }).catch(error => {
-            console.log(error);
           });
     },
 
@@ -464,8 +438,6 @@ let usersController = {
 
           res.render('users/verifyAccount', { msgErrorReenviado : "El codigo de verificación ha sido reenviado a tu dirección de correo electronico." });
           
-        }).catch(error => {
-          console.log(error);
         });
 
     }

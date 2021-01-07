@@ -43,19 +43,13 @@
                 </div>
                 <button class="button-modificar button-enteros" type="submit"> Modificar datos</button>
 
-                <!-- <button onclick="eliminarUsuario(<%=usuarios.id%>)" class="button-eliminar button-enteros" value=""> Eliminar usuario</button>
-                <div class="invisible-eliminar-usuario invisible-eliminar-usuario-userAdmin" id="eliminar-user-<%= usuarios.id %>">
-                    <p>¿Está seguro que desea eliminar este usuario?</p>
-                    <div class="eliminar-usuario-container">
-                        <button onclick="eliminarUsuario(<%=usuarios.id%>)" class="input-button button-enteros button-modificar">No</button>
-                        
-                        
-                    
-                    </div> -->
+                
                 </form>
-                <form class="jaja"action="/users/perfil/eliminar/<%= usuarios.id %>?_method=DELETE" method="POST">
+
+                <form class="jaja" action="/users/usersAdmin/delete/<%= usuarios.id %>" method="POST">
                         <button type="submit" class="input-button button-enteros button-eliminar">Eliminar usuario</button>
                 </form>
+
                 </section>
                 </div>
             	

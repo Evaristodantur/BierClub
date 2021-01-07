@@ -15,8 +15,6 @@ let cookieAuthMiddleware = (req, res, next) => {
                 }
             }).then(user => {
                 req.session.usuarioLogueado = user
-            }).catch(error => {
-                console.log(error);
             });
     }
 
