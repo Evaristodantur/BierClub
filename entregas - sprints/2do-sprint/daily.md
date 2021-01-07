@@ -108,9 +108,9 @@
 ### 🗓️ 25/12/20
   Terminado:
   - Home vincularlo con base de datos
-  - Agregar productos de prueba a la base de datos, con imagenes
+  - Agregar productos de prueba a la base de datos, con imágenes
   - ProductDetail vincularlo con base de datos
-  - Arreglar el boton delete de productEdit, colocarle un form
+  - Arreglar el botón delete de productEdit, colocarle un form
   
   Para hacer hoy:
   - userController
@@ -145,13 +145,13 @@
   Para hacer hoy:
   - ProductDetail vincularlo con base de datos
   - Home vincularlo con base de datos
-  - Agregar productos de prueba a la base de datos, con imagenes
-  - Arreglar el boton delete de productEdit, colocarle un form
+  - Agregar productos de prueba a la base de datos, con imágenes
+  - Arreglar el botón delete de productEdit, colocarle un form
 
 ### 🗓️ 22/12/20
   Terminado:
   - Vincularla en Sequelizer
-  - Vinculacion de relaciones en Sequelize
+  - Vinculación de relaciones en Sequelize
   
   Para hacer hoy:
   - Productos:
@@ -164,18 +164,18 @@
   - Implementar la base de datos en MySql
   - Implementar las tablas
   - Implementar los datos y tipos de datos
-  - Incluir Imagenes en el DER
+  - Incluir Imágenes en el DER
   
   Para hacer hoy:
   - Vincularla en Sequelizer
-  - Vinculacion de relaciones en Sequelize
+  - Vinculación de relaciones en Sequelize
 
 ### 🗓️ 17/12/20
   Terminado:
   - Diseño de la base de datos creados (DER)
   
   Para hacer hoy:
-  - Incluir Imagenes en el DER
+  - Incluir Imágenes en el DER
   - Implementar la base de datos en MySql
   - Implementar las tablas
   - Implementar los datos y tipos de datos
@@ -192,7 +192,7 @@
 
 ### 🗓️ 14/12/20
   Terminado:
-  - Suscripción: Pagina avanzada - agregado de detalles en la membrecia
+  - Suscripción: Página avanzada - agregado de detalles en la membrecia
   
   Para hacer hoy:
   - Agregar bierclub_db
@@ -205,10 +205,10 @@
   Terminado:
   - CSS de eliminar producto (modal)
   - productAdmin especificado
-  - Perfil arreglado (actualizacion de usuarios)
+  - Perfil arreglado (actualización de usuarios)
   
   Para hacer hoy:
-  - Suscripción: Pagina
+  - Suscripción: Página
   - Firefox: Arreglar nav del home
 
 ### 🗓️ 3/12/20
@@ -237,7 +237,8 @@
   - /users/login, /users/register y /contacto ahora vuelve a poner los datos en los input si hay algun error
   
   Para hacer hoy:
-  - Checkeo general para entrega de sprint 4
+  - Chequeo general para entrega de sprint 4
+
 
 ### 🗓️ 29/11/20
   Terminado:
