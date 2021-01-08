@@ -14,6 +14,7 @@ var cookieAuthMiddleware = require("./middlewares/cookieAuthMiddleware")
 var indexRouter = require('./routes/main');
 var usersRouter = require('./routes/users');
 var productsRouter = require('./routes/products');
+var cartsRouter = require('./routes/carts');
 
 var app = express();
 
@@ -35,6 +36,7 @@ app.use(cookieAuthMiddleware);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
+app.use('/carts', cartsRouter);
 
 
 // catch 404 and forward to error handler
