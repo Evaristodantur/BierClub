@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/carts" method="POST">
+        
+        <select class="select-ordenar" name="ordenar" id="ordenar" onchange="this.form.submit()">
+            <option type="submit" value="nuevos-productos">Nuevos Productos</option>
+            <option value="mas-vendidos">Mas Vendidos</option>
+            <option value="populares">Populares</option>
+            <option value="especiales">Especiales</option>
+      </select>
+        
+    </form>
+
+    <% if(typeof productos != 'undefined') { %>
+        <% productos.forEach(producto => { %>
+            <%= producto.name %> -- <%= producto.price %> -- <%= producto.createdAt %> 
+            <br>
+        <% }) %> 
+    <% } %>
+    
+</body>
+</html>
