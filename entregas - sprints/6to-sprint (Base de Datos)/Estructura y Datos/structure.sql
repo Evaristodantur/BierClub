@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-01-2021 a las 05:12:16
+-- Tiempo de generación: 08-01-2021 a las 01:57:03
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.9
 
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `carts` (
   `id` int(11) NOT NULL,
   `status` tinyint(4) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
   `updatedAt` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -126,20 +127,6 @@ CREATE TABLE `users` (
   `updatedAt` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `user_cart`
---
-
-CREATE TABLE `user_cart` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `cart_id` int(11) NOT NULL,
-  `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updatedAt` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 --
 -- Índices para tablas volcadas
 --
@@ -148,7 +135,8 @@ CREATE TABLE `user_cart` (
 -- Indices de la tabla `carts`
 --
 ALTER TABLE `carts`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_cart-user_idx` (`user_id`);
 
 --
 -- Indices de la tabla `cart_product`
@@ -190,14 +178,6 @@ ALTER TABLE `products`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `user_cart`
---
-ALTER TABLE `user_cart`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_users-carts_idx` (`user_id`),
-  ADD KEY `fk_carts-users_idx` (`cart_id`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -246,14 +226,14 @@ ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `user_cart`
---
-ALTER TABLE `user_cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `carts`
+--
+ALTER TABLE `carts`
+  ADD CONSTRAINT `fk_cart-user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `cart_product`
@@ -274,13 +254,6 @@ ALTER TABLE `image_product`
 --
 ALTER TABLE `products`
   ADD CONSTRAINT `fk_products-categories` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `user_cart`
---
-ALTER TABLE `user_cart`
-  ADD CONSTRAINT `fk_carts-users` FOREIGN KEY (`cart_id`) REFERENCES `carts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_users-carts` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-01-2021 a las 05:12:55
+-- Tiempo de generación: 08-01-2021 a las 02:00:42
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.9
 
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `carts` (
   `id` int(11) NOT NULL,
   `status` tinyint(4) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
   `updatedAt` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -38,10 +39,10 @@ CREATE TABLE `carts` (
 -- Volcado de datos para la tabla `carts`
 --
 
-INSERT INTO `carts` (`id`, `status`, `createdAt`, `updatedAt`) VALUES
-(1, 1, '2020-12-22 03:27:06', '2020-12-22 03:27:06'),
-(2, 0, '2020-12-22 03:27:21', '2020-12-22 03:27:21'),
-(3, 1, '2020-12-22 03:27:29', '2020-12-22 03:27:29');
+INSERT INTO `carts` (`id`, `status`, `user_id`, `createdAt`, `updatedAt`) VALUES
+(1, 1, 78, '2020-12-22 03:27:06', '2020-12-22 03:27:06'),
+(2, 0, 78, '2020-12-22 03:27:21', '2020-12-22 03:27:21'),
+(3, 1, 94, '2020-12-22 03:27:29', '2020-12-22 03:27:29');
 
 -- --------------------------------------------------------
 
@@ -81,8 +82,7 @@ INSERT INTO `categories` (`id`, `name`, `status`, `createdAt`, `updatedAt`) VALU
 (3, 'Cerveza', 1, '2020-12-23 02:19:44', '2020-12-23 02:19:44'),
 (4, 'Vino', 1, '2020-12-23 02:20:04', '2020-12-23 02:20:04'),
 (5, 'asdasd', 0, '2020-12-23 04:42:58', '2020-12-23 04:42:58'),
-(6, 'KIPPES', 0, '2020-12-23 04:44:22', '2020-12-23 04:44:22'),
-(7, 'pepito clavo 3 clavitos', 0, '2021-01-04 19:28:39', '2021-01-04 19:28:39');
+(6, 'KIPPES', 0, '2020-12-23 04:44:22', '2020-12-23 04:44:22');
 
 -- --------------------------------------------------------
 
@@ -232,28 +232,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `suscription_status`, `admin`, `verify`, `verify_code`, `createdAt`, `updatedAt`) VALUES
 (78, 'User-comun', 'user@user.com', '$2a$10$9z6neGiOZKrB2EuJyRyYiOC2v0301XZaxIS8HgY2Bp.MtDf9kBgL.', 0, 0, 1, '7gi440yh3w', '2021-01-06 20:02:08', '2021-01-06 20:02:08'),
 (79, 'admin', 'admin@admin.com', '$2a$10$n2FSwB7/AaBfK.GXv.dWo.LK3mu/GJqKkCeNobUTvc0u8jwvGwvkS', 0, 1, 1, 'pr6kf9s33f', '2021-01-06 20:02:26', '2021-01-06 20:02:26'),
-(80, 'usuario-no-verificado', 'user-no-verificado@user.com', '$2a$10$F1.x741JLTWIQbTrpJroCekqGMNSVjPcTvLBxVjeT013X3txavS2O', 0, 0, 0, 'j6sdmgsvj5', '2021-01-06 20:02:56', '2021-01-06 20:02:56');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `user_cart`
---
-
-CREATE TABLE `user_cart` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `cart_id` int(11) NOT NULL,
-  `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updatedAt` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `user_cart`
---
-
-INSERT INTO `user_cart` (`id`, `user_id`, `cart_id`, `createdAt`, `updatedAt`) VALUES
-(3, 78, 1, '2021-01-07 04:11:07', '2021-01-07 04:11:07');
+(80, 'usuario-no-verificado', 'user-no-verificado@user.com', '$2a$10$F1.x741JLTWIQbTrpJroCekqGMNSVjPcTvLBxVjeT013X3txavS2O', 0, 0, 0, 'j6sdmgsvj5', '2021-01-06 20:02:56', '2021-01-06 20:02:56'),
+(94, 'KIPPES', 'kippes.diego@gmail.com', '$2a$10$YFZQ3KmtMeLZLkhOjfAvlOl0.ac5IJHCu0SO35Im5D/I8s5bt/HPu', 0, 1, 1, 'rqql5st4gf', '2021-01-07 23:46:49', '2021-01-07 23:46:49');
 
 --
 -- Índices para tablas volcadas
@@ -263,7 +243,8 @@ INSERT INTO `user_cart` (`id`, `user_id`, `cart_id`, `createdAt`, `updatedAt`) V
 -- Indices de la tabla `carts`
 --
 ALTER TABLE `carts`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_cart-user_idx` (`user_id`);
 
 --
 -- Indices de la tabla `cart_product`
@@ -305,14 +286,6 @@ ALTER TABLE `products`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `user_cart`
---
-ALTER TABLE `user_cart`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_users-carts_idx` (`user_id`),
-  ADD KEY `fk_carts-users_idx` (`cart_id`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -358,17 +331,17 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
-
---
--- AUTO_INCREMENT de la tabla `user_cart`
---
-ALTER TABLE `user_cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
 
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `carts`
+--
+ALTER TABLE `carts`
+  ADD CONSTRAINT `fk_cart-user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `cart_product`
@@ -389,13 +362,6 @@ ALTER TABLE `image_product`
 --
 ALTER TABLE `products`
   ADD CONSTRAINT `fk_products-categories` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `user_cart`
---
-ALTER TABLE `user_cart`
-  ADD CONSTRAINT `fk_carts-users` FOREIGN KEY (`cart_id`) REFERENCES `carts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_users-carts` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

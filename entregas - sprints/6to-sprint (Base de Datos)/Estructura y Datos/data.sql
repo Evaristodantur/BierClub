@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-01-2021 a las 05:12:21
+-- Tiempo de generación: 08-01-2021 a las 02:00:23
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.9
 
@@ -25,10 +25,10 @@ SET time_zone = "+00:00";
 -- Volcado de datos para la tabla `carts`
 --
 
-INSERT INTO `carts` (`id`, `status`, `createdAt`, `updatedAt`) VALUES
-(1, 1, '2020-12-22 03:27:06', '2020-12-22 03:27:06'),
-(2, 0, '2020-12-22 03:27:21', '2020-12-22 03:27:21'),
-(3, 1, '2020-12-22 03:27:29', '2020-12-22 03:27:29');
+INSERT INTO `carts` (`id`, `status`, `user_id`, `createdAt`, `updatedAt`) VALUES
+(1, 1, 78, '2020-12-22 03:27:06', '2020-12-22 03:27:06'),
+(2, 0, 78, '2020-12-22 03:27:21', '2020-12-22 03:27:21'),
+(3, 1, 94, '2020-12-22 03:27:29', '2020-12-22 03:27:29');
 
 --
 -- Volcado de datos para la tabla `categories`
@@ -40,8 +40,7 @@ INSERT INTO `categories` (`id`, `name`, `status`, `createdAt`, `updatedAt`) VALU
 (3, 'Cerveza', 1, '2020-12-23 02:19:44', '2020-12-23 02:19:44'),
 (4, 'Vino', 1, '2020-12-23 02:20:04', '2020-12-23 02:20:04'),
 (5, 'asdasd', 0, '2020-12-23 04:42:58', '2020-12-23 04:42:58'),
-(6, 'KIPPES', 0, '2020-12-23 04:44:22', '2020-12-23 04:44:22'),
-(7, 'pepito clavo 3 clavitos', 0, '2021-01-04 19:28:39', '2021-01-04 19:28:39');
+(6, 'KIPPES', 0, '2020-12-23 04:44:22', '2020-12-23 04:44:22');
 
 --
 -- Volcado de datos para la tabla `images`
@@ -127,14 +126,8 @@ INSERT INTO `products` (`id`, `name`, `price`, `discount`, `stock`, `description
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `suscription_status`, `admin`, `verify`, `verify_code`, `createdAt`, `updatedAt`) VALUES
 (78, 'User-comun', 'user@user.com', '$2a$10$9z6neGiOZKrB2EuJyRyYiOC2v0301XZaxIS8HgY2Bp.MtDf9kBgL.', 0, 0, 1, '7gi440yh3w', '2021-01-06 20:02:08', '2021-01-06 20:02:08'),
 (79, 'admin', 'admin@admin.com', '$2a$10$n2FSwB7/AaBfK.GXv.dWo.LK3mu/GJqKkCeNobUTvc0u8jwvGwvkS', 0, 1, 1, 'pr6kf9s33f', '2021-01-06 20:02:26', '2021-01-06 20:02:26'),
-(80, 'usuario-no-verificado', 'user-no-verificado@user.com', '$2a$10$F1.x741JLTWIQbTrpJroCekqGMNSVjPcTvLBxVjeT013X3txavS2O', 0, 0, 0, 'j6sdmgsvj5', '2021-01-06 20:02:56', '2021-01-06 20:02:56');
-
---
--- Volcado de datos para la tabla `user_cart`
---
-
-INSERT INTO `user_cart` (`id`, `user_id`, `cart_id`, `createdAt`, `updatedAt`) VALUES
-(3, 78, 1, '2021-01-07 04:11:07', '2021-01-07 04:11:07');
+(80, 'usuario-no-verificado', 'user-no-verificado@user.com', '$2a$10$F1.x741JLTWIQbTrpJroCekqGMNSVjPcTvLBxVjeT013X3txavS2O', 0, 0, 0, 'j6sdmgsvj5', '2021-01-06 20:02:56', '2021-01-06 20:02:56'),
+(94, 'KIPPES', 'kippes.diego@gmail.com', '$2a$10$YFZQ3KmtMeLZLkhOjfAvlOl0.ac5IJHCu0SO35Im5D/I8s5bt/HPu', 0, 1, 1, 'rqql5st4gf', '2021-01-07 23:46:49', '2021-01-07 23:46:49');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
