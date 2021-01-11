@@ -26,9 +26,15 @@
           <% } %>
         </div>
         
+        
         <!-- IMAGEN -->
         <div class="imagen-producto">
+          <% if (typeof producto.images[0] != "undefined") { %>
             <img class="imagen-producto-principal" src="/images/productos/<%=producto.images[0].name%>" alt="<%=producto.name%>">
+          <% } else { %>
+            <img class="imagen-producto-principal" src="/images/productos/product-image-not-available.jpg" alt="<%=producto.name%>">
+          <% } %>
+            
 
             <!-- DESCRIPCION DE LA IMAGEN -->
             <div class="descripcion-producto">
