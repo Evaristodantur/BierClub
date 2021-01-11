@@ -33,10 +33,18 @@
 					<div class="filtro">
 						<form action="/products/productAdmin" method="POST">
 							<select class="select-ordenar" name="ordenar" id="ordenar" onchange="this.form.submit()">
-								<option value="nuevos-productos">Nuevos Productos</option>
-								<option value="populares">Populares</option>
-								<option value="menor-precio">Menor Precio</option>
-								<option value="mayor-precio">Mayor Precio</option>
+								<option value="nuevos-productos" <% if(typeof nuevosProductosSelected != "undefined") { %>
+									selected="selected"
+								<% } %>>Nuevos Productos</option>
+								<option value="populares" <% if(typeof popularesSelected != "undefined") { %>
+									selected="selected"
+								<% } %>>Populares</option>
+								<option value="menor-precio" <% if(typeof menorPrecioSelected != "undefined") { %>
+									selected="selected"
+								<% } %>>Menor Precio</option>
+								<option value="mayor-precio" <% if(typeof mayorPrecioSelected != "undefined") { %>
+									selected="selected"
+								<% } %>>Mayor Precio</option>
 						  	</select>
 						</form>
 					</div>

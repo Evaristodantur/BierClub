@@ -43,7 +43,7 @@ let productsController = {
 
     //  /products - Filtro de Productos
     productFilter : (req, res, next) => {
-        console.log(req.url);
+
         if(req.url == '/') {
             if(req.body.ordenar == "nuevos-productos") {
                 db.Products.findAll({
@@ -52,7 +52,7 @@ let productsController = {
                         ['id', 'DESC']
                     ]
                 }).then(products => {
-                    res.render('products/products', { productos : products });
+                    res.render('products/products', { productos : products, nuevosProductosSelected : 1 });
                 });
             }
 
@@ -63,7 +63,7 @@ let productsController = {
                         ['stock', 'DESC']
                     ]
                 }).then(products => {
-                    res.render('products/products', { productos : products });
+                    res.render('products/products', { productos : products, popularesSelected : 1 });
                 });
             }
 
@@ -74,7 +74,7 @@ let productsController = {
                         ['price', 'ASC']
                     ]
                 }).then(products => {
-                    res.render('products/products', { productos : products });
+                    res.render('products/products', { productos : products, menorPrecioSelected : 1 });
                 });
             }
 
@@ -85,7 +85,7 @@ let productsController = {
                         ['price', 'DESC']
                     ]
                 }).then(products => {
-                    res.render('products/products', { productos : products });
+                    res.render('products/products', { productos : products, mayorPrecioSelected : 1 });
                 });
             }
         }
@@ -99,7 +99,7 @@ let productsController = {
                         ['id', 'DESC']
                     ]
                 }).then(products => {
-                    res.render('products/productAdmin', { productos : products });
+                    res.render('products/productAdmin', { productos : products, nuevosProductosSelected : 1 });
                 });
             }
 
@@ -110,7 +110,7 @@ let productsController = {
                         ['stock', 'DESC']
                     ]
                 }).then(products => {
-                    res.render('products/productAdmin', { productos : products });
+                    res.render('products/productAdmin', { productos : products, popularesSelected : 1 });
                 });
             }
 
@@ -121,7 +121,7 @@ let productsController = {
                         ['price', 'ASC']
                     ]
                 }).then(products => {
-                    res.render('products/productAdmin', { productos : products });
+                    res.render('products/productAdmin', { productos : products, menorPrecioSelected : 1 });
                 });
             }
 
@@ -132,7 +132,7 @@ let productsController = {
                         ['price', 'DESC']
                     ]
                 }).then(products => {
-                    res.render('products/productAdmin', { productos : products });
+                    res.render('products/productAdmin', { productos : products, mayorPrecioSelected : 1 });
                 });
             }
         }
@@ -382,7 +382,10 @@ let productsController = {
 
         //Muestra todos los productos con sus imagenes
         db.Products.findAll({
-            include: [{association: "images"}]
+            include: [{association: "images"}], 
+                    order: [
+                        ['id', 'DESC']
+                    ]
         }).then(products => {
             res.render('products/productAdmin', { productos : products });
         });    
