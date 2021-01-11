@@ -10,6 +10,7 @@
   - Filtrado de productos en /products
   - Filtrado de productos en /productsAdmin
   - Arreglar productDetail, productos sin imagenes
+  - Agregar Productos al Carrito - Prueba
 
 ### 🗓️ 7/1/21
   Terminado:
