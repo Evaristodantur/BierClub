@@ -7,6 +7,9 @@
     
    Para hacer hoy:
   - Creación de rutas de cart
+  - Filtrado de productos en /products
+  - Filtrado de productos en /productsAdmin
+  - Arreglar productDetail, productos sin imagenes
 
 ### 🗓️ 7/1/21
   Terminado:
