@@ -28,11 +28,67 @@ let productsController = {
 
         //Home - Encuentra todos los productos con sus imagenes y las renderiza
         db.Products.findAll({
-                include: [{association: "images"}]
+                include: [{association: "images"}], 
+                order: [
+                    ['id', 'DESC']
+                ]
             }).then(products => {
                 res.render('products/products', { productos : products });
             });
     },
+
+
+
+
+
+    //  /products - Filtro de Productos
+    productFilter : (req, res, next) => {
+        if(req.body.ordenar == "nuevos-productos") {
+            db.Products.findAll({
+                include: [{association: "images"}], 
+                order: [
+                    ['id', 'DESC']
+                ]
+            }).then(products => {
+                res.render('products/products', { productos : products });
+            });
+        }
+
+        if(req.body.ordenar == "populares") {
+            db.Products.findAll({
+                include: [{association: "images"}], 
+                order: [
+                    ['stock', 'DESC']
+                ]
+            }).then(products => {
+                res.render('products/products', { productos : products });
+            });
+        }
+
+        if(req.body.ordenar == "menor-precio") {
+            db.Products.findAll({
+                include: [{association: "images"}], 
+                order: [
+                    ['price', 'ASC']
+                ]
+            }).then(products => {
+                res.render('products/products', { productos : products });
+            });
+        }
+
+        if(req.body.ordenar == "mayor-precio") {
+            db.Products.findAll({
+                include: [{association: "images"}], 
+                order: [
+                    ['price', 'DESC']
+                ]
+            }).then(products => {
+                res.render('products/products', { productos : products });
+            });
+        }
+        
+    },
+
 
 
 

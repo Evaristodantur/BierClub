@@ -10,16 +10,16 @@
         
         <select class="select-ordenar" name="ordenar" id="ordenar" onchange="this.form.submit()">
             <option type="submit" value="nuevos-productos">Nuevos Productos</option>
-            <option value="mas-vendidos">Mas Vendidos</option>
             <option value="populares">Populares</option>
-            <option value="especiales">Especiales</option>
+            <option value="menor-precio">Menor Precio</option>
+            <option value="mayor-precio">Mayor Precio</option>
       </select>
         
     </form>
 
     <% if(typeof productos != 'undefined') { %>
         <% productos.forEach(producto => { %>
-            <%= producto.name %> -- <%= producto.price %> -- <%= producto.createdAt %> 
+            <%= producto.id%> -- <%= producto.name %> -- <%= producto.price %>
             <br>
         <% }) %> 
     <% } %>

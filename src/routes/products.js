@@ -24,6 +24,9 @@ let verifyAccountMiddleware = require("../middlewares/verifyAccountMiddleware");
 /* GET     /products                                                    page. */
 router.get('/', productsController.index);
 
+/* GET     /products                                                    page. */
+router.post('/', productsController.productFilter);
+
 
 router.get('/prueba', productsController.prueba);
 
