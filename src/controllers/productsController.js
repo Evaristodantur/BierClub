@@ -44,7 +44,10 @@ let productsController = {
     //  /products - Filtro de Productos
     productFilter : (req, res, next) => {
 
+        //Se fija si la url es /products
         if(req.url == '/') {
+
+            //Filtro de Nuevos Productos
             if(req.body.ordenar == "nuevos-productos") {
                 db.Products.findAll({
                     include: [{association: "images"}], 
@@ -56,6 +59,7 @@ let productsController = {
                 });
             }
 
+            //Filtro de Populares
             if(req.body.ordenar == "populares") {
                 db.Products.findAll({
                     include: [{association: "images"}], 
@@ -67,6 +71,7 @@ let productsController = {
                 });
             }
 
+            //Filtro de Menor Precio
             if(req.body.ordenar == "menor-precio") {
                 db.Products.findAll({
                     include: [{association: "images"}], 
@@ -78,6 +83,7 @@ let productsController = {
                 });
             }
 
+            //Filtro de Mayor Precio
             if(req.body.ordenar == "mayor-precio") {
                 db.Products.findAll({
                     include: [{association: "images"}], 
@@ -91,7 +97,10 @@ let productsController = {
         }
 
 
+        //Se fija si la url es /products/productAdmin
         if(req.url == '/productAdmin') {
+
+            //Filtro de Nuevos Productos
             if(req.body.ordenar == "nuevos-productos") {
                 db.Products.findAll({
                     include: [{association: "images"}], 
@@ -103,6 +112,7 @@ let productsController = {
                 });
             }
 
+            //Filtro de Populares
             if(req.body.ordenar == "populares") {
                 db.Products.findAll({
                     include: [{association: "images"}], 
@@ -114,6 +124,7 @@ let productsController = {
                 });
             }
 
+            //Filtro de Menor Precio
             if(req.body.ordenar == "menor-precio") {
                 db.Products.findAll({
                     include: [{association: "images"}], 
@@ -125,6 +136,7 @@ let productsController = {
                 });
             }
 
+            //Filtro de Mayor Precio
             if(req.body.ordenar == "mayor-precio") {
                 db.Products.findAll({
                     include: [{association: "images"}], 
@@ -172,6 +184,7 @@ let productsController = {
             });
     },
   
+
 
 
 
@@ -264,6 +277,10 @@ let productsController = {
                 
             });
     },
+
+
+
+
 
     // /products/productEdit/:id - Actualizacion/Modificacion del producto en el JSON
     updateProduct : (req, res, next) => {

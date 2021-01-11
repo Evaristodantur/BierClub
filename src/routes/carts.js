@@ -8,8 +8,8 @@ let cartsController = require('../controllers/cartsController');
 
 // Routes
 router.get('/', cartsController.index);
-router.post('/', cartsController.selector);
-
+router.get('/addProduct', cartsController.addProductView);
+router.post('/addProduct/:id', cartsController.addProduct);
 
 
 

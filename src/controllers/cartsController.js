@@ -3,71 +3,56 @@ const {validationResult} = require("express-validator");
 
 let mainController = {
     index: (req, res, next) => {
-         db.Products.findAll({
-             order: [
-                 ['id', 'DESC']
-             ]
-         })
-            .then(products => {
-                res.render('vistaPrueba', {productos: products});
+         db.Carts.findAll()
+            .then(carts => {
+                res.send(carts)
             })
-            /* res.render('vistaPrueba'); */
     },
-    selector: (req, res, next) => {
-
-        console.log(req.body.ordenar);
-        if(req.body.ordenar == "nuevos-productos") {
-            db.Products.findAll({
-                order: [
-                    ['id', 'DESC']
-                ]
-            })
-            .then(products => {
-                res.render('vistaPrueba', {productos: products});
-            })
-        }
-
-        if(req.body.ordenar == "populares") {
-            db.Products.findAll({
-                order: [
-                    ['stock', 'DESC']
-                ]
-            })
-            .then(products => {
-                res.render('vistaPrueba', {productos: products});
-            })
-        }
-
-        if(req.body.ordenar == "menor-precio") {
-            db.Products.findAll({
-                order: [
-                    ['price', 'ASC']
-                ]
-            })
-            .then(products => {
-                res.render('vistaPrueba', {productos: products});
-            })
-        }
-
-        if(req.body.ordenar == "mayor-precio") {
-            db.Products.findAll({
-                order: [
-                    ['stock', 'DESC']
-                ]
-            })
-            .then(products => {
-                res.render('vistaPrueba', {productos: products});
-            })
-        }
-        
-    },
-
-
-
-
-
     addProduct: (req, res, next) => {
+
+        let userLogged = req.session.usuarioLogueado
+
+        console.log(req.session.usuarioLogueado);
+
+        if(userLogged) {
+            db.Carts.findOne({
+                where: {
+                    user_id: userLogged.id,
+                    status: 0
+                },
+                include: [{association: 'products'}]
+            }).then(cart => {
+
+                //Si el usuario logeado no tiene un carrito
+                if(cart == null) {
+                    if(userLogged) {
+                        db.Carts.create({
+                            user_id: userLogged.id,
+                            status: 0
+                        })
+                    }
+                } else {
+                    res.send(cart)
+                }
         
+            })
+        } else {
+            res.redirect('/users/login')
+        }
+        
+        
+        
+    },
+
+
+
+
+
+    addProductView: (req, res, next) => {
+        db.Products.findAll()
+            .then(products => {
+                res.render('vistaPrueba', {productos : products})
+            })
     },
     deleteProduct: (req, res, next) => {
 

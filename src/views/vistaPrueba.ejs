@@ -6,23 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/carts" method="POST">
-        
-        <select class="select-ordenar" name="ordenar" id="ordenar" onchange="this.form.submit()">
-            <option type="submit" value="nuevos-productos">Nuevos Productos</option>
-            <option value="populares">Populares</option>
-            <option value="menor-precio">Menor Precio</option>
-            <option value="mayor-precio">Mayor Precio</option>
-      </select>
-        
-    </form>
-
-    <% if(typeof productos != 'undefined') { %>
-        <% productos.forEach(producto => { %>
-            <%= producto.id%> -- <%= producto.name %> -- <%= producto.price %>
-            <br>
-        <% }) %> 
-    <% } %>
+    <% productos.forEach(product => { %>
+        <%= product.name %>
+        <form action="/carts/addProduct/<%= product.id %> " method="POST">
+            <button type="submit">Agregar al carrote</button>
+        </form>
+        ------------------------------------------------------ <br>
+    <% }) %> 
+    
     
 </body>
 </html>
