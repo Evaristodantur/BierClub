@@ -1,5 +1,13 @@
 # Dailies
 
+### 🗓️ 10/1/21
+  Terminado:
+  - Testeo general de la aplicación para entrega de sprint 5 y 6
+  - DB actualizado
+    
+   Para hacer hoy:
+  - Creación de rutas de cart
+
 ### 🗓️ 7/1/21
   Terminado:
   - Arreglar:
@@ -7,6 +15,7 @@
     
    Para hacer hoy:
   - Testeo general de la aplicación para entrega de sprint 5 y 6
+  - Actualización de DB
     
 
 ### 🗓️ 6/1/21
