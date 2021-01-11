@@ -31,12 +31,14 @@
 
 					<!-- SELECCION DE FILTRO -->
 					<div class="filtro">
-						<select class="select-ordenar" name="ordenar" id="ordenar">
-							  <option value="nuevos-productos">Nuevos Productos</option>
-							  <option value="mas-vendidos">Mas Vendidos</option>
-							  <option value="populares">Populares</option>
-							  <option value="especiales">Especiales</option>
-						</select>
+						<form action="/products/productAdmin" method="POST">
+							<select class="select-ordenar" name="ordenar" id="ordenar" onchange="this.form.submit()">
+								<option value="nuevos-productos">Nuevos Productos</option>
+								<option value="populares">Populares</option>
+								<option value="menor-precio">Menor Precio</option>
+								<option value="mayor-precio">Mayor Precio</option>
+						  	</select>
+						</form>
 					</div>
 					
 						<!-- CERVECERIAS -->

@@ -49,6 +49,9 @@ router.get('/productAdmin',
                     authAdminMiddleware, 
                                         productsController.productAdmin);
 
+/* GET     /products                                                    page. */
+router.post('/productAdmin', productsController.productFilter);
+
 /**********************************PRODUCT ADD****************************************/
 
 /* GET     /products/productAdd - Pagina Visual de create               page. */

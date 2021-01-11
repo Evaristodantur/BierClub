@@ -43,49 +43,100 @@ let productsController = {
 
     //  /products - Filtro de Productos
     productFilter : (req, res, next) => {
-        if(req.body.ordenar == "nuevos-productos") {
-            db.Products.findAll({
-                include: [{association: "images"}], 
-                order: [
-                    ['id', 'DESC']
-                ]
-            }).then(products => {
-                res.render('products/products', { productos : products });
-            });
+        console.log(req.url);
+        if(req.url == '/') {
+            if(req.body.ordenar == "nuevos-productos") {
+                db.Products.findAll({
+                    include: [{association: "images"}], 
+                    order: [
+                        ['id', 'DESC']
+                    ]
+                }).then(products => {
+                    res.render('products/products', { productos : products });
+                });
+            }
+
+            if(req.body.ordenar == "populares") {
+                db.Products.findAll({
+                    include: [{association: "images"}], 
+                    order: [
+                        ['stock', 'DESC']
+                    ]
+                }).then(products => {
+                    res.render('products/products', { productos : products });
+                });
+            }
+
+            if(req.body.ordenar == "menor-precio") {
+                db.Products.findAll({
+                    include: [{association: "images"}], 
+                    order: [
+                        ['price', 'ASC']
+                    ]
+                }).then(products => {
+                    res.render('products/products', { productos : products });
+                });
+            }
+
+            if(req.body.ordenar == "mayor-precio") {
+                db.Products.findAll({
+                    include: [{association: "images"}], 
+                    order: [
+                        ['price', 'DESC']
+                    ]
+                }).then(products => {
+                    res.render('products/products', { productos : products });
+                });
+            }
         }
 
-        if(req.body.ordenar == "populares") {
-            db.Products.findAll({
-                include: [{association: "images"}], 
-                order: [
-                    ['stock', 'DESC']
-                ]
-            }).then(products => {
-                res.render('products/products', { productos : products });
-            });
-        }
 
-        if(req.body.ordenar == "menor-precio") {
-            db.Products.findAll({
-                include: [{association: "images"}], 
-                order: [
-                    ['price', 'ASC']
-                ]
-            }).then(products => {
-                res.render('products/products', { productos : products });
-            });
-        }
+        if(req.url == '/productAdmin') {
+            if(req.body.ordenar == "nuevos-productos") {
+                db.Products.findAll({
+                    include: [{association: "images"}], 
+                    order: [
+                        ['id', 'DESC']
+                    ]
+                }).then(products => {
+                    res.render('products/productAdmin', { productos : products });
+                });
+            }
 
-        if(req.body.ordenar == "mayor-precio") {
-            db.Products.findAll({
-                include: [{association: "images"}], 
-                order: [
-                    ['price', 'DESC']
-                ]
-            }).then(products => {
-                res.render('products/products', { productos : products });
-            });
+            if(req.body.ordenar == "populares") {
+                db.Products.findAll({
+                    include: [{association: "images"}], 
+                    order: [
+                        ['stock', 'DESC']
+                    ]
+                }).then(products => {
+                    res.render('products/productAdmin', { productos : products });
+                });
+            }
+
+            if(req.body.ordenar == "menor-precio") {
+                db.Products.findAll({
+                    include: [{association: "images"}], 
+                    order: [
+                        ['price', 'ASC']
+                    ]
+                }).then(products => {
+                    res.render('products/productAdmin', { productos : products });
+                });
+            }
+
+            if(req.body.ordenar == "mayor-precio") {
+                db.Products.findAll({
+                    include: [{association: "images"}], 
+                    order: [
+                        ['price', 'DESC']
+                    ]
+                }).then(products => {
+                    res.render('products/productAdmin', { productos : products });
+                });
+            }
         }
+        
         
     },
 
