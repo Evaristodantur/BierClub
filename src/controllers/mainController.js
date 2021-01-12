@@ -25,6 +25,17 @@ let mainController = {
 
 
 
+    //  Home
+    game : (req, res, next) => {
+
+        //Muestra todos los productos en el home
+        res.render('game');
+    },
+
+
+
+
+
     //  /about-us
     aboutUs : (req, res, next) => {
         res.render('aboutUs');

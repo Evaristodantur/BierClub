@@ -48,5 +48,10 @@ router.get('/contact', mainController.contactRender);
 router.post('/contact',
                 contactMiddleware,
                         mainController.contactSend);
+/**********************************GAME*******************************************/
+
+/* GET     /contacto            page.*/
+router.get('/game', mainController.game);
+
 
 module.exports = router;
