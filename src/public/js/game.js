@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isGameOver = false;
     let alert = document.getElementById('alert')
 
-    function control(e) {
+    function controlJump(e) {
         //32 es Espacio-Enter
         if(e.keyCode === 32) {
             //Si esta saltando, no va a volver a saltar
@@ -17,8 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    document.addEventListener('keyup', control)
+    document.addEventListener('keyup', controlJump)
 
+
+    //OBSTACULOS - MOES
     let position = 0
     //Salto
     function jump() {
@@ -56,21 +58,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 20)
     }
 
+
+
     //Creacion de los MOES
-    function generateObstacle() {
+    function generateMoes() {
         let randomTime = Math.random() * 4000
 
         //Creo un div, con la clase del obstaculo
-        let obstaclePosition = 1000
-        const obstacle = document.createElement('div')
-        if(!isGameOver) {
-            obstacle.classList.add('obstacle')
-        }
-        grid.appendChild(obstacle)
-        obstacle.style.left = obstaclePosition + 'px'
+        let moePosition = 1000
+        const moe = document.createElement('div')
 
+        //Si el juego no termino, agrego otro obstaculo
+        if(!isGameOver) {
+            moe.classList.add('moeStyle')
+        }
+        grid.appendChild(moe)
+        moe.style.left = moePosition + 'px'
+
+        //Cada cierto tiempo sale otro moe
         let timerId = setInterval(function(){
-            if(obstaclePosition > 0 && obstaclePosition < 60 && position < 60) {
+
+            //Se fija si no se chocan
+            if(moePosition > 0 && moePosition < 60 && position < 60) {
                 clearInterval(timerId)
                 alert.innerHTML = 'Game Over'
                 isGameOver = true
@@ -81,15 +90,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            obstaclePosition -= 10
-            obstacle.style.left = obstaclePosition + 'px'
+            moePosition -= 10
+            moe.style.left = moePosition + 'px'
             
         },20)
+
+        //Si el juego no termino sigue andando
         if(!isGameOver) {
-            setTimeout(generateObstacle, randomTime)
+            setTimeout(generateMoes, randomTime)
         }
     }
 
-    
-    generateObstacle()
+    //Genera mas moes
+    generateMoes()
 })

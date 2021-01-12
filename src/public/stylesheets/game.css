@@ -5,7 +5,7 @@
     bottom: 0px;
 }
 
-.obstacle {
+.moeStyle {
     background-image: url("/images/game/moe.png");
     background-size: 60px 60px;
     position: absolute;
