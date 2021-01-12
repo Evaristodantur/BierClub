@@ -1,5 +1,20 @@
 # Dailies
 
+### 🗓️ 11/1/21
+  Terminado:
+  - Creación de rutas de cart
+  - Filtrado de productos en /products
+  - Filtrado de productos en /productsAdmin
+  - Arreglar productDetail, productos sin imagenes
+  - Agregar Productos al Carrito - Prueba
+    
+   Para hacer hoy:
+  - Ruta de Game
+  - Implementacion de JS
+  - Buscado en /products y /productAdmin
+  - Arreglar CSS Form de /products y /productsAdmin
+
+
 ### 🗓️ 10/1/21
   Terminado:
   - Testeo general de la aplicación para entrega de sprint 5 y 6
