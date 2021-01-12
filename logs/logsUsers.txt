@@ -1344,3 +1344,13 @@ El usuario registrado es:
 Nombre: asd
 Email: fasdfsdafds@gmail.com
 *************************************************************
+Hubo un intento de registro el 12/1/2021 04:49:06
+El usuario a registrarse fue:
+Nombre: fdsfds
+Email: diego.kippes@hotmail.com
+*************************************************************
+Se registró un usuario el 12/1/2021 04:49:12
+El usuario registrado es:
+Nombre: fdsfds
+Email: diego.kippes@hotmail.com
+*************************************************************

@@ -191,7 +191,25 @@ let usersController = {
           res.cookie('recordame', user.email,{ maxAge: 1000*60*60*24*365*3 });
         }
 
-        res.redirect('back');
+          db.Carts.findOne({
+            where: {
+                user_id: user.id,
+                status: 0
+            }
+          }).then(cart => {
+            if(cart == null) {
+                      
+              db.Carts.create({
+                  user_id: user.id,
+                  status: 0
+              })
+
+              
+            }
+            res.redirect('back');
+          })
+
+    
 
         } else {
 
