@@ -191,23 +191,23 @@ let usersController = {
           res.cookie('recordame', user.email,{ maxAge: 1000*60*60*24*365*3 });
         }
 
+          //Busca si el usuario logeado tiene un carrito
           db.Carts.findOne({
             where: {
                 user_id: user.id,
                 status: 0
             }
           }).then(cart => {
-            if(cart == null) {
-                      
+            //Si el usuario no tiene carrito lo crea
+            if(cart == null) {      
               db.Carts.create({
                   user_id: user.id,
                   status: 0
-              })
-
-              
+              });
             }
+
             res.redirect('back');
-          })
+          });
 
     
 
