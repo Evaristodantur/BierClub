@@ -30,8 +30,8 @@
 					</div>
 
 					<!-- SELECCION DE FILTRO -->
-					<div class="filtro">
-						<form action="/products/productAdmin" method="POST">
+					<div>
+						<form action="/products/productAdmin" method="POST" class="filtro">
 							<select class="select-ordenar" name="ordenar" id="ordenar" onchange="this.form.submit()">
 								<option value="nuevos-productos" <% if(typeof nuevosProductosSelected != "undefined") { %>
 									selected="selected"

@@ -66,6 +66,8 @@ body .products-catalogo{
     width: 100%;
     height: 40px;
     padding-left: 4%;
+    margin-left: 5%;
+    margin-top: 5%;
 
     /* Otras */
     border-radius: 5px;
@@ -437,6 +439,13 @@ body .products-catalogo{
    RESOLUCION: 1200 hacia abajo
    ========================================================================== */
    @media (max-width: 1200px) {
+
+    /* SELECTOR DE FILTRO */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-filtro .filtro select.select-ordenar {
+        margin-left: 10%;
+        font-size: 12px;
+    }
+
     /* SECCION PRODUCTOS*/
     .products-catalogo .seccion-filtro-muestra-productos section.columna-productos {
         margin-left: 3%;
@@ -458,6 +467,8 @@ body .products-catalogo{
    ========================================================================== */
    @media (max-width: 1100px) {
     /*BUTTON - AÑADIR AL CARRITO*/
+
+
     
     .products-catalogo .seccion-filtro-muestra-productos .columna-productos .producto img {
         /* Display & Box Model */
@@ -596,6 +607,13 @@ body .products-catalogo{
         justify-content: center;
         margin-right: 3%;
         margin-left: 3%;
+    }
+
+    /* SELECTOR DE FILTRO */
+    .products-catalogo .seccion-filtro-muestra-productos .columna-filtro .filtro select.select-ordenar {
+        margin-top: 2%;
+        width: 90%;
+        margin-left: 5%;
     }
 
     /* DROPDOWN - CERVECERIAS TITULO */

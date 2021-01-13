@@ -50,7 +50,7 @@ router.post('/contact',
                         mainController.contactSend);
 /**********************************GAME*******************************************/
 
-/* GET     /contacto            page.*/
+/* GET     /game            page.*/
 router.get('/game', mainController.game);
 
 
