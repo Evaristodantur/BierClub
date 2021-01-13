@@ -27,6 +27,8 @@ router.get('/', productsController.index);
 /* GET     /products                                                    page. */
 router.post('/', productsController.productFilter);
 
+/* GET     /products                                                    page. */
+router.get('/search', productsController.productSearch);
 
 router.get('/prueba', productsController.prueba);
 
@@ -51,6 +53,9 @@ router.get('/productAdmin',
 
 /* GET     /products                                                    page. */
 router.post('/productAdmin', productsController.productFilter);
+
+/* GET     /products                                                    page. */
+router.get('/productAdmin/search', productsController.productSearch);
 
 /**********************************PRODUCT ADD****************************************/
 

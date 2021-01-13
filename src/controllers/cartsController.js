@@ -61,7 +61,39 @@ let mainController = {
     },
     editCart: (req, res, next) => {
 
-    }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    searchView: (req, res, next) => {
+        res.render('vistaDeBusqueda');
+   },  
+   search: (req, res, next) => {
+    console.log([db.Sequelize.Op.like]);
+    console.log(req.query.search);
+
+    db.Products.findAll({
+        where: {
+            
+                name: {[db.Sequelize.Op.like] : `%${req.query.search}%`}
+            
+        }
+    })
+        .then(products => {
+            res.send(products)
+        })
+
+}
 }
 
 module.exports = mainController;

@@ -149,8 +149,49 @@ let productsController = {
             }
         }
         
+    },
+
+
+
+
+
+    //Buscador de productos en /products y /productAdmin
+    productSearch : (req, res, next) => {
+        
+        if(req.url.search("productAdmin") == "1") {
+
+            //Buscado para /productAdmin
+            db.Products.findAll({
+                include: [{association: "images"}], 
+                order: [
+                    ['id', 'DESC']
+                ],
+                where: {
+                    name: {[db.Sequelize.Op.like] : `%${req.query.search}%`}
+                }
+            }).then(products => {
+                    res.render('products/productAdmin', { productos : products });     
+            });
+
+        } else {
+
+            //Buscador para /product
+            db.Products.findAll({
+                include: [{association: "images"}], 
+                order: [
+                    ['id', 'DESC']
+                ],
+                where: {
+                    name: {[db.Sequelize.Op.like] : `%${req.query.search}%`}
+                }
+            }).then(products => {
+                    res.render('products/products', { productos : products });     
+            });
+        }
+
         
     },
+
 
 
 

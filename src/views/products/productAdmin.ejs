@@ -29,6 +29,13 @@
 						<button onclick="window.location.href='/products/productAdd'" class="agregarProducto"><i class="fas fa-plus"></i> Agregar Producto</button>
 					</div>
 
+					<!-- BUSCADOR -->
+					<div class="filtro">
+						<form action="/products/productAdmin/search" method="GET">
+							<input type="text" name="search" placeholder="Buscador de Productos" onchange="this.form.submit()">
+						</form>
+					</div>
+
 					<!-- SELECCION DE FILTRO -->
 					<div>
 						<form action="/products/productAdmin" method="POST" class="filtro">
