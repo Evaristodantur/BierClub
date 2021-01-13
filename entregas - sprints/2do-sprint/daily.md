@@ -1,5 +1,18 @@
 # Dailies
 
+### 🗓️ 12/1/21
+  Terminado:
+  - Ruta de Game
+  - Implementacion de JS
+  - Arreglar CSS Form de /products y /productsAdmin
+    
+   Para hacer hoy:
+  - Mejorar Game
+  - Implementar background en Game
+  - Implementar cambio de posicion en Game  
+  - Buscado en /products y /productAdmin
+  
+  
 ### 🗓️ 11/1/21
   Terminado:
   - Creación de rutas de cart
