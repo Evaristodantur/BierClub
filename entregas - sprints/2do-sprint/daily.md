@@ -5,12 +5,13 @@
   - Ruta de Game
   - Implementacion de JS
   - Arreglar CSS Form de /products y /productsAdmin
+  - Buscado en /products y /productAdmin
     
    Para hacer hoy:
   - Mejorar Game
   - Implementar background en Game
   - Implementar cambio de posicion en Game  
-  - Buscado en /products y /productAdmin
+  - Mejorar estilo del buscador
   
   
 ### 🗓️ 11/1/21
