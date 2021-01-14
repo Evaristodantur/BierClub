@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/images/faviconLogo.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8431526c8f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/stylesheets/__general.css">
+    <link rel="stylesheet" href="/stylesheets/__index.css">
+    <script type="text/javascript" src="/js/productsSlider.js"></script>
+</head>
+<body>
+
+    <div class="home">
+      
+        <!-- BANNER PRINCIPAL-->
+        <section>
+  
+        <main>
+            
+  
+          <!-- PRODUCTOS-->
+          <section class="productos" id="productsSlider">
+  
+            <div class="btnAnt" id="product-prev">
+              <a href="#">
+                <div class="button-pass">
+                  <i class="fas fa-chevron-circle-left"></i>
+                </div>
+              </a>
+            </div>
+          
+            <% let arrayResponsive = ['', 'resolucionMenorA320', 'resolucionMenorA768', 'resolucionMenorA1024', 'resolucionMenorA1200'] %>
+            <% for (let i=0; i < productos.length ; i++) { %>
+  
+              <article class="producto " id="productArticle">
+                <a href="/products/productDetail/<%= productos[i].id %>">
+                    <% if(typeof productos[i].images[0] != "undefined") { %>
+                        <img src="/images/productos/<%= productos[i].images[0].name %>" alt="<%= productos[i].name %>">
+                    <% } else { %>
+                        <img src="/images/productos/product-image-not-available.jpg" alt="<%= productos[i].name %>">
+                    <% } %>                       
+                </a>
+                <h2 class="producto-titulo"><%= productos[i].name %></h2>
+                <div class="precio-stock">
+                  <div>
+                    <h4 class="etiqueta-precio">$<%= productos[i].price %></h4>
+                  </div>
+                  <div>
+                    <% if (productos[i].stock > 0) { %>
+                      <h5 class="etiqueta-stock">Stock Disponible</h5>
+                    <% } else { %>
+                      <h5 class="stock sinStock">Sin Stock</h5>
+                    <% } %>
+                    
+                  </div>
+                </div>
+                <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
+              </article>
+            <% } %>
+          
+            <div class="btnSig" id="product-next">
+              <a href="#">
+                <div class="button-pass">
+                  <i class="fas fa-chevron-circle-right"></i>
+                </div>
+              </a>
+            </div>
+          
+          </section>
+        </main>
+    </section>
+    <div></div>
+
+    <% productos.forEach(producto => { %>
+        <%= producto.name %> <br>
+    <% }); %> 
+</body>
+</html>

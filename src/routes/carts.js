@@ -11,8 +11,7 @@ router.get('/', cartsController.index);
 router.get('/addProduct', cartsController.addProductView);
 router.post('/addProduct/:id', cartsController.addProduct);
 
-router.get('/form', cartsController.searchView);
-router.get('/search', cartsController.search);
+router.get('/items', cartsController.itemsView);
 
 
 

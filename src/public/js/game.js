@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isJumping = false;
     let gravity = 0.9;
     let isGameOver = false;
+    let score = 0;
     let alert = document.getElementById('alert')
 
     function controlJump(e) {
@@ -26,17 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function jump() {
         let count = 0
         //Despues de 20mil salta
-        let timerId = setInterval(function() {
+        let barneyHaciaArriba = setInterval(function() {
 
             //VA HACIA ABAJO
             //Cuando barney llega a 15px
             if(count === 15) {
                 //Se para
-                clearInterval(timerId)
+                clearInterval(barneyHaciaArriba)
                 //Empieza a bajar hasta que llega a la posicion 0
-                let downTimerId = setInterval(function() {
+                let barneyHaciaAbajo = setInterval(function() {
                     if(count === 0) {
-                        clearInterval(downTimerId)
+                        clearInterval(barneyHaciaAbajo)
                         //Setea el salto para saltar, porque ya esta en el suelo
                         isJumping = false;
                     }
@@ -71,17 +72,18 @@ document.addEventListener('DOMContentLoaded', () => {
         //Si el juego no termino, agrego otro obstaculo
         if(!isGameOver) {
             moe.classList.add('moeStyle')
+            
         }
         grid.appendChild(moe)
         moe.style.left = moePosition + 'px'
 
         //Cada cierto tiempo sale otro moe
-        let timerId = setInterval(function(){
+        let moeHaciaLaIzquierda = setInterval(function(){
 
             //Se fija si no se chocan
             if(moePosition > 0 && moePosition < 60 && position < 60) {
-                clearInterval(timerId)
-                alert.innerHTML = 'Game Over'
+                clearInterval(moeHaciaLaIzquierda)
+                alert.innerHTML = 'Game Over, Your score: ' + score 
                 isGameOver = true
                 
                 //Remueve todos los hijos
@@ -90,6 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
+            //Suma puntos
+            if(moePosition == 0) {
+                score++;
+            }
+            
             moePosition -= 10
             moe.style.left = moePosition + 'px'
             

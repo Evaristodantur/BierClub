@@ -75,25 +75,13 @@ let mainController = {
 
 
 
-    searchView: (req, res, next) => {
-        res.render('vistaDeBusqueda');
-   },  
-   search: (req, res, next) => {
-    console.log([db.Sequelize.Op.like]);
-    console.log(req.query.search);
-
-    db.Products.findAll({
-        where: {
-            
-                name: {[db.Sequelize.Op.like] : `%${req.query.search}%`}
-            
-        }
-    })
-        .then(products => {
-            res.send(products)
-        })
-
-}
+    itemsView: (req, res, next) => {
+        db.Products.findAll({
+            include: [{association: "images"}]
+        }).then(products => {
+            res.render('vistaDeItems', { productos : products });
+        });
+   }
 }
 
 module.exports = mainController;
