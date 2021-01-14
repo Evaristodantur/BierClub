@@ -11,9 +11,8 @@ let game = document.addEventListener('DOMContentLoaded', () => {
     let viewWidth = window.innerWidth;
 
     if(viewWidth <= 1200) {
-        window.location = "http://localhost:3000/";
         window.alert('Este juego funciona bien solo para dispositivos con mas de 1200px');
-        
+        window.location = "http://localhost:3000/";
     } else {
         window.alert('Para jugar con la tecla "enter" o "espacio", estas listo?');
     }
@@ -85,7 +84,7 @@ let game = document.addEventListener('DOMContentLoaded', () => {
         //Para diferentes resoluciones de pantalla hasta 1200px
         //1600px para arriba
         if(viewWidth > 1600) {
-            moePosition = 1600;
+            moePosition = 1400;
         }
 
         //1600 - 1500px
