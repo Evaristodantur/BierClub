@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
+let game = document.addEventListener('DOMContentLoaded', () => {
+    
     const barney = document.querySelector('.barney');
     const grid = document.querySelector('.grid');
     let isJumping = false;
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keyup', controlJump)
 
 
-    //OBSTACULOS - MOES
+    //BARNEY
     let position = 0
     //Salto
     function jump() {
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             //VA HACIA ABAJO
             //Cuando barney llega a 15px
-            if(count === 15) {
+            if(count === 25) {
                 //Se para
                 clearInterval(barneyHaciaArriba)
                 //Empieza a bajar hasta que llega a la posicion 0
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         //Setea el salto para saltar, porque ya esta en el suelo
                         isJumping = false;
                     }
-                    position -= 5
+                    position -= 1
                     count--
                     position *= gravity
                     barney.style.bottom = position + 'px'
@@ -52,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             //VA HACIA ARRIBA
             //Si no se complio los 150p, barney sigue subiendo
             console.log('up');
-            position += 30; //Salta 30px
+            position += 50; //Salta 30px
             count++ //Cuenta cuantas veces salto
             position *= gravity; //Le agrega la gravedad
             barney.style.bottom = position + 'px'
@@ -66,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let randomTime = Math.random() * 4000
 
         //Creo un div, con la clase del obstaculo
-        let moePosition = 1000
+        let moePosition = 1600
         const moe = document.createElement('div')
 
         //Si el juego no termino, agrego otro obstaculo
@@ -81,24 +82,33 @@ document.addEventListener('DOMContentLoaded', () => {
         let moeHaciaLaIzquierda = setInterval(function(){
 
             //Se fija si no se chocan
-            if(moePosition > 0 && moePosition < 60 && position < 60) {
+            if(moePosition > 10 && moePosition < 250 && position < 250) {
                 clearInterval(moeHaciaLaIzquierda)
-                alert.innerHTML = 'Game Over, Your score: ' + score 
-                isGameOver = true
                 
-                //Remueve todos los hijos
-                while(grid.firstChild) {
-                    grid.removeChild(grid.lastChild)
+                //alert.innerHTML = 'Game Over, Your score: ' + score 
+                isGameOver = true
+
+                if(isGameOver) {
+                    if(window.confirm(`Tu score fue: ${score}, ¿Desea volver a jugar?`)) {
+                        window.location = "http://localhost:3000/game"
+                    } else {
+                        //Remueve todos los hijos
+                        while(grid.firstChild) {
+                            grid.removeChild(grid.lastChild)
+                        }
+                    }
                 }
+                
+                
             }
 
+            moePosition -= 15
+            moe.style.left = moePosition + 'px'
+
             //Suma puntos
-            if(moePosition == 0) {
+            if(moePosition == 10) {
                 score++;
             }
-            
-            moePosition -= 10
-            moe.style.left = moePosition + 'px'
             
         },20)
 
@@ -106,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(!isGameOver) {
             setTimeout(generateMoes, randomTime)
         }
+        
     }
 
     //Genera mas moes

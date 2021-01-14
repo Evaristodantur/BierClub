@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BierClub - Game</title>
     <link rel="stylesheet" href="/stylesheets/game.css">
     <script type="text/javascript" src="/js/game.js"></script>
+    <%- include('./partials/head.ejs') %>
+    <title>BierClub - Game</title>
 </head>
 <body>
-    <h2 id="alert"></h2>
+    <!-- NAV -->
+    <header>
+        <%- include('./partials/nav.ejs') %>
+        <br>
+    </header>
+
+    
+    <img src="/images/game/mae-bar.jpg" alt="moe bar" class="moe-bar-img">
+    
     <div class="grid">
+        <h2 id="alert"></h2>
             <img class="barney" src="/images/game/barney.png" alt="barney">
     </div>
     
