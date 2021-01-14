@@ -76,55 +76,60 @@ let game = document.addEventListener('DOMContentLoaded', () => {
 
 
     //Creacion de los MOES
-    function generateMoes() {
+    function generateHomeros() {
         let randomTime = Math.random() * 4000;
-        let moePosition;
+        let homeroPosition;
 
               
         //Para diferentes resoluciones de pantalla hasta 1200px
+        if(viewWidth > 1700) {
+            homeroPosition = 1400;
+        }
+
         //1600px para arriba
         if(viewWidth > 1600) {
-            moePosition = 1400;
+            homeroPosition = 1350;
         }
 
         //1600 - 1500px
         if(viewWidth < 1600 && viewWidth > 1500) {
-            moePosition = 1200;
+            homeroPosition = 1200;
         }
 
         //1500 - 1300px
         if(viewWidth < 1500 && viewWidth > 1300) {
-            moePosition = 1000;
+            homeroPosition = 1000;
         }
 
         //1300 - 1200px
         if(viewWidth < 1300 && viewWidth > 1200) {
-            moePosition = 950;
+            homeroPosition = 900;
         }
         
 
         //Creo un div, con la clase del obstaculo
-        const moe = document.createElement('div');
+        const homero = document.createElement('div');
 
         //Si el juego no termino, agrego otro obstaculo
         if(!isGameOver) {
-            moe.classList.add('moeStyle');
+            homero.classList.add('homeroStyle');
             
         }
-        grid.appendChild(moe);
-        moe.style.left = moePosition + 'px';
+        grid.appendChild(homero);
+        homero.style.left = homeroPosition + 'px';
 
         //Cada cierto tiempo sale otro moe
-        let moeHaciaLaIzquierda = setInterval(function(){
+        let homeroHaciaLaIzquierda = setInterval(function(){
 
             //Se fija si no se chocan
-            if(moePosition > 6 && moePosition < 180 && position < 180) {
-                clearInterval(moeHaciaLaIzquierda);
+            if(homeroPosition > 6 && homeroPosition < 180 && position < 180) {
+                clearInterval(homeroHaciaLaIzquierda);
                 
                 isGameOver = true;
 
                 if(isGameOver) {
-                    if(window.confirm(`Tu score fue: ${score}, ¿Desea volver a jugar?`)) {
+                    if(window.confirm(`¡Game Over! Pasaste "${score}" homeros :D
+    ¿Desea volver a jugar?`)) {
                         window.location = "http://localhost:3000/game";
                     } else {
                         //Remueve todos los hijos
@@ -137,18 +142,18 @@ let game = document.addEventListener('DOMContentLoaded', () => {
                 
             }
 
-            moePosition -= 15;
-            moe.style.left = moePosition + 'px';
+            homeroPosition -= 15;
+            homero.style.left = homeroPosition + 'px';
 
             //Suma puntos
-            if(moePosition < 10 && moePosition > -10 || moePosition == 0) {
+            if(homeroPosition < 10 && homeroPosition > -10 || homeroPosition == 0) {
                 score++;
             }
             
         },20)
         //Si el juego no termino sigue andando
         if(!isGameOver) {
-            setTimeout(generateMoes, randomTime);
+            setTimeout(generateHomeros, randomTime);
         }
         
     }
@@ -156,5 +161,5 @@ let game = document.addEventListener('DOMContentLoaded', () => {
     
 
     //Genera mas moes
-    generateMoes();
+    generateHomeros();
 })

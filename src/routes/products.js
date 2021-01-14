@@ -32,6 +32,10 @@ router.get('/search', productsController.productSearch);
 
 router.get('/prueba', productsController.prueba);
 
+/**********************************PRODUCTOS LUPULADAS/NO LUPULADAS******************************************/
+
+
+
 /**********************************PRODUCT DETAIL*************************************/
 
 /* GET     /products/productDetail/:id                                  page. */

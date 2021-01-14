@@ -1,17 +1,18 @@
 .barney {
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
     bottom: 15px;
 }
 
-.moeStyle {
-    background-image: url("https://i.pinimg.com/originals/a7/41/df/a741df028c4436ab9a8b282f8a031368.png");
-    background-size: 250px 250px;
+.homeroStyle {
+    background-image: url("/images/game/homero.gif");
+    background-size: 280px 280px;
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     bottom: 15px;
+    background-repeat: no-repeat;
 }
 
 .moe-bar-img {
