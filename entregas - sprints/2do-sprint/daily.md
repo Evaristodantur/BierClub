@@ -1,5 +1,15 @@
 # Dailies
 
+### 🗓️ 13/1/21
+  Terminado:
+  - Mejorar Game
+  - Implementar background en Game
+  - Implementar cambio de posicion en Game  
+    
+   Para hacer hoy:
+  
+  
+
 ### 🗓️ 12/1/21
   Terminado:
   - Ruta de Game
