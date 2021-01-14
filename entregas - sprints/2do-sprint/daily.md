@@ -12,6 +12,8 @@
   - Crear newsletter_status en DB
   - Modificar userController para que se añada el newsletter_status
   - Mandar mail al email diciendo que esta suscripto
+  - Implementar filtro por clase categoria en /product
+  - Implementar filtro por clase categoria en /productAdmin
   
 
 ### 🗓️ 12/1/21
