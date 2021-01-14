@@ -12,12 +12,18 @@ let productsController = {
     //Para realizar pruebas
     prueba : (req, res, next) => {
 
-        db.Carts.findAll({
-            include: [{association: "users"}]
-        })
-            .then(carts => {
-                res.send(carts);
-            })
+        db.Products.findAll({
+            include: [{association: "images"}, {association: "categories"}], 
+            order: [
+                ['id', 'DESC']
+            ]
+        }).then(products => {
+            
+            
+            res.send(products);
+
+            
+        });
     },
     
 
@@ -33,7 +39,16 @@ let productsController = {
                     ['id', 'DESC']
                 ]
             }).then(products => {
-                res.render('products/products', { productos : products });
+                db.Categories.findAll({
+                    where: {
+                        status: 1
+                    }
+                })
+                    .then(categories => {
+                        res.render('products/products', { productos : products, categorias: categories });
+                    })
+                
+                
             });
     },
 
@@ -49,14 +64,7 @@ let productsController = {
 
             //Filtro de Nuevos Productos
             if(req.body.ordenar == "nuevos-productos") {
-                db.Products.findAll({
-                    include: [{association: "images"}], 
-                    order: [
-                        ['id', 'DESC']
-                    ]
-                }).then(products => {
-                    res.render('products/products', { productos : products, nuevosProductosSelected : 1 });
-                });
+                res.redirect('/products');
             }
 
             //Filtro de Populares
@@ -67,7 +75,15 @@ let productsController = {
                         ['stock', 'DESC']
                     ]
                 }).then(products => {
-                    res.render('products/products', { productos : products, popularesSelected : 1 });
+                    db.Categories.findAll({
+                    where: {
+                        status: 1
+                    }
+                })
+                    .then(categories => {
+                        res.render('products/products', { productos : products, categorias: categories, popularesSelected : 1 });
+                    })
+                    
                 });
             }
 
@@ -79,7 +95,15 @@ let productsController = {
                         ['price', 'ASC']
                     ]
                 }).then(products => {
-                    res.render('products/products', { productos : products, menorPrecioSelected : 1 });
+                    db.Categories.findAll({
+                        where: {
+                            status: 1
+                        }
+                    })
+                        .then(categories => {
+                            res.render('products/products', { productos : products, categorias: categories, menorPrecioSelected : 1 });
+                        })
+                    
                 });
             }
 
@@ -91,7 +115,15 @@ let productsController = {
                         ['price', 'DESC']
                     ]
                 }).then(products => {
-                    res.render('products/products', { productos : products, mayorPrecioSelected : 1 });
+                    db.Categories.findAll({
+                        where: {
+                            status: 1
+                        }
+                    })
+                        .then(categories => {
+                            res.render('products/products', { productos : products, categorias: categories, mayorPrecioSelected : 1 });
+                        })
+                    
                 });
             }
         }
@@ -102,14 +134,7 @@ let productsController = {
 
             //Filtro de Nuevos Productos
             if(req.body.ordenar == "nuevos-productos") {
-                db.Products.findAll({
-                    include: [{association: "images"}], 
-                    order: [
-                        ['id', 'DESC']
-                    ]
-                }).then(products => {
-                    res.render('products/productAdmin', { productos : products, nuevosProductosSelected : 1 });
-                });
+                res.redirect('/products/productAdmin');
             }
 
             //Filtro de Populares
@@ -120,7 +145,15 @@ let productsController = {
                         ['stock', 'DESC']
                     ]
                 }).then(products => {
-                    res.render('products/productAdmin', { productos : products, popularesSelected : 1 });
+                    db.Categories.findAll({
+                        where: {
+                            status: 1
+                        }
+                    })
+                        .then(categories => {
+                            res.render('products/productAdmin', { productos : products, categorias: categories, popularesSelected : 1 });
+                        });
+                    
                 });
             }
 
@@ -132,7 +165,15 @@ let productsController = {
                         ['price', 'ASC']
                     ]
                 }).then(products => {
-                    res.render('products/productAdmin', { productos : products, menorPrecioSelected : 1 });
+                    db.Categories.findAll({
+                        where: {
+                            status: 1
+                        }
+                    })
+                        .then(categories => {
+                            res.render('products/productAdmin', { productos : products, categorias: categories, menorPrecioSelected : 1 });
+                        });
+                    
                 });
             }
 
@@ -144,7 +185,15 @@ let productsController = {
                         ['price', 'DESC']
                     ]
                 }).then(products => {
-                    res.render('products/productAdmin', { productos : products, mayorPrecioSelected : 1 });
+                    db.Categories.findAll({
+                        where: {
+                            status: 1
+                        }
+                    })
+                        .then(categories => {
+                            res.render('products/productAdmin', { productos : products, categorias: categories, mayorPrecioSelected : 1 });
+                        });
+                    
                 });
             }
         }
@@ -170,7 +219,15 @@ let productsController = {
                     name: {[db.Sequelize.Op.like] : `%${req.query.search}%`}
                 }
             }).then(products => {
-                    res.render('products/productAdmin', { productos : products });     
+                db.Categories.findAll({
+                    where: {
+                        status: 1
+                    }
+                })
+                    .then(categories => {
+                        res.render('products/productAdmin', { productos : products, categorias: categories});
+                    });
+                     
             });
 
         } else {
@@ -185,11 +242,48 @@ let productsController = {
                     name: {[db.Sequelize.Op.like] : `%${req.query.search}%`}
                 }
             }).then(products => {
-                    res.render('products/products', { productos : products });     
+                db.Categories.findAll({
+                    where: {
+                        status: 1
+                    }
+                })
+                    .then(categories => {
+                        res.render('products/products', { productos : products, categorias: categories});
+                    });
+                    
             });
         }
 
+    },
+
+
+
+
+
+    //  /products/productDetail/:id - Vista productDetail
+    productCategorieFilter : (req, res, next) => {
         
+        let categorieSelected = req.body.filtroCategoria
+        console.log(categorieSelected);
+
+        db.Products.findAll({
+            include: [{association: "images"}, {association: "categories", where: { id: categorieSelected}}], 
+            order: [
+                ['id', 'DESC']
+            ]
+        }).then(products => {
+            
+                db.Categories.findAll({
+                    where: {
+                        status: 1
+                    }
+                })
+                    .then(categories => {                
+                        res.render('products/products', { productos : products, categorias: categories, categoriaSeleccionada: categorieSelected});
+                    })
+
+            
+        });
     },
 
 

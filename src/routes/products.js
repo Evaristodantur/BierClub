@@ -28,6 +28,9 @@ router.get('/', productsController.index);
 router.post('/', productsController.productFilter);
 
 /* GET     /products                                                    page. */
+router.post('/categorie', productsController.productCategorieFilter);
+
+/* GET     /products                                                    page. */
 router.get('/search', productsController.productSearch);
 
 router.get('/prueba', productsController.prueba);
@@ -50,9 +53,9 @@ router.get('/productCart', productsController.productCart);
 
 /* GET     /products/productAdmin                                       page. */
 router.get('/productAdmin', 
-                    /* guestMiddleware,
+                    guestMiddleware,
                     verifyAccountMiddleware,
-                    authAdminMiddleware, */ 
+                    authAdminMiddleware, 
                                         productsController.productAdmin);
 
 /* GET     /products                                                    page. */
