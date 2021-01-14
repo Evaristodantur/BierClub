@@ -7,7 +7,11 @@
   - Implementar cambio de posicion en Game  
     
    Para hacer hoy:
-  
+  - Implementar newsletter en home - form
+  - Crear ruta de newsletter
+  - Crear newsletter_status en DB
+  - Modificar userController para que se añada el newsletter_status
+  - Mandar mail al email diciendo que esta suscripto
   
 
 ### 🗓️ 12/1/21
