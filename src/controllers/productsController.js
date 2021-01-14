@@ -262,28 +262,51 @@ let productsController = {
 
     //  /products/productDetail/:id - Vista productDetail
     productCategorieFilter : (req, res, next) => {
+        console.log(req.url);
         
         let categorieSelected = req.body.filtroCategoria
         console.log(categorieSelected);
 
-        db.Products.findAll({
-            include: [{association: "images"}, {association: "categories", where: { id: categorieSelected}}], 
-            order: [
-                ['id', 'DESC']
-            ]
-        }).then(products => {
-            
-                db.Categories.findAll({
-                    where: {
-                        status: 1
-                    }
-                })
-                    .then(categories => {                
-                        res.render('products/products', { productos : products, categorias: categories, categoriaSeleccionada: categorieSelected});
+        if(req.url == "/productAdmin/categorie") {
+            db.Products.findAll({
+                include: [{association: "images"}, {association: "categories", where: { id: categorieSelected}}], 
+                order: [
+                    ['id', 'DESC']
+                ]
+            }).then(products => {
+                
+                    db.Categories.findAll({
+                        where: {
+                            status: 1
+                        }
                     })
+                        .then(categories => {                
+                            res.render('products/productAdmin', { productos : products, categorias: categories, categoriaSeleccionada: categorieSelected});
+                        })
+    
+                
+            });
+        } else {
+            db.Products.findAll({
+                include: [{association: "images"}, {association: "categories", where: { id: categorieSelected}}], 
+                order: [
+                    ['id', 'DESC']
+                ]
+            }).then(products => {
+                
+                    db.Categories.findAll({
+                        where: {
+                            status: 1
+                        }
+                    })
+                        .then(categories => {                
+                            res.render('products/products', { productos : products, categorias: categories, categoriaSeleccionada: categorieSelected});
+                        })
+    
+                
+            });
+        }
 
-            
-        });
     },
 
 
@@ -532,15 +555,24 @@ let productsController = {
     //  /products/productAdmin - Vista de productAdmin
     productAdmin : (req, res, next) => {
 
-        //Muestra todos los productos con sus imagenes
+        //Home - Encuentra todos los productos con sus imagenes y las renderiza
         db.Products.findAll({
             include: [{association: "images"}], 
-                    order: [
-                        ['id', 'DESC']
-                    ]
+            order: [
+                ['id', 'DESC']
+            ]
         }).then(products => {
-            res.render('products/productAdmin', { productos : products });
-        });    
+            db.Categories.findAll({
+                where: {
+                    status: 1
+                }
+            })
+                .then(categories => {
+                    res.render('products/productAdmin', { productos : products, categorias: categories });
+                })
+            
+            
+        });
     },
 
 

@@ -55,6 +55,27 @@
 						  	</select>
 						</form>
 					</div>
+
+					<!-- SELECCION DE CATEGORIAS -->
+					<div>
+						<form action="/products/productAdmin/categorie" method="POST" class="filtro">
+							<select class="select-ordenar" name="filtroCategoria" id="categoria" onchange="this.form.submit()">
+								
+								
+								<% categorias.forEach(categoria => { %>
+									<% if(typeof categoriaSeleccionada != "undefined" && categoria.id == categoriaSeleccionada) { %>
+										
+										<option value="<%=categoria.id%>" selected="selected"><%=categoria.name%></option>
+									<% } else { %>
+										<option value="<%=categoria.id%>"><%=categoria.name%></option>
+									<% } %>
+
+											
+																		
+								<% }); %>
+						  	</select>
+						</form>
+					</div>
 					
 						<!-- CERVECERIAS -->
 						<div class="filtro">

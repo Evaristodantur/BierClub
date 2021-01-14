@@ -53,9 +53,9 @@ router.get('/productCart', productsController.productCart);
 
 /* GET     /products/productAdmin                                       page. */
 router.get('/productAdmin', 
-                    guestMiddleware,
+                    /* guestMiddleware,
                     verifyAccountMiddleware,
-                    authAdminMiddleware, 
+                    authAdminMiddleware,  */
                                         productsController.productAdmin);
 
 /* GET     /products                                                    page. */
@@ -63,6 +63,9 @@ router.post('/productAdmin', productsController.productFilter);
 
 /* GET     /products                                                    page. */
 router.get('/productAdmin/search', productsController.productSearch);
+
+/* GET     /products                                                    page. */
+router.post('/productAdmin/categorie', productsController.productCategorieFilter);
 
 /**********************************PRODUCT ADD****************************************/
 
