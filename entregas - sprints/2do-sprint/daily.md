@@ -1,6 +1,6 @@
 # Dailies
 
-### 🗓️ 13/1/21
+### 🗓️ 14/1/21
   Terminado:
   - Implementar filtro por clase categoria en /product
   - Implementar filtro por clase categoria en /productAdmin
