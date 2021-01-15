@@ -1,5 +1,17 @@
 # Dailies
 
+### 🗓️ 15/1/21
+  Terminado:
+  - Crear ruta de newsletter
+  - Crear newsletter_status en DB
+    
+   Para hacer hoy:
+  - Implementar newsletter en home - form
+  
+  - Modificar userController para que se añada el newsletter_status
+  - Mandar mail al email diciendo que esta suscripto
+
+
 ### 🗓️ 14/1/21
   Terminado:
   - Implementar filtro por clase categoria en /product
