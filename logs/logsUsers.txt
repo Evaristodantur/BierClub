@@ -1354,3 +1354,13 @@ El usuario registrado es:
 Nombre: fdsfds
 Email: diego.kippes@hotmail.com
 *************************************************************
+Hubo un intento de registro el 15/1/2021 19:52:43
+El usuario a registrarse fue:
+Nombre: KIPPES
+Email: kippes.diego@gmail.com
+*************************************************************
+Se registró un usuario el 15/1/2021 19:53:00
+El usuario registrado es:
+Nombre: KIPPES
+Email: asdasd@gmail.com
+*************************************************************

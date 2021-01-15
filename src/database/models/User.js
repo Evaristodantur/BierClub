@@ -17,9 +17,9 @@ module.exports = (sequelize, dataTypes) => {
         },
         suscription_status: {
             type: dataTypes.INTEGER
-        },  
-        password: {
-            type: dataTypes.STRING(100)
+        },
+        newsletter_status: {
+            type: dataTypes.INTEGER
         },
         admin: {
             type: dataTypes.INTEGER

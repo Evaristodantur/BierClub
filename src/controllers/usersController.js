@@ -111,6 +111,7 @@ let usersController = {
         email: req.body.email,
         password: bcrypt.hashSync(req.body.contrasenia,10),
         suscription_status: 0,
+        newsletter_status: 0,
         admin: 0,
         verify: 0,
         verify_code: codigoDeVerificacion
