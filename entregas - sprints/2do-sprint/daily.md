@@ -5,10 +5,12 @@
   - Implementar newsletter en home - form
   - Modificar userController para que se añada el newsletter_status
   - Mandar mail al email diciendo que esta suscripto
-    
-   Para hacer hoy:
   - Modal de newsletter
   - Validacion de email en newsletter
+    
+   Para hacer hoy:
+  - Link lupuladas y no lupuladas en Nav
+  - Muestra de productos - slider
   
 
 ### 🗓️ 15/1/21
