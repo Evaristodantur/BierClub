@@ -19,6 +19,9 @@ let contactMiddleware = require("../middlewares/contactMiddleware");            
 /* GET    bierclub.com/         page. */
 router.get('/', mainController.index);
 
+/* GET    bierclub.com/         page. */
+router.post('/', mainController.newsletterSuscription);
+
 /**********************************ABOUT US***************************************/
 
 /* GET    /about-us             page. */

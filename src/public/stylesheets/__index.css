@@ -286,6 +286,47 @@
 }
 
 
+/* ==========================================================================
+   MODAL-NEWSLETTER
+   ========================================================================== */
+#modal-newsletter {
+    display: none;
+}
+
+#modal-newsletter div.background-newsletter-modal{
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#modal-newsletter div.background-newsletter-modal div{
+    position: relative;
+    top: 50%;
+    left: 44%;
+    background-color: white;
+    width: 280px;
+    height: 93px;
+    border-radius: 8px;
+}
+
+#modal-newsletter p{
+    font-size: 0.8em;
+    font-weight: bold;
+    color: black;
+    padding-top: 6px;
+}
+
+#modal-newsletter button{
+    padding: 7px 25px;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+}
+
 
 
 

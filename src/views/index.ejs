@@ -157,16 +157,45 @@
           <div>
             <h3>Recibí todas las ofertas</h3>
             <p>¿Quieres recibir nuestras ofertas? ¡Regístrate ya mismo y comenzá a disfrutarlas!</p>
-              <input class="newsletter" type="email" placeholder="Email">
+              <form action="/" method="POST">
+                <input name="newsletter" class="newsletter" type="email" placeholder="Email" onchange="this.form.submit()">
+              </form>
+              <% if(typeof newsletter != 'undefined') { %>
+                <div id="modal-newsletter">
+                  <div class="background-newsletter-modal">
+                    <% if(newsletter == 1) { %>
+                        <div>
+                          <p>Te has suscripto a BierClub-newsletter. ¡Mira tu email!</p>
+                          <button>Aceptar</button>
+                        </div>
+                    <% } else { %>
+                      <div>
+                          <p>Para poder recibir newsletters de BierClub <a href="/users/register">registra tu cuenta!</a></p>
+                          <button>Aceptar</button>
+                      </div>
+                    <% } %>
+                  </div>
+                </div>
+                
+                
+              <% } %> 
+              
           </div>
         </section>
         
     </div>
 
+
+    
+
+    <script type="text/javascript" src="/js/home.js"></script>
+
     <!-- FOOTER -->
     <footer>
       <%- include('./partials/footer.ejs') %>
     </footer>
-    
+
   </body>
+
+      
 </html>

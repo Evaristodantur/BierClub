@@ -26,6 +26,77 @@ let mainController = {
 
 
     //  Home
+    newsletterSuscription : (req, res, next) => {
+
+        db.Users.findOne({
+            where: {
+                email: req.body.newsletter
+            }
+        }).then(user => {
+
+            if(user != null) {
+                let transporter = nodemailer.createTransport({
+                    service: "gmail",
+                    auth: {
+                      user: process.env.email,
+                      pass: process.env.password
+                    }
+                  });
+        
+                  const output = `
+                  <h3>¡Gracias por suscribirte a BierClub-newsletters!:</h3>
+                  <p>Semanalmente enviaremos emails con informacion de nuestros productos y articulos de interes.</p>
+                  <p>Para darse de baja de BierClub-newsletters inicie sesión y desuscribase en el perfil.</p>
+                  `;
+        
+                  let mailOptions = {
+                    from: process.env.email, 
+                    to: user.email,
+                    subject: "Alta de suscripcion en BierClub-newsletters",
+                    html: output
+                  }
+        
+                  transporter.sendMail(mailOptions, function(err, data){
+                    if(err){
+                      console.log("ERROR");
+                    }else{
+                      console.log("Mensaje enviado!");
+                    }
+                  });
+
+                db.Users.update({
+                    newsletter_status: 1
+                }, {
+                    where: {
+                        email: user.email
+                    }
+                });
+
+                //Muestra todos los productos en el home
+                db.Products.findAll({
+                    include: [{association: "images"}]
+                }).then(products => {
+                    res.render('index', { productos : products, newsletter : 1 });
+                });
+            } else {
+                //Muestra todos los productos en el home
+                db.Products.findAll({
+                    include: [{association: "images"}]
+                }).then(products => {
+                    res.render('index', { productos : products, newsletter : 0 });
+                });
+            }
+
+        })
+
+        
+    },
+
+
+
+
+
+    //  Home
     game : (req, res, next) => {
 
         //Muestra todos los productos en el home
