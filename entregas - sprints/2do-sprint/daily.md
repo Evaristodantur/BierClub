@@ -1,5 +1,18 @@
 # Dailies
 
+### 🗓️ 17/1/21
+  Terminado:
+  - Implementar newsletter en home - form
+  - Modificar userController para que se añada el newsletter_status
+  - Mandar mail al email diciendo que esta suscripto
+  - Modal de newsletter
+  - Validacion de email en newsletter
+    
+   Para hacer hoy:
+  - Link lupuladas y no lupuladas en Nav
+  - Muestra de productos - slider
+  
+
 ### 🗓️ 15/1/21
   Terminado:
   - Crear ruta de newsletter
@@ -7,7 +20,6 @@
     
    Para hacer hoy:
   - Implementar newsletter en home - form
-  
   - Modificar userController para que se añada el newsletter_status
   - Mandar mail al email diciendo que esta suscripto
 
