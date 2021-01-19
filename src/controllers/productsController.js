@@ -54,87 +54,22 @@ let productsController = {
 
     //  /products - Filtro de Productos
     productFilter : (req, res, next) => {
+        console.log(req.url);
+        console.log(req.query.ordenar);
 
         //Se fija si la url es /products
-        if(req.url == '/') {
+        if(req.url.includes('/productAdmin')) {
+
+            //Se fija si la url es /products/productAdmin
+
 
             //Filtro de Nuevos Productos
-            if(req.body.ordenar == "nuevos-productos") {
-                res.redirect('/products');
-            }
-
-            //Filtro de Populares
-            if(req.body.ordenar == "populares") {
-                db.Products.findAll({
-                    include: [{association: "images"}], 
-                    order: [
-                        ['stock', 'DESC']
-                    ]
-                }).then(products => {
-                    db.Categories.findAll({
-                    where: {
-                        status: 1
-                    }
-                })
-                    .then(categories => {
-                        res.render('products/products', { productos : products, categorias: categories, popularesSelected : 1 });
-                    })
-                    
-                });
-            }
-
-            //Filtro de Menor Precio
-            if(req.body.ordenar == "menor-precio") {
-                db.Products.findAll({
-                    include: [{association: "images"}], 
-                    order: [
-                        ['price', 'ASC']
-                    ]
-                }).then(products => {
-                    db.Categories.findAll({
-                        where: {
-                            status: 1
-                        }
-                    })
-                        .then(categories => {
-                            res.render('products/products', { productos : products, categorias: categories, menorPrecioSelected : 1 });
-                        })
-                    
-                });
-            }
-
-            //Filtro de Mayor Precio
-            if(req.body.ordenar == "mayor-precio") {
-                db.Products.findAll({
-                    include: [{association: "images"}], 
-                    order: [
-                        ['price', 'DESC']
-                    ]
-                }).then(products => {
-                    db.Categories.findAll({
-                        where: {
-                            status: 1
-                        }
-                    })
-                        .then(categories => {
-                            res.render('products/products', { productos : products, categorias: categories, mayorPrecioSelected : 1 });
-                        })
-                    
-                });
-            }
-        }
-
-
-        //Se fija si la url es /products/productAdmin
-        if(req.url == '/productAdmin') {
-
-            //Filtro de Nuevos Productos
-            if(req.body.ordenar == "nuevos-productos") {
+            if(req.query.ordenar == "nuevos-productos") {
                 res.redirect('/products/productAdmin');
             }
 
             //Filtro de Populares
-            if(req.body.ordenar == "populares") {
+            if(req.query.ordenar == "populares") {
                 db.Products.findAll({
                     include: [{association: "images"}], 
                     order: [
@@ -154,7 +89,7 @@ let productsController = {
             }
 
             //Filtro de Menor Precio
-            if(req.body.ordenar == "menor-precio") {
+            if(req.query.ordenar == "menor-precio") {
                 db.Products.findAll({
                     include: [{association: "images"}], 
                     order: [
@@ -174,7 +109,7 @@ let productsController = {
             }
 
             //Filtro de Mayor Precio
-            if(req.body.ordenar == "mayor-precio") {
+            if(req.query.ordenar == "mayor-precio") {
                 db.Products.findAll({
                     include: [{association: "images"}], 
                     order: [
@@ -192,7 +127,82 @@ let productsController = {
                     
                 });
             }
+            
+
+
+        } else {
+
+
+            //Filtro de Nuevos Productos
+            if(req.query.ordenar == "nuevos-productos") {
+                res.redirect('/products');
+            }
+
+            //Filtro de Populares
+            if(req.query.ordenar == "populares") {
+                db.Products.findAll({
+                    include: [{association: "images"}], 
+                    order: [
+                        ['stock', 'DESC']
+                    ]
+                }).then(products => {
+                    db.Categories.findAll({
+                    where: {
+                        status: 1
+                    }
+                })
+                    .then(categories => {
+                        res.render('products/products', { productos : products, categorias: categories, popularesSelected : 1 });
+                    })
+                    
+                });
+            }
+
+            //Filtro de Menor Precio
+            if(req.query.ordenar == "menor-precio") {
+                db.Products.findAll({
+                    include: [{association: "images"}], 
+                    order: [
+                        ['price', 'ASC']
+                    ]
+                }).then(products => {
+                    db.Categories.findAll({
+                        where: {
+                            status: 1
+                        }
+                    })
+                        .then(categories => {
+                            res.render('products/products', { productos : products, categorias: categories, menorPrecioSelected : 1 });
+                        })
+                    
+                });
+            }
+
+            //Filtro de Mayor Precio
+            if(req.query.ordenar == "mayor-precio") {
+                db.Products.findAll({
+                    include: [{association: "images"}], 
+                    order: [
+                        ['price', 'DESC']
+                    ]
+                }).then(products => {
+                    db.Categories.findAll({
+                        where: {
+                            status: 1
+                        }
+                    })
+                        .then(categories => {
+                            res.render('products/products', { productos : products, categorias: categories, mayorPrecioSelected : 1 });
+                        })
+                    
+                });
+            }
+
+            
         }
+
+        
+        
         
     },
 
@@ -260,10 +270,10 @@ let productsController = {
     productCategorieFilter : (req, res, next) => {
         console.log(req.url);
         
-        let categorieSelected = req.body.filtroCategoria
+        let categorieSelected = req.query.filtroCategoria
         console.log(categorieSelected);
 
-        if(req.url == "/productAdmin/categorie") {
+        if(req.url.includes('/productAdmin')) {
             db.Products.findAll({
                 include: [{association: "images"}, {association: "categories", where: { id: categorieSelected}}], 
                 order: [

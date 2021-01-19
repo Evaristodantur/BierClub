@@ -25,10 +25,10 @@ let verifyAccountMiddleware = require("../middlewares/verifyAccountMiddleware");
 router.get('/', productsController.index);
 
 /* GET     /products                                                    page. */
-router.post('/', productsController.productFilter);
+router.get('/productsFilter', productsController.productFilter);
 
 /* GET     /products                                                    page. */
-router.post('/categorie', productsController.productCategorieFilter);
+router.get('/categorie', productsController.productCategorieFilter);
 
 /* GET     /products                                                    page. */
 router.get('/search', productsController.productSearch);
@@ -59,13 +59,13 @@ router.get('/productAdmin',
                                         productsController.productAdmin);
 
 /* GET     /products                                                    page. */
-router.post('/productAdmin', productsController.productFilter);
+router.get('/productAdmin/productsFilter', productsController.productFilter);
 
 /* GET     /products                                                    page. */
 router.get('/productAdmin/search', productsController.productSearch);
 
 /* GET     /products                                                    page. */
-router.post('/productAdmin/categorie', productsController.productCategorieFilter);
+router.get('/productAdmin/categorie', productsController.productCategorieFilter);
 
 /**********************************PRODUCT ADD****************************************/
 

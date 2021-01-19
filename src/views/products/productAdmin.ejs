@@ -38,7 +38,7 @@
 
 					<!-- SELECCION DE FILTRO -->
 					<div>
-						<form action="/products/productAdmin" method="POST" class="filtro">
+						<form action="/products/productAdmin/productsFilter" method="GET" class="filtro">
 							<select class="select-ordenar" name="ordenar" id="ordenar" onchange="this.form.submit()">
 								<option value="nuevos-productos" <% if(typeof nuevosProductosSelected != "undefined") { %>
 									selected="selected"
@@ -58,7 +58,7 @@
 
 					<!-- SELECCION DE CATEGORIAS -->
 					<div>
-						<form action="/products/productAdmin/categorie" method="POST" class="filtro">
+						<form action="/products/productAdmin/categorie" method="GET" class="filtro">
 							<select class="select-ordenar" name="filtroCategoria" id="categoria" onchange="this.form.submit()">
 								
 								
