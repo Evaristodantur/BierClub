@@ -1,5 +1,15 @@
 # Dailies
 
+### 🗓️ 18/1/21
+  Terminado:
+  - Link lupuladas y no lupuladas en Nav
+  - Method GET en filtrado de productos en /products y /productAdmin
+    
+   Para hacer hoy:
+  - Link lupuladas y no lupuladas en Nav
+  - Muestra de productos - slider
+
+
 ### 🗓️ 17/1/21
   Terminado:
   - Implementar newsletter en home - form
@@ -10,6 +20,7 @@
     
    Para hacer hoy:
   - Link lupuladas y no lupuladas en Nav
+  - Method GET en filtrado de productos en /products y /productAdmin
   - Muestra de productos - slider
   
 
