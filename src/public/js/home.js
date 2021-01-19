@@ -30,6 +30,8 @@ window.addEventListener('load', () => {
             });
         }
     }
+    
 
+    //Ejecucion de Funciones
     sendNewsletterNotification();
 });

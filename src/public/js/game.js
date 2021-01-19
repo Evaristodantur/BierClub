@@ -130,7 +130,7 @@ let game = document.addEventListener('DOMContentLoaded', () => {
                 if(isGameOver) {
                     if(window.confirm(`¡Game Over! Pasaste "${score}" homeros :D
     ¿Desea volver a jugar?`)) {
-                        window.location = "http://localhost:3000/game";
+                        location.reload();
                     } else {
                         //Remueve todos los hijos
                         while(grid.firstChild) {
