@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8431526c8f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/stylesheets/__general.css">
-    <link rel="stylesheet" href="/stylesheets/__index.css">
+    <link rel="stylesheet" href="/stylesheets/prueba.css">
     <script type="text/javascript" src="/js/productsSlider.js"></script>
 </head>
 <body>
@@ -22,7 +22,7 @@
 
   
           <!-- PRODUCTOS-->
-          <section class="productos" id="productsSlider">
+          <section class="productos">
   
             <div class="btnAnt" id="product-prev">
               <a href="javascript:void();">
@@ -32,7 +32,8 @@
               </a>
             </div>
           
-  
+            <section class="productsSlider">
+            
             <% for (let i=0; i < productos.length ; i++) { %>
   
               <article class="producto " id="productArticle">
@@ -60,6 +61,8 @@
                 <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
               </article>
             <% } %>
+
+          </section>
           
             <div class="btnSig" id="product-next">
               <a href="javascript:void();">
