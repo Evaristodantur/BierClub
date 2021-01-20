@@ -1,5 +1,15 @@
 # Dailies
 
+### 🗓️ 19/1/21
+  Terminado:
+  - Link lupuladas y no lupuladas en Nav
+  - Muestra de productos (slider) en novedades - index
+    
+   Para hacer hoy:
+  - Especificar el productSlider
+  - Filtrado de productos en home
+  
+
 ### 🗓️ 18/1/21
   Terminado:
   - Link lupuladas y no lupuladas en Nav
