@@ -37,7 +37,7 @@
           
             <section class="productsSlider">
             
-            <% for (let i=0; i < 5 ; i++) { %>
+            <% for (let i=0; i < productos.length ; i++) { %>
   
               <article class="producto productNovedades">
                 <a href="/products/productDetail/<%= productos[i].id %>">
@@ -95,11 +95,17 @@
           </ul>
         </section>
 
-
+        
 
 
         <!-- PRODUCTOS -->
         <main>
+          <!-- NOVEDADES-->
+          <div class="titulos">
+            <h2>¡Productos que se encuentran en stock!</h2>
+          </div>
+
+
           <!-- PRODUCTOS-->
           <section class="productos">
   
