@@ -1,5 +1,16 @@
 # Dailies
 
+### 🗓️ 20/1/21
+  Terminado:
+  - Especificar el productSlider
+  - Filtrado de productos en home
+    
+   Para hacer hoy:
+  - Slider de Productos Relacionados
+  - Validacion de form en Register
+  - Validacion de form en Login
+  
+
 ### 🗓️ 19/1/21
   Terminado:
   - Link lupuladas y no lupuladas en Nav
