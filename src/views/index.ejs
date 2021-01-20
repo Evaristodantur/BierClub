@@ -32,41 +32,49 @@
         <!-- PRODUCTOS-->
         <section class="productos">
 
-          <div class="btnAnt">
-            <a href="#">
+          <div class="btnAnt" id="product-prev">
+            <a href="javascript:void();">
               <div class="button-pass">
                 <i class="fas fa-chevron-circle-left"></i>
               </div>
             </a>
           </div>
         
-          <% let arrayResponsive = ['', 'resolucionMenorA320', 'resolucionMenorA768', 'resolucionMenorA1024', 'resolucionMenorA1200'] %>
-          <% for (let i=0; i < arrayResponsive.length ; i++) { %>
+          <section class="productsSlider">
+            
+            <% for (let i=0; i < productos.length ; i++) { %>
+  
+              <article class="producto productNovedades">
+                <a href="/products/productDetail/<%= productos[i].id %>">
+                    <% if(typeof productos[i].images[0] != "undefined") { %>
+                        <img src="/images/productos/<%= productos[i].images[0].name %>" alt="<%= productos[i].name %>">
+                    <% } else { %>
+                        <img src="/images/productos/product-image-not-available.jpg" alt="<%= productos[i].name %>">
+                    <% } %>                       
+                </a>
+                <h2 class="producto-titulo"><%= productos[i].name %></h2>
+                <div class="precio-stock">
+                  <div>
+                    <h4 class="etiqueta-precio">$<%= productos[i].price %></h4>
+                  </div>
+                  <div>
+                    <% if (productos[i].stock > 0) { %>
+                      <h5 class="etiqueta-stock">Stock Disponible</h5>
+                    <% } else { %>
+                      <h5 class="stock sinStock">Sin Stock</h5>
+                    <% } %>
+                    
+                  </div>
+                </div>
+                <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
+              </article>
+            <% } %>
 
-            <article class="producto <%= arrayResponsive[i] %>">
-              <a href="/products/productDetail/<%= productos[i].id %>">
-                <img src="/images/productos/<%= productos[i].images[0].name %>" alt="<%= productos[i].name %>">
-              </a>
-              <h2 class="producto-titulo"><%= productos[i].name %></h2>
-              <div class="precio-stock">
-                <div>
-                  <h4 class="etiqueta-precio">$<%= productos[i].price %></h4>
-                </div>
-                <div>
-                  <% if (productos[i].stock > 0) { %>
-                    <h5 class="etiqueta-stock">Stock Disponible</h5>
-                  <% } else { %>
-                    <h5 class="stock sinStock">Sin Stock</h5>
-                  <% } %>
-                  
-                </div>
-              </div>
-              <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-            </article>
-          <% } %>
+          </section>
+          
         
-          <div class="btnSig">
-            <a href="#">
+          <div class="btnSig" id="product-next">
+            <a href="javascript:void();">
               <div class="button-pass">
                 <i class="fas fa-chevron-circle-right"></i>
               </div>
@@ -115,7 +123,7 @@
                 </div>
               </a>
             </div>
-
+            <% let arrayResponsive = ['', 'resolucionMenorA320', 'resolucionMenorA768', 'resolucionMenorA1024', 'resolucionMenorA1200'] %>
             <% for (let i=0; i < arrayResponsive.length ; i++) { %>
 
               <article class="producto <%= arrayResponsive[i] %>">
