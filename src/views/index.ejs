@@ -117,7 +117,7 @@
         <!-- PRODUCTOS -->
         <main>
           <!-- Productos en Stock -->
-          <div class="titulos">
+          <div class="titulos titulo-ProductInStock">
             <h2>¡Productos que se encuentran en stock!</h2>
           </div>
 
@@ -134,7 +134,6 @@
             <section class="productsSlider productFilter">
             
             <% for (let i=0; i < productos.length ; i++) { %>
-  
               <article class="producto artProductFilter">
                 <a href="/products/productDetail/<%= productos[i].id %>">
                     <% if(typeof productos[i].images[0] != "undefined") { %>
