@@ -35,6 +35,7 @@
 					<div>
 						<form action="/products/productsFilter" method="GET" class="filtro">
 							<select class="select-ordenar" name="ordenar" id="ordenar" onchange="this.form.submit()">
+								<option value="">Filtrado de Productos</option>
 								<option value="nuevos-productos" <% if(typeof nuevosProductosSelected != "undefined") { %>
 									selected="selected"
 								<% } %>>Nuevos Productos</option>
@@ -55,8 +56,7 @@
 					<div>
 						<form action="/products/categorie" method="GET" class="filtro">
 							<select class="select-ordenar" name="filtroCategoria" id="categoria" onchange="this.form.submit()">
-								
-								
+								<option value="">Filtrado por Categoria</option>
 								<% categorias.forEach(categoria => { %>
 									<% if(typeof categoriaSeleccionada != "undefined" && categoria.id == categoriaSeleccionada) { %>
 										

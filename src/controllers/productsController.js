@@ -65,7 +65,22 @@ let productsController = {
 
             //Filtro de Nuevos Productos
             if(req.query.ordenar == "nuevos-productos") {
-                res.redirect('/products/productAdmin');
+                db.Products.findAll({
+                    include: [{association: "images"}], 
+                    order: [
+                        ['id', 'DESC']
+                    ]
+                }).then(products => {
+                    db.Categories.findAll({
+                        where: {
+                            status: 1
+                        }
+                    })
+                        .then(categories => {
+                            res.render('products/productAdmin', { productos : products, categorias: categories, nuevosProductosSelected : 1 });
+                        });
+                    
+                });
             }
 
             //Filtro de Populares
@@ -135,7 +150,22 @@ let productsController = {
 
             //Filtro de Nuevos Productos
             if(req.query.ordenar == "nuevos-productos") {
-                res.redirect('/products');
+                db.Products.findAll({
+                    include: [{association: "images"}], 
+                    order: [
+                        ['id', 'DESC']
+                    ]
+                }).then(products => {
+                    db.Categories.findAll({
+                    where: {
+                        status: 1
+                    }
+                })
+                    .then(categories => {
+                        res.render('products/products', { productos : products, categorias: categories, nuevosProductosSelected : 1 });
+                    })
+                    
+                });
             }
 
             //Filtro de Populares
