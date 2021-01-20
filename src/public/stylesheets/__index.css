@@ -370,11 +370,6 @@
    RESOLUCION: 1200 a 1400
    ========================================================================== */
 @media (min-width: 1200px) and (max-width: 1400px) {
-    /*1 PRODUCTO SACADO*/
-    .home main section.productos article.producto.resolucionMenorA1200 {
-        display: none;
-    }
-
     .home main section.productos article.producto img {
         height: 305px;
     }
@@ -412,10 +407,6 @@
    RESOLUCION: 1024 a 1200
    ========================================================================== */
 @media (min-width: 1024px) and (max-width: 1200px) {
-    /*1 PRODUCTO SACADO*/
-    .home main section.productos article.producto.resolucionMenorA1200 {
-        display: none;
-    }
 
     /*SECCION - PRODUCTOS*/
     .home main section.productos {
@@ -461,11 +452,6 @@
    RESOLUCION: 768 a 1023
    ========================================================================== */
 @media (min-width: 768px) and (max-width: 1023px) {
-    /*2 PRODUCTOS SACADOS*/
-    .home main section.productos article.producto.resolucionMenorA1200, 
-    .home main section.productos article.producto.resolucionMenorA1024 {
-        display: none;
-    }
 
     /*SECCION - PRODUCTOS*/
     .home main section.productos {
@@ -617,13 +603,6 @@
     .home section div.banner img {
         width: 750px;    
     }
-    
-    /*3 PRODUCTOS SACADOS*/
-    .home main section.productos article.producto.resolucionMenorA1200, 
-    .home main section.productos article.producto.resolucionMenorA1024,
-    .home main section.productos article.producto.resolucionMenorA768 {
-        display: none;
-    }
 
     /*SECCION - PRODUCTOS*/
     .home main section.productos {
@@ -701,14 +680,6 @@
 
     .home section div.banner img {
         width: 750px;    
-    }
-
-    /*4 PRODUCTOS SACADOS*/
-    .home main section.productos article.producto.resolucionMenorA1200, 
-    .home main section.productos article.producto.resolucionMenorA1024,
-    .home main section.productos article.producto.resolucionMenorA768,
-    .home main section.productos article.producto.resolucionMenorA320 {
-        display: none;
     }
 
     /*SECCION - PRODUCTOS*/
