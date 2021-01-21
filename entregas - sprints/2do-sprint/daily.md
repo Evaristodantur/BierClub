@@ -3,9 +3,9 @@
 ### 🗓️ 21/1/21
   Terminado:
   - Slider de Productos Relacionados
+  - Validacion de form en Register
     
    Para hacer hoy:
-  - Validacion de form en Register
   - Validacion de form en Login
   
 
