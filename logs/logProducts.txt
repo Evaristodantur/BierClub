@@ -852,3 +852,27 @@ Stock: 0
 Categoria: Lupuladas
 Descripción: 
 *************************************************************
+Fecha de creacion/modificación del producto: 20/1/2021 23:26:49
+Producto: de prueba 3
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 20/1/2021 23:26:55
+Producto: de prueba 4
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 20/1/2021 23:27:02
+Producto: de prueba 5
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Vino
+Descripción: 
+*************************************************************

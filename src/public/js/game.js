@@ -1,7 +1,7 @@
+
+
 let game = document.addEventListener('DOMContentLoaded', () => {
 
-    
-    
     const barney = document.querySelector('.barney');
     const grid = document.querySelector('.grid');
     let isJumping = false;
@@ -9,12 +9,18 @@ let game = document.addEventListener('DOMContentLoaded', () => {
     let isGameOver = false;
     let score = 0;
     let viewWidth = window.innerWidth;
+    
+    
+    
+
+    
 
     if(viewWidth <= 1200) {
         window.alert('Este juego funciona bien solo para dispositivos con mas de 1200px');
         window.location = "http://localhost:3000/";
     } else {
         window.alert('Para jugar con la tecla "enter" o "espacio", estas listo?');
+        setTimeout(document.querySelector('audio').play(), 30)
     }
 
 

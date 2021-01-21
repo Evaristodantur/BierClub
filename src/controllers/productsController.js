@@ -12,11 +12,16 @@ let productsController = {
     //Para realizar pruebas
     prueba : (req, res, next) => {
 
-        db.Users.findAll()
-            .then(users => {
+        db.Products.findAll({
+            include: [{association: "categories"}],
+            where: {
+                category_id: 1
+            }
+        })
+            .then(products => {
             
             
-            res.send(users);
+            res.send(products);
 
             
         });
@@ -358,7 +363,24 @@ let productsController = {
         db.Products.findByPk(idUrl, {
                 include: [{association: "images"}]
             }).then(product => {
-                product ? (res.render("products/productDetail", {producto: product})) : (res.render("error"));
+                if(product) {
+                    db.Products.findAll({
+                        include: [{association: "images"}],
+                        where: {
+                            category_id: product.category_id
+                        }
+                    })
+                        .then(products => {
+                            res.render("products/productDetail", {productosRelacionados : products, producto: product})
+                    });
+
+                } else {
+
+                    res.render("error")
+                }
+    
+                
+                
             });
     },
     

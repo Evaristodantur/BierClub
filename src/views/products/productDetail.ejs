@@ -3,6 +3,7 @@
   <head>
     <title>BierClub - Detalle del producto</title>
     <%- include('../partials/head.ejs') %>
+    <script type="text/javascript" src="/js/productDetail.js"></script>
   </head>
   
 
@@ -125,12 +126,71 @@
       </section>
     </div>
 
+
+
     
         <!-- PRODUCTOS RELACIONADOS -->
         <div>
           <h1 class="titulo-productosRelacionado">Productos Relacionados</h1>
         </div>
-        <%- include('../partials/productosRelacionados.ejs') %>
+
+        <!-- PRODUCTOS -->
+        <section class="productos">
+  
+          <!-- BOTON-IZQUIERDA -->
+          <div class="btnAnt">
+            <a href="javascript:void();">
+              <div class="button-pass">
+                <i class="fas fa-chevron-circle-left"></i>
+              </div>
+            </a>
+          </div>
+
+          <section class="productsSliderRelacionados">
+
+          
+
+          <!-------- PRODUCTO 1 - COMIENZO -------->
+          <% for (let i=0; i < productosRelacionados.length ; i++) { %>
+              <article class="producto artProductFilter">
+                <a href="/products/productDetail/<%= productosRelacionados[i].id %>">
+                    <% if(typeof productosRelacionados[i].images[0] != "undefined") { %>
+                        <img src="/images/productos/<%= productosRelacionados[i].images[0].name %>" alt="<%= productosRelacionados[i].name %>">
+                    <% } else { %>
+                        <img src="/images/productos/product-image-not-available.jpg" alt="<%= productosRelacionados[i].name %>">
+                    <% } %>                       
+                </a>
+                <h2 class="producto-titulo"><%= productosRelacionados[i].name %></h2>
+                <div class="precio-stock">
+                  <div>
+                    <h4 class="etiqueta-precio">$<%= productosRelacionados[i].price %></h4>
+                  </div>
+                  <div>
+                    <% if (productosRelacionados[i].stock > 0) { %>
+                      <h5 class="etiqueta-stock">Stock Disponible</h5>
+                    <% } else { %>
+                      <h5 class="stock sinStock">Sin Stock</h5>
+                    <% } %>
+                    
+                  </div>
+                </div>
+                <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
+              </article>
+            <% } %>
+
+          </section>
+        
+          <!-- BOTON-DERECHA -->
+          <div class="btnSig">
+            <a href="javascript:void();">
+              <div class="button-pass">
+                <i class="fas fa-chevron-circle-right"></i>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        
 
     <!-- FOOTER -->
     <footer>

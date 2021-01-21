@@ -220,6 +220,12 @@ IMAGEN
 }
 
 
+.productsSliderRelacionados {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 
 /* ==========================================================================
