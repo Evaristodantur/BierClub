@@ -1,6 +1,6 @@
 
 
-let game = document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
     const barney = document.querySelector('.barney');
     const grid = document.querySelector('.grid');

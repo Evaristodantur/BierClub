@@ -26,7 +26,7 @@
 				<%if(typeof verificarUsuario != "undefined"){%>
 					<p class="success-message"><%= verificarUsuario %></p>
 				<%}%>
-				<input class="input-registro" type="text" id="nombre" name="nombre" placeholder="Nombre"
+				<input class="input-registro" type="text" id="nombre" name="nombre" placeholder="Nombre" value=""
 				<% if(typeof errors != "undefined"){%>
 					value="<%= errors.reqNombre %>"
 				<%}%>>
@@ -42,7 +42,7 @@
 
 			<!-- MAIL -->
 			<div class="campo-input">
-				<input class="input-registro" type="email"  id="email" name="email" placeholder="Email"
+				<input class="input-registro" type="email"  id="email" name="email" placeholder="Email" value=""
 				<% if(typeof errors != "undefined"){%>
 					value="<%= errors.reqEmail %>"
 				<%}%>>
@@ -58,7 +58,7 @@
 
 			<!-- CONTRASEÑA -->
 			<div class="campo-input">
-				<input class="input-registro" type="password" id="Contrasenia" name="contrasenia" placeholder="Contraseña"> 
+				<input class="input-registro" type="password" id="contrasenia" name="contrasenia" placeholder="Contraseña" value=""> 
 				<%if(typeof errors != "undefined"){%>
 					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
 						<%if(errors.errors[i].param == "contrasenia"){%>
@@ -71,7 +71,7 @@
 
 			<!-- CONFIRMAR CONTRASEÑA -->
 			<div class="campo-input">
-				<input class="input-registro" type="password" id="confirmarContrasenia" name="confirmarContrasenia" placeholder="Confirmar contraseña"> 
+				<input class="input-registro" type="password" id="confirmarContrasenia" name="confirmarContrasenia" placeholder="Confirmar contraseña" value=""> 
 				<%if(typeof errors != "undefined"){%>
 					<%for(let i = 0 ; i < errors.errors.length ; i++){%>
 						<%if(errors.errors[i].param == "confirmarContrasenia"){%>
@@ -98,7 +98,7 @@
 
 			<!-- BOTON REGISTRARSE -->
 			<div class="campo-input">
-				<button class="input-button" type="submit", id="registrar", value="registrar"> Registrarse </button>
+				<button class="input-button" type="submit" id="registrar" value="registrar"> Registrarse </button>
 			</div>
 			</form>
 
