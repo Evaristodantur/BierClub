@@ -1,5 +1,14 @@
 # Dailies
 
+### 🗓️ 21/1/21
+  Terminado:
+  - Slider de Productos Relacionados
+    
+   Para hacer hoy:
+  - Validacion de form en Register
+  - Validacion de form en Login
+  
+
 ### 🗓️ 20/1/21
   Terminado:
   - Especificar el productSlider
