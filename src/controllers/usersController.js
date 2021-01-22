@@ -18,7 +18,7 @@ let usersController = {
       //Busca todos los usuarios y los renderiza en la vista
       db.Users.findAll()
         .then(users => {
-          res.render('users/usersAdmin', { usuarios : users });
+          res.render('users/usersAdmin', { usuarios : users, userLogged : req.session.usuarioLogueado });
         });
     },
 
@@ -35,7 +35,7 @@ let usersController = {
       db.Users.findByPk(idUrl)
         .then(user => {
           if(user != null) {
-            res.render("users/usersAdminEdit", { usuarios : user });
+            res.render("users/usersAdminEdit", { usuarios : user, userLogged : req.session.usuarioLogueado });
           } else {
             res.render('users/verifyAccount', { msgErrorUsuarioInexistente: 'Este usuario no existe'});
           }          
@@ -82,7 +82,7 @@ let usersController = {
 
     //  /users/register
     create : (req, res, next) => {
-      res.render('users/register');
+      res.render('users/register', { userLogged : req.session.usuarioLogueado });
     },
 
 
@@ -99,7 +99,7 @@ let usersController = {
 
       //Verifica los errores y los renderiza
       if (!errores.isEmpty()){
-        return res.render("users/register", {errors : errores});
+        return res.render("users/register", {errors : errores, userLogged : req.session.usuarioLogueado});
       }
 
       //Codifco de "verify_code"
@@ -146,7 +146,7 @@ let usersController = {
           console.log("Mensaje enviado!");
 
           // Te envia a la vista una vez el form fue completado
-          res.render("users/register", { verificarUsuario : "¡Te registraste! Por favor verifica tu dirección email."});
+          res.render("users/register", { verificarUsuario : "¡Te registraste! Por favor verifica tu dirección email.", userLogged : req.session.usuarioLogueado});
         }
       });
 
@@ -158,7 +158,7 @@ let usersController = {
 
     //  /users/login
     loginRender : (req, res, next) => {
-      res.render('users/login');
+      res.render('users/login', { userLogged : req.session.usuarioLogueado });
     },
 
 
@@ -174,7 +174,7 @@ let usersController = {
 
       //Renderiza la vista con los errores
       if (!errores.isEmpty()){
-        return res.render("users/login", {errors : errores});
+        return res.render("users/login", {errors : errores, userLogged : req.session.usuarioLogueado});
       }
 
       //Busca el usuario a iniciar
@@ -216,7 +216,7 @@ let usersController = {
 
           //Renderiza la vista de inicio de session con el error de contraseña o mail incorrectos
           let credencialesInvalidas = "El usuario/contraseña son incorrectos";
-          return res.render("users/login", {credencialesInvalidas : credencialesInvalidas});
+          return res.render("users/login", {credencialesInvalidas : credencialesInvalidas, userLogged : req.session.usuarioLogueado});
         }
 
       });
@@ -236,9 +236,9 @@ let usersController = {
         .then((user) => {
           if(user != null) {
             user.errors = undefined;
-            res.render("users/perfil", { usuario : user });
+            res.render("users/perfil", { usuario : user, userLogged : req.session.usuarioLogueado });
           } else {
-            res.render("error");
+            res.render("error", { userLogged : req.session.usuarioLogueado });
           }
         });
     },
@@ -288,7 +288,7 @@ let usersController = {
             
                 user.errors = errores.errors;
                 
-                return res.render("users/perfil", { usuario : user });
+                return res.render("users/perfil", { usuario : user, userLogged : req.session.usuarioLogueado });
               } else {
   
                 //Actualiza el usuario
@@ -316,7 +316,7 @@ let usersController = {
             
               user.errors = errores.errors;
               
-              return res.render("users/perfil", { usuario : user });
+              return res.render("users/perfil", { usuario : user, userLogged : req.session.usuarioLogueado });
             } else {
 
               //Actualiza el perfil den usuario
@@ -371,9 +371,9 @@ let usersController = {
           .then(user => {
 
             if(user != null) {
-              res.render("users/pedidos", user);
+              res.render("users/pedidos", { user : user, userLogged : req.session.usuarioLogueado });
             } else {
-              res.render("error");
+              res.render("error", { userLogged : req.session.usuarioLogueado });
             }
 
           });
@@ -398,17 +398,17 @@ let usersController = {
 
             //Renderiza la vista "la cuenta no existe"
             if (user == null) {
-              return res.render('users/verifyAccount', { msgError: 'La cuenta que quieres verificar no existe'});
+              return res.render('users/verifyAccount', { msgError: 'La cuenta que quieres verificar no existe', userLogged : req.session.usuarioLogueado});
             }
             
             //Renderiza la vista "la cuenta ya fue verificada"
             if (user.verify == 1) {
-              return res.render('users/verifyAccount', { msgErrorYaVerificado: 'Este email ya ha sido verificado'} );
+              return res.render('users/verifyAccount', { msgErrorYaVerificado: 'Este email ya ha sido verificado', userLogged : req.session.usuarioLogueado} );
             }
 
             //Renderiza la vista con la cuenta ya verificada
             db.sequelize.query(`UPDATE users SET verify = '1' WHERE users.id = ${user.id}`);
-            return res.render('users/verifyAccount', { usuario : user });
+            return res.render('users/verifyAccount', { usuario : user, userLogged : req.session.usuarioLogueado });
 
           });
     },
@@ -455,7 +455,7 @@ let usersController = {
             }
           });
 
-          res.render('users/verifyAccount', { msgErrorReenviado : "El codigo de verificación ha sido reenviado a tu dirección de correo electronico." });
+          res.render('users/verifyAccount', { msgErrorReenviado : "El codigo de verificación ha sido reenviado a tu dirección de correo electronico.", userLogged : req.session.usuarioLogueado });
           
         });
 

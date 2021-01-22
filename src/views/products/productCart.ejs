@@ -6,7 +6,7 @@
   </head>
   
   <header>
-    <%- include('../partials/nav.ejs') %>
+    <%- include('../partials/nav.ejs', userLogged) %>
     <br>
   </header>
   <body>
@@ -248,7 +248,7 @@
         <div>
           <h1 class="titulo-productosRelacionado">Productos Relacionados</h1>
         </div>
-        <%- include('../partials/productosRelacionados.ejs') %>
+        
         
 
         <!-------- FOOTER --------->

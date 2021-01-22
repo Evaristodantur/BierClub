@@ -48,11 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       validacionDeCampos(nombre, nombre.value.length < 3, "error-total", "El nombre debe tener al menos 2 caracteres")
-      validacionDeCampos(email, !(/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})/i.test(email.value)), "error-total", "El email debe ser valido")
-      validacionDeCampos(contrasenia, contrasenia.value.length < 8 || email.value == contrasenia.value, "error-total", "La contraseña debe tener al menos 8 caracteres")
-      validacionDeCampos(confirmarContrasenia, confirmarContrasenia.value.length < 8 || email.value == confirmarContrasenia.value, "error-total", "La contraseña debe tener al menos 8 caracteres")
-      validacionDeCampos(terminosCondiciones, !terminosCondiciones.checked, "error-terminosCondiciones", "Por favor acepta los términos y condiciones")
-      validacionDeCampos(confirmarContrasenia, confirmarContrasenia.value != contrasenia.value || contrasenia.value == "" || confirmarContrasenia.value == "", "error-total", "Las contraseñas no coinciden")
+      validacionDeCampos(email, !(/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})/i.test(email.value)), "error-total", "* El email debe ser valido")
+      validacionDeCampos(contrasenia, contrasenia.value.length < 8 || email.value == contrasenia.value, "error-total", "* La contraseña debe tener al menos 8 caracteres")
+      validacionDeCampos(confirmarContrasenia, confirmarContrasenia.value.length < 8 || email.value == confirmarContrasenia.value, "error-total", "* La contraseña debe tener al menos 8 caracteres")
+      validacionDeCampos(terminosCondiciones, !terminosCondiciones.checked, "error-terminosCondiciones", "* Por favor acepta los términos y condiciones")
+      validacionDeCampos(confirmarContrasenia, confirmarContrasenia.value != contrasenia.value || contrasenia.value == "" || confirmarContrasenia.value == "", "error-total", "* Las contraseñas no coinciden")
       
       if(hayError || !terminosCondiciones.checked) {
         e.preventDefault();

@@ -10,7 +10,7 @@
     
     <!-- NAV -->
     <header>
-      <%- include('./partials/nav2.ejs') %>
+      <%- include('./partials/nav2.ejs', userLogged) %>
     </header>
     
     <!-- CONTAINER HOME -->
@@ -42,7 +42,6 @@
           </div>
         
           <section class="productsSlider">
-            
             <% for (let i=0; i < productos.length ; i++) { %>
   
               <article class="producto productNovedades">

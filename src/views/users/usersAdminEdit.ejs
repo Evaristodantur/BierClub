@@ -12,7 +12,7 @@
 <body>
 	<!-- NAV -->
 	<header>
-		<%- include('../partials/nav.ejs') %>
+		<%- include('../partials/nav.ejs', userLogged) %>
 	</header>
     <div class="container-users">
         <h1>Usuario: <%= usuarios.name %></h1>

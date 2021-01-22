@@ -46,7 +46,7 @@ let productsController = {
                     }
                 })
                     .then(categories => {
-                        res.render('products/products', { productos : products, categorias: categories });
+                        res.render('products/products', { productos : products, categorias: categories, userLogged : req.session.usuarioLogueado });
                     })
                 
                 
@@ -82,7 +82,7 @@ let productsController = {
                         }
                     })
                         .then(categories => {
-                            res.render('products/productAdmin', { productos : products, categorias: categories, nuevosProductosSelected : 1 });
+                            res.render('products/productAdmin', { productos : products, categorias: categories, nuevosProductosSelected : 1, userLogged : req.session.usuarioLogueado });
                         });
                     
                 });
@@ -102,7 +102,7 @@ let productsController = {
                         }
                     })
                         .then(categories => {
-                            res.render('products/productAdmin', { productos : products, categorias: categories, popularesSelected : 1 });
+                            res.render('products/productAdmin', { productos : products, categorias: categories, popularesSelected : 1, userLogged : req.session.usuarioLogueado });
                         });
                     
                 });
@@ -122,7 +122,7 @@ let productsController = {
                         }
                     })
                         .then(categories => {
-                            res.render('products/productAdmin', { productos : products, categorias: categories, menorPrecioSelected : 1 });
+                            res.render('products/productAdmin', { productos : products, categorias: categories, menorPrecioSelected : 1, userLogged : req.session.usuarioLogueado });
                         });
                     
                 });
@@ -142,7 +142,7 @@ let productsController = {
                         }
                     })
                         .then(categories => {
-                            res.render('products/productAdmin', { productos : products, categorias: categories, mayorPrecioSelected : 1 });
+                            res.render('products/productAdmin', { productos : products, categorias: categories, mayorPrecioSelected : 1, userLogged : req.session.usuarioLogueado });
                         });
                     
                 });
@@ -167,7 +167,7 @@ let productsController = {
                     }
                 })
                     .then(categories => {
-                        res.render('products/products', { productos : products, categorias: categories, nuevosProductosSelected : 1 });
+                        res.render('products/products', { productos : products, categorias: categories, nuevosProductosSelected : 1, userLogged : req.session.usuarioLogueado });
                     })
                     
                 });
@@ -187,7 +187,7 @@ let productsController = {
                     }
                 })
                     .then(categories => {
-                        res.render('products/products', { productos : products, categorias: categories, popularesSelected : 1 });
+                        res.render('products/products', { productos : products, categorias: categories, popularesSelected : 1, userLogged : req.session.usuarioLogueado });
                     })
                     
                 });
@@ -207,7 +207,7 @@ let productsController = {
                         }
                     })
                         .then(categories => {
-                            res.render('products/products', { productos : products, categorias: categories, menorPrecioSelected : 1 });
+                            res.render('products/products', { productos : products, categorias: categories, menorPrecioSelected : 1, userLogged : req.session.usuarioLogueado });
                         })
                     
                 });
@@ -227,7 +227,7 @@ let productsController = {
                         }
                     })
                         .then(categories => {
-                            res.render('products/products', { productos : products, categorias: categories, mayorPrecioSelected : 1 });
+                            res.render('products/products', { productos : products, categorias: categories, mayorPrecioSelected : 1, userLogged : req.session.usuarioLogueado });
                         })
                     
                 });
@@ -266,7 +266,7 @@ let productsController = {
                     }
                 })
                     .then(categories => {
-                        res.render('products/productAdmin', { productos : products, categorias: categories});
+                        res.render('products/productAdmin', { productos : products, categorias: categories, userLogged : req.session.usuarioLogueado});
                     });
                      
             });
@@ -289,7 +289,7 @@ let productsController = {
                     }
                 })
                     .then(categories => {
-                        res.render('products/products', { productos : products, categorias: categories});
+                        res.render('products/products', { productos : products, categorias: categories, userLogged : req.session.usuarioLogueado});
                     });
                     
             });
@@ -322,7 +322,7 @@ let productsController = {
                         }
                     })
                         .then(categories => {                
-                            res.render('products/productAdmin', { productos : products, categorias: categories, categoriaSeleccionada: categorieSelected});
+                            res.render('products/productAdmin', { productos : products, categorias: categories, categoriaSeleccionada: categorieSelected, userLogged : req.session.usuarioLogueado});
                         })
     
                 
@@ -341,7 +341,7 @@ let productsController = {
                         }
                     })
                         .then(categories => {                
-                            res.render('products/products', { productos : products, categorias: categories, categoriaSeleccionada: categorieSelected});
+                            res.render('products/products', { productos : products, categorias: categories, categoriaSeleccionada: categorieSelected, userLogged : req.session.usuarioLogueado});
                         })
     
                 
@@ -371,12 +371,12 @@ let productsController = {
                         }
                     })
                         .then(products => {
-                            res.render("products/productDetail", {productosRelacionados : products, producto: product})
+                            res.render("products/productDetail", {productosRelacionados : products, producto: product, userLogged : req.session.usuarioLogueado})
                     });
 
                 } else {
 
-                    res.render("error")
+                    res.render("error", { userLogged : req.session.usuarioLogueado })
                 }
     
                 
@@ -394,7 +394,7 @@ let productsController = {
         //Renderiza la tabla categorias en /productAdd
         db.Categories.findAll()
             .then(categories => {
-                res.render('products/productAdd', {categories: categories});
+                res.render('products/productAdd', {categories: categories, userLogged : req.session.usuarioLogueado});
             }).catch(error => {
                 console.log(error);
             });
@@ -414,7 +414,7 @@ let productsController = {
             //Renderiza las categorias con los errores en /productAdd
             db.Categories.findAll()
             .then(categories => {               
-                return res.render('products/productAdd', {errors: errores.errors, categories: categories});
+                return res.render('products/productAdd', {errors: errores.errors, categories: categories, userLogged : req.session.usuarioLogueado});
             });
             
 
@@ -488,7 +488,7 @@ let productsController = {
             .then(categories => {
                 db.Products.findByPk(idUrl)
                     .then(product => {
-                        product ? (res.render('products/productEdit', {producto: product, categories: categories})) : res.render('error');
+                        product ? (res.render('products/productEdit', {producto: product, categories: categories, userLogged : req.session.usuarioLogueado})) : res.render('error', { userLogged : req.session.usuarioLogueado });
                     });
                 
             });
@@ -517,7 +517,7 @@ let productsController = {
                 db.Products.findByPk(idUrl)
                     .then(product => {
                         product.errors = errores.errors;
-                        return res.render('products/productEdit', {producto: product, errors: errores.errors, categories: categories});
+                        return res.render('products/productEdit', {producto: product, errors: errores.errors, categories: categories, userLogged : req.session.usuarioLogueado});
                     });
                 
             });
@@ -626,7 +626,7 @@ let productsController = {
                 }
             })
                 .then(categories => {
-                    res.render('products/productAdmin', { productos : products, categorias: categories });
+                    res.render('products/productAdmin', { productos : products, categorias: categories, userLogged : req.session.usuarioLogueado });
                 })
             
             
@@ -639,7 +639,7 @@ let productsController = {
 
     //  /products/productCart - Vista de productCart
     productCart : (req, res, next) => {
-        res.render('products/productCart');
+        res.render('products/productCart', { userLogged : req.session.usuarioLogueado });
     }
 }
 

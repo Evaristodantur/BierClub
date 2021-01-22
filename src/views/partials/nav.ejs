@@ -10,6 +10,11 @@
 <body>
 <header>
 <div class="nav1">
+    <% if(typeof userLogged == "undefined") { %>
+        <% console.log('no esta logeado'); %>
+    <% } else { %>
+        <% console.log("esta logeado") %>
+    <% } %> 
     <div id="navbar" class="nav-backgc">
         <!------------------------------------ MOBILE ----------------------------------->
         <div class="mobile-hamburguesa-menu" id="hamburguesa-onclick">
@@ -35,7 +40,12 @@
                     <hr>
                     <div class="hamburguesa-items-none">
                         <a href="/products/productCart" class="hamburguesa-item">Carrito</a>
-                        <a href="/users/perfil" class="hamburguesa-item">Iniciar Sesión</a>
+                        <a href="/users/perfil" class="hamburguesa-item">
+                        <% if(typeof userLogged == "undefined") { %>
+                            Iniciar Session
+                        <% } else { %>
+                            Mi cuenta
+                        <% } %> </a>
                     </div>
                 </div></strong>
              </div>
@@ -53,7 +63,13 @@
                 </ul>
                 <strong>
                     <ul id ="navlogin" class="navlogin">
-                        <li><a href="/users/login"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></li>
+                        <li><a href="/users/login"><i class="fas fa-sign-in-alt"></i>
+                            <% if(typeof userLogged == "undefined") { %>
+                                Iniciar Session
+                            <% } else { %>
+                                Mi cuenta
+                            <% } %>
+                        </a></li>
                     </ul>
                 </strong>
                 <hr>

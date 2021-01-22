@@ -13,7 +13,7 @@
 
 <body>
 	<header>
-		<%- include('./partials/nav.ejs') %>
+		<%- include('./partials/nav.ejs', userLogged) %>
 	</header>
 	
 	<div class="productDetail suscripcion">
@@ -85,10 +85,6 @@
 			<div>
 				<p>Que elegimos</p>
 			</div>
-		</section>
-		
-		<section>
-			<%- include('./partials/productosRelacionados.ejs') %> 
 		</section>
 
 		<section class="">

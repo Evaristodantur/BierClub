@@ -6,6 +6,7 @@ require("dotenv").config();
 let db = require("../database/models");
 let sequelize = db.sequelize;
 
+
     
 let mainController = {
     
@@ -17,7 +18,7 @@ let mainController = {
         db.Products.findAll({
                 include: [{association: "images"}]
             }).then(products => {
-                res.render('index', { productos : products });
+                res.render('index', { productos : products, userLogged : req.session.usuarioLogueado });
             });
     },
 
@@ -76,14 +77,14 @@ let mainController = {
                 db.Products.findAll({
                     include: [{association: "images"}]
                 }).then(products => {
-                    res.render('index', { productos : products, newsletter : 1 });
+                    res.render('index', { productos : products, newsletter : 1,  userLogged : req.session.usuarioLogueado});
                 });
             } else {
                 //Muestra todos los productos en el home
                 db.Products.findAll({
                     include: [{association: "images"}]
                 }).then(products => {
-                    res.render('index', { productos : products, newsletter : 0 });
+                    res.render('index', { productos : products, newsletter : 0, userLogged : req.session.usuarioLogueado });
                 });
             }
 
@@ -100,7 +101,7 @@ let mainController = {
     game : (req, res, next) => {
 
         //Muestra todos los productos en el home
-        res.render('game');
+        res.render('game', {userLogged : req.session.usuarioLogueado});
     },
 
 
@@ -109,7 +110,7 @@ let mainController = {
 
     //  /about-us
     aboutUs : (req, res, next) => {
-        res.render('aboutUs');
+        res.render('aboutUs', {userLogged : req.session.usuarioLogueado});
     },
 
 
@@ -118,7 +119,7 @@ let mainController = {
 
     //  /promociones
     promociones : (req, res, next) => {
-        res.render('promociones');
+        res.render('promociones', {userLogged : req.session.usuarioLogueado});
     },
 
 
@@ -127,16 +128,7 @@ let mainController = {
 
     //  /suscripcion
     suscripcion : (req, res, next) => {
-        res.render('suscripcion');
-    },
-
-
-
-
-
-    // Pagina de error
-    error : (req, res, next) => {
-        res.render('error');
+        res.render('suscripcion', {userLogged : req.session.usuarioLogueado});
     },
 
 
@@ -145,7 +137,7 @@ let mainController = {
     
     // /envios
     envios : (req,res, next) => { 
-        res.render('envios');
+        res.render('envios', {userLogged : req.session.usuarioLogueado});
     },
 
 
@@ -154,7 +146,7 @@ let mainController = {
 
     // /contacto
     contactRender : (req, res, next) => {
-        res.render("contact");
+        res.render("contact", {userLogged : req.session.usuarioLogueado});
     },
 
 
@@ -173,7 +165,7 @@ let mainController = {
 
         //Verifica si hay errores
         if (!errores.isEmpty()){
-            return res.render("contact", {errors : errores});
+            return res.render("contact", {errors : errores, userLogged : req.session.usuarioLogueado});
         }
 
         //Manda el mensaje de contacto a bierclub
@@ -181,7 +173,7 @@ let mainController = {
 
         nodemailerAssets(req).transporter.sendMail(nodemailerAssets(req).mailOptions, function(err, data){
             if(!err){
-                res.render("contact", { success : "Tu mensaje fue enviado con exito!" })
+                res.render("contact", { success : "Tu mensaje fue enviado con exito!", userLogged : req.session.usuarioLogueado })
             }
         });
     }

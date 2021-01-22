@@ -4,7 +4,7 @@ let authAdminMiddleware = (req, res, next) => {
     if (req.session.usuarioLogueado.admin == 1) {
         next();
     } else {
-        res.render("sinPermisos");
+        res.render("sinPermisos", { userLogged : req.session.usuarioLogueado });
     }
 }
 
