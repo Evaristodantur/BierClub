@@ -7,7 +7,7 @@
   - Incluir validacion de session en todas las paginas
     
    Para hacer hoy:
-  - Validacion de form en Login
+  - Validación de form en Login
  
 
 ### 🗓️ 20/1/21
