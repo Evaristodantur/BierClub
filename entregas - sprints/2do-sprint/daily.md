@@ -1,5 +1,17 @@
 # Dailies
 
+### 🗓️ 22/1/21
+  Terminado:
+  - Slider de Productos Relacionados
+  - Validacion de form en Register
+  - Incluir validacion de session en todas las paginas
+  - Validación de form en Login
+    
+   Para hacer hoy:
+  - Validación de ProductAdd
+  - Validación de ProductEdit
+
+
 ### 🗓️ 21/1/21
   Terminado:
   - Slider de Productos Relacionados
