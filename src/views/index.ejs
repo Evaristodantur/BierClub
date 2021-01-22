@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-  	<head> 
-      <%- include('./partials/head.ejs') %>
-      <title>BierClub</title>
-      <script type="text/javascript" src="/js/home.js"></script>
-    </head>
-  
+  <head>
+    <%- include('./partials/head.ejs') %>
+    <title>BierClub</title>
+    <script type="text/javascript" src="/js/home.js"></script>
+  </head>
+
   <body>
-    
     <!-- NAV -->
-    <header>
-      <%- include('./partials/nav2.ejs', userLogged) %>
-    </header>
-    
+    <header><%- include('./partials/nav2.ejs', userLogged) %></header>
+
     <!-- CONTAINER HOME -->
     <div class="home">
-      
       <!-- BANNER PRINCIPAL-->
       <section>
         <div class="banner">
-          <img src="/images/home/banner.jpg" alt="banner">
+          <img src="/images/home/banner.jpg" alt="banner" />
         </div>
       </section>
 
@@ -28,11 +24,9 @@
         <div class="titulos">
           <h2>Novedades</h2>
         </div>
-          
 
         <!-- PRODUCTOS-->
         <section class="productos">
-
           <div class="btnAnt" id="product-prev">
             <a href="javascript:void();">
               <div class="button-pass">
@@ -40,39 +34,46 @@
               </div>
             </a>
           </div>
-        
+
           <section class="productsSlider">
             <% for (let i=0; i < productos.length ; i++) { %>
-  
-              <article class="producto productNovedades">
-                <a href="/products/productDetail/<%= productos[i].id %>">
-                    <% if(typeof productos[i].images[0] != "undefined") { %>
-                        <img src="/images/productos/<%= productos[i].images[0].name %>" alt="<%= productos[i].name %>">
-                    <% } else { %>
-                        <img src="/images/productos/product-image-not-available.jpg" alt="<%= productos[i].name %>">
-                    <% } %>                       
-                </a>
-                <h2 class="producto-titulo"><%= productos[i].name %></h2>
-                <div class="precio-stock">
-                  <div>
-                    <h4 class="etiqueta-precio">$<%= productos[i].price %></h4>
-                  </div>
-                  <div>
-                    <% if (productos[i].stock > 0) { %>
-                      <h5 class="etiqueta-stock">Stock Disponible</h5>
-                    <% } else { %>
-                      <h5 class="stock sinStock">Sin Stock</h5>
-                    <% } %>
-                    
-                  </div>
-                </div>
-                <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-              </article>
-            <% } %>
 
+            <article class="producto productNovedades">
+              <a href="/products/productDetail/<%= productos[i].id %>">
+                <% if(typeof productos[i].images[0] != "undefined") { %>
+                <img
+                  src="/images/productos/<%= productos[i].images[0].name %>"
+                  alt="<%= productos[i].name %>"
+                />
+                <% } else { %>
+                <img
+                  src="/images/productos/product-image-not-available.jpg"
+                  alt="<%= productos[i].name %>"
+                />
+                <% } %>
+              </a>
+              <h2 class="producto-titulo"><%= productos[i].name %></h2>
+              <div class="precio-stock">
+                <div>
+                  <h4 class="etiqueta-precio">$<%= productos[i].price %></h4>
+                </div>
+                <div>
+                  <% if (productos[i].stock > 0) { %>
+                  <h5 class="etiqueta-stock">Stock Disponible</h5>
+                  <% } else { %>
+                  <h5 class="stock sinStock">Sin Stock</h5>
+                  <% } %>
+                </div>
+              </div>
+              <form action="">
+                <button class="btn-producto hoverproducto" type="button">
+                  <i class="fas fa-plus"></i> Añadir al Carrito
+                </button>
+              </form>
+            </article>
+            <% } %>
           </section>
-          
-        
+
           <div class="btnSig" id="product-next">
             <a href="javascript:void();">
               <div class="button-pass">
@@ -80,143 +81,157 @@
               </div>
             </a>
           </div>
-        
         </section>
       </main>
 
-        <!-- BANNER NOVEDADES-->
-        <div clas="parallax-completo">
-          <div class="banner-parallax">
-            <a href="/promociones">
-              <div class="banner-texto">
-                <h3>Las mejores Cervezas</h3>
+      <!-- BANNER NOVEDADES-->
+      <div clas="parallax-completo">
+        <div class="banner-parallax">
+          <a href="/promociones">
+            <div class="banner-texto">
+              <h3>Las mejores Cervezas</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- MEJORES PRODUCTOS-->
+      <section class="nav-MejoresProductos">
+        <div class="titulo-mejores-productos">
+          <h2>¿Que producto buscas?</h2>
+        </div>
+
+        <!-- NAV MEJORES PRODUCTOS-->
+        <ul class="mejores-productos">
+          <li>
+            <a href="/products/productsFilter?ordenar=populares">Populares</a>
+          </li>
+          <li>
+            <a href="/products/productsFilter?ordenar=nuevos-productos"
+              >Nuevos Productos</a
+            >
+          </li>
+          <li>
+            <a href="/products/productsFilter?ordenar=menor-precio"
+              >Menor Precio</a
+            >
+          </li>
+          <li>
+            <a href="/products/productsFilter?ordenar=mayor-precio"
+              >Mayor Precio</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- PRODUCTOS -->
+      <main>
+        <!-- Productos en Stock -->
+        <div class="titulos titulo-ProductInStock">
+          <h2>¡Productos que se encuentran en stock!</h2>
+        </div>
+
+        <section class="productos">
+          <div class="btnAnt btnAnt-Filter" id="product-prev">
+            <a href="javascript:void();">
+              <div class="button-pass">
+                <i class="fas fa-chevron-circle-left"></i>
               </div>
             </a>
           </div>
-        </div>
 
-        <!-- MEJORES PRODUCTOS-->
-        <section class="nav-MejoresProductos">
-          <div class="titulo-mejores-productos">
-            <h2>¿Que producto buscas?</h2>
-          </div>
-  
-          <!-- NAV MEJORES PRODUCTOS-->
-          <ul class="mejores-productos">
-            <li> <a href="/products/productsFilter?ordenar=populares">Populares</a></li>
-            <li> <a href="/products/productsFilter?ordenar=nuevos-productos">Nuevos Productos</a></li>
-            <li> <a href="/products/productsFilter?ordenar=menor-precio">Menor Precio</a></li>
-            <li> <a href="/products/productsFilter?ordenar=mayor-precio">Mayor Precio</a></li>
-          </ul>
-        </section>
-        
-
-
-
-        <!-- PRODUCTOS -->
-        <main>
-          <!-- Productos en Stock -->
-          <div class="titulos titulo-ProductInStock">
-            <h2>¡Productos que se encuentran en stock!</h2>
-          </div>
-
-          <section class="productos">
-  
-            <div class="btnAnt btnAnt-Filter" id="product-prev">
-              <a href="javascript:void();">
-                <div class="button-pass">
-                  <i class="fas fa-chevron-circle-left"></i>
-                </div>
-              </a>
-            </div>
-          
-            <section class="productsSlider productFilter">
-            
+          <section class="productsSlider productFilter">
             <% for (let i=0; i < productos.length ; i++) { %>
-              <article class="producto artProductFilter">
-                <a href="/products/productDetail/<%= productos[i].id %>">
-                    <% if(typeof productos[i].images[0] != "undefined") { %>
-                        <img src="/images/productos/<%= productos[i].images[0].name %>" alt="<%= productos[i].name %>">
-                    <% } else { %>
-                        <img src="/images/productos/product-image-not-available.jpg" alt="<%= productos[i].name %>">
-                    <% } %>                       
-                </a>
-                <h2 class="producto-titulo"><%= productos[i].name %></h2>
-                <div class="precio-stock">
-                  <div>
-                    <h4 class="etiqueta-precio">$<%= productos[i].price %></h4>
-                  </div>
-                  <div>
-                    <% if (productos[i].stock > 0) { %>
-                      <h5 class="etiqueta-stock">Stock Disponible</h5>
-                    <% } else { %>
-                      <h5 class="stock sinStock">Sin Stock</h5>
-                    <% } %>
-                    
-                  </div>
-                </div>
-                <button class="btn-producto hoverproducto" type="button"><i class="fas fa-plus"></i> Añadir al Carrito</button>
-              </article>
-            <% } %>
-
-          </section>
-          
-            <div class="btnSig btnSig-Filter" id="product-next">
-              <a href="javascript:void();">
-                <div class="button-pass">
-                  <i class="fas fa-chevron-circle-right"></i>
-                </div>
+            <article class="producto artProductFilter">
+              <a href="/products/productDetail/<%= productos[i].id %>">
+                <% if(typeof productos[i].images[0] != "undefined") { %>
+                <img
+                  src="/images/productos/<%= productos[i].images[0].name %>"
+                  alt="<%= productos[i].name %>"
+                />
+                <% } else { %>
+                <img
+                  src="/images/productos/product-image-not-available.jpg"
+                  alt="<%= productos[i].name %>"
+                />
+                <% } %>
               </a>
-            </div>
-          
-          </section>
-        </main>
-
-
-        <!-- NEWSLETTER-->
-        <section class="newsletter-background">
-          <div>
-            <h3>Recibí todas las ofertas</h3>
-            <p>¿Quieres recibir nuestras ofertas? ¡Regístrate ya mismo y comenzá a disfrutarlas!</p>
-              <form action="/" method="POST">
-                <input name="newsletter" class="newsletter" type="email" placeholder="Email" onchange="this.form.submit()">
-              </form>
-              <% if(typeof newsletter != 'undefined') { %>
-                <div id="modal-newsletter">
-                  <div class="background-newsletter-modal">
-                    <% if(newsletter == 1) { %>
-                        <div>
-                          <p>Te has suscripto a BierClub-newsletter. ¡Mira tu email!</p>
-                          <button>Aceptar</button>
-                        </div>
-                    <% } else { %>
-                      <div>
-                          <p>Para poder recibir newsletters de BierClub <a href="/users/register">registra tu cuenta!</a></p>
-                          <button>Aceptar</button>
-                      </div>
-                    <% } %>
-                  </div>
+              <h2 class="producto-titulo"><%= productos[i].name %></h2>
+              <div class="precio-stock">
+                <div>
+                  <h4 class="etiqueta-precio">$<%= productos[i].price %></h4>
                 </div>
-                
-                
-              <% } %> 
+                <div>
+                  <% if (productos[i].stock > 0) { %>
+                  <h5 class="etiqueta-stock">Stock Disponible</h5>
+                  <% } else { %>
+                  <h5 class="stock sinStock">Sin Stock</h5>
+                  <% } %>
+                </div>
+              </div>
+              <form action="">
+                <button class="btn-producto hoverproducto" type="button"></button>
+              </form>
               
+                <i class="fas fa-plus"></i> Añadir al Carrito
+              </button>
+            </article>
+            <% } %>
+          </section>
+
+          <div class="btnSig btnSig-Filter" id="product-next">
+            <a href="javascript:void();">
+              <div class="button-pass">
+                <i class="fas fa-chevron-circle-right"></i>
+              </div>
+            </a>
           </div>
         </section>
-        
+      </main>
+
+      <!-- NEWSLETTER-->
+      <section class="newsletter-background">
+        <div>
+          <h3>Recibí todas las ofertas</h3>
+          <p>
+            ¿Quieres recibir nuestras ofertas? ¡Regístrate ya mismo y comenzá a
+            disfrutarlas!
+          </p>
+          <form action="/" method="POST">
+            <input
+              name="newsletter"
+              class="newsletter"
+              type="email"
+              placeholder="Email"
+              onchange="this.form.submit()"
+            />
+          </form>
+          <% if(typeof newsletter != 'undefined') { %>
+          <div id="modal-newsletter">
+            <div class="background-newsletter-modal">
+              <% if(newsletter == 1) { %>
+              <div>
+                <p>Te has suscripto a BierClub-newsletter. ¡Mira tu email!</p>
+                <button>Aceptar</button>
+              </div>
+              <% } else { %>
+              <div>
+                <p>
+                  Para poder recibir newsletters de BierClub
+                  <a href="/users/register">registra tu cuenta!</a>
+                </p>
+                <button>Aceptar</button>
+              </div>
+              <% } %>
+            </div>
+          </div>
+
+          <% } %>
+        </div>
+      </section>
     </div>
 
-
-    
-
-    
-
     <!-- FOOTER -->
-    <footer>
-      <%- include('./partials/footer.ejs') %>
-    </footer>
-
+    <footer><%- include('./partials/footer.ejs') %></footer>
   </body>
-
-      
 </html>
