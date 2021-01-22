@@ -3,3 +3,4 @@
 node_modules/*
 # Archivos generados automáticamente
 .DS_Store
+/.vscode

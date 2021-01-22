@@ -1,27 +1,27 @@
 .barney {
-    position: absolute;
-    width: 260px;
-    height: 260px;
-    bottom: 15px;
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  bottom: 15px;
 }
 
 .homeroStyle {
-    background-image: url("/game/homero.gif");
-    background-size: 280px 280px;
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    bottom: 15px;
-    background-repeat: no-repeat;
+  background-image: url('/game/homero.gif');
+  background-size: 280px 280px;
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  bottom: 15px;
+  background-repeat: no-repeat;
 }
 
 .moe-bar-img {
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    max-height: 100%;
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
 }

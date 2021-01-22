@@ -9,15 +9,18 @@ Por el momento envíos en la provincia de Tucumán, pero apuntamos a mejorar en 
 ## [Usuarios](https://github.com/Evaristodantur/BierClub/blob/master/entregas%20-%20sprints/Usuarios-Login/users.md) para pruebas
 
 ## Funcionalidad 🧰:
+
 - Venta de cerveza artesanal (Latas y botellas chicas)
 - Suscripción mensual (extra)
 
 ## Audiencia objetivo 🗣️:
-- *Público*: Gente mayor a 18 años
-- *Ideal*: 25-35 años
-- *Residencia*: Tucumán
+
+- _Público_: Gente mayor a 18 años
+- _Ideal_: 25-35 años
+- _Residencia_: Tucumán
 
 ## Listado de referentes:
+
 - [**Tienda Bierful**](https://tienda.bierful.com): Servicios que ofrecen
 - [**Craft Society**](https://www.craftsociety.com.ar): Buen detallado de catálogo
 - [**Dos Dingos**](https://www.cervezadosdingos.com/): Estetica
@@ -26,6 +29,7 @@ Por el momento envíos en la provincia de Tucumán, pero apuntamos a mejorar en 
 - [**Cibart**](https://cibart.com.ar/): Por el carrito y sus funciones
 
 ## Developers 👨‍💻:
+
 - [Evaristo Dantur](https://github.com/Evaristodantur), 19 años
 - [Santiago Tejerina](https://github.com/santitejerina), 19 años
 - [Diego Kippes](https://github.com/dkippes), 23 años

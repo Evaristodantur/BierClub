@@ -1,25 +1,25 @@
-body .login-register{
-    /* Display & Box Model */
-    padding-top: 10rem;
-    padding-bottom: 3%;
+body .login-register {
+  /* Display & Box Model */
+  padding-top: 10rem;
+  padding-bottom: 3%;
 }
 
-.container-pedidos h1{
-    margin-top: 0px;
-    padding-top: 170px;
-    text-align: center;
+.container-pedidos h1 {
+  margin-top: 0px;
+  padding-top: 170px;
+  text-align: center;
 }
-.pedidos-completo{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: 10%;
+.pedidos-completo {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
 }
-.pedidos-individual{
-    display: flex;
-    justify-content: space-around;
+.pedidos-individual {
+  display: flex;
+  justify-content: space-around;
 }
-.pedidos-individual img{
-    width: 130px;
-    border-radius: 8px;
+.pedidos-individual img {
+  width: 130px;
+  border-radius: 8px;
 }

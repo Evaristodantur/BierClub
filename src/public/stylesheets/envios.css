@@ -1,42 +1,38 @@
-.titulo{
-    display: inline-block;
-    align-content: center;
-    padding-top: 10%
+.titulo {
+  display: inline-block;
+  align-content: center;
+  padding-top: 10%;
 }
-
-
 
 /* Display & Box Model */
-.la-ubi{
- padding: 250 px;
- display: inline-block;
- height: 40px;
- width: 100%;
- justify-items: space-between;
-justify-content: space-between;
- 
+.la-ubi {
+  padding: 250 px;
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  justify-items: space-between;
+  justify-content: space-between;
 
- /* Otras */
- cursor: not-allowed;
- border: 0px solid black;
- font-size: large;
- border-radius: 5px;
- color: white;
+  /* Otras */
+  cursor: not-allowed;
+  border: 0px solid black;
+  font-size: large;
+  border-radius: 5px;
+  color: white;
 }
-.boton-ubi{ 
-display: flex;
-justify-content: center;
-justify-items: center;
-padding: 10px; 
+.boton-ubi {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding: 10px;
 }
-.enviar-ubicacion{
-    display: flex;
-    align-content: space-between;
-    justify-content: space-between ;
+.enviar-ubicacion {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
 }
-.requisitos{
-    padding: 5px; 
-    display: inline-block;
-    align-content:flex-start ;
-    
+.requisitos {
+  padding: 5px;
+  display: inline-block;
+  align-content: flex-start;
 }

@@ -2,138 +2,163 @@
    GENERAL -FOOTER
    ========================================================================== */
 .footer {
-    /* Display & Box Model */
-    z-index: inherit 9;
-    margin-top: 2px;
-    
-    /* Otras */
-    background-color: black;
+  /* Display & Box Model */
+  z-index: inherit 9;
+  margin-top: 2px;
+
+  /* Otras */
+  background-color: black;
 }
 
 /* ==========================================================================
    SECCION - CONTACTO-NOSOTROS-UBICACION
    ========================================================================== */
 .footer section.contacto-nosotros-ubicacion {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* ==========================================================================
    ART-FOOTER - GENERAL
    ========================================================================== */
 .footer section.contacto-nosotros-ubicacion div.art-footer {
-    /* Display & Box Model */
-    margin-top: 1%;
-    width: 33%;
-    text-align: center;
-    vertical-align: top;
+  /* Display & Box Model */
+  margin-top: 1%;
+  width: 33%;
+  text-align: center;
+  vertical-align: top;
 
-    /* Otras */
-    color: white;
+  /* Otras */
+  color: white;
 }
 
 /* ==========================================================================
    ART-FOOTER - CONTACTOS
    ========================================================================== */
 .footer section.contacto-nosotros-ubicacion div.art-footer .contacto {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer section.contacto-nosotros-ubicacion div.art-footer .contacto div {
-    /* Display & Box Model */
-    margin-left: 15%;
+  /* Display & Box Model */
+  margin-left: 15%;
 
-    /* Otras */
-    text-align: justify;
+  /* Otras */
+  text-align: justify;
 }
 
 .footer section.contacto-nosotros-ubicacion div.art-footer .contacto i {
-    /* Display & Box Model */
-    margin-top: 3%;
+  /* Display & Box Model */
+  margin-top: 3%;
 
-    /* Otras */
-    font-size: 35px;
+  /* Otras */
+  font-size: 35px;
 }
 
-.footer section.contacto-nosotros-ubicacion div.art-footer .contacto i:hover ,
-.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono:hover{
-    opacity: 0.8;
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto i:hover,
+.footer
+  section.contacto-nosotros-ubicacion
+  div.art-footer
+  .contacto
+  .icono:hover {
+  opacity: 0.8;
 }
 
-.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono i.fa-instagram ,
+.footer
+  section.contacto-nosotros-ubicacion
+  div.art-footer
+  .contacto
+  .icono
+  i.fa-instagram,
 .footer section.contacto-nosotros-ubicacion div.art-footer .contacto p.ig {
-    color: #F56040;
+  color: #f56040;
 }
 
-.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono i.fa-whatsapp , 
-.footer section.contacto-nosotros-ubicacion div.art-footer .contacto p.wpp{
-    color: #25D366;
+.footer
+  section.contacto-nosotros-ubicacion
+  div.art-footer
+  .contacto
+  .icono
+  i.fa-whatsapp,
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto p.wpp {
+  color: #25d366;
 }
 
-.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono i.fa-facebook-square , 
-.footer section.contacto-nosotros-ubicacion div.art-footer .contacto p.fb{
-    color: #3b5998;
+.footer
+  section.contacto-nosotros-ubicacion
+  div.art-footer
+  .contacto
+  .icono
+  i.fa-facebook-square,
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto p.fb {
+  color: #3b5998;
 }
 
-.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono i.fa-facebook-messenger , 
-.footer section.contacto-nosotros-ubicacion div.art-footer .contacto p.fb-msg{
-    color: #0078FF;
+.footer
+  section.contacto-nosotros-ubicacion
+  div.art-footer
+  .contacto
+  .icono
+  i.fa-facebook-messenger,
+.footer section.contacto-nosotros-ubicacion div.art-footer .contacto p.fb-msg {
+  color: #0078ff;
 }
 
-.footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono i.fa-envelope , 
+.footer
+  section.contacto-nosotros-ubicacion
+  div.art-footer
+  .contacto
+  .icono
+  i.fa-envelope,
 .footer section.contacto-nosotros-ubicacion div.art-footer .contacto p.gmail {
-    color:#fce4b4a9;
+  color: #fce4b4a9;
 }
 
 .footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer section.contacto-nosotros-ubicacion div.art-footer .contacto .icono p {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* ==========================================================================
    ART-FOOTER MAPA - DONDE ESTAMOS
    ========================================================================== */
 .footer section div.art-footer.ubi iframe.mapa {
-    width: 93%;
+  width: 93%;
 }
-  
-.footer hr.hrline {
-    /* Display & Box Model */
-    height: 2px;
 
-    /* Otras */
-    color: white;
-    border: none;
-    background-color: white;
-    opacity: 1;
+.footer hr.hrline {
+  /* Display & Box Model */
+  height: 2px;
+
+  /* Otras */
+  color: white;
+  border: none;
+  background-color: white;
+  opacity: 1;
 }
-  
+
 /* ==========================================================================
    COPYRIGHT
    ========================================================================== */
 .footer div.copyright {
-    /* Display & Box Model */
-    padding: 10px 0px;
+  /* Display & Box Model */
+  padding: 10px 0px;
 
-    /* Otras */
-    color: white;
-    text-align: center;
+  /* Otras */
+  color: white;
+  text-align: center;
 }
-  
+
 .footer div.copyright h3 {
-    margin: 0;
-    padding-bottom: 5px;
+  margin: 0;
+  padding-bottom: 5px;
 }
-
-
-
-
 
 /* ==========================================================================
    RESOLUCION: 950 hacia arriba - HOVER, ANIMACIONES
@@ -141,12 +166,9 @@
 @media (min-width: 950px) {
   /*ART-FOOTER MAPA - DONDE ESTAMOS*/
   .footer section div.art-footer.ubi iframe.mapa:hover {
-      transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
-
-
-
 
 /* ==========================================================================
    RESOLUCION: 1024 a 1200
@@ -175,7 +197,7 @@
     padding: inherit 1%;
   }
 
-  .footer section div.art-footer.nosotros , 
+  .footer section div.art-footer.nosotros,
   .footer section div.art-footer.contactos {
     border-bottom: 1px solid white;
   }
@@ -185,12 +207,7 @@
     width: 97%;
     order: 1;
   }
-
 }
-
-
-
-
 
 /* ==========================================================================
    RESOLUCION: 480 a 1024
@@ -222,7 +239,7 @@
     padding: inherit 1%;
   }
 
-  .footer section div.art-footer.nosotros , 
+  .footer section div.art-footer.nosotros,
   .footer section div.art-footer.contactos {
     border-bottom: 1px solid white;
   }
@@ -233,10 +250,6 @@
     order: 1;
   }
 }
-
-
-
-
 
 /* ==========================================================================
    RESOLUCION: 480 hacia abajo
@@ -268,7 +281,7 @@
     padding: inherit 1%;
   }
 
-  .footer section div.art-footer.nosotros , 
+  .footer section div.art-footer.nosotros,
   .footer section div.art-footer.contactos {
     border-bottom: 1px solid white;
   }

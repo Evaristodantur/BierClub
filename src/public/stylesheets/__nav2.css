@@ -39,7 +39,6 @@ body {
   padding-bottom: 2px;
 }
 
-
 .nav2 .nav-backgc .container-nav .navbar ul {
   padding: 0;
   list-style: none;
@@ -50,7 +49,6 @@ body {
   margin: 0px 25px;
   position: relative;
 }
-
 
 .nav2 .nav-backgc .container-nav .navbar a {
   text-decoration: none;
@@ -66,7 +64,7 @@ body {
 }
 
 .nav2 hr {
-  opacity: 20%
+  opacity: 20%;
 }
 
 .nav2 .nav-backgc .container-nav .navbar .navcarrito .login-carrito {
@@ -91,7 +89,13 @@ body {
   transition: 0.3s;
 }
 
-.nav2 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono{
+.nav2
+  .nav-backgc
+  .container-nav
+  .navbar
+  .navcarrito
+  .btn-hamburguesa
+  a.hamburguesa-icono {
   display: none;
   color: white;
 }
@@ -111,7 +115,7 @@ DROPDOWN MENU
   cursor: default;
 }
 
-.dropdownBoton:hover>.dropdownMenu {
+.dropdownBoton:hover > .dropdownMenu {
   display: flex;
 }
 
@@ -130,12 +134,10 @@ DROPDOWN MENU
   margin-block-end: -9.5px;
 }
 
-
-
 /* ==========================================================================
 MENU HAMBURGUESA MOBILE
 ========================================================================== */
-.nav2 .nav-backgc div.mobile-hamburguesa-menu{
+.nav2 .nav-backgc div.mobile-hamburguesa-menu {
   position: absolute;
   height: 96vh;
   width: 350px;
@@ -147,34 +149,58 @@ MENU HAMBURGUESA MOBILE
   transition: 0.4s;
 }
 
-.nav2 .nav-backgc .mobile-hamburguesa-menu .hamburguesa-margin .hamburguesa-top div.hamburguesa-menu{
+.nav2
+  .nav-backgc
+  .mobile-hamburguesa-menu
+  .hamburguesa-margin
+  .hamburguesa-top
+  div.hamburguesa-menu {
   margin: 6px;
 }
-.nav2 .nav-backgc .mobile-hamburguesa-menu div.hamburguesa-margin{
-  margin:2%;
+.nav2 .nav-backgc .mobile-hamburguesa-menu div.hamburguesa-margin {
+  margin: 2%;
 }
-.nav2 .nav-backgc .mobile-hamburguesa-menu .hamburguesa-margin div.hamburguesa-top{
-  display:flex;
+.nav2
+  .nav-backgc
+  .mobile-hamburguesa-menu
+  .hamburguesa-margin
+  div.hamburguesa-top {
+  display: flex;
   justify-content: space-between;
 }
-.nav2 .nav-backgc .mobile-hamburguesa-menu .hamburguesa-margin div.hamburguesa-items{
-  display:flex;
+.nav2
+  .nav-backgc
+  .mobile-hamburguesa-menu
+  .hamburguesa-margin
+  div.hamburguesa-items {
+  display: flex;
   flex-direction: column;
   margin-top: 3%;
   margin-left: 4%;
 }
-.nav2 .nav-backgc .mobile-hamburguesa-menu .hamburguesa-margin .hamburguesa-items a.hamburguesa-item{
-  color:#DAA520;
+.nav2
+  .nav-backgc
+  .mobile-hamburguesa-menu
+  .hamburguesa-margin
+  .hamburguesa-items
+  a.hamburguesa-item {
+  color: #daa520;
   display: inline-block;
   margin-bottom: 7px;
   transition: 0.4s;
 }
-.nav2 .nav-backgc .mobile-hamburguesa-menu .hamburguesa-margin .hamburguesa-top .hamburguesa-menu .fa-times-circle{
+.nav2
+  .nav-backgc
+  .mobile-hamburguesa-menu
+  .hamburguesa-margin
+  .hamburguesa-top
+  .hamburguesa-menu
+  .fa-times-circle {
   font-size: 25px;
-  color: #DAA520;
+  color: #daa520;
 }
 
-.fa-angle-down{
+.fa-angle-down {
   margin-top: 2px;
   transition: 0.3s;
 }
@@ -183,40 +209,37 @@ MENU HAMBURGUESA MOBILE
   transform: rotate(180deg);
 }
 
-
-.dropdown-mobile{
+.dropdown-mobile {
   color: black;
-  display:flex;
+  display: flex;
   flex-direction: column;
   margin-left: 15px;
   margin-bottom: 20px;
 }
-.hamburguesa-dropdown-mobile{
-  display:none;
+.hamburguesa-dropdown-mobile {
+  display: none;
 }
 
 .showProductos {
   display: inline-block;
 }
 
-.transform{
+.transform {
   transform: rotate(180deg);
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
 }
 
-.hamburguesa-items-none{
+.hamburguesa-items-none {
   display: none;
 }
-.hamburguesa-dropdown-mobile hr{
+.hamburguesa-dropdown-mobile hr {
   color: black;
   margin-right: 8px;
   opacity: 100%;
 }
-
-
 
 /* ==========================================================================
 RESOLUCION 1200-1300
@@ -224,12 +247,9 @@ RESOLUCION 1200-1300
 
 @media (min-width: 1200px) and (max-width: 1300px) {
   .nav2 .nav-backgc .container-nav .navbar .navcarrito li {
-      margin: 0px 15px;
+    margin: 0px 15px;
   }
 }
-
-
-
 
 /* ==========================================================================
 RESOLUCION 950-1600
@@ -237,41 +257,38 @@ RESOLUCION 950-1600
 
 @media (min-width: 950px) and (max-width: 1600px) {
   .nav2 .nav-backgc .container-nav .navbar .navlogin li a {
-      display: none;
+    display: none;
   }
 
   .nav2 .nav-backgc .container-nav .navbar .navcarrito {
-      right: -3%;
+    right: -3%;
   }
 }
-
-
-
 
 /* ==========================================================================
 RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA) 
 ========================================================================== */
-@media(max-width: 949px){
+@media (max-width: 949px) {
   /* SCRIPT DE NAV BAR DESACTIVADO */
 
-  .nav2 .nav-backgc .container-nav .navbar nav .barra{
+  .nav2 .nav-backgc .container-nav .navbar nav .barra {
     display: none;
   }
 
-  .nav2 .nav-backgc{
+  .nav2 .nav-backgc {
     margin: -72px 0px 0px 0px;
   }
 
-  .nav2 .nav-backgc .container-nav .navbar img.logonav{
+  .nav2 .nav-backgc .container-nav .navbar img.logonav {
     display: inline-block;
   }
 
-  .nav2 .nav-backgc .container-nav .navbar .navcarrito{
+  .nav2 .nav-backgc .container-nav .navbar .navcarrito {
     margin: 32px 0px 0px 0px;
     right: -5%;
   }
 
-  .nav2 .nav-backgc .container-nav .navbar .navlogin{
+  .nav2 .nav-backgc .container-nav .navbar .navlogin {
     margin: 32px 0px 0px 0px;
   }
 
@@ -280,51 +297,60 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
     display: none;
   }
 
-  .nav2 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono{
+  .nav2
+    .nav-backgc
+    .container-nav
+    .navbar
+    .navcarrito
+    .btn-hamburguesa
+    a.hamburguesa-icono {
     display: inline-block;
   }
 
   /* HAMBURGUESA */
-  .logo{
+  .logo {
     padding: 10px 0px 2px 15px;
   }
-  .nav2 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono:hover>.nav2 .nav-backgc div.mobile-hamburguesa-menu{
+  .nav2
+    .nav-backgc
+    .container-nav
+    .navbar
+    .navcarrito
+    .btn-hamburguesa
+    a.hamburguesa-icono:hover
+    > .nav2
+    .nav-backgc
+    div.mobile-hamburguesa-menu {
     left: 10px;
   }
 }
 
-
-
-
 /* ==========================================================================
 RESOLUCION 480-768
 ========================================================================== */
-@media (min-width: 480px) and (max-width: 767px){
-  .nav2 .nav-backgc div.mobile-hamburguesa-menu{
+@media (min-width: 480px) and (max-width: 767px) {
+  .nav2 .nav-backgc div.mobile-hamburguesa-menu {
     width: 290px;
   }
 }
 
-
-
-
 /* ==========================================================================
 RESOLUCION 0-480
 ========================================================================== */
-@media(max-width: 479px) {
-  .nav2 .nav-backgc div.mobile-hamburguesa-menu{
+@media (max-width: 479px) {
+  .nav2 .nav-backgc div.mobile-hamburguesa-menu {
     width: 200px;
-/*     border-radius: 0px;
+    /*     border-radius: 0px;
     height: 100vh; */
   }
-  .nav2 .nav-backgc .container-nav .navbar .nav-items{
-    display:none;
+  .nav2 .nav-backgc .container-nav .navbar .nav-items {
+    display: none;
   }
-  .hamburguesa-items-none:hover{
-    display:flex;
+  .hamburguesa-items-none:hover {
+    display: flex;
     flex-direction: column;
   }
-  .nav2 .nav-backgc .container-nav .navbar center .navcarrito .btn-hamburguesa{
+  .nav2 .nav-backgc .container-nav .navbar center .navcarrito .btn-hamburguesa {
     right: -25px;
   }
 }

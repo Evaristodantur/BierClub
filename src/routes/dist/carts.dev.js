@@ -1,16 +1,15 @@
+"use strict";
+
 // Routa de página de carrito "bierclub.com/carts/"
+var express = require('express');
 
-let express = require('express');
-let router = express.Router();
+var router = express.Router(); //Controller
 
-//Controller
-let cartsController = require('../controllers/cartsController');
+var cartsController = require('../controllers/cartsController'); // Routes
 
-// Routes
+
 router.get('/', cartsController.index);
 router.get('/addProduct', cartsController.addProductView);
 router.post('/addProduct/:id', cartsController.addProduct);
-
 router.get('/items', cartsController.itemsView);
-
 module.exports = router;

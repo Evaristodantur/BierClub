@@ -1,3 +1,5 @@
+"use strict";
+
 /* ==========================================================================
 HAMBURGUESA
 ========================================================================== */
@@ -7,24 +9,25 @@ function hamburguesa() {
   document.getElementById('hamburguesa-onclick').style = 'left:10px;';
 }
 /* ONCLICK HAMBURGUESA CERRAR */
+
+
 function hamburguesaCerrar() {
   document.getElementById('hamburguesa-onclick').style = 'left:-350px;';
 }
-
 /* ONCLICK HAMBURGUESA DROPDOWN */
+
+
 function hamburguesaDropdown() {
-  document
-    .getElementById('hamburguesa-dropdown')
-    .classList.toggle('showProductos');
+  document.getElementById('hamburguesa-dropdown').classList.toggle('showProductos');
 }
 
 function transform() {
   document.getElementById('transform').classList.toggle('transform');
 }
-
 /* ==========================================================================
 NAV BAR FUNCTION SCROLL TO TOP
 ========================================================================== */
+
 
 window.onscroll = function () {
   scrollFunction();
@@ -32,10 +35,7 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (window.innerWidth > 1200) {
-    if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
-    ) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       document.getElementById('navbar').style.margin = '-72px 0px 0px 0px';
       document.getElementById('logonav').style.display = 'inline-block';
       document.getElementById('navcarrito').style.margin = '32px 0px 0px 0px';

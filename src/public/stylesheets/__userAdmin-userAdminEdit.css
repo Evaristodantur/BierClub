@@ -1,75 +1,75 @@
-.container-users{
-    width:80%;
-    margin-left: 10%;
+.container-users {
+  width: 80%;
+  margin-left: 10%;
 }
-.container-users h3{
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-right: 10px;
-    word-break: break-all;
+.container-users h3 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-right: 10px;
+  word-break: break-all;
 }
-.container-users h1{
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    padding-top: 150px;
-    text-align: center;
-    padding-bottom: 50px;
+.container-users h1 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-top: 150px;
+  text-align: center;
+  padding-bottom: 50px;
 }
-.container-users .usuarios-listaCompleta{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+.container-users .usuarios-listaCompleta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
-.container-users .button-enteros{
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 5px;
-    border: 0px;
-    font-weight: bold;
-    margin-top:10px;
+.container-users .button-enteros {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  border: 0px;
+  font-weight: bold;
+  margin-top: 10px;
 }
-.container-users .button-enteros:hover{
-    cursor: pointer;
+.container-users .button-enteros:hover {
+  cursor: pointer;
 }
-.container-users .button-eliminar{
-    background-color: red;
+.container-users .button-eliminar {
+  background-color: red;
 }
-.container-users .invisible-eliminar-usuario p{
-    text-align: center;
+.container-users .invisible-eliminar-usuario p {
+  text-align: center;
 }
-.container-users .button-modificar{
-    background-color: blue;
+.container-users .button-modificar {
+  background-color: blue;
 }
-.container-users .container-input{
-    display: flex;
-    margin-bottom: 10px;
+.container-users .container-input {
+  display: flex;
+  margin-bottom: 10px;
 }
-.container-users .container-input input{
-    border-radius: 7px;
+.container-users .container-input input {
+  border-radius: 7px;
 }
-.container-users .usuarios-lista{
-    margin-bottom: 30px;
-    width: 45%;
+.container-users .usuarios-lista {
+  margin-bottom: 30px;
+  width: 45%;
 }
 .container-users .eliminar-usuario-container {
-    width: 85%;
-    display:flex;
-    justify-content: space-evenly;
+  width: 85%;
+  display: flex;
+  justify-content: space-evenly;
 }
-@media(max-width:1000px){
-    .container-users .usuarios-listaCompleta{
-        width:100%;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .container-users .usuarios-lista{
-        width:100%;
-    }
-    .container-users .container-users{
-        width:100%;
-        margin-left: 0px;
-    }
+@media (max-width: 1000px) {
+  .container-users .usuarios-listaCompleta {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .container-users .usuarios-lista {
+    width: 100%;
+  }
+  .container-users .container-users {
+    width: 100%;
+    margin-left: 0px;
+  }
 }

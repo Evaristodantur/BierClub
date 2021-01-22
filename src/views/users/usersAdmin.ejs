@@ -1,59 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BierClub - Todos los Productos</title>
-	<link rel="icon" href="/images/faviconLogo.ico"/>
+    <link rel="icon" href="/images/faviconLogo.ico" />
     <script src="/js/userAdmin.js" type="text/javascript"></script>
-	<%- include('../partials/head.ejs') %>
-</head>
+    <%- include('../partials/head.ejs') %>
+  </head>
 
-<body>
-	<!-- NAV -->
-	<header>
-		<%- include('../partials/nav.ejs', userLogged) %>
-	</header>
+  <body>
+    <!-- NAV -->
+    <header><%- include('../partials/nav.ejs', userLogged) %></header>
     <div class="container-users">
-        <h1>Lista de usuarios completa</h1>
-        <section class="usuarios-listaCompleta">
+      <h1>Lista de usuarios completa</h1>
+      <section class="usuarios-listaCompleta">
         <% usuarios.forEach(usuarios => { %>
-            <div class="usuarios-lista">
-                <div class="container-input">
-                    <h3>ID: <%= usuarios.id %></h3> 
-                </div>
-                <div class="container-input">
-                    <h3>Nombre: <%= usuarios.name %></h3> 
-                </div>
-                <div class="container-input">
-                    <h3>Email: <%= usuarios.email %></h3> 
-                </div>
-                <div class="container-input">
-                    <h3>Contraseña: <%= usuarios.password %></h3> 
-                </div>
-                <div class="container-input">
-                    <h3>Admin:<%if (usuarios.admin == 1){%>
-                        si
-                    <%}else{%>
-                        no
-                    <%}%></h3> 
-                    
-                </div>
-                <button onclick="window.location.href='/users/usersAdmin/<%= usuarios.id %>'" class="button-modificar button-enteros" type="submit" id="" name="" value="ingresar"> Modificar datos</button>
-                <button onclick="eliminarUsuario(<%=usuarios.id%>)" class="button-eliminar button-enteros" value=""> Eliminar usuario</button>
-                <div class="invisible-eliminar-usuario invisible-eliminar-usuario-userAdmin" id="eliminar-user-<%= usuarios.id %>">
-                    <p>¿Está seguro que desea eliminar este usuario?</p>
-                    <div class="eliminar-usuario-container">
-                        <button onclick="eliminarUsuario(<%=usuarios.id%>)" class="input-button button-enteros button-modificar">No</button>
-                        <form class="jaja"action="/users/perfil/eliminar/<%= usuarios.id %>?_method=DELETE" method="POST">
-                            <button type="submit" class="input-button button-enteros button-eliminar">Si</button>
-                        </form>
-                    </div>
-                </div>
+        <div class="usuarios-lista">
+          <div class="container-input">
+            <h3>ID: <%= usuarios.id %></h3>
+          </div>
+          <div class="container-input">
+            <h3>Nombre: <%= usuarios.name %></h3>
+          </div>
+          <div class="container-input">
+            <h3>Email: <%= usuarios.email %></h3>
+          </div>
+          <div class="container-input">
+            <h3>Contraseña: <%= usuarios.password %></h3>
+          </div>
+          <div class="container-input">
+            <h3>Admin:<%if (usuarios.admin == 1){%> si <%}else{%> no <%}%></h3>
+          </div>
+          <button
+            onclick="window.location.href='/users/usersAdmin/<%= usuarios.id %>'"
+            class="button-modificar button-enteros"
+            type="submit"
+            id=""
+            name=""
+            value="ingresar"
+          >
+            Modificar datos
+          </button>
+          <button
+            onclick="eliminarUsuario(<%=usuarios.id%>)"
+            class="button-eliminar button-enteros"
+            value=""
+          >
+            Eliminar usuario
+          </button>
+          <div
+            class="invisible-eliminar-usuario invisible-eliminar-usuario-userAdmin"
+            id="eliminar-user-<%= usuarios.id %>"
+          >
+            <p>¿Está seguro que desea eliminar este usuario?</p>
+            <div class="eliminar-usuario-container">
+              <button
+                onclick="eliminarUsuario(<%=usuarios.id%>)"
+                class="input-button button-enteros button-modificar"
+              >
+                No
+              </button>
+              <form
+                class="jaja"
+                action="/users/perfil/eliminar/<%= usuarios.id %>?_method=DELETE"
+                method="POST"
+              >
+                <button
+                  type="submit"
+                  class="input-button button-enteros button-eliminar"
+                >
+                  Si
+                </button>
+              </form>
             </div>
+          </div>
+        </div>
         <%});%>
-        </section>
-    </div>	
-
-</body>
+      </section>
+    </div>
+  </body>
 </html>
