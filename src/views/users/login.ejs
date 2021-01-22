@@ -3,6 +3,7 @@
 	<head>
 		<title>BierClub - Iniciar Sesión</title>
 		<%- include('../partials/head.ejs') %>
+		<script src="/js/login.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -52,7 +53,7 @@
 
 			<!-- CONTRASEÑA -->
 			<div class="campo-input">
-				<input class="input-registro" type="password" id="contraseña" name="contrasenia" placeholder="Contraseña">
+				<input class="input-registro" type="password" id="contrasenia" name="contrasenia" placeholder="Contraseña">
 				<% if(typeof credencialesInvalidas != "undefined"){ %>
 					<p class="error-total">* <%= credencialesInvalidas %></p>
 				<% } %>
@@ -76,7 +77,7 @@
 			</form>
 			
 			<!-- REGISTRARSE -->
-			<p class="registrate-usuario">¿Aún no tenés usuario?<a href="/users/register">¡Registrate!</a></p>
+			<p class="registrate-usuario">¿Aún no tenés usuario? <a href="/users/register">¡Registrate!</a></p>
 		</div>
 				<!-- FOOTER -->
 				<footer class="login-footer">
