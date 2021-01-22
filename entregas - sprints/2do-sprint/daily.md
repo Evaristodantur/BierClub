@@ -4,10 +4,11 @@
   Terminado:
   - Slider de Productos Relacionados
   - Validacion de form en Register
+  - Incluir validacion de session en todas las paginas
     
    Para hacer hoy:
   - Validacion de form en Login
-  
+ 
 
 ### 🗓️ 20/1/21
   Terminado:
@@ -18,6 +19,7 @@
   - Slider de Productos Relacionados
   - Validacion de form en Register
   - Validacion de form en Login
+  - Incluir validacion de session en todas las paginas
   
 
 ### 🗓️ 19/1/21
