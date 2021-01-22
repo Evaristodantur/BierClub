@@ -8,8 +8,8 @@
   - Validación de form en Login
     
    Para hacer hoy:
-  - Validacion de ProductAdd
-  - Validacion de ProductEdit
+  - Validación de ProductAdd
+  - Validación de ProductEdit
 
 
 ### 🗓️ 21/1/21
