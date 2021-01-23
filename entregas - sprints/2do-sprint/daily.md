@@ -4,9 +4,11 @@
   Terminado:
   - Validación de ProductAdd
   - Validación de ProductEdit
+  - Validacion de imagenes en ProductAdd
+  - Validacion de imagenes en ProductEdit
     
    Para hacer hoy:
-  
+  - Validacion de form en /contact
 
 
 ### 🗓️ 22/1/21
@@ -19,6 +21,8 @@
    Para hacer hoy:
   - Validación de ProductAdd
   - Validación de ProductEdit
+  - Validacion de imagenes en ProductAdd
+  - Validacion de imagenes en ProductEdit
 
 
 ### 🗓️ 21/1/21
