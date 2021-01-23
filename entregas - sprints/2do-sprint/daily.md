@@ -1,5 +1,14 @@
 # Dailies
 
+### 🗓️ 23/1/21
+  Terminado:
+  - Validación de ProductAdd
+  - Validación de ProductEdit
+    
+   Para hacer hoy:
+  
+
+
 ### 🗓️ 22/1/21
   Terminado:
   - Slider de Productos Relacionados
