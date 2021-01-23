@@ -112,8 +112,8 @@ router.put(
 /* DELETE     /products/productEdit/borrar/:id - Borra el producto      page. */
 router.delete(
   '/productEdit/delete/:id',
-  guestMiddleware,
-  authAdminMiddleware,
+  /* guestMiddleware,
+  authAdminMiddleware, */
   productsController.deleteProduct
 );
 

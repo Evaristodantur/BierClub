@@ -1297,3 +1297,152 @@ Stock: 222
 Categoria: Cerveza
 Descripción: asdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasaaasdasdasdasdaa
 *************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:48:24
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:48:33
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:48:40
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 23/1/2021 06:07:09
+Producto: dasasd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 06:24:29
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 06:24:57
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 06:25:00
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 06:25:54
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 06:26:13
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 06:26:25
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 06:27:28
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 06:27:53
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 06:28:05
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 06:54:53
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 23/1/2021 07:18:36
+Producto: dassad
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 23/1/2021 07:19:06
+Producto: dssd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 23/1/2021 07:24:49
+Producto: dss
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
