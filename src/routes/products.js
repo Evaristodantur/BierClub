@@ -72,9 +72,9 @@ router.get(
 /* GET     /products/productAdd - Pagina Visual de create               page. */
 router.get(
   '/productAdd',
-  guestMiddleware,
+  /* guestMiddleware,
   verifyAccountMiddleware,
-  authAdminMiddleware,
+  authAdminMiddleware, */
   productsController.createProduct
 );
 
@@ -92,9 +92,9 @@ router.post(
 /* GET     /products/productEdit/:id - Pagina Visual de productEdit     page. */
 router.get(
   '/productEdit/:id',
-  guestMiddleware,
+  /* guestMiddleware,
   verifyAccountMiddleware,
-  authAdminMiddleware,
+  authAdminMiddleware, */
   productsController.editProduct
 );
 

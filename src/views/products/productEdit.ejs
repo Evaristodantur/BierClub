@@ -3,6 +3,7 @@
   <head>
     <title>BierClub - Editar producto</title>
     <%- include('../partials/head.ejs') %>
+    <script src="/js/productEdit.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -32,7 +33,7 @@
           <div class="campo-nombre-precio-cantidad">
 
             <!-- NOMBRE -->
-            <div class="nombre">
+            <div class="nombre campo-input">
               <label for="nombreProducto">Nombre del producto:</label>
               <input id="nombreProducto" type="text" name="nombre" placeholder="Nombre" value="<%= producto.name %>">
               <% if (typeof producto.errors != 'undefined') { %>
@@ -45,7 +46,7 @@
               <% } %>
             </div>
             
-            <div class="precio-descuento">
+            <div class="precio-descuento campo-input">
               <!-- PRECIO -->
               <div class="precio">
                 <label for="precio">Precio:</label>
@@ -61,7 +62,7 @@
               </div>
 
               <!-- DESCUENTO -->
-              <div class="descuento">
+              <div class="descuento campo-input">
                 <label for="descuento">Descuento:</label>
                 <input id="descuento" type="text" name="descuento" placeholder="Descuento" value="<%=producto.discount%>">
                 <% if (typeof producto.errors != 'undefined') { %>
@@ -76,7 +77,7 @@
             </div>
             
             <!-- CANTIDAD -->
-            <div class="cantidad">
+            <div class="cantidad campo-input">
               <label for="cantidad">Cantidad:</label>
               <input id="cantidad" type="text" name="stock" placeholder="Cantidad" value="<%= producto.stock %>">
               <% if (typeof producto.errors != 'undefined') { %>
@@ -133,15 +134,18 @@
         
 
         <!-- DESCRIPCION -->
-        <textarea class="descripcionDelProducto" name="descripcion" placeholder="Describa el producto"><%=producto.description%></textarea>
-        <% if (typeof producto.errors != 'undefined') { %>
-          <% for(let i=0; i < producto.errors.length; i++)  { %>
-            <% if (producto.errors[i].param == "descripcion") {  %>
-              <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
-              <% break; %>
-            <% } %>
-          <% } %>
-        <% } %>
+        <div class="campo-input">
+            <textarea class="descripcionDelProducto" name="descripcion" placeholder="Describa el producto"><%=producto.description%></textarea>
+              <% if (typeof producto.errors != 'undefined') { %>
+                <% for(let i=0; i < producto.errors.length; i++)  { %>
+                  <% if (producto.errors[i].param == "descripcion") {  %>
+                    <p class="errorDeCarga">* El campo <%=`"${producto.errors[i].param}" ` + producto.errors[i].msg %></p>
+                    <% break; %>
+                  <% } %>
+                <% } %>
+              <% } %>
+          </div>
+
 
           <div class="flex-botones-publicar">
               <button class="btn-publicar" type="submit" , id="publicar" , value="guardar"> Guardar Modificaciones 

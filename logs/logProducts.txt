@@ -876,3 +876,424 @@ Stock: 0
 Categoria: Vino
 Descripción: 
 *************************************************************
+Hubo un intento de subir/modificar a las 22/1/2021 22:54:44
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 22/1/2021 22:55:23
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 22/1/2021 22:55:45
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 22/1/2021 22:56:00
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 22/1/2021 22:57:00
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 22/1/2021 22:57:12
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 22/1/2021 22:57:17
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 22/1/2021 22:57:21
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:04:04
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:04:14
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:04:17
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:04:22
+El producto es:
+Producto: 
+Precio: 
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:04:40
+El producto es:
+Producto: 
+Precio: 
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:04:41
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:04:57
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:05:32
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:05:44
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:06:03
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:06:23
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:06:39
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:06:46
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:08:44
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:09:33
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:09:42
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:10:01
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:11:14
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:12:36
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:13:38
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:13:52
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:14:07
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:15:37
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:15:56
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:16:18
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:18:02
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:19:11
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:20:21
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:21:27
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:22:02
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:22:05
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:25:39
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:27:49
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:28:09
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:28:45
+El producto es:
+Producto: 
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:28:57
+El producto es:
+Producto: dasasd
+Precio: 0
+Descuento: 
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Hubo un intento de subir/modificar a las 23/1/2021 00:29:20
+El producto es:
+Producto: dasasd
+Precio: 0
+Descuento: 
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 23/1/2021 00:29:57
+Producto: asdsda
+Precio: 2
+Descuento: 54
+Stock: 42
+Categoria: Lupuladas
+Descripción: asdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasaa
+*************************************************************
+Fecha de creacion/modificación del producto: 23/1/2021 00:35:32
+Producto: asddas
+Precio: 43
+Descuento: 2
+Stock: 222
+Categoria: Cerveza
+Descripción: asdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasdaaaaaaaaaaaaaaaaaaasdasdasdasaaasdasdasdasdaa
+*************************************************************
