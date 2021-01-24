@@ -25,12 +25,27 @@ window.addEventListener('DOMContentLoaded', () => {
         for(let i=2; i < hijos.length; i++) {
           hijos[i].remove();
         }
+
+        
+        let posicion = 0;
+        setInterval(() => {
+          if(this.files[posicion] != undefined) {
+            const objectUrl = URL.createObjectURL(this.files[posicion]);
+            let imgPrev = document.querySelector('.imagenPrev img');
+            imgPrev.setAttribute('src', objectUrl);
+            posicion++;
+          } else {
+            posicion = 0;
+          }
+        }, 5000)
+        
       } else {
         $hayError = true;
         implementacionDeErroresImgs('*Debe ser 4 imágenes como máximo');
       }
       
     }
+    
 
     function implementacionDeErroresImgs(msgDeError) {
       
