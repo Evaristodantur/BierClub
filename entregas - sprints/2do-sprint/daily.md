@@ -3,6 +3,7 @@
 ### 🗓️ 23/1/21
   Terminado:
   - Validacion de form en /contact
+  - Arreglar error en login y register, form - validaciones
     
    Para hacer hoy:
   
@@ -17,6 +18,7 @@
     
    Para hacer hoy:
   - Validacion de form en /contact
+  - Arreglar error en login y register, form - validaciones
 
 
 ### 🗓️ 22/1/21
