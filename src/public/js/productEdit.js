@@ -42,13 +42,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
         //Previsualizacion de imagenes y loop infinito entre ellas
         setInterval(() => {
-          if (this.files[posicion] != undefined) {
+          if (this.files[posicion] != undefined && posicion != 0) {
             const objectUrl = URL.createObjectURL(this.files[posicion]);
             let imgPrev = document.querySelector('.imagenPrev img');
             imgPrev.setAttribute('src', objectUrl);
             posicion++;
           } else {
             posicion = 0;
+            const objectUrl = URL.createObjectURL(this.files[0]);
+            let imgPrev = document.querySelector('.imagenPrev img');
+            imgPrev.setAttribute('src', objectUrl);
+            posicion = 1;
           }
         }, 5000);
 
@@ -70,7 +74,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-    
+
     $formEdit.addEventListener('submit', (e) => {
     
       let $nombre = document.getElementById('nombreProducto');
