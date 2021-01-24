@@ -7,6 +7,7 @@
     
    Para hacer hoy:
   - validacion de modificar User en /perfil
+  - Agregar productos al carrito con una session iniciada
 
 
 ### 🗓️ 23/1/21
