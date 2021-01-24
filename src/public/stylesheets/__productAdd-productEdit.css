@@ -64,7 +64,8 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
 .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
   /* Display & Box Model */
   display: inline-block;
-  width: 320px;
+  width: 328px;
+  height: 328px;
   margin-right: 20px;
 
   /* Otras */
@@ -294,18 +295,7 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
     margin-left: 20px;
   }
 
-  .productAdd
-    form.formulario-carga
-    div.flex-imgPrev-detalle
-    div.imagenPrev
-    img {
-    /* Posicionamiento */
-    position: relative;
-    right: 0px;
 
-    /* Display & Box Model */
-    width: 50%;
-  }
 
   /*BLOQUE IMGFILE - CATEGORIA*/
   div.fileImagenes {
@@ -371,21 +361,13 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
     width: 75%;
   }
 
-  div.fileImagenes {
-    width: 60%;
+  .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
+    margin-right: 0;
+    
   }
 
-  .productAdd
-    form.formulario-carga
-    div.flex-imgPrev-detalle
-    div.imagenPrev
-    img {
-    /* Posicionamiento */
-    position: relative;
-    right: 0px;
-
-    /* Display & Box Model */
-    width: 65%;
+  div.fileImagenes {
+    width: 60%;
   }
 
   .productAdd form.formulario-carga div.flex-imgPrev-detalle .nombre,
@@ -449,6 +431,11 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
     margin-right: 0;
   }
 
+  .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
+    width: 250px;
+    height: 250px;
+  }
+
   /*BLOQUE NOMBRE-PRECIO-CANTIDAD-IMAGEN PREVISUALIZADA*/
   div.campo-nombre-precio-cantidad .nombre input#nombreProducto,
   div.campo-nombre-precio-cantidad .precio input#precio,
@@ -485,15 +472,29 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
   .flex-botones-publicar button#reset {
     width: 90%;
   }
-  .productAdd
-    form.formulario-carga
-    div.flex-imgPrev-detalle
-    div.imagenPrev
-    img {
-    /* Posicionamiento */
-    right: -5px;
 
-    /* Display & Box Model */
-    width: 85%;
+}
+
+
+
+
+
+/* ==========================================================================
+   RESOLUCION: 480 hacia abajo
+   ========================================================================== */
+@media (max-width: 320px) {
+  body {
+    overflow-x: hidden;
   }
+
+  .fileImagenes input {
+    position: relative;
+    right: 27px;
+  }
+
+  .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
+    width: 225px;
+    height: 225px;
+  }
+
 }
