@@ -6,7 +6,7 @@
   - Arreglar error en login y register, form - validaciones
     
    Para hacer hoy:
-  
+  - validacion de modificar User en /perfil
 
 
 ### 🗓️ 23/1/21
