@@ -26,10 +26,16 @@ window.addEventListener('DOMContentLoaded', () => {
           hijos[i].remove();
         }
 
-        
+        //Carga Inmediata de la primera imagen
         let posicion = 0;
+        const objectUrl = URL.createObjectURL(this.files[0]);
+        let imgPrev = document.querySelector('.imagenPrev img');
+        imgPrev.setAttribute('src', objectUrl);
+        posicion = 1;
+
+        //Previsualizacion de imagenes y loop infinito entre ellas
         setInterval(() => {
-          if(this.files[posicion] != undefined) {
+          if (this.files[posicion] != undefined) {
             const objectUrl = URL.createObjectURL(this.files[posicion]);
             let imgPrev = document.querySelector('.imagenPrev img');
             imgPrev.setAttribute('src', objectUrl);
@@ -37,7 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
           } else {
             posicion = 0;
           }
-        }, 5000)
+        }, 5000);
         
       } else {
         $hayError = true;

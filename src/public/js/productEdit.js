@@ -32,10 +32,15 @@ window.addEventListener('DOMContentLoaded', () => {
         for (let i = 2; i < hijos.length; i++) {
           hijos[i].remove();
         }
-
-
         
+        //Carga Inmediata de la primera imagen
         let posicion = 0;
+        const objectUrl = URL.createObjectURL(this.files[0]);
+        let imgPrev = document.querySelector('.imagenPrev img');
+        imgPrev.setAttribute('src', objectUrl);
+        posicion = 1;
+
+        //Previsualizacion de imagenes y loop infinito entre ellas
         setInterval(() => {
           if (this.files[posicion] != undefined) {
             const objectUrl = URL.createObjectURL(this.files[posicion]);
@@ -54,6 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     }
 
+    //Muestra los errores de carga que hubo con las imagenes
     function implementacionDeErroresImgs(msgDeError) {
       let errImagen = document.createElement('p');
       let imgTextErr = document.createTextNode(msgDeError);
@@ -62,6 +68,9 @@ window.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.fileImagenes').appendChild(errImagen);
     }
 
+
+
+    
     $formEdit.addEventListener('submit', (e) => {
     
       let $nombre = document.getElementById('nombreProducto');
