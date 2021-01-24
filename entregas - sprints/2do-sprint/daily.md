@@ -8,6 +8,7 @@
    Para hacer hoy:
   - Documentar e indentar codigo JS de Front
   - Agregar productos al carrito con una session iniciada
+  - Arreglar previsualizacion de imagenes en ProductAdd y ProductEdit - width y height
 
 
 ### 🗓️ 23/1/21
