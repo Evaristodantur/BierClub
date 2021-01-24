@@ -99,7 +99,7 @@
 
 					<!-- VIEJA CONTRASEÑA -->
 					<div class="campo-input">
-						<input class="input-registro" type="password" placeholder="Antigua Contraseña" name="antiguaContrasenia"> 
+						<input id="antiguaContrasenia" class="input-registro" type="password" placeholder="Antigua Contraseña" name="antiguaContrasenia"> 
 						<%if(typeof usuario.errors != "undefined"){%>
 							<% for(let i = 0 ; i < usuario.errors.length ; i++){ %>
 								<%if(usuario.errors[i].param == "antiguaContrasenia"){%>

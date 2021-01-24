@@ -75,9 +75,9 @@ router.post('/login', loginMiddleware, usersController.loginIniciar);
 /* GET     /users/perfil/:id             page. */
 router.get(
   '/perfil/:id',
-  guestMiddleware,
+  /* guestMiddleware,
   verifyAccountMiddleware,
-  perfilOrAdminMiddleware,
+  perfilOrAdminMiddleware, */
   usersController.perfilEdit
 );
 
