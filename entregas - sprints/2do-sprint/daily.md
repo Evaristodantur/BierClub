@@ -6,7 +6,10 @@
   - Previsualizar imagenes en productEdit
     
    Para hacer hoy:
-
+  - Documentar e indentar codigo JS de Front
+  - Agregar productos al carrito con una session iniciada
+  - Arreglar previsualizacion de imagenes en ProductAdd y ProductEdit - width y height
+  - Se rompe ProductAdd o ProductEdit en agregado de imagen - resoluciones menos de 300px
 
 
 ### 🗓️ 23/1/21
@@ -18,7 +21,6 @@
   - validacion de modificar User en /perfil
   - Previsualizar imagenes en productAdd
   - Previsualizar imagenes en productEdit
-  - Agregar productos al carrito con una session iniciada
 
 
 ### 🗓️ 23/1/21
