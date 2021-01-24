@@ -1,5 +1,14 @@
 # Dailies
 
+### 🗓️ 25/1/21
+  Terminado:
+  - Previsualizar imagenes en productAdd
+  - Previsualizar imagenes en productEdit
+    
+   Para hacer hoy:
+
+
+
 ### 🗓️ 23/1/21
   Terminado:
   - Validacion de form en /contact
@@ -7,6 +16,8 @@
     
    Para hacer hoy:
   - validacion de modificar User en /perfil
+  - Previsualizar imagenes en productAdd
+  - Previsualizar imagenes en productEdit
   - Agregar productos al carrito con una session iniciada
 
 
