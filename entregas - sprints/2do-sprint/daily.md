@@ -6,8 +6,7 @@
   - Previsualizar imagenes en productEdit
     
    Para hacer hoy:
-  - Previsualizar imagenes en productAdd
-  - Previsualizar imagenes en productEdit
+
 
 
 ### 🗓️ 23/1/21
