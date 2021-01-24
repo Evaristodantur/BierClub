@@ -6,7 +6,8 @@
   - Previsualizar imagenes en productEdit
     
    Para hacer hoy:
-
+  - Documentar e indentar codigo JS de Front
+  - Agregar productos al carrito con una session iniciada
 
 
 ### 🗓️ 23/1/21
@@ -18,7 +19,6 @@
   - validacion de modificar User en /perfil
   - Previsualizar imagenes en productAdd
   - Previsualizar imagenes en productEdit
-  - Agregar productos al carrito con una session iniciada
 
 
 ### 🗓️ 23/1/21
