@@ -2,6 +2,14 @@
 
 ### 🗓️ 23/1/21
   Terminado:
+  - Validacion de form en /contact
+    
+   Para hacer hoy:
+  
+
+
+### 🗓️ 23/1/21
+  Terminado:
   - Validación de ProductAdd
   - Validación de ProductEdit
   - Validacion de imagenes en ProductAdd
