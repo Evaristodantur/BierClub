@@ -43,18 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
     function productosNovedadesSlider() {
         const $nextProductNovedad = document.getElementById('product-next');
         const $prevProductNovedad = document.getElementById('product-prev');
-        const $productsNovedad = document.querySelector('.productsSlider');
-        const $allProductsNovedad = document.querySelectorAll('.productNovedades');
-
-        //Clono los nodos para poder hacer filtrado de novedades
-        let cloneProducts = $productsNovedad.cloneNode(true);
-        //Lo doy vuelta
-        var arrayNodes = Array.from(cloneProducts.children).reverse();
-
-        //Los cambio por los productos en general
-        for(let i=0; i < arrayNodes.length; i++) {
-            $allProductsNovedad[i].innerHTML = arrayNodes[i].innerHTML;
-        }
+        const $productsNovedad = document.querySelector('.productNovedades');
 
         //Los muestro como vista inicial
         display_Initial_ProductsView(window.innerWidth >= 1400, 4);
@@ -67,15 +56,14 @@ window.addEventListener('DOMContentLoaded', () => {
         //Boton de siguiente producto
         $prevProductNovedad.addEventListener('click', () => {
             $productsNovedad.insertBefore($productsNovedad.lastElementChild, $productsNovedad.firstElementChild);
-            $productsNovedad.firstElementChild.style.display = "flex";
+            $productsNovedad.firstElementChild.style.display = 'flex';
             
             nextOrPrevProduct__InWidth_(5, window.innerWidth >= 1400, "none");
             nextOrPrevProduct__InWidth_(4, window.innerWidth < 1400 && window.innerWidth > 1024, "none");
             nextOrPrevProduct__InWidth_(3, window.innerWidth <= 1024 && window.innerWidth > 768, "none");
             nextOrPrevProduct__InWidth_(2, window.innerWidth <= 768 && window.innerWidth > 525, "none");
             nextOrPrevProduct__InWidth_(1, window.innerWidth <= 525, "none");
-            
-        })
+        });
 
 
         //Boton de anterior producto
@@ -83,26 +71,26 @@ window.addEventListener('DOMContentLoaded', () => {
             $productsNovedad.appendChild($productsNovedad.firstElementChild)
             $productsNovedad.lastElementChild.style.display = "none"
 
-            nextOrPrevProduct__InWidth_(4, window.innerWidth >= 1400, "flex")
-            nextOrPrevProduct__InWidth_(3, window.innerWidth < 1400 && window.innerWidth >= 1024, "flex")
-            nextOrPrevProduct__InWidth_(2, window.innerWidth <= 1024 && window.innerWidth > 768, "flex")
-            nextOrPrevProduct__InWidth_(1, window.innerWidth <= 768 && window.innerWidth > 525, "flex")
-            nextOrPrevProduct__InWidth_(0, window.innerWidth <= 525, "flex")
-        })
+            nextOrPrevProduct__InWidth_(4, window.innerWidth >= 1400, "flex");
+            nextOrPrevProduct__InWidth_(3, window.innerWidth < 1400 && window.innerWidth >= 1024, "flex");
+            nextOrPrevProduct__InWidth_(2, window.innerWidth <= 1024 && window.innerWidth > 768, "flex");
+            nextOrPrevProduct__InWidth_(1, window.innerWidth <= 768 && window.innerWidth > 525, "flex");
+            nextOrPrevProduct__InWidth_(0, window.innerWidth <= 525, "flex");
+        });
 
         //Funcion para pasar al siguiente u anterior producto
         function nextOrPrevProduct__InWidth_(children, width, childrenStatus) {
-            if(width) {
-                $productsNovedad.children[children].style.display = childrenStatus
+            if (width) {
+              $productsNovedad.children[children].style.display = childrenStatus;
             }
         }
 
         //Function de muestra inicial de los productos al primer loading
         function display_Initial_ProductsView(width, howManyProducts) {
             if(width) {
-                for(let i=0; i < $allProductsNovedad.length; i++) {
+                for(let i=0; i < $productsNovedad.children.length; i++) {
                     if(i > howManyProducts) {
-                        $allProductsNovedad[i].style.display = 'none'
+                        $productsNovedad.children[i].style.display = 'none';
                     }
                 }
             }
@@ -118,18 +106,8 @@ window.addEventListener('DOMContentLoaded', () => {
         const $nextProductFilter = document.querySelector('.btnSig-Filter');
         const $prevProductFilter = document.querySelector('.btnAnt-Filter');
         const $productsFilter = document.querySelector('.productFilter');
-        
-        //Borro todo lo que no tiene stock
-        for(let i=0; i < $productsFilter.children.length; i++) {
-            if($productsFilter.children[i].querySelector(".sinStock") != null) {
-                $productsFilter.removeChild($productsFilter.children[i]);
-            }
-        }
-        //Checkea el ultimo elemento si no tiene stock - ya que el for no lo hace
-        if($productsFilter.children[$productsFilter.children.length-1].querySelector(".sinStock") != null) {
-            $productsFilter.removeChild($productsFilter.children[$productsFilter.children.length-1]);
-        }
             
+        //Los muestro como vista inicial
         //Los muestro como vista inicial
         display_Initial_ProductsStockView(window.innerWidth >= 1400, 4);
         display_Initial_ProductsStockView(window.innerWidth < 1400 && window.innerWidth > 1024, 3);
@@ -180,8 +158,6 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-
-
 
     //Ejecucion de Funciones
     productosNovedadesSlider();

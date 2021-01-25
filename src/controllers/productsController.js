@@ -13,14 +13,22 @@ let productsController = {
     prueba : (req, res, next) => {
 
         db.Products.findAll({
-          include: [
-            { association: 'images' },
-            { association: 'carts', where: { user_id: userLogged.id, status: 0 } },
-          ]
-        }).then((products) => {
-            
-          res.send(products);
-        });
+                include: [{association: "images"}], 
+                order: [
+                    ['id', 'DESC']
+                ]
+            }).then(products => {
+                db.Products.findAll({
+                  include: [{ association: 'images' }],
+                  where: {
+                    stock: { [db.Sequelize.Op.gt]: 0 },
+                  }
+                }).then(productInStock => {
+                    console.log(productInStock);
+                    res.send(products);
+                })
+                            
+            });
     },
     
 

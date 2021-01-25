@@ -36,7 +36,7 @@ let mainController = {
                     cart_id: cart.id
                 })
 
-                res.redirect('/carts')
+                res.redirect('/')
 
             })
 

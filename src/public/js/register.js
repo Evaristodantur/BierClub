@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let nombreCondicion = $nombre.value.length < 3;
       let emailCondicion = !(/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})/i.test($email.value));
       let contraseniaCondicion = $contrasenia.value.length < 8 || $email.value == $contrasenia.value;
-      let terminosCondicionesCondicion = !terminosCondiciones.checked;
+      let terminosCondicionesCondicion = !$terminosCondiciones.checked;
       let confirmarContraseniaCondicion = $confirmarContrasenia.value != $contrasenia.value || $contrasenia.value == "" || $confirmarContrasenia.value == "";
       
 

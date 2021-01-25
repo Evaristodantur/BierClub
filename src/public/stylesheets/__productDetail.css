@@ -327,6 +327,10 @@ IMAGEN
   justify-content: center;
 }
 
+.productsSliderRelacionados .sinStock {
+  color: red;
+}
+
 /* ==========================================================================
    RESOLUCION 950 HACIA ABAJO - ANIMACIONES
    ========================================================================== */

@@ -6,9 +6,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const $nextProduct = document.querySelector('.btnSig');
     const $prevProduct = document.querySelector('.btnAnt');
     const $productsRelacionados = document.querySelector('.productsSliderRelacionados');
-    
-    console.log($productsRelacionados.children.length);
-    
 
     //Los muestro como vista inicial
     display_Initial_ProductsView(window.innerWidth >= 1400, 4);
@@ -24,7 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
         if($productsRelacionados.children.length > 5) {
             $productsRelacionados.lastElementChild.style.display = "none";
         }
-        
 
         nextOrPrevProduct__InWidth_(4, window.innerWidth >= 1400, "flex");
         nextOrPrevProduct__InWidth_(3, window.innerWidth < 1400 && window.innerWidth >= 1024, "flex");

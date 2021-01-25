@@ -35,37 +35,37 @@
             </a>
           </div>
 
-          <section class="productsSlider">
-            <% for (let i=0; i < productos.length ; i++) { %>
+          <section class="productsSlider productNovedades">
+            <% for (let i=0; i < productosNovedades.length ; i++) { %>
 
             <article class="producto productNovedades">
-              <a href="/products/productDetail/<%= productos[i].id %>">
-                <% if(typeof productos[i].images[0] != "undefined") { %>
+              <a href="/products/productDetail/<%= productosNovedades[i].id %>">
+                <% if(typeof productosNovedades[i].images[0] != "undefined") { %>
                 <img
-                  src="/images/productos/<%= productos[i].images[0].name %>"
-                  alt="<%= productos[i].name %>"
+                  src="/images/productos/<%= productosNovedades[i].images[0].name %>"
+                  alt="<%= productosNovedades[i].name %>"
                 />
                 <% } else { %>
                 <img
                   src="/images/productos/product-image-not-available.jpg"
-                  alt="<%= productos[i].name %>"
+                  alt="<%= productosNovedades[i].name %>"
                 />
                 <% } %>
               </a>
-              <h2 class="producto-titulo"><%= productos[i].name %></h2>
+              <h2 class="producto-titulo"><%= productosNovedades[i].name %></h2>
               <div class="precio-stock">
                 <div>
-                  <h4 class="etiqueta-precio">$<%= productos[i].price %></h4>
+                  <h4 class="etiqueta-precio">$<%= productosNovedades[i].price %></h4>
                 </div>
                 <div>
-                  <% if (productos[i].stock > 0) { %>
+                  <% if (productosNovedades[i].stock > 0) { %>
                   <h5 class="etiqueta-stock">Stock Disponible</h5>
                   <% } else { %>
                   <h5 class="stock sinStock">Sin Stock</h5>
                   <% } %>
                 </div>
               </div>
-              <form action="/carts/addProduct/<%= productos[i].id %>" method="POST">
+              <form action="/carts/addProduct/<%= productosNovedades[i].id %>" method="POST">
                 <button class="btn-producto hoverproducto" type="submit">
                   <i class="fas fa-plus"></i> Añadir al Carrito
                 </button>
@@ -139,35 +139,31 @@
           </div>
 
           <section class="productsSlider productFilter">
-            <% for (let i=0; i < productos.length ; i++) { %>
+            <% for (let i=0; i < productosEnStock.length ; i++) { %>
             <article class="producto artProductFilter">
-              <a href="/products/productDetail/<%= productos[i].id %>">
-                <% if(typeof productos[i].images[0] != "undefined") { %>
+              <a href="/products/productDetail/<%= productosEnStock[i].id %>">
+                <% if(typeof productosEnStock[i].images[0] != "undefined") { %>
                 <img
-                  src="/images/productos/<%= productos[i].images[0].name %>"
-                  alt="<%= productos[i].name %>"
+                  src="/images/productos/<%= productosEnStock[i].images[0].name %>"
+                  alt="<%= productosEnStock[i].name %>"
                 />
                 <% } else { %>
                 <img
                   src="/images/productos/product-image-not-available.jpg"
-                  alt="<%= productos[i].name %>"
+                  alt="<%= productosEnStock[i].name %>"
                 />
                 <% } %>
               </a>
-              <h2 class="producto-titulo"><%= productos[i].name %></h2>
+              <h2 class="producto-titulo"><%= productosEnStock[i].name %></h2>
               <div class="precio-stock">
                 <div>
-                  <h4 class="etiqueta-precio">$<%= productos[i].price %></h4>
+                  <h4 class="etiqueta-precio">$<%= productosEnStock[i].price %></h4>
                 </div>
                 <div>
-                  <% if (productos[i].stock > 0) { %>
                   <h5 class="etiqueta-stock">Stock Disponible</h5>
-                  <% } else { %>
-                  <h5 class="stock sinStock">Sin Stock</h5>
-                  <% } %>
                 </div>
               </div>
-              <form action="/carts/addProduct/<%= productos[i].id %>" method="POST">
+              <form action="/carts/addProduct/<%= productosEnStock[i].id %>" method="POST">
                 <button class="btn-producto hoverproducto" type="submit">
               
               

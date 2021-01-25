@@ -16,9 +16,21 @@ let mainController = {
 
         //Muestra todos los productos en el home
         db.Products.findAll({
-                include: [{association: "images"}]
+                include: [{association: "images"}], 
+                order: [
+                    ['id', 'DESC']
+                ]
             }).then(products => {
-                res.render('index', { productos : products, userLogged : req.session.usuarioLogueado });
+                db.Products.findAll({
+                  include: [{ association: 'images' }],
+                  where: {
+                    stock: { [db.Sequelize.Op.gt]: 0 },
+                  }
+                }).then(productInStock => {
+                    console.log(productInStock);
+                    res.render('index', { productosEnStock: productInStock, productosNovedades: products, userLogged : req.session.usuarioLogueado });
+                })
+                            
             });
     },
 
