@@ -1,5 +1,17 @@
 # Dailies
 
+### 🗓️ 27/1/21
+  Terminado:
+  - Arreglar agregar al carrito ProductDetail
+  - Mostrar productos en ProductCart
+  
+   Para hacer hoy:
+  - Documentar e indentar codigo JS de Front
+  - Animacion de agregado de producto
+  - Arreglar slider de productos
+  - ProductDetail agregar producto, y borrar cantidad
+  
+
 ### 🗓️ 26/1/21
   Terminado:
   - Agregar productos al carrito con una session iniciada
@@ -7,10 +19,8 @@
   - Se rompe ProductAdd o ProductEdit en agregado de imagen - resoluciones menos de 300px
   
    Para hacer hoy:
-  - Documentar e indentar codigo JS de Front
   - Arreglar agregar al carrito ProductDetail
   - Mostrar productos en ProductCart
-  - Animacion de agregado de producto
 
 
 ### 🗓️ 25/1/21
