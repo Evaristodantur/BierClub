@@ -13,17 +13,13 @@ let productsController = {
     prueba : (req, res, next) => {
 
         db.Products.findAll({
-            include: [{association: "categories"}],
-            where: {
-                category_id: 1
-            }
-        })
-            .then(products => {
+          include: [
+            { association: 'images' },
+            { association: 'carts', where: { user_id: userLogged.id, status: 0 } },
+          ]
+        }).then((products) => {
             
-            
-            res.send(products);
-
-            
+          res.send(products);
         });
     },
     
@@ -637,10 +633,7 @@ let productsController = {
 
 
 
-    //  /products/productCart - Vista de productCart
-    productCart : (req, res, next) => {
-        res.render('products/productCart', { userLogged : req.session.usuarioLogueado });
-    }
+    
 }
 
 module.exports = productsController;

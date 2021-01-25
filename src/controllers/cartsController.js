@@ -2,16 +2,18 @@ let fs = require('fs');
 let path = require('path');
 let db = require("../database/models");
 const {validationResult} = require("express-validator");
-const e = require("express");
 
 let mainController = {
     index: (req, res, next) => {
-         db.Carts.findAll({
-             include: [{association: 'products'}]
-         })
-            .then(carritos => {
-                res.send(carritos)
-            })
+         db.Products.findAll({
+          include: [
+            { association: 'images' },
+            { association: 'carts', where: { user_id: userLogged.id, status: 0 } },
+          ]
+        }).then((products) => {
+            console.log(products);
+          res.send(products);
+        });
     },
     addProduct: (req, res, next) => {
         console.log('paso por aca');
@@ -46,6 +48,21 @@ let mainController = {
         
     },
 
+
+    //  /products/productCart - Vista de productCart
+    productCart : (req, res, next) => {
+        let userLogged= req.session.usuarioLogueado;
+        
+        db.Products.findAll({
+          include: [
+            { association: 'images' },
+            { association: 'carts', where: { user_id: userLogged.id, status: 0 } },
+          ]
+        }).then((products) => {
+            console.log(products);
+          res.render('products/productCart', { productos : products, userLogged: userLogged });
+        });
+    },
 
 
 

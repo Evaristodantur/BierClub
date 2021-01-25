@@ -39,11 +39,6 @@ router.get('/prueba', productsController.prueba);
 /* GET     /products/productDetail/:id                                  page. */
 router.get('/productDetail/:id', productsController.productDetail);
 
-/**********************************PRODUCT CART***************************************/
-
-/* GET     /products/productCart                                        page. */
-router.get('/productCart', productsController.productCart);
-
 /**********************************ADMINISTRADOR**************************************/
 
 /* GET     /products/productAdmin                                       page. */

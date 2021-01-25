@@ -24,163 +24,55 @@
         <div class="productos">
 
 
-          <!-- SECCION PRODUCTOS FILA 1 -->
-          <div class="producto-carrito">
+          
 
-            <!-- PC - FILA DE IMG Y PRECIO -->
-            <h4 class="estilo-letras-producto">X</h4>
-            <img class="producto-imagen-carrito" src="/images/productos/producto-1606687552374.jpg" alt="">
-            <h4 class="estilo-letras-producto">Septic Tank - West Coast IPA</h4>
-            <h4 class="estilo-letras-producto">$149.99</h4>
-            <h4 class="estilo-letras-producto"><a href="#" class="sumar-restar-cantidad">-</a> 2 <a href="#" class="sumar-restar-cantidad">+</a></h4>
-            <h4 class="estilo-letras-producto">$299.98</h4>
+            
+            <% productos.forEach(producto => { %>
+              <!-- PC - FILA DE IMG Y PRECIO -->
+                <!-- SECCION PRODUCTOS FILA 1 -->
+                <div class="producto-carrito">
+                  <h4 class="estilo-letras-producto">X</h4>
+                  <% if(typeof producto.images[0] != "undefined") { %>
+                    <img class="producto-imagen-carrito" src="/images/productos/<%= producto.images[0].name %> " alt="">
+                  <% } else { %>
+                    <img class="producto-imagen-carrito" src="/images/productos/product-image-not-available.jpg" alt="">
+                  <% } %> 
+                    <h4 class="estilo-letras-producto"><%= producto.name %></h4>
+                    <h4 class="estilo-letras-producto">$<%= producto.price %></h4>
+                    <h4 class="estilo-letras-producto"><a href="#" class="sumar-restar-cantidad">-</a> 2 <a href="#" class="sumar-restar-cantidad">+</a></h4>
+                    <h4 class="estilo-letras-producto">$299.98</h4>
+                  
+                  
 
-            <!------- MOBILE ------->
-            <div class="mobile-letras-producto texto-centrado-producto">
-              <h4 class="">Septic Tank - West Coast IPA</h4>
-            </div>
+                  <!------- MOBILE ------->
+                  <div class="mobile-letras-producto texto-centrado-producto">
+                    <h4 class="">Septic Tank - West Coast IPA</h4>
+                  </div>
 
-            <!------- PRECIO ------->
-            <div class="mobile-letras-producto">
-              <h4 class="">Precio:</h4>
-              <h4 class="">$149.99</h4>
-            </div>
+                  <!------- PRECIO ------->
+                  <div class="mobile-letras-producto">
+                    <h4 class="">Precio:</h4>
+                    <h4 class="">$149.99</h4>
+                  </div>
 
-            <!------- CANTIDAD ------->
-            <div class="mobile-letras-producto">
-              <h4 class="">Cantidad:</h4>
-              <h4 class=""><a href="#" class="sumar-restar-cantidad">-</a> 2 <a href="#" class="sumar-restar-cantidad">+</a></h4>
-            </div>
+                  <!------- CANTIDAD ------->
+                  <div class="mobile-letras-producto">
+                    <h4 class="">Cantidad:</h4>
+                    <h4 class=""><a href="#" class="sumar-restar-cantidad">-</a> 2 <a href="#" class="sumar-restar-cantidad">+</a></h4>
+                  </div>
 
-            <!------- SUBTOTAL ------->
-            <div class="mobile-letras-producto">
-              <h4 class="">SUBTOTAL:</h4>
-              <h4 class="">$299.98</h4>
-            </div>
-          </div>
+                  <!------- SUBTOTAL ------->
+                  <div class="mobile-letras-producto">
+                    <h4 class="">SUBTOTAL:</h4>
+                    <h4 class="">$299.98</h4>
+                  </div>
+                </div>
+            <% }) %> 
+              
 
         
           <!-- LINEA -->
-          <hr class="hr-carrito">
-
-
-          <!-- SECCION PRODUCTOS FILA 2 -->
-          <div class="producto-carrito">
-
-            <!-- PC - FILA DE IMG Y PRECIO -->
-            <h4 class="estilo-letras-producto">X</h4>
-            <img class="producto-imagen-carrito" src="/images/productos/producto-1606687552374.jpg" alt="">
-            <h4 class="estilo-letras-producto">Super Refreshing IPA - Hybrid IPA</h4>
-            <h4 class="estilo-letras-producto">$135</h4>
-            <h4 class="estilo-letras-producto"><a href="#" class="sumar-restar-cantidad">-</a> 3 <a href="#" class="sumar-restar-cantidad">+</a></h4>
-            <h4 class="estilo-letras-producto">$400</h4>
-
-            <!------- MOBILE ------->
-            <!------- TITULO ------->
-            <div class="mobile-letras-producto texto-centrado-producto">
-              <h4 class="">Super Refreshing IPA - Hybrid IPA</h4>
-            </div>
-
-            <!------- PRECIO ------->
-            <div class="mobile-letras-producto">
-              <h4 class="">Precio:</h4>
-              <h4 class="">$135</h4>
-            </div>
-
-            <!------- CANTIDAD ------->
-            <div class="mobile-letras-producto">
-              <h4 class="">Cantidad:</h4>
-              <h4 class=""><a href="#" class="sumar-restar-cantidad">-</a> 3 <a href="#" class="sumar-restar-cantidad">+</a></h4>
-            </div>
-
-            <!------- SUBTOTAL ------->
-            <div class="mobile-letras-producto">
-              <h4 class="">SUBTOTAL:</h4>
-              <h4 class="">$400</h4>
-            </div>
-          </div>
-
-
-          <!-- lINEA -->
-          <hr class="hr-carrito">
-
-
-          <!-- SECCION PRODUCTOS FILA 3 -->
-          <div class="producto-carrito">
-            
-            <!-- PC - FILA DE IMG Y PRECIO -->
-            <h4 class="estilo-letras-producto">X</h4>
-            <img class="producto-imagen-carrito" src="/images/productos/producto-1606687552374.jpg" alt="">
-            <h4 class="estilo-letras-producto">Saison de Triomphe - Hoppy Saison</h4>
-            <h4 class="estilo-letras-producto">$150</h4>
-            <h4 class="estilo-letras-producto"><a href="#" class="sumar-restar-cantidad">-</a> 2 <a href="#" class="sumar-restar-cantidad">+</a></h4>
-            <h4 class="estilo-letras-producto">$300</h4>
-
-            <!------- MOBILE ------->
-            <!------- TITULO ------->
-            <div class="mobile-letras-producto texto-centrado-producto">
-              <h4 class="">Saison de Triomphe - Hoppy Saison</h4>
-            </div>
-
-            <!------- PRECIO ------->
-            <div class="mobile-letras-producto">
-              <h4 class="">Precio:</h4>
-              <h4 class="">$160</h4>
-            </div>
-
-            <!------- CANTIDAD ------->
-            <div class="mobile-letras-producto">
-              <h4 class="">Cantidad:</h4>
-              <h4 class=""><a href="#" class="sumar-restar-cantidad">-</a> 2 <a href="#" class="sumar-restar-cantidad">+</a></h4>
-            </div>
-
-            <!------- SUBTOTAL ------->
-            <div class="mobile-letras-producto">
-              <h4 class="">SUBTOTAL:</h4>
-              <h4 class="">$160</h4>
-            </div>
-          </div>
-
-
-          <!-- LINEA -->
-          <hr class="hr-carrito">
-
-
-          <!-- SECCION PRODUCTOS FILA 4 -->
-          <div class="producto-carrito">
-
-            <!-- PC - FILA DE IMG Y PRECIO -->
-            <h4 class="estilo-letras-producto">X</h4>
-            <img class="producto-imagen-carrito" src="/images/productos/producto-1606687552374.jpg" alt="">
-            <h4 class="estilo-letras-producto">Rippa Sippa (TDH Imperial Aussie IPA)</h4>
-            <h4 class="estilo-letras-producto">$85</h4>
-            <h4 class="estilo-letras-producto"><a href="#" class="sumar-restar-cantidad">-</a> 10 <a href="#" class="sumar-restar-cantidad">+</a></h4>
-            <h4 class="estilo-letras-producto">$850</h4>
-
-            <!------- MOBILE ------->
-            <!------- TITULO ------->
-            <div class="mobile-letras-producto texto-centrado-producto">
-              <h4 class="">Rippa Sippa (TDH Imperial Aussie IPA)</h4>
-            </div>
-
-            <!------- PRECIO ------->
-            <div class="mobile-letras-producto">
-              <h4 class="">Precio:</h4>
-              <h4 class="">$85</h4>
-            </div>
-
-            <!------- CANTIDAD ------->
-            <div class="mobile-letras-producto">
-              <h4 class="">Cantidad:</h4>
-              <h4 class=""><a href="#" class="sumar-restar-cantidad">-</a> 10 <a href="#" class="sumar-restar-cantidad">+</a></h4>
-            </div>
-
-            <!------- SUBTOTAL ------->
-            <div class="mobile-letras-producto">
-              <h4 class="">SUBTOTAL:</h4>
-              <h4 class="">$850</h4>
-            </div>
-          </div>
+          <hr class="hr-carrito">          
         </div>
 
 
