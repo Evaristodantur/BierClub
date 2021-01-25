@@ -65,8 +65,8 @@
                   <% } %>
                 </div>
               </div>
-              <form action="">
-                <button class="btn-producto hoverproducto" type="button">
+              <form action="/carts/addProduct/<%= productos[i].id %>" method="POST">
+                <button class="btn-producto hoverproducto" type="submit">
                   <i class="fas fa-plus"></i> Añadir al Carrito
                 </button>
               </form>
@@ -117,9 +117,7 @@
             >
           </li>
           <li>
-            <a href="/products/productsFilter?ordenar=mayor-precio"
-              >Mayor Precio</a
-            >
+            <a href="/products/productsFilter?ordenar=mayor-precio">Mayor Precio</a>
           </li>
         </ul>
       </section>
@@ -169,12 +167,13 @@
                   <% } %>
                 </div>
               </div>
-              <form action="">
-                <button class="btn-producto hoverproducto" type="button"></button>
-              </form>
+              <form action="/carts/addProduct/<%= productos[i].id %>" method="POST">
+                <button class="btn-producto hoverproducto" type="submit">
+              
               
                 <i class="fas fa-plus"></i> Añadir al Carrito
               </button>
+              </form>
             </article>
             <% } %>
           </section>

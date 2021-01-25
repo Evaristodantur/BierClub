@@ -141,9 +141,13 @@
 
           <!-- AGREGAR AL CARRITO -->
           <div class="agregarAlcarrito">
-            <button class="btn-agregarAlCarrito" type="button">
+            <form action="/carts/addProduct/<%= producto.id %>" method="POST">
+
+            
+            <button class="btn-agregarAlCarrito" type="submit">
               Agregar al carrito <i class="fas fa-plus"></i>
             </button>
+            </form>
           </div>
 
           <!-- COMPRAR AHORA -->
@@ -215,8 +219,8 @@
               <% } %>
             </div>
           </div>
-          <form action="">
-            <button class="btn-producto hoverproducto" type="button">
+          <form action="/carts/addProduct/<%= productosRelacionados[i].id %>" method="POST">
+            <button class="btn-producto hoverproducto" type="submit">
               <i class="fas fa-plus"></i> Añadir al Carrito
             </button>
           </form>
