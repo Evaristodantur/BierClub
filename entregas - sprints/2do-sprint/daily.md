@@ -1,5 +1,18 @@
 # Dailies
 
+### 🗓️ 26/1/21
+  Terminado:
+  - Agregar productos al carrito con una session iniciada
+  - Arreglar previsualizacion de imagenes en ProductAdd y ProductEdit - width y height
+  - Se rompe ProductAdd o ProductEdit en agregado de imagen - resoluciones menos de 300px
+  
+   Para hacer hoy:
+  - Documentar e indentar codigo JS de Front
+  - Arreglar agregar al carrito ProductDetail
+  - Mostrar productos en ProductCart
+  - Animacion de agregado de producto
+
+
 ### 🗓️ 25/1/21
   Terminado:
   - Previsualizar imagenes en productAdd
@@ -11,6 +24,7 @@
   - Arreglar previsualizacion de imagenes en ProductAdd y ProductEdit - width y height
   - Se rompe ProductAdd o ProductEdit en agregado de imagen - resoluciones menos de 300px
   - Arreglar agregar al carrito ProductDetail
+  - Mostrar productos en ProductCart
 
 
 ### 🗓️ 23/1/21
