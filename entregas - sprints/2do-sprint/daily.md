@@ -10,6 +10,7 @@
   - Documentar e indentar codigo JS de Front
   - Arreglar agregar al carrito ProductDetail
   - Mostrar productos en ProductCart
+  - Animacion de agregado de producto
 
 
 ### 🗓️ 25/1/21
