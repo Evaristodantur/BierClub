@@ -10,6 +10,7 @@
   - Agregar productos al carrito con una session iniciada
   - Arreglar previsualizacion de imagenes en ProductAdd y ProductEdit - width y height
   - Se rompe ProductAdd o ProductEdit en agregado de imagen - resoluciones menos de 300px
+  - Arreglar agregar al carrito ProductDetail
 
 
 ### 🗓️ 23/1/21
