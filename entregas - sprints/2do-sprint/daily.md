@@ -10,6 +10,7 @@
   - Animacion de agregado de producto
   - Arreglar slider de productos
   - ProductDetail agregar producto, y borrar cantidad
+  - Arreglar Newsletter
   
 
 ### 🗓️ 26/1/21
