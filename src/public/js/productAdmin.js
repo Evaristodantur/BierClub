@@ -21,6 +21,10 @@ function divTransparencia(productoId) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+
+  window.onresize = function () {
+    location.reload();
+  };
   
   function addProductNoPageReload() {
     let addProductBtn = document.querySelectorAll('.btn-agregarAlCarrito');

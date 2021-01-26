@@ -2,6 +2,11 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    window.onresize = function () {
+      location.reload();
+    };
+    
+
     const barney = document.querySelector('.barney');
     const grid = document.querySelector('.grid');
     let isJumping = false;

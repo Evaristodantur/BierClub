@@ -12,25 +12,7 @@ let productsController = {
     //Para realizar pruebas
     prueba : (req, res, next) => {
 
-        productsNovedades = db.Products.findAll({
-                include: [{association: "images"}], 
-                order: [
-                    ['id', 'DESC']
-                ]
-            })
-        productsRelacionados = db.Products.findAll({
-                  include: [{ association: 'images' }],
-                  where: {
-                    stock: { [db.Sequelize.Op.gt]: 0 },
-                  }, 
-                order: [
-                    ['id', 'DESC']
-                ]
-                })
-        Promise.all([productsNovedades, productsRelacionados]).then(rest => {
-            
-            res.send(rest[0])
-        }).catch(err => console.log(err))
+        res.render('vistaPrueba')
     },
     
 

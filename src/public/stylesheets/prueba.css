@@ -1,45 +1,232 @@
 /* ==========================================================================
-   BANNER - CARRUSEL - SLICE
+   GENERAL
    ========================================================================== */
-.home section div.banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home section div.banner img {
-  display: block;
-  width: 100%;
+body div.container-carrito {
+  padding-top: 1rem;
 }
 
 /* ==========================================================================
-   TITULO - NOVEDADES
+   TITULO
    ========================================================================== */
-.home main div.titulos {
+.container-carrito h1.titulo {
+  /* Display & Box Model */
+  margin-top: 110px;
+  margin-bottom: 50px;
+
+  /* Otras */
   text-align: center;
+}
+
+/* ==========================================================================
+   SECCION PRODUCTOS DEL CARRITO Y RECUADRO
+   ========================================================================== */
+.container-carrito div.productos-carrito {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-carrito div.productos-carrito div.productos div.producto-carrito {
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* ==========================================================================
+   SECCION PRODUCTOS FILAS
+   ========================================================================== */
+.container-carrito .productos-carrito div.productos {
+  width: 60vw;
+}
+
+.container-carrito
+  div.productos-carrito
+  div.productos
+  div.producto-carrito
+  img.producto-imagen-carrito {
+  /* Display & Box Model */
+  width: 140px;
+  height: 140px;
+
+  /* Otras */
+  border-radius: 15px;
+}
+
+.container-carrito .productos-carrito .productos hr.hr-carrito {
+  /* Display & Box Model */
+  margin-left: 8%;
   margin-top: 20px;
+  margin-bottom: 20px;
+
+  /* Otras */
+  border: solid 1px black;
+}
+
+.container-carrito
+  .productos-carrito
+  .productos
+  .producto-carrito
+  .estilo-letras-producto {
+  word-break: break-word;
+  text-align: center;
+}
+
+.form-equis {
+  width: 0;
+}
+
+.producto-nombre {
+  width: 20%;
+}
+.producto-precio {
+width: 15%;
+}
+.producto-cantidad{
+width: 10%;
+}
+.producto-precio-total{
+width: 20%;
+}
+
+.container-carrito
+  .productos-carrito
+  .productos
+  .producto-carrito
+  .mobile-letras-producto {
+  display: none;
+}
+
+/* ==========================================================================
+   SECCION RECUADRO DE TOTAL
+   ========================================================================== */
+.container-carrito .productos-carrito .recuadro-total {
+  width: 18%;
+  height: 500px;
+  position: relative;
+  /*  position:fixed;
+    margin-left: 65%;
+    border:solid 1px black; */
+  z-index: 1;
+}
+
+.container-carrito .productos-carrito .recuadro-total .recuadro-total-chico {
+  margin: 10%;
+}
+
+.container-carrito
+  .productos-carrito
+  .recuadro-total
+  .recuadro-total-chico
+  .recuadro-carrito {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container-carrito
+  .productos-carrito
+  .recuadro-total
+  .recuadro-total-chico
+  .hr-recuadro {
+  border: 1px solid black;
+}
+
+.container-carrito
+  .productos-carrito
+  .recuadro-total
+  .recuadro-total-chico
+  .recuadro-carrito
+  h4.btn-cambiar-direccion {
+  color: #daa520;
+}
+
+.container-carrito .productos-carrito .recuadro-total .recuadro-total-chico a {
+  text-decoration: none;
+}
+
+.container-carrito
+  .productos-carrito
+  .recuadro-total
+  .recuadro-total-chico
+  a
+  h4.boton-pagar {
+  /* Display & Box Model */
+  width: 100%;
+
+  /* Otras */
+  color: white;
+  background-color: #daa520;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* ==========================================================================
+   SECCION CUPON
+   ========================================================================== */
+.container-carrito .cupones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 8%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container-carrito .cupones input {
+  height: 40px;
+  border-radius: 8px;
+}
+
+.container-carrito .cupones a {
+  margin-left: 20px;
+  color: black;
+}
+
+.container-carrito .cupones a p {
+  padding: 10px;
+  margin-left: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.container-carrito .cupones p:hover {
+  color: white;
+  background-color: #daa520;
+  border-radius: 8px;
+}
+
+/* ==========================================================================
+   PRODUCTOS RELACIONADOS
+   ========================================================================== */
+.titulo-productosRelacionado {
+  /* Display & Box Model */
+  margin-top: 20px;
+
+  /* Otras */
+  text-align: center;
 }
 
 /* ==========================================================================
    BLOQUE - PRODUCTOS
    ========================================================================== */
-.home main section.productos {
+section.productos {
   /* Display & Box Model */
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
-
-.productsSlider {
-  display: flex;
-  justify-content: center;
+.sumar-restar-cantidad {
+  text-decoration: none;
+  color: #daa520;
 }
-
-.home main section.productos article.producto {
+section.productos article.producto {
   /* Display & Box Model */
   width: 22%;
-
   margin: 1% 0.5%;
   display: flex;
   flex-direction: column;
@@ -55,79 +242,56 @@
   transition: 0.3s;
 }
 
-.home main section.productos article.producto img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  width: 100%;
-  height: 300px;
-}
-
-.home main section.productos div.btnAnt {
+section.productos div.btnAnt {
   align-self: center;
   margin-left: 1%;
   display: inline-block;
 }
 
-.home main section.productos div.btnSig {
+section.productos div.btnSig {
   align-self: center;
   margin-right: 1%;
   display: inline-block;
 }
 
+section.productos article.producto img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+}
+
 /* ==========================================================================
    PRODUCTO - PRECIO -STOCK
    ========================================================================== */
-.home main section.productos article.producto h2.producto-titulo {
+section.productos article.producto h2.producto-titulo {
   font-size: large;
   margin-right: 3%;
   margin-left: 3%;
-  margin-top: 0;
-  white-space: pre-wrap;
-  word-wrap: break-word;
 }
 
-.home main section.productos article.producto div.precio-stock {
+section.productos article.producto div.precio-stock {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
 }
 
-.home
-  main
-  section.productos
-  article.producto
-  div.precio-stock
-  div
-  h4.etiqueta-precio {
+section.productos article.producto div.precio-stock div h4.etiqueta-precio {
   float: left;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.home
-  main
-  section.productos
-  article.producto
-  div.precio-stock
-  div
-  h5.etiqueta-stock {
+section.productos article.producto div.precio-stock div h5.etiqueta-stock {
   float: right;
   color: rgb(1, 122, 1);
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.home main section.productos article.producto div.precio-stock div h5.sinStock {
-  float: right;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: red;
-}
-
 /* ==========================================================================
    PRODUCTO - BUTTON AÑADIR AL CARRITO
    ========================================================================== */
-.home main section.productos article.producto button.btn-producto {
+section.productos article.producto button.btn-producto {
   /* Display & Box Model */
   padding: 10px;
   width: 80%;
@@ -140,7 +304,7 @@
   border-radius: 10px;
 }
 
-.home main section.productos article.producto button.hoverproducto {
+section.productos article.producto button.hoverproducto {
   opacity: 0;
   margin: 0;
   margin-top: 2%;
@@ -149,7 +313,7 @@
   transition: 0.2s;
 }
 
-.home main section.productos article.producto:hover button.hoverproducto {
+section.productos article.producto:hover button.hoverproducto {
   opacity: 1;
   margin-bottom: 4%;
 }
@@ -158,469 +322,305 @@
    PRODUCTO - BUTTON SIGUIENTE/PREVIO
    ========================================================================== */
 
-.home main section.productos article.producto button.btn-producto i.fa-plus {
+section.productos article.producto button.btn-producto i.fa-plus {
   color: #daa520;
 }
 
-.home main section.productos div.btnAnt i.fa-chevron-circle-left,
-.home main section.productos div.btnSig i.fa-chevron-circle-right {
+section.productos div.btnAnt i.fa-chevron-circle-left,
+section.productos div.btnSig i.fa-chevron-circle-right {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 50%;
   color: #daa520;
   font-size: 45px;
 }
 
-.home main section.productos div.btnAnt i.fa-chevron-circle-left:hover,
-.home main section.productos div.btnSig i.fa-chevron-circle-right:hover {
+section.productos div.btnAnt i.fa-chevron-circle-left:hover,
+section.productos div.btnSig i.fa-chevron-circle-right:hover {
   background-color: rgb(0, 0, 0);
   color: #ffd56cd7;
 }
 
-/* ==========================================================================
-   BANNER - NOVEDADES
-   ========================================================================== */
-.home section div.banner-novedades {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.home section div.banner-novedades a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-}
-
-.home section div.banner-novedades img.img-banner {
-  margin-top: 2%;
-  width: 100%;
-}
-
-/* ==========================================================================
-   NAV- MEJORES PRODUCTOS
-   ========================================================================== */
-.home section.nav-MejoresProductos div.titulo-mejores-productos {
-  text-align: center;
-  margin-top: 78vh;
-}
-
-.home section.nav-MejoresProductos ul.mejores-productos {
-  text-align: center;
-}
-
-.home section.nav-MejoresProductos ul.mejores-productos li a {
-  /* Display & Box Model */
-  padding: 5px 15px;
-  display: block;
-
-  /* Otras */
-  text-decoration: none;
-  background-color: #daa520;
-  color: black;
-  border-radius: 5px;
-}
-
-.home section.nav-MejoresProductos ul.mejores-productos li a:hover {
-  background-color: #8b4513;
-  color: white;
-}
-
-.home section.nav-MejoresProductos ul.mejores-productos li {
-  /* Display & Box Model */
-  display: inline-block;
-  padding-right: 1%;
-  width: 13%;
-}
-
-/* ==========================================================================
-   NEWSLETTER
-   ========================================================================== */
-.home section.newsletter-background {
-  /* Display & Box Model */
-  margin-top: 100px;
-  padding: 20px 0px;
-
-  /* Otras */
-  background-color: black;
-  color: white;
-  text-align: center;
-}
-
-.home section.newsletter-background input.newsletter {
-  /* Display & Box Model */
-  margin: 0.5% 0;
-  width: 49%;
-  padding: 10px 2px;
-
-  /* Otras */
-  border: 0;
-  border-radius: 20px;
-  text-align: center;
-  outline: none;
-}
-
-.home section.newsletter-background input.newsletter::placeholder {
-  color: black;
-  opacity: 1;
-  font-size: medium;
-}
-.parallax-completo {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
-}
-.home div.banner-parallax {
-  background-image: url('/images/home/banners/banner1.jpg');
-
-  /* Display & Box Model */
-  height: 63vh;
-  width: 100%;
-
-  /* Otras */
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-}
-.home div.banner-parallax div.banner-texto {
-  text-align: center;
-  margin-top: 30vh;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: inline-block;
-  margin-left: 55vw;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 1px solid white;
-}
-
-/* ==========================================================================
-   MODAL-NEWSLETTER
-   ========================================================================== */
-#modal-newsletter {
-  display: none;
-}
-
-#modal-newsletter div.background-newsletter-modal {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-#modal-newsletter div.background-newsletter-modal div {
-  position: relative;
-  top: 50%;
-  left: 44%;
-  background-color: white;
-  width: 280px;
-  height: 93px;
-  border-radius: 8px;
-}
-
-#modal-newsletter p {
-  font-size: 0.8em;
-  font-weight: bold;
-  color: black;
-  padding-top: 6px;
-}
-
-#modal-newsletter button {
-  padding: 7px 25px;
-  background-color: black;
-  color: white;
-  border: 0;
-  border-radius: 8px;
-}
-
-/* ==========================================================================
-   RESOLUCION: 1600 hacia abajo
-   ========================================================================== */
-@media (max-width: 1600px) {
-  .home main section.productos article.producto img {
-    height: 275px;
-  }
-}
-
-/* ==========================================================================
-   RESOLUCION: 1500 hacia abajo
-   ========================================================================== */
-@media (max-width: 1500px) {
-  .home main section.productos article.producto img {
-    height: 255px;
-  }
-}
-
-/* ==========================================================================
-   RESOLUCION: 1200 a 1400
-   ========================================================================== */
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .home main section.productos article.producto img {
-    height: 305px;
-  }
-
-  /*NAV - MEJORES PRODUCTOS*/
-  .home section.nav-MejoresProductos ul.mejores-productos li {
-    padding-right: 1%;
-    width: 16%;
-  }
-
-  /*NEWSLETTER*/
-  .home section.newsletter-background input.newsletter {
-    width: 70%;
-  }
-}
-
-/* ==========================================================================
-   RESOLUCION: 1300 hacia abajo
-   ========================================================================== */
-@media (max-width: 1300px) {
-  .home main section.productos article.producto img {
-    height: 275px;
-  }
-}
-
-/* ==========================================================================
-   RESOLUCION: 1024 a 1200
-   ========================================================================== */
-@media (min-width: 1024px) and (max-width: 1200px) {
-  /*SECCION - PRODUCTOS*/
-  .home main section.productos {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  .home main section.productos article.producto img {
-    height: 250px;
-  }
-
-  /*NAV - MEJORES PRODUCTOS*/
-  .home section.nav-MejoresProductos ul.mejores-productos li {
-    padding-left: 0;
-    width: 20%;
-  }
-
-  /*NEWSLETTER*/
-  .home section.newsletter-background input.newsletter {
-    width: 70%;
-  }
-}
-
-/* ==========================================================================
-   RESOLUCION: 1100 hacia abajo
-   ========================================================================== */
-@media (max-width: 1100px) {
-  .home main section.productos article.producto img {
-    height: 225px;
-  }
-}
-
-/* ==========================================================================
-   RESOLUCION: 768 a 1023
-   ========================================================================== */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /*SECCION - PRODUCTOS*/
-  .home main section.productos {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  /*PRODUCTO*/
-  .home main section.productos article.producto {
-    width: 30%;
-    margin: 1% 5px;
-    margin-bottom: 3%;
-  }
-
-  .home main section.productos article.producto img {
-    height: 285px;
-  }
-
-  /*NAV - MEJORES PRODUCTOS*/
-  .home section.nav-MejoresProductos ul.mejores-productos {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-left: 0;
-  }
-
-  .home section.nav-MejoresProductos ul.mejores-productos li {
-    width: 40%;
-    margin-top: 2%;
-  }
-
-  /*NEWSLETTER*/
-  .home section.newsletter-background input.newsletter {
-    width: 70%;
-  }
-}
 
 /* ==========================================================================
    RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
    ========================================================================== */
 @media (max-width: 950px) {
-  .home main section.productos article.producto img {
-    height: 258px;
-  }
-
-  /*BUTTON - AÑADIR AL CARRITO*/
-  .home main section.productos article.producto button.hoverproducto {
+  /*BUTTON - AÑADIR AL CARRITO - PRODUCTOS RELACIONADOS*/
+  section.productos article.producto button.hoverproducto {
     opacity: 1;
   }
-}
-
-/* ==========================================================================
-   RESOLUCION: 900 hacia abajo
-   ========================================================================== */
-@media (max-width: 900px) {
-  .home main section.productos article.producto img {
-    height: 240px;
+  .container-carrito .cupones p {
+    color: white;
+    background-color: #daa520;
+    border-radius: 8px;
   }
 }
 
 /* ==========================================================================
-   RESOLUCION: 850 hacia abajo
+   RESOLUCION 1700 HACIA ARRIBA
    ========================================================================== */
-@media (max-width: 850px) {
-  .home main section.productos article.producto img {
-    height: 230px;
+@media (min-width: 1700px) {
+  /*RECUADRO TOTAL*/
+  .productos-carrito .recuadro-total {
+    width: 18%;
   }
 }
 
 /* ==========================================================================
-   RESOLUCION: 768 hacia abajo
+   RESOLUCION 1450-1700
    ========================================================================== */
-@media (max-width: 768px) {
-  .home main section.productos article.producto img {
-    height: 317px;
+@media (min-width: 1450px) and (max-width: 1699px) {
+  /*RECUADRO TOTAL*/
+  .container-carrito .productos-carrito .recuadro-total {
+    width: 25%;
   }
 }
 
 /* ==========================================================================
-   RESOLUCION: 700 hacia abajo
-   ========================================================================== */
-@media (max-width: 700px) {
-  .home main section.productos article.producto img {
-    height: 284px;
+   RESOLUCION 1200-1450
+========================================================================== */
+@media (min-width: 1200px) and (max-width: 1449px) {
+  /*RECUADRO TOTAL*/
+  .container-carrito .productos-carrito .recuadro-total {
+    width: 30%;
+  }
+
+  .container-carrito .productos-carrito div.productos {
+    width: 65vw;
+  }
+
+  .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
+    font-size: 0.95em;
   }
 }
 
 /* ==========================================================================
-   RESOLUCION: 600 hacia abajo
+   RESOLUCION 1024-1200
    ========================================================================== */
-@media (max-width: 600px) {
-  .home main section.productos article.producto img {
-    height: 235px;
+@media (min-width: 1024px) and (max-width: 1199px) {
+  /*RECUADRO TOTAL*/
+  .container-carrito .productos-carrito .recuadro-total {
+    width: 30%;
+  }
+
+  .container-carrito div.productos-carrito div.productos div.producto-carrito img.producto-imagen-carrito {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
+    font-size: 0.9em;
   }
 }
 
 /* ==========================================================================
-   RESOLUCION: 550 hacia abajo
+   RESOLUCION 768-1024
    ========================================================================== */
-@media (max-width: 550px) {
-  .home main section.productos article.producto img {
-    height: 209px;
+@media (min-width: 768px) and (max-width: 1023px) {
+  /*SECCION PRODUCTOS FILA*/
+  .container-carrito div.productos-carrito {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-carrito .productos-carrito div.productos {
+    width: 100%;
+  }
+
+  .container-carrito .productos-carrito .productos hr.hr-carrito {
+    width: 80%;
+    margin-right: 20%;
+  }
+
+  /*RECUADRO TOTAL*/
+  .container-carrito .productos-carrito .recuadro-total {
+    width: 100%;
+  }
+
+  /*SECCION CUPONES*/
+  .container-carrito .cupones {
+    margin-top: 80px;
+    margin-left: 9.5%;
   }
 }
 
 /* ==========================================================================
-   RESOLUCION: 525 a 768
+   RESOLUCION 480-768
    ========================================================================== */
-@media (min-width: 525px) and (max-width: 768px) {
-  .home {
-    overflow-x: hidden;
+@media (min-width: 525px) and (max-width: 767px) {
+  /*SECCION PRODUCTOS FILA*/
+  .container-carrito div.productos-carrito {
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .home section div.banner img {
-    width: 750px;
+  /*SECCION PRODUCTOS CARRITO*/
+  .container-carrito .productos-carrito div.productos {
+    width: 90vw;
   }
 
-  /*SECCION - PRODUCTOS*/
-  .home main section.productos {
-    margin-top: 5%;
-    margin-bottom: 5%;
+  /*RECUADRO TOTAL*/
+  .container-carrito .productos-carrito .recuadro-total {
+    width: 100%;
   }
 
-  /*PRODUCTO*/
-  .home main section.productos article.producto {
-    margin: 0% 5px;
-    width: 45%;
+  /*SECCION PRODUCTOS FILA*/
+  .container-carrito div.productos-carrito div.productos div.producto-carrito {
+    flex-direction: column;
   }
 
-  .home main section.productos article.producto:hover {
+  .container-carrito
+    div.productos-carrito
+    div.productos
+    div.producto-carrito
+    img.producto-imagen-carrito {
+    width: 50%;
+    align-self: center;
+    margin-bottom: 25px;
+  }
+
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .mobile-letras-producto
+    h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .mobile-letras-producto {
+    display: inline-block;
+  }
+
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .mobile-letras-producto {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-self: center;
+  }
+
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .texto-centrado-producto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  /*SECCION CUPONES*/
+  .container-carrito .cupones {
+    margin-top: 15px;
+  }
+
+  
+}
+
+/* ==========================================================================
+   RESOLUCION 0-479
+   ========================================================================== */
+@media (max-width: 524px) {
+  /*SECCION PRODUCTOS FILA*/
+  .container-carrito .productos-carrito {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-carrito
+    div.productos-carrito
+    div.productos
+    div.producto-carrito
+    img.producto-imagen-carrito {
+    width: 50%;
+    align-self: center;
+    margin-bottom: 25px;
+  }
+
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .mobile-letras-producto
+    h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .container-carrito .productos-carrito .productos .producto-carrito {
+    flex-direction: column;
+  }
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .estilo-letras-producto {
+    display: none;
+  }
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .mobile-letras-producto {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .texto-centrado-producto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  /*SECCION PRODUCTOS CARRITO*/
+  .container-carrito .productos-carrito div.productos {
+    width: 90vw;
+  }
+
+  /*RECUADRO TOTAL*/
+  .container-carrito .productos-carrito .recuadro-total {
+    width: 100%;
+  }
+
+  /*DIRECCION DEL RECUADRO*/
+  .container-carrito
+    .productos-carrito
+    .recuadro-total
+    .recuadro-total-chico
+    .recuadro-carrito
+    h4.direccion-margin {
+    margin-top: 0px;
     margin-bottom: 0px;
   }
 
-  .producto button.btn-producto {
-    margin-bottom: 2%;
+  /*SECCION CUPONES*/
+  .container-carrito .cupones {
+    margin-top: 0px;
   }
-
-  /*PRODUCTO - BUTTON SIGUIENTE/PREVIO*/
-  .home main section.productos div.btnAnt i.fa-chevron-circle-left,
-  .home main section.productos div.btnSig i.fa-chevron-circle-right {
-    font-size: 35px;
-  }
-
-  /*NAV - MEJORES PRODUCTOS*/
-  .home section.nav-MejoresProductos ul.mejores-productos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0;
-    padding-top: 15px;
-  }
-
-  .home section.nav-MejoresProductos ul.mejores-productos li {
-    width: 75%;
-    margin-top: 3%;
-    padding: 0;
-  }
-
-  .home section.nav-MejoresProductos ul.mejores-productos a {
-    display: block;
-  }
-
-  /*NEWSLETTER*/
-  .home section.newsletter-background input.newsletter {
-    width: 70%;
-  }
-  .home div.banner-parallax {
-    height: 46vh;
-  }
-  .home div.banner-parallax div.banner-texto {
-    margin-top: 23vh;
-    margin-left: 45vw;
-  }
-  .home section.nav-MejoresProductos div.titulo-mejores-productos {
-    margin-top: 54vh;
-  }
-}
-
-/* ==========================================================================
-   RESOLUCION: 524 hacia abajo
-   ========================================================================== */
-@media (max-width: 524px) {
-  .home {
-    overflow-x: hidden;
-  }
-
-  .home section div.banner img {
-    width: 750px;
+  /*4 PRODUCTOS RELACIONADOS SACADOS*/
+  section.productos article.producto.resolucionMenorA1200,
+  section.productos article.producto.resolucionMenorA1024,
+  section.productos article.producto.resolucionMenorA768,
+  section.productos article.producto.resolucionMenorA320 {
+    display: none;
   }
 
   /*SECCION - PRODUCTOS*/
-  .home main section.productos {
+  section.productos {
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -629,81 +629,27 @@
   }
 
   /*PRODUCTO*/
-  .home main section.productos article.producto {
-    margin: 0% 0px;
-    width: 90%;
-    align-self: center;
+  section.productos article.producto {
+    margin: 0% 5px;
+    width: 70%;
   }
 
-  .home main section.productos article.producto img {
-    height: 354px;
-  }
-
-  .home main section.productos article.producto button.btn-producto {
+  section.productos article.producto button.btn-producto {
     margin-bottom: 4%;
   }
 
   /*PRODUCTO - BUTTON SIGUIENTE/PREVIO*/
-  .home main section.productos div.btnAnt i.fa-chevron-circle-left,
-  .home main section.productos div.btnSig i.fa-chevron-circle-right {
+  section.productos div.btnAnt i.fa-chevron-circle-left,
+  section.productos div.btnSig i.fa-chevron-circle-right {
     font-size: 35px;
   }
-
-  /*NAV - MEJORES PRODUCTOS*/
-  .home section.nav-MejoresProductos ul.mejores-productos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0;
-  }
-
-  .home section.nav-MejoresProductos ul.mejores-productos li {
-    width: 75%;
-    margin-top: 3%;
-    padding: 0;
-  }
-
-  .home section.nav-MejoresProductos ul.mejores-productos a {
-    display: block;
-  }
-
-  /*NEWSLETTER*/
-  .home section.newsletter-background input.newsletter {
-    width: 80%;
-  }
-  .home div.banner-parallax,
-  .home div.banner-parallax div.banner-texto {
-    display: none;
-  }
-  .home section.nav-MejoresProductos div.titulo-mejores-productos {
-    margin-top: 20px;
-  }
 }
-
 /* ==========================================================================
-   RESOLUCION: 450 hacia abajo
-   ========================================================================== */
-@media (max-width: 450px) {
-  .home main section.productos article.producto img {
-    height: 298px;
-  }
-}
-
-/* ==========================================================================
-   RESOLUCION: 400 hacia abajo
+   RESOLUCION 0-400
    ========================================================================== */
 @media (max-width: 400px) {
-  .home main section.productos article.producto img {
-    height: 261px;
-  }
-}
-
-/* ==========================================================================
-   RESOLUCION: 350 hacia abajo
-   ========================================================================== */
-@media (max-width: 350px) {
-  .home main section.productos article.producto img {
-    height: 227px;
+  .container-carrito .cupones a {
+    margin-left: -3px;
+    margin-top: 8px;
   }
 }
