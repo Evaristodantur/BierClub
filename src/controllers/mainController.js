@@ -31,7 +31,6 @@ let mainController = {
                 ]
                 })
         Promise.all([productInStock, productsNov]).then(rest => {
-            console.log(rest[0]);
             res.render('index', { productosEnStock: rest[0], productosNovedades: rest[1], userLogged : req.session.usuarioLogueado });
         }).catch(err => console.log(err))
         

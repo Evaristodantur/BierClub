@@ -15,6 +15,12 @@ let mainController = {
           res.send(products);
         });
     },
+
+
+
+
+
+
     addProduct: (req, res, next) => {
         
         let userLogged = req.session.usuarioLogueado        
@@ -27,14 +33,36 @@ let mainController = {
                     user_id: userLogged.id,
                     status: 0
                 },
-                include: [{association: 'products'}]
+                include: [
+                    {association: 'products'}
+                ]
             }).then(cart => {
-                
+
+                db.Products.findByPk(req.params.id)
+                    .then(productEnStock => {
+
+                        if(productEnStock.dataValues.stock > 0) {
+
+                            db.Cart_Product.findOne({
+                              where: {
+                                cart_id: cart.id,
+                                product_id: req.params.id,
+                              },
+                            }).then((productEnElCarrito) => {
+                              if (productEnElCarrito == null) {
+                                db.Cart_Product.create({
+                                  product_id: req.params.id,
+                                  cart_id: cart.id,
+                                });
+                              }
+                            });
+
+                        }
+                        
+                    });
                 //Agrega el producto en un carrito que ya tiene
-                db.Cart_Product.create({
-                    product_id: req.params.id,
-                    cart_id: cart.id
-                })
+                
+                
 
                 
 

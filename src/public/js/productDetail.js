@@ -1,4 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
+
+    window.onresize = function () {
+      location.reload();
+    };
+
+
     /* ==========================================================================
    SLIDER DE PRODUCTOS EN STOCK
    ========================================================================== */
