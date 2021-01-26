@@ -1,12 +1,23 @@
 # Dailies
 
+### 🗓️ 28/1/21
+  Terminado:
+  - Arreglar slider de productos
+  - ProductDetail agregar producto, y borrar cantidad
+  - Arreglar Newsletter
+  
+   Para hacer hoy:
+  - Documentar e indentar codigo JS de Front
+  - Documentar e indentar codigo de Back
+  - Animacion de agregado de producto
+
+
 ### 🗓️ 27/1/21
   Terminado:
   - Arreglar agregar al carrito ProductDetail
   - Mostrar productos en ProductCart
   
    Para hacer hoy:
-  - Documentar e indentar codigo JS de Front
   - Animacion de agregado de producto
   - Arreglar slider de productos
   - ProductDetail agregar producto, y borrar cantidad
