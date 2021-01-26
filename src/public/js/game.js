@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     
 
+/* ==========================================================================
+   GAME
+   ========================================================================== */
     const barney = document.querySelector('.barney');
     const grid = document.querySelector('.grid');
     let isJumping = false;
@@ -16,10 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let viewWidth = window.innerWidth;
     
     
-    
-
-    
-
+    //Se fija que la ventana al menos tenga 1200px, no esta disponible para resoluciones bajas
     if(viewWidth <= 1200) {
         window.alert('Este juego funciona bien solo para dispositivos con mas de 1200px');
         window.location = "http://localhost:3000/";
@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let barneyHaciaArriba = setInterval(function() {
 
             //VA HACIA ABAJO
-            //Cuando barney llega a 15px
             if(count === 25) {
                 //Se para
                 clearInterval(barneyHaciaArriba);
@@ -86,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    //Creacion de los MOES
+    //Creacion de Homeros
     function generateHomeros() {
         let randomTime = Math.random() * 4000;
         let homeroPosition;
@@ -170,7 +169,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     
-
-    //Genera mas moes
     generateHomeros();
 })

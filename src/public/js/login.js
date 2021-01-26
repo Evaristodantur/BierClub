@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     let $formLogin = document.querySelector('.formulario');
     
-    
+
+/* ==========================================================================
+   FORMULARIO DE VALIDACION DE LOGIN
+   ========================================================================== */
     $formLogin.addEventListener('submit', (e) => {
         
         let $email = document.getElementById('email');

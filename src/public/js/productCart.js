@@ -11,37 +11,24 @@ window.addEventListener('DOMContentLoaded', () => {
         let productos = document.querySelectorAll(".producto-carrito");
         for(let i=0; i < productos.length; i++) {
 
-            let precio = productos[i].querySelector('.producto-precio');
-            let divPrecio = document.createElement('div');
-            let h4Precio = document.createElement('h4');
-            let textPrecio = document.createTextNode('Precio:');
-            h4Precio.appendChild(textPrecio);
-            divPrecio.appendChild(h4Precio);
-            divPrecio.classList.add('divMobileProductCart');
-            precio.parentElement.replaceChild(divPrecio, precio);
-            divPrecio.insertAdjacentElement('beforeend', precio);
+            crearDivConClase_En_ConTexto_('.producto-precio', productos[i], 'Precio:');
 
-            
-            let cantidad = productos[i].querySelector('.producto-cantidad');
-            let divCantidad = document.createElement('div');
-            let h4Cantidad = document.createElement('h4');
-            let textCantidad = document.createTextNode('Cantidad:');
-            h4Cantidad.appendChild(textCantidad);
-            divCantidad.appendChild(h4Cantidad);
-            divCantidad.classList.add('divMobileProductCart');
-            cantidad.parentElement.replaceChild(divCantidad, cantidad);
-            divCantidad.insertAdjacentElement('beforeend', cantidad);
+            crearDivConClase_En_ConTexto_('.producto-cantidad', productos[i], 'Cantidad:');
 
-            let subtotal = productos[i].querySelector('.producto-precio-total');
-            let divSubtotal = document.createElement('div');
-            let h4Subtotal = document.createElement('h4');
-            let textSubtotal = document.createTextNode('Subtotal:');
-            h4Subtotal.appendChild(textSubtotal);
-            divSubtotal.appendChild(h4Subtotal);
-            divSubtotal.classList.add('divMobileProductCart');
-            subtotal.parentElement.replaceChild(divSubtotal, subtotal);
-            divSubtotal.insertAdjacentElement('beforeend', subtotal);
+            crearDivConClase_En_ConTexto_('.producto-precio-total', productos[i], 'Subtotal:');
             
+        }
+
+        function crearDivConClase_En_ConTexto_(claseABuscar, elemento, textoDeh4) {
+            let tagABuscar = elemento.querySelector(claseABuscar);
+            let div = document.createElement('div');
+            let h4 = document.createElement('h4');
+            let text = document.createTextNode(textoDeh4);
+            h4.appendChild(text);
+            div.appendChild(h4);
+            div.classList.add('divMobileProductCart');
+            tagABuscar.parentElement.replaceChild(div, tagABuscar);
+            div.insertAdjacentElement('beforeend', tagABuscar);
         }
         
 

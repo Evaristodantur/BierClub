@@ -14,7 +14,9 @@ function divTransparencia() {
 document.addEventListener('DOMContentLoaded', () => {
     let $formRegister = document.querySelector('.formulario');
     
-    
+    /* ==========================================================================
+   FORMULARIO DE VALIDACION DE REGISTER
+   ========================================================================== */
     $formRegister.addEventListener('submit', (e) => {
 
       let $nombre = document.getElementById('nombre');

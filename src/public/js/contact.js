@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   let $formContact = document.querySelector('.formulario');
   
-
+  /* ==========================================================================
+   Validacion de formulario de contacto
+   ========================================================================== */
   $formContact.addEventListener('submit', (e) => {
         
 
@@ -42,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
+      //Condiciones para validar el campo
       let nombreCondicion = $nombre.value.length < 2;
       let emailCondicion = !(/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})/i.test($email.value));
       let asuntoCondicion = $asunto.value.length < 3;

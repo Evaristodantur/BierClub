@@ -1,14 +1,19 @@
 window.addEventListener('DOMContentLoaded', () => {
     
     let $formEdit = document.querySelector('.formulario-carga');
-
     let ficheroInput = document.querySelector('.fileImagenes input');
     let $hayError = false;
     ficheroInput.onchange = imagenesCargadas;
 
+
+    /* ==========================================================================
+   FUNCION DE CARGA DE IMAGENES
+   ========================================================================== */
     function imagenesCargadas() {
-      console.log(this.files);
+
+      //Se fija que no haya mas de cuatro imagenes
       if (this.files.length <= 4) {
+        //Se fijan que sea imagenes
         for (let i = 0; i < this.files.length; i++) {
           if (
             this.files[i].type != 'image/png' &&
@@ -20,6 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
               '*Hay archivos que se intentaron subir que no son imagenes'
             );
           }
+
+          //Se fija que no supere los 4mbs
           if (this.files[i].size > 4200000) {
             $hayError = true;
             return implementacionDeErroresImgs(
@@ -27,20 +34,26 @@ window.addEventListener('DOMContentLoaded', () => {
             );
           }
         }
+
+        //Si no hay error en las imagenes entonces remueve los errores
         $hayError = false;
-        let hijos = document.querySelector('.fileImagenes').querySelectorAll('.errorDeCarga');
+        let hijos = document
+          .querySelector('.fileImagenes')
+          .querySelectorAll('.errorDeCarga');
         for (let i = 2; i < hijos.length; i++) {
           hijos[i].remove();
         }
-        
-        //Carga Inmediata de la primera imagen
+
+
+        //Carga Inmediata de la primera imagen a previsualizar
         let posicion = 0;
         const objectUrl = URL.createObjectURL(this.files[0]);
         let imgPrev = document.querySelector('.imagenPrev img');
         imgPrev.setAttribute('src', objectUrl);
         posicion = 1;
 
-        //Previsualizacion de imagenes y loop infinito entre ellas
+
+        //Previsualizacion de imagenes y loop infinito entre ellas cada 5seg
         setInterval(() => {
           if (this.files[posicion] != undefined && posicion != 0) {
             const objectUrl = URL.createObjectURL(this.files[posicion]);
@@ -55,15 +68,15 @@ window.addEventListener('DOMContentLoaded', () => {
             posicion = 1;
           }
         }, 5000);
-
-
       } else {
+
+        //Si hay mas de 4 imagenes entonces devuelve un error
         $hayError = true;
         implementacionDeErroresImgs('*Debe ser 4 imágenes como máximo');
       }
     }
 
-    //Muestra los errores de carga que hubo con las imagenes
+    //Funcion para mostrar diferentes errores de la carga de imagenes
     function implementacionDeErroresImgs(msgDeError) {
       let errImagen = document.createElement('p');
       let imgTextErr = document.createTextNode(msgDeError);
@@ -74,7 +87,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+/* ==========================================================================
+   FORMULARIO DE VALIDACION DE CAMPOS INPUTS
+   ========================================================================== */
     $formEdit.addEventListener('submit', (e) => {
     
       let $nombre = document.getElementById('nombreProducto');

@@ -18,10 +18,13 @@ function divTransparencia() {
   usuario.errors = 'undefined';
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
       let $formModificarUser = document.querySelector('.formulario');
       
-
+/* ==========================================================================
+   FORMULARIO DE VALIDACION DE PERFIL A MODIFICAR
+   ========================================================================== */
       $formModificarUser.addEventListener('submit', (e) => {
         
         let $nombre = document.getElementById('nombre');
