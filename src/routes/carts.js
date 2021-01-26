@@ -18,8 +18,8 @@ router.get('/addProduct', cartsController.addProductView);
 /* GET     /products/productCart                                        page. */
 router.get(
   '/productCart',
-  /* guestMiddleware,
-  verifyAccountMiddleware, */
+  guestMiddleware,
+  verifyAccountMiddleware,
   cartsController.productCart
 );
 

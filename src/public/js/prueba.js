@@ -14,9 +14,10 @@ window.addEventListener('DOMContentLoaded', () => {
             let precio = productos[i].querySelector('.producto-precio');
             let divPrecio = document.createElement('div');
             let h4Precio = document.createElement('h4');
-            let textPrecio = document.createTextNode('Precio');
+            let textPrecio = document.createTextNode('Precio:');
             h4Precio.appendChild(textPrecio);
             divPrecio.appendChild(h4Precio);
+            divPrecio.classList.add('divMobileProductCart');
             precio.parentElement.replaceChild(divPrecio, precio);
             divPrecio.insertAdjacentElement('beforeend', precio);
 
@@ -24,18 +25,20 @@ window.addEventListener('DOMContentLoaded', () => {
             let cantidad = productos[i].querySelector('.producto-cantidad');
             let divCantidad = document.createElement('div');
             let h4Cantidad = document.createElement('h4');
-            let textCantidad = document.createTextNode('Cantidad');
+            let textCantidad = document.createTextNode('Cantidad:');
             h4Cantidad.appendChild(textCantidad);
             divCantidad.appendChild(h4Cantidad);
+            divCantidad.classList.add('divMobileProductCart');
             cantidad.parentElement.replaceChild(divCantidad, cantidad);
             divCantidad.insertAdjacentElement('beforeend', cantidad);
 
-            let subtotal = productos[i].querySelector('.producto-cantidad');
+            let subtotal = productos[i].querySelector('.producto-precio-total');
             let divSubtotal = document.createElement('div');
             let h4Subtotal = document.createElement('h4');
-            let textSubtotal = document.createTextNode('Subtotal');
+            let textSubtotal = document.createTextNode('Subtotal:');
             h4Subtotal.appendChild(textSubtotal);
             divSubtotal.appendChild(h4Subtotal);
+            divSubtotal.classList.add('divMobileProductCart');
             subtotal.parentElement.replaceChild(divSubtotal, subtotal);
             divSubtotal.insertAdjacentElement('beforeend', subtotal);
             

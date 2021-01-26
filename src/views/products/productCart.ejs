@@ -30,43 +30,20 @@
             <% productos.forEach(producto => { %>
               <!-- PC - FILA DE IMG Y PRECIO -->
                 <!-- SECCION PRODUCTOS FILA 1 -->
-                <div class="producto-carrito">
-                  <h4 class="estilo-letras-producto">X</h4>
-                  <% if(typeof producto.images[0] != "undefined") { %>
-                    <img class="producto-imagen-carrito" src="/images/productos/<%= producto.images[0].name %> " alt="">
-                  <% } else { %>
-                    <img class="producto-imagen-carrito" src="/images/productos/product-image-not-available.jpg" alt="">
-                  <% } %> 
-                    <h4 class="estilo-letras-producto"><%= producto.name %></h4>
-                    <h4 class="estilo-letras-producto">$<%= producto.price %></h4>
-                    <h4 class="estilo-letras-producto"><a href="#" class="sumar-restar-cantidad">-</a> 2 <a href="#" class="sumar-restar-cantidad">+</a></h4>
-                    <h4 class="estilo-letras-producto">$299.98</h4>
-                  
-                  
-
-                  <!------- MOBILE ------->
-                  <div class="mobile-letras-producto texto-centrado-producto">
-                    <h4 class="">Septic Tank - West Coast IPA</h4>
-                  </div>
-
-                  <!------- PRECIO ------->
-                  <div class="mobile-letras-producto">
-                    <h4 class="">Precio:</h4>
-                    <h4 class="">$149.99</h4>
-                  </div>
-
-                  <!------- CANTIDAD ------->
-                  <div class="mobile-letras-producto">
-                    <h4 class="">Cantidad:</h4>
-                    <h4 class=""><a href="#" class="sumar-restar-cantidad">-</a> 2 <a href="#" class="sumar-restar-cantidad">+</a></h4>
-                  </div>
-
-                  <!------- SUBTOTAL ------->
-                  <div class="mobile-letras-producto">
-                    <h4 class="">SUBTOTAL:</h4>
-                    <h4 class="">$299.98</h4>
-                  </div>
-                </div>
+                    <div class="producto-carrito">
+                      <form action="" class="form-equis">
+                          <a class="estilo-letras-producto">X</a>
+                      </form>
+                      <% if(typeof producto.images[0] != "undefined") { %>
+                        <img class="producto-imagen-carrito" src="/images/productos/<%= producto.images[0].name %> " alt="">
+                      <% } else { %>
+                        <img class="producto-imagen-carrito" src="/images/productos/product-image-not-available.jpg" alt="">
+                      <% } %> 
+                      <h4 class="estilo-letras-producto producto-nombre"><%= producto.name %></h4>
+                      <h4 class="estilo-letras-producto producto-precio">$<%= producto.price %></h4>
+                      <h4 class="estilo-letras-producto producto-cantidad"><a href="#" class="sumar-restar-cantidad">-</a> 1 <a href="#" class="sumar-restar-cantidad">+</a></h4>
+                      <h4 class="estilo-letras-producto producto-precio-total">$<%= producto.price %></h4>
+                    </div>
             <% }) %> 
               
 
