@@ -43,7 +43,7 @@
 
           <!-- DESCRIPCION DE LA IMAGEN -->
           <div class="descripcion-producto">
-            <p><%= producto.description %></p>
+            <p style="word-break: break-all;"><%= producto.description %></p>
           </div>
         </div>
 
@@ -128,33 +128,27 @@
               <a href=""
                 ><span><i class="fas fa-minus"></i></span
               ></a>
-              <input
-                type="text"
-                name="cantidad"
-                placeholder="<%=producto.stock%>"
-              />
-              <a href=""
-                ><span><i class="fas fa-plus"></i></span
-              ></a>
+              <input type="text" name="cantidad" placeholder="<%=producto.stock%>"/>
+              <a href=""><span><i class="fas fa-plus"></i></span></a>
             </div>
           </div>
 
           <!-- AGREGAR AL CARRITO -->
           <div class="agregarAlcarrito">
             <form action="/carts/addProduct/<%= producto.id %>" method="POST">
-
-            
-            <button class="btn-agregarAlCarrito" type="submit">
-              Agregar al carrito <i class="fas fa-plus"></i>
-            </button>
+              <button class="btn-agregarAlCarrito" type="submit">
+                Agregar al carrito <i class="fas fa-plus"></i>
+              </button>
             </form>
           </div>
 
           <!-- COMPRAR AHORA -->
           <div class="comprarAhora">
-            <button class="btn-comprarAhora" type="button">
-              Comprar Ahora
-            </button>
+            <form action="/carts/addProduct/<%= producto.id %>" method="POST">
+              <button class="btn-comprarAhora" type="submit">
+                Comprar Ahora
+              </button>
+            </form>
           </div>
 
           <!-- PERDIR -->
@@ -166,7 +160,7 @@
         </section>
         <div class="descripcion-producto-mobile">
           <h2>Descripción:</h2>
-          <p><%= producto.description %></p>
+          <p style="word-break: break-all;"><%= producto.description %></p>
         </div>
       </section>
     </div>

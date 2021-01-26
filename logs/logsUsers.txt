@@ -1489,3 +1489,8 @@ El usuario registrado es:
 Nombre: fdsfdsfds
 Email: fdsfdsfds@gmail.com
 *************************************************************
+Se registró un usuario el 26/1/2021 00:10:22
+El usuario registrado es:
+Nombre: KIPPES
+Email: asdsssssss@gmail.com
+*************************************************************

@@ -16,7 +16,7 @@ let mainController = {
         });
     },
     addProduct: (req, res, next) => {
-        console.log('paso por aca');
+        
         let userLogged = req.session.usuarioLogueado        
 
         //Se fija si esta logeado
@@ -36,7 +36,7 @@ let mainController = {
                     cart_id: cart.id
                 })
 
-                res.redirect('/')
+                
 
             })
 

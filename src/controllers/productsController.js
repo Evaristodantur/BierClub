@@ -12,23 +12,25 @@ let productsController = {
     //Para realizar pruebas
     prueba : (req, res, next) => {
 
-        db.Products.findAll({
+        productsNovedades = db.Products.findAll({
                 include: [{association: "images"}], 
                 order: [
                     ['id', 'DESC']
                 ]
-            }).then(products => {
-                db.Products.findAll({
+            })
+        productsRelacionados = db.Products.findAll({
                   include: [{ association: 'images' }],
                   where: {
                     stock: { [db.Sequelize.Op.gt]: 0 },
-                  }
-                }).then(productInStock => {
-                    console.log(productInStock);
-                    res.send(products);
+                  }, 
+                order: [
+                    ['id', 'DESC']
+                ]
                 })
-                            
-            });
+        Promise.all([productsNovedades, productsRelacionados]).then(rest => {
+            
+            res.send(rest[0])
+        }).catch(err => console.log(err))
     },
     
 
@@ -52,7 +54,7 @@ let productsController = {
                     .then(categories => {
                         res.render('products/products', { productos : products, categorias: categories, userLogged : req.session.usuarioLogueado });
                     })
-                
+
                 
             });
     },

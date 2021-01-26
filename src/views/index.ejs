@@ -65,7 +65,7 @@
                   <% } %>
                 </div>
               </div>
-              <form action="/carts/addProduct/<%= productosNovedades[i].id %>" method="POST">
+              <form action="/carts/addProduct/<%= productosNovedades[i].id %>" method="POST" onclick="return ajaxGo()">
                 <button class="btn-producto hoverproducto" type="submit">
                   <i class="fas fa-plus"></i> Añadir al Carrito
                 </button>

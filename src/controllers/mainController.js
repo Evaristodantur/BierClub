@@ -15,23 +15,26 @@ let mainController = {
     index : (req, res, next) => {
 
         //Muestra todos los productos en el home
-        db.Products.findAll({
+        productsNov = db.Products.findAll({
                 include: [{association: "images"}], 
                 order: [
                     ['id', 'DESC']
                 ]
-            }).then(products => {
-                db.Products.findAll({
+            })
+        productInStock = db.Products.findAll({
                   include: [{ association: 'images' }],
                   where: {
                     stock: { [db.Sequelize.Op.gt]: 0 },
-                  }
-                }).then(productInStock => {
-                    console.log(productInStock);
-                    res.render('index', { productosEnStock: productInStock, productosNovedades: products, userLogged : req.session.usuarioLogueado });
+                  }, 
+                order: [
+                    ['id', 'DESC']
+                ]
                 })
-                            
-            });
+        Promise.all([productInStock, productsNov]).then(rest => {
+            console.log(rest[0]);
+            res.render('index', { productosEnStock: rest[0], productosNovedades: rest[1], userLogged : req.session.usuarioLogueado });
+        }).catch(err => console.log(err))
+        
     },
 
 
@@ -86,18 +89,43 @@ let mainController = {
                 });
 
                 //Muestra todos los productos en el home
-                db.Products.findAll({
-                    include: [{association: "images"}]
-                }).then(products => {
-                    res.render('index', { productos : products, newsletter : 1,  userLogged : req.session.usuarioLogueado});
+                productsNov = db.Products.findAll({
+                  include: [{ association: 'images' }],
+                  order: [['id', 'DESC']],
                 });
+                productInStock = db.Products.findAll({
+                  include: [{ association: 'images' }],
+                  where: {
+                    stock: { [db.Sequelize.Op.gt]: 0 },
+                  },
+                  order: [['id', 'DESC']],
+                });
+
+                Promise.all([productInStock, productsNov])
+                  .then((rest) => {
+                    console.log(rest[0]);
+                    res.render('index', {
+                      productosEnStock: rest[0],
+                      productosNovedades: rest[1],
+                      newsletter : 1,
+                      userLogged: req.session.usuarioLogueado,
+                    });
+                  })
+                  .catch((err) => console.log(err));
+                
             } else {
                 //Muestra todos los productos en el home
-                db.Products.findAll({
-                    include: [{association: "images"}]
-                }).then(products => {
-                    res.render('index', { productos : products, newsletter : 0, userLogged : req.session.usuarioLogueado });
-                });
+                Promise.all([productInStock, productsNov])
+                  .then((rest) => {
+                    console.log(rest[0]);
+                    res.render('index', {
+                      productosEnStock: rest[0],
+                      productosNovedades: rest[1],
+                      newsletter: 0,
+                      userLogged: req.session.usuarioLogueado,
+                    });
+                  })
+                  .catch((err) => console.log(err));
             }
 
         })

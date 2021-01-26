@@ -60,6 +60,26 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 }
 
+
+function addProductNoPageReload() {
+    let addProductSpecifyBtn = document.querySelector('.btn-agregarAlCarrito');
+    addProductSpecifyBtn.addEventListener('click', () => {
+      setTimeout(function () {
+        window.stop();
+      }, 3000);
+    });
+
+    let addProductBtn = document.querySelectorAll('.btn-producto');
+    for (let i = 0; i < addProductBtn.length; i++) {
+        addProductBtn[i].addEventListener('click', () => {
+        setTimeout(function () {
+            window.stop();
+        }, 3000);
+        });
+    }
+}
+
 productosRelacionadosSlider();
+addProductNoPageReload();
 
 });
