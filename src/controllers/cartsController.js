@@ -111,7 +111,7 @@ let mainController = {
                 product_id: req.params.id
               }
             })
-            
+
             res.redirect('/carts/productCart');
         });
       }
@@ -146,6 +146,7 @@ let mainController = {
             res.redirect('/carts/productCart');
         });
       }
+
       
     },
 
@@ -153,7 +154,42 @@ let mainController = {
 
 
     
+    procederAlPago: (req, res, next) => {
 
+      let userLogged = req.session.usuarioLogueado;
+
+      if(userLogged) {
+        db.Users.findOne({
+          include: [
+            {
+              association: 'carts',
+              where: { user_id: userLogged.id, status: 0 },
+            },
+          ],
+        }).then(userCart => {
+            
+            db.Cart_Product.findOne({
+              where: {
+                cart_id: userCart.carts[0].dataValues.id
+              }
+            }).then(cartWithProducts => {
+              console.log(cartWithProducts);
+
+              if(cartWithProducts) {
+                res.send('Gracias por comprar');
+              } else {
+                res.send('No hay productos en su carrito');
+              }
+              
+            });
+            
+                  
+
+        });
+      }
+
+      
+    },
 
 
 

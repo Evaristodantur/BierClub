@@ -27,6 +27,8 @@ router.post('/deleteProduct/:id', cartsController.deleteProductFromCart);
 
 router.post('/deleteAllProducts', cartsController.deleteAllProducts);
 
+router.post('/procederAlPago', cartsController.procederAlPago);
+
 router.get('/items', cartsController.itemsView);
 
 module.exports = router;
