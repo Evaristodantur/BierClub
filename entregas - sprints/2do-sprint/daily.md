@@ -12,6 +12,7 @@
   - Borrar todos los productos de productCart
   - Borrar 1 producto en especifico de productCart
   - Proceder al pago en productCart - Armado de logica
+  - Mejorar pagina de productCart
 
 
 ### 🗓️ 27/1/21
