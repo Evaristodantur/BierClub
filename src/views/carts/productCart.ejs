@@ -32,8 +32,8 @@
               <!-- PC - FILA DE IMG Y PRECIO -->
                 <!-- SECCION PRODUCTOS FILA 1 -->
                     <div class="producto-carrito">
-                      <form action="" class="form-equis">
-                          <a class="estilo-letras-producto">X</a>
+                      <form action="/carts/deleteProduct/<%= producto.id %> " method="POST" class="form-equis">
+                          <button type="submit" class="estilo-letras-producto">X</button>
                       </form>
                       <% if(typeof producto.images[0] != "undefined") { %>
                         <img class="producto-imagen-carrito" src="/images/productos/<%= producto.images[0].name %> " alt="">
@@ -50,7 +50,7 @@
 
         
           <!-- LINEA -->
-          <hr class="hr-carrito">          
+          <hr class="hr-carrito">  
         </div>
 
 
@@ -110,6 +110,9 @@
         <div class="cupones">
           <input type="text" name="cupon-descuento" placeholder="CUPON DE DESCUENTO">
           <a href=""><strong><p>APLICAR CUPON</p></strong></a>
+          <form action="/carts/deleteAllProducts" method="POST">
+            <button type="submit">Borrar Todos los Productos</button>
+          </form>
         </div>
 
         

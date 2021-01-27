@@ -7,16 +7,22 @@ const {validationResult} = require("express-validator");
 
 let mainController = {
 
-  //  /carts - Render
-    index: (req, res, next) => {
-         db.Products.findAll({
+
+    //  /carts/productCart - Render de productCart
+    productCart : (req, res, next) => {
+      //Toma el usuario logueado
+        let userLogged= req.session.usuarioLogueado;
+        
+        //Busca los productos que se encuentren en un carrito del usuario logueado
+        db.Products.findAll({
           include: [
             { association: 'images' },
             { association: 'carts', where: { user_id: userLogged.id, status: 0 } },
           ]
         }).then((products) => {
-            console.log(products);
-          res.send(products);
+            
+          //Muestra los productos
+          res.render('carts/productCart', { productos : products, userLogged: userLogged });
         });
     },
 
@@ -84,40 +90,69 @@ let mainController = {
 
 
 
+    deleteProductFromCart: (req, res, next) => {
+      console.log(req.params.id);
+      
+      let userLogged = req.session.usuarioLogueado;
 
-    //  /carts/productCart - Render de productCart
-    productCart : (req, res, next) => {
-      //Toma el usuario logueado
-        let userLogged= req.session.usuarioLogueado;
-        
-        //Busca los productos que se encuentren en un carrito del usuario logueado
-        db.Products.findAll({
+      if(userLogged) {
+        db.Users.findOne({
           include: [
-            { association: 'images' },
-            { association: 'carts', where: { user_id: userLogged.id, status: 0 } },
-          ]
-        }).then((products) => {
-            
-          //Muestra los productos
-          res.render('products/productCart', { productos : products, userLogged: userLogged });
-        });
-    },
-
-
-
-
-    addProductView: (req, res, next) => {
-        db.Products.findAll()
-            .then(products => {
-                res.render('vistaPrueba', {productos : products})
+            {
+              association: 'carts',
+              where: { user_id: userLogged.id, status: 0 },
+            },
+          ],
+        }).then(userCart => {
+          
+            db.Cart_Product.destroy({
+              where: {
+                cart_id: userCart.carts[0].dataValues.id,
+                product_id: req.params.id
+              }
             })
+            
+            res.redirect('/carts/productCart');
+        });
+      }
+      
     },
-    deleteProduct: (req, res, next) => {
 
-    },
-    editCart: (req, res, next) => {
 
+
+
+    
+    deleteAllProducts: (req, res, next) => {
+      //console.log(req.params.id);
+
+      let userLogged = req.session.usuarioLogueado;
+
+
+      if(userLogged) {
+        db.Users.findOne({
+          include: [
+            {
+              association: 'carts',
+              where: { user_id: userLogged.id, status: 0 },
+            },
+          ],
+        }).then(userCart => {
+          
+            db.Cart_Product.destroy({
+              where: {
+                cart_id: userCart.carts[0].dataValues.id,
+              },
+            })
+            res.redirect('/carts/productCart');
+        });
+      }
+      
     },
+
+
+
+
+    
 
 
 

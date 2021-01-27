@@ -11,8 +11,6 @@ let guestMiddleware = require('../middlewares/guestMiddleware'); //Middleware de
 let verifyAccountMiddleware = require('../middlewares/verifyAccountMiddleware'); //Middleware de verified
 
 // Routes
-router.get('/', cartsController.index);
-router.get('/addProduct', cartsController.addProductView);
 /**********************************PRODUCT CART***************************************/
 
 /* GET     /products/productCart                                        page. */
@@ -24,6 +22,10 @@ router.get(
 );
 
 router.post('/addProduct/:id', cartsController.addProduct);
+
+router.post('/deleteProduct/:id', cartsController.deleteProductFromCart);
+
+router.post('/deleteAllProducts', cartsController.deleteAllProducts);
 
 router.get('/items', cartsController.itemsView);
 
