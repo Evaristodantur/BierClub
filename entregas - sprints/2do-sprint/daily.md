@@ -7,9 +7,11 @@
   - Arreglar Newsletter
   
    Para hacer hoy:
-  - Documentar e indentar codigo JS de Front
   - Documentar e indentar codigo de Back
   - Animacion de agregado de producto
+  - Borrar todos los productos de productCart
+  - Borrar 1 producto en especifico de productCart
+  - Proceder al pago en productCart - Armado de logica
 
 
 ### 🗓️ 27/1/21
