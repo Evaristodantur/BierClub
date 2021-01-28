@@ -168,14 +168,32 @@ let mainController = {
           ],
         }).then(userCart => {
             
+            
+
             db.Cart_Product.findOne({
               where: {
                 cart_id: userCart.carts[0].dataValues.id
               }
             }).then(cartWithProducts => {
-              console.log(cartWithProducts);
 
               if(cartWithProducts) {
+
+                db.Carts.update(
+                  {
+                    status: 1
+                  },
+                  {
+                    where: {
+                      id: userCart.carts[0].dataValues.id,
+                    },
+                  }
+                );
+
+                db.Carts.create({
+                  status: 0,
+                  user_id: userCart.id,
+                });
+
                 res.send('Gracias por comprar');
               } else {
                 res.send('No hay productos en su carrito');
