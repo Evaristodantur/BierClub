@@ -52,9 +52,10 @@ let mainController = {
                 //Busca el producto a agregar pasado por el id
                 db.Products.findByPk(req.params.id)
                     .then(productEnStock => {
-
+                      console.log(productEnStock.stock);
+                      console.log(productEnStock);
                       //Se fija si se encuentra en stock
-                        if(productEnStock.dataValues.stock > 0) {
+                        if(productEnStock.stock > 0) {
 
                           //Busca en el carrito del usuario si el producto se encuentra agregado
                             db.Cart_Product.findOne({
@@ -64,12 +65,14 @@ let mainController = {
                               },
                             }).then((productEnElCarrito) => {
 
+                              
+
                               //Si no se encuentra agregado lo agrega, sino no (solo 1 producto por carrito)
                               if (productEnElCarrito == null) {
                                 db.Cart_Product.create({
                                   product_id: req.params.id,
                                   cart_id: cart.id,
-                                });
+                                });                                
                               }
                             });
 
@@ -151,12 +154,37 @@ let mainController = {
     },
 
 
+    productInStock: (req, res, next) => {
+      let userLogged = req.session.usuarioLogueado;
 
+
+      db.Products.findByPk(req.params.id)
+        .then(product => {
+          console.log(product);
+          if(product.stock < req.body.stock) {
+            let errorDeCantidad = 'hubo un error en la cantidad solicitada en alguno de los productos';
+
+            //Busca los productos que se encuentren en un carrito del usuario logueado
+            db.Products.findAll({
+              include: [
+                { association: 'images' },
+                { association: 'carts', where: { user_id: userLogged.id, status: 0 } },
+              ]
+            }).then((products) => {
+                
+              //Muestra los productos
+              res.render('carts/productCart', { productos : products, errorDeCantidad: errorDeCantidad, userLogged: userLogged });
+            });
+
+          }
+        })
+    },
 
     
     procederAlPago: (req, res, next) => {
-
       let userLogged = req.session.usuarioLogueado;
+
+      console.log(req.body);
 
       if(userLogged) {
         db.Users.findOne({

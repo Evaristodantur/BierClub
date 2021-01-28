@@ -1446,3 +1446,11 @@ Stock: 0
 Categoria: Lupuladas
 Descripción: 
 *************************************************************
+Fecha de creacion/modificación del producto: 27/1/2021 23:13:41
+Producto: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Precio: 0
+Descuento: 0
+Stock: 1
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
