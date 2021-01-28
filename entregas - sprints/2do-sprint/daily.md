@@ -1,5 +1,16 @@
 # Dailies
 
+### 🗓️ 29/1/21
+  Terminado:
+  - Borrar todos los productos de productCart
+  - Borrar 1 producto en especifico de productCart
+  - Proceder al pago en productCart - Armado de logica
+  
+   Para hacer hoy:
+  - Mejorar pagina de productCart
+  - Animacion de agregado de producto
+
+
 ### 🗓️ 28/1/21
   Terminado:
   - Arreglar slider de productos
@@ -7,7 +18,6 @@
   - Arreglar Newsletter
   
    Para hacer hoy:
-  - Documentar e indentar codigo de Back
   - Animacion de agregado de producto
   - Borrar todos los productos de productCart
   - Borrar 1 producto en especifico de productCart
