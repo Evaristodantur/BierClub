@@ -23,11 +23,11 @@ router.get(
 
 router.post('/addProduct/:id', cartsController.addProduct);
 
-router.post('/deleteProduct/:id', cartsController.deleteProductFromCart);
+router.get('/deleteProduct/:id', cartsController.deleteProductFromCart);
 
 router.post('/deleteAllProducts', cartsController.deleteAllProducts);
 
-router.post('/checkProductIfInStock/:id', cartsController.productInStock);
+/* router.post('/checkProductIfInStock/:id', cartsController.productInStock); */
 
 router.post('/procederAlPago', cartsController.procederAlPago);
 

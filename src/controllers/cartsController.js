@@ -70,6 +70,7 @@ let mainController = {
                               //Si no se encuentra agregado lo agrega, sino no (solo 1 producto por carrito)
                               if (productEnElCarrito == null) {
                                 db.Cart_Product.create({
+                                  stock_order: 1,
                                   product_id: req.params.id,
                                   cart_id: cart.id,
                                 });                                
@@ -154,7 +155,7 @@ let mainController = {
     },
 
 
-    productInStock: (req, res, next) => {
+    /* productInStock: (req, res, next) => {
       let userLogged = req.session.usuarioLogueado;
 
 
@@ -178,16 +179,14 @@ let mainController = {
 
           }
         })
-    },
+    }, */
 
     
     procederAlPago: (req, res, next) => {
+      
       let userLogged = req.session.usuarioLogueado;
 
-      console.log(req.body);
-
-      if(userLogged) {
-        db.Users.findOne({
+       db.Users.findOne({
           include: [
             {
               association: 'carts',
@@ -196,44 +195,95 @@ let mainController = {
           ],
         }).then(userCart => {
             
-            
-
-            db.Cart_Product.findOne({
+            db.Cart_Product.findAll({
               where: {
-                cart_id: userCart.carts[0].dataValues.id
+                cart_id: userCart.carts[0].id
               }
-            }).then(cartWithProducts => {
+            }).then(productsInCart => {
 
-              if(cartWithProducts) {
-
-                db.Carts.update(
-                  {
-                    status: 1
-                  },
-                  {
-                    where: {
-                      id: userCart.carts[0].dataValues.id,
-                    },
-                  }
-                );
-
-                db.Carts.create({
-                  status: 0,
-                  user_id: userCart.id,
-                });
-
-                res.send('Gracias por comprar');
-              } else {
-                res.send('No hay productos en su carrito');
+              //Valida que haya productos en el carrito
+              if(productsInCart.length == 0) {
+                res.send('No hay productos en el carrito')
               }
+
+              //Validacion para ver si hay stock
+              for(let i=0; i < productsInCart.length; i++) {
+
+                //Validacion para ver si hay stock
+                db.Products.findByPk(productsInCart[i].product_id)
+                  .then(product => {
+
+                    if(product.stock < req.body.stock[i]) {
+                      let errorDeCantidad = 'hubo un error en la cantidad solicitada en alguno de los productos';
+
+                      //Busca los productos que se encuentren en un carrito del usuario logueado
+                      db.Products.findAll({
+                        include: [
+                          { association: 'images' },
+                          { association: 'carts', where: { user_id: userLogged.id, status: 0 } },
+                        ]
+                      }).then((products) => {
+                          
+                        //Muestra los productos
+                        res.render('carts/productCart', { productos : products, errorDeCantidad: errorDeCantidad, userLogged: userLogged });
+                      });
+                    }
+                  })
+              }
+
               
-            });
-            
-                  
+              //Actualizacion de stock_order si supera la validacion de backend
+              for(let i=0; i < productsInCart.length; i++) {
+                
 
-        });
-      }
+                //Actualiza el stock pedido y la compra
+                db.Cart_Product.update({
+                  stock_order: req.body.stock[i]
+                },{
+                  where: {
+                    id: productsInCart[i].id
+                  }
+                })
+                
 
+                //Saco el stock del producto ya comprado de la DB
+                db.Products.findByPk(productsInCart[i].product_id)
+                  .then(subProductStock => {
+                    //console.log(subProductStock);
+                    db.Products.update({
+                        stock: (subProductStock.stock - req.body.stock[i])
+                      },{
+                      where: {
+                        id: productsInCart[i].product_id
+                      }
+                    })
+                  })
+        
+              }
+
+
+
+                  //Cierro el carrito actual
+                  db.Carts.update({
+                    status: 1
+                  },{
+                    where: {
+                      id: userCart.carts[0].id
+                    }
+                  })
+
+                  //Abre un nuevo carrito para futuras compras
+                  db.Carts.create({
+                    status: 0,
+                    user_id: userCart.id
+                  });
+
+                  res.send('Gracias por su compra!')
+
+
+            })
+      
+        })
       
     },
 

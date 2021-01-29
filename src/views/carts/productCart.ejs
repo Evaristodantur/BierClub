@@ -2,8 +2,15 @@
 <html lang="es">
   <head>
     <title>BierClub - Carrito</title>
-    <%- include('../partials/head.ejs') %>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/faviconLogo.ico" />
+
     <script type="text/javascript" src="/js/productCart.js"></script>
+    <link rel="stylesheet" href="/stylesheets/__general.css">
+    <link rel="stylesheet" href="/stylesheets/__nav.css">
+    <link rel="stylesheet" href="/stylesheets/__productCart.css">
+    <link rel="stylesheet" href="/stylesheets/__footer.css">
   </head>
   
   <header>
@@ -21,22 +28,30 @@
       <!-- SECCION PRODUCTOS DEL CARRITO Y RECUADRO -->
       <div class="productos-carrito">
 
+
+        
         <!-- SECCION PRODUCTOS CARRITO-->
         <div class="productos">
 
+          
+            <div class="producto-carrito">
+              <h3>Producto</h3>
+              <h3>Precio</h3>
+              <h3>Cantidad</h3>
+              <h3>Subtotal</h3>
+            </div>
+            <hr class="hr-carrito">  
 
           
             <% if(typeof errorDeCantidad != "undefined") { %>
               <p><%= errorDeCantidad %> </p>
             <% } %> 
-            
+            <form action="/carts/procederAlPago" method="POST">
             <% productos.forEach(producto => { %>
               <!-- PC - FILA DE IMG Y PRECIO -->
                 <!-- SECCION PRODUCTOS FILA 1 -->
                     <div class="producto-carrito">
-                      <form action="/carts/deleteProduct/<%= producto.id %>" method="POST" class="form-equis">
-                          <button type="submit" class="estilo-letras-producto">X</button>
-                      </form>
+                      <a href="/carts/deleteProduct/<%= producto.id %>">X</a>
                       <% if(typeof producto.images[0] != "undefined") { %>
                         <img class="producto-imagen-carrito" src="/images/productos/<%= producto.images[0].name %> " alt="">
                       <% } else { %>
@@ -45,9 +60,7 @@
                       <h4 class="estilo-letras-producto producto-nombre"><%= producto.name %></h4>
                       <h4 class="estilo-letras-producto producto-precio">$<%= producto.price %></h4>
                       <h4 class="estilo-letras-producto producto-cantidad">
-                        <form action="/carts/checkProductIfInStock/<%= producto.id %>" method="POST">
-                          <input name="stock" min="1" max="<%= producto.stock %>" type="number" placeholder="Cantidad" onchange="this.form.submit()" value="1">
-                        </form>
+                      <input name="stock" min="1" max="<%= producto.stock %>" type="number" placeholder="Cantidad" value="1">
                       <h4 class="estilo-letras-producto producto-precio-total">$<%= producto.price %></h4>
                     </div>
             <% }) %> 
@@ -103,10 +116,7 @@
               </div>
 
               <!-- BOTON PAGO -->
-              <form action="/carts/procederAlPago" method="POST">
-                <% productos.forEach(producto => { %>
-                  <input type="hidden" name="stock<%= producto.id %>" readonly>
-                <% }); %> 
+              
                 <button type="submit"><h4 class="boton-pagar">PROCEDER AL PAGO</h4></button>
               </form>
               
