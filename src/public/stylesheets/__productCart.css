@@ -39,6 +39,42 @@ body div.container-carrito {
   width: 60vw;
 }
 
+.tagsEspecificosDeProductos {
+  margin: 0;
+  width: 100%;
+}
+
+.tagsEspecificosDeProductos h3 {
+  margin-bottom: 0;
+}
+
+.formBorrarProducto {
+  align-self: flex-end;
+}
+
+.btnBorrarProducto {
+  padding: 5px 30px 5px 30px;
+  background-color: red;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  font-size: initial;
+}
+
+.btnBorrarProducto:hover{
+  cursor: pointer;
+}
+
+#stockProducto {
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: large;
+  font-weight: 100;
+  border-radius: 8px;
+  width: 5%;
+}
+
 .container-carrito
   div.productos-carrito
   div.productos
@@ -69,6 +105,29 @@ body div.container-carrito {
   .estilo-letras-producto {
   word-break: break-word;
   text-align: center;
+  font-size: larger;
+}
+
+.container-carrito
+  .productos-carrito
+  .productos
+  .producto-carrito
+  .deleteProduct {
+  text-decoration: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #daa520;
+  font-size: x-large;
+  color: black;
+}
+
+.container-carrito
+  .productos-carrito
+  .productos
+  .producto-carrito
+  .deleteProduct:hover{
+  color: red;
 }
 
 .container-carrito .form-equis {
@@ -79,11 +138,7 @@ body div.container-carrito {
   width: 20%;
 }
 .container-carrito .producto-precio {
-width: 15%;
-}
-
-.container-carrito .producto-cantidad{
-width: 10%;
+  width: 15%;
 }
 
 .container-carrito .producto-precio-total{
@@ -387,6 +442,14 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
     font-size: 0.95em;
   }
+
+  #stockProducto {
+    font-size: 0.9em;
+  }
+
+  .container-carrito .productos-carrito .productos .producto-carrito .deleteProduct {
+    font-size: 1.5em;
+  }
 }
 
 /* ==========================================================================
@@ -398,6 +461,18 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     width: 30%;
   }
 
+  .tagsEspecificosDeProductos h3{
+    font-size: 1em;
+  }
+
+  .btnBorrarProducto {
+    font-size: 0.9em;
+  }
+
+  #stockProducto {
+    font-size: 0.9em;
+  }
+
   .container-carrito div.productos-carrito div.productos div.producto-carrito img.producto-imagen-carrito {
     width: 100px;
     height: 100px;
@@ -405,6 +480,10 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 
   .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
     font-size: 0.9em;
+  }
+
+  .container-carrito .productos-carrito .productos .producto-carrito .deleteProduct {
+    font-size: 1.4em;
   }
 }
 
@@ -422,9 +501,30 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     width: 100%;
   }
 
+  .tagsEspecificosDeProductos h3{
+    font-size: 1.2em;
+  }
+
+  .btnBorrarProducto {
+    font-size: 1em;
+  }
+
+  #stockProducto {
+    font-size: 1.1em;
+  }
+
+  .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
+    font-size: large;
+  }
+
+  .container-carrito .productos-carrito .productos .producto-carrito .deleteProduct {
+    font-size: 1.4em;
+  }
+
   .container-carrito .productos-carrito .productos hr.hr-carrito {
-    width: 80%;
-    margin-right: 20%;
+    width: 84%;
+    margin-right: 8%;
+    margin-left: 8%;
   }
 
   /*RECUADRO TOTAL*/
@@ -454,17 +554,54 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     margin-bottom: 10px;
   }
 
-  
 
-  /*SECCION PRODUCTOS FILA*/
   .container-carrito div.productos-carrito {
     flex-direction: column;
     justify-content: center;
   }
 
-  /*SECCION PRODUCTOS CARRITO*/
   .container-carrito .productos-carrito div.productos {
     width: 100%;
+  }
+
+  .tagsEspecificosDeProductos h3{
+    font-size: 0.95em;
+  }
+
+  .btnBorrarProducto {
+    font-size: 0.9em;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #stockProducto {
+    font-size: 1em;
+    padding: 5px 0 5px 0;
+  }
+
+  
+
+  .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
+    font-size: 0.9em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .container-carrito .productos-carrito .productos .producto-carrito .deleteProduct {
+    font-size: 1.2em;
+    width: 30px;
+    height: 30px;
+  }
+
+  .container-carrito div.productos-carrito div.productos div.producto-carrito img.producto-imagen-carrito {
+    width: 90px;
+    height: 90px;
+  }
+
+  .container-carrito .productos-carrito .productos hr.hr-carrito {
+    width: 84%;
+    margin-right: 8%;
+    margin-left: 8%;
   }
 
   /*RECUADRO TOTAL*/
@@ -472,53 +609,12 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     width: 100%;
   }
 
-  /*SECCION PRODUCTOS FILA*/
-  .container-carrito div.productos-carrito div.productos div.producto-carrito {
-    flex-direction: column;
-  }
-
-  
-
-  .container-carrito
-    div.productos-carrito
-    div.productos
-    div.producto-carrito
-    img.producto-imagen-carrito {
-    width: 200px;
-    height: 200px;
-  }
-
-  .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
-    width: 50%;
-    text-align: left;
-    
-  }
-
-  .container-carrito .productos-carrito .productos .producto-carrito .producto-nombre {
-    text-align: center;
-    width: 90%;
-  }
-
-  .divMobileProductCart {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .divMobileProductCart h4 {
-    text-align: left;
-    width: 100%;
-  }
-
-  .container-carrito .productos-carrito .productos hr.hr-carrito {
-    margin-left: 0;
-  }
-
   /*SECCION CUPONES*/
   .container-carrito .cupones {
-    margin-top: 15px;
+    margin-top: 80px;
+    margin-left: 9.5%;
   }
-
+  
   
 }
 
@@ -536,66 +632,82 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     margin-bottom: 10px;
   }
 
-  
 
-  /*SECCION PRODUCTOS FILA*/
   .container-carrito div.productos-carrito {
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
-  /*SECCION PRODUCTOS CARRITO*/
   .container-carrito .productos-carrito div.productos {
     width: 100%;
   }
 
-  /*RECUADRO TOTAL*/
-  .container-carrito .productos-carrito .recuadro-total {
-    width: 100%;
-  }
-
-  /*SECCION PRODUCTOS FILA*/
-  .container-carrito div.productos-carrito div.productos div.producto-carrito {
-    flex-direction: column;
-  }
-
   
 
-  .container-carrito
-    div.productos-carrito
-    div.productos
-    div.producto-carrito
-    img.producto-imagen-carrito {
-    width: 200px;
-    height: 200px;
-  }
-
-  .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
-    width: 50%;
-    text-align: left;
-    
-  }
-
-  .container-carrito .productos-carrito .productos .producto-carrito .producto-nombre {
-    text-align: center;
-    width: 80%;
-  }
-
-  .divMobileProductCart {
-    width: 75%;
+  .formBorrarProducto {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
 
-  .divMobileProductCart h4 {
-    text-align: left;
-    width: 100%;
+  .tagsEspecificosDeProductos h3{
+    font-size: 0.95em;
   }
 
+  .btnBorrarProducto {
+    font-size: 0.9em;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 80%;
+  }
+
+  #stockProducto {
+    font-size: 1em;
+    padding: 5px 0 5px 0;
+  }
+
+  .container-carrito div.productos-carrito div.productos div.producto-carrito {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .container-carrito div.productos-carrito div.productos div.tagsEspecificosDeProductos{
+    flex-direction: row; 
+  }
+
+  .container-carrito div.productos-carrito div.productos div.producto-carrito img.producto-imagen-carrito {
+    width: 50%;
+    height: 100%;
+  }
+
+  .container-carrito .producto-nombre {
+    width: 50%;
+  }
+
+  .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
+    font-size: 0.9em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .container-carrito .productos-carrito .productos .producto-carrito .deleteProduct {
+    font-size: 1.2em;
+    width: 81%;
+    border-radius: 8px;
+    height: 30px;
+  }
+
+  /* .container-carrito div.productos-carrito div.productos div.producto-carrito img.producto-imagen-carrito {
+    display: none;
+  } */
 
   .container-carrito .productos-carrito .productos hr.hr-carrito {
-    margin-left: 0;
+    width: 84%;
+    margin-right: 8%;
+    margin-left: 8%;
   }
+
 
   /*SECCION CUPONES*/
   .container-carrito .cupones {

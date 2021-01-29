@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/images/faviconLogo.ico" />
 
-    <script type="text/javascript" src="/js/productCart.js"></script>
+    <!-- <script type="text/javascript" src="/js/productCart.js"></script> -->
     <link rel="stylesheet" href="/stylesheets/__general.css">
     <link rel="stylesheet" href="/stylesheets/__nav.css">
     <link rel="stylesheet" href="/stylesheets/__productCart.css">
@@ -34,7 +34,10 @@
         <div class="productos">
 
           
-            <div class="producto-carrito">
+            <div class="producto-carrito tagsEspecificosDeProductos">
+              <form class="formBorrarProducto" action="/carts/deleteAllProducts" method="POST">
+                <button class="btnBorrarProducto" type="submit">Borrar Todo <i class="fas fa-trash-alt"></i></button>
+              </form>
               <h3>Producto</h3>
               <h3>Precio</h3>
               <h3>Cantidad</h3>
@@ -51,7 +54,7 @@
               <!-- PC - FILA DE IMG Y PRECIO -->
                 <!-- SECCION PRODUCTOS FILA 1 -->
                     <div class="producto-carrito">
-                      <a href="/carts/deleteProduct/<%= producto.id %>">X</a>
+                      <a class="estilo-letras-producto deleteProduct" href="/carts/deleteProduct/<%= producto.id %>">X</a>
                       <% if(typeof producto.images[0] != "undefined") { %>
                         <img class="producto-imagen-carrito" src="/images/productos/<%= producto.images[0].name %> " alt="">
                       <% } else { %>
@@ -59,10 +62,10 @@
                       <% } %> 
                       <h4 class="estilo-letras-producto producto-nombre"><%= producto.name %></h4>
                       <h4 class="estilo-letras-producto producto-precio">$<%= producto.price %></h4>
-                      <h4 class="estilo-letras-producto producto-cantidad">
-                      <input name="stock" min="1" max="<%= producto.stock %>" type="number" placeholder="Cantidad" value="1">
+                      <input id="stockProducto" name="stock" min="1" max="<%= producto.stock %>" type="number" value="1">
                       <h4 class="estilo-letras-producto producto-precio-total">$<%= producto.price %></h4>
                     </div>
+                    <hr class="hr-carrito">
             <% }) %> 
               
 
@@ -129,11 +132,9 @@
 
         <!-- SECCION CUPONES -->
         <div class="cupones">
+          
           <input type="text" name="cupon-descuento" placeholder="CUPON DE DESCUENTO">
           <a href=""><strong><p>APLICAR CUPON</p></strong></a>
-          <form action="/carts/deleteAllProducts" method="POST">
-            <button type="submit">Borrar Todos los Productos</button>
-          </form>
         </div>
 
         

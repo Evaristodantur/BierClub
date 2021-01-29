@@ -1,12 +1,12 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-    window.onresize = function() {
+    /* window.onresize = function() {
         location.reload()
-    }
+    } */
 
 
     
-    if(window.innerWidth < 768 ) {
+    /* if(window.innerWidth < 768 ) {
         
         let productos = document.querySelectorAll(".producto-carrito");
         for(let i=0; i < productos.length; i++) {
@@ -34,5 +34,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
         
         
-    }
+    } */
 });
