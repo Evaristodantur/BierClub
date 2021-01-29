@@ -8,6 +8,7 @@
   
    Para hacer hoy:
   - Mejorar pagina de productCart
+  - Crear div -525px en productCart
   - Mejorar logica de Procesar el pago
   - Animacion de agregado de producto
 
