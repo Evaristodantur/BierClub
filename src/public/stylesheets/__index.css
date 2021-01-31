@@ -87,7 +87,7 @@
   margin-left: 3%;
   margin-top: 0;
   white-space: pre-wrap;
-  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .home main section.productos article.producto div.precio-stock {

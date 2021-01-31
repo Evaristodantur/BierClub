@@ -1,8 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-  window.onresize = function () {
+  /* window.onresize = function () {
     location.reload();
-  };
+  }; */
 
   /* ==========================================================================
    MODAL DE NEWSLETTER NOTIFICATION
