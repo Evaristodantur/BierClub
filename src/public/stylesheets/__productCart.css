@@ -691,6 +691,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   .container-carrito div.productos-carrito div.productos div.producto-carrito img.producto-imagen-carrito {
     width: 50%;
     height: 100%;
+    margin: 10px 0px 10px 0px;
   }
 
   .container-carrito .producto-nombre {
@@ -710,9 +711,9 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     height: 30px;
   }
 
-  /* .container-carrito div.productos-carrito div.productos div.producto-carrito img.producto-imagen-carrito {
-    display: none;
-  } */
+  .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto.producto-nombre {
+    margin-bottom: 10px;
+  }
 
   .container-carrito .productos-carrito .productos hr.hr-carrito {
     width: 84%;
@@ -747,6 +748,12 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   /*SECCION CUPONES*/
   .container-carrito .cupones {
     margin-top: 0px;
+  }
+
+  .divTagPrecioCantidadSubtotal {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
   }
   
 }

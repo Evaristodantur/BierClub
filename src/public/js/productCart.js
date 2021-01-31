@@ -4,7 +4,23 @@ window.addEventListener('DOMContentLoaded', () => {
         location.reload()
     } */
 
+    let tagsH3Productos = document.querySelectorAll('.tagsEspecificosDeProductos h3');
+    for(let i=0; i < tagsH3Productos.length; i++) {
+        tagsH3Productos[i].style.display = 'none';
+    }
 
+    let div = document.createElement('div');
+    div.classList.add('divTagPrecioCantidadSubtotal')
+    div.innerHTML = `
+    <div>
+        <h4>Precio: </h4
+        <h4>Cantidad: </h4
+        <h4>Subtotal:</h4
+    </div>
+    <div>
+    
+    </div>`
+    console.log(div);
     
     /* if(window.innerWidth < 768 ) {
         
