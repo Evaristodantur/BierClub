@@ -1,5 +1,16 @@
 # Dailies
 
+### 🗓️ 30/1/21
+  Terminado:
+  - Mejorar logica de Procesar el pago
+  
+   Para hacer hoy:
+  - Creacion de API propia de bierclub
+  - Mejorar pagina de productCart
+  - Crear div -525px en productCart
+  - Animacion de agregado de producto
+
+
 ### 🗓️ 29/1/21
   Terminado:
   - Borrar todos los productos de productCart
