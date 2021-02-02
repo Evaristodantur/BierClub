@@ -5,7 +5,8 @@
   - Mejorar logica de Procesar el pago
   
    Para hacer hoy:
-   - Mejorar pagina de productCart
+  - Creacion de API propia de bierclub
+  - Mejorar pagina de productCart
   - Crear div -525px en productCart
   - Animacion de agregado de producto
 
