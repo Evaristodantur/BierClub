@@ -2,6 +2,7 @@ let db = require('../../database/models');
 
 let apiBierClubController = {
 
+
     // Cantidad de usuarios registrados
     getTotalRegisteredUsers: (req, res) => {
         db.Users.count()
@@ -10,29 +11,54 @@ let apiBierClubController = {
                 let respuesta = {
                   meta: {
                     status: 200,
-                    url: 'api/bierclub/getTotalRegisteredUsers',
+                    state: 'OK',
+                    url: '/api/bierclub' + req.url,
                   },
-                  data: userRegistered,
+                  data: {
+                    cantidadDeUsuariosRegistrados: userRegistered,
+                  },
                 };
 
                 res.json(respuesta);
-            });
+            }).catch((err) => {
+
+              res.json({
+                meta: {
+                  status: 500,
+                  state: err,
+                  url: '/api/bierclub' + req.url,
+                },
+              });
+  
+            })
     },
 
     // Cantidad de productos subidos
     getTotalProductsAdded: (req, res) => {
-        db.Products.count().then((productsAdded) => {
+        db.Products.count()
+          .then((productsAdded) => {
+            let respuesta = {
+              meta: {
+                status: 200,
+                state: 'OK',
+                url: '/api/bierclub' + req.url,
+              },
+              data: {
+                cantidadDeProductosSubidos: productsAdded,
+              },
+            };
 
-          let respuesta = {
-            meta: {
-              status: 200,
-              url: 'api/bierclub/getTotalProductsAdded',
-            },
-            data: productsAdded,
-          };
-
-          res.json(respuesta);
-        });
+            res.json(respuesta);
+          })
+          .catch((err) => {
+            res.json({
+              meta: {
+                status: 500,
+                state: err,
+                url: '/api/bierclub' + req.url,
+              },
+            });
+          });
     },
 
     // Cantidad de ventas realizadas
@@ -44,118 +70,183 @@ let apiBierClubController = {
               where: { status: 1 },
             },
           ],
-        }).then((cartsClosed) => {
-
+        })
+          .then((cartsClosed) => {
             let total = 0;
-            for(let i=0; i < cartsClosed.length; i++) {
-                total += cartsClosed[i].stock_order;
+            for (let i = 0; i < cartsClosed.length; i++) {
+              total += cartsClosed[i].stock_order;
             }
 
             let respuesta = {
               meta: {
                 status: 200,
-                url: 'api/bierclub/getTotalSalesMade',
+                state: 'OK',
+                url: '/api/bierclub' + req.url,
               },
-              data: total,
+              data: {
+                cantidadDeVentasRealizadas: total,
+              },
             };
 
             res.json(respuesta);
-            
-        });
+          })
+          .catch((err) => {
+            res.json({
+              meta: {
+                status: 500,
+                state: err,
+                url: '/api/bierclub' + req.url,
+              },
+            });
+          });
     },
 
     // Ultimo producto subido
     getLastProductAdded: (req, res) => {
         db.Products.findOne({
-            order: [
-                    ['createdAt', 'DESC']
-                ]
-        }).then(product => {
+          include: {
+            association: 'images',
+          },
+          order: [['createdAt', 'DESC']],
+        })
+          .then((product) => {
+            let respuesta = {
+              meta: {
+                status: 200,
+                state: 'OK',
+                url: '/api/bierclub' + req.url,
+              },
+              data: {
+                ultimoProductoSubido: product,
+              },
+            };
 
-                let respuesta = {
-                  meta: {
-                    status: 200,
-                    url: 'api/bierclub/getLastProductAdded',
-                  },
-                  data: product,
-                };
-
-                res.json(respuesta);
-            })
+            res.json(respuesta);
+          })
+          .catch((err) => {
+            res.json({
+              meta: {
+                status: 500,
+                state: err,
+                url: '/api/bierclub' + req.url,
+              },
+            });
+          });
     },
 
     // Ultimo producto vendido
     getLastProductSold: (req, res) => {
         db.Cart_Product.findOne({
-            include: [
+          include: [
             {
               association: 'carts',
               where: { status: 1 },
             },
           ],
-            order: [
-                    ['createdAt', 'DESC']
-                ]
-        }).then(product => {
-                
-                db.Products.findOne({
-                    where: {
-                        id: product.product_id
-                    }
-                }).then(lastProductSold => {
-
-                    let respuesta = {
-                      meta: {
-                        status: 200,
-                        url: 'api/bierclub/getLastProductSold',
-                      },
-                      data: lastProductSold,
-                    };
-
-                    res.json(respuesta);
-                });                
-                
+          order: [['createdAt', 'DESC']],
+        })
+          .then((product) => {
+            db.Products.findOne({
+              include: {
+                association: 'images',
+              },
+              where: {
+                id: product.product_id,
+              },
             })
+              .then((lastProductSold) => {
+                let respuesta = {
+                  meta: {
+                    status: 200,
+                    state: 'OK',
+                    url: '/api/bierclub' + req.url,
+                  },
+                  data: {
+                    ultimoProductoVendido: lastProductSold,
+                  },
+                };
+
+                res.json(respuesta);
+              })
+              .catch((err) => {
+                res.json({
+                  meta: {
+                    status: 500,
+                    state: err,
+                    url: '/api/bierclub' + req.url,
+                  },
+                });
+              });
+          })
+          .catch((err) => {
+            res.json({
+              meta: {
+                status: 500,
+                state: err,
+                url: '/api/bierclub' + req.url,
+              },
+            });
+          });
     },
 
     // Lista de categorias/talles/colores
     getCategoryList: (req, res) => {
         db.Categories.findAll({
-            where: {
-                status: 1
-            }
+          where: {
+            status: 1,
+          },
         })
-            .then(categories => {
+          .then((categories) => {
+            let respuesta = {
+              meta: {
+                status: 200,
+                state: 'OK',
+                url: '/api/bierclub' + req.url,
+              },
+              data: {
+                listaDeCategorias: categories,
+              },
+            };
 
-                let respuesta = {
-                  meta: {
-                    status: 200,
-                    url: 'api/bierclub/getCategoryList',
-                  },
-                  data: categories,
-                };
-
-                res.json(respuesta);
-
-            })
+            res.json(respuesta);
+          })
+          .catch((err) => {
+            res.json({
+              meta: {
+                status: 500,
+                state: err,
+                url: '/api/bierclub' + req.url,
+              },
+            });
+          });
     },
 
     // Listado de usuarios registrados
     getRegisteredUsers: (req, res) => {
         db.Users.findAll()
-            .then(users => {
+          .then((users) => {
+            let respuesta = {
+              meta: {
+                status: 200,
+                state: 'OK',
+                url: '/api/bierclub' + req.url,
+              },
+              data: {
+                listaDeUsuariosRegistrados: users,
+              },
+            };
 
-                let respuesta = {
-                  meta: {
-                    status: 200,
-                    url: 'api/bierclub/getRegisteredUsers',
-                  },
-                  data: users,
-                };
-
-                res.json(respuesta);
-
-            })
+            res.json(respuesta);
+          })
+          .catch((err) => {
+            res.json({
+              meta: {
+                status: 500,
+                state: err,
+                url: '/api/bierclub' + req.url,
+              },
+            });
+          });
     },
 
     // La venta más cara
@@ -163,33 +254,45 @@ let apiBierClubController = {
 
         
         db.Products.findOne({
-            include: [{association: "carts", where: {status: 1} }],
-            order: [
-                ['price', 'DESC']
-            ]
+          include: [
+            { association: 'carts', where: { status: 1 } },
+            { association: 'images' },
+          ],
+          order: [['price', 'DESC']],
         })
-            .then(product => {
-                
-                let respuesta = {
-                  meta: {
-                    status: 200,
-                    url: 'api/bierclub/getTheMostExpensiveProductSold',
-                  },
-                  data: {
-                    id: product.id,
-                    name: product.name,
-                    price: product.price,
-                    stock: product.stock,
-                    description: product.description,
-                    createdAt: product.createdAt,
-                    updatedAt: product.updatedAt,
-                    category_id: product.category_id
-                  }
-                };
+          .then((product) => {
+            let respuesta = {
+              meta: {
+                status: 200,
+                state: 'OK',
+                url: '/api/bierclub' + req.url,
+              },
+              data: {
+                productMasCaroVendido: {
+                  id: product.id,
+                  name: product.name,
+                  price: product.price,
+                  stock: product.stock,
+                  description: product.description,
+                  createdAt: product.createdAt,
+                  updatedAt: product.updatedAt,
+                  category_id: product.category_id,
+                  images: product.images,
+                },
+              },
+            };
 
-                res.json(respuesta);
-
-            })
+            res.json(respuesta);
+          })
+          .catch((err) => {
+            res.json({
+              meta: {
+                status: 500,
+                state: err,
+                url: '/api/bierclub' + req.url,
+              },
+            });
+          });
     }
 }
 
