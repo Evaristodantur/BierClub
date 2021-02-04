@@ -1,5 +1,14 @@
 # Dailies
 
+### 🗓️ 02/2/21
+  Terminado:
+  - Mejorar pagina de productCart
+  - Crear div -525px en productCart
+  
+   Para hacer hoy:
+  - Animación de agregado de producto
+
+
 ### 🗓️ 01/2/21
   Terminado:
   - Creacion de API propia de bierclub
