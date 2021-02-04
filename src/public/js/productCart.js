@@ -49,9 +49,35 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         })
 
+
+
+        
+
         //Mostrar Subtotal
         let stocks = document.querySelectorAll("#stockProducto");
-        let total = 0;
+        let total = document.querySelector('.totalAPagar');
+        let productos = document.querySelectorAll(".producto-carrito");
+
+        function muestraDeSubtotal() {
+          let totalInicial = 0;
+          for (let i = 0; i < productos.length; i++) {
+            if (productos[i].style.display != 'none') {
+              let subtotal = productos[i].querySelector(
+                '.producto-precio-total'
+              );
+              if (subtotal) {
+                totalInicial += parseInt(subtotal.innerHTML.substr(1));
+              }
+            }
+          }
+          return (total.innerHTML = '$' + totalInicial);
+        }
+        
+        muestraDeSubtotal()
+        
+        
+        
+
         stocks.forEach(stock => {
             stock.addEventListener('change', (e) => {
             console.log(stock);
@@ -63,28 +89,12 @@ window.addEventListener('DOMContentLoaded', () => {
                 '$' +
                 parseInt(price.innerHTML.substr(1)) * parseInt(stock.value);
 
-                let total = document.querySelector('.totalAPagar');
-                total.innerHTML = total.innerHTML + subtotal.innerHTML;
+                muestraDeSubtotal();
+                
             });
 
-            let price = stock.parentElement.querySelector('.producto-precio');
-            let subtotal = stock.parentElement.querySelector(
-              '.producto-precio-total'
-            );
-            subtotal.innerHTML =
-              '$' + parseInt(price.innerHTML.substr(1)) * parseInt(stock.value);
-
-            let total = document.querySelector('.totalAPagar');
-            total.innerHTML = parseInt(total.innerHTML.substr(1)) + parseInt(subtotal.innerHTML.substr(1));
             
         })
-        
-        /* stocks.forEach(stock => {
-            
-            stock.addEventListener('change', () => {
-              
-            });
-        }) */
         
     }
     
