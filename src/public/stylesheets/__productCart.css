@@ -391,6 +391,18 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 }
 
 
+
+
+
+.divPrecioCantidadSubtotalMobil {
+  display: none;
+}
+
+
+
+
+
+
 /* ==========================================================================
    RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
    ========================================================================== */
@@ -449,6 +461,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 
   #stockProducto {
     font-size: 0.9em;
+    width: 6%;
   }
 
   .container-carrito .productos-carrito .productos .producto-carrito .deleteProduct {
@@ -476,6 +489,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 
   #stockProducto {
     font-size: 0.9em;
+    width: 8%;
   }
 
   .container-carrito div.productos-carrito div.productos div.producto-carrito img.producto-imagen-carrito {
@@ -488,7 +502,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   }
 
   .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto.producto-precio {
-    text-align: left ;
+    text-align: center ;
   }
 
   .container-carrito .productos-carrito .productos .producto-carrito .deleteProduct {
@@ -521,6 +535,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 
   #stockProducto {
     font-size: 1.1em;
+    width: 7%;
   }
 
   .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
@@ -587,6 +602,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   }
 
   #stockProducto {
+    width: 10%;
     font-size: 1em;
     padding: 5px 0 5px 0;
   }
@@ -764,12 +780,39 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     justify-content: space-evenly;
     align-items: center;
   }
+
+  .divTags {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .divTags h4 {
+    margin: 0;
+  }
+
+  .divMobilPrecioCantidadTotal h4 {
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .divMobilPrecioCantidadTotal input#stockProducto {
+    width: 30%;
+    padding: 2px 0px 2px 0px;
+  }
   
 }
 /* ==========================================================================
    RESOLUCION 0-400
    ========================================================================== */
 @media (max-width: 400px) {
+
+  .divMobilPrecioCantidadTotal input#stockProducto {
+    width: 40%;
+  }
+
   .container-carrito .cupones a {
     margin-left: -3px;
     margin-top: 8px;
