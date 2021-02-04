@@ -7,6 +7,8 @@
   
    Para hacer hoy:
   - Animación de agregado de producto
+  - Muestra de Subtotal
+  - Muestra de Subtotal en Compra
 
 
 ### 🗓️ 01/2/21
