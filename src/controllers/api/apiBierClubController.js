@@ -169,13 +169,22 @@ let apiBierClubController = {
             ]
         })
             .then(product => {
-
+                
                 let respuesta = {
                   meta: {
                     status: 200,
                     url: 'api/bierclub/getTheMostExpensiveProductSold',
                   },
-                  data: product,
+                  data: {
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    stock: product.stock,
+                    description: product.description,
+                    createdAt: product.createdAt,
+                    updatedAt: product.updatedAt,
+                    category_id: product.category_id
+                  }
                 };
 
                 res.json(respuesta);

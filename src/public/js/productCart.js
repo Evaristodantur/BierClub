@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
     /* window.onresize = function() {
         location.reload()
     } */
-
+    
     let tagsH3Productos = document.querySelectorAll('.tagsEspecificosDeProductos h3');
     if(window.innerWidth < 525) {
         for (let i = 0; i < tagsH3Productos.length; i++) {
@@ -20,6 +20,36 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
     }
+
+
+    //Borrado de todos los productos
+    let btnBorrarProducto = document.querySelector('.btnBorrarProducto');
+    
+    btnBorrarProducto.addEventListener('click', (e) => {
+        let modalBorrarTodosLosProductos = document.querySelector('.showModalAllProductosBeforeDelete');
+        modalBorrarTodosLosProductos.style.display = 'inline-block';
+        
+        modalBorrarTodosLosProductos.querySelector(".noBtnDeleteAll").addEventListener("click", () => {
+            modalBorrarTodosLosProductos.style.display = 'none';
+        });
+    });
+
+    let xProductoABorrar = document.querySelectorAll('.deleteProduct');
+    for(let i=0; i < xProductoABorrar.length; i++) {
+        xProductoABorrar[i].addEventListener('click', () => {
+            
+            let modalProductABorrar = xProductoABorrar[i].nextElementSibling;
+            modalProductABorrar.style.display = "inline-block";
+            let divBackground = document.createElement("div");
+            document.body.insertAdjacentElement('afterbegin', divBackground);
+            console.log(divBackground);
+            
+            modalProductABorrar.querySelector('.noBtnDeleteProduct').addEventListener('click', () => {
+                modalProductABorrar.style.display = 'none';
+            });
+        })
+    }
+    
     
     
     

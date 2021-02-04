@@ -21,6 +21,7 @@ body div.container-carrito {
    SECCION PRODUCTOS DEL CARRITO Y RECUADRO
    ========================================================================== */
 .container-carrito div.productos-carrito {
+  position: relative;
   display: flex;
   justify-content: space-around;
 }
@@ -66,6 +67,49 @@ body div.container-carrito {
 .btnBorrarProducto:hover{
   cursor: pointer;
 }
+
+/* MODAL BORRAR TODOS LOS PRODUCTOS */
+.showModalAllProductosBeforeDelete, .showModalProductoBeforeDelete {
+  background-color: #daa520;
+  display: none;
+  color: white;
+  border-radius: 8px;
+  z-index: 9;
+  position: absolute;
+  top: 25%;
+  right: 40%;
+}
+
+.showModalAllProductosBeforeDelete p,
+.showModalProductoBeforeDelete p {
+  margin-right: 1%;
+  margin-left: 1%;
+  text-align: center;
+}
+
+.showModalAllProductosBeforeDelete div,
+.showModalProductoBeforeDelete div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+}
+
+.showModalAllProductosBeforeDelete div button,
+.showModalProductoBeforeDelete div button {
+  width: 25%;
+  border: 0;
+  border-radius: 8px;
+  padding: 5px;
+  color: white;
+  background-color: darkslateblue;
+}
+
+.showModalAllProductosBeforeDelete div button.noBtnDeleteAll,
+.showModalProductoBeforeDelete div button.noBtnDeleteProduct {
+  background-color: red;
+}
+
+
 
 #stockProducto {
   text-align: center;

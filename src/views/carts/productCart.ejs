@@ -36,7 +36,14 @@
           
             <div class="producto-carrito tagsEspecificosDeProductos">
               <form class="formBorrarProducto" action="/carts/deleteAllProducts" method="POST">
-                <button class="btnBorrarProducto" type="submit">Borrar Todo <i class="fas fa-trash-alt"></i></button>
+                <button class="btnBorrarProducto" type="button">Borrar Todo <i class="fas fa-trash-alt"></i></button>
+                <div class="showModalAllProductosBeforeDelete">
+                  <p>Desea borrar todos los productos?</p>
+                  <div>
+                    <button type="submit">Si</button>
+                    <button type="button" class="noBtnDeleteAll">No</button>
+                  </div>
+                </div>
               </form>
               <h3>Producto</h3>
               <h3>Precio</h3>
@@ -44,6 +51,8 @@
               <h3>Subtotal</h3>
             </div>
             <hr class="hr-carrito">  
+
+            
 
           
             <% if(typeof errorDeCantidad != "undefined") { %>
@@ -54,7 +63,15 @@
               <!-- PC - FILA DE IMG Y PRECIO -->
                 <!-- SECCION PRODUCTOS FILA 1 -->
                     <div class="producto-carrito">
-                      <a class="estilo-letras-producto deleteProduct" href="/carts/deleteProduct/<%= producto.id %>">X</a>
+                      <a class="estilo-letras-producto deleteProduct">X</a>
+                        <div class="showModalProductoBeforeDelete">
+                          <p>¿Desea borrar el producto?</p>
+                          <div>
+                            <button type="button" onclick="window.location.href='/carts/deleteProduct/<%= producto.id %>'">Si</button>
+                            <button type="button" class="noBtnDeleteProduct">No</button>
+                          </div>
+                        </div>
+                        <!-- <a class="estilo-letras-producto deleteProduct" href="/carts/deleteProduct/<%= producto.id %>">X</a> -->
                       <% if(typeof producto.images[0] != "undefined") { %>
                         <img class="producto-imagen-carrito" src="/images/productos/<%= producto.images[0].name %> " alt="">
                       <% } else { %>
