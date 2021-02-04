@@ -50,6 +50,41 @@ window.addEventListener('DOMContentLoaded', () => {
         })
 
         //Mostrar Subtotal
+        let stocks = document.querySelectorAll("#stockProducto");
+        let total = 0;
+        stocks.forEach(stock => {
+            stock.addEventListener('change', (e) => {
+            console.log(stock);
+              let price = stock.parentElement.querySelector('.producto-precio');
+              let subtotal = stock.parentElement.querySelector(
+                '.producto-precio-total'
+              );
+              subtotal.innerHTML =
+                '$' +
+                parseInt(price.innerHTML.substr(1)) * parseInt(stock.value);
+
+                let total = document.querySelector('.totalAPagar');
+                total.innerHTML = total.innerHTML + subtotal.innerHTML;
+            });
+
+            let price = stock.parentElement.querySelector('.producto-precio');
+            let subtotal = stock.parentElement.querySelector(
+              '.producto-precio-total'
+            );
+            subtotal.innerHTML =
+              '$' + parseInt(price.innerHTML.substr(1)) * parseInt(stock.value);
+
+            let total = document.querySelector('.totalAPagar');
+            total.innerHTML = parseInt(total.innerHTML.substr(1)) + parseInt(subtotal.innerHTML.substr(1));
+            
+        })
+        
+        /* stocks.forEach(stock => {
+            
+            stock.addEventListener('change', () => {
+              
+            });
+        }) */
         
     }
     
