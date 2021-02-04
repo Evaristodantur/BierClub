@@ -5,22 +5,24 @@ window.addEventListener('DOMContentLoaded', () => {
     } */
 
     let tagsH3Productos = document.querySelectorAll('.tagsEspecificosDeProductos h3');
-    for(let i=0; i < tagsH3Productos.length; i++) {
-        tagsH3Productos[i].style.display = 'none';
-    }
+    if(window.innerWidth < 525) {
+        for (let i = 0; i < tagsH3Productos.length; i++) {
+            tagsH3Productos[i].style.display = 'none';
+        }    
+        
+        let productPrice = document.querySelectorAll('.producto-precio');
+        let productQuantity = document.querySelectorAll('.producto-cantidad');
+        let productSubTotal = document.querySelectorAll('.producto-precio-total');
+        for(let i=0; i < productPrice.length; i++) {
+            productPrice[i].remove();
+            productQuantity[i].remove();
+            productSubTotal[i].remove();
+        }
 
-    let div = document.createElement('div');
-    div.classList.add('divTagPrecioCantidadSubtotal')
-    div.innerHTML = `
-    <div>
-        <h4>Precio: </h4
-        <h4>Cantidad: </h4
-        <h4>Subtotal:</h4
-    </div>
-    <div>
+    }
     
-    </div>`
-    console.log(div);
+    
+    
     
     /* if(window.innerWidth < 768 ) {
         

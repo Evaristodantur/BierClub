@@ -62,8 +62,24 @@
                       <% } %> 
                       <h4 class="estilo-letras-producto producto-nombre"><%= producto.name %></h4>
                       <h4 class="estilo-letras-producto producto-precio">$<%= producto.price %></h4>
-                      <input id="stockProducto" name="stock" min="1" max="<%= producto.stock %>" type="number" value="1">
+                      <input id="stockProducto" class="producto-cantidad" name="stock" min="1" max="<%= producto.stock %>" type="number" value="1">
                       <h4 class="estilo-letras-producto producto-precio-total">$<%= producto.price %></h4>
+                      
+                      <!-- MOBILE -->
+                      <div class="divPrecioCantidadSubtotalMobil">
+                        <div class="divTags">
+                          <h4>Precio: </h4>
+                          <h4>Cantidad: </h4>
+                          <h4>Subtotal:</h4>
+                        </div>
+                        <div class="divMobilPrecioCantidadTotal">
+                          <h4 >$<%= producto.price %></h4>
+                          <input id="stockProducto" name="stock" min="1" max="<%= producto.stock %>" type="number" value="1">
+                          <h4 >$<%= producto.price %></h4>
+                        </div>
+                        
+                      </div>
+                      
                     </div>
                     <hr class="hr-carrito">
             <% }) %> 
