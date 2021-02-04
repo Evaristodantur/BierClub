@@ -48,6 +48,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 modalProductABorrar.style.display = 'none';
             });
         })
+
+        //Mostrar Subtotal
+        
     }
     
     
