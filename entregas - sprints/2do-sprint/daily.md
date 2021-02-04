@@ -1,14 +1,30 @@
 # Dailies
 
+### 🗓️ 02/2/21
+  Terminado:
+  - Mejorar pagina de productCart
+  - Crear div -525px en productCart
+  
+   Para hacer hoy:
+  - Animación de agregado de producto
+
+
+### 🗓️ 01/2/21
+  Terminado:
+  - Creacion de API propia de bierclub
+  
+   Para hacer hoy:
+  - Mejorar pagina de productCart
+  - Crear div -525px en productCart
+  - Animación de agregado de producto
+  
+
 ### 🗓️ 30/1/21
   Terminado:
   - Mejorar logica de Procesar el pago
-  
+ 
    Para hacer hoy:
   - Creacion de API propia de bierclub
-  - Mejorar pagina de productCart
-  - Crear div -525px en productCart
-  - Animacion de agregado de producto
 
 
 ### 🗓️ 29/1/21
@@ -18,10 +34,9 @@
   - Proceder al pago en productCart - Armado de logica
   
    Para hacer hoy:
-  - Mejorar pagina de productCart
-  - Crear div -525px en productCart
-  - Mejorar logica de Procesar el pago
-  - Animacion de agregado de producto
+  - Borrar todos los productos de productCart
+  - Borrar 1 producto en especifico de productCart
+  - Proceder al pago en productCart - Armado de logica
 
 
 ### 🗓️ 28/1/21
