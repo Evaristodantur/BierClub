@@ -29,6 +29,7 @@ server.listen(port, () => {
   console.log(`|---------------------------------------|`);
   console.log(`|      Server running in ${port} port      |`);
   console.log(`|Now, you can open http://localhost:${port}|`);
+  console.log(`|     React: http://localhost:5000      |`);
   console.log(`|     Hecho por Diego, Santi y Eva      |`);
   console.log(`|---------------------------------------|`);
 });
