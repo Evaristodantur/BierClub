@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-01-2021 a las 06:20:01
+-- Tiempo de generación: 10-02-2021 a las 17:09:18
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.9
 
@@ -22,6 +22,26 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
+
+
+--
+-- Estructura de tabla para la tabla `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `suscription_status` tinyint(4) NOT NULL,
+  `newsletter_status` tinyint(4) NOT NULL,
+  `admin` tinyint(4) NOT NULL,
+  `verify` tinyint(4) NOT NULL,
+  `verify_code` varchar(50) NOT NULL,
+  `createdAt` timestamp NULL DEFAULT current_timestamp(),
+  `updatedAt` timestamp NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 
 --
 -- Estructura de tabla para la tabla `carts`
@@ -43,6 +63,7 @@ CREATE TABLE `carts` (
 
 CREATE TABLE `cart_product` (
   `id` int(11) NOT NULL,
+  `stock_order` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `cart_id` int(11) NOT NULL,
   `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -110,22 +131,7 @@ CREATE TABLE `products` (
 
 -- --------------------------------------------------------
 
---
--- Estructura de tabla para la tabla `users`
---
 
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `suscription_status` tinyint(4) NOT NULL,
-  `admin` tinyint(4) NOT NULL,
-  `verify` tinyint(4) NOT NULL,
-  `verify_code` varchar(50) NOT NULL,
-  `createdAt` timestamp NULL DEFAULT current_timestamp(),
-  `updatedAt` timestamp NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Índices para tablas volcadas
