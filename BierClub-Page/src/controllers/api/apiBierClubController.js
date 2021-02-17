@@ -1,6 +1,38 @@
 let db = require('../../database/models');
+const bcrypt = require('bcryptjs');
 
 let apiBierClubController = {
+
+  login: (req, res) => {
+    db.Users.findOne({
+      where: {
+        email: req.body.email,
+        admin: 1
+      }
+    }).then(user => {
+      if(user != null && bcrypt.compareSync(req.body.password, user.password)) {
+        res.json({
+          meta: {
+            status: 200,
+          },
+          data: {
+            message: 'User Logueado',
+          },
+        });
+      } else {
+        res.json({
+          meta: {
+            status: 404,
+          },
+          data: {
+            message: '* Error de credenciales',
+          },
+        });
+      }
+      
+    })
+  },
+
   // Cantidad de usuarios registrados
   getTotalRegisteredUsers: (req, res) => {
     db.Users.count()
