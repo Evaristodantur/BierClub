@@ -346,15 +346,16 @@ let usersController = {
 
         // Busca el id enviado por parametro
         let idUrl = req.params.id;
+          //Lo borra de la base de datos
+          
+          db.Users.destroy({
+            where: {
+              id: idUrl,
+            },
+          });
 
-        //Lo borra de la base de datos
-        db.Users.destroy({
-          where: {
-            id: idUrl
-          }
-        });
-
-        res.redirect("/users/usersAdmin");        
+          res.redirect('/users/usersAdmin');
+        
     },
 
 

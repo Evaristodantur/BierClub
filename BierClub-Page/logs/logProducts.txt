@@ -1454,3 +1454,11 @@ Stock: 1
 Categoria: Lupuladas
 Descripción: 
 *************************************************************
+Fecha de creacion/modificación del producto: 12/2/2021 09:38:45
+Producto: fdsfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Cerveza
+Descripción: 
+*************************************************************
