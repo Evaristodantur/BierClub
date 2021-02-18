@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Login.css';
+import auth from '../Auth/auth';
 
-export default function Login() {
+export default function Login(props) {
 
   const [emailLogin, setEmailLogin] = useState('');
   const [passwordLogin, setPasswordLogin] = useState('');
@@ -41,7 +42,9 @@ export default function Login() {
             if (info.meta.status == 404) {
                 setErrorMsg(info.data.message);
             } else {
-                window.location = '/dashboard';
+                auth.login(() => {
+                  props.history.push('/dashboard');
+                });
             }
         }).catch(err => {
             console.log(err.message);
