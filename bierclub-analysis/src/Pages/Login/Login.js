@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Login.css';
-import auth from '../Auth/auth';
+import auth from '../../components/Auth/auth';
 
 export default function Login(props) {
 
@@ -54,7 +54,7 @@ export default function Login(props) {
 
   return (
     <>
-      <h1>BierClub Analysis</h1>
+      <h1 className="title">BierClub Analysis</h1>
       <div className="login-container">
         <div className="login-form-div">
           <h1 className="login-title">Login</h1>

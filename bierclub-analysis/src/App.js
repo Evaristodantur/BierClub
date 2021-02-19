@@ -1,9 +1,9 @@
 import logo from './logo.svg';
-import './App.css';
+import './assets/css/app.css';
 import { Route, Switch } from 'react-router-dom';
 import { ProtectedRoute } from './components/Auth/protected.router'
-import Login from './components/Login/Login';
-import Dashboard from './components/Dashboard/Dashboard';
+import Login from '../src/Pages/Login/Login';
+import Dashboard from '../src/Pages/Dashboard/Dashboard';
 
 function App() {
   return (
