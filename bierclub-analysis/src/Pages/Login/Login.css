@@ -62,5 +62,6 @@ body {
 }
 
 .err-msg {
+    font-size: medium;
     color: rgb(199, 40, 40);
 }

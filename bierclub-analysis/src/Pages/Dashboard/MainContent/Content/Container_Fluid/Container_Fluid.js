@@ -1,8 +1,8 @@
 import React from 'react';
-import PageHeading from './PageHeading';
-import Cajas from './Cajas/Cajas';
-import LastProductInDB from './LastProductInDB';
-import CategoriesInDb from './CategoriesInDb';
+import PageHeading from './PageHeading/PageHeading';
+import Boxes from './Boxes/Boxes';
+import LastProductInDB from './LastProductInDB/LastProductInDB';
+import CategoriesInDb from './CategoriesInDb/CategoriesInDb';
 import AllProductsInDB from './AllProductsInDB/AllProductsInDB';
 
 function Container_Fluid() {
@@ -36,7 +36,7 @@ function Container_Fluid() {
 
       <div className="row">
         {cajas.map((caja) => (
-          <Cajas
+          <Boxes
             key={caja.id}
             titulo={caja.titulo}
             cifra={caja.cifra}

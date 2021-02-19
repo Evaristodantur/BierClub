@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../../../assets/images/dummy-avatar.jpg';
+import img from '../../../../../../assets/images/dummy-avatar.jpg';
 
 function LastProductInDB() {
     return (

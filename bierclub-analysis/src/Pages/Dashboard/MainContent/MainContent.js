@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Footer from './Footer'
-import Content from './Content'
+import Footer from './Footer/Footer'
+import Content from './Content/Content'
 
 function MainContent() {
     return (

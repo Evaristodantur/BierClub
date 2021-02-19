@@ -1,7 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 
-function Cajas(props) {
+function Boxes(props) {
     return (
       <div className="col-md-4 mb-4">
         <div className={props.borde}>
@@ -26,18 +26,18 @@ function Cajas(props) {
     );
 }
 
-Cajas.propTypes = {
+Boxes.propTypes = {
   borde: propTypes.string.isRequired,
   titulo: propTypes.string.isRequired,
   cifra: propTypes.number.isRequired,
   icono: propTypes.string.isRequired
 };
 
-Cajas.defaultProps = {
+Boxes.defaultProps = {
   borde: 'card border-left-primary shadow h-100 py-2',
   titulo: 'no hay',
   cifra: 0,
   icono: '',
 };
 
-export default Cajas
+export default Boxes;
