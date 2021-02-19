@@ -8,11 +8,6 @@ class Auth {
     cb();
   }
 
-  logout(cb) {
-    this.auth = false;
-    cb();
-  }
-
   isAuth() {
       return this.auth;
   }
