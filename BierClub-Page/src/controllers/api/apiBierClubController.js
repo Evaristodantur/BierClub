@@ -239,18 +239,15 @@ let apiBierClubController = {
       },
     })
       .then((categories) => {
-        let respuesta = {
+        res.json({
           meta: {
             status: 200,
-            state: 'OK',
-            url: '/api/bierclub' + req.url,
           },
-          data: {
-            listaDeCategorias: categories,
-          },
-        };
+          data: categories,
+        });
 
-        res.json(respuesta);
+
+        
       })
       .catch((err) => {
         res.json({

@@ -1,6 +1,32 @@
-import React from 'react'
+import React, { Component } from 'react';
+import axios from 'axios';
+import Category from './Category';
 
-function CategoriesInDb() {
+class CategoriesInDb extends Component {
+
+  state = {
+    categories: []
+  }
+  
+
+  getRequest = () => {
+    axios
+      .get('http://localhost:3000/api/bierclub/getCategoryList')
+      .then(({ data: info }) => {
+        console.log(info.data);
+        this.setState({ categories: info.data });
+      })
+      .catch((err) => {
+        console.log(err.message);
+      }); 
+  }
+
+  componentDidMount() {
+    this.getRequest()
+  }
+
+
+  render() {
     return (
       <div className="col-lg-6 mb-4">
         <div className="card shadow mb-4">
@@ -11,41 +37,54 @@ function CategoriesInDb() {
           </div>
           <div className="card-body">
             <div className="row">
-              <div className="col-lg-6 mb-4">
-                <div className="card bg-info text-white shadow">
-                  <div className="card-body">Category 01</div>
-                </div>
-              </div>
-              <div className="col-lg-6 mb-4">
-                <div className="card bg-info text-white shadow">
-                  <div className="card-body">Category 02</div>
-                </div>
-              </div>
-              <div className="col-lg-6 mb-4">
-                <div className="card bg-info text-white shadow">
-                  <div className="card-body">Category 03</div>
-                </div>
-              </div>
-              <div className="col-lg-6 mb-4">
-                <div className="card bg-info text-white shadow">
-                  <div className="card-body">Category 04</div>
-                </div>
-              </div>
-              <div className="col-lg-6 mb-4">
-                <div className="card bg-info text-white shadow">
-                  <div className="card-body">Category 05</div>
-                </div>
-              </div>
-              <div className="col-lg-6 mb-4">
-                <div className="card bg-info text-white shadow">
-                  <div className="card-body">Category 06</div>
-                </div>
-              </div>
+              {this.state.categories.map((category) => (
+                <Category key={category.id} name={category.name}></Category>
+              ))}
             </div>
           </div>
         </div>
       </div>
     );
+  }
 }
 
-export default CategoriesInDb
+export default CategoriesInDb;
+
+
+
+/* import React, { useState } from 'react';
+import axios from 'axios';
+import Category from './Category';
+
+function CategoriesInDb() {
+  let [categories, setCategories] = useState([]);
+
+  axios('http://localhost:3000/api/bierclub/getCategoryList')
+    .then(({ data: info }) => {
+      setCategories(info.data);
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+
+  return (
+    <div className="col-lg-6 mb-4">
+      <div className="card shadow mb-4">
+        <div className="card-header py-3">
+          <h6 className="m-0 font-weight-bold text-primary">
+            Categories in Data Base
+          </h6>
+        </div>
+        <div className="card-body">
+          <div className="row">
+            {categories.map((category) => (
+              <Category key={category.id} name={category.name}></Category>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default CategoriesInDb; */

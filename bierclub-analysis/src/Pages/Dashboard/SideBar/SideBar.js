@@ -8,7 +8,7 @@ function SideBar() {
       >
         <a
           className="sidebar-brand d-flex align-items-center justify-content-center"
-          href="/"
+          href="/dashboard"
         >
           <div className="sidebar-brand-icon">
             <i className="fas fa-chart-line"></i>
@@ -19,7 +19,7 @@ function SideBar() {
         <hr className="sidebar-divider my-0"></hr>
 
         <li className="nav-item active">
-          <a className="nav-link" href="/">
+          <a className="nav-link" style={{ cursor: 'auto' }}>
             <i className="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
           </a>
@@ -30,23 +30,9 @@ function SideBar() {
         <div className="sidebar-heading">Actions</div>
 
         <li className="nav-item">
-          <a className="nav-link collapsed" href="/">
-            <i className="fas fa-fw fa-folder"></i>
-            <span>Pages</span>
-          </a>
-        </li>
-
-        <li className="nav-item">
-          <a className="nav-link" href="/">
-            <i className="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span>
-          </a>
-        </li>
-
-        <li className="nav-item">
-          <a className="nav-link" href="/">
-            <i className="fas fa-fw fa-table"></i>
-            <span>Tables</span>
+          <a className="nav-link collapsed" href="/login">
+            <i className="fas fa-sign-out-alt"></i>
+            <span>Sign Out</span>
           </a>
         </li>
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './Login.css';
+import './login.css';
 import auth from '../../utils/auth';
 
 export default function Login(props) {
@@ -38,7 +38,7 @@ export default function Login(props) {
             password: passwordLogin,
           },
         }).then(({data: info}) => {
-            console.log(info);
+          
             if (info.meta.status == 404) {
                 setErrorMsg(info.data.message);
             } else {
