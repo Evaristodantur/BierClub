@@ -1,5 +1,18 @@
 # Dailies
 
+### 🗓️ 17/2/21
+  Terminado:
+  - Login React con axios
+  - Login API REST
+  - Auth de Login en Analysis
+  
+   Para hacer hoy:
+  - Mostrar datos en DashBoard
+  - Animación de agregado de producto
+  - Muestra de Subtotal
+  - Muestra de Subtotal en Compra
+
+
 ### 🗓️ 16/2/21
   Terminado:
   - Mejorar pagina de productCart
@@ -8,6 +21,7 @@
    Para hacer hoy:
   - Login React con axios
   - Login API REST
+  - Auth de Login en Analysis
   - Mostrar datos en DashBoard
   - Animación de agregado de producto
   - Muestra de Subtotal
