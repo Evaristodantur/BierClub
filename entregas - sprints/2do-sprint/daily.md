@@ -1,5 +1,27 @@
 # Dailies
 
+### 🗓️ 18/2/21
+  Terminado:
+  - Implementación visual del dashboard
+  - Mostrar datos en DashBoard
+    - getCategoryList
+  
+   Para hacer hoy:
+  - Implementación visual del dashboard
+  - Mostrar datos en DashBoard
+    - getTotalRegisteredUsers
+    - getTotalProductsAdded
+    - getTotalSalesMade
+    - getLastProductAdded
+    - getLastProductSold
+    - getCategoryList
+    - getRegisteredUsers
+    - getTheMostExpensiveProductSold
+  - Animación de agregado de producto
+  - Muestra de Subtotal
+  - Muestra de Subtotal en Compra
+
+
 ### 🗓️ 17/2/21
   Terminado:
   - Login React con axios
@@ -8,9 +30,14 @@
   
    Para hacer hoy:
   - Mostrar datos en DashBoard
-  - Animación de agregado de producto
-  - Muestra de Subtotal
-  - Muestra de Subtotal en Compra
+    - getTotalRegisteredUsers
+    - getTotalProductsAdded
+    - getTotalSalesMade
+    - getLastProductAdded
+    - getLastProductSold
+    - getCategoryList
+    - getRegisteredUsers
+    - getTheMostExpensiveProductSold
 
 
 ### 🗓️ 16/2/21
@@ -23,9 +50,6 @@
   - Login API REST
   - Auth de Login en Analysis
   - Mostrar datos en DashBoard
-  - Animación de agregado de producto
-  - Muestra de Subtotal
-  - Muestra de Subtotal en Compra
 
 
 ### 🗓️ 02/2/21
