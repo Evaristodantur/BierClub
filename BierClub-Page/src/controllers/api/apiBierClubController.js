@@ -2,15 +2,17 @@ let db = require('../../database/models');
 const bcrypt = require('bcryptjs');
 
 let apiBierClubController = {
-
   login: (req, res) => {
     db.Users.findOne({
       where: {
         email: req.body.email,
-        admin: 1
-      }
-    }).then(user => {
-      if(user != null && bcrypt.compareSync(req.body.password, user.password)) {
+        admin: 1,
+      },
+    }).then((user) => {
+      if (
+        user != null &&
+        bcrypt.compareSync(req.body.password, user.password)
+      ) {
         res.json({
           meta: {
             status: 200,
@@ -29,16 +31,13 @@ let apiBierClubController = {
           },
         });
       }
-      
-    })
+    });
   },
 
   // Cantidad de usuarios registrados
   getTotalRegisteredUsers: (req, res) => {
     db.Users.count()
       .then((userRegistered) => {
-
-
         res.json({
           meta: {
             status: 200,
@@ -47,7 +46,6 @@ let apiBierClubController = {
           },
           getTotalRegisteredUsers: userRegistered,
         });
-
       })
       .catch((err) => {
         res.json({
@@ -64,14 +62,14 @@ let apiBierClubController = {
   getTotalProductsAdded: (req, res) => {
     db.Products.count()
       .then((productsAdded) => {
-
         res.json({
           meta: {
             status: 200,
+            state: 'OK',
+            url: '/api/bierclub' + req.url,
           },
           getTotalProductsAdded: productsAdded,
         });
-        
       })
       .catch((err) => {
         res.json({
@@ -100,7 +98,6 @@ let apiBierClubController = {
           total += cartsClosed[i].stock_order;
         }
 
-
         res.json({
           meta: {
             status: 200,
@@ -109,8 +106,34 @@ let apiBierClubController = {
           },
           getTotalSalesMade: total,
         });
+      })
+      .catch((err) => {
+        res.json({
+          meta: {
+            status: 500,
+            state: err,
+            url: '/api/bierclub' + req.url,
+          },
+        });
+      });
+  },
 
-
+  // Lista de categorias/talles/colores
+  getCategoryList: (req, res) => {
+    db.Categories.findAll({
+      where: {
+        status: 1,
+      },
+    })
+      .then((categories) => {
+        res.json({
+          meta: {
+            status: 200,
+            state: 'OK',
+            url: '/api/bierclub' + req.url,
+          },
+          data: categories,
+        });
       })
       .catch((err) => {
         res.json({
@@ -132,24 +155,18 @@ let apiBierClubController = {
       order: [['createdAt', 'DESC']],
     })
       .then((product) => {
-
         product.images.forEach((image) => {
           image.name = 'http://localhost:3000/images/productos/' + image.name;
         });
-        
 
-        let respuesta = {
+        res.json({
           meta: {
             status: 200,
             state: 'OK',
             url: '/api/bierclub' + req.url,
           },
-          data: {
-            ultimoProductoSubido: product,
-          },
-        };
-
-        res.json(respuesta);
+          getLastProductAdded: product,
+        });
       })
       .catch((err) => {
         res.json({
@@ -183,26 +200,20 @@ let apiBierClubController = {
           },
         })
           .then((lastProductSold) => {
-
-
             lastProductSold.images.forEach((image) => {
               image.name =
                 'http://localhost:3000/images/productos/' + image.name;
             });
 
-
-            let respuesta = {
+            res.json({
               meta: {
                 status: 200,
                 state: 'OK',
                 url: '/api/bierclub' + req.url,
               },
-              data: {
-                ultimoProductoVendido: lastProductSold,
-              },
-            };
+              getLastProductSold: lastProductSold,
+            });
 
-            res.json(respuesta);
           })
           .catch((err) => {
             res.json({
@@ -225,23 +236,54 @@ let apiBierClubController = {
       });
   },
 
-  // Lista de categorias/talles/colores
-  getCategoryList: (req, res) => {
-    db.Categories.findAll({
-      where: {
-        status: 1,
-      },
+  // La venta más cara
+  getTheMostExpensiveProductSold: (req, res) => {
+    db.Products.findOne({
+      include: [
+        { association: 'carts', where: { status: 1 } },
+        { association: 'images' },
+      ],
+      order: [['price', 'DESC']],
     })
-      .then((categories) => {
+      .then((product) => {
+        //Le agrega URL a la Imagen
+        product.images.forEach((image) => {
+          image.name = 'http://localhost:3000/images/productos/' + image.name;
+        });
+
+        
         res.json({
           meta: {
             status: 200,
+            state: 'OK',
+            url: '/api/bierclub' + req.url,
           },
-          data: categories,
+          getTheMostExpensiveProductSold: product,
         });
 
+        /*
+        let respuesta = {
+          meta: {
+            status: 200,
+            state: 'OK',
+            url: '/api/bierclub' + req.url,
+          },
+          data: {
+            productMasCaroVendido: {
+              id: product.id,
+              name: product.name,
+              price: product.price,
+              stock: product.stock,
+              description: product.description,
+              createdAt: product.createdAt,
+              updatedAt: product.updatedAt,
+              category_id: product.category_id,
+              images: product.images,
+            },
+          },
+        };
 
-        
+        res.json(respuesta); */
       })
       .catch((err) => {
         res.json({
@@ -266,56 +308,6 @@ let apiBierClubController = {
           },
           data: {
             listaDeUsuariosRegistrados: users,
-          },
-        };
-
-        res.json(respuesta);
-      })
-      .catch((err) => {
-        res.json({
-          meta: {
-            status: 500,
-            state: err,
-            url: '/api/bierclub' + req.url,
-          },
-        });
-      });
-  },
-
-  // La venta más cara - incluye todo un carrito
-  getTheMostExpensiveProductSold: (req, res) => {
-    db.Products.findOne({
-      include: [
-        { association: 'carts', where: { status: 1 } },
-        { association: 'images' },
-      ],
-      order: [['price', 'DESC']],
-    })
-      .then((product) => {
-
-        //Le agrega URL a la Imagen
-        product.images.forEach(image => {
-          image.name = 'http://localhost:3000/images/productos/' + image.name;
-        });
-
-        let respuesta = {
-          meta: {
-            status: 200,
-            state: 'OK',
-            url: '/api/bierclub' + req.url,
-          },
-          data: {
-            productMasCaroVendido: {
-              id: product.id,
-              name: product.name,
-              price: product.price,
-              stock: product.stock,
-              description: product.description,
-              createdAt: product.createdAt,
-              updatedAt: product.updatedAt,
-              category_id: product.category_id,
-              images: product.images,
-            },
           },
         };
 

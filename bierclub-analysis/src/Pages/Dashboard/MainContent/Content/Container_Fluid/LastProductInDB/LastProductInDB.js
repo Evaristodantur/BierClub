@@ -1,37 +1,90 @@
-import React from 'react'
-import img from '../../../../../../assets/images/dummy-avatar.jpg';
+import React, { Component } from 'react';
+import ContainerProduct from './ContainerProduct';
+import axios from 'axios';
+import sinImg from '../../../../../../assets/images/dummy-avatar.jpg';
 
-function LastProductInDB() {
+
+let getLastProductAdded = axios.get(
+  'http://localhost:3000/api/bierclub/getLastProductAdded'
+);
+let getLastProductSold = axios.get(
+  'http://localhost:3000/api/bierclub/getLastProductSold'
+);
+let getTheMostExpensiveProductSold = axios.get(
+  'http://localhost:3000/api/bierclub/getTheMostExpensiveProductSold'
+);
+
+class LastProductInDB extends Component {
+  state = {
+    data: []
+  };
+
+  getRequest = () => {
+    axios
+      .all([
+        getLastProductAdded,
+        getLastProductSold,
+        getTheMostExpensiveProductSold,
+      ])
+      .then((resp) => {
+        console.log(resp[2].data.getTheMostExpensiveProductSold.name);
+
+        this.setState({
+          data: [
+            {
+              id: 1,
+              titulo: 'Last Product Added',
+              productName: resp[0].data.getLastProductAdded.name,
+              description: resp[0].data.getLastProductAdded.description,
+              imagen:
+                resp[0].data.getLastProductAdded.imagen != 'undefined'
+                  ? resp[0].data.getLastProductAdded.images[0].name
+                  : sinImg,
+            },
+            {
+              id: 2,
+              titulo: 'Last Product Sold',
+              productName: resp[1].data.getLastProductSold.name,
+              description: resp[1].data.getLastProductSold.description,
+              imagen:
+                resp[1].data.getLastProductSold.imagen != 'undefined'
+                  ? resp[1].data.getLastProductSold.images[0].name
+                  : sinImg,
+            },
+            {
+              id: 3,
+              titulo: 'The Most Expensive Product Sold',
+              productName: resp[2].data.getTheMostExpensiveProductSold.name,
+              description:
+                resp[2].data.getTheMostExpensiveProductSold.description,
+              imagen:
+                resp[2].data.getTheMostExpensiveProductSold.imagen !=
+                'undefined'
+                  ? resp[2].data.getTheMostExpensiveProductSold.images[0].name
+                  : sinImg,
+            },
+          ],
+        });
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  };
+
+  componentDidMount() {
+    this.getRequest();
+  }
+
+  render() {
+    
     return (
-      <div className="col-lg-6 mb-4">
-        <div className="card shadow mb-4">
-          <div className="card-header py-3">
-            <h6 className="m-0 font-weight-bold text-primary">
-              Last product in Data Dase
-            </h6>
-          </div>
-          <div className="card-body">
-            <div className="text-center">
-              <img
-                className="img-fluid px-3 px-sm-4 mt-3 mb-4"
-                style={{ width: '25rem' }}
-                src={img}
-                alt="image dummy"
-              />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-              consequatur explicabo officia inventore libero veritatis iure
-              voluptate reiciendis a magnam, vitae, aperiam voluptatum non
-              corporis quae dolorem culpa exercitationem ratione?
-            </p>
-            <a target="_blank" rel="nofollow" href="/">
-              View product detail
-            </a>
-          </div>
-        </div>
-      </div>
+      <>
+        {this.state.data.map((box) => (
+          <ContainerProduct key={box.id} titulo={box.titulo} productName={box.productName} description={box.description} imagen={box.imagen}/>
+        ))}
+      </>
     );
+  }
 }
 
-export default LastProductInDB
+export default LastProductInDB;
