@@ -27,7 +27,6 @@ class LastProductInDB extends Component {
         getTheMostExpensiveProductSold,
       ])
       .then((resp) => {
-        console.log(resp[2].data.getTheMostExpensiveProductSold.name);
 
         this.setState({
           data: [
@@ -79,8 +78,14 @@ class LastProductInDB extends Component {
     
     return (
       <>
-        {this.state.data.map((box) => (
-          <ContainerProduct key={box.id} titulo={box.titulo} productName={box.productName} description={box.description} imagen={box.imagen}/>
+        {this.state.data.map((product) => (
+          <ContainerProduct
+            key={product.id}
+            titulo={product.titulo}
+            productName={product.productName}
+            description={product.description}
+            imagen={product.imagen}
+          />
         ))}
       </>
     );

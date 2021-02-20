@@ -261,29 +261,6 @@ let apiBierClubController = {
           getTheMostExpensiveProductSold: product,
         });
 
-        /*
-        let respuesta = {
-          meta: {
-            status: 200,
-            state: 'OK',
-            url: '/api/bierclub' + req.url,
-          },
-          data: {
-            productMasCaroVendido: {
-              id: product.id,
-              name: product.name,
-              price: product.price,
-              stock: product.stock,
-              description: product.description,
-              createdAt: product.createdAt,
-              updatedAt: product.updatedAt,
-              category_id: product.category_id,
-              images: product.images,
-            },
-          },
-        };
-
-        res.json(respuesta); */
       })
       .catch((err) => {
         res.json({
@@ -300,18 +277,34 @@ let apiBierClubController = {
   getRegisteredUsers: (req, res) => {
     db.Users.findAll()
       .then((users) => {
-        let respuesta = {
+
+        users.map(user => {
+          return {
+            id: user.id
+          }
+        })
+
+        res.json({
           meta: {
             status: 200,
             state: 'OK',
             url: '/api/bierclub' + req.url,
           },
-          data: {
-            listaDeUsuariosRegistrados: users,
-          },
-        };
+          getRegisteredUsers: users.map((user) => {
+            return {
+              id: user.id,
+              name: user.name,
+              email: user.email,
+              suscription_status: user.suscription_status,
+              newsletter_status: user.newsletter_status,
+              admin: user.admin,
+              verify: user.verify,
+            };
+          }),
+        });
 
-        res.json(respuesta);
+
+        
       })
       .catch((err) => {
         res.json({

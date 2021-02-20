@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PageHeading from './PageHeading/PageHeading';
 import Boxes from './Boxes/Boxes';
 import axios from 'axios';
-import LastProductInDB from './LastProductInDB/LastProductInDB';
+import ProductInDB from './LastProductInDB/ProductInDB';
 import CategoriesInDb from './CategoriesInDb/CategoriesInDb';
 import AllProductsInDB from './AllProductsInDB/AllProductsInDB';
 
@@ -86,12 +86,12 @@ class Container_Fluid extends Component {
         </div>
 
         <div className="row">
-          <LastProductInDB></LastProductInDB>
+          <ProductInDB></ProductInDB>
 
           <CategoriesInDb></CategoriesInDb>
         </div>
         <h1 className="h3 mb-2 text-gray-800">
-          All the products in the Database
+          All users in the Database
         </h1>
         <AllProductsInDB></AllProductsInDB>
       </div>

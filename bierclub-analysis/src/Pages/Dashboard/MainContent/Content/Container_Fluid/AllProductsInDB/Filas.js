@@ -1,39 +1,28 @@
 import React from 'react'
 
 function Filas(props) {
-    const categories = ['Category 01', 'Category 02', 'Category 03'];
-    const colors = [
-      ['text-danger', 'Red'],
-      ['text-primary', 'Blue'],
-      ['text-success', 'Green'],
-    ];
+    
     return (
       <tbody>
         <tr>
           <td>{props.name}</td>
-          <td>{props.description}</td>
-          <td>${props.price}</td>
-          <td>
-            <ul>
-              {categories.map((category, i) => (
-                <li key={i}>{category}</li>
-              ))}
-            </ul>
-          </td>
-          <td>
-            <ul>
-              {colors.map((color, i) => (
-                <li key={i}>
-                  <span className={color[0]}>{color[1]}</span>
-                </li>
-              ))}
-              
-            </ul>
-          </td>
-          <td>{props.stock}</td>
+          <td>{props.email}</td>
+          <td>{props.suscription_status}</td>
+          <td>{props.newsletter_status}</td>
+          <td>{props.admin}</td>
+          <td>{props.verify}</td>
         </tr>
       </tbody>
     );
 }
+
+Filas.defaultProps = {
+  name: 'Sin nombre',
+  email: '',
+  suscription_status: 0,
+  newsletter_status: 0,
+  admin: 0,
+  verify: 0
+};
 
 export default Filas;

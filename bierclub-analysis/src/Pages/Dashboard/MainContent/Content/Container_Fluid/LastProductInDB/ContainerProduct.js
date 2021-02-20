@@ -2,7 +2,7 @@ import React from 'react'
 import img from '../../../../../../assets/images/dummy-avatar.jpg';
 
 export default function ContainerProduct(props) {
-    console.log(props.imagen)
+    
     return (
       <div className="col-lg-6 mb-4">
         <div className="card shadow mb-4">
