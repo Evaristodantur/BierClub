@@ -1,10 +1,13 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Display & Box Model */
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+  /* Otras */
+  background-color: rgb(228, 228, 228);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
 
 code {

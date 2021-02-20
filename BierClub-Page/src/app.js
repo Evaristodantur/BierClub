@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var methodOverride = require('method-override');
 var session = require('express-session');
+var cors = require('cors');
 
 //Middlewares generales
 var cookieAuthMiddleware = require('./middlewares/cookieAuthMiddleware');
@@ -18,6 +19,7 @@ var cartsRouter = require('./routes/carts');
 var apiBierClubRouter = require('./routes/api/bierclub');
 
 var app = express();
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

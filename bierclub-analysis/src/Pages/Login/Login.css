@@ -1,0 +1,67 @@
+body {
+  /* Display & Box Model */
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+  /* Otras */
+  background-color: rgb(228, 228, 228);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.title {
+    text-align: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-title {
+    text-align: center;
+}
+
+.login-form-div {
+    width: 50%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15% 0 15% ;
+}
+
+.input-form {
+    text-align: left;
+    font-size: medium;
+    background: #e4e4e4;
+    color: black;
+    padding: 8px;
+    border: 0px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.input-form::placeholder {
+    color: rgb(43, 42, 42);
+}
+
+.btn-login {
+    font-size: large;
+    cursor: pointer;
+    color: white;
+    background: #daa520;
+    padding: 10px;
+    border: 0px solid black;
+    border-radius: 5px;
+    margin: 5px 0 25px 0;
+}
+
+.err-msg {
+    font-size: medium;
+    color: rgb(199, 40, 40);
+}

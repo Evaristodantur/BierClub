@@ -1,22 +1,53 @@
 let db = require('../../database/models');
+const bcrypt = require('bcryptjs');
 
 let apiBierClubController = {
+
+  login: (req, res) => {
+    db.Users.findOne({
+      where: {
+        email: req.body.email,
+        admin: 1
+      }
+    }).then(user => {
+      if(user != null && bcrypt.compareSync(req.body.password, user.password)) {
+        res.json({
+          meta: {
+            status: 200,
+          },
+          data: {
+            message: 'User Logueado',
+          },
+        });
+      } else {
+        res.json({
+          meta: {
+            status: 404,
+          },
+          data: {
+            message: '* Error de credenciales',
+          },
+        });
+      }
+      
+    })
+  },
+
   // Cantidad de usuarios registrados
   getTotalRegisteredUsers: (req, res) => {
     db.Users.count()
       .then((userRegistered) => {
-        let respuesta = {
+
+
+        res.json({
           meta: {
             status: 200,
             state: 'OK',
             url: '/api/bierclub' + req.url,
           },
-          data: {
-            cantidadDeUsuariosRegistrados: userRegistered,
-          },
-        };
+          getTotalRegisteredUsers: userRegistered,
+        });
 
-        res.json(respuesta);
       })
       .catch((err) => {
         res.json({
@@ -33,18 +64,14 @@ let apiBierClubController = {
   getTotalProductsAdded: (req, res) => {
     db.Products.count()
       .then((productsAdded) => {
-        let respuesta = {
+
+        res.json({
           meta: {
             status: 200,
-            state: 'OK',
-            url: '/api/bierclub' + req.url,
           },
-          data: {
-            cantidadDeProductosSubidos: productsAdded,
-          },
-        };
-
-        res.json(respuesta);
+          getTotalProductsAdded: productsAdded,
+        });
+        
       })
       .catch((err) => {
         res.json({
@@ -73,18 +100,17 @@ let apiBierClubController = {
           total += cartsClosed[i].stock_order;
         }
 
-        let respuesta = {
+
+        res.json({
           meta: {
             status: 200,
             state: 'OK',
             url: '/api/bierclub' + req.url,
           },
-          data: {
-            cantidadDeVentasRealizadas: total,
-          },
-        };
+          getTotalSalesMade: total,
+        });
 
-        res.json(respuesta);
+
       })
       .catch((err) => {
         res.json({
@@ -207,18 +233,15 @@ let apiBierClubController = {
       },
     })
       .then((categories) => {
-        let respuesta = {
+        res.json({
           meta: {
             status: 200,
-            state: 'OK',
-            url: '/api/bierclub' + req.url,
           },
-          data: {
-            listaDeCategorias: categories,
-          },
-        };
+          data: categories,
+        });
 
-        res.json(respuesta);
+
+        
       })
       .catch((err) => {
         res.json({
