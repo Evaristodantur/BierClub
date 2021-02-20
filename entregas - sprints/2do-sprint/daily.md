@@ -5,16 +5,15 @@
   - Implementación visual del dashboard
   - Mostrar datos en DashBoard
     - getCategoryList
+    - getTotalProductsAdded
+    - getTotalSalesMade
+    - getTotalRegisteredUsers
   
    Para hacer hoy:
   - Implementación visual del dashboard
-  - Mostrar datos en DashBoard
-    - getTotalRegisteredUsers
-    - getTotalProductsAdded
-    - getTotalSalesMade
+  - Mostrar datos en DashBoar
     - getLastProductAdded
     - getLastProductSold
-    - getCategoryList
     - getRegisteredUsers
     - getTheMostExpensiveProductSold
   - Animación de agregado de producto
