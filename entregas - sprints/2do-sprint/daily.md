@@ -1,5 +1,19 @@
 # Dailies
 
+### 🗓️ 19/2/21
+  Terminado:
+  - Mostrar datos en DashBoard
+    - getLastProductAdded
+    - getLastProductSold
+    - getRegisteredUsers
+    - getTheMostExpensiveProductSold
+  
+   Para hacer hoy:
+  - Animación de agregado de producto
+  - Muestra de Subtotal
+  - Muestra de Subtotal en Compra
+
+
 ### 🗓️ 18/2/21
   Terminado:
   - Implementación visual del dashboard
