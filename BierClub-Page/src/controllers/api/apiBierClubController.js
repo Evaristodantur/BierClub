@@ -37,18 +37,17 @@ let apiBierClubController = {
   getTotalRegisteredUsers: (req, res) => {
     db.Users.count()
       .then((userRegistered) => {
-        let respuesta = {
+
+
+        res.json({
           meta: {
             status: 200,
             state: 'OK',
             url: '/api/bierclub' + req.url,
           },
-          data: {
-            cantidadDeUsuariosRegistrados: userRegistered,
-          },
-        };
+          getTotalRegisteredUsers: userRegistered,
+        });
 
-        res.json(respuesta);
       })
       .catch((err) => {
         res.json({
@@ -65,18 +64,14 @@ let apiBierClubController = {
   getTotalProductsAdded: (req, res) => {
     db.Products.count()
       .then((productsAdded) => {
-        let respuesta = {
+
+        res.json({
           meta: {
             status: 200,
-            state: 'OK',
-            url: '/api/bierclub' + req.url,
           },
-          data: {
-            cantidadDeProductosSubidos: productsAdded,
-          },
-        };
-
-        res.json(respuesta);
+          getTotalProductsAdded: productsAdded,
+        });
+        
       })
       .catch((err) => {
         res.json({
@@ -105,18 +100,17 @@ let apiBierClubController = {
           total += cartsClosed[i].stock_order;
         }
 
-        let respuesta = {
+
+        res.json({
           meta: {
             status: 200,
             state: 'OK',
             url: '/api/bierclub' + req.url,
           },
-          data: {
-            cantidadDeVentasRealizadas: total,
-          },
-        };
+          getTotalSalesMade: total,
+        });
 
-        res.json(respuesta);
+
       })
       .catch((err) => {
         res.json({

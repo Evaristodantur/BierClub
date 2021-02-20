@@ -13,7 +13,6 @@ class CategoriesInDb extends Component {
     axios
       .get('http://localhost:3000/api/bierclub/getCategoryList')
       .then(({ data: info }) => {
-        console.log(info.data);
         this.setState({ categories: info.data });
       })
       .catch((err) => {
