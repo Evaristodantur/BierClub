@@ -172,6 +172,7 @@ body div.container-carrito {
   .producto-carrito
   .deleteProduct:hover{
   color: red;
+  cursor: pointer;
 }
 
 .container-carrito .form-equis {

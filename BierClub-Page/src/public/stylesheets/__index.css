@@ -156,6 +156,7 @@
 .home main section.productos article.producto:hover button.hoverproducto {
   opacity: 1;
   margin-bottom: 4%;
+  cursor: pointer;
 }
 
 /* ==========================================================================
