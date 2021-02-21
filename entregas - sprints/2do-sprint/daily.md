@@ -1,11 +1,20 @@
 # Dailies
 
+### 🗓️ 21/2/21
+  Terminado:
+  - Diseñar modal para olvido de contraseña en login
+  
+   Para hacer hoy:
+  - Animación de agregado de producto
+  - Muestra de Subtotal
+  - Muestra de Subtotal en Compra
+
+
 ### 🗓️ 20/2/21
   Terminado:
   - Implementar olvido de contraseña - controller
   
    Para hacer hoy:
-  - Diseñar modal para olvido de contraseña en login
   - Animación de agregado de producto
   - Muestra de Subtotal
   - Muestra de Subtotal en Compra
