@@ -234,8 +234,7 @@ let usersController = {
       }).then(user => {
         console.log(user);
         if(user == null) {
-          let credencialesInvalidas = 'Error en el envio de email';
-          return res.render("users/login", {credencialesInvalidas : credencialesInvalidas, userLogged : req.session.usuarioLogueado});
+          res.redirect('/users/login');
         } else {
           let newPass = (Math.random() * 15).toString(36).substring(2);
 
@@ -281,11 +280,8 @@ let usersController = {
             }
           });
 
-          let contraseniaCambiadaEmail = 'Revisa tu casilla de mensajes!';
-          res.render('users/login', {
-            contraseniaCambiadaEmail: contraseniaCambiadaEmail,
-            userLogged: req.session.usuarioLogueado,
-          });
+          
+          res.redirect('/users/login');
         }
       })
       
