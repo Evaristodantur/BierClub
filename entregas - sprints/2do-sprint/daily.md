@@ -5,6 +5,7 @@
   - Diseñar modal para olvido de contraseña en login
   
    Para hacer hoy:
+  - Revisar modals generales
   - Animación de agregado de producto
   - Muestra de Subtotal
   - Muestra de Subtotal en Compra
