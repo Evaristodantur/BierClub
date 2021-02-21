@@ -239,7 +239,7 @@ let usersController = {
         } else {
           let newPass = (Math.random() * 15).toString(36).substring(2);
 
-          console.log(newPass);
+          
           db.Users.update(
             {
               password: bcrypt.hashSync(newPass, 10),
@@ -281,7 +281,11 @@ let usersController = {
             }
           });
 
-          res.redirect('/');
+          let contraseniaCambiadaEmail = 'Revisa tu casilla de mensajes!';
+          res.render('users/login', {
+            contraseniaCambiadaEmail: contraseniaCambiadaEmail,
+            userLogged: req.session.usuarioLogueado,
+          });
         }
       })
       

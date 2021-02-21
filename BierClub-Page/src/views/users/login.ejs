@@ -21,9 +21,15 @@
 				<h1>Ingresa tu cuenta</h1>	
 			</div>
 		
+
+
+			
+
 			<!-- FORMULARIO -->
 			<form class="formulario" action="/users/login" method="POST">
 				
+			
+
 			<!-- EMAIL -->
 			<div class="campo-input">
 				<input class="input-registro" type="email" id="email" name="email" placeholder="Email"
@@ -57,6 +63,9 @@
 				<% if(typeof credencialesInvalidas != "undefined"){ %>
 					<p class="error-total">* <%= credencialesInvalidas %></p>
 				<% } %>
+				<% if(typeof contraseniaCambiadaEmail != "undefined"){%>
+					<p class="error-total" style="color: green;"><%= contraseniaCambiadaEmail %></p>
+				<%}%>
 			</div>
 
 			<div class="campo-input">
@@ -85,12 +94,10 @@
 						<div class="form-inputs-contrasenia-olvidada">
 							
 								<input type="email" name="emailDeCambioContrasenia" placeholder="Escriba su email">
-							
+								
 								<button type="submit">Enviar Nueva Contraseña</button>
-							
-							
-						</div>
-						
+
+						</div>						
 					</form>
 				</div>
 			</div>

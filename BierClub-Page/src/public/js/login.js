@@ -82,6 +82,27 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target == modalContraseniaOlvidada) {
             modalContraseniaOlvidada.style.display = 'none';
         }
+    });
+
+    let formOlvidoContrasenia = document.querySelector(
+      '.modal-content-contrasenia-olvidada form'
+    ).addEventListener('submit', (e) => {
+        
+
+        let emailFormOlvidoContrasenia = document.querySelector(
+          '.form-inputs-contrasenia-olvidada input'
+        );
+
+        let emailCondicion = !/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})/i.test(
+          emailFormOlvidoContrasenia.value
+        );
+
+        if(emailCondicion) {
+            emailFormOlvidoContrasenia.style.border = '1px red solid';
+            e.preventDefault(); 
+        }
     })
+
+    console.log(formOlvidoContrasenia);
 
 });
