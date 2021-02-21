@@ -57,8 +57,31 @@ document.addEventListener('DOMContentLoaded', () => {
       
     });
 
+    /* MODAL CONTRASEÑA OLVIDADA */
+    let modalContraseniaOlvidada = document.getElementById(
+      'background-modal-contrasenia-olvidada'
+    );
+    
+    let btnContraseniaOlvidada = document.getElementById(
+      'btn-contrasenia-olvidada'
+    );
 
-    
-    
+    let spanContraseniaOlvidada = document.querySelector(
+      '.close-content-contrasenia-olvidada'
+    );
+
+    btnContraseniaOlvidada.addEventListener('click', () => {
+        modalContraseniaOlvidada.style.display = 'block';
+    })
+
+    spanContraseniaOlvidada.addEventListener('click', () => {
+        modalContraseniaOlvidada.style.display = 'none';
+    })
+
+    window.addEventListener('click', (e) => {
+        if (e.target == modalContraseniaOlvidada) {
+            modalContraseniaOlvidada.style.display = 'none';
+        }
+    })
 
 });
