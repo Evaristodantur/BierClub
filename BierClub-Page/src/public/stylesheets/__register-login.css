@@ -303,6 +303,10 @@ body .login-register {
   .campo-input textarea {
     width: 50%;
   }
+
+  .modal-content-contrasenia-olvidada {
+    width: 70%;
+  }
 }
 
 /* ==========================================================================
@@ -330,6 +334,10 @@ body .login-register {
   .campo-input textarea {
     width: 75%;
   }
+
+  .modal-content-contrasenia-olvidada {
+    width: 80%;
+  }
 }
 
 /* ==========================================================================
@@ -356,5 +364,9 @@ body .login-register {
   }
   .login-footer footer {
     margin-top: 120px;
+  }
+
+  .modal-content-contrasenia-olvidada {
+    width: 85%;
   }
 }
