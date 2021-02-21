@@ -12,6 +12,7 @@ body {
 
 .title {
     text-align: center;
+    color: black;
 }
 
 .login-container {
@@ -21,6 +22,7 @@ body {
 
 .login-title {
     text-align: center;
+    color: black;
 }
 
 .login-form-div {
@@ -61,7 +63,31 @@ body {
     margin: 5px 0 25px 0;
 }
 
+.btn-login:hover {
+    background: #be9d48;
+}
+
 .err-msg {
     font-size: medium;
     color: rgb(199, 40, 40);
+}
+
+
+
+
+@media (min-width: 526px) and (max-width: 1200px) {
+    .login-form-div {
+        width: 85%;
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 525px) {
+    .form-login {
+        margin: 0 5% 0 5% ;
+    }
+
+    .login-form-div {
+        width: 95%;
+    }
 }

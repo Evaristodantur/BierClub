@@ -19,6 +19,7 @@ export default function Login(props) {
         document.getElementById('email').style.border = '2px red solid';
         setErrorMsg("* El email tiene que ser un email valido")
     } else {
+        setErrorMsg('');
         document.getElementById('email').style.border = '2px green solid';
     }
 
@@ -26,6 +27,7 @@ export default function Login(props) {
       document.getElementById('password').style.border = '2px red solid';
       setErrorMsg('* La contraseña debe ser mayor a 8 caracteres');
     } else {
+      setErrorMsg('');
       document.getElementById('password').style.border = '2px green solid';
     }
 
@@ -57,7 +59,7 @@ export default function Login(props) {
       <h1 className="title">BierClub Analysis</h1>
       <div className="login-container">
         <div className="login-form-div">
-          <h1 className="login-title">Login</h1>
+          <h1 className="login-title">Iniciar Sesión</h1>
           <form className="form-login" onSubmit={(e) => e.preventDefault()}>
             <input
             id="email"
