@@ -9,6 +9,7 @@
     - getTheMostExpensiveProductSold
   
    Para hacer hoy:
+  - Implementar olvido de contraseña
   - Animación de agregado de producto
   - Muestra de Subtotal
   - Muestra de Subtotal en Compra
