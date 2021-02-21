@@ -8,8 +8,7 @@ function App() {
   return (
     <div className="App">
         <Switch>
-          <Route path="/dashboard" exact component={Dashboard} />
-          {/* <ProtectedRoute path="/dashboard" exact component={Dashboard} /> */}
+          <ProtectedRoute path="/dashboard" exact component={Dashboard} />
           <Route path="/login" exact component={Login} />
           <Route path="*" component={() => <Redirect to="/dashboard" />} />
         </Switch>

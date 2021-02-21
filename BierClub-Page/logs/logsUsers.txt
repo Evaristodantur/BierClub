@@ -1403,3 +1403,8 @@ Nombre: KIPPES
 Email: kippes.diego@gmail.com
 >>>>>>> fdd231e97e19be2381c5eb74482efe90d0f87610
 *************************************************************
+Se registró un usuario el 20/2/2021 21:35:06
+El usuario registrado es:
+Nombre: KIPPES
+Email: kippeso@gmail.com
+*************************************************************
