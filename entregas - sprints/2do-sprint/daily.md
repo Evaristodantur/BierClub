@@ -7,6 +7,7 @@
     - getLastProductSold
     - getRegisteredUsers
     - getTheMostExpensiveProductSold
+  - Login response in bierclub analysis
   
    Para hacer hoy:
   - Implementar olvido de contraseña
@@ -23,6 +24,7 @@
     - getTotalProductsAdded
     - getTotalSalesMade
     - getTotalRegisteredUsers
+  - Login response in bierclub analysis
   
    Para hacer hoy:
   - Implementación visual del dashboard
