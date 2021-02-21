@@ -1,5 +1,16 @@
 # Dailies
 
+### 🗓️ 20/2/21
+  Terminado:
+  - Implementar olvido de contraseña - controller
+  
+   Para hacer hoy:
+  - Diseñar modal para olvido de contraseña en login
+  - Animación de agregado de producto
+  - Muestra de Subtotal
+  - Muestra de Subtotal en Compra
+
+
 ### 🗓️ 19/2/21
   Terminado:
   - Mostrar datos en DashBoard
@@ -10,7 +21,7 @@
   - Login response in bierclub analysis
   
    Para hacer hoy:
-  - Implementar olvido de contraseña
+  - Implementar olvido de contraseña - controller
   - Animación de agregado de producto
   - Muestra de Subtotal
   - Muestra de Subtotal en Compra
