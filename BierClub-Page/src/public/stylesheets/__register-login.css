@@ -235,10 +235,10 @@ body .login-register {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 40%; /* Could be more or less, depending on screen size */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   animation-name: animateModalContentContraseniaOlvidada;
-  animation-duration: 0.3s
+  animation-duration: 0.5s
 }
 
 @keyframes animateModalContentContraseniaOlvidada {
@@ -261,7 +261,27 @@ body .login-register {
   cursor: pointer;
 }
 
+/* MODAL CONTENT - CONTRASEÑA OLVIDADA - FORM */
+.form-inputs-contrasenia-olvidada {
+  display: flex;
+  justify-content: center;
+}
 
+.form-inputs-contrasenia-olvidada input{
+  width: 75%;
+  margin: 0 5% 0 0;
+}
+
+.form-inputs-contrasenia-olvidada button{
+  background-color: #daa520;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.form-inputs-contrasenia-olvidada button:hover {
+  background-color: #a88b3f;
+}
 
 /* ==========================================================================
    RESOLUCION: 1400PX
