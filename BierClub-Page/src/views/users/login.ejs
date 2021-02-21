@@ -68,7 +68,7 @@
 				
 			
 			<!-- CONTRASEÑA OLVIDADA -->
-			<p class="contraseña-olvidada"><a href="#">¿Olvidaste tu Contraseña?</a></p>
+			<p class="contraseña-olvidada"><a href="#" id="btn-contrasenia-olvidada">¿Olvidaste tu Contraseña?</a></p>
 			
 			<!-- BOTON INGRESAR -->
 			<div class="campo-input">
@@ -76,6 +76,15 @@
 			</div>
 			</form>
 			
+			<div class="modal-contrasenia-olvidada">
+				<form action="/users/contraseniaOlvidada" method="POST">
+					<p>¿Seguro que desea cambiar su contraseña? Se le enviara al mail correspondiente una nueva contraseña, la cual usted luego podra cambiar desde su perfil</p>
+					<input type="email" name="emailDeCambioContrasenia" placeholder="Escriba su email">
+					<button type="submit">Enviar Nueva Contraseña</button>
+				</form>
+			</div>
+
+
 			<!-- REGISTRARSE -->
 			<p class="registrate-usuario">¿Aún no tenés usuario? <a href="/users/register">¡Registrate!</a></p>
 		</div>

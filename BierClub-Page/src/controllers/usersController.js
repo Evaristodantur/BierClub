@@ -223,6 +223,71 @@ let usersController = {
     },
 
 
+    
+    //  /users/login (POST)
+    contraseniaOlvidada : (req, res, next) => {
+      console.log(req.body.emailDeCambioContrasenia);
+      db.Users.findOne({
+        where: {
+          email: req.body.emailDeCambioContrasenia,
+        },
+      }).then(user => {
+        console.log(user);
+        if(user == null) {
+          let credencialesInvalidas = 'Error en el envio de email';
+          return res.render("users/login", {credencialesInvalidas : credencialesInvalidas, userLogged : req.session.usuarioLogueado});
+        } else {
+          let newPass = (Math.random() * 15).toString(36).substring(2);
+
+          console.log(newPass);
+          db.Users.update(
+            {
+              password: bcrypt.hashSync(newPass, 10),
+            },
+            {
+              where: {
+                id: user.id,
+              },
+            }
+          );
+
+
+          let transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+              user: process.env.email,
+              pass: process.env.password,
+            },
+          });
+
+          const output = `
+          <h3>Su nueva contraseña es:</h3> 
+          <p>${newPass}</p>
+          <h3>Use esta nueva contraseña para entrar y editarla desde su perfil!</h3>
+          `;
+
+          let mailOptions = {
+            from: process.env.email,
+            to: user.email,
+            subject: 'Cambio de contraseña BierClub',
+            html: output,
+          };
+
+          transporter.sendMail(mailOptions, function (err, data) {
+            if (err) {
+              console.log('ERROR');
+            } else {
+              console.log('Mensaje enviado!');
+            }
+          });
+
+          res.redirect('/');
+        }
+      })
+      
+    },
+
+
 
 
 

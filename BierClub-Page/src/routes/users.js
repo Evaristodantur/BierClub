@@ -70,6 +70,9 @@ router.get('/login', authMiddleware, usersController.loginRender);
 /* POST     /users/login                 page. */
 router.post('/login', loginMiddleware, usersController.loginIniciar);
 
+/* POST     /users/login                 page. */
+router.post('/contraseniaOlvidada', usersController.contraseniaOlvidada);
+
 /**********************************PERFIL*********************************************/
 
 /* GET     /users/perfil/:id             page. */
