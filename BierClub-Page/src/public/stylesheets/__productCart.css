@@ -64,52 +64,11 @@ body div.container-carrito {
   font-size: initial;
 }
 
-.btnBorrarProducto:hover{
+.btnBorrarProducto:hover,
+.btnBorrarProducto:focus{
   cursor: pointer;
+  background-color: rgb(145, 24, 24);
 }
-
-/* MODAL BORRAR TODOS LOS PRODUCTOS */
-.showModalAllProductosBeforeDelete, .showModalProductoBeforeDelete {
-  background-color: #daa520;
-  display: none;
-  color: white;
-  border-radius: 8px;
-  z-index: 9;
-  position: absolute;
-  top: 25%;
-  right: 40%;
-}
-
-.showModalAllProductosBeforeDelete p,
-.showModalProductoBeforeDelete p {
-  margin-right: 1%;
-  margin-left: 1%;
-  text-align: center;
-}
-
-.showModalAllProductosBeforeDelete div,
-.showModalProductoBeforeDelete div {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 5px;
-}
-
-.showModalAllProductosBeforeDelete div button,
-.showModalProductoBeforeDelete div button {
-  width: 25%;
-  border: 0;
-  border-radius: 8px;
-  padding: 5px;
-  color: white;
-  background-color: darkslateblue;
-}
-
-.showModalAllProductosBeforeDelete div button.noBtnDeleteAll,
-.showModalProductoBeforeDelete div button.noBtnDeleteProduct {
-  background-color: red;
-}
-
-
 
 #stockProducto {
   text-align: center;
@@ -444,6 +403,74 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 }
 
 
+/* MODAL - BORRAR TODOS LOS PRODUCTOS */
+.modal-deleteAllProducts {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 12; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content-deleteAllProducts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+  animation-name: animateModalContentDeleteAllProducts;
+  animation-duration: 0.75s
+}
+
+.modal-content-deleteAllProducts div {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.modal-content-deleteAllProducts div button {
+  width: 40%;
+  cursor: pointer;
+  border: 0;
+}
+
+@keyframes animateModalContentDeleteAllProducts {
+  from {top: -500px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.closeModalDeleteAllProducts {
+  color: rgb(255, 255, 255);
+  border: 0;
+  background-color: #daa520;
+}
+
+.closeModalDeleteAllProducts:hover,
+.closeModalDeleteAllProducts:focus {
+  color: black;
+  background-color: #9e7c26;
+}
+
+.yes-delete-all-products {
+  color: white;
+  background-color: rgb(199, 16, 16);
+}
+
+.yes-delete-all-products:hover,
+.yes-delete-all-products:focus {
+  background-color: #8a032c;
+}
 
 
 
@@ -512,6 +539,8 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   .container-carrito .productos-carrito .productos .producto-carrito .deleteProduct {
     font-size: 1.5em;
   }
+
+
 }
 
 /* ==========================================================================
@@ -552,6 +581,11 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 
   .container-carrito .productos-carrito .productos .producto-carrito .deleteProduct {
     font-size: 1.4em;
+  }
+
+
+  .modal-content-deleteAllProducts {
+    width: 40%;
   }
   
 }
@@ -608,6 +642,11 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   .container-carrito .cupones {
     margin-top: 80px;
     margin-left: 9.5%;
+  }
+
+
+  .modal-content-deleteAllProducts {
+    width: 40%;
   }
 }
 
@@ -688,6 +727,11 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     margin-left: 9.5%;
   }
   
+
+
+  .modal-content-deleteAllProducts {
+    width: 60%;
+  }
   
 }
 
@@ -846,6 +890,11 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   .divMobilPrecioCantidadTotal input#stockProducto {
     width: 30%;
     padding: 2px 0px 2px 0px;
+  }
+
+
+  .modal-content-deleteAllProducts {
+    width: 80%;
   }
   
 }
