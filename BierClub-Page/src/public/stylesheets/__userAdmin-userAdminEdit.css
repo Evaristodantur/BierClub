@@ -18,7 +18,7 @@
 .container-users .usuarios-listaCompleta {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .container-users .button-enteros {
   color: white;
@@ -36,16 +36,21 @@
 }
 .container-users .button-eliminar {
   background-color: red;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 .container-users .invisible-eliminar-usuario p {
   text-align: center;
 }
 .container-users .button-modificar {
   background-color: blue;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 .container-users .container-input {
   display: flex;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 .container-users .container-input input {
   border-radius: 7px;
@@ -53,6 +58,7 @@
 .container-users .usuarios-lista {
   margin-bottom: 30px;
   width: 45%;
+  border: 1px solid black;
 }
 .container-users .eliminar-usuario-container {
   width: 85%;

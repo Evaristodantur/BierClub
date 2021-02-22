@@ -1386,3 +1386,8 @@ El usuario registrado es:
 Nombre: KIPPES
 Email: kippeso@gmail.com
 *************************************************************
+Se registró un usuario el 2021-2-22 18:56:14
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: kippes.diego@gmail.com
+*************************************************************
