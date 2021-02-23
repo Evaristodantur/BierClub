@@ -9,9 +9,10 @@ window.addEventListener('DOMContentLoaded', () => {
       return response.json()
     })
     .then(data => {
-      console.log(data.departamentos[0].nombre);
+
       let selectDepartamento = document.querySelector('.select-departamento');
       
+      // AGREGO LOS DEPARTAMENTOS DENTRO DEL SELECT
       data.departamentos.forEach(departamento => {
         let opt = document.createElement("option");
         opt.value = departamento.nombre;
@@ -22,18 +23,65 @@ window.addEventListener('DOMContentLoaded', () => {
     })
     .catch(err => console.log(err))
 
+  //CHECK ENVIO SELECCIONADO
+  let tiposDeEnvio = document.querySelectorAll('.select-tipo-envio');
+  let seleccionarDepartamento = document.querySelector('.select-departamento');
+  seleccionarDepartamento.style.display = 'none';
+
+  tiposDeEnvio.forEach(tipo => {
+    tipo.addEventListener('change', (e) => {
+      if(e.target.value == "envio") {
+        seleccionarDepartamento.style.display = 'inline-block';  
+      } else {
+        seleccionarDepartamento.style.display = 'none';
+      }
+    })
+  })
+  
+  
+
   // CREACION DE TABLA HEAD DE PRODUCTOS
   let tagsH3Productos = document.querySelectorAll(
     '.tagsEspecificosDeProductos h3'
   );
   if (window.innerWidth < 525) {
+
     for (let i = 0; i < tagsH3Productos.length; i++) {
       tagsH3Productos[i].style.display = 'none';
     }
 
-    let productPrice = document.querySelectorAll('.producto-precio');
-    let productQuantity = document.querySelectorAll('.producto-cantidad');
-    let productSubTotal = document.querySelectorAll('.producto-precio-total');
+    
+
+    //
+    let productosAgregados = document.querySelectorAll(
+      '.productos-agregados-en-el-carrito'
+    );
+    productosAgregados.forEach(producto => {
+      let precioProducto = producto.querySelector('.producto-precio').innerHTML
+      let stockProducto = producto.querySelector('.producto-cantidad').max
+      let subtotalProducto = producto.querySelector('.producto-precio-total').innerHTML
+      console.log(stockProducto);
+      
+      let newDivMobile = `
+      <div class="divPrecioCantidadSubtotalMobil">
+                        <div class="divTags">
+                          <h4>Precio: </h4>
+                          <h4>Cantidad: </h4>
+                          <h4>Subtotal:</h4>
+                        </div>
+                        <div class="divMobilPrecioCantidadTotal">
+                          <h4 class="estilo-letras-producto producto-precio">${precioProducto}</h4>
+                          <input class="producto-cantidad stock-pc" name="stock" min="1" max="${stockProducto}" type="number" value="1">
+                          <h4 class="estilo-letras-producto producto-precio-total">${subtotalProducto}</h4>
+                        </div>
+      </div>
+    `;
+    producto.innerHTML += newDivMobile
+    })
+
+    let productPrice = document.querySelectorAll('.producto-precio-pc');
+    let productQuantity = document.querySelectorAll('.producto-cantidad-pc');
+    let productSubTotal = document.querySelectorAll('.producto-total-pc');
     for (let i = 0; i < productPrice.length; i++) {
       productPrice[i].remove();
       productQuantity[i].remove();
@@ -86,34 +134,6 @@ window.addEventListener('DOMContentLoaded', () => {
     
     subtotalDeTodosLosProductos.innerHTML = `$${subtotal}`;
 
-    //TOTAL A PAGAR
-    let selectTipoDeEnvio = document.querySelectorAll('.select-tipo-envio');
-    let totalAPagarConEnvio = document.querySelector(
-      '.total-de-compra-con-envio'
-    );
-
-    // SE FIJA EL TIPO DE ENVIO
-    if (selectTipoDeEnvio[0].checked) {
-      totalAPagarConEnvio.innerHTML = `$${
-        parseInt(subtotalDeTodosLosProductos.innerHTML.substr(1)) + 100
-      }`;
-    } else {
-      totalAPagarConEnvio.innerHTML = subtotalDeTodosLosProductos.innerHTML;
-    }
-
-    // SELECCIONA EL TIPO DE ENVIO
-    selectTipoDeEnvio.forEach(tipo => {
-      tipo.addEventListener('change', (e) => {
-        if(e.target.value= "Envio") {
-          totalAPagarConEnvio.innerHTML = `$${
-            parseInt(subtotalDeTodosLosProductos.innerHTML.substr(1)) + 100
-          }`;    
-        } else {
-          totalAPagarConEnvio.innerHTML = subtotalDeTodosLosProductos.innerHTML;    
-        }
-      })
-    })
-    
   }
 
   subtotalGeneralDelCarrito()
@@ -130,16 +150,17 @@ window.addEventListener('DOMContentLoaded', () => {
       let subtotalProducto = inputStock.parentElement.querySelector(
         '.producto-precio-total'
       );
-
+        
       //Valida si hay stock correspondiente
+      
       if (
         parseInt(e.target.max) < parseInt(e.target.value) ||
-        parseInt(e.target.value) <= 0
+        parseInt(e.target.value) <= 0 ||
+        e.target.value == ""
       ) {
-        window.alert('no hay suficiente stock');
+        window.alert('El stock no puede estar vacio o superar el stock maximo');
         e.target.value = parseInt(e.target.max);
-        subtotalGeneralDelCarrito();
-      } else {
+      }
         // MUESTRA EL SUBTOTAL DEL PRODUCTO
         subtotalProducto.innerHTML = `$${
           parseInt(precioProducto.substr(1)) * parseInt(e.target.value)
@@ -147,10 +168,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
         //SUBTOTAL DE TODOS LOS PRODUCTOS
         subtotalGeneralDelCarrito();
-      }
-
-
-      
       
     });
   });

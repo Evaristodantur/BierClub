@@ -75,12 +75,12 @@
                         <img class="producto-imagen-carrito" src="/images/productos/product-image-not-available.jpg" alt="">
                       <% } %> 
                       <h4 class="estilo-letras-producto producto-nombre"><%= producto.name %></h4>
-                      <h4 class="estilo-letras-producto producto-precio">$<%= producto.price %></h4>
-                      <input class="producto-cantidad stock-pc" name="stock" min="1" max="<%= producto.stock %>" type="number" value="1">
-                      <h4 class="estilo-letras-producto producto-precio-total">$<%= producto.price %></h4>
+                      <h4 class="estilo-letras-producto producto-precio producto-precio-pc">$<%= producto.price %></h4>
+                      <input class="producto-cantidad stock-pc producto-cantidad-pc" name="stock" min="1" max="<%= producto.stock %>" type="number" value="1">
+                      <h4 class="estilo-letras-producto producto-precio-total producto-total-pc">$<%= producto.price %></h4>
                       
                       <!-- MOBILE -->
-                      <div class="divPrecioCantidadSubtotalMobil">
+                      <!-- <div class="divPrecioCantidadSubtotalMobil">
                         <div class="divTags">
                           <h4>Precio: </h4>
                           <h4>Cantidad: </h4>
@@ -92,7 +92,7 @@
                           <h4 >$<%= producto.price %></h4>
                         </div>
                         
-                      </div>
+                      </div> -->
                       
                     </div>
                     <hr class="hr-carrito">
@@ -117,7 +117,7 @@
 
               <!-- SUBTOTAL -->
               <div class="recuadro-carrito">
-                <h4>SUBTOTAL</h4>
+                <h4>TOTAL: </h4>
                 <h4 class="totalAPagar">0</h4>
               </div>
 
@@ -127,8 +127,14 @@
 
                 <!-- RETIRO -->
                 <div>
-                  <p><input class="select-tipo-envio" type="radio" name="enviar" value="Envio">Envio a domicilio</p>
-                  <p><input class="select-tipo-envio" type="radio" name="enviar" value="Retiro" checked>Retiro en local</p>
+                  <p>
+                    <label for="enviar-domicilio">Enviar a domicilio</label>
+                    <input class="select-tipo-envio" type="radio" name="tipo-de-envio" id="enviar-domicilio" value="envio">
+                  </p>
+                  <p>
+                    <label for="retirar-local">Retirar en local</label>
+                    <input checked class="select-tipo-envio" type="radio" name="tipo-de-envio" id="retirar-local" value="local">
+                  </p>
                 </div>
               </div>
 
@@ -146,13 +152,12 @@
 
               <!-- TOTAL -->
               <div class="recuadro-carrito">
-                <h4>TOTAL</h4>
-                <h4 class="total-de-compra-con-envio">0</h4>
+                <button type="submit"><h4 class="boton-pagar">PROCEDER AL PAGO</h4></button>
               </div>
 
               <!-- BOTON PAGO -->
               
-                <button type="submit"><h4 class="boton-pagar">PROCEDER AL PAGO</h4></button>
+                
               </form>
               
             </div>
