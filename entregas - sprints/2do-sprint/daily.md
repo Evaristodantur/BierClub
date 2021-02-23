@@ -1,14 +1,26 @@
 # Dailies
 
+### 🗓️ 22/2/21
+  Terminado:
+  - Revisar modals generales
+  - Implementar API datos del gobierno en cart
+  - Muestra de Subtotal PC
+  - Muestra de Subtotal en Compra PC
+  
+   Para hacer hoy:
+  - Animación de agregado de producto
+  - Mustra subtotal Mobile
+
 ### 🗓️ 21/2/21
   Terminado:
   - Diseñar modal para olvido de contraseña en login
   
    Para hacer hoy:
   - Revisar modals generales
+  - Implementar API datos del gobierno en cart
   - Animación de agregado de producto
-  - Muestra de Subtotal
-  - Muestra de Subtotal en Compra
+  - Muestra de Subtotal PC
+  - Muestra de Subtotal en Compra PC
 
 
 ### 🗓️ 20/2/21
@@ -17,8 +29,6 @@
   
    Para hacer hoy:
   - Animación de agregado de producto
-  - Muestra de Subtotal
-  - Muestra de Subtotal en Compra
 
 
 ### 🗓️ 19/2/21
