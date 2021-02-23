@@ -70,7 +70,7 @@ body div.container-carrito {
   background-color: rgb(145, 24, 24);
 }
 
-#stockProducto {
+.producto-cantidad {
   text-align: center;
   border: 1px solid black;
   padding: 5px;
@@ -531,7 +531,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     font-size: 0.95em;
   }
 
-  #stockProducto {
+  .producto-cantidad {
     font-size: 0.9em;
     width: 6%;
   }
@@ -561,7 +561,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     padding: 5px 18px 5px 18px;
   }
 
-  #stockProducto {
+  .producto-cantidad {
     font-size: 0.9em;
     width: 8%;
   }
@@ -612,7 +612,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     font-size: 1em;
   }
 
-  #stockProducto {
+  .producto-cantidad {
     font-size: 1.1em;
     width: 7%;
   }
@@ -685,7 +685,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     padding-right: 20px;
   }
 
-  #stockProducto {
+  .producto-cantidad {
     width: 10%;
     font-size: 1em;
     padding: 5px 0 5px 0;
@@ -779,7 +779,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     width: 80%;
   }
 
-  #stockProducto {
+  .producto-cantidad {
     font-size: 1em;
     padding: 5px 0 5px 0;
   }

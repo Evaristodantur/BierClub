@@ -67,7 +67,7 @@
             <% productos.forEach(producto => { %>
               <!-- PC - FILA DE IMG Y PRECIO -->
                 <!-- SECCION PRODUCTOS FILA 1 -->
-                    <div class="producto-carrito">
+                    <div class="producto-carrito productos-agregados-en-el-carrito">
                       <a class="estilo-letras-producto deleteProduct" onclick="window.location.href='/carts/deleteProduct/<%= producto.id %>'">X</a>
                       <% if(typeof producto.images[0] != "undefined") { %>
                         <img class="producto-imagen-carrito" src="/images/productos/<%= producto.images[0].name %> " alt="">
@@ -76,7 +76,7 @@
                       <% } %> 
                       <h4 class="estilo-letras-producto producto-nombre"><%= producto.name %></h4>
                       <h4 class="estilo-letras-producto producto-precio">$<%= producto.price %></h4>
-                      <input id="stockProducto" class="producto-cantidad" name="stock" min="1" max="<%= producto.stock %>" type="number" value="1">
+                      <input class="producto-cantidad stock-pc" name="stock" min="1" max="<%= producto.stock %>" type="number" value="1">
                       <h4 class="estilo-letras-producto producto-precio-total">$<%= producto.price %></h4>
                       
                       <!-- MOBILE -->
@@ -88,7 +88,7 @@
                         </div>
                         <div class="divMobilPrecioCantidadTotal">
                           <h4 >$<%= producto.price %></h4>
-                          <input id="stockProducto" name="stock" min="1" max="<%= producto.stock %>" type="number" value="1">
+                          <input name="stock" min="1" max="<%= producto.stock %>" type="number" value="1">
                           <h4 >$<%= producto.price %></h4>
                         </div>
                         
@@ -118,7 +118,7 @@
               <!-- SUBTOTAL -->
               <div class="recuadro-carrito">
                 <h4>SUBTOTAL</h4>
-                <h4 class="totalAPagar">$1849,98</h4>
+                <h4 class="totalAPagar">0</h4>
               </div>
 
               <!--------- ENVIO --------->
@@ -127,15 +127,18 @@
 
                 <!-- RETIRO -->
                 <div>
-                  <p><input type="radio" name="enviar" value="Envio">Envio a domicilio</p>
-                  <p><input type="radio" name="enviar" value="Retiro">Retiro en local</p>
+                  <p><input class="select-tipo-envio" type="radio" name="enviar" value="Envio">Envio a domicilio</p>
+                  <p><input class="select-tipo-envio" type="radio" name="enviar" value="Retiro" checked>Retiro en local</p>
                 </div>
               </div>
 
               <!-- DIRECCION -->
               <div class="recuadro-carrito">
-                <a href=""><h4 class="btn-cambiar-direccion direccion-margin">Cambiar direccion</h4></a>
-                <h4 class="">Bascary 440</h4>
+                <select name="" id="" class="select-departamento">
+                  
+                </select>
+                <!-- <a href=""><h4 class="btn-cambiar-direccion direccion-margin">Cambiar direccion</h4></a>
+                <h4 class="">Bascary 440</h4> -->
               </div>
 
               <!-- LINEA DIVISORA -->
@@ -144,7 +147,7 @@
               <!-- TOTAL -->
               <div class="recuadro-carrito">
                 <h4>TOTAL</h4>
-                <h4>$2000</h4>
+                <h4 class="total-de-compra-con-envio">0</h4>
               </div>
 
               <!-- BOTON PAGO -->
