@@ -29,10 +29,21 @@
       <div class="productos-carrito">
 
 
+
+        <div id="modalNoHayProductos" class="modalNoHayProductos">
+
+          <!-- Modal content -->
+          <div class="modal-content-noHayProductos">
+            <span class="close-modal-noHayProductos"><i class="far fa-times-circle "></i></span>
+            <p>No hay productos en el carrito</p>
+          </div>
+
+        </div>
+
+
         
         <!-- SECCION PRODUCTOS CARRITO-->
         <div class="productos">
-
           
             <div class="producto-carrito tagsEspecificosDeProductos">
               <form class="formBorrarProducto" action="/carts/deleteAllProducts" method="POST">
@@ -63,7 +74,7 @@
             <% if(typeof errorDeCantidad != "undefined") { %>
               <p><%= errorDeCantidad %> </p>
             <% } %> 
-            <form action="/carts/procederAlPago" method="POST">
+            <form id="formProcederAlPago" action="/carts/procederAlPago" method="POST">
             <% productos.forEach(producto => { %>
               <!-- PC - FILA DE IMG Y PRECIO -->
                 <!-- SECCION PRODUCTOS FILA 1 -->
@@ -135,8 +146,6 @@
               <div class="recuadro-carrito">
                 <button type="submit" class="boton-pagar">PROCEDER AL PAGO</button>
               </div>
-
-              <!-- BOTON PAGO -->
               
                 
               </form>
