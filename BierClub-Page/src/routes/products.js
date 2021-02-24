@@ -32,8 +32,6 @@ router.get('/search', productsController.productSearch);
 
 router.get('/prueba', productsController.prueba);
 
-/**********************************PRODUCTOS LUPULADAS/NO LUPULADAS******************************************/
-
 /**********************************PRODUCT DETAIL*************************************/
 
 /* GET     /products/productDetail/:id                                  page. */
@@ -44,9 +42,9 @@ router.get('/productDetail/:id', productsController.productDetail);
 /* GET     /products/productAdmin                                       page. */
 router.get(
   '/productAdmin',
-  /* guestMiddleware,
+  guestMiddleware,
                     verifyAccountMiddleware,
-                    authAdminMiddleware,  */
+                    authAdminMiddleware, 
   productsController.productAdmin
 );
 
@@ -67,9 +65,9 @@ router.get(
 /* GET     /products/productAdd - Pagina Visual de create               page. */
 router.get(
   '/productAdd',
-  /* guestMiddleware,
+  guestMiddleware,
   verifyAccountMiddleware,
-  authAdminMiddleware, */
+  authAdminMiddleware,
   productsController.createProduct
 );
 
@@ -87,9 +85,9 @@ router.post(
 /* GET     /products/productEdit/:id - Pagina Visual de productEdit     page. */
 router.get(
   '/productEdit/:id',
-  /* guestMiddleware,
+  guestMiddleware,
   verifyAccountMiddleware,
-  authAdminMiddleware, */
+  authAdminMiddleware,
   productsController.editProduct
 );
 
@@ -107,8 +105,8 @@ router.put(
 /* DELETE     /products/productEdit/borrar/:id - Borra el producto      page. */
 router.delete(
   '/productEdit/delete/:id',
-  /* guestMiddleware,
-  authAdminMiddleware, */
+  guestMiddleware,
+  authAdminMiddleware,
   productsController.deleteProduct
 );
 

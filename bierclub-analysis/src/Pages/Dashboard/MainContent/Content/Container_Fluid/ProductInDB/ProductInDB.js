@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ContainerProduct from './ContainerProduct';
 import axios from 'axios';
-import sinImg from '../../../../../../assets/images/dummy-avatar.jpg';
+import sinImg from '../../../../../../assets/images/product-image-not-available.jpg';
 
 
 let getLastProductAdded = axios.get(

@@ -78,9 +78,9 @@ router.post('/login/contraseniaOlvidada', usersController.contraseniaOlvidada);
 /* GET     /users/perfil/:id             page. */
 router.get(
   '/perfil/:id',
-  /* guestMiddleware,
+  guestMiddleware,
   verifyAccountMiddleware,
-  perfilOrAdminMiddleware, */
+  perfilOrAdminMiddleware,
   usersController.perfilEdit
 );
 
