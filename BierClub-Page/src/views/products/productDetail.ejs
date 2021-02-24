@@ -12,6 +12,10 @@
 
     <!-- CONTAINER PRODUCTDETAIL -->
     <div class="productDetail">
+
+      <%- include('../partials/toast.ejs') %>
+
+
       <!-- SECCION DETALLE DEL PRODUCTO/IMAGEN -->
       <section class="seccion-producto">
         <!-- IMAGEN-PREVIEWS -->
@@ -119,24 +123,12 @@
             </div>
           </div>
 
-          <!-- CANTIDAD -->
-          <div class="cantidad">
-            <div class="cantidad-label">
-              <label for="cantidad">Cantidad:</label>
-            </div>
-            <div class="cantidad-input">
-              <a href=""
-                ><span><i class="fas fa-minus"></i></span
-              ></a>
-              <input type="text" name="cantidad" placeholder="<%=producto.stock%>"/>
-              <a href=""><span><i class="fas fa-plus"></i></span></a>
-            </div>
-          </div>
+          
 
           <!-- AGREGAR AL CARRITO -->
           <div class="agregarAlcarrito">
             <form action="/carts/addProduct/<%= producto.id %>" method="POST">
-              <button class="btn-agregarAlCarrito" type="submit">
+              <button class="btn-agregarAlCarrito" type="submit" onclick="showToast()">
                 Agregar al carrito <i class="fas fa-plus"></i>
               </button>
             </form>

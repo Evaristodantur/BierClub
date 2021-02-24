@@ -1411,3 +1411,8 @@ El usuario registrado es:
 Nombre: KIPPES
 Email: diego@gmail.com
 *************************************************************
+Se registró un usuario el 24/2/2021 11:33:19
+El usuario registrado es:
+Nombre: KIPPES
+Email: diegokippes9@gmail.com
+*************************************************************
