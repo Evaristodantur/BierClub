@@ -12,6 +12,8 @@
       <h1 class="titulo-productosRelacionado">Productos Relacionados</h1>
     </div>
 
+    <%- include('./toast.ejs') %>
+
     <!-- PRODUCTOS -->
     <section class="productos">
       <!-- BOTON-IZQUIERDA -->
@@ -56,9 +58,15 @@
             </div>
           </div>
           <form action="/carts/addProduct/<%= productosRelacionados[i].id %>" method="POST">
-            <button class="btn-producto hoverproducto" type="submit">
-              <i class="fas fa-plus"></i> Añadir al Carrito
-            </button>
+            <% if (productosRelacionados[i].stock > 0) { %>
+                <button class="btn-producto hoverproducto" type="submit" onclick="showToast()">
+                    <i class="fas fa-plus"></i> Añadir al Carrito
+                </button>
+                  <% } else { %>
+                <button class="btn-producto hoverproducto" type="submit">
+                    <i class="fas fa-plus"></i> Añadir al Carrito
+                </button>
+            <% } %>
           </form>
         </article>
         <% } %>
