@@ -1,5 +1,14 @@
 # Dailies
 
+### 🗓️ 25/2/21
+  Terminado:
+  - Animación de agregado de producto
+  - Fix productos relacionados en productDetail + agregar toast
+  
+   Para hacer hoy:
+  - NavBar funcional
+
+
 ### 🗓️ 24/2/21
   Terminado:
   - shippying_type y place en DB
@@ -10,7 +19,6 @@
    Para hacer hoy:
   - Animación de agregado de producto
   - Fix productos relacionados en productDetail + agregar toast
-  - NavBar funcional
 
 
 ### 🗓️ 23/2/21
