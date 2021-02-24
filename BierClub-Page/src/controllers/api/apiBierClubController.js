@@ -3,12 +3,6 @@ const bcrypt = require('bcryptjs');
 
 let apiBierClubController = {
 
-  prueba : (req,res) => {
-    db.Carts.findAll()
-      .then(carts => {
-        res.send(carts)
-      })
-  },
   login: (req, res) => {
     db.Users.findOne({
       where: {
