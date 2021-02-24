@@ -28,10 +28,6 @@ router.get('/about-us', mainController.aboutUs);
 /* GET     /suscripcion         page. */
 router.get('/suscripcion', mainController.suscripcion);
 
-/**********************************ENVIOS******************************************/
-
-/* GET     /envios              page.*/
-router.get('/envios', mainController.envios);
 
 /**********************************CONTACTO*******************************************/
 

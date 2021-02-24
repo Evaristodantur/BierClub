@@ -156,9 +156,7 @@ let mainController = {
 
     
     procederAlPago: (req, res, next) => {
-      //req.body.tipo-de-envio 'local'
-      //req.body.tipo-envio = "Lules"
-      console.log(req.body);
+
       let userLogged = req.session.usuarioLogueado;
 
        db.Users.findOne({
@@ -249,9 +247,7 @@ let mainController = {
                     }
                   })
 
-                  //req.body.tipo-de-envio 'local'
-                  //req.body.tipo-envio = "Lules"
-                  console.log(req.body);
+                  
                   if(req.body.tipo_de_envio == 'local') {
 
                     db.Carts.update({

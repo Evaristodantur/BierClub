@@ -164,15 +164,6 @@ let mainController = {
 
 
 
-    
-    // /envios
-    envios : (req,res, next) => { 
-        res.render('envios', {userLogged : req.session.usuarioLogueado});
-    },
-
-
-
-
 
     // /contacto
     contactRender : (req, res, next) => {
