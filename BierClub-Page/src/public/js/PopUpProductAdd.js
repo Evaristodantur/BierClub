@@ -1,7 +1,7 @@
 function showToast() {
-  var x = document.getElementById('toast');
-  x.classList.add('showToast');
+  var toast = document.getElementById('toast');
+  toast.classList.add('showToast');
   setTimeout(function () {
-    x.classList.remove('showToast');
+    toast.classList.remove('showToast');
   }, 3000);
 }

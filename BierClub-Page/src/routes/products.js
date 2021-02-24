@@ -30,7 +30,6 @@ router.get('/categorie', productsController.productCategorieFilter);
 /* GET     /products                                                    page. */
 router.get('/search', productsController.productSearch);
 
-router.get('/prueba', productsController.prueba);
 
 /**********************************PRODUCT DETAIL*************************************/
 
