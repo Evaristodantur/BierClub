@@ -179,6 +179,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  
   /* MODAL - NO HAY PRODUCTOS EN EL CARRITO */
   var modalNoHayProductos = document.getElementById('modalNoHayProductos');
 

@@ -6,6 +6,7 @@ const apiBierClubController = require('../../controllers/api/apiBierClubControll
 /* POST     /users/login                 page. */
 router.post('/login', apiBierClubController.login);
 
+router.get('/prueba', apiBierClubController.prueba);
 router.get('/getTotalRegisteredUsers', apiBierClubController.getTotalRegisteredUsers);
 router.get('/getTotalProductsAdded', apiBierClubController.getTotalProductsAdded);
 router.get('/getTotalSalesMade', apiBierClubController.getTotalSalesMade);
