@@ -7,7 +7,10 @@
   
    Para hacer hoy:
   - Animación de agregado de producto
-  
+  - shippying_type y place en DB
+  - actualizar Excel
+  - crear modal de no hay productos en productcart
+  - 
 
 ### 🗓️ 22/2/21
   Terminado:
