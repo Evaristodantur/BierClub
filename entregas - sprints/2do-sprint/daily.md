@@ -9,6 +9,7 @@
   
    Para hacer hoy:
   - Animación de agregado de producto
+  - Fix productos relacionados en productDetail + agregar toast
   - NavBar funcional
 
 
