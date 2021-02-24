@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- PRODUCTOS RELACIONADOS -->
+    <div>
+      <h1 class="titulo-productosRelacionado">Productos Relacionados</h1>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <section class="productos">
+      <!-- BOTON-IZQUIERDA -->
+      <div class="btnAnt">
+        <a href="javascript:void();">
+          <div class="button-pass">
+            <i class="fas fa-chevron-circle-left"></i>
+          </div>
+        </a>
+      </div>
+
+      <section class="productsSliderRelacionados">
+        <!-------- PRODUCTO 1 - COMIENZO -------->
+        <% for (let i=0; i < productosRelacionados.length ; i++) { %>
+        <article class="producto artProductFilter">
+          <a href="/products/productDetail/<%= productosRelacionados[i].id %>">
+            <% if(typeof productosRelacionados[i].images[0] != "undefined") { %>
+            <img
+              src="/images/productos/<%= productosRelacionados[i].images[0].name %>"
+              alt="<%= productosRelacionados[i].name %>"
+            />
+            <% } else { %>
+            <img
+              src="/images/productos/product-image-not-available.jpg"
+              alt="<%= productosRelacionados[i].name %>"
+            />
+            <% } %>
+          </a>
+          <h2 class="producto-titulo"><%= productosRelacionados[i].name %></h2>
+          <div class="precio-stock">
+            <div>
+              <h4 class="etiqueta-precio">
+                $<%= productosRelacionados[i].price %>
+              </h4>
+            </div>
+            <div>
+              <% if (productosRelacionados[i].stock > 0) { %>
+              <h5 class="etiqueta-stock">Stock Disponible</h5>
+              <% } else { %>
+              <h5 class="stock sinStock">Sin Stock</h5>
+              <% } %>
+            </div>
+          </div>
+          <form action="/carts/addProduct/<%= productosRelacionados[i].id %>" method="POST">
+            <button class="btn-producto hoverproducto" type="submit">
+              <i class="fas fa-plus"></i> Añadir al Carrito
+            </button>
+          </form>
+        </article>
+        <% } %>
+      </section>
+
+      <!-- BOTON-DERECHA -->
+      <div class="btnSig">
+        <a href="javascript:void();">
+          <div class="button-pass">
+            <i class="fas fa-chevron-circle-right"></i>
+          </div>
+        </a>
+      </div>
+    </section>
+</body>
+</html>
