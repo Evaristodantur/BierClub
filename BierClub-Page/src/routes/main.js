@@ -23,11 +23,6 @@ router.post('/', mainController.newsletterSuscription);
 /* GET    /about-us             page. */
 router.get('/about-us', mainController.aboutUs);
 
-/**********************************PROMOCIONES************************************/
-
-/* GET    /promociones          page. */
-router.get('/promociones', mainController.promociones);
-
 /**********************************SUSCRIPCION************************************/
 
 /* GET     /suscripcion         page. */

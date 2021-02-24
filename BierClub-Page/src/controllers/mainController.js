@@ -156,15 +156,6 @@ let mainController = {
 
 
 
-    //  /promociones
-    promociones : (req, res, next) => {
-        res.render('promociones', {userLogged : req.session.usuarioLogueado});
-    },
-
-
-
-
-
     //  /suscripcion
     suscripcion : (req, res, next) => {
         res.render('suscripcion', {userLogged : req.session.usuarioLogueado});
