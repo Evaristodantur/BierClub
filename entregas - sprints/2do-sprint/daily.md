@@ -1,5 +1,14 @@
 # Dailies
 
+### 🗓️ 23/2/21
+  Terminado:
+  - Muestra subtotal Mobile
+  - Logica Front JS - productCart
+  
+   Para hacer hoy:
+  - Animación de agregado de producto
+  
+
 ### 🗓️ 22/2/21
   Terminado:
   - Revisar modals generales
@@ -8,8 +17,9 @@
   - Muestra de Subtotal en Compra PC
   
    Para hacer hoy:
-  - Animación de agregado de producto
-  - Mustra subtotal Mobile
+  - Visual productCart
+  - Muestra subtotal Mobile
+  - Logica Front JS - productCart
 
 ### 🗓️ 21/2/21
   Terminado:
@@ -18,7 +28,6 @@
    Para hacer hoy:
   - Revisar modals generales
   - Implementar API datos del gobierno en cart
-  - Animación de agregado de producto
   - Muestra de Subtotal PC
   - Muestra de Subtotal en Compra PC
 
