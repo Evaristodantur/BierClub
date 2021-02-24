@@ -1,16 +1,28 @@
 # Dailies
 
+### 🗓️ 24/2/21
+  Terminado:
+  - shippying_type y place en DB
+  - actualizar Excel
+  - crear modal de no hay productos en productcart
+  - arreglar elimar perfil en userAdmin y perfil
+  
+   Para hacer hoy:
+  - Animación de agregado de producto
+  - NavBar funcional
+
+
 ### 🗓️ 23/2/21
   Terminado:
   - Muestra subtotal Mobile
   - Logica Front JS - productCart
   
    Para hacer hoy:
-  - Animación de agregado de producto
   - shippying_type y place en DB
   - actualizar Excel
   - crear modal de no hay productos en productcart
-  - 
+  - arreglar elimar perfil en userAdmin y perfil
+
 
 ### 🗓️ 22/2/21
   Terminado:
