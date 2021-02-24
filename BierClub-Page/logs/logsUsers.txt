@@ -1401,3 +1401,13 @@ El usuario registrado es:
 Nombre: diego 9
 Email: diegokippes9@gmail.com
 *************************************************************
+Se registró un usuario el 24/2/2021 01:29:32
+El usuario registrado es:
+Nombre: asd
+Email: diego1@diego.com
+*************************************************************
+Se registró un usuario el 24/2/2021 01:37:52
+El usuario registrado es:
+Nombre: KIPPES
+Email: diego@gmail.com
+*************************************************************

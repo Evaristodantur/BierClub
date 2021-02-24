@@ -407,7 +407,7 @@ let usersController = {
 
 
     // users/perfil/eliminar/:id (POST)
-    eliminar : (req, res, next) => {
+    eliminarUser : (req, res, next) => {
 
         // Busca el id enviado por parametro
         let idUrl = req.params.id;
@@ -420,6 +420,26 @@ let usersController = {
           });
 
           res.redirect('/users/usersAdmin');
+        
+    },
+
+
+    // users/perfil/eliminar/:id (POST)
+    eliminarPerfil : (req, res, next) => {
+
+        // Busca el id enviado por parametro
+        let idUrl = req.params.id;
+          //Lo borra de la base de datos
+          
+          db.Users.destroy({
+            where: {
+              id: idUrl,
+            },
+          });
+          
+          req.session.destroy();
+
+          res.redirect('/');
         
     },
 

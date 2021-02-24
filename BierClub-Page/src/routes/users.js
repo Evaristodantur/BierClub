@@ -98,12 +98,25 @@ router.post(
 /* GET     /users/perfil/pedidos/:id     page. */
 router.get('/perfil/pedidos/:id', usersController.pedidos);
 
+/* GET     /users/perfil/pedidos/:id     page. */
+router.get('/perfil/pedidos/:id', usersController.pedidos);
+
+
+
 /* DELETE     /users/perfil/:id          page. */
 router.delete(
-  '/perfil/eliminar/:id',
+  '/eliminarUser/:id',
   guestMiddleware,
   perfilOrAdminMiddleware,
-  usersController.eliminar
+  usersController.eliminarUser
+);
+
+/* DELETE     /users/perfil/:id          page. */
+router.delete(
+  '/perfil/eliminarPerfil/:id',
+  guestMiddleware,
+  perfilOrAdminMiddleware,
+  usersController.eliminarPerfil
 );
 
 module.exports = router;
