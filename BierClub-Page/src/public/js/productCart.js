@@ -1,7 +1,12 @@
 window.addEventListener('DOMContentLoaded', () => {
-  /* window.onresize = function() {
-        location.reload()
-    } */
+
+  // Refresca la pantalla
+  window.onresize = function () {
+    if (window.innerWidth >= 450 && window.innerWidth <= 600) {
+      location.reload();
+    }
+  }
+  
 
   // DATA FETCH
   fetch('https://apis.datos.gob.ar/georef/api/departamentos?provincia=tucuman')
