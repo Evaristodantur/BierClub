@@ -40,19 +40,20 @@ window.addEventListener('DOMContentLoaded', () => {
   
   
 
-  // CREACION DE TABLA HEAD DE PRODUCTOS
+  // CREACION DE TABLA HEAD DE PRODUCTOS EN RESULUCION MOBILE
   let tagsH3Productos = document.querySelectorAll(
     '.tagsEspecificosDeProductos h3'
   );
   if (window.innerWidth < 525) {
 
+    // BORRO EL TITULO
     for (let i = 0; i < tagsH3Productos.length; i++) {
       tagsH3Productos[i].style.display = 'none';
     }
 
     
 
-    //
+    //CREO EL DIV MOBILE
     let productosAgregados = document.querySelectorAll(
       '.productos-agregados-en-el-carrito'
     );
@@ -60,7 +61,6 @@ window.addEventListener('DOMContentLoaded', () => {
       let precioProducto = producto.querySelector('.producto-precio').innerHTML
       let stockProducto = producto.querySelector('.producto-cantidad').max
       let subtotalProducto = producto.querySelector('.producto-precio-total').innerHTML
-      console.log(stockProducto);
       
       let newDivMobile = `
       <div class="divPrecioCantidadSubtotalMobil">
@@ -79,6 +79,7 @@ window.addEventListener('DOMContentLoaded', () => {
     producto.innerHTML += newDivMobile
     })
 
+    // BORRO EL PRECIO, CANTIDAD Y SUBTOTAL > A 525px
     let productPrice = document.querySelectorAll('.producto-precio-pc');
     let productQuantity = document.querySelectorAll('.producto-cantidad-pc');
     let productSubTotal = document.querySelectorAll('.producto-total-pc');
