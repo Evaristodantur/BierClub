@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>   
+   <title>BierClub - Gracias por comprar</title>
+    <%- include('./partials/head.ejs') %>
+  </head>
+
+  <header>
+    <%- include('./partials/nav.ejs', userLogged) %>
+    <br>
+  </header>
+  <body class="verify-account-body">
+      <div class="container-error">
+          <div class="container-titulo">
+            <img src="/images/ilustrations/thanks-for-buying.png">
+            <h1>¡Gracias por comprar!</h1>
+                
+                <button style="margin-top: 5px; background-color: rgb(36, 36, 112);" onclick="window.location.href='/game'"><i class="fas fa-chevron-left"></i>Try our game!</button>
+          </div>
+    </div>
+</body>
+</html>

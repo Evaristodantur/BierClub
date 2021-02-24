@@ -274,7 +274,7 @@ let mainController = {
                       id: userCart.carts[0].id
                     }
                   })
-                  
+
                   }
 
                   //Abre un nuevo carrito para futuras compras
@@ -283,9 +283,7 @@ let mainController = {
                     user_id: userCart.id
                   });
 
-                  res.send('Gracias por su compra!')
-
-
+                  res.redirect('/thanksforbuying');
             })
       
         })

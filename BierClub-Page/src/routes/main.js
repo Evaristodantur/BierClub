@@ -49,5 +49,10 @@ router.post('/contact', contactMiddleware, mainController.contactSend);
 
 /* GET     /game            page.*/
 router.get('/game', mainController.game);
+/**********************************THANKS FOR BUYING******************************/
+
+/* GET     /thanksForBuying            page.*/
+router.get('/thanksForBuying', mainController.thanksForBuying);
+
 
 module.exports = router;

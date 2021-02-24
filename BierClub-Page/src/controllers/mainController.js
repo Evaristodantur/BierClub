@@ -215,7 +215,13 @@ let mainController = {
                 res.render("contact", { success : "Tu mensaje fue enviado con exito!", userLogged : req.session.usuarioLogueado })
             }
         });
-    }
+    },
+
+
+    // /contacto
+    thanksForBuying : (req, res, next) => {
+        res.render('thanksForBuying', {userLogged : req.session.usuarioLogueado});
+    },
 } 
 
 
