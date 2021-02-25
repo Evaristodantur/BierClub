@@ -24,6 +24,10 @@ function transform() {
   document.getElementById('transform').classList.toggle('transform');
 }
 
+function mi_cuenta_pc() {
+  console.log(document.getElementById('mi-cuenta-pc'));
+}
+
 /* ==========================================================================
 NAV BAR FUNCTION SCROLL TO TOP
 ========================================================================== */

@@ -46,7 +46,7 @@ body {
 
 .nav2 .nav-backgc .container-nav .navbar li {
   display: inline-block;
-  margin: 0px 25px;
+  margin: 0px 20px;
   position: relative;
 }
 
@@ -274,36 +274,21 @@ MENU HAMBURGUESA MOBILE
 }
 
 
-
-
 /* ==========================================================================
-RESOLUCION 1200-1300
+RESOLUCION 1600px
 ========================================================================== */
-
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .nav2 .nav-backgc .container-nav .navbar .navcarrito li {
-    margin: 0px 15px;
+@media (max-width: 1200px) {
+  .nav2 .nav-backgc .container-nav .navbar li {
+    /* margin: 0px 15px; */
   }
 }
 
-/* ==========================================================================
-RESOLUCION 950-1600
-========================================================================== */
 
-@media (min-width: 950px) and (max-width: 1600px) {
-  .nav2 .nav-backgc .container-nav .navbar .navlogin li a {
-    display: none;
-  }
-
-  .nav2 .nav-backgc .container-nav .navbar .navcarrito {
-    right: -3%;
-  }
-}
 
 /* ==========================================================================
 RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA) 
 ========================================================================== */
-@media (max-width: 949px) {
+@media (max-width: 1200px) {
   /* SCRIPT DE NAV BAR DESACTIVADO */
 
   .nav2 .nav-backgc .container-nav .navbar nav .barra {
@@ -320,7 +305,7 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
 
   .nav2 .nav-backgc .container-nav .navbar .navcarrito {
     margin: 32px 0px 0px 0px;
-    right: -5%;
+    right: -4%;
   }
 
   .nav2 .nav-backgc .container-nav .navbar .navlogin {

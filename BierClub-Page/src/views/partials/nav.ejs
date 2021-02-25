@@ -61,19 +61,13 @@
                 </ul>
                 <strong>
                     <ul id ="navlogin" class="navlogin">
-                        <li>
+                        <li><a href="/users/login"><i class="fas fa-sign-in-alt"></i>
                             <% if(typeof userLogged == "undefined") { %>
-                            <a href="/users/login"><i class="fas fa-sign-in-alt"></i> Iniciar Session</a>
+                                Iniciar Session
                             <% } else { %>
-                                <div class="dropdown-perfil-user">
-                                    <a class="dropdown-btn-perfil-user"><i class="fas fa-sign-in-alt"></i> Mi cuenta</a>
-                                    <div class="dropdown-content-perfil-user">
-                                        <a href="/users/login">Perfil</a>
-                                        <a href="#">Log Out</a>
-                                    </div>
-                                </div>
+                                Mi cuenta
                             <% } %>
-                        </li>
+                        </a></li>
                     </ul>
                 </strong>
                 <hr>

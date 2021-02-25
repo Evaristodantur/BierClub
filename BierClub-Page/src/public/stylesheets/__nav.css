@@ -247,7 +247,7 @@ RESOLUCION 1200-1300
 
 @media (min-width: 1200px) and (max-width: 1300px) {
   .nav1 .nav-backgc .container-nav .navbar .navcarrito li {
-    margin: 0px 15px;
+    margin: 0px 35px;
   }
 }
 
@@ -260,9 +260,7 @@ RESOLUCION 950-1600
     display: none;
   }
 
-  .profile-icon .fa-user-circle {
-    display: inline-block;
-  }
+  
 
   .nav1 .nav-backgc .container-nav .navbar .navcarrito {
     right: -3%;
@@ -301,9 +299,7 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
     display: none;
   }
 
-  .profile-icon .fa-user-circle {
-    display: inline-block;
-  }
+  
 
   .nav1
     .nav-backgc
