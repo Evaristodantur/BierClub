@@ -11,6 +11,7 @@
   - Agregar validacion de usuario administrador en nav
   - Agregar a href para administrar productos o usuarios siendo admin
   - Fix: No permitir borrar el usuario administrador que esta logueado
+  - Search funcional en navbar
   
 
 ### 🗓️ 24/2/21
