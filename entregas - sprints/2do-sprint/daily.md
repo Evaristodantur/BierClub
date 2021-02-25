@@ -8,6 +8,10 @@
    Para hacer hoy:
   - NavBar funcional
   - Implementar log out en user controller
+  - Agregar validacion de usuario administrador en nav
+  - Agregar a href para administrar productos o usuarios siendo admin
+  - Fix: No permitir borrar el usuario administrador que esta logueado
+  
 
 ### 🗓️ 24/2/21
   Terminado:
