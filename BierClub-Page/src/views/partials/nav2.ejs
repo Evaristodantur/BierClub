@@ -10,6 +10,7 @@
 <body>
 <header>
 <div class="nav2">
+    <%= console.log(userLogged)  %> 
     <div id="navbar" class="nav-backgc">
         <% if(typeof userLogged == "undefined") { %>
             <% console.log('no esta logeado'); %>
@@ -37,14 +38,19 @@
                     <a href="/about-us" class="hamburguesa-item">¿Quiénes Somos?</a>
                     <a class="hamburguesa-item"><hr></a>
                     <% if(typeof userLogged == "undefined") { %>
-                            <a href="/users/register" class="hamburguesa-item">Registrase</a>
-                            <a href="/users/login" class="hamburguesa-item">Iniciar Session</a>
+                            <a href="/users/register" class="hamburguesa-item"><i class="far fa-registered"></i> Registrase</a>
+                            <a href="/users/login" class="hamburguesa-item"><i class="fas fa-sign-in-alt"></i> Iniciar Session</a>
                             <a class="hamburguesa-item"><hr></a>
                         <% } else { %>
-                            <a href="/users/login" class="hamburguesa-item">Mi perfil</a>
-                            <a href="/carts/productCart" class="hamburguesa-item">Carrito</a>
+                            <% if(typeof userLogged != "undefined" && userLogged.admin == 1) { %>
+                                <a href="/products/productAdmin" class="hamburguesa-item"><i class="fab fa-product-hunt"></i> Administrar Productos</a>
+                                <a href="/users/usersAdmin" class="hamburguesa-item"><i class="fas fa-users"></i> Administrar Usuarios</a>
+                                <a class="hamburguesa-item"><hr></a>    
+                            <% } %> 
+                            <a href="/users/login" class="hamburguesa-item"><i class="fas fa-user-circle"></i> Mi perfil</a>
+                            <a href="/carts/productCart" class="hamburguesa-item"><i class="fas fa-shopping-cart"></i> Carrito</a>
                             <a class="hamburguesa-item"><hr></a>
-                            <a href="/users/logout" class="hamburguesa-item">Log Out</a>
+                            <a href="/users/logout" class="hamburguesa-item"><i class="fas fa-sign-out-alt"></i> Log Out</a>
                     <% } %>
                     
                     <div class="hamburguesa-items-none">
@@ -79,10 +85,14 @@
                             </li>
                         <% } else { %>
                             <li class="dropdown-perfil-user">
-                                <a class="dropdown-btn-perfil-user"><i class="fas fa-sign-in-alt"></i> Mi cuenta</a>
+                                <a class="dropdown-btn-perfil-user"><i class="fas fa-user"></i> Mi cuenta</a>
                                 <div class="dropdown-content-perfil-user">
-                                        <a href="/users/login">Perfil</a>
-                                        <a href="/users/logout">Log Out</a>
+                                        <% if(typeof userLogged != "undefined" && userLogged.admin == 1) { %>
+                                            <a href="/products/productAdmin"><i class="fab fa-product-hunt"></i> Administrar Productos</a>
+                                            <a href="/users/usersAdmin"><i class="fas fa-users"></i> Administrar Usuarios</a>
+                                        <% } %>
+                                        <a href="/users/login"><i class="fas fa-user-circle"></i> Perfil</a>
+                                        <a href="/users/logout"><i class="fas fa-sign-out-alt"></i> Log Out</a>
                                 </div>
                             </li>
                         <% } %>

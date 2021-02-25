@@ -89,7 +89,6 @@ router.get(
   '/logout',
   guestMiddleware,
   verifyAccountMiddleware,
-  perfilOrAdminMiddleware,
   usersController.userLogOut
 );
 
