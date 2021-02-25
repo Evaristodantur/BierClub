@@ -8,6 +8,8 @@
    Para hacer hoy:
   - NavBar funcional
   - Implementar log out en user controller
+  - Agregar validacion de usuario administrador en nav
+  
 
 ### 🗓️ 24/2/21
   Terminado:
