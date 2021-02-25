@@ -7,7 +7,7 @@
   
    Para hacer hoy:
   - NavBar funcional
-
+  - Implementar log out en user controller
 
 ### 🗓️ 24/2/21
   Terminado:
