@@ -84,6 +84,15 @@ router.get(
   usersController.perfilEdit
 );
 
+/* GET     /users/logout             page. */
+router.get(
+  '/logout',
+  guestMiddleware,
+  verifyAccountMiddleware,
+  perfilOrAdminMiddleware,
+  usersController.userLogOut
+);
+
 /* POST     /users/perfil/:id            page. */
 router.post(
   '/perfil/:id',

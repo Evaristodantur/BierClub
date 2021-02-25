@@ -424,9 +424,10 @@ let usersController = {
     },
 
 
-    // users/perfil/eliminar/:id (POST)
+    // users/logout (POST)
     eliminarPerfil : (req, res, next) => {
 
+      
         // Busca el id enviado por parametro
         let idUrl = req.params.id;
           //Lo borra de la base de datos
@@ -444,7 +445,15 @@ let usersController = {
     },
 
 
+    // users/perfil/eliminar/:id (POST)
+    userLogOut : (req, res, next) => {
 
+        if (req.session.usuarioLogueado) {
+          req.session.destroy();
+          res.redirect('/');
+        }
+        
+    },
 
 
     // users/perfil/pedidos/:id
