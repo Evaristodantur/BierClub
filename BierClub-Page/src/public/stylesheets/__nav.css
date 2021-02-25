@@ -47,7 +47,7 @@ body {
 
 .nav1 .nav-backgc .container-nav .navbar li {
   display: inline-block;
-  margin: 0px 25px;
+  margin: 0px 20px;
   position: relative;
 }
 
@@ -80,7 +80,7 @@ body {
   display: flex;
   float: right;
   position: fixed;
-  right: 6%;
+  right: 5%;
   margin-top: -35px;
   transition: 0.3s;
 }
@@ -241,36 +241,13 @@ MENU HAMBURGUESA MOBILE
   opacity: 100%;
 }
 
-/* ==========================================================================
-RESOLUCION 1200-1300
-========================================================================== */
 
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .nav1 .nav-backgc .container-nav .navbar .navcarrito li {
-    margin: 0px 35px;
-  }
-}
 
-/* ==========================================================================
-RESOLUCION 950-1600
-========================================================================== */
-
-@media (min-width: 950px) and (max-width: 1600px) {
-  .nav1 .nav-backgc .container-nav .navbar .navlogin li a {
-    display: none;
-  }
-
-  
-
-  .nav1 .nav-backgc .container-nav .navbar .navcarrito {
-    right: -3%;
-  }
-}
 
 /* ==========================================================================
 RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA) 
 ========================================================================== */
-@media (max-width: 949px) {
+@media (max-width: 1200px) {
   /* SCRIPT DE NAV BAR DESACTIVADO */
 
   .nav1 .nav-backgc .container-nav .navbar nav .barra {
@@ -297,6 +274,7 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
   /* ICONOS DE LA DERECHA (NAV BAR)*/
   .nav1 .nav-backgc .container-nav .navbar .navlogin li a {
     display: none;
+
   }
 
   
@@ -309,6 +287,7 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
     .btn-hamburguesa
     a.hamburguesa-icono {
     display: inline-block;
+    margin: 0px 20px;
   }
 
   /* HAMBURGUESA */

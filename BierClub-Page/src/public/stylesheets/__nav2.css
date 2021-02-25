@@ -274,15 +274,6 @@ MENU HAMBURGUESA MOBILE
 }
 
 
-/* ==========================================================================
-RESOLUCION 1600px
-========================================================================== */
-@media (max-width: 1200px) {
-  .nav2 .nav-backgc .container-nav .navbar li {
-    /* margin: 0px 15px; */
-  }
-}
-
 
 
 /* ==========================================================================
@@ -325,6 +316,7 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
     .btn-hamburguesa
     a.hamburguesa-icono {
     display: inline-block;
+    margin: 0px 20px;
   }
 
   /* HAMBURGUESA */

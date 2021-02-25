@@ -35,7 +35,18 @@
                     <a href="/products" class="hamburguesa-item">Todos los productos</a>
                     <a href="/suscripcion" class="hamburguesa-item">Suscríbete</a>
                     <a href="/about-us" class="hamburguesa-item">¿Quiénes Somos?</a>
-                    <hr>
+                    <a class="hamburguesa-item"><hr></a>
+                    <% if(typeof userLogged == "undefined") { %>
+                            <a href="/users/register" class="hamburguesa-item">Registrase</a>
+                            <a href="/users/login" class="hamburguesa-item">Iniciar Session</a>
+                            <a class="hamburguesa-item"><hr></a>
+                        <% } else { %>
+                            <a href="/users/login" class="hamburguesa-item">Mi perfil</a>
+                            <a href="/carts/productCart" class="hamburguesa-item">Carrito</a>
+                            <a class="hamburguesa-item"><hr></a>
+                            <a href="/about-us" class="hamburguesa-item">Log Out</a>
+                    <% } %>
+                    
                     <div class="hamburguesa-items-none">
                         <a href="/carts/productCart" class="hamburguesa-item">Carrito</a>
                         <a href="/users/perfil" class="hamburguesa-item">
@@ -56,18 +67,24 @@
                 <ul id="navcarrito" class="navcarrito">
                     <li class="search nav-items"><a><i class="fas fa-search"></i></a></li>
                     <li class="nav-items"><a href="/carts/productCart"><i class="fas fa-shopping-cart"></i></a></li>
-                    <span class="profile-icon"><li class="login-carrito nav-items"><a href="/users/login"><i class="fas fa-user-circle"></i></a></li></span>
+                    
                     <li class="btn-hamburguesa"><a class="hamburguesa-icono pointer" onclick="hamburguesa()"><i class="fas fa-bars"></i></a><li>
                 </ul>
                 <strong>
                     <ul id ="navlogin" class="navlogin">
-                        <li><a href="/users/login"><i class="fas fa-sign-in-alt"></i>
-                            <% if(typeof userLogged == "undefined") { %>
-                                Iniciar Session
-                            <% } else { %>
-                                Mi cuenta
-                            <% } %>
-                        </a></li>
+                        <% if(typeof userLogged == "undefined") { %>
+                            <li>
+                            <a href="/users/login"><i class="fas fa-sign-in-alt"></i>Iniciar Session</a>
+                            </li>
+                        <% } else { %>
+                            <li class="dropdown-perfil-user">
+                                <a class="dropdown-btn-perfil-user"><i class="fas fa-sign-in-alt"></i> Mi cuenta</a>
+                                <div class="dropdown-content-perfil-user">
+                                        <a href="/users/login">Perfil</a>
+                                        <a href="#">Log Out</a>
+                                </div>
+                            </li>
+                        <% } %>
                     </ul>
                 </strong>
                 <hr>
