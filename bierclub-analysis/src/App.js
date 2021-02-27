@@ -1,7 +1,7 @@
 import './app.css';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { ProtectedRoute } from './utils/protected.router'
-import Login from '../src/Pages/Login/Login';
+import Login from './Pages/Login/Login';
 import Dashboard from '../src/Pages/Dashboard/Dashboard';
 
 function App() {
