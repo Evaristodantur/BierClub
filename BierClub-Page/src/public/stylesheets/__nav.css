@@ -47,7 +47,7 @@ body {
 
 .nav1 .nav-backgc .container-nav .navbar li {
   display: inline-block;
-  margin: 0px 20px;
+  margin: 0px 22px;
   position: relative;
 }
 
@@ -308,7 +308,13 @@ SEARCH
   margin: auto;
   padding: 20px;
   border: 0px;
-  width: 80%;
+  width: 60%;
+}
+
+.modal-content-search-navbar1 form input:focus {
+  color: #daa520;
+  border: 1px solid #daa520;
+  outline: none;
 }
 
 .modal-content-search-navbar1 form input {
@@ -392,6 +398,11 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
     div.mobile-hamburguesa-menu {
     left: 10px;
   }
+
+  /* Modal Content */
+  .modal-content-search-navbar1 {
+    width: 60%;
+  }
 }
 
 /* ==========================================================================
@@ -400,6 +411,16 @@ RESOLUCION 480-768
 @media (min-width: 480px) and (max-width: 767px) {
   .nav1 .nav-backgc div.mobile-hamburguesa-menu {
     width: 290px;
+  }
+
+  .nav1 .nav-backgc .container-nav .navbar li,
+  .nav1 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono {
+    margin: 0 12px;
+  }
+
+  /* Modal Content */
+  .modal-content-search-navbar1 {
+    width: 80%;
   }
 }
 
@@ -415,11 +436,29 @@ RESOLUCION 0-480
   .nav1 .nav-backgc .container-nav .navbar .nav-items {
     display: none;
   }
+
+  .nav1 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono {
+    margin: 0 10px;
+  }
+
+  .nav1 .nav-backgc .container-nav .navbar .search {
+    display: flex;
+  }
+
+  .nav1 .nav-backgc .container-nav .navbar .search {
+    margin: 0 -35px;
+  }
+
   .hamburguesa-items-none:hover {
     display: flex;
     flex-direction: column;
   }
   .nav1 .nav-backgc .container-nav .navbar center .navcarrito .btn-hamburguesa {
     right: -25px;
+  }
+
+  /* Modal Content */
+  .modal-content-search-navbar1 {
+    width: 80%;
   }
 }

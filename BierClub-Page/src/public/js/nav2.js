@@ -1,4 +1,19 @@
 /* ==========================================================================
+SEARCH
+========================================================================== */
+// Get the modal
+function searchInNav2() {
+  let modal = document.getElementById('modal-search-navbar2')
+  modal.style.display = 'block';
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  };
+}
+
+
+/* ==========================================================================
 HAMBURGUESA
 ========================================================================== */
 

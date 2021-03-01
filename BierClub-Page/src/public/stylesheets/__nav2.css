@@ -84,7 +84,7 @@ body {
   float: right;
   display: flex;
   position: fixed;
-  right: 1.5%;
+  right: 0.5%;
   margin-top: -35px;
   transition: 0.3s;
 }
@@ -299,6 +299,66 @@ MENU HAMBURGUESA MOBILE
 
 
 
+/* ==========================================================================
+SEARCH
+========================================================================== */
+/* The Modal (background) */
+.modal-search-navbar2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  z-index: 12;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animateSearchNav;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animateSearchNav;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content-search-navbar2 {
+  background-color: transparent;
+  margin: auto;
+  padding: 20px;
+  border: 0px;
+  width: 60%;
+}
+
+.modal-content-search-navbar2 form input {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.modal-content-search-navbar2 form input:focus {
+  color: #daa520;
+  border: 1px solid #daa520;
+  outline: none;
+}
+
+/* Add Animation */
+@-webkit-keyframes animateSearchNav {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animateSearchNav {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+
 
 /* ==========================================================================
 RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA) 
@@ -359,6 +419,11 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
     div.mobile-hamburguesa-menu {
     left: 10px;
   }
+
+  /* MODAL SEARCH */
+  .modal-content-search-navbar2 {
+    width: 60%;
+  }
 }
 
 /* ==========================================================================
@@ -367,6 +432,15 @@ RESOLUCION 480-768
 @media (min-width: 480px) and (max-width: 767px) {
   .nav2 .nav-backgc div.mobile-hamburguesa-menu {
     width: 290px;
+  }
+
+  .nav2 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono {
+    margin: 0 0;
+  }
+
+  /* MODAL SEARCH */
+  .modal-content-search-navbar2 {
+    width: 80%;
   }
 }
 
@@ -382,11 +456,26 @@ RESOLUCION 0-480
   .nav2 .nav-backgc .container-nav .navbar .nav-items {
     display: none;
   }
+
+  .nav2 .nav-backgc .container-nav .navbar .navcarrito {
+    right: -6%;
+  }
+
+  .nav2 .nav-backgc .container-nav .navbar .search {
+    display: flex;
+    margin: 0 -35px;
+  }
+
   .hamburguesa-items-none:hover {
     display: flex;
     flex-direction: column;
   }
   .nav2 .nav-backgc .container-nav .navbar center .navcarrito .btn-hamburguesa {
     right: -25px;
+  }
+
+  /* MODAL SEARCH */
+  .modal-content-search-navbar2 {
+    width: 80%;
   }
 }
