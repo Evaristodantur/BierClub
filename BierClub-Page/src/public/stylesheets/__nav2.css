@@ -55,8 +55,8 @@ body {
   color: #fff;
 }
 
-.nav2 .nav-backgc .container-nav .navbar a {
-  color: #fff;
+.nav2 .nav-backgc .container-nav .navbar a:hover {
+  color: rgb(218, 216, 216)
 }
 
 .nav2 .nav-backgc .container-nav .navbar nav .barra {
@@ -149,6 +149,10 @@ MENU HAMBURGUESA MOBILE
   transition: 0.4s;
 }
 
+.nav2 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono:hover {
+  color: rgb(218, 216, 216)
+}
+
 .nav2
   .nav-backgc
   .mobile-hamburguesa-menu
@@ -189,6 +193,16 @@ MENU HAMBURGUESA MOBILE
   margin-bottom: 7px;
   transition: 0.4s;
 }
+
+.nav2
+  .nav-backgc
+  .mobile-hamburguesa-menu
+  .hamburguesa-margin
+  .hamburguesa-items
+  a.hamburguesa-item:hover {
+    color: #796022;
+  }
+
 .nav2
   .nav-backgc
   .mobile-hamburguesa-menu
@@ -199,6 +213,16 @@ MENU HAMBURGUESA MOBILE
   font-size: 25px;
   color: #daa520;
 }
+
+.nav2
+  .nav-backgc
+  .mobile-hamburguesa-menu
+  .hamburguesa-margin
+  .hamburguesa-top
+  .hamburguesa-menu
+  .fa-times-circle:hover {
+    color: #9b2525;
+  }
 
 .fa-angle-down {
   margin-top: 2px;

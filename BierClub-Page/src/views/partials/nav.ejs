@@ -16,6 +16,24 @@
     <% } else { %>
         <% console.log("esta logeado") %>
     <% } %> 
+
+        <!-- Trigger/Open The Modal -->
+    
+
+    <!-- The Modal -->
+    <div id="modal-search-navbar1" class="modal-search-navbar1" >
+
+        <!-- Modal content -->
+        <div class="modal-content-search-navbar1">
+            <form action="/products/search" method="GET">
+				<input id="searchProducts" type="text" name="search" placeholder="Buscador de Productos" onchange="this.form.submit()">
+			</form>
+            
+        </div>
+
+    </div>
+
+
     <div id="navbar" class="nav-backgc">
         <!------------------------------------ MOBILE ----------------------------------->
         <div class="mobile-hamburguesa-menu" id="hamburguesa-onclick">
@@ -71,7 +89,7 @@
             <center>
                 <a href="/"><img src="/images/logo.png" alt="BierClub" class="logo"></a>
                 <ul id="navcarrito" class="navcarrito">
-                    <li class="search nav-items"><a><i class="fas fa-search"></i></a></li>
+                    <li class="search nav-items" style="cursor: pointer;"><a onclick="searchInNav1()"><i class="fas fa-search"></i></a></li>
                     <li class="nav-items"><a href="/carts/productCart"><i class="fas fa-shopping-cart"></i></a></li>
                     
                     <li class="btn-hamburguesa"><a class="hamburguesa-icono pointer" onclick="hamburguesa()"><i class="fas fa-bars"></i></a><li>
@@ -84,7 +102,7 @@
                             </li>
                         <% } else { %>
                             <li class="dropdown-perfil-user">
-                                <a class="dropdown-btn-perfil-user"><i class="fas fa-user"></i> Mi cuenta</a>
+                                <a class="dropdown-btn-perfil-user" style="cursor: pointer;"><i class="fas fa-user"></i> Mi cuenta</a>
                                 <div class="dropdown-content-perfil-user">
                                         <% if(typeof userLogged != "undefined" && userLogged.admin == 1) { %>
                                             <a href="/products/productAdmin"><i class="fab fa-product-hunt"></i> Administrar Productos</a>

@@ -85,7 +85,7 @@
                             </li>
                         <% } else { %>
                             <li class="dropdown-perfil-user">
-                                <a class="dropdown-btn-perfil-user"><i class="fas fa-user"></i> Mi cuenta</a>
+                                <a class="dropdown-btn-perfil-user"  style="cursor: pointer;"><i class="fas fa-user"></i> Mi cuenta</a>
                                 <div class="dropdown-content-perfil-user">
                                         <% if(typeof userLogged != "undefined" && userLogged.admin == 1) { %>
                                             <a href="/products/productAdmin"><i class="fab fa-product-hunt"></i> Administrar Productos</a>
