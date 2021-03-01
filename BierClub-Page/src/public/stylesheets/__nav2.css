@@ -307,7 +307,7 @@ SEARCH
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 125px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -421,6 +421,10 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
   }
 
   /* MODAL SEARCH */
+  .modal-search-navbar2 {
+    padding-top: 50px; /* Location of the box */
+  }
+
   .modal-content-search-navbar2 {
     width: 60%;
   }
