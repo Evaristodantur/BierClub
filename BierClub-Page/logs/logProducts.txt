@@ -1478,3 +1478,27 @@ Stock: 0
 Categoria: Lupuladas
 Descripción: 445454
 *************************************************************
+Fecha de creacion/modificación del producto: 24/2/2021 01:16:34
+Producto: Nuevo Producto
+Precio: 100
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 24/2/2021 01:17:05
+Producto: Germanica
+Precio: 100
+Descuento: 0
+Stock: 100
+Categoria: Cerveza
+Descripción: Nuevo producto!
+*************************************************************
+Fecha de creacion/modificación del producto: 24/2/2021 01:17:42
+Producto: Holandeza
+Precio: 150
+Descuento: 20
+Stock: 250
+Categoria: Cerveza
+Descripción: holandeza
+*************************************************************

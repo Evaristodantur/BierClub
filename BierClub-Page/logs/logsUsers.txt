@@ -1386,8 +1386,50 @@ El usuario registrado es:
 Nombre: KIPPES
 Email: kippeso@gmail.com
 *************************************************************
+<<<<<<< HEAD
 Se registró un usuario el 2021-2-22 18:56:14
 El usuario registrado es:
 Nombre: Evaristo Dantur
 Email: kippes.diego@gmail.com
+=======
+Se registró un usuario el 23/2/2021 23:11:35
+El usuario registrado es:
+Nombre: diego 9
+Email: diegokippes9@gmail.com
+*************************************************************
+Se registró un usuario el 23/2/2021 23:21:04
+El usuario registrado es:
+Nombre: diego 9
+Email: diegokippes9@gmail.com
+*************************************************************
+Se registró un usuario el 23/2/2021 23:27:33
+El usuario registrado es:
+Nombre: diego 9
+Email: diegokippes9@gmail.com
+*************************************************************
+Se registró un usuario el 24/2/2021 01:29:32
+El usuario registrado es:
+Nombre: asd
+Email: diego1@diego.com
+*************************************************************
+Se registró un usuario el 24/2/2021 01:37:52
+El usuario registrado es:
+Nombre: KIPPES
+Email: diego@gmail.com
+*************************************************************
+Se registró un usuario el 24/2/2021 11:33:19
+El usuario registrado es:
+Nombre: KIPPES
+Email: diegokippes9@gmail.com
+*************************************************************
+Se registró un usuario el 28/2/2021 22:44:54
+El usuario registrado es:
+Nombre: diego
+Email: diego.kippes9@hotmail.com
+*************************************************************
+Hubo un intento de registro el 28/2/2021 22:45:48
+El usuario a registrarse fue:
+Nombre: diego
+Email: diegokippes9@gmail.com
+>>>>>>> 92ada44bb0f7e11d3bdf5944de139f72bb31574f
 *************************************************************

@@ -27,8 +27,6 @@ router.get('/deleteProduct/:id', cartsController.deleteProductFromCart);
 
 router.post('/deleteAllProducts', cartsController.deleteAllProducts);
 
-/* router.post('/checkProductIfInStock/:id', cartsController.productInStock); */
-
 router.post('/procederAlPago', cartsController.procederAlPago);
 
 router.get('/items', cartsController.itemsView);

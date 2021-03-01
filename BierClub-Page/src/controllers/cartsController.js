@@ -52,8 +52,7 @@ let mainController = {
                 //Busca el producto a agregar pasado por el id
                 db.Products.findByPk(req.params.id)
                     .then(productEnStock => {
-                      console.log(productEnStock.stock);
-                      console.log(productEnStock);
+                      
                       //Se fija si se encuentra en stock
                         if(productEnStock.stock > 0) {
 
@@ -150,40 +149,14 @@ let mainController = {
             res.redirect('/carts/productCart');
         });
       }
-
-      
+  
     },
 
 
-    /* productInStock: (req, res, next) => {
-      let userLogged = req.session.usuarioLogueado;
-
-
-      db.Products.findByPk(req.params.id)
-        .then(product => {
-          console.log(product);
-          if(product.stock < req.body.stock) {
-            let errorDeCantidad = 'hubo un error en la cantidad solicitada en alguno de los productos';
-
-            //Busca los productos que se encuentren en un carrito del usuario logueado
-            db.Products.findAll({
-              include: [
-                { association: 'images' },
-                { association: 'carts', where: { user_id: userLogged.id, status: 0 } },
-              ]
-            }).then((products) => {
-                
-              //Muestra los productos
-              res.render('carts/productCart', { productos : products, errorDeCantidad: errorDeCantidad, userLogged: userLogged });
-            });
-
-          }
-        })
-    }, */
 
     
     procederAlPago: (req, res, next) => {
-      
+
       let userLogged = req.session.usuarioLogueado;
 
        db.Users.findOne({
@@ -201,9 +174,11 @@ let mainController = {
               }
             }).then(productsInCart => {
 
-              //Valida que haya productos en el carrito
+              //Valida que haya productos en el carrito - SI NO HAY MANDA ERROR
               if(productsInCart.length == 0) {
-                res.send('No hay productos en el carrito')
+                
+                res.send('No hay productos en el carrito');           
+
               }
 
               //Validacion para ver si hay stock
@@ -272,15 +247,39 @@ let mainController = {
                     }
                   })
 
+                  
+                  if(req.body.tipo_de_envio == 'local') {
+
+                    db.Carts.update({
+                    status: 1,
+                    shipping_type: 0
+                  },{
+                    where: {
+                      id: userCart.carts[0].id
+                    }
+                  })
+
+                  } else {
+
+                    db.Carts.update({
+                    status: 1,
+                    shipping_type: 1,
+                    place: req.body.tipo_envio
+                  },{
+                    where: {
+                      id: userCart.carts[0].id
+                    }
+                  })
+
+                  }
+
                   //Abre un nuevo carrito para futuras compras
                   db.Carts.create({
                     status: 0,
                     user_id: userCart.id
                   });
 
-                  res.send('Gracias por su compra!')
-
-
+                  res.redirect('/thanksforbuying');
             })
       
         })

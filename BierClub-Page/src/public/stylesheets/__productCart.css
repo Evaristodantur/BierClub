@@ -70,7 +70,7 @@ body div.container-carrito {
   background-color: rgb(145, 24, 24);
 }
 
-#stockProducto {
+.producto-cantidad {
   text-align: center;
   border: 1px solid black;
   padding: 5px;
@@ -185,223 +185,37 @@ width: 20%;
   border: 1px solid black;
 }
 
-.container-carrito
-  .productos-carrito
-  .recuadro-total
-  .recuadro-total-chico
-  .recuadro-carrito
-  h4.btn-cambiar-direccion {
-  color: #daa520;
+
+select.select-departamento {
+  width: 100%;
+  border: 0;
+  font-size: 1em;
+  padding: 5px 0 5px 0;
 }
 
-.container-carrito .productos-carrito .recuadro-total .recuadro-total-chico a {
-  text-decoration: none;
-}
 
-.container-carrito
-  .productos-carrito
-  .recuadro-total
-  .recuadro-total-chico
-  a
-  h4.boton-pagar {
+.recuadro-carrito button.boton-pagar {
   /* Display & Box Model */
   width: 100%;
 
   /* Otras */
+  border: 0;
+  cursor: pointer;
+  padding: 10px 0 10px 0;
   color: white;
   background-color: #daa520;
   text-align: center;
-  border-radius: 6px;
 }
+
+.recuadro-carrito button.boton-pagar:hover {
+  background-color: #dbad37;
+}
+
+
 
 /* ==========================================================================
-   SECCION CUPON
+   SECCION MODAL
    ========================================================================== */
-.container-carrito .cupones {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-left: 8%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.container-carrito .cupones input {
-  height: 40px;
-  border-radius: 8px;
-}
-
-.container-carrito .cupones a {
-  margin-left: 20px;
-  color: black;
-}
-
-.container-carrito .cupones a p {
-  padding: 10px;
-  margin-left: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  display: block;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-}
-
-.container-carrito .cupones p:hover {
-  color: white;
-  background-color: #daa520;
-  border-radius: 8px;
-}
-
-/* ==========================================================================
-   PRODUCTOS RELACIONADOS
-   ========================================================================== */
-.titulo-productosRelacionado {
-  /* Display & Box Model */
-  margin-top: 20px;
-
-  /* Otras */
-  text-align: center;
-}
-
-/* ==========================================================================
-   BLOQUE - PRODUCTOS
-   ========================================================================== */
-section.productos {
-  /* Display & Box Model */
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 60px;
-}
-.sumar-restar-cantidad {
-  text-decoration: none;
-  color: #daa520;
-}
-section.productos article.producto {
-  /* Display & Box Model */
-  width: 22%;
-  margin: 1% 0.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-
-  /* Otras */
-  background-color: white;
-  text-align: center;
-  border: rgba(0, 0, 0, 0.2) 1px solid;
-  border-radius: 15px;
-  box-shadow: 3px 3px rgba(163, 163, 163, 0.295);
-  transition: 0.3s;
-}
-
-section.productos div.btnAnt {
-  align-self: center;
-  margin-left: 1%;
-  display: inline-block;
-}
-
-section.productos div.btnSig {
-  align-self: center;
-  margin-right: 1%;
-  display: inline-block;
-}
-
-section.productos article.producto img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  width: 100%;
-}
-
-/* ==========================================================================
-   PRODUCTO - PRECIO -STOCK
-   ========================================================================== */
-section.productos article.producto h2.producto-titulo {
-  font-size: large;
-  margin-right: 3%;
-  margin-left: 3%;
-}
-
-section.productos article.producto div.precio-stock {
-  display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-}
-
-section.productos article.producto div.precio-stock div h4.etiqueta-precio {
-  float: left;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-section.productos article.producto div.precio-stock div h5.etiqueta-stock {
-  float: right;
-  color: rgb(1, 122, 1);
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* ==========================================================================
-   PRODUCTO - BUTTON AÑADIR AL CARRITO
-   ========================================================================== */
-section.productos article.producto button.btn-producto {
-  /* Display & Box Model */
-  padding: 10px;
-  width: 80%;
-  margin-bottom: 3%;
-
-  /* Otras */
-  background-color: black;
-  color: white;
-  border: rgba(0, 0, 0, 0.2) 1px solid;
-  border-radius: 10px;
-}
-
-section.productos article.producto button.hoverproducto {
-  opacity: 0;
-  margin: 0;
-  margin-top: 2%;
-  margin-bottom: 4%;
-  align-self: center;
-  transition: 0.2s;
-}
-
-section.productos article.producto:hover button.hoverproducto {
-  opacity: 1;
-  margin-bottom: 4%;
-}
-
-/* ==========================================================================
-   PRODUCTO - BUTTON SIGUIENTE/PREVIO
-   ========================================================================== */
-
-section.productos article.producto button.btn-producto i.fa-plus {
-  color: #daa520;
-}
-
-section.productos div.btnAnt i.fa-chevron-circle-left,
-section.productos div.btnSig i.fa-chevron-circle-right {
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 50%;
-  color: #daa520;
-  font-size: 45px;
-}
-
-section.productos div.btnAnt i.fa-chevron-circle-left:hover,
-section.productos div.btnSig i.fa-chevron-circle-right:hover {
-  background-color: rgb(0, 0, 0);
-  color: #ffd56cd7;
-}
-
-
-
-
-
-.divPrecioCantidadSubtotalMobil {
-  display: none;
-}
-
 
 /* MODAL - BORRAR TODOS LOS PRODUCTOS */
 .modal-deleteAllProducts {
@@ -473,6 +287,52 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 }
 
 
+/* MODAL - NO HAY PRODUCTOS */
+.modalNoHayProductos {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 12; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content-noHayProductos {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  animation-name: animateModalContentNoHayProductosEnElCarrito;
+  animation-duration: 0.75s
+}
+
+@keyframes animateModalContentNoHayProductosEnElCarrito {
+  from {top: -500px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.close-modal-noHayProductos {
+  color: #daa520;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-modal-noHayProductos:hover,
+.close-modal-noHayProductos:focus {
+  color: rgb(158, 42, 42);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 
 /* ==========================================================================
@@ -531,7 +391,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     font-size: 0.95em;
   }
 
-  #stockProducto {
+  .producto-cantidad {
     font-size: 0.9em;
     width: 6%;
   }
@@ -561,7 +421,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     padding: 5px 18px 5px 18px;
   }
 
-  #stockProducto {
+  .producto-cantidad {
     font-size: 0.9em;
     width: 8%;
   }
@@ -612,7 +472,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     font-size: 1em;
   }
 
-  #stockProducto {
+  .producto-cantidad {
     font-size: 1.1em;
     width: 7%;
   }
@@ -685,7 +545,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     padding-right: 20px;
   }
 
-  #stockProducto {
+  .producto-cantidad {
     width: 10%;
     font-size: 1em;
     padding: 5px 0 5px 0;
@@ -731,6 +591,10 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
 
   .modal-content-deleteAllProducts {
     width: 60%;
+  }
+
+  .modal-content-noHayProductos {
+    width: 80%;
   }
   
 }
@@ -779,7 +643,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     width: 80%;
   }
 
-  #stockProducto {
+  .producto-cantidad {
     font-size: 1em;
     padding: 5px 0 5px 0;
   }
@@ -820,6 +684,15 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     margin-bottom: 10px;
   }
 
+  .producto-cantidad {
+    width: 30%;
+  }
+
+  .container-carrito .producto-precio,
+  .container-carrito .producto-precio-total {
+    width: 100%;
+  }
+
   .container-carrito .productos-carrito .productos hr.hr-carrito {
     width: 84%;
     margin-right: 8%;
@@ -831,8 +704,6 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   .container-carrito .cupones {
     margin-top: 15px;
   }
-
-
 
   /*RECUADRO TOTAL*/
   .container-carrito .productos-carrito .recuadro-total {
@@ -887,14 +758,12 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     font-weight: 500;
   }
 
-  .divMobilPrecioCantidadTotal input#stockProducto {
-    width: 30%;
-    padding: 2px 0px 2px 0px;
-  }
-
-
   .modal-content-deleteAllProducts {
     width: 80%;
+  }
+
+  .modal-content-noHayProductos {
+    width: 85%;
   }
   
 }
@@ -903,13 +772,13 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    ========================================================================== */
 @media (max-width: 400px) {
 
-  .divMobilPrecioCantidadTotal input#stockProducto {
-    width: 40%;
+  .producto-cantidad {
+    width: 45%;
   }
 
-  .container-carrito .cupones a {
-    margin-left: -3px;
-    margin-top: 8px;
+  .modal-content-noHayProductos {
+    width: 80%;
   }
+
 }
 

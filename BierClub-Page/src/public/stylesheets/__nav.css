@@ -47,7 +47,7 @@ body {
 
 .nav1 .nav-backgc .container-nav .navbar li {
   display: inline-block;
-  margin: 0px 25px;
+  margin: 0px 22px;
   position: relative;
 }
 
@@ -62,6 +62,10 @@ body {
 
 .nav1 .nav-backgc .container-nav .navbar a {
   color: #fff;
+}
+
+.nav1 .nav-backgc .container-nav .navbar a:hover {
+  color: rgb(218, 216, 216)
 }
 
 .nav1 .nav-backgc .container-nav .navbar nav .barra {
@@ -80,7 +84,7 @@ body {
   display: flex;
   float: right;
   position: fixed;
-  right: 6%;
+  right: 5%;
   margin-top: -35px;
   transition: 0.3s;
 }
@@ -103,6 +107,16 @@ body {
   display: none;
   color: white;
 }
+
+.nav1
+  .nav-backgc
+  .container-nav
+  .navbar
+  .navcarrito
+  .btn-hamburguesa
+  a.hamburguesa-icono:hover {
+    color: rgb(218, 216, 216)
+  }
 
 /* ==========================================================================
 DROPDOWN MENU
@@ -193,6 +207,17 @@ MENU HAMBURGUESA MOBILE
   margin-bottom: 7px;
   transition: 0.4s;
 }
+
+.nav1
+  .nav-backgc
+  .mobile-hamburguesa-menu
+  .hamburguesa-margin
+  .hamburguesa-items
+  a.hamburguesa-item:hover {
+  color: #796022;
+}
+
+
 .nav1
   .nav-backgc
   .mobile-hamburguesa-menu
@@ -203,6 +228,18 @@ MENU HAMBURGUESA MOBILE
   font-size: 25px;
   color: #daa520;
 }
+
+.nav1
+  .nav-backgc
+  .mobile-hamburguesa-menu
+  .hamburguesa-margin
+  .hamburguesa-top
+  .hamburguesa-menu
+  .fa-times-circle:hover {
+    color: #9b2525;
+  }
+
+
 .fa-angle-down {
   margin-top: 2px;
   transition: 0.3s;
@@ -242,37 +279,69 @@ MENU HAMBURGUESA MOBILE
 }
 
 /* ==========================================================================
-RESOLUCION 1200-1300
+SEARCH
 ========================================================================== */
-
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .nav1 .nav-backgc .container-nav .navbar .navcarrito li {
-    margin: 0px 15px;
-  }
+/* The Modal (background) */
+.modal-search-navbar1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 125px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  z-index: 12;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animateSearchNav;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animateSearchNav;
+  animation-duration: 0.4s
 }
 
-/* ==========================================================================
-RESOLUCION 950-1600
-========================================================================== */
-
-@media (min-width: 950px) and (max-width: 1600px) {
-  .nav1 .nav-backgc .container-nav .navbar .navlogin li a {
-    display: none;
-  }
-
-  .profile-icon .fa-user-circle {
-    display: inline-block;
-  }
-
-  .nav1 .nav-backgc .container-nav .navbar .navcarrito {
-    right: -3%;
-  }
+/* Modal Content */
+.modal-content-search-navbar1 {
+  background-color: transparent;
+  margin: auto;
+  padding: 20px;
+  border: 0px;
+  width: 60%;
 }
+
+.modal-content-search-navbar1 form input:focus {
+  color: #daa520;
+  border: 1px solid #daa520;
+  outline: none;
+}
+
+.modal-content-search-navbar1 form input {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* Add Animation */
+@-webkit-keyframes animateSearchNav {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animateSearchNav {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
 
 /* ==========================================================================
 RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA) 
 ========================================================================== */
-@media (max-width: 949px) {
+@media (max-width: 1200px) {
   /* SCRIPT DE NAV BAR DESACTIVADO */
 
   .nav1 .nav-backgc .container-nav .navbar nav .barra {
@@ -299,10 +368,7 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
   /* ICONOS DE LA DERECHA (NAV BAR)*/
   .nav1 .nav-backgc .container-nav .navbar .navlogin li a {
     display: none;
-  }
 
-  .profile-icon .fa-user-circle {
-    display: inline-block;
   }
 
   .nav1
@@ -313,6 +379,7 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
     .btn-hamburguesa
     a.hamburguesa-icono {
     display: inline-block;
+    margin: 0px 20px;
   }
 
   /* HAMBURGUESA */
@@ -331,6 +398,16 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
     div.mobile-hamburguesa-menu {
     left: 10px;
   }
+
+  /* Modal Content */
+  .modal-search-navbar1 {
+    padding-top: 50px; /* Location of the box */
+  }
+
+  .modal-content-search-navbar1 {
+    width: 60%;
+  }  
+
 }
 
 /* ==========================================================================
@@ -339,6 +416,16 @@ RESOLUCION 480-768
 @media (min-width: 480px) and (max-width: 767px) {
   .nav1 .nav-backgc div.mobile-hamburguesa-menu {
     width: 290px;
+  }
+
+  .nav1 .nav-backgc .container-nav .navbar li,
+  .nav1 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono {
+    margin: 0 12px;
+  }
+
+  /* Modal Content */
+  .modal-content-search-navbar1 {
+    width: 80%;
   }
 }
 
@@ -354,11 +441,29 @@ RESOLUCION 0-480
   .nav1 .nav-backgc .container-nav .navbar .nav-items {
     display: none;
   }
+
+  .nav1 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono {
+    margin: 0 10px;
+  }
+
+  .nav1 .nav-backgc .container-nav .navbar .search {
+    display: flex;
+  }
+
+  .nav1 .nav-backgc .container-nav .navbar .search {
+    margin: 0 -35px;
+  }
+
   .hamburguesa-items-none:hover {
     display: flex;
     flex-direction: column;
   }
   .nav1 .nav-backgc .container-nav .navbar center .navcarrito .btn-hamburguesa {
     right: -25px;
+  }
+
+  /* Modal Content */
+  .modal-content-search-navbar1 {
+    width: 80%;
   }
 }

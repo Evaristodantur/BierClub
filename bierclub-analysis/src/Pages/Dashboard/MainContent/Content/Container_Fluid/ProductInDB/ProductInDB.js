@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ContainerProduct from './ContainerProduct';
 import axios from 'axios';
-import sinImg from '../../../../../../assets/images/dummy-avatar.jpg';
+import sinImg from '../../../../../../assets/images/product-image-not-available.jpg';
 
 
 let getLastProductAdded = axios.get(
@@ -27,7 +27,7 @@ class LastProductInDB extends Component {
         getTheMostExpensiveProductSold,
       ])
       .then((resp) => {
-
+        
         this.setState({
           data: [
             {
@@ -36,9 +36,9 @@ class LastProductInDB extends Component {
               productName: resp[0].data.getLastProductAdded.name,
               description: resp[0].data.getLastProductAdded.description,
               imagen:
-                resp[0].data.getLastProductAdded.imagen != 'undefined'
-                  ? resp[0].data.getLastProductAdded.images[0].name
-                  : sinImg,
+                resp[0].data.getLastProductAdded.images.length == 0
+                  ? sinImg
+                  : resp[0].data.getLastProductAdded.images[0].name
             },
             {
               id: 2,
@@ -46,9 +46,9 @@ class LastProductInDB extends Component {
               productName: resp[1].data.getLastProductSold.name,
               description: resp[1].data.getLastProductSold.description,
               imagen:
-                resp[1].data.getLastProductSold.imagen != 'undefined'
-                  ? resp[1].data.getLastProductSold.images[0].name
-                  : sinImg,
+                resp[1].data.getLastProductSold.images.length == 0
+                  ? sinImg
+                  : resp[1].data.getLastProductSold.images[0].name
             },
             {
               id: 3,
@@ -57,10 +57,9 @@ class LastProductInDB extends Component {
               description:
                 resp[2].data.getTheMostExpensiveProductSold.description,
               imagen:
-                resp[2].data.getTheMostExpensiveProductSold.imagen !=
-                'undefined'
-                  ? resp[2].data.getTheMostExpensiveProductSold.images[0].name
-                  : sinImg,
+                resp[2].data.getTheMostExpensiveProductSold.images.length == 0
+                  ? sinImg
+                  : resp[2].data.getTheMostExpensiveProductSold.images[0].name,
             },
           ],
         });
@@ -75,7 +74,7 @@ class LastProductInDB extends Component {
   }
 
   render() {
-    
+    console.log(this.state.data);
     return (
       <>
         {this.state.data.map((product) => (

@@ -10,11 +10,30 @@
 <body>
 <header>
 <div class="nav1">
+    <%= console.log(userLogged)  %> 
     <% if(typeof userLogged == "undefined") { %>
         <% console.log('no esta logeado'); %>
     <% } else { %>
         <% console.log("esta logeado") %>
     <% } %> 
+
+        <!-- Trigger/Open The Modal -->
+    
+
+    <!-- The Modal -->
+    <div id="modal-search-navbar1" class="modal-search-navbar1" >
+
+        <!-- Modal content -->
+        <div class="modal-content-search-navbar1">
+            <form action="/products/search" method="GET">
+				<input id="searchProducts" type="text" name="search" placeholder="Buscador de Productos" onchange="this.form.submit()">
+			</form>
+            
+        </div>
+
+    </div>
+
+
     <div id="navbar" class="nav-backgc">
         <!------------------------------------ MOBILE ----------------------------------->
         <div class="mobile-hamburguesa-menu" id="hamburguesa-onclick">
@@ -26,18 +45,32 @@
                 </div>
                 </div><strong>
                 <div class="hamburguesa-items">
-                    <a class="hamburguesa-item pointer" onclick="hamburguesaDropdown() , transform()">Productos &nbsp<i id="transform" class="fas fa-angle-down"></i></a>
+                    <a class="hamburguesa-item pointer" onclick="hamburguesaDropdown() , transform()">Categories <i id="transform" class="fas fa-angle-down"></i></a>
                     <div id="hamburguesa-dropdown" class="hamburguesa-dropdown-mobile">
                         <a href="/products/categorie?filtroCategoria=2" class="dropdown-mobile">No lupuladas<small>Estas cervezas son menos amargas.</small></a>
                         <a href="/products/categorie?filtroCategoria=1" class="dropdown-mobile">Lupuladas<small>Estas cervezas son mas amargas.</small></a>
                         <hr>
-                        <a href="/products" class="dropdown-mobile">Todas las cervezas</a>
                     </div>
-                    <a href="/promociones" class="hamburguesa-item">Promociones</a>
+                    <a href="/products" class="hamburguesa-item">Todos los productos</a>
                     <a href="/suscripcion" class="hamburguesa-item">Suscríbete</a>
-                    <a href="/envios" class="hamburguesa-item">Envíos</a>
                     <a href="/about-us" class="hamburguesa-item">¿Quiénes Somos?</a>
-                    <hr>
+                    <a class="hamburguesa-item"><hr></a>
+                    <% if(typeof userLogged == "undefined") { %>
+                            <a href="/users/register" class="hamburguesa-item"><i class="far fa-registered"></i> Registrase</a>
+                            <a href="/users/login" class="hamburguesa-item"><i class="fas fa-sign-in-alt"></i> Iniciar Session</a>
+                            <a class="hamburguesa-item"><hr></a>
+                        <% } else { %>
+                            <% if(typeof userLogged != "undefined" && userLogged.admin == 1) { %>
+                                <a href="/products/productAdmin" class="hamburguesa-item"><i class="fab fa-product-hunt"></i> Administrar Productos</a>
+                                <a href="/users/usersAdmin" class="hamburguesa-item"><i class="fas fa-users"></i> Administrar Usuarios</a>
+                                <a class="hamburguesa-item"><hr></a>    
+                            <% } %>
+                            <a href="/users/login" class="hamburguesa-item"><i class="fas fa-user-circle"></i> Mi perfil</a>
+                            <a href="/carts/productCart" class="hamburguesa-item"><i class="fas fa-shopping-cart"></i> Carrito</a>
+                            <a class="hamburguesa-item"><hr></a>
+                            <a href="/users/logout" class="hamburguesa-item"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                    <% } %>
+
                     <div class="hamburguesa-items-none">
                         <a href="/carts/productCart" class="hamburguesa-item">Carrito</a>
                         <a href="/users/perfil" class="hamburguesa-item">
@@ -56,27 +89,37 @@
             <center>
                 <a href="/"><img src="/images/logo.png" alt="BierClub" class="logo"></a>
                 <ul id="navcarrito" class="navcarrito">
-                    <li class="search nav-items"><a href="/productos"><i class="fas fa-search"></i></a></li>
+                    <li class="search nav-items" style="cursor: pointer;"><a onclick="searchInNav1()"><i class="fas fa-search"></i></a></li>
                     <li class="nav-items"><a href="/carts/productCart"><i class="fas fa-shopping-cart"></i></a></li>
-                    <span class="profile-icon"><li class="login-carrito nav-items"><a href="/users/login"><i class="fas fa-user-circle"></i></a></li></span>
+                    
                     <li class="btn-hamburguesa"><a class="hamburguesa-icono pointer" onclick="hamburguesa()"><i class="fas fa-bars"></i></a><li>
                 </ul>
                 <strong>
                     <ul id ="navlogin" class="navlogin">
-                        <li><a href="/users/login"><i class="fas fa-sign-in-alt"></i>
-                            <% if(typeof userLogged == "undefined") { %>
-                                Iniciar Session
-                            <% } else { %>
-                                Mi cuenta
-                            <% } %>
-                        </a></li>
+                        <% if(typeof userLogged == "undefined") { %>
+                            <li style="margin: 0px 5px;">
+                            <a href="/users/login"><i class="fas fa-sign-in-alt"></i>Iniciar Session</a>
+                            </li>
+                        <% } else { %>
+                            <li class="dropdown-perfil-user">
+                                <a class="dropdown-btn-perfil-user" style="cursor: pointer;"><i class="fas fa-user"></i> Mi cuenta</a>
+                                <div class="dropdown-content-perfil-user">
+                                        <% if(typeof userLogged != "undefined" && userLogged.admin == 1) { %>
+                                            <a href="/products/productAdmin"><i class="fab fa-product-hunt"></i> Administrar Productos</a>
+                                            <a href="/users/usersAdmin"><i class="fas fa-users"></i> Administrar Usuarios</a>
+                                        <% } %>
+                                        <a href="/users/login"><i class="fas fa-user-circle"></i> Perfil</a>
+                                        <a href="/users/logout"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                                </div>
+                            </li>
+                        <% } %>
                     </ul>
                 </strong>
                 <hr>
                 <a href="/"><img src="/images/logo.png" alt="BierClub" class="logonav" id="logonav"></a>
                 <nav>
                     <ul class="barra"><strong>
-                        <li class="dropdownBoton pointer"><a href="/products">Productos &nbsp<i class="fas fa-angle-down"></i></a>
+                        <li class="dropdownBoton pointer"><a>Categorias <i class="fas fa-angle-down"></i></a>
                             <div class="dropdownMenu">
                                 <a href="/products/categorie?filtroCategoria=1">
                                     <h3>Lupuladas</h3>
@@ -88,9 +131,8 @@
                                 </a>
                             </div>
                         </li>
-                        <li><a href="/promociones">Promociones</a></li>
+                        <li><a href="/products">Productos</a></li>
                         <li><a href="/suscripcion">Suscríbete</a></li>
-                        <li><a href="/envios">Envíos</a></li>
                         <li><a href="/about-us">¿Quiénes Somos?</a></li>
                     </ul></strong>
                 </nav>

@@ -1,5 +1,4 @@
-import React from 'react'
-import img from '../../../../../../assets/images/dummy-avatar.jpg';
+import React from 'react';
 
 export default function ContainerProduct(props) {
     
@@ -18,7 +17,7 @@ export default function ContainerProduct(props) {
                 className="img-fluid px-3 px-sm-4 mt-3 mb-4"
                 style={{ width: '25rem' }}
                 src={props.imagen}
-                alt="image dummy"
+                alt={props.productName}
               />
             </div>
             <p>{props.description}</p>

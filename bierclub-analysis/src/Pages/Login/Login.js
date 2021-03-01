@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './login.css';
+import './Login.css';
 import auth from '../../utils/auth';
 
 export default function Login(props) {

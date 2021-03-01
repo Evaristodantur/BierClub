@@ -2,6 +2,7 @@ let db = require('../../database/models');
 const bcrypt = require('bcryptjs');
 
 let apiBierClubController = {
+
   login: (req, res) => {
     db.Users.findOne({
       where: {

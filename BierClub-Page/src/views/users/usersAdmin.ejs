@@ -16,7 +16,8 @@
       <h1>Lista de usuarios completa</h1>
       <section class="usuarios-listaCompleta">
         <% usuarios.forEach(usuarios => { %>
-        <div class="usuarios-lista">
+          <% if(userLogged.email != usuarios.email) { %>
+            <div class="usuarios-lista">
           <div class="container-input">
             <h3>ID: <%= usuarios.id %></h3>
           </div>
@@ -60,7 +61,7 @@
               </button>
               <form
                 class="jaja"
-                action="/users/perfil/eliminar/<%= usuarios.id %>?_method=DELETE"
+                action="/users/eliminarUser/<%= usuarios.id %>?_method=DELETE"
                 method="POST"
               >
                 <button
@@ -73,6 +74,8 @@
             </div>
           </div>
         </div>
+          <% } %> 
+        
         <%});%>
       </section>
     </div>

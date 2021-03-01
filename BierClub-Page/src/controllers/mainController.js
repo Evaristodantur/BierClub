@@ -156,27 +156,9 @@ let mainController = {
 
 
 
-    //  /promociones
-    promociones : (req, res, next) => {
-        res.render('promociones', {userLogged : req.session.usuarioLogueado});
-    },
-
-
-
-
-
     //  /suscripcion
     suscripcion : (req, res, next) => {
         res.render('suscripcion', {userLogged : req.session.usuarioLogueado});
-    },
-
-
-
-
-    
-    // /envios
-    envios : (req,res, next) => { 
-        res.render('envios', {userLogged : req.session.usuarioLogueado});
     },
 
 
@@ -215,7 +197,13 @@ let mainController = {
                 res.render("contact", { success : "Tu mensaje fue enviado con exito!", userLogged : req.session.usuarioLogueado })
             }
         });
-    }
+    },
+
+
+    // /contacto
+    thanksForBuying : (req, res, next) => {
+        res.render('thanksForBuying', {userLogged : req.session.usuarioLogueado});
+    },
 } 
 
 

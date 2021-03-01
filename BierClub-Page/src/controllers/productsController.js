@@ -7,14 +7,7 @@ let sequelize = db.sequelize;
 let { validationResult } = require('express-validator');
 
 
-let productsController = {
-
-    //Para realizar pruebas
-    prueba : (req, res, next) => {
-
-        res.render('vistaPrueba')
-    },
-    
+let productsController = {   
 
 
 

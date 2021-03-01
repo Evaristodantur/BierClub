@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-02-2021 a las 17:09:18
--- Versión del servidor: 10.4.14-MariaDB
--- Versión de PHP: 7.4.9
+-- Tiempo de generación: 25-02-2021 a las 06:46:12
+-- Versión del servidor: 10.4.17-MariaDB
+-- Versión de PHP: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -23,26 +23,6 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
-
---
--- Estructura de tabla para la tabla `users`
---
-
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `suscription_status` tinyint(4) NOT NULL,
-  `newsletter_status` tinyint(4) NOT NULL,
-  `admin` tinyint(4) NOT NULL,
-  `verify` tinyint(4) NOT NULL,
-  `verify_code` varchar(50) NOT NULL,
-  `createdAt` timestamp NULL DEFAULT current_timestamp(),
-  `updatedAt` timestamp NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-
 --
 -- Estructura de tabla para la tabla `carts`
 --
@@ -51,6 +31,8 @@ CREATE TABLE `carts` (
   `id` int(11) NOT NULL,
   `status` tinyint(4) NOT NULL,
   `user_id` int(11) NOT NULL,
+  `shipping_type` tinyint(4) DEFAULT NULL,
+  `place` varchar(200) DEFAULT NULL,
   `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
   `updatedAt` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -131,7 +113,23 @@ CREATE TABLE `products` (
 
 -- --------------------------------------------------------
 
+--
+-- Estructura de tabla para la tabla `users`
+--
 
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `suscription_status` tinyint(4) NOT NULL,
+  `newsletter_status` tinyint(4) NOT NULL,
+  `admin` tinyint(4) NOT NULL,
+  `verify` tinyint(4) NOT NULL,
+  `verify_code` varchar(50) NOT NULL,
+  `createdAt` timestamp NULL DEFAULT current_timestamp(),
+  `updatedAt` timestamp NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Índices para tablas volcadas

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PageHeading from './PageHeading/PageHeading';
 import Boxes from './Boxes/Boxes';
 import axios from 'axios';
-import ProductInDB from './LastProductInDB/ProductInDB';
+import ProductInDB from './ProductInDB/ProductInDB';
 import CategoriesInDb from './CategoriesInDb/CategoriesInDb';
 import AllProductsInDB from './AllProductsInDB/AllProductsInDB';
 
@@ -87,7 +87,7 @@ class Container_Fluid extends Component {
 
         <div className="row">
           <ProductInDB></ProductInDB>
-
+            
           <CategoriesInDb></CategoriesInDb>
         </div>
         <h1 className="h3 mb-2 text-gray-800">

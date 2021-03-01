@@ -3,22 +3,7 @@ import axios from 'axios';
 import Cabecera from './Cabecera';
 import Filas from './Filas';
 
-const filas = [
-  {
-    id: 1,
-    name: 'Tiger Nixon',
-    description: 'System Architect',
-    price: '320,800',
-    stock: '245',
-  },
-  {
-    id: 2,
-    name: 'Jane Doe	',
-    description: 'Fullstack developer	',
-    price: '320,800',
-    stock: '245',
-  },
-];
+
 
 class AllProductsInDB extends Component {
   state = {
@@ -29,7 +14,7 @@ class AllProductsInDB extends Component {
     axios
       .get('http://localhost:3000/api/bierclub/getRegisteredUsers')
       .then(({data : info}) => {
-        console.log(info.getRegisteredUsers);
+        
         this.setState({ data: info.getRegisteredUsers });
       })
       .catch((err) => {

@@ -1,14 +1,77 @@
 # Dailies
 
+### 🗓️ 01/3/21
+  Terminado:
+  - NavBar funcional
+  - Implementar log out en user controller
+  - Agregar validacion de usuario administrador en nav
+  - Agregar a href para administrar productos o usuarios siendo admin
+  - Fix: No permitir borrar el usuario administrador que esta logueado
+  
+   Para hacer hoy: 
+  - Search funcional en navbar
+  - Mejora de diseño userEdit 
+  - Mejora de diseño userAdmin
+
+
+### 🗓️ 25/2/21
+  Terminado:
+  - Animación de agregado de producto
+  - Fix productos relacionados en productDetail + agregar toast
+  
+   Para hacer hoy:
+  - NavBar funcional
+  - Implementar log out en user controller
+  - Agregar validacion de usuario administrador en nav
+  - Agregar a href para administrar productos o usuarios siendo admin
+  - Fix: No permitir borrar el usuario administrador que esta logueado
+  
+
+### 🗓️ 24/2/21
+  Terminado:
+  - shippying_type y place en DB
+  - actualizar Excel
+  - crear modal de no hay productos en productcart
+  - arreglar elimar perfil en userAdmin y perfil
+  
+   Para hacer hoy:
+  - Animación de agregado de producto
+  - Fix productos relacionados en productDetail + agregar toast
+
+
+### 🗓️ 23/2/21
+  Terminado:
+  - Muestra subtotal Mobile
+  - Logica Front JS - productCart
+  
+   Para hacer hoy:
+  - shippying_type y place en DB
+  - actualizar Excel
+  - crear modal de no hay productos en productcart
+  - arreglar elimar perfil en userAdmin y perfil
+
+
+### 🗓️ 22/2/21
+  Terminado:
+  - Revisar modals generales
+  - Implementar API datos del gobierno en cart
+  - Muestra de Subtotal PC
+  - Muestra de Subtotal en Compra PC
+  
+   Para hacer hoy:
+  - Visual productCart
+  - Muestra subtotal Mobile
+  - Logica Front JS - productCart
+
 ### 🗓️ 21/2/21
   Terminado:
   - Diseñar modal para olvido de contraseña en login
   
    Para hacer hoy:
   - Revisar modals generales
-  - Animación de agregado de producto
-  - Muestra de Subtotal
-  - Muestra de Subtotal en Compra
+  - Implementar API datos del gobierno en cart
+  - Muestra de Subtotal PC
+  - Muestra de Subtotal en Compra PC
 
 
 ### 🗓️ 20/2/21
@@ -17,8 +80,6 @@
   
    Para hacer hoy:
   - Animación de agregado de producto
-  - Muestra de Subtotal
-  - Muestra de Subtotal en Compra
 
 
 ### 🗓️ 19/2/21

@@ -1,0 +1,36 @@
+
+/* ==========================================================================
+   TOAST - ADD PRODUCT
+   ========================================================================== */
+  #toast{
+  position:fixed;
+  top:45px;
+  left:50%;
+  transform:translate(-50%);
+  background-color:#000;
+  color:rgb(255, 255, 255);
+  padding:5px;
+  border-radius:4px;
+  text-align:center;
+  z-index: 9;
+  box-shadow:0 0 20px rgba(0,0,0,0.3);
+  visibility:hidden;
+  opacity:0;
+}
+
+#toast.showToast{
+  visibility:visible;
+  animation:fadeInOut 3s;
+}
+
+@keyframes fadeInOut{
+  5%,95%{opacity:1;top:75px}
+  15%,85%{opacity:1;top:50px}
+}
+
+@media (max-width: 400px) {
+  #toast {
+    padding: 0;
+    width: 80%;
+  }
+}
