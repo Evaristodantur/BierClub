@@ -59,6 +59,9 @@
   margin-bottom: 30px;
   width: 45%;
   border: 1px solid black;
+  box-shadow: 3px 2px 2px #daa520;
+  border-radius: 5px;
+
 }
 .container-users .eliminar-usuario-container {
   width: 85%;

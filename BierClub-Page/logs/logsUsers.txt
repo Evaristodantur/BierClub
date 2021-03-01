@@ -1433,3 +1433,13 @@ Nombre: diego
 Email: diegokippes9@gmail.com
 >>>>>>> 92ada44bb0f7e11d3bdf5944de139f72bb31574f
 *************************************************************
+Se registró un usuario el 2021-3-1 15:27:56
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evarisasdasdto@daasdntur.com
+*************************************************************
+Se registró un usuario el 2021-3-1 15:47:23
+El usuario registrado es:
+Nombre: Evaristo Dantur
+Email: evaristo123@hotmail.com
+*************************************************************
