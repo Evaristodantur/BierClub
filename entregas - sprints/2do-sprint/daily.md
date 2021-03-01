@@ -10,6 +10,8 @@
   
    Para hacer hoy: 
   - Search funcional en navbar
+  - Mejora de diseño userEdit 
+  - Mejora de diseño userAdmin
 
 
 ### 🗓️ 25/2/21
