@@ -1,5 +1,12 @@
 # Dailies
 
+### 🗓️ 03/3/21
+  Terminado:
+  - Diseño y estilo del modal al eliminar un usuario
+  
+   Para hacer hoy: 
+  
+
 
 ### 🗓️ 02/3/21
   Terminado:
