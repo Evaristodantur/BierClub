@@ -3,9 +3,13 @@
 ### 🗓️ 03/3/21
   Terminado:
   - Diseño y estilo del modal al eliminar un usuario
+  - Armar readme de como instalar y correr el proyecto
+  - ProductDetail - comprar ahora funcional
+  - Crop de imagen en bierclub page
   
    Para hacer hoy: 
-  
+  - pasar imagenes en ProductDetail
+  - Quienes somos - pagina con la descripcion de los developers.
 
 
 ### 🗓️ 02/3/21
@@ -18,6 +22,8 @@
    Para hacer hoy: 
   - Diseño y estilo del modal al eliminar un usuario
   - Armar readme de como instalar y correr el proyecto
+  - ProductDetail - comprar ahora funcional
+  - Crop de imagen en bierclub page
 
 
 ### 🗓️ 01/3/21
