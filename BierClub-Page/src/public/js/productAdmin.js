@@ -1,9 +1,3 @@
-let dropDownFiltros = (idAModificar, claseATomarPropiedades) => {
-  document
-    .getElementById(idAModificar)
-    .classList.toggle(claseATomarPropiedades);
-};
-
 /* MODIFICAR ONCLICK */
 
 function eliminarProducto(productoId) {
