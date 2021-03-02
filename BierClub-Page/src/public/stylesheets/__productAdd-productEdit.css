@@ -63,6 +63,7 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
 
 .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
   /* Display & Box Model */
+  object-fit: cover;
   display: inline-block;
   width: 328px;
   height: 328px;

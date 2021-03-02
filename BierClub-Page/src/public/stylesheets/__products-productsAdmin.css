@@ -206,8 +206,9 @@ body .products-catalogo {
   .producto
   img {
   /* Display & Box Model */
-  width: 100%;
-  height: 310px;
+  object-fit: cover;
+  width:100%;
+  height:300px;
 
   /* Otras */
   border-top-left-radius: 8px;

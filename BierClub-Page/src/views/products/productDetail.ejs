@@ -137,6 +137,7 @@
           <!-- COMPRAR AHORA -->
           <div class="comprarAhora">
             <form action="/carts/addProduct/<%= producto.id %>" method="POST">
+              <input style="display: none;" type="text" name="comprarAhora" value="comprarAhora">
               <button class="btn-comprarAhora" type="submit">
                 Comprar Ahora
               </button>

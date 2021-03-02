@@ -1502,3 +1502,11 @@ Stock: 250
 Categoria: Cerveza
 Descripción: holandeza
 *************************************************************
+Fecha de creacion/modificación del producto: 2/3/2021 17:50:26
+Producto: fas
+Precio: 0
+Descuento: 0
+Stock: 1100
+Categoria: Vino
+Descripción: 
+*************************************************************

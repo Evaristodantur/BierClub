@@ -378,6 +378,7 @@ section.productos article.producto img {
   border-top-right-radius: 15px;
   width: 100%;
   height: 300px;
+  object-fit: cover;
 }
 
 section.productos div.btnAnt {

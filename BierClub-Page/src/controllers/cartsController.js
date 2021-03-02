@@ -33,6 +33,11 @@ let mainController = {
     //  /carts/addProduct/:id - POST
     addProduct: (req, res, next) => {
         
+        console.log(req.body.comprarAhora);
+        if(typeof req.body.comprarAhora != "undefined") {
+
+        }
+
         let userLogged = req.session.usuarioLogueado        
 
         //Se fija si el usuario esta logueado
@@ -78,6 +83,9 @@ let mainController = {
 
                         }
                         
+                        if(typeof req.body.comprarAhora != "undefined") {
+                          res.redirect('/carts/productCart')
+                        }
                     });
             });
 

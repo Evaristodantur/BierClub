@@ -62,8 +62,9 @@
 .home main section.productos article.producto img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  width: 100%;
-  height: 300px;
+  object-fit: cover;
+  width:100%;
+  height:230px;
 }
 
 .home main section.productos div.btnAnt {
