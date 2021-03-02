@@ -8,6 +8,8 @@ Por el momento envíos en la provincia de Tucumán, pero apuntamos a mejorar en 
 
 ## [Usuarios](https://github.com/Evaristodantur/BierClub/blob/master/entregas%20-%20sprints/Usuarios-Login/users.md) para pruebas
 
+## [¿Como correr el proyecto?](https://github.com/Evaristodantur/BierClub/blob/master/entregas%20-%20sprints/Usuarios-Login/Como%20correr%20el%20proyecto.md)
+
 ## Funcionalidad 🧰:
 
 - Venta de cerveza artesanal (Latas y botellas chicas)
