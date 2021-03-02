@@ -44,38 +44,43 @@
             Modificar datos
           </button>
           <button
-            onclick="eliminarUsuario(<%=usuarios.id%>)"
+            id="btn-eliminar-usuario"
             class="button-eliminar button-enteros"
             value=""
+            onclick="eliminarUsuario(<%= usuarios.id %>)"
           >
             Eliminar usuario
           </button>
-          <div
-            class="invisible-eliminar-usuario invisible-eliminar-usuario-userAdmin"
-            id="eliminar-user-<%= usuarios.id %>"
-          >
-            <p>¿Está seguro que desea eliminar este usuario?</p>
-            <div class="eliminar-usuario-container">
-              <button
-                onclick="eliminarUsuario(<%=usuarios.id%>)"
-                class="input-button button-enteros button-modificar"
-              >
-                No
-              </button>
-              <form
-                class="jaja"
-                action="/users/eliminarUser/<%= usuarios.id %>?_method=DELETE"
-                method="POST"
-              >
+
+          <!-- MODAL DE ELIMINAR-->
+          <div id="<%= usuarios.id %>" class="modal-eliminar-usuario">
+
+            <!-- Modal content -->
+            <div class="modal-content-eliminar-usuario">
+              <p>¿Está seguro que desea eliminar este usuario?</p>
+              <div class="eliminar-usuario-container">
                 <button
-                  type="submit"
-                  class="input-button button-enteros button-eliminar"
+                  class="input-button button-enteros input-button-cancel-delete"
                 >
-                  Si
+                  No
                 </button>
-              </form>
+                <form
+                  action="/users/eliminarUser/<%= usuarios.id %>?_method=DELETE"
+                  method="POST"
+                >
+                  <button
+                    type="submit"
+                    class="input-button button-enteros button-eliminar"
+                  >
+                    Si
+                  </button>
+                </form>
+              </div>
             </div>
+          
           </div>
+
+          
         </div>
           <% } %> 
         

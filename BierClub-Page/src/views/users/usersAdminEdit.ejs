@@ -15,8 +15,39 @@
 		<%- include('../partials/nav.ejs', userLogged) %>
 	</header>
     <div class="container-users">
+
+        <!-- MODAL DE ELIMINAR-->
+        <div id="<%= usuarios.id %>" class="modal-eliminar-usuario modal-eliminar-un-usuario">
+
+            <!-- Modal content -->
+            <div class="modal-content-eliminar-usuario">
+              <p>¿Está seguro que desea eliminar este usuario?</p>
+              <div class="eliminar-usuario-container">
+                <button
+                  class="input-button button-enteros input-button-cancel-delete"
+                >
+                  No
+                </button>
+                <form
+                  action="/users/eliminarUser/<%= usuarios.id %>?_method=DELETE"
+                  method="POST"
+                >
+                  <button
+                    type="submit"
+                    class="input-button button-enteros button-eliminar"
+                  >
+                    Si
+                  </button>
+                </form>
+              </div>
+            </div>
+          
+          </div>
+
+
+
         <h1>Usuario: <%= usuarios.name %></h1>
-        <section class="usuarios-listaCompleta">
+        <section class="usuarios-listaCompleta usuario-lista-unica">
             <div class="usuarios-lista">
                 <form action="/users/usersAdmin/<%= usuarios.id %>" method="POST">
                 <div class="container-input">
@@ -46,12 +77,12 @@
                 
                 </form>
 
-                <form class="jaja" action="/users/perfil/eliminar/<%= usuarios.id %>?_method=DELETE" method="POST">
-                        <button type="submit" class="input-button button-enteros button-eliminar">Eliminar usuario</button>
-                </form>
+                
+                <button onclick="eliminarUsuario(<%= usuarios.id %>)" class="input-button button-enteros button-eliminar">Eliminar usuario</button>
+                
 
-                </section>
-                </div>
+            </section>
+        </div>
             	
 
 </body>
