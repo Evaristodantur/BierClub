@@ -21,19 +21,25 @@
 
             <!-- Modal content -->
             <div class="modal-content-eliminar-usuario">
-              <p>¿Está seguro que desea eliminar este usuario?</p>
-              <div class="eliminar-usuario-container">
+              <p style="text-align: center;">¿Está seguro que desea eliminar este usuario?</p>
+              <div class="eliminar-usuario-container" style="width: 100%; display: flex;">
+
                 <button
                   class="input-button button-enteros input-button-cancel-delete"
+                  style="width: 80%;"
                 >
                   No
                 </button>
+
                 <form
+                style="width: 100%; display: flex; justify-content: space-around; margin-left: 0;"
                   action="/users/eliminarUser/<%= usuarios.id %>?_method=DELETE"
                   method="POST"
                 >
+                
                   <button
                     type="submit"
+                    style="width: 80%; margin-left: 0;"
                     class="input-button button-enteros button-eliminar"
                   >
                     Si
