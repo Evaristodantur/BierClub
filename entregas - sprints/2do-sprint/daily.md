@@ -10,6 +10,7 @@
    Para hacer hoy: 
   - pasar imagenes en ProductDetail
   - Quienes somos - pagina con la descripcion de los developers.
+  - Mostrar imagen en productEdit - cuando el producto si tenga imagen
 
 
 ### 🗓️ 02/3/21
