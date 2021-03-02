@@ -1,5 +1,18 @@
 # Dailies
 
+
+### 🗓️ 02/3/21
+  Terminado:
+  - Search funcional en navbar
+  - Mejora de diseño userEdit 
+  - Mejora de diseño userAdmin
+  - Modal al eliminar un usuario
+  
+   Para hacer hoy: 
+  - Diseño y estilo del modal al eliminar un usuario
+  - Armar readme de como instalar y correr el proyecto
+
+
 ### 🗓️ 01/3/21
   Terminado:
   - NavBar funcional
@@ -12,6 +25,7 @@
   - Search funcional en navbar
   - Mejora de diseño userEdit 
   - Mejora de diseño userAdmin
+  - Modal al eliminar un usuario
 
 
 ### 🗓️ 25/2/21
