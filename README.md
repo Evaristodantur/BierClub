@@ -11,10 +11,10 @@ Por el momento envíos en la provincia de Tucumán, pero apuntamos a mejorar en 
 ## Tecnologias usadas:
 
 <div align="center">
-  <a href="#">
+  <a href="https://es.wikipedia.org/wiki/HTML">
 		<img title="HTML 5" alt="HTML 5" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" width="40" height="40" />
 	</a>
-  <a href="#">
+  <a href="https://developer.mozilla.org/es/docs/Web/CSS">
 		<img title="CSS" alt="CSS" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" width="40" height="40" />
 	</a>
   <a href="https://getbootstrap.com/">
