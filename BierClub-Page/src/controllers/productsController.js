@@ -467,7 +467,10 @@ let productsController = {
         //Busca todas las categorias, y el producto - los renderiza junto a la vista /productEdit/:id
         db.Categories.findAll()
             .then(categories => {
-                db.Products.findByPk(idUrl)
+                db.Products.findByPk(idUrl,
+                    {
+                        include: [{association: "images"}]
+                    })
                     .then(product => {
                         product ? (res.render('products/productEdit', {producto: product, categories: categories, userLogged : req.session.usuarioLogueado})) : res.render('error', { userLogged : req.session.usuarioLogueado });
                     });

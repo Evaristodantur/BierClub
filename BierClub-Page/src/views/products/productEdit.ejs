@@ -91,10 +91,15 @@
             </div>
   
           </div>
-
+          
           <!-- IMAGEN -->
           <div class="imagenPrev">
-            <img src="/images/productos/product-image-not-available.jpg" alt="muestra de producto">
+            <% if(producto.images.length == 0) { %>
+              <img src="/images/productos/product-image-not-available.jpg" alt="muestra de producto">  
+            <% } else { %>
+              <img src='/images/productos/<%= producto.images[0].name %>' alt="muestra de producto">
+            <% } %>
+            
             <div class="fileImagenes">
               <input type="file" name="imagen" multiple="multiple" accept=".jpg,.png">
               <p class="errorDeCarga">*Se permite subir hasta 4 imágenes*</p>
