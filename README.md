@@ -6,7 +6,7 @@ Por el momento envíos en la provincia de Tucumán, pero apuntamos a mejorar en 
 
 ## Links: [**Retrospectivas**](https://github.com/Evaristodantur/BierClub/blob/master/entregas%20-%20sprints/2do-sprint/retro.md) y [**Dailies**](https://github.com/Evaristodantur/BierClub/blob/master/entregas%20-%20sprints/2do-sprint/daily.md) 📝
 
-## [¿Como correr el proyecto? <- Click Me!](https://github.com/Evaristodantur/BierClub/blob/master/entregas%20-%20sprints/Usuarios-Login/Como%20correr%20el%20proyecto.md)
+## [¿Como correr el proyecto? <- Click Me!](https://github.com/Evaristodantur/BierClub/blob/master/entregas%20-%20sprints/Como%20correr%20el%20proyecto.md)
 
 ## Funcionalidad 🧰:
 
