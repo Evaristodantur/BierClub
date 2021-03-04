@@ -18,26 +18,137 @@ div.about-us .seccion-about-us {
   width: 60%;
 }
 
-div.about-us .seccion-about-us img.img-about-us {
-  width: 100%;
+.que-es-bierclub {
+  text-align: center;
 }
 
-/* ==========================================================================
-   RESOLUCION: 1024 hacia abajo
-   ========================================================================== */
-@media (max-width: 1024px) {
-  div.about-us .seccion-about-us {
-    width: 80%;
+.quienes-la-desarrollaron {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.desarrollador-info {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desarrollador-info img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.desarrollador-info img:hover {
+  opacity: 0.8;
+  filter: contrast(75%); 
+  -webkit-filter: contrast(75%); 
+  filter: sepia(75%); 
+  -webkit-filter: sepia(75%);
+  animation-name: animateImageOpacity;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animateImageOpacity {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.linkedin-developer, .github-developer {
+  text-decoration: none;
+  color: black;
+}
+
+.linkedin-developer {
+  color: #0e76a8;
+}
+
+.linkedin-developer:hover, .github-developer:hover {
+  opacity: 0.75;
+}
+
+.desarrollador-info a i {
+  font-size: 2.75em;
+}
+
+@media (max-width: 1600px) {
+  .desarrollador-info {
+    width: 25%;
   }
 }
 
-/* ==========================================================================
-   RESOLUCION: 950 hacia abajo
-   ========================================================================== */
-@media (max-width: 950px) {
+@media (max-width: 1300px) {
+  .desarrollador-info {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1200px) {
   body .about-us {
     /* Display & Box Model */
     padding-top: 5rem;
     padding-bottom: 3%;
+  }
+
+  .que-es-bierclub {
+    width: 90%;
+  }
+
+  .quienes-la-desarrollaron {
+    width: 90%;
+  }
+
+  .desarrollador-info {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1024px) {
+  
+  .quienes-la-desarrollaron {
+    width: 95%;
+  }
+}
+
+@media (max-width: 975px) {
+  
+  .quienes-la-desarrollaron {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 975px) {
+  
+  .quienes-la-desarrollaron {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 900px) {
+  .desarrollador-info {
+    margin-bottom: 15px;
+  }
+
+  .quienes-la-desarrollaron {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .desarrollador-info {
+    width: 100%;
+  }
+  
+  .desarrollador-info img {
+    height: 200px;
+    width: 200px;
   }
 }
