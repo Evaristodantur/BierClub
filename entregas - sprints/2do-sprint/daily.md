@@ -6,6 +6,8 @@
   - Mostrar imagen en productEdit - cuando el producto si tenga imagen
   
    Para hacer hoy: 
+  - Pagina suscripcion laptop Suscripcion
+  - Pagina suscripcion mobile Suscripcion
   - pasar imagenes en ProductDetail
 
 
@@ -17,7 +19,6 @@
   - Crop de imagen en bierclub page
   
    Para hacer hoy: 
-  - pasar imagenes en ProductDetail
   - Quienes somos - pagina con la descripcion de los developers.
   - Mostrar imagen en productEdit - cuando el producto si tenga imagen
 
