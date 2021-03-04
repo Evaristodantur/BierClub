@@ -4,6 +4,8 @@
   Terminado:
   - Quienes somos - pagina con la descripcion de los developers.
   - Mostrar imagen en productEdit - cuando el producto si tenga imagen
+  - Perfil - modificar y sacar la parte de ver compras
+  - Agregar hovers en perfil
   
    Para hacer hoy: 
   - Pagina suscripcion laptop Suscripcion
