@@ -190,7 +190,12 @@ let mainController = {
             
           } else {
             //YA esta suscripto
-            res.redirect('/');
+
+            res.render('suscripcion', 
+            {
+              userLogged : req.session.usuarioLogueado, 
+              msgErrorYaSuscrito: 'Este usuario ya se encuentra suscripto a nuestra membresia'
+            });
           }
           
         });

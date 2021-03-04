@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="/stylesheets/suscripcion.css"/>
 	<link rel="stylesheet" href="/stylesheets/styles.css"/>
 	<link rel='stylesheet' href='/stylesheets/__footer.css'/>
+	<script type="text/javascript" src="/js/suscripcion.js"></script>
 </head>
 
 <body>
@@ -18,6 +19,17 @@
 	
 	<div class="productDetail suscripcion">
 
+		<% if(typeof msgErrorYaSuscrito != "undefined") { %>
+			<div class="modal-miembro-ya-suscripto">
+
+				<!-- Modal content -->
+				<div class="modal-content-miembro-ya-suscripto">
+				  <span class="close-miembro-ya-suscripto"><i class="far fa-times-circle "></i></span>
+				  <p style="text-align: center;"><%= msgErrorYaSuscrito %> </p>
+				</div>
+			  </div>
+		<% } %> 
+		
 		<!-- SECCION DETALLE DEL PRODUCTO/IMAGEN -->
 		<section class="seccion-producto">
 	
