@@ -50,6 +50,10 @@
   margin-bottom: 10px;
 }
 
+.container-users .button-eliminar:hover {
+  background-color: rgb(150, 22, 22);
+}
+
 
 
 
@@ -63,9 +67,14 @@
 
 .container-users .button-modificar,
 .container-users .input-button-cancel-delete {
-  background-color: blue;
+  background-color: rgb(35, 35, 145);
   margin-left: 10px;
   margin-bottom: 10px;
+}
+
+.container-users .button-modificar:hover,
+.container-users .input-button-cancel-delete:hover {
+  background-color: rgb(68, 68, 196);
 }
 
 .container-users .container-input {

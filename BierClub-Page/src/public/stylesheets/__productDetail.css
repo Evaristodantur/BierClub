@@ -449,6 +449,10 @@ section.productos article.producto button.btn-producto {
   border-radius: 10px;
 }
 
+section.productos article.producto button.btn-producto:hover {
+  background-color: rgb(29, 29, 29);
+}
+
 section.productos article.producto button.hoverproducto {
   opacity: 0;
   margin: 0;
