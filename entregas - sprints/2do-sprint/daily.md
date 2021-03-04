@@ -1,5 +1,14 @@
 # Dailies
 
+### 🗓️ 04/3/21
+  Terminado:
+  - Quienes somos - pagina con la descripcion de los developers.
+  - Mostrar imagen en productEdit - cuando el producto si tenga imagen
+  
+   Para hacer hoy: 
+  - pasar imagenes en ProductDetail
+
+
 ### 🗓️ 03/3/21
   Terminado:
   - Diseño y estilo del modal al eliminar un usuario
