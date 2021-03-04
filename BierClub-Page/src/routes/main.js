@@ -28,6 +28,8 @@ router.get('/about-us', mainController.aboutUs);
 /* GET     /suscripcion         page. */
 router.get('/suscripcion', mainController.suscripcion);
 
+/* POST     /buySuscription         page. */
+router.post('/buySuscription', mainController.buySuscription);
 
 /**********************************CONTACTO*******************************************/
 

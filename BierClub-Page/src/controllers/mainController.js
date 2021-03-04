@@ -162,6 +162,46 @@ let mainController = {
     },
 
 
+    //  /suscripcion
+    buySuscription : (req, res, next) => {
+      
+      let userLogged = req.session.usuarioLogueado   
+
+      if(userLogged) {
+        db.Users.findOne({
+          where: {
+            id: userLogged.id,
+            suscription_status: 0
+          }
+        })
+        .then(user => {
+          console.log(user);
+
+          if(user) {
+            db.Users.update({
+              suscription_status: 1
+            },{
+              where: {
+                id: userLogged.id
+              }
+            })
+  
+            res.redirect('/thanksforbuying');
+            
+          } else {
+            //YA esta suscripto
+            res.redirect('/');
+          }
+          
+        });
+        
+      } else {
+        res.redirect('/users/login')
+      }
+      
+    },
+
+
 
 
 
