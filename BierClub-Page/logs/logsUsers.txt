@@ -1453,3 +1453,8 @@ El usuario registrado es:
 Nombre: diego
 Email: die@gmail.com
 *************************************************************
+Se registró un usuario el 4/3/2021 15:29:14
+El usuario registrado es:
+Nombre: diego
+Email: diego@gmail.com
+*************************************************************

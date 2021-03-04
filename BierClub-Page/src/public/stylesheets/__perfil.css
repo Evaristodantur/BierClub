@@ -49,11 +49,7 @@ body .login-register {
 }
 
 .login-register .perfil-total .perfil-izquierda {
-  width: 25%;
-}
-
-.login-register .perfil-total .perfil-derecha {
-  width: 55%;
+  width: 30%;
 }
 
 .login-register .perfil-total .perfil-izquierda li {
@@ -75,14 +71,15 @@ body .login-register {
   width: 60%;
   color: white;
   background-color: #daa520;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 5px 75px 5px 75px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .login-register .perfil-total .perfil-izquierda a:hover {
-  cursor: pointer;
+  background-color: #a8811e;
 }
+
 
 .invisible-eliminar-usuario {
   display: none;
@@ -126,6 +123,15 @@ body .login-register {
   background-color: red;
 }
 
+.form-eliminar .button-eliminar:hover,
+.login-register
+  .formulario-perfil
+  form.formulario
+  div.campo-input
+  button.ultimoCampo:hover {
+  background-color: rgb(173, 26, 26);
+}
+
 .form-eliminar .button-eliminar,
 .eliminar-usuario-container .boton-eliminar {
   color: white;
@@ -138,6 +144,15 @@ body .login-register {
 .eliminar-usuario-container .boton-eliminar {
   width: 45%;
   background-color: blue;
+}
+
+.eliminar-usuario-container .boton-eliminar:hover,
+.login-register
+  .formulario-perfil
+  form.formulario
+  div.campo-input
+  button.modificar-datos:hover {
+  background-color: rgb(31, 31, 161);
 }
 
 .boton-eliminar:hover {
@@ -252,6 +267,10 @@ body .login-register {
   font-size: 24px;
 }
 
+.login-register .formulario-perfil .form-perfil .fa-times-circle:hover {
+  color: rgb(124, 25, 25);
+}
+
 @media (min-width: 1025px) and (max-width: 1400px) {
   .login-register .formulario-perfil {
     width: 57%;
@@ -320,5 +339,9 @@ body .login-register {
 
   .login-register .perfil-total .perfil-izquierda {
     width: 90%;
+  }
+
+  .login-register .perfil-total .perfil-izquierda a {
+    padding: 5px 50px 5px 50px;
   }
 }
