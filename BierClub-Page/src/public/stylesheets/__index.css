@@ -1,7 +1,7 @@
 /* ==========================================================================
    BANNER - CARRUSEL - SLICE
    ========================================================================== */
-.home section div.banner {
+/* .home section div.banner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +10,56 @@
 .home section div.banner img {
   display: block;
   width: 100%;
+} */
+
+.sliderBannerHome {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imagesBanner {
+  display: flex;
+  width: 100%;
+}
+
+.imagesBanner img {
+  width: 100%;
+  transition: all 0.15s ease;
+}
+
+.imagesBanner input {
+  display: none;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.dots label {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid rgb(218, 165, 32) 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+
+.dots label:hover {background: rgb(218, 165, 32);}
+#img1:checked ~ .m1 {
+  margin-left: 0;
+}
+#img2:checked ~ .m2 {
+  margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+  margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+  margin-left: -300%;
 }
 
 /* ==========================================================================
@@ -544,6 +594,19 @@
   .home main section.productos article.producto img {
     height: 235px;
   }
+  
+  .imagesBanner  {
+    justify-content: flex-end;
+  }
+
+  .imagesBanner img {
+    height: 40vh;
+    width: auto;
+  }
+
+  .dots {
+    display: none;
+  }
 }
 
 /* ==========================================================================
@@ -637,9 +700,7 @@
     overflow-x: hidden;
   }
 
-  .home section div.banner img {
-    width: 750px;
-  }
+  
 
   /*SECCION - PRODUCTOS*/
   .home main section.productos {
@@ -716,6 +777,7 @@
    RESOLUCION: 400 hacia abajo
    ========================================================================== */
 @media (max-width: 400px) {
+
   .home main section.productos article.producto img {
     height: 261px;
   }
