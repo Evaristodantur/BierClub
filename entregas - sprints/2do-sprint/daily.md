@@ -1,5 +1,16 @@
 # Dailies
 
+### 🗓️ 05/3/21
+  Terminado:
+  - Pagina suscripcion laptop Suscripcion
+  - Pagina suscripcion mobile Suscripcion
+  - Loader en compra
+  
+   Para hacer hoy: 
+  - Carrousel imagenes en home
+  - pasar imagenes en ProductDetail
+
+
 ### 🗓️ 04/3/21
   Terminado:
   - Quienes somos - pagina con la descripcion de los developers.
@@ -10,7 +21,7 @@
    Para hacer hoy: 
   - Pagina suscripcion laptop Suscripcion
   - Pagina suscripcion mobile Suscripcion
-  - pasar imagenes en ProductDetail
+  - Loader en compra
 
 
 ### 🗓️ 03/3/21
