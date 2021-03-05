@@ -158,7 +158,25 @@ let mainController = {
 
     //  /suscripcion
     suscripcion : (req, res, next) => {
-        res.render('suscripcion', {userLogged : req.session.usuarioLogueado});
+
+          db.Products.findAll({
+            include: [{association: "images"}], 
+            order: [
+                ['id', 'DESC']
+            ]
+        }).then(products => {
+            db.Categories.findAll({
+                where: {
+                    status: 1
+                }
+            })
+                .then(categories => {
+                  res.render('suscripcion', {userLogged : req.session.usuarioLogueado, productosRelacionados: products});            
+                })
+
+            
+        });
+        //res.render('suscripcion', {userLogged : req.session.usuarioLogueado});
     },
 
 
@@ -190,12 +208,31 @@ let mainController = {
             
           } else {
             //YA esta suscripto
+            
 
-            res.render('suscripcion', 
-            {
-              userLogged : req.session.usuarioLogueado, 
-              msgErrorYaSuscrito: 'Este usuario ya se encuentra suscripto a nuestra membresia'
-            });
+            db.Products.findAll({
+              include: [{association: "images"}], 
+              order: [
+                  ['id', 'DESC']
+              ]
+          }).then(products => {
+              db.Categories.findAll({
+                  where: {
+                      status: 1
+                  }
+              })
+                  .then(categories => {
+                    res.render('suscripcion', {
+                      userLogged : req.session.usuarioLogueado, 
+                      productosRelacionados: products,
+                      msgErrorYaSuscrito: 'Este usuario ya se encuentra suscripto a nuestra membresia'
+                    });            
+                  })
+  
+              
+          });
+            
+
           }
           
         });

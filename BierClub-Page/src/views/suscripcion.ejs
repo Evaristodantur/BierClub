@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BierClub - Suscripción</title>
 	<link rel="icon" href="/images/faviconLogo.ico"/>
-	<link rel='stylesheet' href='/stylesheets/__nav.css'/>
-	<link rel="stylesheet" href="/stylesheets/suscripcion.css"/>
 	<link rel="stylesheet" href="/stylesheets/styles.css"/>
-	<link rel='stylesheet' href='/stylesheets/__footer.css'/>
+	<link rel="stylesheet" href="/stylesheets/suscripcion.css"/>
 	<script type="text/javascript" src="/js/suscripcion.js"></script>
+	<script type="text/javascript" src="/js/productDetail.js"></script>
+	
 </head>
 
 <body>
@@ -50,23 +50,18 @@
 		  <section class="detalle-producto">
   
 			<!-- TITULO -->
-			<div class="titulo-producto">
-			  <h1>The U.S. Microbrewed Beer Clube</h1>
-			  <p>Quality Craft Beers from America’s Best Brewers</p>
-			</div>
-
 			<div>
-				<h3>$400 por Mes + 1 cerveza gratis</h3>
+			  <h1 style="text-align: center;">Membrecia de BierClub</h1>
+			  <p style="text-align: center;">¡Las mejores cervezas de toda Argentina solo por $400 por Mes + 1 abridor GRATIS! </p>
 			</div>
 	
 			<!-- DESCRIPCION DE LA IMAGEN -->
 			<div class="descripcion-producto">
-				<p>Your membership will include:</p>
+				<h4 style="text-decoration: underline;">Tu membrecia incluira:</h4>
 				<ul>
-					<li>Twelve, 12 oz. hand-crafted beers each month from two different lightly distributed U.S. Microbreweries. You'll get four different beer styles, three of each style.</li>
-					<li>Our Monthly Newsletter with detailed tasting notes, beer profiles, brewery histories, and suggested food pairings.</li>
-					<li>FREE bartender's bottle opener with all orders of 3 shipments or more.</li>
-					<li>No auto-renewal when you choose a fixed-duration between 2-12 shipments.</li>
+					<li>Cada mes recibiras 12 cervezas lupuladas hechas a mano por los mejores distribuidores del pais. Ademas, se incluira 4 diferentes tipos de cervezas.</li>
+					<li>Nuestra notificacion mensual detallara diferentes sabores, perfiles e incluira una sugerencia de comida.</li>
+					<li>Abridor de cerveza exclusivos cada mes!</li>
 				</ul>
 			</div>
   
@@ -81,7 +76,21 @@
 		  
 		</section>
 
-		
+
+
+
+		<!-- PRODUCTOS RELACIONADOS -->
+		<div style="margin-top: 40px;">
+			<h1 class="titulo-productosRelacionado">Productos de Interes</h1>
+		</div>
+	  
+		  <%- include('./partials/productosRelacionados.ejs', productosRelacionados) %>
+
+
+
+
+
+
 
 		
 	  </div>
