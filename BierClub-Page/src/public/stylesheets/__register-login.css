@@ -131,6 +131,13 @@ body .login-register {
 .login-register form.formulario p.contraseña-olvidada a {
   color: black;
 }
+
+.login-register form.formulario p.contraseña-olvidada a:hover {
+  color: #cf9500;
+  text-decoration: none;
+}
+
+
 .login-register form.formulario div.campo-input .error-total,
 .login-register form.formulario div.terminos .error-terminosCondiciones {
   color: red;
