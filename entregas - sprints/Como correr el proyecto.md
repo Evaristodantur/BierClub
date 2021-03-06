@@ -50,6 +50,7 @@
 
 - Entrar con tu IDE, y abrir el archivo 'config.js' encontrado en la carpeta '\BierClub-Page\src\database\config'
 - Verificar que el username, password y database se vinculen con tu base de datos local
+- Preferentemente usar Google Chrome
 
 ![Posibles problemas al inicializar el proyecto](https://i.imgur.com/EDzum1Q.png)
 
