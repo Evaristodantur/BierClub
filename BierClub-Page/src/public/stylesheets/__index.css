@@ -1,16 +1,6 @@
 /* ==========================================================================
    BANNER - CARRUSEL - SLICE
    ========================================================================== */
-/* .home section div.banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home section div.banner img {
-  display: block;
-  width: 100%;
-} */
 
 .sliderBannerHome {
   position: relative;
@@ -44,11 +34,14 @@
   border-radius: 50%;
   border: solid rgb(218, 165, 32) 3px;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 2s fade;
   margin: 5px;
 }
 
-.dots label:hover {background: rgb(218, 165, 32);}
+.dots label:hover {
+  background: rgb(218, 165, 32);
+}
+
 #img1:checked ~ .m1 {
   margin-left: 0;
 }
@@ -57,9 +50,6 @@
 }
 #img3:checked ~ .m3 {
   margin-left: -200%;
-}
-#img4:checked ~ .m4 {
-  margin-left: -300%;
 }
 
 /* ==========================================================================
