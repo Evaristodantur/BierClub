@@ -4,6 +4,44 @@ window.addEventListener('DOMContentLoaded', () => {
       location.reload();
     };
 
+    function imagenesPreview() {
+        let imagenes = document.querySelectorAll('.imagen-producto-previews img');
+        let imagenPrincipal = document.querySelector('.imagen-producto-principal');
+
+
+        if(window.innerWidth < 480) {
+            let i=-1;
+
+            setInterval(() => {
+                if(i >= imagenes.length) {
+                    i=0;
+                } else {
+                    i++;
+                }
+
+                tempImagenPrincipal = imagenPrincipal.getAttribute('src');
+                tempImgPrev = imagenes[i].getAttribute('src');
+
+                imagenes[i].setAttribute('src', tempImagenPrincipal);
+                imagenPrincipal.setAttribute('src', tempImgPrev);
+
+            }, 5000)
+        } else {
+            for(let i=0; i < imagenes.length; i++) {
+                imagenes[i].addEventListener('click', () => {
+                    let tempImagenPrincipal = imagenPrincipal.getAttribute('src');
+                    let tempImgPrev = imagenes[i].getAttribute('src');
+    
+                    imagenes[i].setAttribute('src', tempImagenPrincipal);
+                    imagenPrincipal.setAttribute('src', tempImgPrev);
+                })
+            }
+        }
+        
+    }
+    
+
+
 
     /* ==========================================================================
    SLIDER DE PRODUCTOS EN STOCK
@@ -85,6 +123,7 @@ function addProductNoPageReload() {
     }
 }
 
+imagenesPreview();
 productosRelacionadosSlider();
 addProductNoPageReload();
 
