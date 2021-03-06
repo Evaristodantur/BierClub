@@ -1,8 +1,21 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-  /* window.onresize = function () {
-    location.reload();
-  }; */
+  function autoImageSlider() {
+    let dots = document.querySelectorAll('.imagesBanner input');
+
+    let i=0;
+    setInterval(function(){ 
+          
+        if(i < dots.length) {
+          dots[i].checked = true;
+          i++;
+        } else {
+          i=0;
+        }
+      }, 5000)
+  }
+  
+  
 
   /* ==========================================================================
    MODAL DE NEWSLETTER NOTIFICATION
@@ -267,6 +280,7 @@ window.addEventListener('DOMContentLoaded', () => {
     
 
   //Ejecucion de Funciones
+  autoImageSlider();
   productosNovedadesSlider();
   productosStockSlider();
   addProductNoPageReload();

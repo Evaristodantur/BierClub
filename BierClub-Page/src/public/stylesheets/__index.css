@@ -42,13 +42,13 @@
   background: rgb(218, 165, 32);
 }
 
-#img1:checked ~ .m1 {
+#img1SliderHome:checked ~ .imgCheck1 {
   margin-left: 0;
 }
-#img2:checked ~ .m2 {
+#img2SliderHome:checked ~ .imgCheck2 {
   margin-left: -100%;
 }
-#img3:checked ~ .m3 {
+#img3SliderHome:checked ~ .imgCheck3 {
   margin-left: -200%;
 }
 
