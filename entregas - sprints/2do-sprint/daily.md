@@ -1,26 +1,33 @@
 # Dailies
 
+### 🗓️ 06/3/21
+  Terminado:
+  - Carrusel imágenes en home
+  
+   Para hacer hoy: 
+  - Pasar imagenes en ProductDetail
+
+
 ### 🗓️ 05/3/21
   Terminado:
-  - Pagina suscripcion laptop Suscripcion
-  - Pagina suscripcion mobile Suscripcion
+  - Página suscripción laptop Suscripción
+  - Página suscripción mobile Suscripción
   - Loader en compra
   
    Para hacer hoy: 
-  - Carrousel imagenes en home
-  - pasar imagenes en ProductDetail
+  - Carrusel imágenes en home
 
 
 ### 🗓️ 04/3/21
   Terminado:
-  - Quienes somos - pagina con la descripcion de los developers.
+  - Quienes somos - pagina con la descripción de los developers.
   - Mostrar imagen en productEdit - cuando el producto si tenga imagen
   - Perfil - modificar y sacar la parte de ver compras
   - Agregar hovers en perfil
   
    Para hacer hoy: 
-  - Pagina suscripcion laptop Suscripcion
-  - Pagina suscripcion mobile Suscripcion
+  - Pagina suscripción laptop Suscripción
+  - Pagina suscripción mobile Suscripción
   - Loader en compra
 
 
@@ -32,7 +39,7 @@
   - Crop de imagen en bierclub page
   
    Para hacer hoy: 
-  - Quienes somos - pagina con la descripcion de los developers.
+  - Quienes somos - página con la descripción de los developers.
   - Mostrar imagen en productEdit - cuando el producto si tenga imagen
 
 
@@ -54,9 +61,9 @@
   Terminado:
   - NavBar funcional
   - Implementar log out en user controller
-  - Agregar validacion de usuario administrador en nav
+  - Agregar validación de usuario administrador en nav
   - Agregar a href para administrar productos o usuarios siendo admin
-  - Fix: No permitir borrar el usuario administrador que esta logueado
+  - Fix: No permitir borrar el usuario administrador que está logueado
   
    Para hacer hoy: 
   - Search funcional en navbar
