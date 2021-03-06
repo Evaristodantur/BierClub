@@ -1,5 +1,13 @@
 # Dailies
 
+### 🗓️ 07/3/21
+  Terminado:
+  - Pasar imagenes en ProductDetail
+  
+   Para hacer hoy: 
+  
+
+
 ### 🗓️ 06/3/21
   Terminado:
   - Carrusel imágenes en home
