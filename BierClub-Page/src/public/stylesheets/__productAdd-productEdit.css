@@ -296,8 +296,6 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
     margin-left: 20px;
   }
 
-
-
   /*BLOQUE IMGFILE - CATEGORIA*/
   div.fileImagenes {
     width: 60%;
@@ -362,9 +360,12 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
     width: 75%;
   }
 
-  .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
+  .productAdd
+    form.formulario-carga
+    div.flex-imgPrev-detalle
+    div.imagenPrev
+    img {
     margin-right: 0;
-    
   }
 
   div.fileImagenes {
@@ -432,7 +433,11 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
     margin-right: 0;
   }
 
-  .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
+  .productAdd
+    form.formulario-carga
+    div.flex-imgPrev-detalle
+    div.imagenPrev
+    img {
     width: 250px;
     height: 250px;
   }
@@ -473,12 +478,7 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
   .flex-botones-publicar button#reset {
     width: 90%;
   }
-
 }
-
-
-
-
 
 /* ==========================================================================
    RESOLUCION: 480 hacia abajo
@@ -493,9 +493,12 @@ div.campo-nombre-precio-cantidad .descuento input#descuento {
     right: 27px;
   }
 
-  .productAdd form.formulario-carga div.flex-imgPrev-detalle div.imagenPrev img {
+  .productAdd
+    form.formulario-carga
+    div.flex-imgPrev-detalle
+    div.imagenPrev
+    img {
     width: 225px;
     height: 225px;
   }
-
 }

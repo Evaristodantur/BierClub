@@ -79,17 +79,16 @@ body div.container-carrito {
   width: 20%;
 }
 .container-carrito .producto-precio {
-width: 15%;
+  width: 15%;
 }
 
-.container-carrito .producto-cantidad{
-width: 10%;
+.container-carrito .producto-cantidad {
+  width: 10%;
 }
 
-.container-carrito .producto-precio-total{
-width: 20%;
+.container-carrito .producto-precio-total {
+  width: 20%;
 }
-
 
 /* ==========================================================================
    SECCION RECUADRO DE TOTAL
@@ -335,7 +334,6 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   color: #ffd56cd7;
 }
 
-
 /* ==========================================================================
    RESOLUCION: 950 hacia abajo - HOVER, ANIMACIONES
    ========================================================================== */
@@ -384,7 +382,11 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     width: 65vw;
   }
 
-  .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .estilo-letras-producto {
     font-size: 0.95em;
   }
 }
@@ -398,12 +400,20 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     width: 30%;
   }
 
-  .container-carrito div.productos-carrito div.productos div.producto-carrito img.producto-imagen-carrito {
+  .container-carrito
+    div.productos-carrito
+    div.productos
+    div.producto-carrito
+    img.producto-imagen-carrito {
     width: 100px;
     height: 100px;
   }
 
-  .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .estilo-letras-producto {
     font-size: 0.9em;
   }
 }
@@ -443,18 +453,15 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION 480-768
    ========================================================================== */
 @media (min-width: 525px) and (max-width: 767px) {
-
   body div.container-carrito {
     padding-top: 0;
   }
 
   .container-carrito h1.titulo {
-  /* Display & Box Model */
+    /* Display & Box Model */
     margin-top: 50px;
     margin-bottom: 10px;
   }
-
-  
 
   /*SECCION PRODUCTOS FILA*/
   .container-carrito div.productos-carrito {
@@ -477,8 +484,6 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     flex-direction: column;
   }
 
-  
-
   .container-carrito
     div.productos-carrito
     div.productos
@@ -488,13 +493,20 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     height: 200px;
   }
 
-  .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .estilo-letras-producto {
     width: 50%;
     text-align: left;
-    
   }
 
-  .container-carrito .productos-carrito .productos .producto-carrito .producto-nombre {
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .producto-nombre {
     text-align: center;
     width: 90%;
   }
@@ -518,8 +530,6 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   .container-carrito .cupones {
     margin-top: 15px;
   }
-
-  
 }
 
 /* ==========================================================================
@@ -531,12 +541,10 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   }
 
   .container-carrito h1.titulo {
-  /* Display & Box Model */
+    /* Display & Box Model */
     margin-top: 50px;
     margin-bottom: 10px;
   }
-
-  
 
   /*SECCION PRODUCTOS FILA*/
   .container-carrito div.productos-carrito {
@@ -559,8 +567,6 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     flex-direction: column;
   }
 
-  
-
   .container-carrito
     div.productos-carrito
     div.productos
@@ -570,13 +576,20 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     height: 200px;
   }
 
-  .container-carrito .productos-carrito .productos .producto-carrito .estilo-letras-producto {
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .estilo-letras-producto {
     width: 50%;
     text-align: left;
-    
   }
 
-  .container-carrito .productos-carrito .productos .producto-carrito .producto-nombre {
+  .container-carrito
+    .productos-carrito
+    .productos
+    .producto-carrito
+    .producto-nombre {
     text-align: center;
     width: 80%;
   }
@@ -592,7 +605,6 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     width: 100%;
   }
 
-
   .container-carrito .productos-carrito .productos hr.hr-carrito {
     margin-left: 0;
   }
@@ -601,8 +613,6 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   .container-carrito .cupones {
     margin-top: 15px;
   }
-
-
 
   /*RECUADRO TOTAL*/
   .container-carrito .productos-carrito .recuadro-total {
@@ -624,7 +634,6 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   .container-carrito .cupones {
     margin-top: 0px;
   }
-  
 }
 /* ==========================================================================
    RESOLUCION 0-400

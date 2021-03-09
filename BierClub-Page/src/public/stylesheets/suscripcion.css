@@ -9,7 +9,7 @@ body {
 
   /* Otras */
   background-color: rgb(228, 228, 228);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
 
@@ -17,7 +17,6 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-
 
 /* The Modal (background) */
 .modal-miembro-ya-suscripto {
@@ -29,9 +28,9 @@ body {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -46,12 +45,18 @@ body {
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
   animation-name: animateModalYaSosMiembro;
-  animation-duration: 0.75s
+  animation-duration: 0.75s;
 }
 
 @keyframes animateModalYaSosMiembro {
-  from {top: -500px; opacity: 0}
-  to {top: 0; opacity: 1}
+  from {
+    top: -500px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 /* The Close Button */

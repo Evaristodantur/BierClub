@@ -45,21 +45,26 @@ div.about-us .seccion-about-us {
 
 .desarrollador-info img:hover {
   opacity: 0.8;
-  filter: contrast(75%); 
-  -webkit-filter: contrast(75%); 
-  filter: sepia(75%); 
+  filter: contrast(75%);
+  -webkit-filter: contrast(75%);
+  filter: sepia(75%);
   -webkit-filter: sepia(75%);
   animation-name: animateImageOpacity;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 
 /* Add Animation */
 @keyframes animateImageOpacity {
-  from {opacity: 0}
-  to {opacity: 1}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.linkedin-developer, .github-developer {
+.linkedin-developer,
+.github-developer {
   text-decoration: none;
   color: black;
 }
@@ -68,7 +73,8 @@ div.about-us .seccion-about-us {
   color: #0e76a8;
 }
 
-.linkedin-developer:hover, .github-developer:hover {
+.linkedin-developer:hover,
+.github-developer:hover {
   opacity: 0.75;
 }
 
@@ -109,14 +115,12 @@ div.about-us .seccion-about-us {
 }
 
 @media (max-width: 1024px) {
-  
   .quienes-la-desarrollaron {
     width: 95%;
   }
 }
 
 @media (max-width: 975px) {
-  
   .quienes-la-desarrollaron {
     width: 100%;
     flex-wrap: wrap;
@@ -124,7 +128,6 @@ div.about-us .seccion-about-us {
 }
 
 @media (max-width: 975px) {
-  
   .quienes-la-desarrollaron {
     width: 100%;
     flex-wrap: wrap;
@@ -146,7 +149,7 @@ div.about-us .seccion-about-us {
   .desarrollador-info {
     width: 100%;
   }
-  
+
   .desarrollador-info img {
     height: 200px;
     width: 200px;

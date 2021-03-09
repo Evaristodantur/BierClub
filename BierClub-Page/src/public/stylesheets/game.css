@@ -6,7 +6,7 @@
 }
 
 .homeroStyle {
-  background-image: url('/game/homero.gif');
+  background-image: url("/game/homero.gif");
   background-size: 280px 280px;
   position: absolute;
   width: 280px;

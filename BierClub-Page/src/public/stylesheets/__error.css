@@ -56,7 +56,6 @@ div.container-error {
   div.container-error {
     padding-top: 70px;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -72,18 +71,16 @@ div.container-error {
   .container-error button:hover .fa-chevron-left {
     padding-right: 0px;
   }
-
 }
 
 @media (max-width: 550px) {
   .container-error img {
     width: 300px;
   }
-  
+
   .container-error h1 {
     font-size: x-large;
   }
-
 }
 
 @media (max-width: 350px) {

@@ -54,13 +54,6 @@
   background-color: rgb(150, 22, 22);
 }
 
-
-
-
-
-
-
-
 .container-users .invisible-eliminar-usuario p {
   text-align: center;
 }
@@ -101,7 +94,6 @@
   justify-content: space-evenly;
 }
 
-
 /* MODAL ELIMINAR */
 .modal-eliminar-usuario {
   display: none; /* Hidden by default */
@@ -112,8 +104,8 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -123,21 +115,22 @@
   padding: 20px;
   border: 1px solid #888;
   width: 30%; /* Could be more or less, depending on screen size */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: animeEliminarUser;
-  animation-duration: 0.5s
+  animation-duration: 0.5s;
 }
-
-
 
 /* Add Animation */
 @keyframes animeEliminarUser {
-  from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
-
-
-
 
 @media (max-width: 1250px) {
   /* Modal Content/Box */
@@ -145,7 +138,6 @@
     width: 45%; /* Could be more or less, depending on screen size */
   }
 }
-
 
 @media (max-width: 1000px) {
   .container-users .usuarios-listaCompleta {

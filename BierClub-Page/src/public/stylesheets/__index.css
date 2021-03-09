@@ -103,8 +103,8 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
-  width:100%;
-  height:300px;
+  width: 100%;
+  height: 300px;
 }
 
 .home main section.productos div.btnAnt {
@@ -326,7 +326,7 @@
   text-shadow: 0 0 5px #000;
 }
 .home div.banner-parallax {
-  background-image: url('/images/home/banners/banner1.jpg');
+  background-image: url("/images/home/banners/banner1.jpg");
 
   /* Display & Box Model */
   height: 63vh;
@@ -348,14 +348,13 @@
   padding-left: 10px;
   padding-right: 10px;
   border: 1px solid white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .home div.banner-parallax div.banner-texto:hover {
   background-color: black;
-  border-radius: 8px;  
+  border-radius: 8px;
 }
-
 
 /* ==========================================================================
    MODAL-NEWSLETTER
@@ -397,11 +396,6 @@
   border: 0;
   border-radius: 8px;
 }
-
-
-
-
-
 
 /* ==========================================================================
    RESOLUCION: 1600 hacia abajo
@@ -584,8 +578,8 @@
   .home main section.productos article.producto img {
     height: 235px;
   }
-  
-  .imagesBanner  {
+
+  .imagesBanner {
     justify-content: flex-end;
   }
 
@@ -690,8 +684,6 @@
     overflow-x: hidden;
   }
 
-  
-
   /*SECCION - PRODUCTOS*/
   .home main section.productos {
     width: 100%;
@@ -767,7 +759,6 @@
    RESOLUCION: 400 hacia abajo
    ========================================================================== */
 @media (max-width: 400px) {
-
   .home main section.productos article.producto img {
     height: 261px;
   }

@@ -207,8 +207,8 @@ body .products-catalogo {
   img {
   /* Display & Box Model */
   object-fit: cover;
-  width:100%;
-  height:300px;
+  width: 100%;
+  height: 300px;
 
   /* Otras */
   border-top-left-radius: 8px;
@@ -281,9 +281,8 @@ body .products-catalogo {
   .columna-productos
   .producto
   button.modificar-producto:hover {
-    background: rgb(32, 33, 99);
-  }
-
+  background: rgb(32, 33, 99);
+}
 
 .products-catalogo
   .seccion-filtro-muestra-productos
@@ -303,8 +302,8 @@ body .products-catalogo {
   .columna-productos
   .producto
   button.eliminar-producto:hover {
-    background: rgb(134, 37, 37);
-  }
+  background: rgb(134, 37, 37);
+}
 
 .products-catalogo
   .seccion-filtro-muestra-productos
@@ -432,8 +431,8 @@ body .products-catalogo {
   .columna-productos
   .producto
   button.btn-agregarAlCarrito:hover {
-    background-color: rgb(29, 29, 29);
-  }
+  background-color: rgb(29, 29, 29);
+}
 
 .products-catalogo
   .seccion-filtro-muestra-productos
@@ -443,7 +442,6 @@ body .products-catalogo {
   opacity: 1;
   transition: 0.2s;
   cursor: pointer;
-  
 }
 
 /* ==========================================================================
@@ -530,8 +528,8 @@ body .products-catalogo {
   .no-yes-button
   .borrarProducto-form
   button#eliminarProducto:hover {
-    background: rgb(197, 63, 63);
-  }
+  background: rgb(197, 63, 63);
+}
 
 /* ==========================================================================
    RESOLUCION: 1700 hacia abajo

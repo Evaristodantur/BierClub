@@ -1,6 +1,6 @@
 /*----------NAV BAR----------*/
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 .nav1 .nav-backgc .container-nav .navbar a:hover {
-  color: rgb(218, 216, 216)
+  color: rgb(218, 216, 216);
 }
 
 .nav1 .nav-backgc .container-nav .navbar nav .barra {
@@ -115,8 +115,8 @@ body {
   .navcarrito
   .btn-hamburguesa
   a.hamburguesa-icono:hover {
-    color: rgb(218, 216, 216)
-  }
+  color: rgb(218, 216, 216);
+}
 
 /* ==========================================================================
 DROPDOWN MENU
@@ -217,7 +217,6 @@ MENU HAMBURGUESA MOBILE
   color: #796022;
 }
 
-
 .nav1
   .nav-backgc
   .mobile-hamburguesa-menu
@@ -236,9 +235,8 @@ MENU HAMBURGUESA MOBILE
   .hamburguesa-top
   .hamburguesa-menu
   .fa-times-circle:hover {
-    color: #9b2525;
-  }
-
+  color: #9b2525;
+}
 
 .fa-angle-down {
   margin-top: 2px;
@@ -292,14 +290,14 @@ SEARCH
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   z-index: 12;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animateSearchNav;
   -webkit-animation-duration: 0.4s;
   animation-name: animateSearchNav;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 
 /* Modal Content */
@@ -327,16 +325,26 @@ SEARCH
 
 /* Add Animation */
 @-webkit-keyframes animateSearchNav {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes animateSearchNav {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
-
-
 
 /* ==========================================================================
 RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA) 
@@ -368,7 +376,6 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
   /* ICONOS DE LA DERECHA (NAV BAR)*/
   .nav1 .nav-backgc .container-nav .navbar .navlogin li a {
     display: none;
-
   }
 
   .nav1
@@ -406,8 +413,7 @@ RESOLUCION 0-950 (CSS DEFAULT PARA EL NAV BAR Y EL HAMBURGUESA)
 
   .modal-content-search-navbar1 {
     width: 60%;
-  }  
-
+  }
 }
 
 /* ==========================================================================
@@ -419,7 +425,13 @@ RESOLUCION 480-768
   }
 
   .nav1 .nav-backgc .container-nav .navbar li,
-  .nav1 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono {
+  .nav1
+    .nav-backgc
+    .container-nav
+    .navbar
+    .navcarrito
+    .btn-hamburguesa
+    a.hamburguesa-icono {
     margin: 0 12px;
   }
 
@@ -442,7 +454,13 @@ RESOLUCION 0-480
     display: none;
   }
 
-  .nav1 .nav-backgc .container-nav .navbar .navcarrito .btn-hamburguesa a.hamburguesa-icono {
+  .nav1
+    .nav-backgc
+    .container-nav
+    .navbar
+    .navcarrito
+    .btn-hamburguesa
+    a.hamburguesa-icono {
     margin: 0 10px;
   }
 

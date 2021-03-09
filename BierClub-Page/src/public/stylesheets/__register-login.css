@@ -137,7 +137,6 @@ body .login-register {
   text-decoration: none;
 }
 
-
 .login-register form.formulario div.campo-input .error-total,
 .login-register form.formulario div.terminos .error-terminosCondiciones {
   color: red;
@@ -219,7 +218,6 @@ body .login-register {
   cursor: pointer;
 }
 
-
 /* ==========================================================================
    MODAL - CONTRASEÑA OLVIDADA
    ========================================================================== */
@@ -232,8 +230,8 @@ body .login-register {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -243,14 +241,20 @@ body .login-register {
   padding: 20px;
   border: 1px solid #888;
   width: 40%; /* Could be more or less, depending on screen size */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: animateModalContentContraseniaOlvidada;
-  animation-duration: 0.5s
+  animation-duration: 0.5s;
 }
 
 @keyframes animateModalContentContraseniaOlvidada {
-  from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 /* The Close Button */
@@ -274,12 +278,12 @@ body .login-register {
   justify-content: center;
 }
 
-.form-inputs-contrasenia-olvidada input{
+.form-inputs-contrasenia-olvidada input {
   width: 75%;
   margin: 0 5% 0 0;
 }
 
-.form-inputs-contrasenia-olvidada button{
+.form-inputs-contrasenia-olvidada button {
   background-color: #daa520;
   color: white;
   border: 0;
