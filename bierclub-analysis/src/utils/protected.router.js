@@ -2,6 +2,13 @@ import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import auth from './auth';
 
+
+/**
+ * Proteccion de ruta
+ * Si la ruta no esta autorizada redirige a login
+ * @param  {Component} {component
+ * @param  {} ...rest}
+ */
 export const ProtectedRoute = ({ component: Component, ...rest }) => {
   return (
     <Route

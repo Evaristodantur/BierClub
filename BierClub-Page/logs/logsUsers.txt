@@ -1458,3 +1458,8 @@ El usuario registrado es:
 Nombre: diego
 Email: diego@gmail.com
 *************************************************************
+Hubo un intento de registro el 9/3/2021 00:31:23
+El usuario a registrarse fue:
+Nombre: 534534534543
+Email: kippes.diego@gmail.com
+*************************************************************

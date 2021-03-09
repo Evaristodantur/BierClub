@@ -353,4 +353,27 @@ body .login-register {
   .login-register .perfil-total .perfil-izquierda a {
     padding: 5px 50px 5px 50px;
   }
+
+  .login-register .formulario-perfil form.formulario div.campo-input {
+    margin-top: 15px;
+  }
+
+  .login-register
+  .formulario-perfil
+  form.formulario
+  div.campo-input
+  input.input-registro {
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 35px;
+  }
+
+  .login-register
+  .formulario-perfil
+  form.formulario
+  div.campo-input
+  button.input-button {
+    height: 25px;
+    padding: 0px;
+  }
 }

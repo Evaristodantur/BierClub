@@ -1,3 +1,6 @@
+/* ==========================================================================
+   MUESTRA DE AGREGADO DE PRODUCTO
+   ========================================================================== */
 function showToast() {
   var toast = document.getElementById('toast');
   toast.classList.add('showToast');

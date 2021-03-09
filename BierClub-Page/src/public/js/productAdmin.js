@@ -1,4 +1,6 @@
-/* MODIFICAR ONCLICK */
+/* ==========================================================================
+   MODAL DE ELIMINAR PRODUCTO
+   ========================================================================== */
 
 function eliminarProducto(productoId) {
   document
@@ -19,7 +21,11 @@ window.addEventListener('DOMContentLoaded', () => {
   window.onresize = function () {
     location.reload();
   };
+
   
+/* ==========================================================================
+   PAUSAR LOADING DE AGREGADO DE PRODUCTO
+   ========================================================================== */
   function addProductNoPageReload() {
     let addProductBtn = document.querySelectorAll('.btn-agregarAlCarrito');
     for (let i = 0; i < addProductBtn.length; i++) {

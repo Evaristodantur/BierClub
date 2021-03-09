@@ -4,6 +4,10 @@ window.addEventListener('DOMContentLoaded', () => {
       location.reload();
     };
 
+
+    /* ==========================================================================
+   IMAGENES PREVIEW
+   ========================================================================== */
     function imagenesPreview() {
         let imagenes = document.querySelectorAll('.imagen-producto-previews img');
         let imagenPrincipal = document.querySelector('.imagen-producto-principal');
@@ -123,6 +127,7 @@ function addProductNoPageReload() {
     }
 }
 
+//Ejecucion de funciones
 imagenesPreview();
 productosRelacionadosSlider();
 addProductNoPageReload();

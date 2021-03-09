@@ -8,7 +8,9 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   
 
-  // DATA FETCH
+  /* ==========================================================================
+   DATA FETCH DE API DEL GOBIERNO
+   ========================================================================== */
   fetch('https://apis.datos.gob.ar/georef/api/departamentos?provincia=tucuman')
     .then(response => {
       return response.json()
@@ -28,7 +30,10 @@ window.addEventListener('DOMContentLoaded', () => {
     })
     .catch(err => console.log(err))
 
-  //CHECK ENVIO SELECCIONADO
+  
+  /* ==========================================================================
+   CHECK ENVIO SELECCIONADO
+   ========================================================================== */
   let tiposDeEnvio = document.querySelectorAll('.select-tipo-envio');
   let seleccionarDepartamento = document.querySelector('.select-departamento');
   seleccionarDepartamento.style.display = 'none';
@@ -45,7 +50,9 @@ window.addEventListener('DOMContentLoaded', () => {
   
   
 
-  // CREACION DE TABLA HEAD DE PRODUCTOS EN RESULUCION MOBILE
+  /* ==========================================================================
+   CREACION DE TABLA HEAD DE PRODUCTOS EN RESULUCION MOBILE
+   ========================================================================== */
   let tagsH3Productos = document.querySelectorAll(
     '.tagsEspecificosDeProductos h3'
   );
@@ -96,7 +103,9 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  //Borrado de todos los productos - MODAL
+  /* ==========================================================================
+   BORRAR TODOS LOS PRODUCTOS - MODAL
+   ========================================================================== */
   let modalBorrarTodosLosProductos = document.querySelector(
     '.modal-deleteAllProducts'
   );
@@ -123,7 +132,10 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  //Validacion de que haya suficiente stock - PC
+
+  /* ==========================================================================
+   VALIDACION DE SUFICIENTE STOCK
+   ========================================================================== */
   let stockProducto = document.querySelectorAll('.stock-pc');
 
   function subtotalGeneralDelCarrito() {
@@ -180,7 +192,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   
-  /* MODAL - NO HAY PRODUCTOS EN EL CARRITO */
+  /* ==========================================================================
+   M0DAL NO HAY PRODUCTOS EN EL CARRITO
+   ========================================================================== */
   var modalNoHayProductos = document.getElementById('modalNoHayProductos');
 
   var spanNoHayProductos = document.getElementsByClassName(
