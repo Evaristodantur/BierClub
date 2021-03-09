@@ -1,11 +1,11 @@
 // Nodemailer, envio de mails
 
-const nodemailer = require('nodemailer');
-require('dotenv').config();
+const nodemailer = require("nodemailer");
+require("dotenv").config();
 
 let nodemailerAssets = (req) => {
   let transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: "gmail",
     auth: {
       user: process.env.email,
       pass: process.env.password,
