@@ -1,11 +1,20 @@
 # Dailies
 
+### 🗓️ 09/3/21
+  Terminado:
+  - Indentar codigo, documentar mas
+  
+   Para hacer hoy: 
+  - Test general de app
+  - Poner mas productos en la base de datos > 5
+
+
 ### 🗓️ 07/3/21
   Terminado:
   - Pasar imagenes en ProductDetail
   
    Para hacer hoy: 
-  
+  - Indentar codigo, documentar más
 
 
 ### 🗓️ 06/3/21
