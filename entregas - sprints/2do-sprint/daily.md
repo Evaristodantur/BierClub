@@ -6,7 +6,7 @@
   
    Para hacer hoy: 
   - Test general de app
-  - Poner mas productos en la base de datos > 5
+  - Poner mas productos y usuarios en la base de datos > 5
 
 
 ### 🗓️ 07/3/21
