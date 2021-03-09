@@ -66,7 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       //VA HACIA ARRIBA
       //Si no se complio los 150p, barney sigue subiendo
-      console.log("up");
       position += 50; //Salta 30px
       count++; //Cuenta cuantas veces salto
       position *= gravity; //Le agrega la gravedad

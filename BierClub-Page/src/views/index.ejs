@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-  
   <head>
     <%- include('./partials/head.ejs') %>
     <title>BierClub</title>
-    
+
     <script type="text/javascript" src="/js/home.js"></script>
   </head>
-  
+
   <body>
-
-    
-
     <!-- NAV -->
     <header><%- include('./partials/nav2.ejs', userLogged) %></header>
 
@@ -20,22 +16,29 @@
       <!-- BANNER PRINCIPAL-->
       <section>
         <div class="sliderBannerHome">
-            <div class="imagesBanner">
-                <input type="radio" name="slide" id="img1SliderHome" checked>
-                <input type="radio" name="slide" id="img2SliderHome">
-                <input type="radio" name="slide" id="img3SliderHome">
-    
-                <img src="/images/home/banner.jpg" class="imgCheck1" alt="img1">
-                <img src="/images/home/banner-novedades.jpg" class="imgCheck2" alt="img2">
-                <img src="/images/home/banners/banner2.jpg" class="imgCheck3" alt="img3">
-            </div>
-            <div class="dots">
-                <label for="img1SliderHome"></label>
-                <label for="img2SliderHome"></label>
-                <label for="img3SliderHome"></label>
-            </div>
-        </div>
+          <div class="imagesBanner">
+            <input type="radio" name="slide" id="img1SliderHome" checked />
+            <input type="radio" name="slide" id="img2SliderHome" />
+            <input type="radio" name="slide" id="img3SliderHome" />
 
+            <img src="/images/home/banner.jpg" class="imgCheck1" alt="img1" />
+            <img
+              src="/images/home/banner-novedades.jpg"
+              class="imgCheck2"
+              alt="img2"
+            />
+            <img
+              src="/images/home/banners/banner2.jpg"
+              class="imgCheck3"
+              alt="img3"
+            />
+          </div>
+          <div class="dots">
+            <label for="img1SliderHome"></label>
+            <label for="img2SliderHome"></label>
+            <label for="img3SliderHome"></label>
+          </div>
+        </div>
       </section>
 
       <%- include('./partials/toast.ejs') %>
@@ -45,8 +48,7 @@
         <div class="titulos">
           <h2>Novedades</h2>
         </div>
-        
-        
+
         <!-- PRODUCTOS-->
         <section class="productos">
           <div class="btnAnt" id="product-prev">
@@ -62,7 +64,8 @@
 
             <article class="producto productNovedades">
               <a href="/products/productDetail/<%= productosNovedades[i].id %>">
-                <% if(typeof productosNovedades[i].images[0] != "undefined") { %>
+                <% if(typeof productosNovedades[i].images[0] != "undefined") {
+                %>
                 <img
                   src="/images/productos/<%= productosNovedades[i].images[0].name %>"
                   alt="<%= productosNovedades[i].name %>"
@@ -77,7 +80,9 @@
               <h2 class="producto-titulo"><%= productosNovedades[i].name %></h2>
               <div class="precio-stock">
                 <div>
-                  <h4 class="etiqueta-precio">$<%= productosNovedades[i].price %></h4>
+                  <h4 class="etiqueta-precio">
+                    $<%= productosNovedades[i].price %>
+                  </h4>
                 </div>
                 <div>
                   <% if (productosNovedades[i].stock > 0) { %>
@@ -87,17 +92,24 @@
                   <% } %>
                 </div>
               </div>
-              <form action="/carts/addProduct/<%= productosNovedades[i].id %>" method="POST" onclick="return ajaxGo()">
+              <form
+                action="/carts/addProduct/<%= productosNovedades[i].id %>"
+                method="POST"
+                onclick="return ajaxGo()"
+              >
                 <% if (productosNovedades[i].stock > 0) { %>
-                  <button class="btn-producto hoverproducto" type="submit" onclick="showToast()">
-                    <i class="fas fa-plus"></i> Añadir al Carrito
-                  </button>
-                  <% } else { %>
-                  <button class="btn-producto hoverproducto" type="submit">
-                    <i class="fas fa-plus"></i> Añadir al Carrito
-                  </button>
+                <button
+                  class="btn-producto hoverproducto"
+                  type="submit"
+                  onclick="showToast()"
+                >
+                  <i class="fas fa-plus"></i> Añadir al Carrito
+                </button>
+                <% } else { %>
+                <button class="btn-producto hoverproducto" type="submit">
+                  <i class="fas fa-plus"></i> Añadir al Carrito
+                </button>
                 <% } %>
-                
               </form>
             </article>
             <% } %>
@@ -118,7 +130,9 @@
         <div class="banner-parallax">
           <a href="/suscripcion">
             <div class="banner-texto">
-              <h3><i class="fas fa-beer"></i> ¿Quieres cerveza todos los meses?</h3>
+              <h3>
+                <i class="fas fa-beer"></i> ¿Quieres cerveza todos los meses?
+              </h3>
             </div>
           </a>
         </div>
@@ -146,7 +160,9 @@
             >
           </li>
           <li>
-            <a href="/products/productsFilter?ordenar=mayor-precio">Mayor Precio</a>
+            <a href="/products/productsFilter?ordenar=mayor-precio"
+              >Mayor Precio</a
+            >
           </li>
         </ul>
       </section>
@@ -186,16 +202,25 @@
               <h2 class="producto-titulo"><%= productosEnStock[i].name %></h2>
               <div class="precio-stock">
                 <div>
-                  <h4 class="etiqueta-precio">$<%= productosEnStock[i].price %></h4>
+                  <h4 class="etiqueta-precio">
+                    $<%= productosEnStock[i].price %>
+                  </h4>
                 </div>
                 <div>
                   <h5 class="etiqueta-stock">Stock Disponible</h5>
                 </div>
               </div>
-              <form action="/carts/addProduct/<%= productosEnStock[i].id %>" method="POST">
-                <button class="btn-producto hoverproducto" type="submit" onclick="showToast()">
-                <i class="fas fa-plus"></i> Añadir al Carrito
-              </button>
+              <form
+                action="/carts/addProduct/<%= productosEnStock[i].id %>"
+                method="POST"
+              >
+                <button
+                  class="btn-producto hoverproducto"
+                  type="submit"
+                  onclick="showToast()"
+                >
+                  <i class="fas fa-plus"></i> Añadir al Carrito
+                </button>
               </form>
             </article>
             <% } %>
@@ -256,5 +281,4 @@
     <!-- FOOTER -->
     <footer><%- include('./partials/footer.ejs') %></footer>
   </body>
-  
 </html>

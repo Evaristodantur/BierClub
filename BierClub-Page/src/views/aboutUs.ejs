@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-  	<head>
-		<title>BierClub - Sobre nosotros</title>
-		<%- include('./partials/head.ejs') %>
-	</head>
-<body>
-	<header>
-		<%- include('./partials/nav.ejs', userLogged) %>
-	</header>
-	
-		<div class="about-us">
-			<section class="que-es-bierclub">
-				<h1>¿Que es BierClub?</h1>
-				<p>BierClub es un E-Commerce de cervezas artesanales. Este proyecto se basa en muchos tipos de cervezas alrededor de todo el país.</p>
-				<h2>¿Quienes la desarrollaron?</h2>
-			</section>
-			<section class="quienes-la-desarrollaron">
-				<div class="desarrollador-info">
-					<img src="/images/about-us/evaristo-dantur.jfif" alt="">
-					<h4 style="margin: 0;">Evaristo Dantur</h4>
-					<div class="linkedin-github">
-						<a class="linkedin-developer" href="https://www.linkedin.com/in/evaristo-dantur-2634371a6/"><i class="fab fa-linkedin"></i></a>
-						<a class="github-developer" href="https://github.com/Evaristodantur"><i class="fab fa-github-square"></i></a>
-					</div>
-				</div>
-				<div class="desarrollador-info">
-					<img src="/images/about-us/diego-kippes.jpg" alt="">
-					<h4 style="margin: 0;">Diego Kippes</h4>
-					<div class="linkedin-github">
-						<a class="linkedin-developer" href="https://www.linkedin.com/in/diegokippes/"><i class="fab fa-linkedin"></i></a>
-						<a class="github-developer" href="https://github.com/dkippes"><i class="fab fa-github-square"></i></a>
-					</div>
-				</div>
-				<div class="desarrollador-info">
-					<img src="/images/about-us/santiago-tejerina.jfif" alt="">
-					<h4 style="margin: 0;">Santiago Tejerina</h4>
-					<div class="linkedin-github">
-						<a class="linkedin-developer" href="https://www.linkedin.com/in/santiago-tejerina-53a30b1b8/"><i class="fab fa-linkedin"></i></a>
-						<a class="github-developer" href="https://github.com/santitejerina"><i class="fab fa-github-square"></i></a>
-					</div>
-				</div>
-			</section>
-		</div>
+  <head>
+    <title>BierClub - Sobre nosotros</title>
+    <%- include('./partials/head.ejs') %>
+  </head>
+  <body>
+    <header><%- include('./partials/nav.ejs', userLogged) %></header>
 
-	<footer>
-		<%- include('./partials/footer.ejs') %>
-	</footer>
+    <div class="about-us">
+      <section class="que-es-bierclub">
+        <h1>¿Que es BierClub?</h1>
+        <p>
+          BierClub es un E-Commerce de cervezas artesanales. Este proyecto se
+          basa en muchos tipos de cervezas alrededor de todo el país.
+        </p>
+        <h2>¿Quienes la desarrollaron?</h2>
+      </section>
+      <section class="quienes-la-desarrollaron">
+        <div class="desarrollador-info">
+          <img src="/images/about-us/evaristo-dantur.jfif" alt="" />
+          <h4 style="margin: 0">Evaristo Dantur</h4>
+          <div class="linkedin-github">
+            <a
+              class="linkedin-developer"
+              href="https://www.linkedin.com/in/evaristo-dantur-2634371a6/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a class="github-developer" href="https://github.com/Evaristodantur"
+              ><i class="fab fa-github-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="desarrollador-info">
+          <img src="/images/about-us/diego-kippes.jpg" alt="" />
+          <h4 style="margin: 0">Diego Kippes</h4>
+          <div class="linkedin-github">
+            <a
+              class="linkedin-developer"
+              href="https://www.linkedin.com/in/diegokippes/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a class="github-developer" href="https://github.com/dkippes"
+              ><i class="fab fa-github-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="desarrollador-info">
+          <img src="/images/about-us/santiago-tejerina.jfif" alt="" />
+          <h4 style="margin: 0">Santiago Tejerina</h4>
+          <div class="linkedin-github">
+            <a
+              class="linkedin-developer"
+              href="https://www.linkedin.com/in/santiago-tejerina-53a30b1b8/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a class="github-developer" href="https://github.com/santitejerina"
+              ><i class="fab fa-github-square"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
 
-</body>
+    <footer><%- include('./partials/footer.ejs') %></footer>
+  </body>
 </html>

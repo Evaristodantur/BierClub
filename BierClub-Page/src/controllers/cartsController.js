@@ -134,7 +134,6 @@ let mainController = {
 
     
     deleteAllProducts: (req, res, next) => {
-      //console.log(req.params.id);
 
       let userLogged = req.session.usuarioLogueado;
 
@@ -232,7 +231,7 @@ let mainController = {
                 //Saco el stock del producto ya comprado de la DB
                 db.Products.findByPk(productsInCart[i].product_id)
                   .then(subProductStock => {
-                    //console.log(subProductStock);
+
                     db.Products.update({
                         stock: (subProductStock.stock - req.body.stock[i])
                       },{
@@ -292,26 +291,7 @@ let mainController = {
       
         })
       
-    },
-
-
-
-
-
-
-
-
-
-
-
-
-    itemsView: (req, res, next) => {
-        db.Products.findAll({
-            include: [{association: "images"}]
-        }).then(products => {
-            res.render('vistaDeItems', { productos : products });
-        });
-   }
+    }
 }
 
 module.exports = mainController;

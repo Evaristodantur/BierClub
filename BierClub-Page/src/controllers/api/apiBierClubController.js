@@ -1,8 +1,7 @@
-let db = require('../../database/models');
-const bcrypt = require('bcryptjs');
+let db = require("../../database/models");
+const bcrypt = require("bcryptjs");
 
 let apiBierClubController = {
-
   login: (req, res) => {
     db.Users.findOne({
       where: {
@@ -19,7 +18,7 @@ let apiBierClubController = {
             status: 200,
           },
           data: {
-            message: 'User Logueado',
+            message: "User Logueado",
           },
         });
       } else {
@@ -28,7 +27,7 @@ let apiBierClubController = {
             status: 404,
           },
           data: {
-            message: '* Error de credenciales',
+            message: "* Error de credenciales",
           },
         });
       }
@@ -42,8 +41,8 @@ let apiBierClubController = {
         res.json({
           meta: {
             status: 200,
-            state: 'OK',
-            url: '/api/bierclub' + req.url,
+            state: "OK",
+            url: "/api/bierclub" + req.url,
           },
           getTotalRegisteredUsers: userRegistered,
         });
@@ -53,7 +52,7 @@ let apiBierClubController = {
           meta: {
             status: 500,
             state: err,
-            url: '/api/bierclub' + req.url,
+            url: "/api/bierclub" + req.url,
           },
         });
       });
@@ -66,8 +65,8 @@ let apiBierClubController = {
         res.json({
           meta: {
             status: 200,
-            state: 'OK',
-            url: '/api/bierclub' + req.url,
+            state: "OK",
+            url: "/api/bierclub" + req.url,
           },
           getTotalProductsAdded: productsAdded,
         });
@@ -77,7 +76,7 @@ let apiBierClubController = {
           meta: {
             status: 500,
             state: err,
-            url: '/api/bierclub' + req.url,
+            url: "/api/bierclub" + req.url,
           },
         });
       });
@@ -88,7 +87,7 @@ let apiBierClubController = {
     db.Cart_Product.findAll({
       include: [
         {
-          association: 'carts',
+          association: "carts",
           where: { status: 1 },
         },
       ],
@@ -102,8 +101,8 @@ let apiBierClubController = {
         res.json({
           meta: {
             status: 200,
-            state: 'OK',
-            url: '/api/bierclub' + req.url,
+            state: "OK",
+            url: "/api/bierclub" + req.url,
           },
           getTotalSalesMade: total,
         });
@@ -113,7 +112,7 @@ let apiBierClubController = {
           meta: {
             status: 500,
             state: err,
-            url: '/api/bierclub' + req.url,
+            url: "/api/bierclub" + req.url,
           },
         });
       });
@@ -130,8 +129,8 @@ let apiBierClubController = {
         res.json({
           meta: {
             status: 200,
-            state: 'OK',
-            url: '/api/bierclub' + req.url,
+            state: "OK",
+            url: "/api/bierclub" + req.url,
           },
           data: categories,
         });
@@ -141,7 +140,7 @@ let apiBierClubController = {
           meta: {
             status: 500,
             state: err,
-            url: '/api/bierclub' + req.url,
+            url: "/api/bierclub" + req.url,
           },
         });
       });
@@ -151,20 +150,20 @@ let apiBierClubController = {
   getLastProductAdded: (req, res) => {
     db.Products.findOne({
       include: {
-        association: 'images',
+        association: "images",
       },
-      order: [['createdAt', 'DESC']],
+      order: [["createdAt", "DESC"]],
     })
       .then((product) => {
         product.images.forEach((image) => {
-          image.name = 'http://localhost:3000/images/productos/' + image.name;
+          image.name = "http://localhost:3000/images/productos/" + image.name;
         });
 
         res.json({
           meta: {
             status: 200,
-            state: 'OK',
-            url: '/api/bierclub' + req.url,
+            state: "OK",
+            url: "/api/bierclub" + req.url,
           },
           getLastProductAdded: product,
         });
@@ -174,7 +173,7 @@ let apiBierClubController = {
           meta: {
             status: 500,
             state: err,
-            url: '/api/bierclub' + req.url,
+            url: "/api/bierclub" + req.url,
           },
         });
       });
@@ -185,16 +184,16 @@ let apiBierClubController = {
     db.Cart_Product.findOne({
       include: [
         {
-          association: 'carts',
+          association: "carts",
           where: { status: 1 },
         },
       ],
-      order: [['createdAt', 'DESC']],
+      order: [["createdAt", "DESC"]],
     })
       .then((product) => {
         db.Products.findOne({
           include: {
-            association: 'images',
+            association: "images",
           },
           where: {
             id: product.product_id,
@@ -203,25 +202,24 @@ let apiBierClubController = {
           .then((lastProductSold) => {
             lastProductSold.images.forEach((image) => {
               image.name =
-                'http://localhost:3000/images/productos/' + image.name;
+                "http://localhost:3000/images/productos/" + image.name;
             });
 
             res.json({
               meta: {
                 status: 200,
-                state: 'OK',
-                url: '/api/bierclub' + req.url,
+                state: "OK",
+                url: "/api/bierclub" + req.url,
               },
               getLastProductSold: lastProductSold,
             });
-
           })
           .catch((err) => {
             res.json({
               meta: {
                 status: 500,
                 state: err,
-                url: '/api/bierclub' + req.url,
+                url: "/api/bierclub" + req.url,
               },
             });
           });
@@ -231,7 +229,7 @@ let apiBierClubController = {
           meta: {
             status: 500,
             state: err,
-            url: '/api/bierclub' + req.url,
+            url: "/api/bierclub" + req.url,
           },
         });
       });
@@ -241,34 +239,32 @@ let apiBierClubController = {
   getTheMostExpensiveProductSold: (req, res) => {
     db.Products.findOne({
       include: [
-        { association: 'carts', where: { status: 1 } },
-        { association: 'images' },
+        { association: "carts", where: { status: 1 } },
+        { association: "images" },
       ],
-      order: [['price', 'DESC']],
+      order: [["price", "DESC"]],
     })
       .then((product) => {
         //Le agrega URL a la Imagen
         product.images.forEach((image) => {
-          image.name = 'http://localhost:3000/images/productos/' + image.name;
+          image.name = "http://localhost:3000/images/productos/" + image.name;
         });
 
-        
         res.json({
           meta: {
             status: 200,
-            state: 'OK',
-            url: '/api/bierclub' + req.url,
+            state: "OK",
+            url: "/api/bierclub" + req.url,
           },
           getTheMostExpensiveProductSold: product,
         });
-
       })
       .catch((err) => {
         res.json({
           meta: {
             status: 500,
             state: err,
-            url: '/api/bierclub' + req.url,
+            url: "/api/bierclub" + req.url,
           },
         });
       });
@@ -278,18 +274,17 @@ let apiBierClubController = {
   getRegisteredUsers: (req, res) => {
     db.Users.findAll()
       .then((users) => {
-
-        users.map(user => {
+        users.map((user) => {
           return {
-            id: user.id
-          }
-        })
+            id: user.id,
+          };
+        });
 
         res.json({
           meta: {
             status: 200,
-            state: 'OK',
-            url: '/api/bierclub' + req.url,
+            state: "OK",
+            url: "/api/bierclub" + req.url,
           },
           getRegisteredUsers: users.map((user) => {
             return {
@@ -303,16 +298,13 @@ let apiBierClubController = {
             };
           }),
         });
-
-
-        
       })
       .catch((err) => {
         res.json({
           meta: {
             status: 500,
             state: err,
-            url: '/api/bierclub' + req.url,
+            url: "/api/bierclub" + req.url,
           },
         });
       });

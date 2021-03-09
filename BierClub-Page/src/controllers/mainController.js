@@ -40,7 +40,7 @@ let mainController = {
 
 
 
-    //  Home
+    //  Home - Newsletter
     newsletterSuscription : (req, res, next) => {
 
         db.Users.findOne({
@@ -102,7 +102,7 @@ let mainController = {
 
                 Promise.all([productInStock, productsNov])
                   .then((rest) => {
-                    console.log(rest[0]);
+                    
                     res.render('index', {
                       productosEnStock: rest[0],
                       productosNovedades: rest[1],
@@ -116,7 +116,7 @@ let mainController = {
                 //Muestra todos los productos en el home
                 Promise.all([productInStock, productsNov])
                   .then((rest) => {
-                    console.log(rest[0]);
+
                     res.render('index', {
                       productosEnStock: rest[0],
                       productosNovedades: rest[1],
@@ -136,7 +136,7 @@ let mainController = {
 
 
 
-    //  Home
+    //  /game
     game : (req, res, next) => {
 
         //Muestra todos los productos en el home
@@ -176,11 +176,10 @@ let mainController = {
 
             
         });
-        //res.render('suscripcion', {userLogged : req.session.usuarioLogueado});
     },
 
 
-    //  /suscripcion
+    //  /suscripcion - POST
     buySuscription : (req, res, next) => {
       
       let userLogged = req.session.usuarioLogueado   
@@ -193,7 +192,6 @@ let mainController = {
           }
         })
         .then(user => {
-          console.log(user);
 
           if(user) {
             db.Users.update({

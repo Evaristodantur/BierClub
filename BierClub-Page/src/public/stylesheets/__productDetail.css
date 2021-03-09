@@ -322,6 +322,11 @@ IMAGEN
   color: white;
 }
 
+
+
+
+
+
 /* ==========================================================================
    PRODUCTOS RELACIONADOS
    ========================================================================== */
@@ -387,6 +392,8 @@ section.productos div.btnSig {
   margin-right: 1%;
   display: inline-block;
 }
+
+
 
 /* ==========================================================================
    PRODUCTO - PRECIO -STOCK
@@ -483,6 +490,12 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   color: #ffd56cd7;
 }
 
+
+
+
+
+
+
 /* ==========================================================================
    RESOLUCION 950 HACIA ABAJO - ANIMACIONES
    ========================================================================== */
@@ -517,6 +530,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   }
 }
 
+
 /* ==========================================================================
    RESOLUCION 950 HACIA ABAJO - ANIMACIONES
    ========================================================================== */
@@ -540,6 +554,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     height: 275px;
   }
 }
+
 
 /* ==========================================================================
    RESOLUCION: 1500 hacia abajo
@@ -583,6 +598,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   }
 }
 
+
 /* ==========================================================================
    RESOLUCION: 1100 hacia abajo
    ========================================================================== */
@@ -591,6 +607,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     height: 225px;
   }
 }
+
 
 /* ==========================================================================
    RESOLUCION: 768 a 1023
@@ -612,6 +629,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   section.productos article.producto img {
     height: 285px;
   }
+
 }
 
 /* ==========================================================================
@@ -624,6 +642,8 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
     width: 40%;
   }
 }
+
+
 
 /* ==========================================================================
    RESOLUCION: 850 hacia abajo
@@ -670,6 +690,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
   }
 }
 
+
 /* ==========================================================================
    RESOLUCION: 525 a 768
    ========================================================================== */
@@ -705,6 +726,7 @@ section.productos div.btnSig i.fa-chevron-circle-right:hover {
    RESOLUCION: 524 hacia abajo
    ========================================================================== */
 @media (max-width: 524px) {
+  
   /*SECCION - PRODUCTOS*/
   section.productos {
     width: 100%;

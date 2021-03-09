@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  
+
   <style>
     body {
-        overflow: hidden;
+      overflow: hidden;
     }
     .all-width {
       display: flex;
@@ -39,7 +39,7 @@
     .small-bubbles {
       border-radius: 100%;
     }
-    
+
     .mug {
       position: relative;
       width: 20vmin;
@@ -181,7 +181,6 @@
       }
     }
   </style>
-  
 
   <body>
     <div id="loader-all-width" class="all-width">
@@ -193,18 +192,15 @@
         <div class="small-bubbles"></div>
         <div class="drip"></div>
       </div>
-    </div>    
+    </div>
   </body>
   <script>
-      
-    window.addEventListener('DOMContentLoaded', () => { 
-        let divLoader = document.getElementById('loader-all-width')
-        setTimeout(() => {
-            divLoader.style.display = 'none'
-            document.body.style.overflow = 'visible'
-        }, 5000)
-    })
-    
-</script>
-  
+    window.addEventListener("DOMContentLoaded", () => {
+      let divLoader = document.getElementById("loader-all-width");
+      setTimeout(() => {
+        divLoader.style.display = "none";
+        document.body.style.overflow = "visible";
+      }, 5000);
+    });
+  </script>
 </html>

@@ -3,7 +3,9 @@ const router = express.Router();
 
 const apiBierClubController = require("../../controllers/api/apiBierClubController");
 
-/* POST     /users/login                 page. */
+/* ==========================================================================
+   ROUTES /api/bierclub
+   ========================================================================== */
 router.post("/login", apiBierClubController.login);
 
 router.get(

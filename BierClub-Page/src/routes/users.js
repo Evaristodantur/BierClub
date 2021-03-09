@@ -6,7 +6,10 @@ var router = express.Router();
 //Controller
 let usersController = require("../controllers/usersController");
 
-//Middlewares
+
+/* ==========================================================================
+   MIDDLEWARES
+   ========================================================================== */
 let userMiddleware = require("../middlewares/userMiddleware"); //Middleware de Register
 let loginMiddleware = require("../middlewares/loginMiddleware"); //Middleware de Login
 let modificarUserMiddleware = require("../middlewares/modificarUserMiddleware"); //Middleware de modificar usuario
@@ -17,11 +20,11 @@ let authAdminMiddleware = require("../middlewares/authAdminMiddleware"); //Middl
 let perfilOrAdminMiddleware = require("../middlewares/perfilOrAdminMiddleware"); //Middleware de administradores o perfil logueado
 let verifyAccountMiddleware = require("../middlewares/verifyAccountMiddleware"); //Middleware de verified
 
-//Routes
+/* ==========================================================================
+   ROUTES /users
+   ========================================================================== */
 
-/********************************ADMINISTRADOR****************************************/
-
-/* GET     /users/usersAdmin            page. */
+/* GET     /usersAdmin             */
 router.get(
   "/usersAdmin",
   guestMiddleware,
@@ -30,7 +33,7 @@ router.get(
   usersController.usersAdminList
 );
 
-/* GET     /users/usersAdmin             page. */
+/* GET     /usersAdmin              */
 router.get(
   "/usersAdmin/:id",
   guestMiddleware,
@@ -39,15 +42,15 @@ router.get(
   usersController.usersAdminEditView
 );
 
-/* POST     /users/usersAdmin            page. */
+/* POST     /usersAdmin             */
 router.post("/usersAdmin/:id", usersController.usersAdminEdit);
 
 /********************************REGISTER*********************************************/
 
-/* GET     /users/register               page. */
+/* GET     /register                */
 router.get("/register", authMiddleware, usersController.create);
 
-/* POST     /users/register              page. */
+/* POST     /register               */
 router.post(
   "/register",
   userMiddleware,
@@ -57,25 +60,26 @@ router.post(
 
 /**********************************EMAIL VERIFY***************************************/
 
-/* GET     /users/verifyAccount          page. */
+/* GET     /verifyAccount           */
 router.get("/verifyAccount/:id", usersController.verifyAccount);
 
+/* POST     /verifyAccount           */
 router.post("/verifyAccount/:id", usersController.reenviarEmail);
 
 /*********************************LOGIN***********************************************/
 
-/* GET     /users/login                  page. */
+/* GET     /login                   */
 router.get("/login", authMiddleware, usersController.loginRender);
 
-/* POST     /users/login                 page. */
+/* POST     /login                  */
 router.post("/login", loginMiddleware, usersController.loginIniciar);
 
-/* POST     /users/login                 page. */
+/* POST     /login                  */
 router.post("/login/contraseniaOlvidada", usersController.contraseniaOlvidada);
 
 /**********************************PERFIL*********************************************/
 
-/* GET     /users/perfil/:id             page. */
+/* GET     /perfil/:id              */
 router.get(
   "/perfil/:id",
   guestMiddleware,
@@ -84,7 +88,7 @@ router.get(
   usersController.perfilEdit
 );
 
-/* GET     /users/logout             page. */
+/* GET     /logout              */
 router.get(
   "/logout",
   guestMiddleware,
@@ -92,7 +96,7 @@ router.get(
   usersController.userLogOut
 );
 
-/* POST     /users/perfil/:id            page. */
+/* POST     /perfil/:id             */
 router.post(
   "/perfil/:id",
   modificarUserMiddleware,
@@ -103,13 +107,13 @@ router.post(
 
 /**********************************ELIMINAR*******************************************/
 
-/* GET     /users/perfil/pedidos/:id     page. */
+/* GET     /perfil/pedidos/:id      */
 router.get("/perfil/pedidos/:id", usersController.pedidos);
 
-/* GET     /users/perfil/pedidos/:id     page. */
+/* GET     /perfil/pedidos/:id      */
 router.get("/perfil/pedidos/:id", usersController.pedidos);
 
-/* DELETE     /users/perfil/:id          page. */
+/* DELETE     /perfil/:id           */
 router.delete(
   "/eliminarUser/:id",
   guestMiddleware,
@@ -117,7 +121,7 @@ router.delete(
   usersController.eliminarUser
 );
 
-/* DELETE     /users/perfil/:id          page. */
+/* DELETE     /perfil/:id           */
 router.delete(
   "/perfil/eliminarPerfil/:id",
   guestMiddleware,

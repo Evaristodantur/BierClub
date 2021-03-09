@@ -40,8 +40,6 @@ let productsController = {
 
     //  /products - Filtro de Productos
     productFilter : (req, res, next) => {
-        console.log(req.url);
-        console.log(req.query.ordenar);
 
         //Se fija si la url es /products
         if(req.url.includes('/productAdmin')) {
@@ -284,10 +282,8 @@ let productsController = {
 
     //  /products/productDetail/:id - Vista productDetail
     productCategorieFilter : (req, res, next) => {
-        console.log(req.url);
         
-        let categorieSelected = req.query.filtroCategoria
-        console.log(categorieSelected);
+        let categorieSelected = req.query.filtroCategoria;
 
         if(req.url.includes('/productAdmin')) {
             db.Products.findAll({

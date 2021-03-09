@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>   
-   <title>BierClub - Error 404</title>
+  <head>
+    <title>BierClub - Error 404</title>
     <%- include('./partials/head.ejs') %>
   </head>
 
   <header>
     <%- include('./partials/nav.ejs', userLogged) %>
-    <br>
+    <br />
   </header>
   <body class="verify-account-body">
-      <div class="container-error">
-          <div class="container-titulo">
-            <img src="/images/ilustrations/not-found-404.png">
-            <h1>La página que estás buscando no existe o fue eliminada</h1>
-            <button onclick="window.location.href='/'"><i class="fas fa-chevron-left"></i> Volver al Home</button>
-          </div>
-
+    <div class="container-error">
+      <div class="container-titulo">
+        <img src="/images/ilustrations/not-found-404.png" />
+        <h1>La página que estás buscando no existe o fue eliminada</h1>
+        <button onclick="window.location.href='/'">
+          <i class="fas fa-chevron-left"></i> Volver al Home
+        </button>
+      </div>
     </div>
-        
-</body>
+  </body>
 </html>

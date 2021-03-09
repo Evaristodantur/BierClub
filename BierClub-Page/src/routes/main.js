@@ -6,45 +6,48 @@ var router = express.Router();
 //Controller
 let mainController = require("../controllers/mainController");
 
-//Middlewares
+/* ==========================================================================
+   MIDDLEWARES
+   ========================================================================== */
 let contactMiddleware = require("../middlewares/contactMiddleware"); //Assets de contacto
 
-// Routes
+/* ==========================================================================
+   ROUTES /
+   ========================================================================== */
 
-/**********************************HOME*******************************************/
-/* GET    bierclub.com/         page. */
+/* GET    bierclub.com/          */
 router.get("/", mainController.index);
 
-/* GET    bierclub.com/         page. */
+/* GET    bierclub.com/          */
 router.post("/", mainController.newsletterSuscription);
 
 /**********************************ABOUT US***************************************/
 
-/* GET    /about-us             page. */
+/* GET    /about-us              */
 router.get("/about-us", mainController.aboutUs);
 
 /**********************************SUSCRIPCION************************************/
 
-/* GET     /suscripcion         page. */
+/* GET     /suscripcion          */
 router.get("/suscripcion", mainController.suscripcion);
 
-/* POST     /buySuscription         page. */
+/* POST     /buySuscription          */
 router.post("/buySuscription", mainController.buySuscription);
 
 /**********************************CONTACTO*******************************************/
 
-/* GET     /contacto            page.*/
+/* GET     /contacto            */
 router.get("/contact", mainController.contactRender);
 
-/* POST     /contacto           page.*/
+/* POST     /contacto           */
 router.post("/contact", contactMiddleware, mainController.contactSend);
 /**********************************GAME*******************************************/
 
-/* GET     /game            page.*/
+/* GET     /game            */
 router.get("/game", mainController.game);
 /**********************************THANKS FOR BUYING******************************/
 
-/* GET     /thanksForBuying            page.*/
+/* GET     /thanksForBuying            */
 router.get("/thanksForBuying", mainController.thanksForBuying);
 
 module.exports = router;

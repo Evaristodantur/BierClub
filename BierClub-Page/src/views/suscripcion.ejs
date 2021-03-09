@@ -1,103 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BierClub - Suscripción</title>
-	<link rel="icon" href="/images/faviconLogo.ico"/>
-	<link rel="stylesheet" href="/stylesheets/styles.css"/>
-	<link rel="stylesheet" href="/stylesheets/suscripcion.css"/>
-	<script type="text/javascript" src="/js/suscripcion.js"></script>
-	<script type="text/javascript" src="/js/productDetail.js"></script>
-	
-</head>
+    <link rel="icon" href="/images/faviconLogo.ico" />
+    <link rel="stylesheet" href="/stylesheets/styles.css" />
+    <link rel="stylesheet" href="/stylesheets/suscripcion.css" />
+    <script type="text/javascript" src="/js/suscripcion.js"></script>
+    <script type="text/javascript" src="/js/productDetail.js"></script>
+  </head>
 
-<body>
-	<header>
-		<%- include('./partials/nav.ejs', userLogged) %>
-	</header>
-	
-	<div class="productDetail suscripcion">
+  <body>
+    <header><%- include('./partials/nav.ejs', userLogged) %></header>
 
-		<% if(typeof msgErrorYaSuscrito != "undefined") { %>
-			<div class="modal-miembro-ya-suscripto">
+    <div class="productDetail suscripcion">
+      <% if(typeof msgErrorYaSuscrito != "undefined") { %>
+      <div class="modal-miembro-ya-suscripto">
+        <!-- Modal content -->
+        <div class="modal-content-miembro-ya-suscripto">
+          <span class="close-miembro-ya-suscripto"
+            ><i class="far fa-times-circle"></i
+          ></span>
+          <p style="text-align: center"><%= msgErrorYaSuscrito %></p>
+        </div>
+      </div>
+      <% } %>
 
-				<!-- Modal content -->
-				<div class="modal-content-miembro-ya-suscripto">
-				  <span class="close-miembro-ya-suscripto"><i class="far fa-times-circle "></i></span>
-				  <p style="text-align: center;"><%= msgErrorYaSuscrito %> </p>
-				</div>
-			  </div>
-		<% } %> 
-		
-		<!-- SECCION DETALLE DEL PRODUCTO/IMAGEN -->
-		<section class="seccion-producto">
-	
-		  <!-- IMAGEN-PREVIEWS -->
-		  <div class="imagen-producto-previews">
-			
-			  <img class="imagen-previews" src="/images/suscripcion/prueba-2.jpg" alt="Imagenes de ">
-			  <img class="imagen-previews" src="/images/suscripcion/prueba-3.jpg" alt="Imagenes de ">
+      <!-- SECCION DETALLE DEL PRODUCTO/IMAGEN -->
+      <section class="seccion-producto">
+        <!-- IMAGEN-PREVIEWS -->
+        <div class="imagen-producto-previews">
+          <img
+            class="imagen-previews"
+            src="/images/suscripcion/prueba-2.jpg"
+            alt="Imagenes de "
+          />
+          <img
+            class="imagen-previews"
+            src="/images/suscripcion/prueba-3.jpg"
+            alt="Imagenes de "
+          />
+        </div>
 
-		  </div>
-		  
-		  <!-- IMAGEN -->
-		  <div class="imagen-producto">
-			  <img class="imagen-producto-principal" src="/images/suscripcion/prueba-1.jpg" alt="">
-		  </div>
-	
-		  <!-- DETALLE -->
-		  <section class="detalle-producto">
-  
-			<!-- TITULO -->
-			<div>
-			  <h1 style="text-align: center;">Membrecia de BierClub</h1>
-			  <p style="text-align: center;">¡Las mejores cervezas de toda Argentina solo por $400 por Mes + 1 abridor GRATIS! </p>
-			</div>
-	
-			<!-- DESCRIPCION DE LA IMAGEN -->
-			<div class="descripcion-producto">
-				<h4 style="text-decoration: underline;">Tu membrecia incluira:</h4>
-				<ul>
-					<li>Cada mes recibiras 12 cervezas lupuladas hechas a mano por los mejores distribuidores del pais. Ademas, se incluira 4 diferentes tipos de cervezas.</li>
-					<li>Nuestra notificacion mensual detallara diferentes sabores, perfiles e incluira una sugerencia de comida.</li>
-					<li>Abridor de cerveza exclusivos cada mes!</li>
-				</ul>
-			</div>
-  
-			<!-- COMPRAR AHORA -->
-			<div class="comprarAhora">
-				<form action="/buySuscription" method="POST">
-					<button class="btn-comprarAhora" type="submit">¡Ser Miembro Ahora!</button>
-				</form>
-			</div>
+        <!-- IMAGEN -->
+        <div class="imagen-producto">
+          <img
+            class="imagen-producto-principal"
+            src="/images/suscripcion/prueba-1.jpg"
+            alt=""
+          />
+        </div>
 
-		  </section>
-		  
-		</section>
+        <!-- DETALLE -->
+        <section class="detalle-producto">
+          <!-- TITULO -->
+          <div>
+            <h1 style="text-align: center">Membrecia de BierClub</h1>
+            <p style="text-align: center">
+              ¡Las mejores cervezas de toda Argentina solo por $400 por Mes + 1
+              abridor GRATIS!
+            </p>
+          </div>
 
+          <!-- DESCRIPCION DE LA IMAGEN -->
+          <div class="descripcion-producto">
+            <h4 style="text-decoration: underline">Tu membrecia incluira:</h4>
+            <ul>
+              <li>
+                Cada mes recibiras 12 cervezas lupuladas hechas a mano por los
+                mejores distribuidores del pais. Ademas, se incluira 4
+                diferentes tipos de cervezas.
+              </li>
+              <li>
+                Nuestra notificacion mensual detallara diferentes sabores,
+                perfiles e incluira una sugerencia de comida.
+              </li>
+              <li>Abridor de cerveza exclusivos cada mes!</li>
+            </ul>
+          </div>
 
+          <!-- COMPRAR AHORA -->
+          <div class="comprarAhora">
+            <form action="/buySuscription" method="POST">
+              <button class="btn-comprarAhora" type="submit">
+                ¡Ser Miembro Ahora!
+              </button>
+            </form>
+          </div>
+        </section>
+      </section>
 
+      <!-- PRODUCTOS RELACIONADOS -->
+      <div style="margin-top: 40px">
+        <h1 class="titulo-productosRelacionado">Productos de Interes</h1>
+      </div>
 
-		<!-- PRODUCTOS RELACIONADOS -->
-		<div style="margin-top: 40px;">
-			<h1 class="titulo-productosRelacionado">Productos de Interes</h1>
-		</div>
-	  
-		  <%- include('./partials/productosRelacionados.ejs', productosRelacionados) %>
+      <%- include('./partials/productosRelacionados.ejs', productosRelacionados)
+      %>
+    </div>
 
-
-
-
-
-
-
-		
-	  </div>
-
-	<footer>
-		<%- include('./partials/footer.ejs') %>
-	</footer>
-
-</body>
+    <footer><%- include('./partials/footer.ejs') %></footer>
+  </body>
 </html>

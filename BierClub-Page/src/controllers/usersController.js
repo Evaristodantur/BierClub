@@ -226,13 +226,13 @@ let usersController = {
     
     //  /users/login (POST)
     contraseniaOlvidada : (req, res, next) => {
-      console.log(req.body.emailDeCambioContrasenia);
+      
       db.Users.findOne({
         where: {
           email: req.body.emailDeCambioContrasenia,
         },
       }).then(user => {
-        console.log(user);
+
         if(user == null) {
           res.redirect('/users/login');
         } else {

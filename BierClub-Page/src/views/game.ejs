@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="/stylesheets/game.css">
+  <head>
+    <link rel="stylesheet" href="/stylesheets/game.css" />
     <script type="text/javascript" src="/js/game.js"></script>
     <%- include('./partials/head.ejs') %>
     <title>BierClub - Game</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- NAV -->
     <header>
-        <%- include('./partials/nav.ejs', userLogged) %>
-        <br>
+      <%- include('./partials/nav.ejs', userLogged) %>
+      <br />
     </header>
-    
-    
-    <img src="/game/mae-bar.jpg" alt="moe bar" class="moe-bar-img">
-    
+
+    <img src="/game/mae-bar.jpg" alt="moe bar" class="moe-bar-img" />
+
     <div class="grid">
-            <img class="barney" src="/game/barney.gif" alt="barney">
+      <img class="barney" src="/game/barney.gif" alt="barney" />
     </div>
-    
-</body>
-<audio preload="auto">
-    <source src="/game/game.mp3" type="audio/mpeg">
-</audio>
+  </body>
+  <audio preload="auto">
+    <source src="/game/game.mp3" type="audio/mpeg" />
+  </audio>
 </html>
