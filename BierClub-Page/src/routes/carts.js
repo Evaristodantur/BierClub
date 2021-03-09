@@ -1,34 +1,34 @@
 // Routa de página de carrito "bierclub.com/carts/"
 
-let express = require('express');
+let express = require("express");
 let router = express.Router();
 
 //Controller
-let cartsController = require('../controllers/cartsController');
+let cartsController = require("../controllers/cartsController");
 
 //Middleware
-let guestMiddleware = require('../middlewares/guestMiddleware'); //Middleware de invitado, sin usuario
-let verifyAccountMiddleware = require('../middlewares/verifyAccountMiddleware'); //Middleware de verified
+let guestMiddleware = require("../middlewares/guestMiddleware"); //Middleware de invitado, sin usuario
+let verifyAccountMiddleware = require("../middlewares/verifyAccountMiddleware"); //Middleware de verified
 
 // Routes
 /**********************************PRODUCT CART***************************************/
 
 /* GET     /products/productCart                                        page. */
 router.get(
-  '/productCart',
+  "/productCart",
   guestMiddleware,
   verifyAccountMiddleware,
   cartsController.productCart
 );
 
-router.post('/addProduct/:id', cartsController.addProduct);
+router.post("/addProduct/:id", cartsController.addProduct);
 
-router.get('/deleteProduct/:id', cartsController.deleteProductFromCart);
+router.get("/deleteProduct/:id", cartsController.deleteProductFromCart);
 
-router.post('/deleteAllProducts', cartsController.deleteAllProducts);
+router.post("/deleteAllProducts", cartsController.deleteAllProducts);
 
-router.post('/procederAlPago', cartsController.procederAlPago);
+router.post("/procederAlPago", cartsController.procederAlPago);
 
-router.get('/items', cartsController.itemsView);
+router.get("/items", cartsController.itemsView);
 
 module.exports = router;

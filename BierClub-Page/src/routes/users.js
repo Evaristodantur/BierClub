@@ -1,21 +1,21 @@
 // Routa de página de usuarios "bierclub.com/users/"
 
-var express = require('express');
+var express = require("express");
 var router = express.Router();
 
 //Controller
-let usersController = require('../controllers/usersController');
+let usersController = require("../controllers/usersController");
 
 //Middlewares
-let userMiddleware = require('../middlewares/userMiddleware'); //Middleware de Register
-let loginMiddleware = require('../middlewares/loginMiddleware'); //Middleware de Login
-let modificarUserMiddleware = require('../middlewares/modificarUserMiddleware'); //Middleware de modificar usuario
-let authMiddleware = require('../middlewares/authMiddleware'); //Middleware de usuario logueado
-let guestMiddleware = require('../middlewares/guestMiddleware'); //Middleware de invitado, sin usuario
-let logUsersMiddleware = require('../middlewares/logUsersMiddleware'); //Middleware de usuarios registrados (LOG)
-let authAdminMiddleware = require('../middlewares/authAdminMiddleware'); //Middleware de administradores
-let perfilOrAdminMiddleware = require('../middlewares/perfilOrAdminMiddleware'); //Middleware de administradores o perfil logueado
-let verifyAccountMiddleware = require('../middlewares/verifyAccountMiddleware'); //Middleware de verified
+let userMiddleware = require("../middlewares/userMiddleware"); //Middleware de Register
+let loginMiddleware = require("../middlewares/loginMiddleware"); //Middleware de Login
+let modificarUserMiddleware = require("../middlewares/modificarUserMiddleware"); //Middleware de modificar usuario
+let authMiddleware = require("../middlewares/authMiddleware"); //Middleware de usuario logueado
+let guestMiddleware = require("../middlewares/guestMiddleware"); //Middleware de invitado, sin usuario
+let logUsersMiddleware = require("../middlewares/logUsersMiddleware"); //Middleware de usuarios registrados (LOG)
+let authAdminMiddleware = require("../middlewares/authAdminMiddleware"); //Middleware de administradores
+let perfilOrAdminMiddleware = require("../middlewares/perfilOrAdminMiddleware"); //Middleware de administradores o perfil logueado
+let verifyAccountMiddleware = require("../middlewares/verifyAccountMiddleware"); //Middleware de verified
 
 //Routes
 
@@ -23,7 +23,7 @@ let verifyAccountMiddleware = require('../middlewares/verifyAccountMiddleware');
 
 /* GET     /users/usersAdmin            page. */
 router.get(
-  '/usersAdmin',
+  "/usersAdmin",
   guestMiddleware,
   verifyAccountMiddleware,
   authAdminMiddleware,
@@ -32,7 +32,7 @@ router.get(
 
 /* GET     /users/usersAdmin             page. */
 router.get(
-  '/usersAdmin/:id',
+  "/usersAdmin/:id",
   guestMiddleware,
   verifyAccountMiddleware,
   authAdminMiddleware,
@@ -40,16 +40,16 @@ router.get(
 );
 
 /* POST     /users/usersAdmin            page. */
-router.post('/usersAdmin/:id', usersController.usersAdminEdit);
+router.post("/usersAdmin/:id", usersController.usersAdminEdit);
 
 /********************************REGISTER*********************************************/
 
 /* GET     /users/register               page. */
-router.get('/register', authMiddleware, usersController.create);
+router.get("/register", authMiddleware, usersController.create);
 
 /* POST     /users/register              page. */
 router.post(
-  '/register',
+  "/register",
   userMiddleware,
   logUsersMiddleware,
   usersController.store
@@ -58,26 +58,26 @@ router.post(
 /**********************************EMAIL VERIFY***************************************/
 
 /* GET     /users/verifyAccount          page. */
-router.get('/verifyAccount/:id', usersController.verifyAccount);
+router.get("/verifyAccount/:id", usersController.verifyAccount);
 
-router.post('/verifyAccount/:id', usersController.reenviarEmail);
+router.post("/verifyAccount/:id", usersController.reenviarEmail);
 
 /*********************************LOGIN***********************************************/
 
 /* GET     /users/login                  page. */
-router.get('/login', authMiddleware, usersController.loginRender);
+router.get("/login", authMiddleware, usersController.loginRender);
 
 /* POST     /users/login                 page. */
-router.post('/login', loginMiddleware, usersController.loginIniciar);
+router.post("/login", loginMiddleware, usersController.loginIniciar);
 
 /* POST     /users/login                 page. */
-router.post('/login/contraseniaOlvidada', usersController.contraseniaOlvidada);
+router.post("/login/contraseniaOlvidada", usersController.contraseniaOlvidada);
 
 /**********************************PERFIL*********************************************/
 
 /* GET     /users/perfil/:id             page. */
 router.get(
-  '/perfil/:id',
+  "/perfil/:id",
   guestMiddleware,
   verifyAccountMiddleware,
   perfilOrAdminMiddleware,
@@ -86,7 +86,7 @@ router.get(
 
 /* GET     /users/logout             page. */
 router.get(
-  '/logout',
+  "/logout",
   guestMiddleware,
   verifyAccountMiddleware,
   usersController.userLogOut
@@ -94,7 +94,7 @@ router.get(
 
 /* POST     /users/perfil/:id            page. */
 router.post(
-  '/perfil/:id',
+  "/perfil/:id",
   modificarUserMiddleware,
   verifyAccountMiddleware,
   perfilOrAdminMiddleware,
@@ -104,16 +104,14 @@ router.post(
 /**********************************ELIMINAR*******************************************/
 
 /* GET     /users/perfil/pedidos/:id     page. */
-router.get('/perfil/pedidos/:id', usersController.pedidos);
+router.get("/perfil/pedidos/:id", usersController.pedidos);
 
 /* GET     /users/perfil/pedidos/:id     page. */
-router.get('/perfil/pedidos/:id', usersController.pedidos);
-
-
+router.get("/perfil/pedidos/:id", usersController.pedidos);
 
 /* DELETE     /users/perfil/:id          page. */
 router.delete(
-  '/eliminarUser/:id',
+  "/eliminarUser/:id",
   guestMiddleware,
   perfilOrAdminMiddleware,
   usersController.eliminarUser
@@ -121,7 +119,7 @@ router.delete(
 
 /* DELETE     /users/perfil/:id          page. */
 router.delete(
-  '/perfil/eliminarPerfil/:id',
+  "/perfil/eliminarPerfil/:id",
   guestMiddleware,
   perfilOrAdminMiddleware,
   usersController.eliminarPerfil

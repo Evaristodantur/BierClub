@@ -1,61 +1,60 @@
 // Routa de página de productos "bierclub.com/products/"
 
-let express = require('express');
+let express = require("express");
 let router = express.Router();
 
 //Controller
-let productsController = require('../controllers/productsController');
+let productsController = require("../controllers/productsController");
 
 //Middleware
-let multerUpload = require('../middlewares/multerMiddleware'); //Multer Middleware
-let productMiddleware = require('../middlewares/productosMiddleware'); //Product Middleware
-let logProductsMiddleware = require('../middlewares/logProductsMiddleware'); //Log de product Middleware
-let guestMiddleware = require('../middlewares/guestMiddleware'); //Middleware de invitado, sin usuario
-let authAdminMiddleware = require('../middlewares/authAdminMiddleware'); //Admin Middleware
-let verifyAccountMiddleware = require('../middlewares/verifyAccountMiddleware'); //Middleware de verified
+let multerUpload = require("../middlewares/multerMiddleware"); //Multer Middleware
+let productMiddleware = require("../middlewares/productosMiddleware"); //Product Middleware
+let logProductsMiddleware = require("../middlewares/logProductsMiddleware"); //Log de product Middleware
+let guestMiddleware = require("../middlewares/guestMiddleware"); //Middleware de invitado, sin usuario
+let authAdminMiddleware = require("../middlewares/authAdminMiddleware"); //Admin Middleware
+let verifyAccountMiddleware = require("../middlewares/verifyAccountMiddleware"); //Middleware de verified
 
 // Routes
 
 /**********************************PRODUCTOS******************************************/
 
 /* GET     /products                                                    page. */
-router.get('/', productsController.index);
+router.get("/", productsController.index);
 
 /* GET     /products                                                    page. */
-router.get('/productsFilter', productsController.productFilter);
+router.get("/productsFilter", productsController.productFilter);
 
 /* GET     /products                                                    page. */
-router.get('/categorie', productsController.productCategorieFilter);
+router.get("/categorie", productsController.productCategorieFilter);
 
 /* GET     /products                                                    page. */
-router.get('/search', productsController.productSearch);
-
+router.get("/search", productsController.productSearch);
 
 /**********************************PRODUCT DETAIL*************************************/
 
 /* GET     /products/productDetail/:id                                  page. */
-router.get('/productDetail/:id', productsController.productDetail);
+router.get("/productDetail/:id", productsController.productDetail);
 
 /**********************************ADMINISTRADOR**************************************/
 
 /* GET     /products/productAdmin                                       page. */
 router.get(
-  '/productAdmin',
+  "/productAdmin",
   guestMiddleware,
-                    verifyAccountMiddleware,
-                    authAdminMiddleware, 
+  verifyAccountMiddleware,
+  authAdminMiddleware,
   productsController.productAdmin
 );
 
 /* GET     /products                                                    page. */
-router.get('/productAdmin/productsFilter', productsController.productFilter);
+router.get("/productAdmin/productsFilter", productsController.productFilter);
 
 /* GET     /products                                                    page. */
-router.get('/productAdmin/search', productsController.productSearch);
+router.get("/productAdmin/search", productsController.productSearch);
 
 /* GET     /products                                                    page. */
 router.get(
-  '/productAdmin/categorie',
+  "/productAdmin/categorie",
   productsController.productCategorieFilter
 );
 
@@ -63,7 +62,7 @@ router.get(
 
 /* GET     /products/productAdd - Pagina Visual de create               page. */
 router.get(
-  '/productAdd',
+  "/productAdd",
   guestMiddleware,
   verifyAccountMiddleware,
   authAdminMiddleware,
@@ -72,7 +71,7 @@ router.get(
 
 /* POST     /products/productAdd - Crea/almacena el producto             page. */
 router.post(
-  '/productAdd',
+  "/productAdd",
   multerUpload.any(),
   productMiddleware,
   logProductsMiddleware,
@@ -83,7 +82,7 @@ router.post(
 
 /* GET     /products/productEdit/:id - Pagina Visual de productEdit     page. */
 router.get(
-  '/productEdit/:id',
+  "/productEdit/:id",
   guestMiddleware,
   verifyAccountMiddleware,
   authAdminMiddleware,
@@ -92,7 +91,7 @@ router.get(
 
 /* PUT     /products/productEdit/:id - Modifica el producto             page. */
 router.put(
-  '/productEdit/:id',
+  "/productEdit/:id",
   multerUpload.any(),
   productMiddleware,
   logProductsMiddleware,
@@ -103,7 +102,7 @@ router.put(
 
 /* DELETE     /products/productEdit/borrar/:id - Borra el producto      page. */
 router.delete(
-  '/productEdit/delete/:id',
+  "/productEdit/delete/:id",
   guestMiddleware,
   authAdminMiddleware,
   productsController.deleteProduct
