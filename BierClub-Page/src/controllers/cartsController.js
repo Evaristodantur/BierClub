@@ -1,7 +1,4 @@
-let fs = require('fs');
-let path = require('path');
 let db = require("../database/models");
-const {validationResult} = require("express-validator");
 
 
 
@@ -32,11 +29,6 @@ let mainController = {
 
     //  /carts/addProduct/:id - POST
     addProduct: (req, res, next) => {
-        
-        console.log(req.body.comprarAhora);
-        if(typeof req.body.comprarAhora != "undefined") {
-
-        }
 
         let userLogged = req.session.usuarioLogueado        
 
@@ -102,7 +94,6 @@ let mainController = {
 
 
     deleteProductFromCart: (req, res, next) => {
-      console.log(req.params.id);
       
       let userLogged = req.session.usuarioLogueado;
 
