@@ -1,6 +1,5 @@
 # Dailies
 
-
 ### 🗓️ 10/3/21
   Terminado:
   - Poner mas productos y usuarios en la base de datos > 5
@@ -8,6 +7,7 @@
   
    Para hacer hoy: 
   - Test general de app
+  - Deploy de la app
 
 
 ### 🗓️ 09/3/21
