@@ -1622,3 +1622,91 @@ Stock: 645643
 Categoria: Cerveza
 Descripción: Amarillo pálido, algo turbia y muy refrescante! Este híbrido entre una West Coast y una East Coast IPA tiene lo mejor de los dos mundos: de cuerpo medio, con aromas y sabores cítricos tropicales (ananá 🍍, maracuyá y mandarina 🍊).
 *************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 23:26:33
+Producto: Brewhouse Lobos de Mar
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Cerveza
+Descripción: Los Pescadores de Mar del Plata son el Motor de la Cultura de nuestra Ciudad. Héroes que se meten al mar para llevarle el pan a sus familias. Mar del Plata Ciudad Pesquera!
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 23:27:00
+Producto: Cachalote American Ipa
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Cerveza
+Descripción: Es una cerveza de intenso aroma, una alta fermentación y gran aporte de lúpulo, lo que proporciona mayor amargor. color algo pálido y anaranjado, similar al ámbar
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 23:27:36
+Producto: Cheverry Dubbel
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Cerveza
+Descripción: De origen belga, color cobrizo, de cuerpo medio-pleno. Ofrece aromas y sabores complejos dulces y tostados por las maltas especiales y frutales debido a los ésteres generados en la fermentación. Marida muy bien con carnes, quesos fuertes y postres.
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 23:29:19
+Producto: Aussie IPA
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: No Lupuladas
+Descripción: IPA Estilo Australiana muy fácil de tomar, de amargor medio y final seco. El Doble Dry Hop de lupulos Australianos Galaxy y Enigma le dan sabores y aromas tropicales intensos a Mango, Melon, Maracuya y Papaya. 
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 23:29:25
+Producto: Aussie IPA
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: IPA Estilo Australiana muy fácil de tomar, de amargor medio y final seco. El Doble Dry Hop de lupulos Australianos Galaxy y Enigma le dan sabores y aromas tropicales intensos a Mango, Melon, Maracuya y Papaya. 
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 23:31:14
+Producto: Alta Vista Premium Malbec 750
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Vino
+Descripción: Este Tinto está criado en barricas de roble francés por 12 meses. Lo que da como resultado un vino color rubí, con aromas complejos a frutas rojas muy maduras y especies, este Premium Malbec es redondo y posee una gran concentración en boca.
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 23:33:16
+Producto: Altos Las Hormigas Blend Tinto 2018
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Vino
+Descripción: Malbec co-fermentado con Semillón y cortado con Bonarda, la máxima expresión de la tradición de Mendoza. Es un vino de placer con un perfil de sabor único de frutas y flores, con un toque de especias.
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 23:34:41
+Producto: Sagrado el Pedernal
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Vino
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 23:35:13
+Producto: Vino Red Blend
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Vino
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 23:36:01
+Producto: Perro Callejero Malbec
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Vino
+Descripción: Temperatura de servicio para este vino es entre 16º y 18º C, Potencial de guarda 5 años. Decantar por espacio de una hora antes de beberlo. Conservar en lugar fresco, oscuro, y sin vibraciones. Ideal para acompañar un Ragu de cordero.
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 23:36:21
+Producto: Vino Chardon . Esmeralda Bot 750
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Vino
+Descripción: 
+*************************************************************
