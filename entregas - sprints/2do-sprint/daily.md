@@ -1,12 +1,22 @@
 # Dailies
 
+
+### 🗓️ 10/3/21
+  Terminado:
+  - Poner mas productos y usuarios en la base de datos > 5
+  - ProductDetail mostrar o no mostrar stock
+  
+   Para hacer hoy: 
+  - Test general de app
+
+
 ### 🗓️ 09/3/21
   Terminado:
   - Indentar codigo, documentar mas
   
    Para hacer hoy: 
-  - Test general de app
   - Poner mas productos y usuarios en la base de datos > 5
+  - ProductDetail mostrar o no mostrar stock
 
 
 ### 🗓️ 07/3/21
