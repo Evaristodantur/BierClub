@@ -1510,3 +1510,115 @@ Stock: 1100
 Categoria: Vino
 Descripción: 
 *************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:12:11
+Producto: Blest Hop Shot Ipa
+Precio: 225
+Descuento: 20
+Stock: 247
+Categoria: Lupuladas
+Descripción: Nuestra Hop Shot IPA, golpe de lúpulo, es de color ambar – rojizo, aportado por las maltas caramelizadas. Una característica, además del intenso amargor, es el aroma cítrico. Usamos lúpulos nacionales e importados.
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:12:24
+Producto: Cachalote Scotish Export
+Precio: 350
+Descuento: 0
+Stock: 60
+Categoria: Lupuladas
+Descripción: Cerveza de perfil maltoso con baja adición de lúpulo para balancear los sabores.
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:12:37
+Producto: Baum Blonde
+Precio: 230
+Descuento: 0
+Stock: 75
+Categoria: Lupuladas
+Descripción: Estilo de cerveza americana, de color dorado brillante, bien filtrada y cristalina. Aroma y sabor maltoso, levemente frutado. Suave y fácil de tomar debido a su simpleza y baja intensidad alcohólica
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:12:47
+Producto: Tiol Will Survive - DDH Hazy IPA
+Precio: 2700
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: Tiol Will Survive” es una cerveza colaborativa entre @cervezadosdingos, @placebo.brewing y @scottjanish de @sapwoodcellars (USA).  Una cerveza basados en las ultimas investigaciones científicas sobre compuestos aromáticos “sobrevivientes” del lupulo!
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:13:30
+Producto: Rice Rice Baby - Japanese Rice lager
+Precio: 2000
+Descuento: 5
+Stock: 10
+Categoria: Lupuladas
+Descripción: Una Rice Lager, un estilo originariamente japonés pero con un twist Australiano, en colaboración con @cervezalaurus
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:15:11
+Producto: Brewhouse Joker Ipa
+Precio: 500
+Descuento: 0
+Stock: 15
+Categoria: Lupuladas
+Descripción: Una de las más aclamadas de la galaxia, esta cerveza IPA de perfil herbal, terrosa y tropical te cautiva con su sabor y aroma. El Joker siempre esta sonriendo… Destapar bien fría y disfrutar. ¡La cerveza que todo fanático de DC Comics tiene que probar!
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:15:48
+Producto: Brewhouse Monsieur Chocolat
+Precio: 350
+Descuento: 10
+Stock: 0
+Categoria: Lupuladas
+Descripción: La Brewhouse Monsieur Chocolat Stout es una cerveza que lleva un prosceso especial. Madurada en barricas de roble americano ex whisky. Con notas tostadas, a vainilla y una leve presencia de frutos secos.
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:16:02
+Producto: Brewhouse Jack Herer Hemp Neipa
+Precio: 495
+Descuento: 10
+Stock: 150
+Categoria: Lupuladas
+Descripción: Fantásticos Aromas Kogoyares producto de extrasorprendente combinación lupular y de Terpenos Replicants de la flor de la Vida. Frutal, Floral con una base de Cítrica que la hace llevarte a un paseo feliz.
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:17:32
+Producto: Handsome Jack IPA
+Precio: 550
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:17:51
+Producto: Handsome Jack IPA
+Precio: 550
+Descuento: 0
+Stock: 0
+Categoria: No Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:18:10
+Producto: Baum Blonde
+Precio: 230
+Descuento: 0
+Stock: 75
+Categoria: No Lupuladas
+Descripción: Estilo de cerveza americana, de color dorado brillante, bien filtrada y cristalina. Aroma y sabor maltoso, levemente frutado. Suave y fácil de tomar debido a su simpleza y baja intensidad alcohólica
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:18:17
+Producto: Baum Gladstone
+Precio: 225
+Descuento: 0
+Stock: 89
+Categoria: No Lupuladas
+Descripción: Tomando como base la clásica Stout irlandesa, nuestra Gladstone Stout es una cerveza compleja con mucha personalidad y alta tomabilidad. 
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:38:28
+Producto: Cachalote Scotish Export
+Precio: 350
+Descuento: 0
+Stock: 60
+Categoria: Cerveza
+Descripción: Cerveza de perfil maltoso con baja adición de lúpulo para balancear los sabores.
+*************************************************************
+Fecha de creacion/modificación del producto: 9/3/2021 13:38:45
+Producto: ippa Sippa (TDH Imperial Aussie IP)
+Precio: 90
+Descuento: 10
+Stock: 645643
+Categoria: Cerveza
+Descripción: Amarillo pálido, algo turbia y muy refrescante! Este híbrido entre una West Coast y una East Coast IPA tiene lo mejor de los dos mundos: de cuerpo medio, con aromas y sabores cítricos tropicales (ananá 🍍, maracuyá y mandarina 🍊).
+*************************************************************

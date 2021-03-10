@@ -55,72 +55,17 @@
         <section class="detalle-producto">
           <!-- TITULO -->
           <div class="titulo-producto">
-            <h1><%=producto.name%></h1>
+            <h1 style="text-align: center;"><%=producto.name%></h1>
           </div>
 
           <!-- PRECIO NORMAL, DESCONTADO Y DESCUENTO -->
           <div class="fila-precio">
-            <div class="precio-flex">
-              <h5 class="precio-item">Individual</h5>
-              <% if (producto.discount != 0) { %>
-              <h5 class="precio-item">
-                $<%= ((producto.price)-(producto.price/producto.discount
-                )).toFixed(0) %>
-              </h5>
-              <% } else { %>
-              <h5 class="precio-item">$<%=producto.price%></h5>
-              <% } %>
-
-              <div>
-                <h5 class="texto-invisible">¡10% off comprando 3 cervezas!</h5>
-              </div>
-              <div><h5 class="texto-invisible-mobile">¡10% off!</h5></div>
-            </div>
-            <div class="precio-flex">
-              <h5 class="precio-item">3 cervezas</h5>
-
-              <% if (producto.discount != 0) { %>
-              <h5 class="precio-item">
-                $<%= ((producto.price*3)-(producto.price*3/(producto.discount +
-                5))).toFixed(0) %>
-              </h5>
-              <% } else { %>
-              <h5 class="precio-item">$<%= producto.price*3%></h5>
-              <% } %>
-
-              <div>
-                <h5 class="texto-descuento">
-                  ¡<%= producto.discount + 5 %> % off comprando 3 cervezas!
-                </h5>
-              </div>
-              <div>
-                <h5 class="texto-descuento-mobile">
-                  ¡<%= producto.discount + 5 %>% off!
-                </h5>
-              </div>
-            </div>
-            <div class="precio-flex">
-              <h5 class="precio-item">6 cervezas</h5>
-              <% if (producto.discount != 0) { %>
-              <h5 class="precio-item">
-                $<%=((producto.price*6)-(producto.price*6/(producto.discount +
-                10))).toFixed(0)%>
-              </h5>
-              <% } else { %>
-              <h5 class="precio-item">$<%=(producto.price*6)%></h5>
-              <% } %>
-
-              <div>
-                <h5 class="texto-descuento">
-                  ¡<%= producto.discount + 10 %>% off comprando 6 cervezas!
-                </h5>
-              </div>
-              <div>
-                <h5 class="texto-descuento-mobile">
-                  ¡<%= producto.discount + 10 %>% off!
-                </h5>
-              </div>
-            </div>
+            <% if(producto.stock > 0) { %>
+              <p style="text-align: center; color: rgb(43, 116, 43);">¡Existe stock disponible!</p>  
+            <% } else { %>
+              <p  style="text-align: center; color: rgb(158, 36, 36);">¡El producto se encuentra sin stock!</p>  
+            <% } %>
+            
           </div>
 
           
@@ -128,9 +73,11 @@
           <!-- AGREGAR AL CARRITO -->
           <div class="agregarAlcarrito">
             <form action="/carts/addProduct/<%= producto.id %>" method="POST">
-              <button class="btn-agregarAlCarrito" type="submit" onclick="showToast()">
-                Agregar al carrito <i class="fas fa-plus"></i>
-              </button>
+              <% if(producto.stock > 0) { %>
+                <button class="btn-agregarAlCarrito" type="submit" onclick="showToast()">
+                  Agregar al carrito <i class="fas fa-plus"></i>
+                </button>  
+              <% } %>
             </form>
           </div>
 
@@ -138,9 +85,12 @@
           <div class="comprarAhora">
             <form action="/carts/addProduct/<%= producto.id %>" method="POST">
               <input style="display: none;" type="text" name="comprarAhora" value="comprarAhora">
-              <button class="btn-comprarAhora" type="submit">
-                Comprar Ahora
-              </button>
+              <% if(producto.stock > 0) { %>
+                <button class="btn-comprarAhora" type="submit">
+                  Comprar Ahora
+                </button>
+              <% } %>
+              
             </form>
           </div>
 
