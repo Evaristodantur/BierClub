@@ -40,11 +40,11 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .footer section.contacto-nosotros-ubicacion div.art-footer .contacto div {
   /* Display & Box Model */
-  margin-left: 15%;
 
   /* Otras */
   text-align: justify;
@@ -159,6 +159,28 @@
   margin: 0;
   padding-bottom: 5px;
 }
+
+.contactanos-url {
+  text-decoration: none;
+  color: white;
+  animation: contact-animation 4s;
+  animation-iteration-count: infinite
+}
+
+.contactanos-url:hover {
+  text-decoration: underline;
+}
+
+@keyframes contact-animation {
+  0%   {color:white;}
+  50%  {color:rgb(218, 165, 32);}
+  75%   {color:white;}
+  100%  {color:rgb(218, 165, 32);}
+  
+  
+}
+
+
 
 /* ==========================================================================
    RESOLUCION: 950 hacia arriba - HOVER, ANIMACIONES
