@@ -1,5 +1,13 @@
 # Dailies
 
+### 🗓️ 14/3/21
+  Terminado:
+  - Test general de app
+  
+   Para hacer hoy:
+  - Deploy de la app
+
+
 ### 🗓️ 10/3/21
   Terminado:
   - Poner mas productos y usuarios en la base de datos > 5
