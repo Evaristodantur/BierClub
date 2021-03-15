@@ -42,7 +42,7 @@ class Container_Fluid extends Component {
               },
               {
                 id: 2,
-                titulo: 'Amount in products',
+                titulo: 'Total Sales Made',
                 cifra: responses[1].data.getTotalSalesMade,
                 borde: 'card border-left-success shadow h-100 py-2',
                 icono: 'fas fa-dollar-sign fa-2x text-gray-300',

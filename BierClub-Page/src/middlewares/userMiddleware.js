@@ -1,5 +1,5 @@
 // Validación de campos en la creación de usuarios
-
+let db = require("../database/models");
 const { check, checkSchema, body } = require("express-validator");
 
 let userMiddleware = [

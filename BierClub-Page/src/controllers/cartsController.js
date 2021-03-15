@@ -175,7 +175,7 @@ let mainController = {
               //Valida que haya productos en el carrito - SI NO HAY MANDA ERROR
               if(productsInCart.length == 0) {
                 
-                res.send('No hay productos en el carrito');           
+                res.send('No hay productos en el carrito');      
 
               }
 

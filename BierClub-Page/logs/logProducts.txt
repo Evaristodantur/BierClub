@@ -1710,3 +1710,43 @@ Stock: 0
 Categoria: Vino
 Descripción: 
 *************************************************************
+Fecha de creacion/modificación del producto: 14/3/2021 14:37:21
+Producto: fdsfdsfsd
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 14/3/2021 21:32:21
+Producto: Cheverry Dubbeld
+Precio: 525
+Descuento: 50
+Stock: 75
+Categoria: Lupuladas
+Descripción: De origen belga, color cobrizo, de cuerpo medio-pleno. Ofrece aromas y sabores complejos dulces y tostados por las maltas especiales y frutales debido a los ésteres generados en la fermentación. Marida muy bien con carnes, quesos fuertes y postres.
+*************************************************************
+Fecha de creacion/modificación del producto: 14/3/2021 21:32:40
+Producto: Cheverry Dubbel
+Precio: 525
+Descuento: 50
+Stock: 75
+Categoria: Lupuladas
+Descripción: De origen belga, color cobrizo, de cuerpo medio-pleno. Ofrece aromas y sabores complejos dulces y tostados por las maltas especiales y frutales debido a los ésteres generados en la fermentación. Marida muy bien con carnes, quesos fuertes y postres.
+*************************************************************
+Fecha de creacion/modificación del producto: 14/3/2021 21:33:09
+Producto: diego
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: No Lupuladas
+Descripción: 
+*************************************************************
+Fecha de creacion/modificación del producto: 14/3/2021 21:50:17
+Producto: fsfdsfsdfds
+Precio: 0
+Descuento: 0
+Stock: 0
+Categoria: Lupuladas
+Descripción: 
+*************************************************************

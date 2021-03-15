@@ -280,6 +280,7 @@ let apiBierClubController = {
           };
         });
 
+        // No le paso la contraseña
         res.json({
           meta: {
             status: 200,

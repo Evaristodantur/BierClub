@@ -213,22 +213,22 @@ let mainController = {
               order: [
                   ['id', 'DESC']
               ]
-          }).then(products => {
-              db.Categories.findAll({
-                  where: {
-                      status: 1
-                  }
-              })
-                  .then(categories => {
-                    res.render('suscripcion', {
-                      userLogged : req.session.usuarioLogueado, 
-                      productosRelacionados: products,
-                      msgErrorYaSuscrito: 'Este usuario ya se encuentra suscripto a nuestra membresia'
-                    });            
-                  })
-  
-              
-          });
+            }).then(products => {
+                db.Categories.findAll({
+                    where: {
+                        status: 1
+                    }
+                })
+                    .then(categories => {
+                      res.render('suscripcion', {
+                        userLogged : req.session.usuarioLogueado, 
+                        productosRelacionados: products,
+                        msgErrorYaSuscrito: 'Este usuario ya se encuentra suscripto a nuestra membresia'
+                      });            
+                    })
+    
+                
+            });
             
 
           }
